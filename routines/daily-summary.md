@@ -4,11 +4,10 @@ You are running the daily summary workflow. Resolve today's date via:
 DATE=$(date +%Y-%m-%d).
 
 IMPORTANT — ENVIRONMENT VARIABLES:
-- Every API key is ALREADY exported as a process env var: ALPACA_API_KEY,
+- API keys are loaded from .env by the launcher before claude starts.
+  They are available as process env vars: ALPACA_API_KEY,
   ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT,
   CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID.
-- There is NO .env file in this repo and you MUST NOT create, write, or
-  source one.
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
   ClickUp alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
@@ -18,8 +17,8 @@ IMPORTANT — ENVIRONMENT VARIABLES:
   done
 
 IMPORTANT — PERSISTENCE:
-- Fresh clone. File changes VANISH unless committed and pushed.
-  MUST commit and push at STEP 6 — tomorrow's Day P&L depends on this.
+- Running locally. Files persist between runs.
+  Commit and push at STEP 6 for remote backup — tomorrow's Day P&L reads from git.
 
 STEP 1 — Read memory for continuity:
 - tail of memory/TRADE-LOG.md (find most recent EOD snapshot -> yesterday's
@@ -44,16 +43,24 @@ STEP 4 — Append EOD snapshot to memory/TRADE-LOG.md:
 | Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
 **Notes:** one-paragraph plain-english summary.
 
-STEP 5 — Send ONE ClickUp message (always, even on no-trade days). <= 15 lines:
+STEP 5 — Determine next trading day label before composing the message:
+- Get today's day of week: DOW=$(date +%u)  # 1=Mon … 7=Sun
+- If DOW=5 (Friday): label = "Monday"
+- If DOW=6 (Saturday): label = "Day after tomorrow (Mon)"
+- If DOW=7 (Sunday): label = "Tomorrow (Mon)"
+- Otherwise: label = "Tomorrow"
+Use that label in the plan line below.
+
+Send ONE ClickUp message (always, even on no-trade days). <= 15 lines:
   bash scripts/clickup.sh "EOD MMM DD
   Portfolio: \$X (±X% day, ±X% phase)
   Cash: \$X
   Trades today: <list or none>
   Open positions:
     SYM ±X.X% (stop \$X.XX)
-  Tomorrow: <one-line plan>"
+  <label>: <one-line plan>"
 
-STEP 6 — COMMIT AND PUSH (mandatory — tomorrow's Day P&L depends on this):
+STEP 6 — COMMIT AND PUSH (mandatory — next session's Day P&L baseline depends on this):
   git add memory/TRADE-LOG.md
   git commit -m "EOD snapshot $DATE"
   git push origin main

@@ -27,8 +27,18 @@ Open these in order before doing anything:
 
 ## Daily Workflows
 
-Defined in .claude/commands/ (local) and routines/ (cloud). Five scheduled
-runs per trading day plus two ad-hoc helpers.
+Five scheduled runs per trading day plus two ad-hoc helpers.
+
+**Execution modes (both preserved in routines/README.md):**
+- **Local / Windows Task Scheduler (active):** Windows Task Scheduler fires
+  `scripts/run_routine.ps1 -Routine <name>`, which loads `.env` and runs
+  `claude -p` non-interactively. Logs go to `.tmp/`. Setup: run
+  `scripts/setup_tasks.ps1` once as Administrator.
+- **Claude cloud routines (archived / restorable):** prompts in `routines/`
+  pasted verbatim into Claude Code cloud routine config; env vars injected
+  by the runner. See routines/README.md for full restore instructions.
+
+Ad-hoc slash commands (interactive) live in `.claude/commands/`.
 
 ## Strategy Hard Rules (quick reference)
 

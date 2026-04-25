@@ -4,12 +4,11 @@ You are running the Friday weekly review workflow. Resolve today's date via:
 DATE=$(date +%Y-%m-%d).
 
 IMPORTANT — ENVIRONMENT VARIABLES:
-- Every API key is ALREADY exported as a process env var: ALPACA_API_KEY,
+- API keys are loaded from .env by the launcher before claude starts.
+  They are available as process env vars: ALPACA_API_KEY,
   ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT,
   PERPLEXITY_API_KEY, PERPLEXITY_MODEL, CLICKUP_API_KEY,
   CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID.
-- There is NO .env file in this repo and you MUST NOT create, write, or
-  source one.
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
   ClickUp alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
@@ -19,8 +18,8 @@ IMPORTANT — ENVIRONMENT VARIABLES:
   done
 
 IMPORTANT — PERSISTENCE:
-- Fresh clone. File changes VANISH unless committed and pushed.
-  MUST commit and push at STEP 7.
+- Running locally. Files persist between runs.
+  Commit and push at STEP 7 for remote backup.
 
 STEP 1 — Read memory for full week context:
 - memory/WEEKLY-REVIEW.md (match existing template exactly)
