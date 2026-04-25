@@ -2,7 +2,7 @@
 
 ## Overview
 - What: Autonomous trading bot challenge (AIS)
-- Starting capital: ~$10,000
+- Starting capital: $100,000 (paper account PA3GVPXBYBRB)
 - Platform: Alpaca
 - Duration: [your challenge window]
 - Strategy: Swing trading stocks, no options

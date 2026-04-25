@@ -22,47 +22,48 @@ DATA="${ALPACA_DATA_ENDPOINT:-https://data.alpaca.markets/v2}"
 
 H_KEY="APCA-API-KEY-ID: $ALPACA_API_KEY"
 H_SEC="APCA-API-SECRET-KEY: $ALPACA_SECRET_KEY"
+CURL="curl -fsS --ssl-no-revoke"
 
 cmd="${1:-}"
 shift || true
 
 case "$cmd" in
   account)
-    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/account"
+    $CURL -H "$H_KEY" -H "$H_SEC" "$API/account"
     ;;
   positions)
-    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/positions"
+    $CURL -H "$H_KEY" -H "$H_SEC" "$API/positions"
     ;;
   position)
     sym="${1:?usage: position SYM}"
-    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/positions/$sym"
+    $CURL -H "$H_KEY" -H "$H_SEC" "$API/positions/$sym"
     ;;
   quote)
     sym="${1:?usage: quote SYM}"
-    curl -fsS -H "$H_KEY" -H "$H_SEC" "$DATA/stocks/$sym/quotes/latest"
+    $CURL -H "$H_KEY" -H "$H_SEC" "$DATA/stocks/$sym/quotes/latest"
     ;;
   orders)
     status="${1:-open}"
-    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/orders?status=$status"
+    $CURL -H "$H_KEY" -H "$H_SEC" "$API/orders?status=$status"
     ;;
   order)
     body="${1:?usage: order '<json>'}"
-    curl -fsS -H "$H_KEY" -H "$H_SEC" -H "Content-Type: application/json" \
+    $CURL -H "$H_KEY" -H "$H_SEC" -H "Content-Type: application/json" \
       -X POST -d "$body" "$API/orders"
     ;;
   cancel)
     oid="${1:?usage: cancel ORDER_ID}"
-    curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/orders/$oid"
+    $CURL -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/orders/$oid"
     ;;
   cancel-all)
-    curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/orders"
+    $CURL -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/orders"
     ;;
   close)
     sym="${1:?usage: close SYM}"
-    curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions/$sym"
+    $CURL -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions/$sym"
     ;;
   close-all)
-    curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions"
+    $CURL -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions"
     ;;
   *)
     echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
