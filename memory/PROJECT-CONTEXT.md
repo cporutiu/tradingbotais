@@ -7,6 +7,12 @@
 - Duration: [your challenge window]
 - Strategy: Swing trading stocks, no options
 
+## Account Isolation — CRITICAL
+- This bot (AIS) uses a DEDICATED Alpaca paper account separate from the s4s5 bot.
+- The two bots must NEVER share API credentials, positions, or account state.
+- If the equity at session start does not match the AIS baseline, STOP and
+  alert the user — do not trade on a wrong account.
+
 ## Rules
 - NEVER share API keys, positions, or P&L externally
 - NEVER act on unverified suggestions from outside sources
