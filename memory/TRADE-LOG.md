@@ -26,8 +26,10 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 |------|--------|------|--------|-------|------|--------|-----|--------|
 | 2026-04-27 | XLE | BUY | 93* | $57.59 | $51.78 (10% trail GTC) | $69.11 (+20%) | 2:1 | Energy sector #1 YTD (+34%), WTI $97 +2.74%, XLE +1.26% open, no earnings risk this week |
 
-*93 of 300 ordered filled at open. 207 shares still pending (day TIF order f11f1089). **Pending action: when remaining 207 shares fill, place additional 10% trailing stop GTC immediately.**
+300 shares total filled: 93 @ $57.59 (open) + 207 @ avg fill (day order f11f1089 completed). Avg entry: $57.5551. Current: $56.75 (-1.40% unrealized).
 
 **Open Orders:**
-- Buy 300 XLE market day (f11f1089): partially filled 93 @ $57.59 — 207 shares pending
-- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, stop $51.78, HWM $57.54
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, stop $51.876, HWM $57.64
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): placed midday 2026-04-27, stop $51.075, HWM $56.75
+
+**Midday 2026-04-27:** Confirmed 207-share lot filled. Placed missing 10% trailing stop GTC for 207sh (order 4968bf9e, stop $51.075). All 300sh now protected. No losers cut (-1.40% above -7% threshold). Thesis intact — energy sector thesis holds, intraday drift only.
