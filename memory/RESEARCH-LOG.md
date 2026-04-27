@@ -64,3 +64,39 @@ TRADE or HOLD (default HOLD if no edge)
 
 ### Decision
 HOLD — Saturday, markets closed. Re-evaluate Monday morning at open. If Energy sector confirms strength (XLE/XOM green premarket), initiate 1 energy position (XOM or XLE, max 20% = ~$20k). Avoid tech all week due to MSFT/GOOG/META earnings risk on April 29.
+
+---
+
+## 2026-04-27 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00 (100%)
+- Buying power: $200,000 (2x margin)
+- Daytrade count: 0
+- Open positions: 0 | Open orders: 0
+
+### Market Context
+- WTI / Brent: WTI ~$97/bbl (+2.74%); Brent ~$107.94-108/bbl (+2.48%) — elevated, geopolitical premium intact; US-Iran talks "tempering" but not resolving rally
+- S&P 500 futures: E-mini (ESM6) settled ~7,201.50 on Apr 26 (+0.09%); flat-to-mildly-positive premarket. Polymarket shows 56% probability of closing DOWN vs prior close — cautious tone.
+- VIX: ~19.31 (Apr 23 close); trending 18-19 range — moderate volatility, not fearful
+- Today's catalysts: Fed rate commentary (hawkish stance = risk-off); US-Iran geopolitical premium in oil; S&P 500 hit new all-time high 7,138 on Apr 22 before pulling back
+- Earnings before open: VZ (Verizon) reports today — telecom, not our focus. KFRC (Kforce, small cap). No mega-caps today.
+- Earnings this week: GOOG, MSFT, META all Wed Apr 29; AMZN Thu Apr 30 — avoid tech all week
+- Economic calendar: CLEAN today. Next major data: May 12 (CPI + Jobs), May 13 (PPI) — no macro landmines today
+- Sector momentum YTD: Energy +34%+ (dominant, XOM +42%); Tech rotating back in April (outperforming MTD); Energy + Momentum Index +17.26% QTD. Financials/Consumer Disc still lagging.
+
+### Trade Ideas
+1. XOM (Exxon Mobil) — Energy #1 YTD (+42%); WTI $97 / Brent $108 with geopolitical floor; no earnings risk this week. Entry: market open confirm (premarket green on XOM/XLE); stop 10% below entry (~$108s entry → stop ~$97); target +20% (~$130); R:R 2:1. Size ~$18k (18% equity).
+2. XLE (Energy ETF) — Same thesis, broader exposure; preferred if single-stock uncertainty high. Entry: confirm open; stop 10%; target +15%. Size ~$18-20k.
+3. WAIT/PASS on tech — Rotation back to tech is real but entering ANY tech name before MSFT/GOOG/META/AMZN earnings (Apr 29-30) is unacceptable risk. Revisit tech on May 1 post-earnings.
+
+### Risk Factors
+- Mega-cap earnings gauntlet Wed-Thu (GOOG, MSFT, META, AMZN) — entire market at risk of violent gap; any position opened today could be caught in cross-fire
+- Polymarket 56% DOWN probability — market tone cautious coming into Monday
+- Oil rally (WTI +2.74%, Brent +2.48%) may be partially priced into energy stocks already
+- Iran ceasefire/negotiations could unwind geopolitical premium overnight
+- 100% cash — first real trades of the challenge; sizing discipline critical; no need to rush
+
+### Decision
+TRADE — initiate 1 energy position at market open IF XOM or XLE opens green with sector confirmation. Size: 15-18% (~$15-18k). Use market order or limit within 0.5% of open. Set 10% trailing stop GTC immediately after fill. Max 1 new position today — preserve capital for post-earnings tech setup next week. If energy opens red or flat on heavy volume, HOLD and wait.
