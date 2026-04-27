@@ -33,3 +33,14 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): placed midday 2026-04-27, stop $51.075, HWM $56.75
 
 **Midday 2026-04-27:** Confirmed 207-share lot filled. Placed missing 10% trailing stop GTC for 207sh (order 4968bf9e, stop $51.075). All 300sh now protected. No losers cut (-1.40% above -7% threshold). Thesis intact — energy sector thesis holds, intraday drift only.
+
+---
+
+## Day 2 — EOD Snapshot (Apr 27, Monday)
+**Portfolio:** $99,764.47 | **Cash:** $82,733.47 (82.93%) | **Day P&L:** -$235.53 (-0.24%) | **Phase P&L:** -$235.53 (-0.24%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| XLE | 300 | $57.5551 | $56.77 | -0.18% | -$235.53 (-1.36%) | 10% trail (93sh $51.876 / 207sh $51.399) |
+
+**Notes:** First live trading day. Opened 300sh XLE @ avg $57.5551 — energy sector momentum play (sector #1 YTD, WTI $97+). XLE closed $56.77, down -0.18% on the day and -1.36% from entry; well above -7% cut threshold. Both trailing stop GTC orders active and protecting full position. Thesis intact. Week trade count: 1/3. No additional trades placed.
