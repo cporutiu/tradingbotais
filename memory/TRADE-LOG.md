@@ -44,3 +44,5 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 | XLE | 300 | $57.5551 | $56.77 | -0.18% | -$235.53 (-1.36%) | 10% trail (93sh $51.876 / 207sh $51.399) |
 
 **Notes:** First live trading day. Opened 300sh XLE @ avg $57.5551 — energy sector momentum play (sector #1 YTD, WTI $97+). XLE closed $56.77, down -0.18% on the day and -1.36% from entry; well above -7% cut threshold. Both trailing stop GTC orders active and protecting full position. Thesis intact. Week trade count: 1/3. No additional trades placed.
+
+**Midday 2026-04-28:** XLE $57.80 (+1.815% intraday, +0.43% vs entry). Both stops auto-trailed to HWM $58.05 / stop $52.245 (10% trail). No cuts (-7% threshold not breached). No stop tightening (+15%/+20% not reached). Thesis intact: oil/Hormuz elevated. Key risks remaining: ADP 12:15 PM ET, FOMC Minutes 6 PM ET, Mag-7 earnings Wed-Thu. Holding per pre-market decision.
