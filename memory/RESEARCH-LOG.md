@@ -100,3 +100,50 @@ HOLD — Saturday, markets closed. Re-evaluate Monday morning at open. If Energy
 
 ### Decision
 TRADE — initiate 1 energy position at market open IF XOM or XLE opens green with sector confirmation. Size: 15-18% (~$15-18k). Use market order or limit within 0.5% of open. Set 10% trailing stop GTC immediately after fill. Max 1 new position today — preserve capital for post-earnings tech setup next week. If energy opens red or flat on heavy volume, HOLD and wait.
+
+---
+
+## 2026-04-28 — Pre-market Research
+
+### Account (last known — Alpaca API blocked: "Host not in allowlist")
+- Equity: ~$99,764 (Apr 27 EOD)
+- Cash: ~$82,733 (82.9%)
+- Buying power: ~$165,467 (margin 2x)
+- Daytrade count: 0
+- Open positions: 300sh XLE @ avg $57.5551; unrealized ~-$228 (-1.33%)
+- Open orders: 2x trailing stop GTC (93sh stop $51.876, 207sh stop $51.399)
+- Week trade count: 1/3
+- NOTE: Alpaca + Perplexity APIs returned 403 "Host not in allowlist" — all data via WebSearch fallback
+
+### Market Context
+- WTI: ~$96.13/bbl (Apr 27); range $95-97 on Apr 28 — elevated, Strait of Hormuz disruption persists
+- Brent: ~$111.57/bbl — highest since March 2026; geopolitical premium intact (US-Iran stalled)
+- S&P 500 futures: ~7,200.25 (range 7,196–7,210); closed Fri 7,165.08 (+0.80%); mild positive tone
+- VIX: ~19.03 (+1.71% premarket) — moderate, slightly elevated heading into FOMC week
+- FOMC: 2-day meeting STARTS TODAY (Apr 28); rate decision + press conference Wednesday Apr 29 2pm ET
+- Consumer Confidence, FHFA Housing, Case-Shiller all releasing today
+- Earnings before open Apr 28: SPOT, UPS, AMT, GM, PACCAR, Corning — no energy names
+- Earnings after close this week: MSFT/GOOG/META Wed Apr 29; AMZN Thu Apr 30; AAPL Fri May 1
+- Sector momentum YTD: Energy ~+25.3% (still #1 despite -9.3% MTD pullback in April); Comms +5.1%; S&P 500 flat (-0.1% YTD)
+- XLE today: ~$56.79 (range $56.63–$57.68, vol 33M); 52-wk range $39.75–$63.46
+
+### Current Position Assessment
+- XLE 300sh: entry $57.5551, current ~$56.79, P&L ~-$228 (-1.33%) — ABOVE -7% cut threshold
+- Both trailing stops active and intact; no action required
+- Energy MTD -9.3% pullback is notable but WTI/Brent still elevated = thesis intact
+- Stop floor: ~$51.40–$51.88; max loss if stopped out ≈ -$1,700 (-1.7% of equity)
+
+### Trade Ideas
+1. HOLD XLE — thesis intact; oil prices elevated; stops protecting. No new energy adds until MTD stabilizes
+2. PASS on any new positions today — FOMC starts + mega-cap earnings Wed–Fri = maximum uncertainty week; market could gap violently in either direction
+3. Watch list for post-earnings week (May 1+): tech names if MSFT/GOOG/META beat and sector rotates; energy add if XLE reclaims $58+
+
+### Risk Factors
+- FOMC decision Wednesday Apr 29 — hawkish surprise = risk-off, energy sells with market
+- Mega-cap earnings gauntlet (MSFT/GOOG/META Wed, AMZN Thu, AAPL Fri) — entire market susceptible to violent gaps
+- Energy sector MTD -9.3% pullback — momentum fading; further drawdown possible
+- VIX 19 with upward tick — modest fear building
+- Alpaca API inaccessible from cloud environment — cannot confirm stop orders or place trades remotely; USER ACTION REQUIRED to verify stop orders remain active
+
+### Decision
+HOLD — do NOT open new positions today. Existing XLE position intact and protected by stops. FOMC meeting + mega-cap earnings this week = extreme macro risk; patience is mandatory. Alert: Alpaca API blocked from cloud — verify both GTC trailing stop orders are live in Alpaca UI.
