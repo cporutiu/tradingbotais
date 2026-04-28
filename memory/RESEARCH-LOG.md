@@ -100,3 +100,49 @@ HOLD — Saturday, markets closed. Re-evaluate Monday morning at open. If Energy
 
 ### Decision
 TRADE — initiate 1 energy position at market open IF XOM or XLE opens green with sector confirmation. Size: 15-18% (~$15-18k). Use market order or limit within 0.5% of open. Set 10% trailing stop GTC immediately after fill. Max 1 new position today — preserve capital for post-earnings tech setup next week. If energy opens red or flat on heavy volume, HOLD and wait.
+
+---
+
+## 2026-04-28 — Pre-market Research
+
+### Account
+- Equity: $100,052.47 (+$287.77 vs yesterday EOD $99,764.47)
+- Cash: $82,733.47 (82.7%)
+- Buying power: $182,785.94
+- Daytrade count: 0
+- Open positions: 1 (XLE 300sh @ avg $57.5551, current $57.73, unrealized +$52.47 / +0.30%)
+- Intraday P&L: +$288 (+1.69%) — premarket green
+- Trailing stops: 93sh GTC stop $51.876 HWM $57.64 | 207sh GTC stop $51.399 HWM $57.11
+- Week trade count: 1/3
+
+### Market Context
+- WTI / Brent: WTI ~$97-99/bbl (CLM26 +2.09% April 27, Hormuz tensions); Brent ~$107-108/bbl — geopolitical premium intact; Iran talks stalled, Hormuz threat active
+- S&P 500 futures: ESM26 ~7,221.75 (-0.06%); S&P 500 closed Monday at ALL-TIME HIGH 7,173.91 (+0.12%); slight negative futures bias
+- VIX: ~18.71 (Apr 24); April futures 18.15 — moderate, not fearful
+- Today's catalysts: ADP Employment Change 12:15 PM ET (key macro), FOMC Minutes 6 PM ET; Mag-7 earnings gauntlet Wed-Thu (GOOG, MSFT, META all Wed Apr 29; AMZN Thu Apr 30); Nvidia/chip strength; Iran Hormuz uncertainty
+- Earnings BMO today: EU companies only (Boliden, ASSA ABLOY, Securitas) — no US mega-cap relevance
+- Economic calendar: ADP at 12:15 PM ET = main event; FOMC Minutes at 6 PM ET; NO CPI/PPI today; May 8 = Jobs Report
+- Sector momentum: Energy +40.4% 6-month (still #1); Technology outperforming in April MTD (+2.2%); Materials +11%; XLE 33% YTD; chip stocks rallying on TSMC/AI demand
+
+### XLE Update
+- Premarket: $57.73 (+1.69% intraday) — green confirmation
+- Support: ~$56.43; resistance: ~$58.10; expected range $55.44-$58.10
+- Oil surge toward $150 scenario if Hormuz remains disrupted (SocGen target)
+- April pullback narrative: analysts call it a buying opportunity
+- 90-day forecast: +7.49% from current
+
+### Trade Ideas
+1. HOLD XLE (current) — thesis fully intact; premarket +1.69%; energy #1 sector; oil elevated; stops protecting. No action needed.
+2. XOM add — second energy name to diversify vs XLE; same oil thesis; but BIG week for earnings (GOOG/MSFT/META/AMZN Wed-Thu) creates market-wide volatility risk; wait for post-earnings clarity
+3. NVDA/chip play — sector outperforming in April MTD; AI demand catalyst; BUT NVDA reporting not confirmed and mega-cap earnings volatility this week = too much noise. Revisit May 1+.
+4. PASS on all tech — any tech name before MSFT/GOOG/META/AMZN earnings (Apr 29-30) is unacceptable gap risk
+
+### Risk Factors
+- ADP at 12:15 PM ET: strong print = hawkish Fed reaction = sell-off risk for equities and energy
+- FOMC Minutes at 6 PM ET: any hawkish language = overnight risk
+- Mega-cap earnings Wed-Thu: GOOG, MSFT, META, AMZN — entire market at gap risk; current XLE position is exposed if market gaps down violently
+- Iran ceasefire headline risk: any Hormuz resolution = oil sells off sharply, energy unwinds
+- XLE trailing stops not yet updated to reflect new HWM ($57.73 premarket) — stops will auto-trail once price action confirms
+
+### Decision
+HOLD — XLE position intact and green. No new positions today. Rationale: ADP + FOMC Minutes today create intraday volatility traps; Mag-7 earnings Wed-Thu create market-wide gap risk; energy thesis intact but adding risk ahead of macro landmines violates patience > activity rule. Re-evaluate post-earnings (May 1) for tech and any second position. Week trade count: 1/3 (2 remaining).
