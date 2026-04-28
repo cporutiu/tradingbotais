@@ -46,3 +46,14 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Notes:** First live trading day. Opened 300sh XLE @ avg $57.5551 — energy sector momentum play (sector #1 YTD, WTI $97+). XLE closed $56.77, down -0.18% on the day and -1.36% from entry; well above -7% cut threshold. Both trailing stop GTC orders active and protecting full position. Thesis intact. Week trade count: 1/3. No additional trades placed.
 
 **Midday 2026-04-28:** XLE $57.80 (+1.815% intraday, +0.43% vs entry). Both stops auto-trailed to HWM $58.05 / stop $52.245 (10% trail). No cuts (-7% threshold not breached). No stop tightening (+15%/+20% not reached). Thesis intact: oil/Hormuz elevated. Key risks remaining: ADP 12:15 PM ET, FOMC Minutes 6 PM ET, Mag-7 earnings Wed-Thu. Holding per pre-market decision.
+
+---
+
+## Day 3 — EOD Snapshot (Apr 28, Tuesday)
+**Portfolio:** $100,073.62 | **Cash:** $82,733.47 (82.67%) | **Day P&L:** +$309.15 (+0.31%) | **Phase P&L:** +$73.62 (+0.07%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| XLE | 300 | $57.5551 | $57.80 | +1.82% | +$73.62 (+0.43%) | 10% trail ($52.245, HWM $58.05) |
+
+**Notes:** Day 3, Tuesday. No new trades (week count: 1/3). XLE rebounded +1.82% to $57.80, fully recovering Monday's loss and pushing phase P&L into the green for the first time (+$73.62). Both trailing stop GTC orders (93sh b1043e8f + 207sh 4968bf9e) active at $52.245, HWM raised to $58.05. Position up +0.43% from avg entry. Thesis intact — energy sector momentum holding. No action required; watching for continuation or new high-conviction setup Wednesday.
