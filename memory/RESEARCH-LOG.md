@@ -103,6 +103,53 @@ TRADE — initiate 1 energy position at market open IF XOM or XLE opens green wi
 
 ---
 
+## 2026-04-29 — Pre-market Research
+
+### Account
+- Equity: $100,271.47 (+$271.47 / +0.27% from $100k start)
+- Cash: $82,733.47 (82.5%)
+- Buying power: $183,004.94
+- Daytrade count: 0
+- Open positions: 1 (XLE 300sh @ avg $57.5551, current $58.46, unrealized +$271.47 / +1.57%)
+- Intraday P&L: +$225 (+1.30%) — premarket green
+- Trailing stops: 93sh (b1043e8f) + 207sh (4968bf9e) — HWM $58.05, stop $52.245 (auto-trailing, will update to ~$52.61 as market opens)
+- Week trade count: 1/3
+
+### Market Context
+- WTI: ~$99-102/bbl (CLM26 last $99.93 +$3.56); WTI Apr 28 close ~$102; prediction markets show >99 at 88¢ probability — geopolitical premium intact (Hormuz)
+- Brent: Earlier data $112 (Apr 3); current premium spread vs WTI elevated due to sanctions routing
+- S&P 500 futures: ATH territory; ESM26 closed above 7,200 (Apr 27 new ATH); slight premarket negative bias but overall bull trend intact
+- VIX: 18.36 close Apr 28 (prev 18.02 Apr 27) — moderate, ticking slightly higher; not fearful
+- Today's catalysts: MSFT Q3 FY2026 earnings AMC 5:30 PM ET; META Q1 2026 earnings AMC 5:30 PM ET; Metro Area unemployment 10 AM ET (low impact, no macro punch)
+- TOMORROW (Apr 30) big data: GDP Advance Estimate Q1 2026 at 8:30 AM ET + Employment Cost Index Q1 8:30 AM ET — significant double-header
+- No BMO earnings today of consequence
+- Sector momentum: Energy #1 YTD (+34% per Q1 data, S&P 500 Energy Index +17.22%); slight April rotation back to tech (XLK +2.2% MTD) but energy holding. Tech still -7.8% trailing 6 months despite April bounce.
+
+### XLE Update
+- Current: $58.46 (+1.30% today vs $57.71 EOD yesterday)
+- Technical signals: long-term bullish (RS crossed above 50%), momentum indicator mixed (bearish cross Apr 8 but recovering); long-term trend support intact
+- April pullback labeled "buying opportunity" by MarketBeat analysts
+- Energy sector low 4% S&P weighting — doesn't drag index but sector momentum self-sustaining
+- Top holdings: XOM (24%), CVX (18%) — both driving
+
+### Trade Ideas
+1. HOLD XLE — thesis fully intact; +1.30% today; stops protecting at $52.245 (HWM trailing); energy #1 sector; oil $99-102. No action needed.
+2. PASS on MSFT/META post-earnings — AMC tonight creates gap risk; chasing gap fills is speculation, not strategy. Evaluate tomorrow if results are strong and setup is clean.
+3. PASS on tech broadly — rotation to tech is happening (XLK +2.2% April MTD) but entering any tech name tonight before MSFT/META results is unacceptable gap risk. If MSFT beats and gaps up tomorrow, consider tech ETF (XLK) entry post-GDP data (Apr 30 AM).
+4. WATCH: Energy continuation — if XLE clears $58.50 on volume and holds, consider tightening stop review (still not at +15% threshold from entry, currently +1.57%). No stop action yet.
+
+### Risk Factors
+- MSFT + META AMC tonight: entire market at overnight gap risk; bad results = broad sell-off including energy
+- GDP Advance Q1 2026 tomorrow 8:30 AM ET: soft GDP = recession fear = energy demand concern = XLE sells off
+- Oil: any Iran/Hormuz resolution headline = sharp oil reversal; stay vigilant overnight
+- XLE trailing stops at HWM $58.05 (updating automatically); if stops not trailing correctly, gap-down risk is cushioned by $52 floor (~10% below)
+- VIX edging up 18.02 → 18.36 → watch for spike above 20 = risk-off signal
+
+### Decision
+HOLD — no new positions. XLE green and thesis intact (+1.57% unrealized). Adding risk ahead of MSFT/META earnings (AMC) + GDP (tomorrow) violates patience > activity rule. Re-evaluate post-MSFT/META results and post-GDP tomorrow. If tech mega-caps beat and GDP is solid, open window for second position next week. Week count: 1/3.
+
+---
+
 ## 2026-04-28 — Pre-market Research
 
 ### Account
