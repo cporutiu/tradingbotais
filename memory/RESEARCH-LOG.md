@@ -146,3 +146,49 @@ TRADE — initiate 1 energy position at market open IF XOM or XLE opens green wi
 
 ### Decision
 HOLD — XLE position intact and green. No new positions today. Rationale: ADP + FOMC Minutes today create intraday volatility traps; Mag-7 earnings Wed-Thu create market-wide gap risk; energy thesis intact but adding risk ahead of macro landmines violates patience > activity rule. Re-evaluate post-earnings (May 1) for tech and any second position. Week trade count: 1/3 (2 remaining).
+
+---
+
+## 2026-04-29 — Pre-market Research
+
+> NOTE: Alpaca API and Perplexity API unreachable from runner host ("Host not in allowlist"). Account state estimated from Day 3 EOD (Apr 28) trade log. Market data via WebSearch fallback.
+
+### Account (estimated from last EOD — Alpaca unreachable)
+- Equity: ~$100,073.62 (Day 3 EOD baseline; actual unknown)
+- Cash: $82,733.47 (82.67%)
+- Buying power: ~$182,786 (estimated)
+- Daytrade count: 0
+- Open positions: 1 — XLE 300sh @ avg $57.5551 | last close $57.80 | unrealized +$73.62 (+0.43%)
+- Trailing stops: HWM $58.05 | stop $52.245 (10% trail, GTC, both lots)
+- Week trade count: 1/3 (2 remaining this week)
+
+### Market Context
+- WTI / Brent: WTI ~$99/bbl; Brent ~$113.47/bbl — still elevated but FRAGILE; ceasefire between US and Iran reported as of Apr 28-29. Ceasefire = geopolitical premium unwind risk. Hormuz tensions easing.
+- S&P 500 futures: Virtually flat (ESM26 -0.01%); S&P 500 closed Apr 28 at 7,138.80 (-0.49%); Polymarket 61% UP open today
+- VIX: ~18.02 (Apr 28 close) — moderate, not fearful; elevated vs normal but not panic
+- Today's catalysts (CRITICAL): FOMC decision 2:00 PM ET (rates unchanged expected, but press conference at 2:30 PM could move markets — last meeting under Chair Powell); Mag-7 AFTER close: MSFT, GOOG (Alphabet), META, AMZN all report today AMC — four of the largest market-cap names simultaneously
+- Earnings BMO today: Amphenol Corp (APH) before open — telecom/electronics, not our focus. No US mega-cap BMO.
+- Economic calendar: FOMC rate decision 2:00 PM ET (primary event); GDP Advance Estimate Q1'26 scheduled for April 30 (tomorrow); no CPI/PPI/Jobs today
+- Sector momentum YTD: Energy ~+25-39% YTD (still #1 but -7.74% MTD pullback in April); Consumer Staples, Industrials, Materials leading. Tech (XLK), Comms (XLC), Consumer Disc (XLY), Financials (XLF) lagging. Energy MTD weakness = ceasefire/oil premium unwind.
+
+### XLE Update
+- Apr 28 range: $56.63 low / $57.68 high; closed ~$57.80 (Day 3 EOD data)
+- YTD: +39.67%; 52-week range $39.75-$63.46
+- RISK: Fragile US-Iran ceasefire reported — could unwind Hormuz premium sharply
+- Trailing stop at $52.245 protects against -9.6% from last close; still well-placed
+- Thesis: oil remains elevated ($99 WTI / $113 Brent) but ceasefire is a structural threat
+
+### Trade Ideas
+1. HOLD XLE (current) — stop at $52.245 protects. Ceasefire is "fragile" — not confirmed durable. Do NOT exit preemptively. Let trailing stop do its job. If WTI drops below $90 on durable ceasefire, reassess.
+2. PASS on all tech — MSFT, GOOG, META, AMZN all report tonight AMC. Entering any tech name today = gap risk both ways. Revisit May 1 post-earnings with clean data.
+3. PASS on new energy position — oil premium fragile with ceasefire; energy sector MTD -7.74%. No doubling down under thesis stress.
+
+### Risk Factors
+- **FOMC 2:00 PM ET**: Rates held expected; any hawkish press conference language = equity sell-off and risk-off for energy
+- **Mag-7 earnings AMC**: MSFT + GOOG + META + AMZN all tonight. Single miss can cascade; market-wide gap risk for tomorrow's open. Our XLE position exposed to sympathy selling.
+- **US-Iran ceasefire**: Fragile but real. Sustained ceasefire = WTI drops toward $80s, Brent toward $90s, XLE could gap through stop. This is the #1 tail risk to our position.
+- **XLE MTD weakness** (-7.74%): Sector cooling from YTD highs. Momentum may be fading even before ceasefire.
+- **GDP tomorrow** (Apr 30 Advance Q1'26): Any miss could compound post-earnings volatility.
+
+### Decision
+HOLD — No new positions. XLE held with trailing stop protection. Today is maximum landmine day (FOMC 2 PM + 4x Mag-7 AMC + ceasefire risk). Patience > activity. Monitor: if WTI breaks below $90 intraday on durable ceasefire confirmation, or if XLE drops through $53, consider manually cutting ahead of stop. Otherwise, let GTC stops work. Re-evaluate full portfolio Thursday morning post-earnings data.
