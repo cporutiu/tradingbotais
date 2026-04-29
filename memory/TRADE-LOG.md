@@ -61,3 +61,14 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Market-open 2026-04-29:** XLE $58.405 (+1.20% today, +1.48% from avg entry). Equity $100,253.47. Both trailing stops auto-trailed to HWM $58.64 / stop $52.776. No trades executed — HOLD per research (MSFT+META AMC tonight + GDP tomorrow 8:30 AM ET = unacceptable gap risk). Week count: 1/3. No stop tightening needed (+15% threshold = $66.19 not reached).
 
 **Midday 2026-04-29:** XLE $58.735 (+1.78% intraday, +2.05% from avg entry). Unrealized P&L: +$353.97. Both trailing stops auto-trailed to HWM $59.11 / stop $53.199 (10% trail). No losers cut (threshold -7% not breached). No stop tightening (need +15% = $66.19, currently at +2.05%). Thesis intact — energy sector holding, oil geopolitical premium active. MSFT+META report AMC tonight; GDP tomorrow 8:30 AM. Holding per strategy.
+
+---
+
+## Day 4 — EOD Snapshot (Apr 29, Wednesday)
+**Portfolio:** $100,478.47 | **Cash:** $82,733.47 (82.34%) | **Day P&L:** +$404.85 (+0.40%) | **Phase P&L:** +$478.47 (+0.48%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| XLE | 300 | $57.5551 | $59.15 | +2.50% | +$478.47 (+2.77%) | 10% trail (HWM $59.11 / stop $53.199) |
+
+**Notes:** Day 4, Wednesday. No new trades (week count: 1/3). XLE surged +2.50% to $59.15, best single-day gain since entry. Phase P&L now +$478.47 (+0.48%), strongest reading so far. Both trailing stop GTC orders (93sh b1043e8f + 207sh 4968bf9e) active at $53.199, HWM $59.11; final close $59.15 may push effective stop to ~$53.235 at next update. Not yet near +15% tightening threshold ($66.19). MSFT and META both reported AMC tonight — results positive for tech/risk-on sentiment; energy thesis intact. GDP report tomorrow 8:30 AM ET is key catalyst. Week count: 1/3.
