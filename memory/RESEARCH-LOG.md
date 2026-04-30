@@ -193,3 +193,61 @@ HOLD — no new positions. XLE green and thesis intact (+1.57% unrealized). Addi
 
 ### Decision
 HOLD — XLE position intact and green. No new positions today. Rationale: ADP + FOMC Minutes today create intraday volatility traps; Mag-7 earnings Wed-Thu create market-wide gap risk; energy thesis intact but adding risk ahead of macro landmines violates patience > activity rule. Re-evaluate post-earnings (May 1) for tech and any second position. Week trade count: 1/3 (2 remaining).
+
+---
+
+## 2026-04-30 — Pre-market Research
+
+⚠️ **API ALERT:** Alpaca paper API and Perplexity API both returning "Host not in allowlist" (HTTP 403) from this cloud environment. Account snapshot uses last known EOD Day 4 figures. All market data via WebSearch fallback.
+
+### Account (last known — EOD Apr 29)
+- Equity: ~$100,478.47 | Cash: $82,733.47 (82.3%)
+- Buying power: ~$165,000 est.
+- Daytrade count: 0
+- Open positions: 1 (XLE 300sh @ avg $57.5551, EOD close $59.15, unrealized +$478.47 / +2.77%)
+- Trailing stops: HWM $59.11, stop $53.199 (10% trail GTC, both orders active)
+- Week trade count: 1/3
+
+### Market Context
+- **WTI:** ~$108.44 (+1.5% today); **Brent:** ~$121.56 (+3%, hit intraday high $126) — IEA calls Hormuz closure "largest supply shock on record"; 20% of global oil shipments halted; US crude exports surging to record 6M+ bpd. MASSIVELY bullish for XLE.
+- **S&P 500 futures:** ES -0.22%, Dow -285pts (-0.58%), Nasdaq -0.23% — slight negative bias despite Mag-7 beats; GDP uncertainty weighing
+- **VIX:** 18.64 (+4.55%) — ticking up; elevated but not fearful
+- **Mag-7 earnings (Apr 29 AMC — all beat):**
+  - MSFT: EPS $4.27 vs $4.07 est; Azure +40%; stock -1% AH (capex $190B guidance spooked)
+  - META: EPS $10.44, net income $26.8B — strong beat
+  - AMZN: EPS $2.78 vs $1.64 est; rev $181.5B; AWS +28% — big beat
+  - GOOGL: EPS $5.11; rev $109.9B (+22%); Cloud +63% — beat
+- **Today's macro (8:30 AM ET — critical):**
+  - GDP Q1 2026 Advance Estimate: GDPNow tracking 1.24% (vs consensus 2.0-3.0%) — soft print expected
+  - PCE Price Index: releasing simultaneously — inflation read
+  - Employment Cost Index Q1: also 8:30 AM ET
+- **FOMC:** Decision 2:00 PM ET — no rate change expected; press conference language is the risk
+- **BMO earnings today:** COP (ConocoPhillips) — key XLE holding; expect ~$1.66 EPS; oil surge = likely beat
+- **AMC tonight:** AAPL — biggest cap, market mover
+- **Sector momentum YTD:** Energy +24.4% (#1); Tech +5.5% (recovering but lagging)
+
+### XLE Update
+- Premarket: ~$59.03 (range $58.06–$59.11, prev close $57.71 per search data)
+- Oil surge to WTI $108 / Brent $122 is strong tailwind
+- COP earnings BMO today — beat likely given oil prices; would push XLE higher
+- Trailing stop at $53.199 provides solid floor even in a market sell-off
+- Not yet near +15% tightening threshold ($66.19 from entry $57.5551)
+- Effective unrealized P&L at $59.03: ~+$443.97 / +2.57%
+
+### Trade Ideas
+1. **HOLD XLE** — thesis strongest yet; oil at multi-year high, energy sector #1 YTD, COP reporting today. No action needed. Let trailing stop ride.
+2. **WATCH XOM post-GDP:** If GDP ≥2.0% (benign) + COP beats → consider XOM as second energy name (diversify within sector). Entry setup: ~$120-125 range, 10% trail stop. Would bring deployed capital to ~90%. Hold off until GDP prints at 8:30.
+3. **PASS on tech:** All Mag-7 beat but MSFT AH reaction was -1% on capex concerns. Market futures slightly negative. Too much noise (FOMC + AAPL AMC) to initiate tech position today.
+4. **PASS on XLK/QQQ:** Same logic — tech rotation real but today is not the day with FOMC + AAPL + soft GDP risk.
+
+### Risk Factors
+- **GDP 8:30 AM ET:** GDPNow 1.24% is half of consensus. Soft print = recession fear = energy demand concern = XLE sell-off possible. PCE hot + soft GDP = stagflation = worst case scenario.
+- **FOMC 2 PM ET:** Hawkish language on inflation risks (even without rate change) = broad sell-off
+- **AAPL AMC:** Largest market cap — miss or weak guidance = market down tomorrow
+- **COP miss risk:** Low probability given oil at $108, but any miss on production guidance = XLE drag
+- **Hormuz resolution headline:** Any Iran/US deal = oil reversal = rapid XLE drawdown. Stops at $53.199 protect against this.
+- **Alpaca API blocked:** Cannot verify live stop orders or confirm trailing levels are current. USER ACTION REQUIRED: whitelist this cloud environment's IP on Alpaca paper account settings.
+- VIX rising (18.36 → 18.64) — watch for spike above 20 = risk-off signal
+
+### Decision
+HOLD — no new positions. XLE thesis is the strongest it's been (oil at $108/$122, Hormuz supply shock, COP earnings potential catalyst). But GDP print at 8:30 AM ET is binary: soft print triggers recession fear and could drag even energy lower. FOMC at 2 PM adds second event risk. AAPL AMC tonight is third. Three event risks in one day = patience > activity. Re-evaluate for XOM or second energy add TOMORROW (May 1) after today's macro dust settles. Week trade count: 1/3 (2 remaining — plenty of capacity next week).
