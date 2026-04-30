@@ -3,6 +3,58 @@
 Daily pre-market research entries will be appended here.
 Format each entry:
 
+## 2026-04-30 — Pre-market Research
+
+### Account
+- Equity: $100,313.47 (vs EOD $100,478.47; XLE -0.73% premarket from yesterday close)
+- Cash: $82,733.47 (82.3%)
+- Buying power: $183,046.94
+- Daytrade count: 0
+- Open positions: 1 (XLE 300sh @ avg $57.5551, current $58.60, unrealized +$313.47 / +1.82%)
+- Intraday P&L: -$129 (-0.73%) — premarket pullback from yesterday's $59.15 close
+- Trailing stops: 93sh GTC stop $53.199 HWM $59.11 | 207sh GTC stop $53.199 HWM $59.11
+- Week trade count: 1/3
+
+### Market Context
+- WTI: ~$105-109/bbl (intraday range; +5.27% surge overnight); Brent: ~$113-123/bbl — massively elevated; Middle East geopolitical premium fully intact, Hormuz risk active
+- S&P 500 futures (ESM26): ~6,657.50, +0.10% premarket — modest green; prior close 7,138.80
+- VIX: 17.83 (Apr 28 close); Apr 29 range 17.83-18.81 — moderate, not fearful; risk-on environment
+- AMZN earnings (reported Apr 29 AMC): EPS $2.78 vs $1.64 estimate = **+69.5% beat**; net sales +17% — massive risk-on tailwind for today
+- MSFT/META (reported Apr 28-29): also beat — Mag-7 earnings season broadly positive
+- **Triple macro print at 8:30 AM ET today:** Q1 GDP Advance + March PCE + Q1 ECI — most important single morning of 2026
+
+### Economic Calendar (April 30)
+- 8:30 AM ET: Q1 2026 GDP Advance Estimate — first official read on Q1 growth
+- 8:30 AM ET: March PCE (Fed preferred inflation gauge) — critical for Fed path
+- 8:30 AM ET: Q1 Employment Cost Index (ECI) — wage pressure, Q4 prior: 0.7%
+- No additional US macro releases expected today
+
+### XLE Update
+- Current: $58.60 (premarket pullback from $59.15 close; HWM $59.11)
+- Technical signals bullish: XLE crossed 50-day MA on Apr 28; MACD turned positive Apr 29; 89% historical odds of continued uptrend after 50-day MA crossover
+- 2026 avg forecast $75.09; 30-day target $82.93 — long runway vs current $58.60
+- Support: ~$53.20 (trailing stop floor); resistance: ~$63.46 (Jan breakout high)
+- Oil geopolitical premium intact; oil unlikely to revert to pre-Iran levels (MarketBeat)
+- Thesis: energy sector #1 YTD; oil $105-109 WTI; technical breakout confirmed; position fully protected
+
+### Trade Ideas
+1. **HOLD XLE (current)** — do not touch before 8:30 AM GDP/PCE triple print; thesis intact, stops protecting, oil extremely elevated, technicals bullish. No action.
+2. **WATCH tech (XLK / NVDA)** — IF 8:30 AM data: GDP solid + PCE benign → risk-on confirmed + AMZN beat → open window to scout a second position in tech for next week (not today; let data clear first). Chasing AMZN post-gap = speculation, never strategy.
+3. **PASS on AMZN gap chase** — beat already priced premarket; entry after gap = speculation. Skip.
+4. **XOM add-on** — same energy thesis; potential second position but adding sector concentration without new catalyst. Wait for pullback or a separate sector breakout.
+
+### Risk Factors
+- Triple 8:30 AM macro print: weak GDP → recession fear → energy demand concern → XLE sells off; hot PCE → hawkish Fed → market selloff; both scenarios create intraday volatility
+- XLE below HWM ($58.60 vs $59.11): stop trailing at $53.199 — no stop tightening yet (need +15% = $66.19)
+- Oil volatility: any Iran/Hormuz ceasefire headline = sharp reversal; Brent $113-123 implies outsized downside risk if geopolitical premium unwinds
+- VIX 17.83-18.81: moderate; watch for spike above 20 = de-risk signal
+- PDT limit: 0 daytrades used; 3 remaining for 5-day window
+
+### Decision
+**HOLD — wait for 8:30 AM triple macro print to clear before any action.** XLE thesis intact; stops protecting; no losers to cut (-7% threshold at $53.50, stop at $53.199). If GDP + PCE benign → assess tech entry for next week (not today). If GDP disappoints → evaluate tightening stop manually or exiting at discretion. Patience > activity. Week count: 1/3 (2 remaining).
+
+---
+
 ## YYYY-MM-DD — Pre-market Research
 
 ### Account
