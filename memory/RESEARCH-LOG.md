@@ -53,6 +53,12 @@ Format each entry:
 ### Decision
 **HOLD — wait for 8:30 AM triple macro print to clear before any action.** XLE thesis intact; stops protecting; no losers to cut (-7% threshold at $53.50, stop at $53.199). If GDP + PCE benign → assess tech entry for next week (not today). If GDP disappoints → evaluate tightening stop manually or exiting at discretion. Patience > activity. Week count: 1/3 (2 remaining).
 
+### Afternoon Addendum (Midday Scan)
+- **Q1 2026 GDP Advance:** +2.0% annualized — slight miss vs 2.3% consensus; sharp rebound from Q4 2025's +0.5%. Not recessionary; economy growing, just a touch soft. Energy demand narrative intact.
+- **XLE midday:** $59.465 (+0.737% intraday) — recovered from morning dip; market absorbed soft GDP miss without selling energy. Stops auto-trailed: HWM $59.76 / stop $53.784.
+- **Action:** None. No cuts, no stop tightening (need +15% = $66.19). Thesis holds.
+- **Next:** Assess tech (XLK/NVDA) setup next week if GDP data benign overall. PCE print confirmation pending.
+
 ---
 
 ## YYYY-MM-DD — Pre-market Research
