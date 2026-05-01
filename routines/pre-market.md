@@ -43,9 +43,54 @@ bash scripts/perplexity.sh "<query>" for each:
 - "Economic calendar today CPI PPI FOMC jobs data"
 - "S&P 500 sector momentum YTD"
 - News on any currently-held ticker
+- "Rank these ETFs by 20-day relative strength vs SPY, strongest to weakest, return as a JSON array of ticker symbols only, no explanation: SPY QQQ GLD SLV XLE XLF XLK XLV XLU XLI XLB XLP XLY XLC XLRE IWM HYG EEM SOXX"
+- "US economic cycle stage right now — respond with exactly one of: early-cycle mid-cycle late-cycle recession. Then 2 sentences of rationale based on leading indicators."
 
 If Perplexity exits 3, fall back to native WebSearch and note the
 fallback in the log entry.
+
+STEP 3B — Write shared market intelligence file.
+Using the results from STEP 3, write the following JSON to the shared
+path below. Fill each field from the Perplexity responses above.
+For sector_tailwinds, assign "positive", "neutral", or "negative" to each
+ticker based on the catalyst and sector momentum research.
+For market_risk, use "low" (VIX < 18), "medium" (VIX 18-25), or "high" (VIX > 25).
+
+python -c "
+import json
+data = {
+  'date': '$DATE',
+  'cycle_stage': '<one of: early-cycle mid-cycle late-cycle recession>',
+  'cycle_rationale': '<2-sentence rationale>',
+  'vix': <number>,
+  'rs_ranking': <JSON array of tickers strongest to weakest>,
+  'sector_tailwinds': {
+    'SPY': '<positive|neutral|negative>',
+    'QQQ': '<positive|neutral|negative>',
+    'GLD': '<positive|neutral|negative>',
+    'SLV': '<positive|neutral|negative>',
+    'XLE': '<positive|neutral|negative>',
+    'XLF': '<positive|neutral|negative>',
+    'XLK': '<positive|neutral|negative>',
+    'XLV': '<positive|neutral|negative>',
+    'XLU': '<positive|neutral|negative>',
+    'XLI': '<positive|neutral|negative>',
+    'XLB': '<positive|neutral|negative>',
+    'XLP': '<positive|neutral|negative>',
+    'XLY': '<positive|neutral|negative>',
+    'XLC': '<positive|neutral|negative>',
+    'XLRE': '<positive|neutral|negative>',
+    'IWM': '<positive|neutral|negative>',
+    'HYG': '<positive|neutral|negative>',
+    'EEM': '<positive|neutral|negative>',
+    'SOXX': '<positive|neutral|negative>'
+  },
+  'market_risk': '<low|medium|high>'
+}
+with open(r'C:/Users/Cipru/OneDrive - Picksur LLC/Documents/AIPROJECTS/market-intel.json', 'w') as f:
+    json.dump(data, f, indent=2)
+print('market-intel.json written')
+"
 
 STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 - Account snapshot (equity, cash, buying power, daytrade count)
