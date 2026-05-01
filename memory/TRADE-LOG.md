@@ -91,3 +91,14 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Market-open 2026-05-01:** XLE $59.13 (-0.87% from $59.65 close; +2.84% from avg entry $57.5551). Equity $100,487.47. Both trailing stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update). No trades executed — HOLD per research (AMZN reports AMC tonight = unacceptable gap risk; ISM Manufacturing 9 AM ET = intraday volatility trap). Week count: 1/3. Daytrade count: 0/3.
 
 **Midday 2026-05-01:** XLE $58.765 (-1.48% intraday from $59.65 close; +2.10% from avg entry $57.5551). Unrealized P&L: +$362.97. Both trailing stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update). No losers cut (-7% threshold not breached). No stop tightening (+15% = $66.19 — not reached). ISM Manufacturing April 2026: 52.7 (unchanged, above 50 = expansion, highest since Aug 2022) — constructive, no recession signal. Pullback (-1.48%) attributed to pre-AMZN AMC caution/profit-taking; not a thesis break. Energy thesis intact: WTI ~$106, sector #1 YTD, geopolitical premium holding. No action. Week count: 1/3.
+
+---
+
+## Day 6 — EOD Snapshot (May 01, Friday)
+**Portfolio:** $100,388.47 | **Cash:** $82,733.47 (82.41%) | **Day P&L:** -$240.00 (-0.24%) | **Phase P&L:** +$388.47 (+0.39%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| XLE | 300 | $57.5551 | $58.85 | -1.34% | +$388.47 (+2.25%) | 10% trail (HWM $59.835 / stop $53.8515) |
+
+**Notes:** Day 6, Friday (Jobs Friday / ISM day). No trades executed — week ends 1/3. XLE pulled back -1.34% to $58.85; pre-AMZN AMC caution drove afternoon selling. Position remains +2.25% above avg entry and well above -7% cut threshold. Both trailing stop GTC orders (93sh b1043e8f + 207sh 4968bf9e) locked at HWM $59.835 / stop $53.8515 — price below HWM all day, no trail update. NFP and ISM both came in constructive; energy thesis intact. AMZN reported AMC. Next window: Monday — assess AMZN aftermath + any weekend macro; evaluate new setup if week-2 cap permits.
