@@ -301,3 +301,10 @@ HOLD — XLE position intact and green. No new positions today. Rationale: ADP +
 
 ### Decision
 HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for adding exposure. Energy thesis fully intact (WTI $106, sector #1 YTD, XLE +3.40% unrealized). Monitor ISM Manufacturing at 9 AM for read on economy. Re-evaluate second position (NVDA or XLK) next week after AMZN clears and pre-NFP. Week count: 1/3 (2 remaining, 1 trading day left this week).
+
+### Afternoon Addendum (Midday Scan)
+- **ISM Manufacturing April 2026:** 52.7 — unchanged from March, above 50 = expansion, highest since Aug 2022. No contraction, no recession signal. Constructive for energy demand.
+- **XLE midday:** $58.765 (-1.48% intraday) — pullback from $59.65 close attributable to pre-AMZN AMC caution/profit-taking, not macro deterioration. Both stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update).
+- **Thesis check:** Intact. ISM positive, WTI ~$106 elevated, energy sector #1 YTD, geopolitical premium holding.
+- **Action:** None. No cuts (-7% threshold not breached). No stop tightening (+15% = $66.19 not reached).
+- **Next:** AMZN reports AMC tonight — if beat + futures positive Monday, assess NVDA/XLK second position entry. NFP May 8 is next major risk event.
