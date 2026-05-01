@@ -251,3 +251,53 @@ HOLD — no new positions. XLE green and thesis intact (+1.57% unrealized). Addi
 
 ### Decision
 HOLD — XLE position intact and green. No new positions today. Rationale: ADP + FOMC Minutes today create intraday volatility traps; Mag-7 earnings Wed-Thu create market-wide gap risk; energy thesis intact but adding risk ahead of macro landmines violates patience > activity rule. Re-evaluate post-earnings (May 1) for tech and any second position. Week trade count: 1/3 (2 remaining).
+
+---
+
+## 2026-05-01 — Pre-market Research
+
+### Account
+- Equity: $100,586.35 (+$628.47 vs phase start $100,000 / -$42.12 vs yesterday EOD $100,628.47)
+- Cash: $82,733.47 (82.2%)
+- Buying power: $183,319.82
+- Daytrade count: 0
+- Open positions: 1 (XLE 300sh @ avg $57.5551, current $59.5096, unrealized +$586.35 / +3.40%)
+- Intraday P&L: -$42.12 (-0.24%) — slight premarket dip from $59.65 close
+- Trailing stops: 93sh (b1043e8f) + 207sh (4968bf9e) — both GTC stop $53.8515, HWM $59.835
+- Week trade count: 1/3
+
+### Market Context
+- **WTI**: ~$106.1/bbl (+0.98%); **Brent**: ~$111.07/bbl — still elevated, Hormuz/geopolitical premium intact
+- **S&P 500 futures**: ESM26 ~7,259.25 (+0.21%) — slightly positive premarket, constructive
+- **VIX**: 17.28 (down from prior close 18.81, opened 18.68) — easing, moderate; not fearful
+- **Sector YTD**: Energy #1 (~+38-40%), Industrials +4.6%, Consumer Staples positive; Tech (XLK) -11% 6-month — lagging
+- **Today's catalysts**: Construction Spending 9 AM ET (minor), ISM Manufacturing 9 AM ET (moderate); AMZN reports AMC tonight — last of the Mag-7 gauntlet
+- **Earnings BMO today**: Small caps only (CATX, GWRS, SMTI, RRGB) — no market movers
+- **Economic calendar**: No CPI/PPI/FOMC today. NFP May 8 (8:30 AM ET) is next big macro event; CPI May 12
+- **AI/chip momentum**: NVDA bullish ("criminally undervalued at $200"), AMD/TSM/AVGO dip-buy setups highlighted; April tech rally +17%
+- **Big Tech clarity post-earnings**: MSFT + META beat last week; AMZN AMC tonight final clearing event
+
+### XLE Update
+- Premarket: $59.5096 (-0.24% vs close $59.65) — minor drift, within noise
+- Trailing stops locked at $53.8515, HWM $59.835; position needs to exceed HWM to trail higher
+- Elliott Wave: incomplete bullish sequence targeting $75-98; Brent $115 Q2 projection (Tickeron)
+- Technical: MACD positive (Apr 29), momentum above 0, reclaimed 20/50-day MA — bullish structure intact
+- Breakout support at $53.41; long-term 52-week analyst target $64.60
+- Risk: EIA long-term forecast of oil falling to $55 by end-2026 (oversupply) — not near-term but monitor
+
+### Trade Ideas
+1. **HOLD XLE (current)** — thesis fully intact; +3.40% unrealized; stops in place; energy #1 sector; oil elevated. No action needed.
+2. **WATCH: NVDA dip-buy** — AI momentum strong, dip-buy signals active; but AMZN AMC tonight creates market-wide gap risk. Evaluate Monday if AMZN beats and futures open higher. Entry ~$190-200 if holds support; 10% trailing stop; ~10-15% target. Catalyst: AI demand, FY2028 EPS $16-18.
+3. **WATCH: XLK tech ETF** — April tech rally +17% underway; but sector still -11% 6-month and still lagging energy YTD. Only enter after sector confirms rotation. Not today.
+4. **PASS on all new positions today** — AMZN reports AMC = gap risk; ISM Manufacturing 9 AM = intraday volatility trap. Patience > activity.
+
+### Risk Factors
+- AMZN reports AMC tonight: final Mag-7 event; bad results = broad market gap-down risk; energy correlates in risk-off
+- ISM Manufacturing 9 AM ET: any contraction reading (<50) = recession fear = energy demand concern
+- Oil reversal risk: Hormuz resolution headline or Iran deal = sharp oil pullback; WTI $106 is near-term high
+- VIX at 17.28 — moderate; watch for spike above 20 as risk-off signal
+- XLE at $59.51 premarket, slightly below HWM $59.835 — stops not trailing until new HWM established
+- NFP May 8: next big macro landmine; begin assessing second position window post-NFP
+
+### Decision
+HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for adding exposure. Energy thesis fully intact (WTI $106, sector #1 YTD, XLE +3.40% unrealized). Monitor ISM Manufacturing at 9 AM for read on economy. Re-evaluate second position (NVDA or XLK) next week after AMZN clears and pre-NFP. Week count: 1/3 (2 remaining, 1 trading day left this week).
