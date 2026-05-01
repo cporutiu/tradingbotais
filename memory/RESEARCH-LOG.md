@@ -3,6 +3,62 @@
 Daily pre-market research entries will be appended here.
 Format each entry:
 
+## 2026-05-01 — Pre-market Research
+
+### Account
+- Equity: ~$100,628.47 (from memory — Alpaca API blocked, see note)
+- Cash: $82,733.47 (82.21%)
+- Buying power: ~$183,046.94 (estimated)
+- Daytrade count: 0
+- Open positions: 1 (XLE 300sh @ avg $57.5551, last close $59.65, unrealized +$628.47 / +3.64%)
+- Trailing stops: 93sh GTC b1043e8f + 207sh GTC 4968bf9e — HWM $59.835 / stop $53.8515 (10% trail)
+- Week trade count: 1/3 (final trading day of week)
+- **NOTE: Alpaca API returning 403 host_not_allowed — IP not whitelisted. All figures from last known EOD Apr 30. ClickUp alert sent but also blocked (same network restriction). Fallback to WebSearch for all market data.**
+
+### Market Context
+- **WTI:** ~$106/bbl — Hormuz supply shock ongoing; geopolitical premium fully intact (Iran blockade)
+- **Brent:** Forecast $115-135/bbl range May 2026; premium over WTI elevated due to sanctions routing
+- **S&P 500 futures (ESM26):** 7,172.75, +0.07% (+4.75 pts) premarket; S&P closed 7,209.01 Apr 29 (first close above 7,200 ever)
+- **VIX:** ~18 (Apr 30 range; prior readings 17.83-18.81 — moderate, not fearful)
+- **Macro event:** April NFP at 8:30 AM ET — Jobs Friday; March came in at +178K; consensus ~160-170K
+- **Major premarket movers:** AAPL +3% (fiscal Q2 beat, revenue beat; iPhone short of estimates for 2nd time); Reddit (RDDT) +16% (upbeat revenue forecast)
+- **BMO earnings today:** CVX + XOM both reporting BMO — combined ~42% of XLE holdings (XOM 24%, CVX 18%); direct binary risk to XLE at open
+- **Macro wildcard:** US Supreme Court struck down Trump tariffs — significant risk-on signal; broad equity tailwind
+- **Energy sector:** Only major S&P 500 sector in green YTD 2026; XLE +44.64% past year; Energy #1 sector YTD
+- **XLE technicals:** 52-week range $39.75-$63.46; 52-week high $63.46 (set Mar 30, 2026); current $59.65 is 6.4% below ATH; resistance overhead
+
+### Economic Calendar (May 1)
+- **8:30 AM ET: April NFP (Nonfarm Payrolls)** — most important US jobs print; prior +178K (March); market-moving
+- **8:30 AM ET: April Unemployment Rate** — prior 4.3%
+- **ISM Manufacturing PMI** (mid-morning) — secondary
+- No CPI/PPI/FOMC today
+
+### XLE Update
+- Last close: $59.65 (+3.64% from avg entry; unrealized +$628.47)
+- Trailing stops auto-trailed: HWM $59.835 / stop $53.8515 (10% trail)
+- Stop tightening thresholds: +15% = $66.19 (not reached); +20% = $69.07
+- CVX + XOM BMO earnings = direct XLE catalyst at open; if both beat, XLE gaps toward $63.46 52-week high; if miss, profit-taking risk
+- Thesis intact: oil $106 WTI, Hormuz, energy sector dominance
+
+### Trade Ideas
+1. **HOLD XLE (current)** — CVX + XOM both reporting BMO + NFP at 8:30 AM = extreme binary risk at open; wait for data to clear before assessing stops. If both earnings beat AND NFP solid, evaluate stop tightening if XLE breaches $63.46 (52-week high). Do not touch before 10 AM.
+2. **WATCH AAPL / XLK post-gap** — Apple +3% premarket on Q2 beat; Supreme Court tariff elimination = tech tailwind. Entry after gap is speculation; monitor at 10-10:30 AM if AAPL consolidates above gap level. Would be trade #2 this week (2/3). Entry ~$210+ requires confirmation; stop 10% below; target +20%.
+3. **PASS on CVX/XOM direct** — thesis already held via XLE; adding individual names increases concentration in same sector without diversification benefit. Skip.
+
+### Risk Factors
+- NFP at 8:30 AM: strong print = hawkish Fed concern; weak print = recession fear = energy demand concern = XLE sells off
+- CVX + XOM both reporting BMO: one or both miss = XLE gap down at open; profits at risk
+- XLE approaching 52-week high $63.46 — resistance is real; distribution risk if oil reverses
+- Iran/Hormuz ceasefire headline = sharp WTI reversal; geopolitical premium could unwind fast
+- Supreme Court tariff removal = potential sector rotation out of energy into tech/consumer; monitor flow
+- VIX ~18: moderate; spike above 20 = risk-off signal; watch first hour
+- Alpaca API offline for live monitoring — unable to verify stop GTC orders are still active until API restored
+
+### Decision
+**HOLD — too much binary risk at 8:30 AM (NFP + CVX + XOM earnings). Let data clear by 10 AM.** XLE position protected at $53.8515 stop. If CVX/XOM beat + NFP solid + energy holds → evaluate AAPL/XLK entry mid-morning as trade 2/3. If data disappoints → hold cash, protect XLE gains. Week count: 1/3 (2 remaining). Patience > activity. Also: investigate Alpaca API whitelist issue before next trading session.
+
+---
+
 ## 2026-04-30 — Pre-market Research
 
 ### Account
