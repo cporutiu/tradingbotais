@@ -3,6 +3,44 @@
 Daily pre-market research entries will be appended here.
 Format each entry:
 
+## 2026-05-04 — Pre-market Sector Candidates (pre-seeded Sunday)
+
+> Strategy updated 2026-05-03: deployment floor, sector diversification caps, 17-20% sizing, sector watchlist now active. Monday arrives with 2 live setups ready — not 1 idea and "watch maybe."
+
+### Deployment Status Entering Week 2
+- Deployed: ~17.6% (XLE 300sh) — **below 40% floor; TRADE default is active**
+- Trade slots: 3/3 available for week of May 5-8
+- Blocking catalysts: NFP May 8 8:30 AM ET — blackout Thu/Fri for new entries
+- Open window for new positions: Monday May 4 through Wednesday May 7
+
+### Sector Candidate 1 — Technology: NVDA
+- **Catalyst:** Mag-7 earnings gauntlet fully cleared (AMZN beat +69.5% EPS AMC May 1); AI infrastructure spending accelerating; NVDA described as "criminally undervalued at $200" in prior research
+- **Setup:** Dip-buy at $190-200 support; AI demand thesis intact (data center, inference compute); FY2028 EPS estimates $16-18
+- **Entry trigger:** Confirm green premarket Monday + S&P futures positive; buy limit within 0.5% of open
+- **Sizing:** ~$19,000-20,000 (17-20% equity, ~95-100 shares at $200)
+- **Stop:** 10% trailing GTC placed immediately on fill (~$180 initial stop at $200 entry)
+- **Target:** +15-20% (~$230-240); R:R 2:1 minimum
+- **Sector:** Technology (XLK) — opens 2nd sector alongside Energy
+- **Alternative:** XLK ETF if single-stock NVDA vol feels elevated (same thesis, lower beta)
+
+### Sector Candidate 2 — Industrials: XLI / CAT
+- **Catalyst:** ISM Manufacturing April 2026 = 52.7 (expansion, highest since Aug 2022); GDP Q1 +2.0% (not recessionary); infrastructure and reshoring narrative intact
+- **Setup:** XLI ETF for broad industrials exposure; CAT (Caterpillar) for more concentrated infrastructure play
+- **Entry trigger:** Confirm sector green Monday + ISM/macro trend holding; use only if NVDA setup does not trigger (avoid opening both simultaneously — week trade count limits)
+- **Sizing:** ~$17,000-19,000 (17-19% equity)
+- **Stop:** 10% trailing GTC placed immediately on fill
+- **Target:** +15-20%; R:R 2:1
+- **Sector:** Industrials — adds 3rd sector if both NVDA and XLI entered this week
+- **Priority:** Secondary to NVDA; enter Thursday only if NVDA entered Mon-Wed and slot remains
+
+### Week 2 Decision Rules
+- Open NVDA (or XLK) Monday or Tuesday if futures confirm — this satisfies deployment floor
+- If NVDA entered and thesis holds, assess XLI/CAT Thursday (pre-NFP window closes Wednesday EOD)
+- Do NOT open both on the same day — pace entries, one per session
+- NFP May 8: full blackout for new entries Wednesday EOD onward
+
+---
+
 ## 2026-04-30 — Pre-market Research
 
 ### Account
