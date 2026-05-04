@@ -292,6 +292,55 @@ HOLD — XLE position intact and green. No new positions today. Rationale: ADP +
 
 ---
 
+## 2026-05-04 — Pre-market Research
+
+### Account
+- Equity: $100,479.76 (+$91.29 vs Friday EOD $100,388.47) | Cash: $82,733.47 (82.3%)
+- Buying power: $183,213.23 | Daytrade count: 0
+- Open positions: 1 — XLE 300sh @ avg $57.5551, current $59.1543, unrealized +$479.76 (+2.78%)
+- Trailing stops: 93sh (b1043e8f) + 207sh (4968bf9e) — GTC stop $53.8515, HWM $59.835
+- **Deployed: ~17.7% — BELOW 40% FLOOR → TRADE MODE ACTIVE this week**
+- Week trade count: 0/3 (new week)
+- Note: Fixed broken PERPLEXITY_MODEL in .env (`-pro` → `sonar-pro`)
+
+### Market Context
+- **WTI**: ~$101-102/bbl (down from ~$106 last Friday; -4% pullback; Hormuz risk premium persisting but softening)
+- **Brent**: ~$101.94-116/bbl (data inconsistent; tracking WTI directionally)
+- **S&P 500 futures**: ESM26 ~6,657, +0.10-0.23% premarket — constructive open
+- **VIX**: ~17.0 (est. from April 16.89 data) — low risk, under 18 threshold
+- **Sector YTD**: Energy #1 (+22-38%), Staples #2 (+10.7%), Materials #3 (+9.7%), Utilities (+8.3%), Industrials (+4.6-9.6%); Tech/Financials/Healthcare lagging
+- **Economic cycle**: early-cycle — GDP rebounding to 2.2%, Fed rate cuts, fiscal easing, recession odds ~30%
+- **Today's catalysts**: Manufacturing/Shipments/Orders 10 AM ET (minor); Fed Williams speech 4:50 PM; **PLTR earnings AMC tonight** (Q1 EPS est $0.27, Rev est $1.54B — AI/defense catalyst)
+- **Earnings BMO**: BOH ($1.34 EPS est), CCBG, BORR, NFE — no major market movers
+- **Earnings AMC**: **PLTR** (Palantir, AI catalyst) — watch for market-wide reaction
+- **This week blockers**: NFP Friday May 8 (8:30 AM ET), CPI May 12 — no same-day named blockers today
+- **AI/tech**: NVDA $199.57, support $197.63, resistance $217.07, avg target $270.73 (+36%); memory stocks +400% in 4 months; April tech rally +17%
+
+### XLE Update
+- Premarket: $59.15 (+0.51% vs $58.85 Friday close) — slight recovery; thesis intact
+- Both stops locked at HWM $59.835 / stop $53.8515 (price still below HWM)
+- Oil pulled back ~4% ($106 → $101): softening but still elevated; Hormuz risk premium persisting
+- EIA oversupply to $55 year-end forecast remains a tail risk to monitor
+- Energy sector still #1 YTD; macro early-cycle supports commodity demand
+
+### Trade Ideas
+1. **HOLD XLE (current)** — thesis intact; +2.78% unrealized; stops in place; energy #1 sector. Oil pullback ($101) is drift, not thesis break. No action.
+2. **BUY NVDA today** — DEPLOYED 17.7% → TRADE MODE. NVDA at $199.57 support ($197.63); AI hardware demand intact; no NVDA earnings until May 20 (no near-term gap risk); strong buy consensus (+36% target $270.73). Entry ~$197-202, 10% trailing stop (~$177-182), target $270+ (min 2:1 R:R). PLTR earnings AMC tonight could be secondary catalyst (beat = AI tailwind for NVDA). Allocation: 17-20% of equity (~$17-20K, ~85-100 shares). Sector: Technology (slot 1 of 2 allowed).
+3. **WATCH CAT (Industrials) for later this week** — ISM Manufacturing 52.7 (expansion, highest since Aug 2022), early-cycle favorable, Industrials #4 sector YTD. Entry trigger: confirm no tariff escalation news before entry. Reserve trade slot 2 for Wed/Thu. Target: 17-20% allocation.
+4. **PASS XOM (2nd energy slot)** — oil at $101 pulling back; don't add energy exposure while thesis softening. Revisit if WTI regains $105.
+
+### Risk Factors
+- **PLTR AMC tonight**: AI earnings miss could pressure NVDA; contained to AI/tech space (not broad market like AMZN was)
+- **NFP Friday May 8**: Next major macro event; size positions to hold through it
+- **Oil pullback**: WTI $101 vs $106 last week; EIA oversupply forecast; if WTI breaks $95, XLE thesis deteriorates
+- **NVDA volatility**: 7.48% daily vol; ensure 10% trailing stop placed immediately on fill
+- **Deployed floor**: Must deploy ≥3 positions or reach 60%+ deployment by Wednesday per strategy urgency check
+
+### Decision
+**TRADE — open NVDA position today.** Deployed 17.7% with no named same-day blockers; TRADE mode is mandatory. NVDA offers best risk/reward right now: cleared from Mag-7 gauntlet, AI momentum, $197 support, 36% upside target, no earnings until May 20. Enter ~$197-202 range, 17-20% allocation (~85-100 shares), place 10% trailing stop GTC immediately. Reserve 2 more trade slots for CAT (Thu) and one TBD. Monitor PLTR AMC tonight — beat = confirm NVDA hold; miss = reassess Tuesday morning but thesis unlikely broken (hardware ≠ software).
+
+---
+
 ## 2026-05-01 — Pre-market Research
 
 ### Account
