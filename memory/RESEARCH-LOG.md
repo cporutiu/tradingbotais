@@ -308,3 +308,51 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **Thesis check:** Intact. ISM positive, WTI ~$106 elevated, energy sector #1 YTD, geopolitical premium holding.
 - **Action:** None. No cuts (-7% threshold not breached). No stop tightening (+15% = $66.19 not reached).
 - **Next:** AMZN reports AMC tonight — if beat + futures positive Monday, assess NVDA/XLK second position entry. NFP May 8 is next major risk event.
+
+---
+
+## 2026-05-04 — Pre-market Research
+
+### Account Snapshot
+- **API status:** Alpaca endpoint blocked (host not in allowlist — networking constraint). Snapshot estimated from last EOD (May 1, Day 6).
+- **Equity (est.):** ~$100,388–$100,550 (XLE ~$58.90 premarket vs $58.85 close, slight green)
+- **Cash (est.):** $82,733.47 (82.4%)
+- **Buying power (est.):** ~$183,000
+- **Daytrade count:** 0 (week 2 begins)
+- **Open positions:** 1 — XLE 300sh @ avg $57.5551 (unrealized est. +$400-$500 / +2.3-2.9%)
+- **Trailing stops:** 93sh (b1043e8f) + 207sh (4968bf9e) — GTC stop $53.8515, HWM $59.835
+- **Week trade count:** 0/3 (new week)
+
+### Market Context
+- **WTI:** ~$102.9/bbl (+0.94% premarket) — pulled back from $126 peak (Apr 30); Iran sent updated peace proposal to mediators in Pakistan (May 1); today's trade "choppy" as Trump plans to free stranded ships; US blockade of Iranian ports ongoing. Geopolitical premium still intact but eroding.
+- **Brent:** ~$111/bbl — elevated but retreating from multi-year highs. WTI+Brent up ~60% since US/Israel-led action began Feb 28.
+- **S&P 500 futures:** ESM26 +0.07% premarket — muted but positive. 76% of Polymarket traders betting "Up." AMZN beat last week = constructive for Monday open.
+- **VIX:** 16.89 (May 1 close) — easing, below 20, moderate risk environment
+- **Sector YTD:** Materials #1 (+22%), Energy (XLE) still top cyclical leader; Industrials, Staples positive. Tech (XLK), Communications, Consumer Discretionary lagging.
+- **Today's releases (Mon May 4):** Durable Goods + Factory Orders 10 AM ET (moderate)
+- **Week ahead:** JOLTS Tue 10 AM | ISM Services Tue 10 AM | **FOMC decision Wed 2 PM ET** (hold expected, 3.5-3.75% rate) | **NFP Friday May 8** (consensus 49K, well below 12-month avg) — biggest risk events of the week
+- **Earnings this week:** PLTR reports **AMC today** (EPS +115% expected, DoD Maven $2.3B contract; options pricing ±10% move) | AMD AMC tomorrow | ARM Holdings Wed AMC | Disney, Vertex, Diamondback, Williams Cos.
+- **AMZN Q1 aftermath:** Beat all metrics — net sales $181.5B (+17% YoY), EPS $2.78 vs $1.64 estimate, AWS +28% growth (15-quarter high). Stock +2.1% after-hours. Market-wide gap risk from last week cleared.
+
+### XLE Update
+- Premarket: ~$58.90 (trading range reported $58.28-$59.92 on May 4)
+- Trailing stops: locked at HWM $59.835 / stop $53.8515; price needs new HWM to trail higher
+- Oil thesis: WTI $103 is ~3% below May 1 level ($106) — geopolitical premium compressing as Iran ceasefire talks advance. Key risk: any formal ceasefire = sharp oil reversal.
+- XLE at $58.90 = +2.34% above avg entry; well above -7% cut threshold ($53.53) and stop ($53.85)
+- Energy sector still #1 cyclical YTD; thesis intact but oil momentum weakening
+
+### Trade Ideas
+1. **HOLD XLE (current)** — thesis intact; stops in place; position +2.3%. FOMC Wed + NFP Fri = no new exposure. Patience > activity.
+2. **WATCH: PLTR (post-earnings)** — reports AMC today. If beats 115% EPS and raises guidance: entry Tuesday ~$140-$145 zone; 10% trailing stop; target +20-25%. Catalyst: DoD Maven $2.3B contract, AI government spending supercycle. Risk: ±10% options-implied move, elevated valuation ($144 premarket).
+3. **WATCH: FANG or XOP** — secondary energy ETF if WTI stabilizes >$100 post-ceasefire risk. Do not add same-day as FOMC or ahead of NFP.
+
+### Risk Factors
+- **FOMC Wed May 6-7:** Hold expected but any hawkish pivot (tariff-inflation language) = broad selloff; energy correlates in risk-off
+- **NFP Fri May 8:** Consensus 49K (weak). Miss = recession fear = energy demand concern = XLE selloff
+- **Iran ceasefire:** Any peace deal headline = oil reversal; WTI could drop $15-20/bbl fast; XLE trailing stop is 8.5% below current price — would absorb partial reversal but not a full unwind
+- **Oil momentum:** WTI pulled back from $126 → $103 in 4 days; directional momentum turning; watch for close below $100 as stop-tightening signal
+- **PLTR earnings:** If miss = broad AI/tech negative sentiment (not directly impactful to XLE but weighs on risk appetite)
+- **VIX 16.89:** Complacent; spike above 20 = hedge signal
+
+### Decision
+**HOLD — no new positions today.** FOMC Wednesday + NFP Friday = unacceptable macro risk window for adding exposure. XLE position healthy (+2.3% unrealized, stops in place). Monitor PLTR AMC tonight — if strong beat, evaluate entry Tuesday morning pre-FOMC (tight window). Do not add any position Day-of or Day-before FOMC. Week count: 0/3.
