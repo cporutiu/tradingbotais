@@ -143,3 +143,15 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, stop $53.8515, HWM $59.835
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, stop $53.8515, HWM $59.835
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, stop $177.22, HWM $196.91
+
+---
+
+## Day 7 — EOD Snapshot (May 04, Monday)
+**Portfolio:** $100,365.52 | **Cash:** $63,682.17 (63.45%) | **Day P&L:** -$22.95 (-0.02%) | **Phase P&L:** +$365.52 (+0.37%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| NVDA | 95 | $200.54 | $198.53 | +0.04% | -$190.95 (-1.00%) | 10% trail (HWM $199.20 / stop $179.28) |
+| XLE | 300 | $57.5551 | $59.41 | +0.95% | +$556.47 (+3.22%) | 10% trail (HWM $59.835 / stop $53.8515) |
+
+**Notes:** Day 7, Monday. NVDA fill confirmed (95sh @ $200.54, order b87b80de); week count: 1/3. Portfolio -$22.95 on the day: XLE gained +$168 intraday (+0.95% to $59.41) while NVDA's unrealized loss from cost basis (-$190.95, -1.00%) more than offset it — NVDA closed $198.53 vs $200.54 entry. NVDA trailing stop auto-updated to HWM $199.20 / stop $179.28 (improved from midday $196.91/$177.22). XLE stops locked at HWM $59.835 / stop $53.8515 (price below HWM all day). No stops triggered, no losers cut (-7% threshold not breached), no tightening needed (+15% not reached). Deployed $36,683 (36.5%) — below 75-85% target floor; watch for 3rd position setup tomorrow. Week cap: 1/3 used, 2 slots remaining.
