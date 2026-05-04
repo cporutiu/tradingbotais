@@ -39,6 +39,14 @@ Format each entry:
 - Do NOT open both on the same day — pace entries, one per session
 - NFP May 8: full blackout for new entries Wednesday EOD onward
 
+### Afternoon Addendum (Midday Scan 2026-05-04)
+- **NVDA fill confirmed:** 95sh @ $200.54 avg. Trailing stop placed (e15a4b83) — 10% trail GTC, HWM $196.91, stop $177.22.
+- **NVDA midday:** $196.78 (-1.88% from entry). Below $199-200 support. No negative catalyst found — normal open-day volatility. AI thesis intact; Mag-7 cleared, no earnings until May 20.
+- **XLE midday:** $59.34 (+3.10% from entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
+- **Deployed:** ~36.4% (2 positions). Below 40% floor — TRADE default still active for Tue-Wed window.
+- **Next decision point:** Tuesday May 5 — assess XLI/CAT or second Technology entry (NVDA must hold thesis). NFP blackout begins Wednesday EOD; must execute 3rd position by Wednesday if deploying.
+- **Week count:** 1/3 used. 2 slots remain, window closes Wednesday EOD.
+
 ---
 
 ## 2026-04-30 — Pre-market Research

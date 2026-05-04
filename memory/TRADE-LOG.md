@@ -102,3 +102,44 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 | XLE | 300 | $57.5551 | $58.85 | -1.34% | +$388.47 (+2.25%) | 10% trail (HWM $59.835 / stop $53.8515) |
 
 **Notes:** Day 6, Friday (Jobs Friday / ISM day). No trades executed — week ends 1/3. XLE pulled back -1.34% to $58.85; pre-AMZN AMC caution drove afternoon selling. Position remains +2.25% above avg entry and well above -7% cut threshold. Both trailing stop GTC orders (93sh b1043e8f + 207sh 4968bf9e) locked at HWM $59.835 / stop $53.8515 — price below HWM all day, no trail update. NFP and ISM both came in constructive; energy thesis intact. AMZN reported AMC. Next window: Monday — assess AMZN aftermath + any weekend macro; evaluate new setup if week-2 cap permits.
+
+---
+
+## 2026-05-04 — Market-Open Execution
+
+**Week trade count: 1/3** (NVDA order pending fill)
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-05-04 | NVDA | BUY | 95 | PENDING | 10% trail GTC (pending fill) | $270+ (+35%) | 2:1+ | AI hardware momentum; Mag-7 gauntlet cleared; no NVDA earnings until May 20; $199-200 support; FY2028 EPS $16-18; opens 2nd sector (Technology) |
+
+**Execution notes:**
+- Order b87b80de: 95sh NVDA market day, submitted 2026-05-04 09:34:48 ET
+- Status: **PENDING FILL** — Alpaca paper engine delay at open; data endpoint was briefly unreachable 09:31-09:34 ET; order accepted but not simulated
+- First attempt (432b9ead) cancelled after 3 min unfilled; resubmitted successfully
+- Stop: place 10% trailing GTC immediately once fill confirmed at midday scan
+- Approximate entry zone: $199-201 (NVDA ask $200.16 at time of order)
+- Approximate stop: ~$180 (10% below $200 entry)
+- Week slot used: 1/3 (pending confirmation)
+
+**Open Orders:**
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, stop $53.8515, HWM $59.835
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, stop $53.8515, HWM $59.835
+- Buy 95 NVDA market day (b87b80de): PENDING FILL
+
+**XLE status (market-open 2026-05-04):** $58.47 (-0.65% vs $58.85 close; +1.59% from avg entry). Both stops locked at HWM $59.835 — price below HWM, no trail update. XLE pulling back with oil at ~$101; thesis intact, position well above -7% cut.
+
+**Midday 2026-05-04:**
+- **NVDA fill confirmed:** 95sh @ $200.54 avg (order b87b80de filled at open). Week count: 1/3 confirmed.
+- **NVDA trailing stop placed:** order e15a4b83 — sell 95sh NVDA trailing_stop 10% GTC, HWM $196.91, stop $177.22
+- **NVDA midday:** $196.78 (-1.88% from entry $200.54 / -0.84% from May 1 close $198.45). Unrealized -$357.20. Below $199-200 support entry zone; no negative catalyst identified via research. Normal intraday pullback. Thesis intact (AI hardware, Mag-7 cleared, no NVDA earnings until May 20).
+- **XLE midday:** $59.34 (+0.83% intraday; +3.10% from avg entry $57.5551). Unrealized +$535.47. Both stops locked at HWM $59.835 / stop $53.8515 — price below HWM, no trail update.
+- **Losers cut:** None (-7% threshold not breached: NVDA -1.88%, XLE +3.10%)
+- **Stop tightening:** None (+15% threshold not reached: NVDA needs $230.62, XLE needs $66.19)
+- **Thesis break check:** No. Both theses intact.
+- **Portfolio:** ~$100,178 | Cash: ~$63,682 (63.6%) | Deployed: ~$36,496 (36.4%, 2 positions) | Week count: 1/3
+
+**Open Orders (midday 2026-05-04):**
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, stop $53.8515, HWM $59.835
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, stop $53.8515, HWM $59.835
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, stop $177.22, HWM $196.91
