@@ -471,3 +471,11 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 
 ### Decision
 **TRADE — enter CAT (Industrials) at market open.** Deployed 36.5%, no named 24h blocker (JOLTS/ISM Services ≠ named blockers), deployment floor rule mandatory. Confirm ISM Services ≥50 at 9 AM before placing order. 20 shares ~$18,580. Place 10% trailing stop GTC immediately on fill. Preserve 1 trade slot for Wednesday (XOM or 4th position). No entries Thursday (NFP blackout). Week count after CAT: 2/3.
+
+### Afternoon Addendum (Midday Scan 2026-05-05)
+- **ISM Services April 2026:** 53.8 — confirmed expansion; CAT entry thesis validated.
+- **CAT midday:** $901.77 (+1.02% from entry $892.689; intraday HWM $908.90). Stop auto-trailed to $818.01. Day 1 thesis holding.
+- **NVDA midday:** $197.57 (-1.48% from entry $200.54). Normal drift, no catalyst. AI thesis intact; hold through May 20 earnings.
+- **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
+- **Action:** None. No cuts, no stop tightening.
+- **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.

@@ -180,3 +180,19 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, stop $800.3205, HWM $889.245
 
 **Portfolio (post-trade 2026-05-05):** Equity $100,323.02 | Cash $45,828.39 (45.7%) | Deployed $54,494.63 (54.3%) | 3 positions | Week count: 2/3 | DT count: 1
+
+**Midday 2026-05-05:**
+- **CAT midday:** $901.77 (+1.02% from entry $892.689; +3.09% today). Stop auto-trailed to HWM $908.90 / stop $818.01 (10% trail). ISM Services April 2026 confirmed 53.8 (expansion) — thesis intact.
+- **NVDA midday:** $197.57 (-1.48% from entry $200.54; -0.46% today). Stop auto-trailed to HWM $200.24 / stop $180.22 (10% trail). No negative catalyst — normal drift. AI thesis intact; no earnings until May 20.
+- **XLE midday:** $59.555 (+3.48% from avg entry $57.5551; +0.28% today). Both stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update). Thesis intact — energy #1 YTD, WTI ~$104 elevated.
+- **Losers cut:** None (-7% threshold not breached: CAT +1.02%, NVDA -1.48%, XLE +3.48%)
+- **Stop tightening:** None (+15% thresholds not reached: CAT needs $1,026.59, NVDA needs $230.62, XLE needs $66.19)
+- **Thesis break check:** None. All 3 intact.
+- **Portfolio:** Equity ~$100,499 | Cash $45,828 (45.6%) | Deployed ~$54,671 (54.4%, 3 positions) | Week count: 2/3 | DT count: 1
+- **Deployment note:** 54.4% deployed — below 75-85% floor. 1 trade slot remaining; Wednesday is last pre-NFP entry window (NFP Thursday May 8 = blackout).
+
+**Open Orders (midday 2026-05-05):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $908.90, stop $818.01
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $200.24, stop $180.22
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
