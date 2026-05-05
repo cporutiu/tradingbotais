@@ -155,3 +155,28 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 | XLE | 300 | $57.5551 | $59.41 | +0.95% | +$556.47 (+3.22%) | 10% trail (HWM $59.835 / stop $53.8515) |
 
 **Notes:** Day 7, Monday. NVDA fill confirmed (95sh @ $200.54, order b87b80de); week count: 1/3. Portfolio -$22.95 on the day: XLE gained +$168 intraday (+0.95% to $59.41) while NVDA's unrealized loss from cost basis (-$190.95, -1.00%) more than offset it — NVDA closed $198.53 vs $200.54 entry. NVDA trailing stop auto-updated to HWM $199.20 / stop $179.28 (improved from midday $196.91/$177.22). XLE stops locked at HWM $59.835 / stop $53.8515 (price below HWM all day). No stops triggered, no losers cut (-7% threshold not breached), no tightening needed (+15% not reached). Deployed $36,683 (36.5%) — below 75-85% target floor; watch for 3rd position setup tomorrow. Week cap: 1/3 used, 2 slots remaining.
+
+---
+
+## 2026-05-05 — Market-Open Trades
+
+**Week trade count: 2/3**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-05-05 | CAT | BUY | 20 | $892.689 | 10% trail GTC (order aa646f6e, HWM $889.245, stop $800.32) | $1,071 (+20%) | 2:1 | ISM Manufacturing 52.7 + ISM Services 53.8 (both expansion); Industrials #3 sector; infrastructure/data center construction; 3rd sector opened (Energy + Tech + Industrials) |
+
+**Execution notes:**
+- Order ddf11c35: 20sh CAT market day, submitted 2026-05-05 09:31:55 ET
+- Fill: 20sh @ $892.689 avg (paper engine filled at actual trade price; premarket ask was $929.52)
+- Stop order aa646f6e: sell 20sh CAT trailing_stop 10% GTC, HWM $889.245, stop $800.3205
+- ISM Services April 2026 confirmed 53.8 (above 50 = expansion) before entry ✓
+- Week slot used: 2/3
+
+**Open Orders (market-open 2026-05-05):**
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, stop $53.8515, HWM $59.835
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, stop $53.8515, HWM $59.835
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, stop $179.46, HWM $199.40
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, stop $800.3205, HWM $889.245
+
+**Portfolio (post-trade 2026-05-05):** Equity $100,323.02 | Cash $45,828.39 (45.7%) | Deployed $54,494.63 (54.3%) | 3 positions | Week count: 2/3 | DT count: 1
