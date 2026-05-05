@@ -403,3 +403,71 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **Thesis check:** Intact. ISM positive, WTI ~$106 elevated, energy sector #1 YTD, geopolitical premium holding.
 - **Action:** None. No cuts (-7% threshold not breached). No stop tightening (+15% = $66.19 not reached).
 - **Next:** AMZN reports AMC tonight — if beat + futures positive Monday, assess NVDA/XLK second position entry. NFP May 8 is next major risk event.
+
+---
+
+## 2026-05-05 — Pre-market Research
+
+### Account Snapshot
+- **Equity:** $100,387.47 | **Cash:** $63,682.17 (63.4%) | **Deployed:** $36,705 (36.5%)
+- **Buying power:** $164,069.64 | **Daytrade count:** 0
+- **Positions:** 2 open — NVDA (95sh @ $200.54, current $198.54, unrealized -$190 / -1.00%) + XLE (300sh @ $57.5551, current $59.49, unrealized +$580 / +3.36%)
+- **Trailing stops:** NVDA e15a4b83 (stop $179.28, HWM $199.20 / 10%) | XLE b1043e8f+4968bf9e (stop $53.8515, HWM $59.835 / 10%)
+- **Week trade count:** 1/3 (2 slots remaining)
+
+### Market Context
+- **WTI:** ~$104.40/bbl (-2.0%) | **Brent:** ~$113.50/bbl (-1.0%) — minor pullback from elevated levels; Hormuz/geopolitical premium intact, not thesis-breaking
+- **S&P 500:** Closed 7,200.75 on May 4 (-0.41%); futures slightly lower today; Dow ~46,958, Nasdaq ~25,067
+- **VIX:** 18.51 close May 4 (spiked +8.95% on the day, range 17.15-19.08); futures ~19.45 — **medium risk zone (18-25)**
+- **Today's releases:** JOLTS Job Openings 10:00 AM ET + ISM Services PMI 9:00 AM ET — watch ISM; no CPI/PPI/FOMC today
+- **Earnings BMO today:** None of note; next major event = NFP Thursday May 8 8:30 AM ET
+- **Economic cycle:** mid-cycle (ISM Mfg 52.7, GDP +2.0%, stable unemployment, PCE inflation above 2%)
+- **Sector YTD leaders:** Energy +26%+ (#1), Consumer Staples (+10.7%), Industrials (+9.6%), Materials — all classified Leading. Tech (XLK) worst YTD but recovering in April (+2% in April vs Energy -14% in April)
+- **RS ranking (20-day vs SPY, strongest→weakest):** XLE, GLD, XLP, XLI, XLB, SLV, XLU, XLRE, EEM, HYG, SPY, IWM, XLV, XLF, QQQ, XLK, XLY, SOXX, XLC
+
+### Position Updates
+
+**NVDA ($198.54, -1.00% from entry $200.54):**
+- AI thesis fully intact: Motley Fool targets $284 (25.4x FY28 EPS $11.20); hyperscalers remain supply-constrained; Blackwell/Rubin demand; earnings May 20
+- CNBC: NVDA coverage positive — "massive run, setup still surprisingly tense"; AI spending exploding, 75% surge potential cited
+- Surge from $165 → ~$200 since late March (+30%); ML models predict $205-217 range near-term
+- Current -1.00% from entry — within noise; no thesis break; no action; stop $179.28 intact
+- Risk: NVDA reports May 20 — within hold window; no pre-earnings cut needed yet
+
+**XLE ($59.49, +3.36% from avg entry $57.5551):**
+- 10-day MA crossed above 50-day MA on May 4 (bullish technical confirmation)
+- Elliott Wave: incomplete bullish sequence, $75 target ahead
+- Oil pullback today (-2%) = short-term noise; Brent still $113.50 (elevated); geopolitical premium intact
+- Both stops locked at HWM $59.835 / stop $53.8515; XLE needs to set new HWM to trail higher
+- Risk: EIA long-term forecast oil → $55 by end-2026 (far-dated, not actionable today)
+
+### Trade Ideas
+
+1. **TRADE: CAT (Caterpillar) — Industrials #3 on watchlist** ✓ PRIMARY
+   - **Catalyst:** ISM Manufacturing 52.7 (expansion, highest since Aug 2022); ISM Services today — if expansion confirms, Industrials tailwind strong; CAT benefits from infrastructure spending + AI data center buildout (construction equipment)
+   - **Entry:** Market at open, after ISM Services confirms ≥50 at 9 AM ET; pre-market ask ~$929
+   - **Sizing:** 20 shares (~$18,580, ~18.5% equity) — within 17-20% target
+   - **Stop:** 10% trailing GTC immediately on fill (~$840 initial stop)
+   - **Target:** $1,000-1,050 (10-15% move); 2:1+ R:R
+   - **Sector check:** Opens 3rd sector (Industrials); total sectors: Energy + Technology + Industrials ✓
+   - **After entry:** Deployed ~55% (still below 75% floor — may need 4th position later this week)
+
+2. **WATCH: XOM (ExxonMobil) — Energy #1 on watchlist** — Hold for Thursday or next week
+   - Not today: oil pulling back -2%; VIX elevated; prefer ISM confirmation first
+   - Max 1 more energy position allowed; currently 1 energy (XLE)
+   - Re-evaluate Wednesday if oil stabilizes and VIX pulls back
+
+3. **PASS: FCX (Freeport-McMoRan) — Materials #4 on watchlist**
+   - Commodity cycle thesis valid but XLB neutral-positive; energy pullback creates read-through risk
+   - Lower priority than CAT given sector ranking
+
+### Risk Factors
+- **VIX 18.51 → ~19:** Medium risk zone; elevated from prior week's 17-18 range — position sizing discipline critical
+- **NFP Thursday May 8:** Named blocker; NO new entries Thursday; enter CAT today or Wednesday only
+- **ISM Services 9 AM ET:** If below 50 = recession signal = thesis break for Industrials entry; abort CAT if ISM Services contracts
+- **Oil pullback today (-2%):** Watch XLE if oil accelerates lower; -7% cut threshold = $53.49 (stop $53.85 covers it)
+- **Deployment gap:** After CAT entry, deployed ~55% — still 20 points below 75% floor; need 4th position this week (Wednesday slot)
+- **NVDA -1% from entry:** Not concerning; earnings May 20 is the next inflection
+
+### Decision
+**TRADE — enter CAT (Industrials) at market open.** Deployed 36.5%, no named 24h blocker (JOLTS/ISM Services ≠ named blockers), deployment floor rule mandatory. Confirm ISM Services ≥50 at 9 AM before placing order. 20 shares ~$18,580. Place 10% trailing stop GTC immediately on fill. Preserve 1 trade slot for Wednesday (XOM or 4th position). No entries Thursday (NFP blackout). Week count after CAT: 2/3.
