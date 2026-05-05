@@ -3,6 +3,60 @@
 Daily pre-market research entries will be appended here.
 Format each entry:
 
+## 2026-05-05 — Pre-market Research
+
+### Account Snapshot (last known — Alpaca API unreachable, host allowlist block)
+- **Equity:** ~$100,365.52 (EOD May 4) | **Cash:** $63,682.17 (63.45%)
+- **Buying power:** ~$127K | **Daytrade count:** 0
+- **Open positions:** 2
+  - XLE: 300sh @ avg $57.5551, close $59.41, unrealized +$556.47 (+3.22%), stop HWM $59.835 / stop $53.8515
+  - NVDA: 95sh @ $200.54, close $198.53, unrealized -$190.95 (-1.00%), stop HWM $199.20 / stop $179.28
+- **Deployed:** ~36.5% — **BELOW 40% FLOOR → TRADE MODE ACTIVE**
+- **Week trade count:** 0/3 (new week May 5-8)
+- **Note:** Perplexity API also unreachable (host allowlist). All market data via WebSearch fallback.
+
+### Market Context
+- **WTI:** ~$103-105/bbl (premarket; was $103.42 Monday); **Brent:** ~$114/bbl — Iran war ongoing; IRGC launched cruise missiles at US warships; fragile 1-month ceasefire proposed but not in effect
+- **S&P 500:** Closed 7,200.75 May 4 (-0.41%); futures flat/slightly negative premarket
+- **VIX:** 18.24-18.29 (up +7.36% on May 4) — elevated but below 20 fear threshold
+- **Sector YTD (May 2026):**
+  - **Leading:** Energy #1 (+30.7%/+21.6% XLE), Consumer Staples, Industrials (+Caterpillar +32%), Materials
+  - **Lagging:** Technology (XLK — confirmed in "Lagging" quadrant by Schwab rotation analysis), Comms, Consumer Disc, Financials
+  - **Weakening:** Healthcare
+- **Tariffs:** Supreme Court struck down Trump tariffs Friday — eases costs for energy drillers and manufacturers (XLE and CAT positive)
+- **Today's earnings (BMO):** Diamondback Energy (FANG) Q1 2026 — EPS est $2.96-3.14 (down 31% YoY), Rev est -5.2% YoY; UPS, GME also BMO (no held-name risk)
+- **PLTR AMC (May 4 — confirmed beat):** EPS $0.33 vs $0.28 est; Revenue $1.63B vs $1.54B est (+85% YoY); FY2026 guidance raised to $7.65B (71% growth, beat $7.27B consensus). Massive AI demand validation → NVDA bullish catalyst
+- **Economic calendar today:** No major releases. CPI May 12 is next macro landmine. NFP was May 1 (benign).
+
+### Position Updates
+**XLE** — $59.41 close; WTI $103-105 intact; Iran war premium holding; Supreme Court tariff removal eases driller costs; FANG BMO today (not a held-name blocker — XLE is an ETF). Stop locked at $53.8515 (HWM $59.835 — needs new high to advance). Thesis fully intact: Energy #1 sector YTD, only green sector in S&P 500 for 2026.
+
+**NVDA** — $198.53 close (day high $201.73, low $194.74); -1.00% from avg entry $200.54. PLTR beat explosively (EPS +18% vs est, revenue +85% YoY, guidance +71%) — AI demand validated; NVDA should respond positively premarket. China market share zero (export ban) but non-China demand remains massive. Avg analyst target $270.73 (+36%). No NVDA earnings until May 20.
+
+### Trade Ideas
+1. **HOLD XLE** — thesis intact; oil elevated; stop protecting; FANG BMO is not a named blocker for XLE (ETF). No action.
+2. **HOLD NVDA** — at -1.00% from entry, well above -7% cut threshold; PLTR beat is AI sector tailwind; expect positive price action today. No action unless thesis breaks.
+3. **BUY XLI (Industrials ETF) — 3rd position** — Deployed 36.5%, TRADE mode mandatory. Industrials is a "Leading" sector (Schwab rotation); CAT +32% YTD shows sector strength; ISM Manufacturing 52.7 (expansion, highest since Aug 2022); Supreme Court tariff removal eases $2.6B CAT cost headwind. XLI preferred over single-name CAT for vol management. No Industrials earnings today blocking entry. Opens 3rd sector (Energy / Technology / Industrials). Sizing: 17-20% equity = ~$17K-20K (~120-145 shares XLI at ~$135-145).
+   - Entry: Market open confirm (XLI green premarket); limit within 0.5% of open
+   - Stop: 10% trailing GTC placed immediately on fill
+   - Target: +15-20% (R:R 2:1 minimum)
+   - Week slot: 1/3 used
+4. **PASS FANG (standalone)** — same energy sector as XLE; would exceed 2-position sector cap. Skip.
+
+### Risk Factors
+- **FANG BMO miss** could weigh on energy sector sentiment intraday; watch XLE reaction at open
+- **Iran ceasefire progress** — if peace deal moves forward, WTI could drop $10-15 rapidly; XLE thesis would weaken. Monitor headlines.
+- **VIX 18.29** (elevated, up 7.36% Monday) — market is slightly risk-off; if VIX spikes above 20, reassess XLI entry
+- **S&P 500 -0.41% Monday** — slight downward momentum; if futures deteriorate further premarket, delay XLI entry to midday
+- **NVDA below entry** (-1.00%) — PLTR beat should provide uplift; if NVDA opens red and worsens, reassess at midday
+- **Tariff removal** — market may re-price sector rotations; could be turbulent for energy/industrials until absorption
+- **Deployment floor urgency** — Wednesday urgency check requires ≥1 new position Thursday if 2+ slots unused and deployed < 60%
+
+### Decision
+**TRADE — enter XLI (Industrials ETF) at market open today.** Deployment floor demands it (36.5% deployed, 0 blockers). PLTR beat validates AI/tech thesis broadly. ISM expansion + tariff relief = Industrials tailwind. Opens 3rd sector. NVDA hold (PLTR catalyst). XLE hold (oil intact). Week cap: 2 slots remain after XLI entry (use 1 more Thu if setup exists; NFP June 5 is next major blocker, not this week).
+
+---
+
 ## 2026-05-04 — Pre-market Sector Candidates (pre-seeded Sunday)
 
 > Strategy updated 2026-05-03: deployment floor, sector diversification caps, 17-20% sizing, sector watchlist now active. Monday arrives with 2 live setups ready — not 1 idea and "watch maybe."
