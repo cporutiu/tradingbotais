@@ -196,3 +196,22 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $200.24, stop $180.22
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
 - Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
+---
+
+## Day 8 — EOD Snapshot (May 05, Tuesday)
+**Portfolio:** $100,479.79 | **Cash:** $45,828.39 (45.6%) | **Day P&L:** +$114.27 (+0.11%) | **Phase P&L:** +$479.79 (+0.48%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $905.00 | +3.46% | +$246.22 (+1.38%) | 10% trail (HWM $908.90 / stop $818.01) |
+| NVDA | 95 | $200.54 | $196.94 | -0.78% | -$342.00 (-1.80%) | 10% trail (HWM $200.24 / stop $180.22) |
+| XLE | 300 | $57.5551 | $59.48 | +0.15% | +$577.47 (+3.34%) | 10% trail (HWM $59.835 / stop $53.8515) |
+
+**Notes:** Day 8, Tuesday. CAT entered at market-open (20sh @ $892.689); week count 2/3. Portfolio +$114.27 on the day: CAT led with +3.46% to $905 (+$246 unrealized from entry); XLE held +0.15% to $59.48 (+$577 unrealized from entry); NVDA continued drift -0.78% to $196.94 (-$342 unrealized from entry). CAT stop auto-trailed to HWM $908.90 / stop $818.01; NVDA stop at HWM $200.24 / stop $180.22; XLE both stops locked at HWM $59.835 / stop $53.8515 (price below HWM). No stops triggered, no losers cut (-7% threshold: NVDA -1.80% inside limit; CAT +1.38% and XLE +3.34% well above). No tightening needed (+15% levels: CAT $1,026.59, NVDA $230.62, XLE $66.19 — all unreach). Deployment 54.5% — below 75-85% floor; 1 trade slot remaining. Wednesday is last pre-NFP entry window (NFP May 8 = blackout). Week cap: 2/3 used.
+
+**Open Orders (EOD 2026-05-05):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $908.90, stop $818.01
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $200.24, stop $180.22
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
