@@ -215,3 +215,47 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $200.24, stop $180.22
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
 - Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
+---
+
+## 2026-05-06 — Market-Open Execution (Wednesday)
+
+**Week trade count: 2/3** (no new trades — see below)
+
+**FCX SKIPPED — R:R fails 2:1 minimum:**
+- Planned: 320sh FCX ~$57 (Materials, last pre-NFP entry window)
+- Live quote at 9:30:29 ET: bid $57.95 / ask $64.45 (IEX, $6.50 spread)
+- At ask $64.45: analyst avg PT $65.14 → reward ~$0.55-$5.55, risk $6.45 → R:R 0.1-0.86:1 — fails 2:1 rule
+- Even at bid $57.95: R:R ~1.2:1 — still fails 2:1 rule
+- Rule: skip any trade that fails hard-check rules. No order placed.
+- Week ends 2/3. Deployed stays ~54%. No more entries until Monday (NFP blackout Thu May 8).
+
+**Position status at market-open 2026-05-06:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $918.64 | +$519.02 (+2.91%) | +1.55% | 10% trail HWM $921.17 / stop $829.05 (auto-trailed) |
+| NVDA | 95 | $200.54 | $198.88 | -$157.69 (-0.83%) | +1.21% | 10% trail HWM $200.24 / stop $180.22 (locked) |
+| XLE | 300 | $57.5551 | $57.445 | -$33.03 (-0.19%) | -3.37% | 10% trail HWM $59.835 / stop $53.8515 (locked) |
+
+**Notes:** XLE -3.37% today on oil selloff (WTI ~$100-101, Strait of Hormuz de-escalation). Stop locked at $53.8515 — 6.25% buffer from current $57.445, well above -7% cut threshold ($53.53). CAT stop auto-trailed to HWM $921.17 / stop $829.05. NVDA stop locked (price $198.88 below HWM $200.24). No losers cut. No stop tightening. NFP May 8 blackout — next entry window Monday May 12.
+
+**Open Orders (market-open 2026-05-06):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $921.17, stop $829.05
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $200.24, stop $180.22
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
+**Midday 2026-05-06:**
+- **CAT midday:** $921.53 (+3.23% from entry $892.689; +1.87% today). Stop auto-trailed to HWM $926.50 / stop $833.85. ISM mfg + services both expansion; thesis fully intact.
+- **NVDA midday:** $204.84 (+2.14% from entry $200.54; +4.24% today). Stop auto-trailed to HWM $207.18 / stop $186.46. AI momentum strong; no negative catalyst; thesis intact.
+- **XLE midday:** $57.11 (-0.77% from avg entry $57.5551; -3.94% today). Stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update). Continuing oil selloff on Strait of Hormuz de-escalation / ceasefire headlines (WTI ~$100-101). $57.11 above NAV support $56.53 and above -7% cut threshold ($53.53). Not a thesis break: single-day continuation of yesterday's oil selloff; WTI still $100+ (>$90 thesis-break level). HOLD.
+- **Losers cut:** None (-7% threshold not breached: CAT +3.23%, NVDA +2.14%, XLE -0.77%)
+- **Stop tightening:** None (+15% thresholds not reached: CAT needs $1,026.59, NVDA needs $230.62, XLE needs $66.19)
+- **Thesis break:** None. All 3 intact.
+- **Portfolio:** Equity ~$100,852 | Cash $45,828 (45.4%) | Deployed ~$55,023 (54.6%, 3 positions) | Week count: 2/3 | NFP blackout Thu May 8 — no new entries until Mon May 12
+
+**Open Orders (midday 2026-05-06):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $926.50, stop $833.85
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $207.18, stop $186.46
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
