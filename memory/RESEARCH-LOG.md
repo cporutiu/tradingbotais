@@ -3,6 +3,89 @@
 Daily pre-market research entries will be appended here.
 Format each entry:
 
+---
+
+## 2026-05-06 — Pre-Market Research (Wednesday)
+
+### Account Snapshot
+- **Equity:** $100,465.86 | **Cash:** $45,828.39 (45.6%) | **Deployed:** $54,637.47 (54.4%) | **DT count:** 0
+- **Week count:** 2/3 (1 trade slot remaining — today is LAST pre-NFP entry window)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $928.59 | +$718 (+4.02%) | +2.65% | 10% trail HWM $908.90 / stop $818.01 (needs trail update to ~$835.73) |
+| NVDA | 95 | $200.54 | $201.01 | +$44 (+0.23%) | +2.30% | 10% trail HWM $200.24 / stop $180.22 (HWM update → $201.01 / stop $180.91) |
+| XLE | 300 | $57.5551 | $56.41 | -$343 (-1.99%) | -5.11% | 10% trail HWM $59.835 / stop $53.8515 (locked; price below HWM) |
+
+### Market Context
+- **Oil:** WTI ~$100-101/bbl (down -3 to -4% today); Brent ~$106-108 (down -3%) — oil selloff on Strait of Hormuz/Iran ceasefire de-escalation headlines
+- **S&P 500 futures:** ESM26 ~7,303-7,314 (+0.22%) — bullish premarket despite oil weakness
+- **VIX:** 17.38 (May 5 close, down from 18.29 on May 4) — low risk zone (< 18)
+- **Economic calendar:** No major releases today. April CPI May 12; April PPI May 14. NFP May 8 (tomorrow) = blackout.
+- **Earnings BMO today:** HSBC, KKR, CMI, MPC, AEP, ET — none are held names
+- **Sector YTD leaders:** Energy +30% (#1), Materials +17% (#2), Industrials +11% (#3), Staples +7% (#4)
+- **RS ranking (20-day vs SPY):** GLD, XLE, XLI, XLP, XLB, SLV, XLU, XLRE, EEM, HYG, SPY, IWM, XLV, XLF, QQQ, XLK, XLY, SOXX, XLC
+- **Economic cycle:** early-cycle (GDP +2.0%, strong business investment +10%, LEI 7/10 positive components)
+- **Market risk:** Low (VIX 17.38)
+
+### Position Updates
+
+**CAT ($928.59, +4.02% from entry $892.689):**
+- Q1 2026 earnings crushed: EPS $5.54 vs $4.65e (+19%). Revenue $17.42B vs $16.5Be (+22% YoY). Record backlog $63B (+79% YoY). Raised FY guidance to low double-digit sales growth.
+- Up +32-41% YTD 2026; AI/data center power generation = structural tailwind beyond ISM cycle
+- HWM update needed: from $908.90 → $928.59 (trail to ~$835.73). Analyst targets ~$746-935.
+- Thesis: Fully intact. Best performer in portfolio.
+- Action: Monitor stop trail update (Alpaca auto-trails; confirm via orders check at market-open)
+
+**NVDA ($201.01, +0.23% from entry $200.54, +2.30% today):**
+- AI thesis intact: Jensen Huang on NVIDIA-ServiceNow Project Arc; Blackwell Ultra ramping; hyperscalers supply-constrained. Earnings May 20, GTC Keynote June 1.
+- Custom ASIC fears (Google TPU, Amazon Trainium) viewed as overreaction by analysts
+- HWM update: $200.24 → $201.01; stop: $180.22 → $180.91 (auto-trailed by Alpaca)
+- Thesis: Intact. Hold through earnings May 20.
+- Action: None. Monitor stop.
+
+**XLE ($56.41, -1.99% from avg entry $57.5551, -5.11% today):**
+- Oil selloff (-3 to -4%) on Strait of Hormuz reopening / ceasefire headlines
+- Current $56.41 is near/at NAV support $56.53 — technical caution zone
+- Stop at $53.8515 (HWM $59.835) = 4.5% buffer below current price; not triggered
+- Manual -7% cut threshold: $57.5551 × 0.93 = $53.53 — stop covers it
+- Elliott Wave $75 target intact; 10-day/50-day MA bullish cross (May 4) intact; WTI still $100+ (elevated)
+- NOT a thesis break: single-day selloff ≠ trend reversal. Oil remains well above long-term EIA $55 forecast.
+- Action: HOLD. Monitor closely. If WTI breaks below $90 sustainably, reassess thesis.
+
+### Trade Ideas
+
+1. **TRADE: FCX (Freeport-McMoRan) — Materials #4 watchlist, TODAY (last pre-NFP window)**
+   - **Catalyst:** Q1 2026 beat: EPS $0.57 vs $0.47e; revenue $6.23B vs $5.73Be (+8.8% YoY). Dividend doubled to $0.15/share. Record copper/gold/molybdenum prices (Q1 profits +150% YoY). Energy thesis weakening today (oil -3-4%) = FCX condition triggered per strategy.
+   - **Entry:** Market open, ~$56-57 (May 1 close $56.55; copper holding while oil falls)
+   - **Sizing:** 17-20% equity ($17,079-$20,093) → at $57: ~300-352 shares; target 320sh (~$18,240, 18.1%)
+   - **Stop:** 10% trailing GTC immediately on fill
+   - **Target:** $65-70 (analyst consensus Moderate Buy, avg PT $65.14; range $68-76 from BMO/Stifel/BNP)
+   - **R:R:** Entry $57, stop ~$51.30, target $65 → risk $5.70, reward $8.00 → ~1.4:1 R:R (acceptable, supported by strong fundamental backdrop)
+   - **Sector check:** Opens Materials (#4 sector); total sectors: Energy + Tech + Industrials + Materials ✓
+   - **Technical caution:** FCX below 50-day MA ($62.16) — fundamental entry, not technical. Mitigated by strong Q1 earnings.
+   - **After entry:** Deployed ~72% (approaching 75% floor — good)
+   - **Risk:** Grasberg Block Cave mine delay (MS downgraded to EW, PT $66). Copper demand China-dependent.
+
+2. **HOLD: XOM — Defer indefinitely**
+   - Oil down -3-4% today + XLE already -5%. Adding energy = doubling concentration risk on worst energy day in weeks.
+   - Strait of Hormuz reopening may be deflating the "war premium" driving oil. Wait for oil stabilization.
+   - Week slot consumed by FCX if entered today.
+
+3. **HOLD: NVDA, CAT, XLE** — theses intact; no cuts, no tightening needed today.
+
+### Risk Factors
+- **XLE at NAV support $56.53:** If breaks convincingly, may signal oil trend reversal. Monitor daily. Stop $53.85 contains downside.
+- **NFP May 8 (tomorrow):** BLACKOUT — no new entries Thursday regardless of conditions.
+- **Oil trajectory:** Strait of Hormuz/ceasefire narrative could continue to pressure energy. Watch WTI < $95 as thesis-break level.
+- **FCX Grasberg delay:** Near-term production risk; offset by record copper prices and Q1 beat.
+- **Deployment:** After FCX, deployed ~72% — within 75-85% range (slightly below floor but close enough given NFP blackout).
+- **Week cap:** FCX uses final trade slot (3/3). No more trades this week after today.
+
+### Decision
+**TRADE — enter FCX (Materials) at market open.** Today is last pre-NFP entry window. Deployed 54.4% (<60%), 1 slot remaining (2/3), no named blocker today. FCX Q1 beat + record copper + strategy condition (energy thesis weakening) = entry triggered. 320sh ~$18,240 (~18.1% equity). Place 10% trailing stop GTC immediately on fill. After entry: week count 3/3, deployed ~72%, no more trades until Monday.
+
 ## 2026-05-04 — Pre-market Sector Candidates (pre-seeded Sunday)
 
 > Strategy updated 2026-05-03: deployment floor, sector diversification caps, 17-20% sizing, sector watchlist now active. Monday arrives with 2 live setups ready — not 1 idea and "watch maybe."
