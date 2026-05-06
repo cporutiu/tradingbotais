@@ -479,3 +479,78 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-06 — Pre-market Research
+
+> **API NOTE:** Alpaca paper API and Perplexity API both returned HTTP 403 (host not in allowlist — IP whitelist restriction on this runner). Account state sourced from EOD May 5 trade log. All market data via WebSearch fallback (noted per workflow).
+
+### Account Snapshot (EOD May 05 — Alpaca unreachable)
+- **Equity:** ~$100,479.79 | **Cash:** $45,828.39 (45.6%) | **Deployed:** ~$54,651 (54.4%)
+- **Buying power:** N/A (API blocked)
+- **Daytrade count:** 1 (from May 5 CAT entry)
+- **Positions:** 3 open
+  - CAT: 20sh @ $892.689 entry | EOD close $905.00 | unrealized +$246 (+1.38%) | stop HWM $908.90 / $818.01
+  - NVDA: 95sh @ $200.54 entry | EOD close $196.94 | unrealized -$342 (-1.80%) | stop HWM $200.24 / $180.22
+  - XLE: 300sh @ $57.5551 entry | EOD close $59.48 | unrealized +$577 (+3.34%) | stop HWM $59.835 / $53.8515
+- **Week trade count:** 2/3 (1 slot remaining)
+- **Pre-market price indications (WebSearch):** NVDA ~$197.78 (-0.39%) | XLE ~$59.45 | CAT ~$905 est. | XOM ~$154 (reference)
+
+### Market Context
+- **WTI:** ~$102.76/bbl (-3.44% yesterday on Iran ceasefire news; stabilizing today) | **Brent:** ~$111.60/bbl
+- **Iran situation:** Volatile — ceasefire first agreed Apr 7, broken multiple times; UAE under missile/drone attack May 5; Strait of Hormuz still partially impacted; oil NOT in clean downtrend; geopolitical premium persists
+- **S&P 500 futures:** +0.25% (7,305.25) | **Nasdaq futures:** +0.52% (28,282) | **Dow futures:** +0.24% — risk-on day, Iran deal optimism + AMD earnings beat
+- **VIX:** 17.45 (-4.59% from 18.29 close) — falling below 18, returning to normal range; constructive for new entries
+- **Today's releases:** No major data expected; NFP (April Employment Situation) scheduled **Friday May 8 at 8:30 AM ET** = named blocker tomorrow
+- **Earnings today BMO:** No major holdings-relevant reports today; AMD beat AMC (May 5) driving tech bid
+- **Sector YTD (WebSearch):** Energy +30.7% (#1) | Industrials strong (+22.4% earnings surprise) | Tech muted vs 2025 but IT earnings +38% YoY expected; Nasdaq above 25,000 first time
+
+### Position Updates
+
+**CAT ($905 est., +1.38% unrealized from entry $892.689):**
+- Up 53% YTD; BofA raised price target to $930 on energy/AI infrastructure outlook
+- Q1 2026 beat: revenue $17.41B (+22% YoY), EPS $5.54; backlog $63B (+79% YoY)
+- Power Generation revenue +41% on AI data center demand; Construction Industries +38%
+- Thesis intact. No action. Stop $818.01 (HWM $908.90) provides solid protection.
+
+**NVDA (~$197.78, -1.38% unrealized from entry $200.54):**
+- Analyst consensus: Strong Buy | avg 12-month target $270.73 (+36.6% from current)
+- AI thesis intact: hyperscaler demand, Blackwell/Rubin, earnings May 20
+- -1.38% unrealized = within noise, inside -7% cut threshold ($185.50)
+- Risk: May 20 earnings = binary event; hold and manage stop around it
+
+**XLE (~$59.45, +3.34% unrealized from avg entry $57.5551):**
+- Iran situation volatile — NOT a clean ceasefire; oil geopolitical premium persists
+- Oil -3.4% yesterday but stabilizing ~$102.76 today; WTI still historically elevated
+- Stop HWM $59.835 / $53.8515 = 9.4% buffer from current; no action needed
+- If WTI breaks below $95 sustainably (clean Iran deal), reassess energy thesis
+
+### Trade Ideas
+
+1. **TRADE: XOM (ExxonMobil) — Energy #2 slot, 4th position** ✓ PRIMARY
+   - **Catalyst:** Q1 2026 EPS $1.16 beat by +14% vs $1.02 est.; record Guyana production 900k bpd; $20B buyback ($4.9B executed Q1); $2.8B energy products earnings (+$2B YoY)
+   - **Entry timing:** Buying the post-oil-dip (oil -3.4% May 5 = better entry price on the pullback); Iran situation unstable = geopolitical premium likely to persist
+   - **Entry:** Market at open, ~$154 reference price
+   - **Sizing:** ~120 shares (~$18,480, ~18.4% of $100,480 equity) — within 17-20% target
+   - **Stop:** 10% trailing GTC immediately on fill (~$139 initial stop reference)
+   - **Target:** ~$185 (+20%); R:R 2:1 minimum
+   - **Sector check:** 2nd Energy position; total Energy cap = maxed (XLE + XOM = 2/2 ✓); total sectors: Energy + Tech + Industrials + Energy (cap filled)
+   - **Post-entry deployment:** ~$73,130 (~72.7% equity) — approaches 75% floor; week cap exhausted (3/3)
+
+2. **PASS: FCX (Freeport-McMoRan) — Materials**
+   - Commodity headwind today (oil down, broad commodity pressure); lower sector rank (#4); XOM fundamentals superior
+
+3. **PASS: NVDA 2nd lot**
+   - Ruled out — already 19% position, max 20% cap prevents adding; would create 38% single-stock exposure
+
+### Risk Factors
+- **Alpaca API blocked:** Cannot verify live account balance, stop status, or existing order fills; all figures EOD estimates — verify at market open via manual Alpaca UI check
+- **Iran oil volatility:** If ceasefire holds for 48h+ and Hormuz reopens cleanly, WTI could retest $90-95; would pressure XLE (-9% from HWM before stop triggers) and XOM (-10% before stop)
+- **NFP May 8 (tomorrow):** Named blocker — NO new entries Thursday; all week slots exhausted after XOM
+- **VIX 17.45:** Normal zone; not a concern for entry today
+- **CAT tariff headwind:** $710M tariff costs Q1; Resource Industries profit -39%; monitor for margin guidance revisions; not thesis-breaking today
+- **NVDA -1.38% unrealized:** Within tolerance; don't touch stop unless -7% threshold approaches ($185.50)
+
+### Decision
+**TRADE — Enter XOM (ExxonMobil) at market open. 4th position, 2nd energy slot.** Rationale: Wednesday urgency rule mandatory (1 slot unused, deployed 54.4% < 60%, NFP tomorrow = no Thursday entry). XOM fundamentals strong (Q1 EPS +14% beat, record production, massive buyback). Oil dip yesterday = better entry. Iran situation volatile = geopolitical premium persists. Size: ~120 shares at ~$154 (~18.4% equity). Place 10% trailing stop GTC immediately on fill. After entry: week cap 3/3 exhausted, deployed ~73% (approaching 75% floor). No further entries this week; hold all 4 positions through NFP.
