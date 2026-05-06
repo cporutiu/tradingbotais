@@ -259,3 +259,22 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $207.18, stop $186.46
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
 - Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
+---
+
+## Day 9 — EOD Snapshot (May 06, Wednesday)
+**Portfolio:** $101,215.29 | **Cash:** $45,828.39 (45.3%) | **Day P&L:** +$735.50 (+0.73%) | **Phase P&L:** +$1,215.29 (+1.22%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $926.93 | +2.47% | +$684.82 (+3.84%) | 10% trail (HWM $930.54 / stop $837.49) |
+| NVDA | 95 | $200.54 | $207.94 | +5.82% | +$703.00 (+3.69%) | 10% trail (HWM $208.265 / stop $187.44) |
+| XLE | 300 | $57.5551 | $56.98 | -4.16% | -$172.53 (-1.00%) | 10% trail (HWM $59.835 / stop $53.8515) |
+
+**Notes:** Day 9, Wednesday. No new trades (FCX skipped at market-open — R:R check failed; week ends 2/3). Portfolio +$735.50 on the day: NVDA surged +5.82% to $207.94 (+$703 unrealized from entry); CAT +2.47% to $926.93 (+$685 unrealized); XLE continued oil selloff -4.16% to $56.98 (-$173 unrealized, well above -7% cut threshold $53.53). CAT stop auto-trailed to HWM $930.54/stop $837.49; NVDA auto-trailed to HWM $208.265/stop $187.44; XLE stops locked at HWM $59.835/stop $53.8515 (price below HWM). No tightening needed (+15% levels: CAT $1,026.59, NVDA $230.62, XLE $66.19 — all unreached). NFP Thu May 8 blackout — next entry window Mon May 12. Week cap: 2/3 used.
+
+**Open Orders (EOD 2026-05-06):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $930.54, stop $837.49
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $208.265, stop $187.44
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
