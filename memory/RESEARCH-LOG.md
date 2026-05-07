@@ -73,6 +73,12 @@ Format each entry:
 ### Decision
 **HOLD — NFP blackout. No new entries today.** Deployed 54.6% (above 40% threshold → TRADE default not active). NFP tomorrow (May 8) is a named blocker within 24h per strategy rules. All three positions healthy: CAT +3.62%, NVDA +3.57%, XLE -2.18% (above -7% cut; stop intact). Next entry window: Monday May 12. Prepare XLK, FCX, XOM candidates for Monday pre-market.
 
+### Afternoon Addendum (Midday Scan 2026-05-07)
+- **CAT -3.53% intraday ($926.93 → $894.23):** Perplexity found no specific May 7 catalyst. Consistent with recurring macro/tariff-pressure pattern (same dynamic triggered -3.02% on Mar 5). ISM expansion thesis intact; no earnings warning. Position barely above entry (+0.17%), stop at HWM $931.35/stop $838.22 well above -7% cut threshold. No action.
+- **WTI oil — intraday low $89.84:** June futures touched $89.84-89.88 intraday before recovering to ~$95-97 (Barchart June CLM26; Investing.com futures close ~$95.59 +0.54%). Brief spike below $90 thesis-break floor but NOT sustained. XLE at $56.21 — stop ($53.85) intact, 4.2% buffer. Thesis still holds; if WTI closes below $90 on NFP day (May 8) or Monday, XLE exit will be evaluated per pre-market contingency plan.
+- **NVDA:** +1.52% to $210.99; stop auto-trailed to HWM $214.20/stop $192.78. No concerns.
+- **Midday decision:** HOLD all. No cuts, no stop tightening, no thesis breaks. NFP blackout continues.
+
 ---
 
 ## 2026-05-06 — Pre-Market Research (Wednesday)

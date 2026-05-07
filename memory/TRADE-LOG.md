@@ -294,6 +294,21 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - **XLE:** -2.23% continuing oil selloff (Hormuz/ceasefire de-escalation); stop locked (price below HWM). Current $55.73 is below NAV support $56.53 but above -7% cut threshold ($53.53) and above stop ($53.8515). WTI thesis-break level = < $90 sustained (pre-market WTI ~$95-102). Not a thesis break yet. Stop doing its job.
 - **Week count:** 2/3. **Next entry window: Monday May 12.** Prepare XLK/FCX/XOM candidates.
 
+**Midday 2026-05-07:**
+- **CAT midday:** $894.23 (-3.53% today; +0.17% from entry $892.689). Stop locked at HWM $931.35 / stop $838.22. Perplexity: no specific May 7 catalyst found — consistent with tariff/macro pressure pattern (March 2026 precedent). ISM Manufacturing 52.7 + Services 53.8 expansion thesis intact. Well above -7% cut threshold ($830.20). HOLD.
+- **NVDA midday:** $210.99 (+1.52% today; +5.21% from entry $200.54). Stop auto-trailed to HWM $214.20 / stop $192.78 (improved from morning HWM $208.43/stop $187.59). AI thesis strong — SOXX/XLK leading RS. HOLD.
+- **XLE midday:** $56.21 (-1.39% today; -2.34% from avg entry $57.5551). Stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update). WTI intraday low $89.84-89.88 (briefly touched $90 thesis-break floor) before recovering to ~$95-97 (June futures +0.54%); NOT a sustained break — thesis intact. Stop $53.85 provides 4.2% buffer from $56.21. HOLD with close monitoring.
+- **Losers cut:** None (-7% not breached: CAT +0.17%, NVDA +5.21%, XLE -2.34%)
+- **Stop tightening:** None (+15% thresholds not reached: CAT needs $1,026.59, NVDA needs $230.62, XLE needs $66.19)
+- **Thesis break:** None. All 3 intact.
+- **Portfolio:** Equity ~$100,620 | Cash $45,828 (45.6%) | Deployed ~$54,792 (54.5%, 3 positions) | Week count: 2/3 | NFP blackout Thu May 8 → next entry Mon May 12
+
+**Open Orders (midday 2026-05-07):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.22
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $214.20, stop $192.78
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
 ---
 
 ## Day 10 — EOD Snapshot (May 07, Thursday)
