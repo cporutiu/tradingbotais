@@ -278,3 +278,31 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $208.265, stop $187.44
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
 - Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
+**Market-open 2026-05-07 (Thursday — NFP blackout):**
+- **No trades placed** — NFP tomorrow May 8 8:30 AM ET = named blocker; blackout in effect
+- **Equity:** $100,705.29 | **Cash:** $45,828.39 | **Deployed:** $54,876.90 (54.5%) | **DT count:** 0 | **Phase P&L:** +$705.29 (+0.71%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $924.34 | +$633.02 (+3.55%) | -0.28% | 10% trail HWM $931.35 / stop $838.22 (auto-trailed) |
+| NVDA | 95 | $200.54 | $207.12 | +$625.10 (+3.28%) | -0.34% | 10% trail HWM $208.43 / stop $187.59 (auto-trailed) |
+| XLE | 300 | $57.5551 | $55.73 | -$547.53 (-3.17%) | -2.23% | 10% trail HWM $59.835 / stop $53.8515 (locked) |
+
+- **CAT:** Stop auto-trailed from $837.49 → HWM $931.35 / stop $838.22. Thesis intact — ISM expansion, infrastructure demand.
+- **NVDA:** Stop auto-trailed from $187.44 → HWM $208.43 / stop $187.59. AI thesis intact; earnings May 20.
+- **XLE:** -2.23% continuing oil selloff (Hormuz/ceasefire de-escalation); stop locked (price below HWM). Current $55.73 is below NAV support $56.53 but above -7% cut threshold ($53.53) and above stop ($53.8515). WTI thesis-break level = < $90 sustained (pre-market WTI ~$95-102). Not a thesis break yet. Stop doing its job.
+- **Week count:** 2/3. **Next entry window: Monday May 12.** Prepare XLK/FCX/XOM candidates.
+
+---
+
+## Day 10 — EOD Snapshot (May 07, Thursday)
+**Portfolio:** $100,632.34 | **Cash:** $45,828.39 (45.6%) | **Day P&L:** -$582.95 (-0.58%) | **Phase P&L:** +$632.34 (+0.63%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $894.23 | -3.53% | +$30.82 (+0.17%) | 10% trail (HWM $931.35 / stop $838.22) |
+| NVDA | 95 | $200.54 | $210.93 | +1.49% | +$987.05 (+5.18%) | 10% trail (HWM $214.20 / stop $192.78) |
+| XLE | 300 | $57.5551 | $56.27 | -1.28% | -$385.53 (-2.23%) | 10% trail (HWM $59.835 / stop $53.8515) |
+
+**Notes:** Day 10, Thursday — NFP blackout, no new trades (week count: 2/3). Portfolio -$582.95 on the day: CAT fell -3.53% to $894.23, nearly back to entry ($892.689), unrealized now just +$30.82 (+0.17%) — stop locked at HWM $931.35/stop $838.22, thesis intact (ISM expansion, infrastructure demand); NVDA was the one bright spot, +1.49% to $210.93 (+$987 unrealized, +5.18% from entry), stop auto-trailed to HWM $214.20/stop $192.78, AI thesis strong; XLE continued oil selloff -1.28% to $56.27 (-2.23% from entry), stops locked at HWM $59.835/stop $53.8515, well above -7% cut threshold ($53.53), WTI still above $90 thesis-break level. No stops triggered. No losers cut. NFP May 8 tomorrow — full blackout, no trades. Next entry window Monday May 12; watch XLK/FCX/XOM for 3rd position to boost deployment above 75% floor.
