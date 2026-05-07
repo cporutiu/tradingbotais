@@ -5,6 +5,76 @@ Format each entry:
 
 ---
 
+## 2026-05-07 — Pre-Market Research (Thursday)
+
+### Account Snapshot
+- **Equity:** $100,950.16 | **Cash:** $45,828.39 (45.4%) | **Deployed:** $55,121.77 (54.6%) | **DT count:** 0
+- **Week count:** 2/3 (1 slot remaining — NFP tomorrow May 8 = blackout; next entry window Mon May 12)
+- **Buying power:** $146,778.55
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $925.00 | +$646.22 (+3.62%) | -0.21% | 10% trail HWM $930.54 / stop $837.49 |
+| NVDA | 95 | $200.54 | $207.71 | +$681.06 (+3.57%) | -0.06% | 10% trail HWM $208.265 / stop $187.44 |
+| XLE | 300 | $57.5551 | $56.30 | -$376.26 (-2.18%) | -1.23% | 10% trail HWM $59.835 / stop $53.8515 (locked) |
+
+### Market Context
+- **Oil:** WTI ~$95-102/bbl (-4.52% today); Brent ~$100-111/bbl (-3.20%) — continuing Strait of Hormuz/ceasefire de-escalation selloff; oil at multi-week lows vs April highs
+- **S&P 500 futures:** ESM26 ~7,379.50 (-0.14% premarket); also cited +0.28% on lower oil as ceasefire = disinflation tailwind for equities
+- **VIX:** ~18.29 (May 4 close) — medium risk zone (18-25); today likely similar or slightly lower
+- **Economic calendar today:** Productivity & Costs (Q1 2026 prelim) 8:30 AM ET — minor release; no CPI/PPI/FOMC today
+- **NFP tomorrow May 8:** April Employment Situation 8:30 AM ET = **NAMED BLOCKER → BLACKOUT TODAY**
+- **BMO earnings today:** None of note
+- **Sector YTD:** Energy +38.3% (#1, but oil pullback ongoing); Industrials #3; Materials positive; Tech (XLK) recovering (+AI momentum); Staples positive
+- **RS ranking (20-day vs SPY, est.):** SOXX, XLK, XLI, XLB, XLC, XLF, XLY, XLE, SPY, QQQ, IWM, XLP, XLU, XLRE, XLV, GLD, SLV, HYG, EEM
+- **Economic cycle:** mid-cycle (GDP +2.0%, PCE ~2.7%, Fed steady, expansion broadening)
+- **Market risk:** Medium (VIX ~18.29)
+
+### Position Updates
+
+**CAT ($925.00, +3.62% from entry $892.689):**
+- Thesis fully intact: ISM Manufacturing 52.7 + Services 53.8 (expansion); infrastructure/data center narrative strong
+- HWM $930.54 / stop $837.49 — auto-trailed from May 6 high; position -0.21% today (minor drift from $926.93 close)
+- Q1 2026 earnings beat confirmed; record backlog; structural tailwinds intact
+- Action: Hold. Monitor stop. No tightening needed (+15% = $1,026.59 — far off)
+
+**NVDA ($207.71, +3.57% from entry $200.54):**
+- AI thesis fully intact: hyperscalers supply-constrained, Blackwell ramping; GTC Keynote June 1; earnings May 20
+- HWM $208.265 / stop $187.44 — stop locks when price below HWM; -0.06% today (premarket drift)
+- No negative catalyst; AI hardware demand accelerating; SOXX/XLK leading RS rankings
+- Action: Hold through May 20 earnings. No tightening needed (+15% = $230.62 — not reached)
+
+**XLE ($56.30, -2.18% from avg entry $57.5551):**
+- Continuing oil selloff: WTI ~$95-102 (-4.52% today), Brent ~$100-111 (-3.20%) on ceasefire headlines
+- Current $56.30 is **below NAV support $56.53** — caution zone; price at 3-week low
+- Stop locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update)
+- -7% cut threshold: $57.5551 × 0.93 = $53.53 (stop $53.85 covers it; 4.3% buffer from current)
+- Thesis-break level: WTI < $90 sustained. WTI ~$95-102 = still above thesis-break. NOT a thesis break yet.
+- Risk: If WTI breaks $90 intraday and holds, reassess. Oil already -15-20% from April peak.
+- Action: HOLD with close monitoring. Stop protects the position; thesis not broken.
+
+### Trade Ideas
+
+1. **HOLD all positions** — NFP tomorrow = named blocker; no new entries.
+2. **Monday May 12 candidates (prepare now):**
+   - **XOM (Energy):** Only if WTI stabilizes post-NFP above $90. Max 1 more energy slot (currently at 1). IF oil thesis breaks on XLE, evaluate exiting XLE and avoiding XOM.
+   - **FCX (Materials):** Copper holding better than oil; Q1 beat; if energy thesis breaks → FCX fills the sector diversification requirement. Entry ~$57-60, 18% sizing.
+   - **Tech add (XLK ETF):** SOXX/XLK leading RS; AI momentum; if NVDA holds well post-NFP, consider XLK as 4th position to boost deployment to ~72%.
+3. **XLE exit contingency:** If WTI closes below $90 on NFP day or Monday, XLE thesis is broken → consider manual exit before stop triggers to preserve capital.
+
+### Risk Factors
+- **NFP tomorrow May 8:** If strong jobs = hawkish Fed fears → market selloff → all positions hit. If weak jobs = recession fear → energy/materials hit hardest. Can't trade around it — HOLD.
+- **XLE below NAV support $56.53:** Technical deterioration accelerating. Stop at $53.85 is 4.3% below current — if oil accelerates down, stop could trigger. Accept outcome; stop is doing its job.
+- **Oil trajectory:** Hormuz ceasefire narrative actively deflating geopolitical premium. WTI peaked ~$106, now ~$95-102. Watch $90 as thesis-break floor.
+- **Deployment at 54.6%:** Below 75-85% floor. Need 4th position next week (Mon May 12). Priority: XLK (tech), FCX (materials), or XOM if oil stabilizes.
+- **Week cap:** 2/3 used. 1 slot remaining. Cannot use today (NFP blocker). Available Monday.
+
+### Decision
+**HOLD — NFP blackout. No new entries today.** Deployed 54.6% (above 40% threshold → TRADE default not active). NFP tomorrow (May 8) is a named blocker within 24h per strategy rules. All three positions healthy: CAT +3.62%, NVDA +3.57%, XLE -2.18% (above -7% cut; stop intact). Next entry window: Monday May 12. Prepare XLK, FCX, XOM candidates for Monday pre-market.
+
+---
+
 ## 2026-05-06 — Pre-Market Research (Wednesday)
 
 ### Account Snapshot
