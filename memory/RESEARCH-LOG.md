@@ -5,6 +5,78 @@ Format each entry:
 
 ---
 
+## 2026-05-07 — Pre-Market Research (Thursday)
+
+### Account Snapshot
+- **Equity:** ~$101,215 (Day 9 EOD estimate; Alpaca API unavailable — IP not in allowlist)
+- **Cash:** $45,828.39 (45.3%) | **Deployed:** ~$55,387 (54.6%) | **DT count:** 1
+- **Week count:** 2/3 (NFP blackout today → no new entries)
+- **Positions (EOD May 6 baseline):**
+
+| Ticker | Shares | Entry | EOD 5/6 | Unrealized | Stop |
+|--------|--------|-------|---------|------------|------|
+| CAT | 20 | $892.689 | $926.93 | +$684 (+3.84%) | HWM $930.54 / stop $837.49 |
+| NVDA | 95 | $200.54 | $207.94 | +$703 (+3.69%) | HWM $208.265 / stop $187.44 |
+| XLE | 300 | $57.5551 | $56.98 | -$173 (-1.00%) | HWM $59.835 / stop $53.8515 |
+
+*Alpaca + Perplexity both blocked (IP not in allowlist). Data from EOD Day 9 + WebSearch fallback.*
+
+### Market Context
+- **WTI:** ~$93-95/bbl — dropped 9%+ on May 6 on Iran/Hormuz peace MOU (US via Pakistani intermediaries); **below $95 watch level set May 6**; Brent $101.96 +0.68% today — still above $90 hard-break
+- **S&P 500 futures:** ESM26 7,394.25 (+0.06%) — rally extending; S&P 500 hit new ATH above 7,300 on May 6 driven by AMD beat + peace hopes
+- **VIX:** 17.39 — low-moderate; down from 18.51 spike on May 4
+- **Today's releases:** No major US data scheduled; NFP tomorrow May 8 8:30 AM ET = BLACKOUT
+- **Earnings (May 6 AMC / May 7 premarket movers):**
+  - AMD: EPS $1.37 (beat +$0.08), Revenue $10.25B (+38% YoY), Data Center +57% YoY → AMD +18% premarket; chip-sector ATH catalyst
+  - Disney: EPS $1.57, Revenue $25B+ (beat); streaming + parks; +5% premarket
+- **Sector YTD:** Energy +30.7% (#1), Technology +15% / SOX +55% (#2), Materials +13.8%, Industrials +11%
+- **Geopolitical:** US-Iran peace MOU signals Hormuz reopening trajectory → sustained oil selloff pressure on energy
+
+### Position Updates
+
+**CAT ($926.93 EOD; thesis intact):**
+- Q1 beat confirmed: EPS $5.54, Revenue $17.4B (+22% YoY); +53% YTD
+- Argus raised PT to $990 from $820; ISM Manufacturing 52.7 + Services 53.8 = Industrials tailwind intact
+- Stop auto-trailed to HWM $930.54 / stop $837.49
+- Action: HOLD — best performer; thesis fully intact
+
+**NVDA ($207.94 EOD; likely higher on AMD tailwind):**
+- AMD data center +57% YoY confirms hyperscaler demand → AI hardware thesis strengthened
+- NVDA-Corning optical-fiber partnership (AI data center connectivity) = structural catalyst
+- Earnings May 20: consensus $78.8B revenue (+78.6% YoY), EPS $1.77 (+118.5% YoY)
+- Stop HWM $208.265 / stop $187.44 (AMD surge may lift NVDA above new HWM today)
+- Action: HOLD — thesis strengthening; earnings catalyst 13 days out
+
+**XLE (~$56.58 premarket; elevated risk):**
+- WTI dropped 9%+ to ~$93 on May 6 — **below $95 watch level from yesterday's research**
+- Brent $101.96 → still above $90 hard thesis-break; not broken yet
+- XLE premarket $56.58 → -1.69% from avg entry; above -7% cut threshold ($53.52)
+- Stop $53.8515 = 4.7% buffer from $56.58 — still protected
+- Action: HOLD but WATCH — if WTI breaks $90 sustainably, manually exit before stop
+
+### Trade Ideas
+1. **HOLD — NFP blackout today (Thursday May 7); no entries within 24h of NFP**
+2. **Monday May 12 — reassess XLE thesis:** if WTI stabilizes $93+, hold; if WTI < $90, exit XLE
+3. **Monday May 12 — 4th position to close deployment gap (54.6% → 75-85%):**
+   - XOM: energy slot 2; only if WTI stabilizes
+   - Sector-diversifying name (Tech/Materials/Industrials) if energy thesis weakens
+
+### Risk Factors
+- **XLE / WTI $93:** Hormuz peace MOU = continued oil pressure; if WTI breaks $90 sustainably, must manually exit XLE — don't wait for trailing stop
+- **NFP May 8 8:30 AM:** Consensus 127K; strong print = "higher for longer" = risk-off; weak = rate-cut bullish — binary risk for all positions
+- **Deployment 54.6%:** 20 points below 75% floor; NFP blackout prevents correction until Monday May 12
+- **NVDA earnings May 20:** 13 days; AMD beat strengthens thesis but pre-earnings run adds miss-risk
+- **Week cap:** 2/3 used; no more trades this week
+
+### Decision
+**HOLD — NFP blackout. No trades today.**
+- CAT: hold; analyst upgrades, Industrials momentum
+- NVDA: hold; AMD catalyst + AI thesis strengthening
+- XLE: hold with elevated vigilance; stop intact, $90 hard line not breached
+- Monday: post-NFP reset — assess XLE thesis + enter 4th position to reach deployment floor
+
+---
+
 ## 2026-05-06 — Pre-Market Research (Wednesday)
 
 ### Account Snapshot
