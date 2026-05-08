@@ -5,6 +5,81 @@ Format each entry:
 
 ---
 
+## 2026-05-08 — Pre-Market Research (Friday — NFP Day)
+
+### Account Snapshot
+- **Equity:** $100,981.99 | **Cash:** $45,828.39 (45.4%) | **Deployed:** $55,153.60 (54.6%) | **DT count:** 0
+- **Week count:** 2/3 (1 slot remaining — NFP today May 8 = NAMED BLOCKER; next entry window Mon May 12)
+- **Buying power:** $146,810.38
+- **Phase P&L:** +$981.99 (+0.98%)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $904.00 | +$226.22 (+1.27%) | +0.93% | 10% trail HWM $931.35 / stop $838.22 |
+| NVDA | 95 | $200.54 | $213.42 | +$1,223.47 (+6.42%) | +0.91% | 10% trail HWM $214.20 / stop $192.78 |
+| XLE | 300 | $57.5551 | $55.9961 | -$467.70 (-2.71%) | +0.08% | 10% trail HWM $59.835 / stop $53.8515 (locked) |
+
+### Market Context
+- **Oil:** WTI ~$94-97/bbl (May 8 range $94.21-$97.28, close ~$94.87); Brent ~$100-103/bbl (est.) — continued Hormuz/ceasefire de-escalation selloff; WTI down ~$11 from April peak $106; approaching $90 thesis-break floor
+- **S&P 500 futures:** ESM26 ~7,362.75 (May 7 close); premarket ~7,261-7,300 (slightly lower ahead of NFP)
+- **VIX:** 17.08-17.39 (May 7 range) — LOW risk zone (< 18); market calm heading into NFP
+- **NFP — ACTUAL RESULT:** April 2026 nonfarm payrolls **+160,000** (massive beat vs 62-65K consensus; March prior: +178K); unemployment 5.0% (held steady); ADP private payrolls +109K; wage gains "highly uneven, led by higher-income households" (not broadly inflationary → goldilocks read)
+- **Economic calendar:** NFP 8:30 AM ET only major release today; next week: CPI May 12, PPI May 14
+- **Earnings BMO today:** No significant names; Hertz (HTZ) reported — no relevance to held positions
+- **Sector YTD:** Energy +22-33% (#1), Materials +16% (#2/3), Industrials +12% (#2/3), Staples positive; Tech (XLK) -3.8% YTD but AI momentum recovering; Financials -5.7%; Consumer Disc -4.6%
+- **RS ranking (20-day vs SPY, est.):** SOXX, XLK, XLI, XLB, XLP, XLC, SPY, QQQ, XLF, XLY, IWM, GLD, XLE, SLV, XLV, XLU, XLRE, HYG, EEM *(Perplexity RS query returned empty; ranking estimated from sector momentum data)*
+- **Economic cycle:** Mid-cycle — GDP +2.0% Q1, 2.2-2.3% FY2026, robust business investment; NFP +160K confirms labor market resilience
+- **Market risk:** Low (VIX 17.08)
+
+### Position Updates
+
+**NVDA ($213.42, +6.42% from entry $200.54):**
+- MAJOR CATALYSTS today: (1) NVDA-Corning multiyear partnership for US-based optical connectivity for AI infrastructure — Corning building 3 new facilities, NVDA issued $500M warrants for 15M shares at $180; (2) NVDA-IREN deal for up to 5GW AI data centers — IREN granted NVDA right to invest $2.1B via warrants for 30M shares
+- Stop HWM $214.20 / stop $192.78 — current $213.42 just below HWM; may set new HWM on open
+- Earnings May 20; GTC keynote June 1 (Jensen Huang, Taipei)
+- Analyst consensus: 37 Buy, price target $272.08
+- Action: HOLD. No tightening needed (+15% threshold = $230.62; currently +6.42%). Stop will auto-trail if price exceeds $214.20 today.
+
+**CAT ($904.00, +1.27% from entry $892.689):**
+- No new May 8 catalyst; Q1 2026 beat intact (revenue $17.4B +22%, EPS $5.54 vs $4.62e)
+- YTD +32.6%; AI/data center power generation = structural tailwind; tariff headwind ~$2.6B 2026
+- Stop HWM $931.35 / stop $838.22 — well above -7% cut threshold ($830.20)
+- NFP +160K = strong economy = constructive for infrastructure demand; ISM expansion thesis intact
+- Action: HOLD. +1.27% from entry after yesterday's -3.53% drop; stop protecting well above -7%.
+
+**XLE ($55.9961, -2.71% from avg entry $57.5551):**
+- CONCERN: WTI at $94-97 range, trending lower from $106 April peak (-11%). Approaching $90 thesis-break floor.
+- Current $55.9961 is below NAV support $56.53; technical deterioration continuing
+- Stop HWM $59.835 / stop $53.8515 — locked (price below HWM); 3.8% buffer below current price
+- -7% cut threshold: $57.5551 × 0.93 = $53.53 — stop $53.8515 covers it
+- WTI $94.87 is 5.4% above $90 thesis-break floor — not broken yet; but trajectory is concerning
+- NFP +160K = strong demand narrative = mild positive for energy today, could help stabilize
+- Action: HOLD. Stop doing its job. If WTI closes below $90 on any session, evaluate manual exit.
+
+### Trade Ideas
+
+1. **HOLD all positions** — NFP today = NAMED BLOCKER; no new entries.
+2. **Monday May 12 candidates (prepare now):**
+   - **SOXX/NVDA add:** SOXX leading RS ranking; AI momentum strongest sector now. If NVDA holds well post-NFP, consider XLK or SOXX as 4th position (~18% sizing). Deployment would reach ~72%.
+   - **FCX (Materials):** 4th sector candidate; but need better entry — last attempt was halted by R:R failure at $64.45 ask. Target ~$57-60 with verified bid/ask spread before entry.
+   - **XOM (Energy):** ONLY if WTI stabilizes back above $95-97 post-NFP and holds. Max 1 more energy slot.
+   - **XLE exit contingency:** If WTI breaks and closes below $90, XLE thesis is broken → manual exit; preserve capital.
+3. **Wednesday urgency check:** Deployment at 54.6% — enters week 3 with 1 trade slot (carryover). Below 60% floor = TRADE default active from Monday.
+
+### Risk Factors
+- **NFP +160K beat:** Goldilocks if wage growth moderate (per BofA report: uneven wage gains, led by higher-income households → not broadly inflationary). Risk: if market reads as hawkish Fed catalyst → yields spike → growth stocks (NVDA, CAT) pressured.
+- **XLE trajectory:** WTI $94.87 → $90 thesis-break is only 5.4% away. If oil continues to bleed, XLE stop ($53.85) may trigger in the next 1-3 sessions. Accept the outcome — stop is doing its job.
+- **NVDA earnings May 20:** Next major inflection; hold through earnings per strategy (no pre-earnings cut).
+- **CAT tariff headwind:** $2.6B in 2026 tariff costs could weigh on margins — monitor for guidance revision.
+- **Deployment 54.6%:** Below 75-85% floor. TRADE mode active for week 3 (Mon May 12). Must deploy 4th position.
+- **Week cap:** 2/3 used. 1 slot available starting Monday.
+
+### Decision
+**HOLD — NFP blackout. No new entries today.** April NFP +160K is a strong beat (positive for economy, likely goldilocks given moderate wage growth) — but it's also confirmation that the Fed is not cutting soon, which could modestly pressure growth stocks. No action warranted. All three positions healthy or stable: NVDA +6.42% with major AI partnership catalysts; CAT +1.27% with thesis intact; XLE -2.71% with stop in place and WTI above $90 floor. Next entry window: Monday May 12. Priority candidates: XLK/SOXX (4th position to boost deployment), FCX (if entry validates R:R), XOM (energy only if oil stabilizes). Prepare 2-3 live setups for Monday pre-market.
+
+---
+
 ## 2026-05-07 — Pre-Market Research (Thursday)
 
 ### Account Snapshot
