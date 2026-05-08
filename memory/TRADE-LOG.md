@@ -351,3 +351,16 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $217.80, stop $196.02
 - Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
 - Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
+
+---
+
+## Day 11 — EOD Snapshot (May 08, Friday)
+**Portfolio:** $100,924.27 | **Cash:** $45,828.39 (45.4%) | **Day P&L:** +$291.93 (+0.29%) | **Phase P&L:** +$924.27 (+0.92%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $897.45 | +0.20% | +$95.22 (+0.53%) | 10% trail (HWM $931.35 / stop $838.22) |
+| NVDA | 95 | $200.54 | $215.13 | +1.72% | +$1,386.05 (+7.28%) | 10% trail (HWM $217.80 / stop $196.02) |
+| XLE | 300 | $57.5551 | $55.70 | -0.45% | -$556.53 (-3.22%) | 10% trail (HWM $59.835 / stop $53.8515) |
+
+**Notes:** Day 11, Friday — NFP Day. No trades executed; week ends 2/3. NFP April 2026: +160K (massive beat vs 62-65K consensus) — strong labor market; market rallied broadly. NVDA led with +1.72% to $215.13 (+7.28% from entry, unrealized +$1,386); CAT edged up +0.20% to $897.45 (+0.53% from entry, +$95 unrealized); XLE continued oil weakness -0.45% to $55.70 (-3.22% from entry, -$557 unrealized) on sustained Hormuz/ceasefire de-escalation selloff. All trailing stops locked (all prices below HWMs). No losers cut (-7% threshold not breached). No stop tightening (NVDA needs $230.62, CAT needs $1,026.59, XLE needs $66.19). Phase P&L hits new high +$924.27 (+0.92%). Week 3 starts Monday May 12 — fresh 3/3 cap; priority: add 4th position (XLK/SOXX) to push deployment above 75% floor.
