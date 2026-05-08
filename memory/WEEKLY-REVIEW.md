@@ -149,3 +149,73 @@ Template for each entry:
 - Deployment goal: reach at least 35-40% by end of next week (2 open positions)
 
 ### Overall Grade: B-
+
+---
+
+## Week ending 2026-05-08
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $100,388.47 (May 1 EOD / May 4 open) |
+| Ending portfolio | $100,924.27 |
+| Week return | +$535.80 (+0.53%) |
+| S&P 500 week | +1.78% |
+| Bot vs S&P | -1.25% |
+| Phase P&L | +$924.27 (+0.92% from $100,000 start) |
+| Trades | 2 (W:0 / L:0 / open:3) |
+| Win rate | N/A (no closed trades) |
+| Best trade | NVDA +7.28% unrealized |
+| Worst trade | XLE -3.22% unrealized |
+| Profit factor | N/A (no closed trades) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CAT | $892.689 | $897.45 | +$95.22 (+0.53%) | 10% trail HWM $931.35 / stop $838.22 |
+| NVDA | $200.54 | $215.13 | +$1,386.05 (+7.28%) | 10% trail HWM $217.80 / stop $196.02 |
+| XLE | $57.5551 | $55.70 | -$556.53 (-3.22%) | 10% trail HWM $59.835 / stop $53.8515 |
+
+### Sector Watchlist — Week 4 (May 12–16)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | SOXX | NVDA holding above $210; AI momentum intact; CPI clears May 12; 4th position to reach ~72% deployed |
+| 2 | Industrials | XLI | CAT (held) | ISM expansion intact; add XLI ETF only if 5th slot opens |
+| 3 | Materials | XLB | FCX | Re-validate bid/ask spread and R:R before entry (~$57-60 target); verify 2:1 minimum |
+| 4 | Energy | XLE | XOM | HOLD existing XLE; add XOM only if WTI reclaims and holds $97+; max 1 more energy slot |
+
+### What Worked
+- NVDA selection excellent: entered $200.54, hit +7.28% unrealized by week end on NVDA-Corning + IREN 5GW partnership catalysts
+- CAT entry validated by ISM Services 53.8 confirmation pre-trade; clean +0.53% unrealized with thesis intact
+- FCX correctly rejected Wednesday on R:R failure ($64.45 ask → 0.1-0.86:1 vs 2:1 minimum) — rule saved a bad trade
+- NFP blackout respected Thu/Fri; no trade placed into the +160K print (goldilocks beat; correct not to rush)
+- Stop discipline held all week: all 4 GTC stops active, auto-trailing working correctly on CAT and NVDA
+
+### What Didn't Work
+- Underperformed S&P 500 by 1.25% (+0.53% vs +1.78%); deployment gap the primary driver
+- Deployment ended week at 54.7% — fourth consecutive week below 75% floor (target 75-85%)
+- XLE continued to drag: -3.22% from entry, oil fell from $106 to ~$94-97; thesis intact but barely (WTI $90 floor 5% away)
+- FCX entry failed R:R check — no valid fourth position found this week; missed deployment boost opportunity
+- Wednesday urgency check triggered (≥2 slots unused, <60% deployed) but no valid entry existed — structural gap in candidate pipeline depth
+
+### Key Lessons
+- R:R pre-validation before the entry window is critical: FCX bid/ask spread was $6.50 at open; need to check spread and ask price Sunday/premarket, not at 9:30 AM
+- XLE carrying a -3.22% unrealized loss on an oil de-escalation trend; if WTI can't reclaim $95 sustainably, this becomes a slow bleed. Watch $90 thesis-break level daily.
+- NVDA and CAT are the right positions: both theses firing; strong unrealized gains offset XLE drag
+- S&P +1.78% this week was broad, risk-on (NFP beat, AI momentum, tech leadership); energy-heavy portfolio structurally underperforms in tech-led weeks
+- Deployment target (75-85%) requires at least 4 positions; 3 positions at 17-20% each = max 60%; must reach 4th position to close the gap
+
+### Adjustments for Next Week
+- **CPI May 12 8:30 AM ET** = named blocker Monday; no new entries Mon AM; assess entries Mon PM or Tuesday
+- **4th position priority:** SOXX or XLK — tech sector leading RS; NVDA AI momentum; after CPI clears, enter ~18% sizing to push deployed to ~72%
+- **FCX re-entry attempt:** Pull bid/ask spread Sunday evening; only enter if spread <$1.00 and R:R confirms 2:1 minimum at ask price
+- **XLE watch:** If WTI closes any session below $90, exit XLE manually (thesis break); do not wait for $53.85 stop if thesis is clearly broken
+- **NVDA earnings May 20:** Hold through; tighten stop to 7% if +15% threshold ($230.62) reached before May 20
+- **Deployment goal:** Reach ≥65-70% by Wednesday May 14 (4 positions); Wednesday urgency check will apply again
+
+### Overall Grade: C+
