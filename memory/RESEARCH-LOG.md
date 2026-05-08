@@ -638,3 +638,80 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-08 — Pre-Market Research (Friday — NFP Day)
+
+*Note: Alpaca API and Perplexity returned 403 (IP/host not in allowlist). Account snapshot from EOD May 7 TRADE-LOG. Market data via WebSearch fallback.*
+
+### Account Snapshot (EOD May 7 baseline — API unavailable)
+- **Equity:** ~$100,632 | **Cash:** $45,828 (45.6%) | **Deployed:** ~$54,804 (54.5%)
+- **Phase P&L:** +$632 (+0.63%) | **Week count:** 2/3 | **DT count:** 0
+
+| Ticker | Shares | Entry | EOD Close | Unrealized | Stop |
+|--------|--------|-------|-----------|------------|------|
+| CAT | 20 | $892.689 | $894.23 | +$30.82 (+0.17%) | HWM $931.35 / stop $838.22 |
+| NVDA | 95 | $200.54 | $210.93 | +$987.05 (+5.18%) | HWM $214.20 / stop $192.78 |
+| XLE | 300 | $57.5551 | $56.27 | -$385.53 (-2.23%) | HWM $59.835 / stop $53.8515 |
+
+### Market Context
+- **Oil:** WTI $94.36 / Brent $101.65 (overnight); pre-market WTI ~$93.02 / Brent ~$99.21 (-2%) on Iran peace deal optimism (Strait of Hormuz potential reopening). WTI well above $90 thesis-break floor — energy thesis intact.
+- **S&P 500 futures:** +0.2% pre-market; Nasdaq +0.1%; Dow +0.3%. Gains driven by Iran peace talk progress.
+- **VIX:** 17.08–17.13, down ~1.5% — calm zone, improved from recent 18–19 range. Favorable for risk.
+- **10Y Treasury:** 4.34% (-1bp) — stable.
+- **NFP April 2026 (8:30 AM ET today):** ADP private payrolls May 6 = +109K (beat). Consensus for April government NFP: +55K–165K (wide range; median ~65K); unemployment rate expected steady at 4.3%. **Named blocker — no trades today regardless of print.**
+- **US-Iran:** Peace talks ongoing; US-Iran near "one-page MOU" via Pakistan mediation. Ceasefire since April 8 tenuous — fresh attacks on UAE/Strait yesterday. Market optimism fragile; oil -2% on deal hopes offset by geopolitical risk premium.
+- **Earnings BMO today:** Berkshire Hathaway (BRK.B), Tyson Foods (TSN), Norwegian Cruise Line (NCLH) — none held; no direct impact on positions.
+- **Sector YTD momentum:** Energy (XLE) #1 YTD (+21.6%); Industrials (XLI) Leading; Technology (XLK) lagging but recovering. Sector ranking unchanged: Energy > Tech > Industrials > Materials.
+
+### Position Updates
+
+**CAT ($894.23, +0.17% from entry $892.689):**
+- Q1 2026 earnings beat: $17.4B revenue (+22% YoY), EPS $5.54 vs $4.25 est. Power generation +41% (data center engines). $63B backlog.
+- Stock up 53% YTD; near record highs. Tariff headwind: ~$2.6B cost in 2026 weighing on sentiment.
+- Stop HWM $931.35 / stop $838.22 well above entry. CAT barely above entry after Thursday selloff (-3.53%). ISM mfg + services expansion thesis intact.
+- Risk: tariff costs + macro softness; stop provides adequate buffer. HOLD.
+
+**NVDA ($210.93 close; pre-market up ~2.43%):**
+- Pre-market ~$216 indicated. $500M Corning partnership for US optical connectivity (AI data centers) announced. Analysts consensus Buy; 12-month target $272.
+- Earnings May 20 — key catalyst. AI demand thesis intact; IREN/cloud partnership expanding.
+- Stop HWM $214.20 / stop $192.78 — pre-market move may auto-trail stop higher today.
+- HOLD through May 20 earnings.
+
+**XLE ($56.27, -2.23% from avg entry $57.5551):**
+- Oil -2% pre-market on Iran deal progress. WTI ~$93 pre-market, still above $90 thesis-break floor.
+- XLE up 21.6% YTD; Energy sector top YTD performer. XLE PE 21.35, AUM $41B.
+- Stop HWM $59.835 / stop $53.8515 locked (price below HWM). $56.27 above -7% cut threshold ($53.53) and above stop ($53.85).
+- Risk: If Iran deal closes and Strait reopens, WTI could test $85–90; watch stop $53.85 as backstop.
+- HOLD; stop doing its job.
+
+### Trade Ideas (Next Window: Monday May 12)
+
+1. **WATCH: XOM (ExxonMobil) — Energy slot #2**
+   - **Catalyst:** Energy #1 sector; max 1 more energy position allowed. Iran peace deal could close Strait = oil thesis risk; wait for clarity.
+   - **Entry window:** Mon May 12 — only if WTI holds > $90 post-weekend and deal progress remains uncertain.
+   - **Sizing:** ~18% equity (~$18K). **Stop:** 10% trail GTC immediately.
+   - **Target:** 10–15% move. R:R 2:1+.
+   - **Condition:** Iran deal NOT finalized + WTI > $90.
+
+2. **WATCH: NVDA add — Technology slot #2**
+   - **Catalyst:** Pre-market surge on Corning deal; AI thesis accelerating. Earnings May 20 = binary event.
+   - **Entry window:** Mon May 12 — evaluate whether adding pre-earnings is prudent. Risk: AMC earnings May 20 = named blocker for any add.
+   - **Note:** Current NVDA position +5.18% unrealized; adding a 2nd tech position creates concentration risk.
+
+3. **WATCH: FCX (Freeport-McMoRan) — Materials slot**
+   - **Catalyst:** Materials (XLB) Leading sector; commodity cycle intact; copper demand from AI/data centers and EVs.
+   - **Condition:** Energy thesis must hold; oil > $90; VIX < 20.
+   - **Lower priority** than XOM; evaluate after XOM decision.
+
+### Risk Factors
+- **NFP print (8:30 AM ET):** Large miss (<30K) = recession signal → could trigger CAT/XLI thesis review; large beat (>200K) = rate-hike risk. **Blackout regardless — no trades today.**
+- **Iran deal:** If MOU signed → WTI could crater below $90 → XLE stop $53.85 critical backstop. Watch closely Mon.
+- **NVDA earnings May 20:** Named blocker for any NVDA add starting ~May 17. Window for add is Mon–Fri May 12–16 only.
+- **Deployment at 54.5%:** Still below 75–85% floor. Monday May 12 = must evaluate adding 1 position (XOM or FCX) unless named blocker active.
+- **CAT near breakeven:** +0.17% from entry after Thursday's -3.53%. Tariff headwind real. If ISM data weakens or macro softens, reassess. Stop $838.22 provides protection.
+- **VIX 17.08:** Green light zone (< 20). Favorable for new entries next week.
+
+### Decision
+**HOLD — NFP named blocker; no new entries today.** All 3 positions intact, theses holding. Next entry window Monday May 12. Priority order: (1) evaluate XOM if WTI > $90 and Iran deal unresolved; (2) FCX if energy thesis at risk; (3) NVDA add if pre-earnings window still open and concentration acceptable. Must reach ≥75% deployed by next Friday.
