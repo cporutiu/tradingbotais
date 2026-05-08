@@ -321,3 +321,33 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 | XLE | 300 | $57.5551 | $56.27 | -1.28% | -$385.53 (-2.23%) | 10% trail (HWM $59.835 / stop $53.8515) |
 
 **Notes:** Day 10, Thursday — NFP blackout, no new trades (week count: 2/3). Portfolio -$582.95 on the day: CAT fell -3.53% to $894.23, nearly back to entry ($892.689), unrealized now just +$30.82 (+0.17%) — stop locked at HWM $931.35/stop $838.22, thesis intact (ISM expansion, infrastructure demand); NVDA was the one bright spot, +1.49% to $210.93 (+$987 unrealized, +5.18% from entry), stop auto-trailed to HWM $214.20/stop $192.78, AI thesis strong; XLE continued oil selloff -1.28% to $56.27 (-2.23% from entry), stops locked at HWM $59.835/stop $53.8515, well above -7% cut threshold ($53.53), WTI still above $90 thesis-break level. No stops triggered. No losers cut. NFP May 8 tomorrow — full blackout, no trades. Next entry window Monday May 12; watch XLK/FCX/XOM for 3rd position to boost deployment above 75% floor.
+
+**Market-open 2026-05-08 (Friday — NFP Day):**
+- **No trades placed** — NFP 8:30 AM ET +160K (massive beat vs 62-65K consensus) = named blocker; blackout in effect
+- **Equity:** $101,053.79 | **Cash:** $45,828.39 (45.3%) | **Deployed:** $55,225.40 (54.7%) | **DT count:** 0 | **Phase P&L:** +$1,053.79 (+1.05%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $909.32 | +$332.62 (+1.86%) | +1.52% | 10% trail HWM $931.35 / stop $838.22 (locked) |
+| NVDA | 95 | $200.54 | $213.53 | +$1,234.05 (+6.48%) | +0.96% | 10% trail HWM $214.20 / stop $192.78 (locked) |
+| XLE | 300 | $57.5551 | $55.85 | -$511.53 (-2.96%) | -0.18% | 10% trail HWM $59.835 / stop $53.8515 (locked) |
+
+- **CAT:** $909.32 (+1.86% from entry). Stop locked HWM $931.35 / stop $838.22 (price below HWM). NFP +160K = strong economy = infrastructure demand constructive. Thesis intact.
+- **NVDA:** $213.53 (+6.48% from entry). Stop locked HWM $214.20 / stop $192.78 (price just below HWM — may set new HWM today). NVDA-Corning partnership + NVDA-IREN 5GW AI data center deal = major AI catalysts. Thesis strong; earnings May 20.
+- **XLE:** $55.85 (-2.96% from avg entry). Stops locked HWM $59.835 / stop $53.8515. WTI ~$94-97 from pre-market research — 5.4% above $90 thesis-break floor. Stop provides 3.6% buffer from current price. Not a thesis break. HOLD.
+- **Week count:** 2/3. **Next entry window: Monday May 12.** Priority candidates: XLK/SOXX (4th position, boost deployment), FCX (if entry validates R:R), XOM (energy only if oil stabilizes above $95-97).
+
+**Midday 2026-05-08:**
+- **NVDA midday:** $215.23 (+7.33% from entry $200.54; +1.76% today). Stop auto-trailed to HWM $217.80 / stop $196.02 (improved from morning HWM $214.20 / stop $192.78). NVDA-Corning partnership + IREN 5GW AI data center deal drove intraday strength. Thesis very strong; earnings May 20.
+- **CAT midday:** $900.985 (+0.93% from entry $892.689; +0.59% today). Stop locked at HWM $931.35 / stop $838.22 (price below HWM). NFP +160K = strong economy = infrastructure demand constructive. Thesis intact.
+- **XLE midday:** $55.975 (-2.75% from avg entry $57.5551; +0.05% today). Stops locked at HWM $59.835 / stop $53.8515 (price below HWM — no trail update). WTI ~$94-97 — above $90 thesis-break floor. Stop provides 3.6% buffer. Not a thesis break. HOLD.
+- **Losers cut:** None (-7% threshold not breached: NVDA +7.33%, CAT +0.93%, XLE -2.75%)
+- **Stop tightening:** None (+15% thresholds not reached: NVDA needs $230.62, CAT needs $1,026.59, XLE needs $66.19)
+- **Thesis break:** None. All 3 intact.
+- **Portfolio:** Equity ~$101,087 | Cash $45,828 (45.4%) | Deployed ~$55,259 (54.7%, 3 positions) | Week count: 2/3 | NFP blackout → next entry Mon May 12
+
+**Open Orders (midday 2026-05-08):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.22
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $217.80, stop $196.02
+- Sell 207 XLE trailing_stop 10% GTC (4968bf9e): active, HWM $59.835, stop $53.8515
+- Sell 93 XLE trailing_stop 10% GTC (b1043e8f): active, HWM $59.835, stop $53.8515
