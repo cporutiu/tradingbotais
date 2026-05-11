@@ -62,6 +62,14 @@ Format each entry:
 ### Decision
 **HOLD today — CPI May 12 is a named blocker within 24h.** Monitor XLE fill at open. Re-assess Wednesday morning after both CPI (Tue) and PPI (Wed) print; if both benign, enter SOXX or XOM Wednesday. Preserve all 3/3 trade slots for the rest of the week.
 
+### Afternoon Addendum (Midday Scan 2026-05-11)
+- **Broad market:** Strong risk-on rally today — NVDA +2.66%, CAT +2.29%; market-wide strength ahead of CPI tomorrow.
+- **NVDA $220.925 (+10.17% from entry):** Stop auto-trailed to HWM $222.30 / stop $200.07. Getting close to +15% tightening threshold ($230.62) — watch for tightening to 7% trail if price reaches $230.62. Earnings May 20 = named blocker for that week. AI thesis intact; no negative catalyst.
+- **CAT $918.01 (+2.84% from entry):** Stop locked at HWM $931.35 / stop $838.215. ISM expansion thesis intact. Needs to break above $931.35 to set new HWM and auto-trail stop higher.
+- **XLE exit confirmed clean:** $56.49 fill (-1.85%); capital freed and deployed at 38.5%.
+- **Deployment 38.5%:** Below 40% floor → TRADE mode active, but CPI tomorrow = named blocker. Next entry window Wednesday May 14 (post-CPI) or Thursday May 15 (post-PPI). Priority: SOXX or XLK (~$19,000, 17-20% sizing) to push deployment toward 75% floor.
+- **No action taken midday.** No cuts, no stop tightening, no thesis breaks.
+
 ---
 
 ## 2026-05-08 — Pre-Market Research (Friday — NFP Day)

@@ -408,3 +408,15 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Open Orders (market-open 2026-05-11):**
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.22
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $218.31, stop $196.479
+
+**Midday 2026-05-11:**
+- **NVDA midday:** $220.925 (+10.17% from entry $200.54; +2.66% today). Stop auto-trailed to HWM $222.30 / stop $200.07 (improved from morning HWM $218.31 / stop $196.479). Approaching +15% tightening threshold ($230.62) — monitor closely. AI thesis intact; market-wide risk-on rally. Earnings May 20.
+- **CAT midday:** $918.01 (+2.84% from entry $892.689; +2.29% today). Stop locked at HWM $931.35 / stop $838.215 (price below HWM — no trail update). ISM expansion + infrastructure thesis intact. No new catalyst; riding broad market strength.
+- **Losers cut:** None (-7% not breached: NVDA +10.17%, CAT +2.84%)
+- **Stop tightening:** None (+15% thresholds not reached: NVDA needs $230.62, CAT needs $1,026.59)
+- **Thesis break:** None. Both intact.
+- **Portfolio:** Equity ~$102,123 | Cash $62,775 (61.5%) | Deployed ~$39,348 (38.5%, 2 positions) | Phase P&L: +$2,123 (+2.12%) | Week count: 0/3 | CPI blocker tomorrow May 12 — no new entries today
+
+**Open Orders (midday 2026-05-11):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $222.30, stop $200.07
