@@ -5,6 +5,65 @@ Format each entry:
 
 ---
 
+## 2026-05-11 — Pre-Market Research (Monday, Week 3)
+
+### Account Snapshot
+- **Equity:** $100,984.49 | **Cash:** $45,828.39 (45.4%) | **Long MV:** $55,156.10 (54.6%)
+- **DT count:** 0 | **Phase P&L:** +$984.49 (+0.98%)
+- **XLE sell pending (88479a03):** 300sh market day — fills at open → deployed drops to ~38% post-fill
+- **Post-XLE-fill deployed estimate:** ~$38,260 / $100,984 ≈ 37.9% (TRADE mode triggered — <40%)
+- **Buying power:** $146,812.88 (2x margin account; effective cash $45,828)
+- **Week 3:** 3/3 trade slots fresh
+
+| Ticker | Shares | Entry | Pre-Open | Unrealized | Stop HWM / Stop |
+|--------|--------|-------|----------|------------|-----------------|
+| CAT | 20 | $892.69 | $896.03 | +$66.82 (+0.37%) | HWM $931.35 / stop $838.22 |
+| NVDA | 95 | $200.54 | $214.10 | +$1,288.20 (+6.76%) | HWM $217.80 / stop $196.02 |
+| XLE | 300 | $57.5551 | $56.32 | -$370.53 (-2.15%) | SELLING AT OPEN |
+
+### Market Context
+- **WTI:** ~$97.50 intraday; closed $97.09 (high $100.35) — Hormuz closure + OPEC+ hike 206k bpd sustaining premium; thesis-break floor $90 still 7.2% away
+- **Brent:** ~$104.75
+- **S&P 500 futures (ESM26):** 7,412.50, -6.50 (-0.09%); SPX closed ATH 7,398.51 last Friday (+0.84% week)
+- **VIX:** ~17.15 — LOW risk zone (<18); SPY RSI ~70-71 (overbought territory)
+- **Economic cycle:** early-cycle — Q1 GDP accelerating, business investment +10%, LEI 7/10 positive components
+- **Sector momentum YTD:** Energy +22-26% (dominant), Materials +17.2%, Industrials +11.4%, Tech positive, XLRE/XLU lagging
+
+### Key Economic Releases
+- **TODAY (May 11):** NAR Existing Home Sales 10 AM ET; SCE Housing Survey 11 AM ET — NOT named blockers
+- **TOMORROW (May 12) 8:30 AM ET:** CPI April 2026 — **NAMED BLOCKER → NO new entries today**
+- **Wednesday May 13 8:30 AM ET:** PPI April 2026 — named blocker; assess after CPI lands
+- **Next FOMC:** June 16-17; no meeting this week
+- **BMO today:** No confirmed major earnings (Hain Celestial unconfirmed, small cap)
+
+### Held Ticker News
+- **NVDA:** Bullish technicals; support $195.60, resistance $216.63 (next breakout target); ATH ~$217.80; earnings May 20 (named blocker for that week). Thesis strong — AI momentum intact.
+- **CAT:** No specific news today; economy constructive (NFP +160K, ISM expansion). Thesis intact.
+- **XLE:** Selling at open. WTI above thesis floor but oil weakness continues; proactive exit locked in Friday.
+
+### Trade Ideas
+1. **PASS TODAY — CPI May 12 named blocker.** No new entries today per strategy rule (<24h to CPI).
+2. **TRADE WEDNESDAY May 14 (post-PPI Wednesday, if PPI benign):**
+   - **NVDA 4th position (XLK/SOXX):** Consider adding a 2nd tech position in SOXX or a different XLK name to boost deployment to 75%+ floor. SOXX: semiconductor momentum, AI cycle, early-cycle tailwind. Entry ~$200-210 range; stop 10% trail GTC.
+   - **CAT is already on (Industrials slot 1).** Can add 1 more Industrials if XLI confirms, or shift to Materials (FCX) or Energy (XOM) for diversification.
+3. **Priority after CPI/PPI clear:**
+   - **SOXX or NVDA add** (Technology, #2 watchlist) — AI/semiconductor momentum strongest; SOXX > individual NVDA add (sector diversification)
+   - **XOM** (Energy slot 2) — only if WTI stable above $95-97 post-oil data Wednesday
+   - **FCX** (Materials, #4 watchlist) — commodities cycle; lower priority
+
+### Risk Factors
+- **CPI tomorrow May 12:** Market at ATH; hot CPI could trigger correction; wait for print
+- **PPI Wednesday May 13:** Secondary data risk; full clarity not until Thursday
+- **NVDA earnings May 20:** Named blocker for that full week; must limit week-of-earnings positioning
+- **SPY overbought (RSI 70-71):** Elevated near-term pullback risk at ATH; VIX low is complacent
+- **XLE fill risk:** Weekend price movement; fill may deviate from $56.32 pre-open price
+- **Deployment gap post-XLE fill:** ~38% deployed — must add 2-3 positions this week to reach 75-85% floor; CPI/PPI compress the window to Wednesday+
+
+### Decision
+**HOLD today — CPI May 12 is a named blocker within 24h.** Monitor XLE fill at open. Re-assess Wednesday morning after both CPI (Tue) and PPI (Wed) print; if both benign, enter SOXX or XOM Wednesday. Preserve all 3/3 trade slots for the rest of the week.
+
+---
+
 ## 2026-05-08 — Pre-Market Research (Friday — NFP Day)
 
 ### Account Snapshot
