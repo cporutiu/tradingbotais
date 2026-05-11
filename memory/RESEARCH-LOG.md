@@ -712,4 +712,85 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **NVDA midday:** $197.57 (-1.48% from entry $200.54). Normal drift, no catalyst. AI thesis intact; hold through May 20 earnings.
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
+
+---
+
+## 2026-05-11 — Pre-market Research (Week 3, Day 1)
+
+> **API Note:** Alpaca API returned 403 (sandbox egress block); Perplexity API same. Account snapshot uses last known state (Day 11 EOD May 8). WebSearch fallback used for all market data — noted per workflow.
+
+### Account Snapshot (last known — Day 11 EOD May 08)
+- **Equity:** $100,924.27 | **Cash:** $45,828.39 (45.4%) | **Deployed:** ~$55,096 (54.6%)
+- **Buying power:** ~$45,828 | **Daytrade count:** 0
+- **Phase P&L:** +$924.27 (+0.92%) | **Week trade count:** 0/3 (fresh week)
+- **Positions:** 3 open — CAT 20sh @ $892.689 | NVDA 95sh @ $200.54 | XLE 300sh @ $57.5551
+- **Stops:** CAT HWM $931.35/stop $838.22 | NVDA HWM $217.80/stop $196.02 | XLE HWM $59.835/stop $53.8515
+
+### Market Context
+- **WTI:** ~$97.40/bbl (+2.0% today) | **Brent:** ~$103.80/bbl (+2.5%) — oil surging on Trump rejection of Iran peace proposal over weekend; diplomatic breakdown; Strait of Hormuz geopolitical premium re-expanding
+- **S&P 500 futures:** -0.09% premarket (Polymarket: 38% chance of up open, down from 50%); risk-off from weekend Iran diplomatic collapse
+- **VIX:** 17.19 at May 8 close (range 16.82-17.53); likely to tick higher today on Iran news — still LOW-MEDIUM risk zone
+- **Key release this week:**
+  - **CPI Tuesday May 12 8:30 AM ET** ← NAMED BLOCKER — consensus headline +0.6% MoM / +3.7% YoY, core +0.3% MoM / +2.7% YoY
+  - No FOMC or PPI this week (next FOMC June)
+- **Earnings today BMO:** MNDY, PBR, CEG — none are held tickers; no blocker from earnings
+- **Sector YTD leaders (RRG):** Energy (+30.7%) = Leading #1 | Industrials = Leading | Materials = Leading | Consumer Staples = Leading | Technology = Lagging (recovering)
+
+### Position Updates
+
+**NVDA ($215.20 premarket, +7.3% from entry $200.54):**
+- ATH set May 8 at $217.80 = our current HWM; stop $196.02
+- NVDA-Corning $3.2B investment + IREN 5GW AI data center $2.1B deal (announced last week) = thesis catalysts intact
+- Motley Fool (May 10): "Should You Buy Nvidia Stock Before May 20? Here's What History Says" — bullish pre-earnings setup
+- Earnings May 20 — next major inflection. HOLD through earnings.
+- Stop at $196.02 = 8.9% below $215.20 premarket; well-placed
+- **Action: HOLD**
+
+**CAT ($897.45 close May 8, +0.53% from entry $892.689):**
+- Q1 beat: revenue $17.42B (+22% YoY), EPS $5.54 beat; record $63B backlog
+- Morgan Stanley upgraded to Equal Weight, raised target $430 → $915; JPMorgan raised to $1,125 (Overweight "resounding beat")
+- BofA raised target to $930 on energy/AI infrastructure demand
+- Motley Fool: "Why Caterpillar Could Be the AI Stock of the Year" (AI data center construction demand)
+- Thesis strengthening. Stop locked HWM $931.35/stop $838.22.
+- **Action: HOLD**
+
+**XLE ($55.70 close May 8, -3.22% from avg entry $57.5551):**
+- Oil +2% today (WTI $97.40, Brent $103.80) = positive catalyst for XLE; Iran diplomatic breakdown = geopolitical premium re-expanding
+- XLE +23% YTD; Energy sector #1 (Leading in RRG)
+- Stops locked at HWM $59.835/stop $53.8515; current price $55.70 is 6.6% above stop
+- WTI $97.40 = well above $90 thesis-break floor; geopolitical premium intact
+- Pre-market oil surge should push XLE toward HWM; watch for stop trail update today
+- **Action: HOLD — watch for trail update if XLE rallies above $59.835 HWM**
+
+### Trade Ideas
+
+1. **XOM (ExxonMobil) — Energy slot 2 — WATCH for Wednesday entry**
+   - **Catalyst:** Oil re-accelerating (+2% today, WTI $97.40); Iran ceasefire collapsed; Energy #1 sector; XOM is strategy watchlist #1 candidate
+   - **Wait for:** Post-CPI (Tuesday) confirmation that data doesn't shock; oil stability ≥$95
+   - **Entry:** Market Wednesday open if CPI benign; ~$118-122 range (est.)
+   - **Sizing:** ~17-18% of equity (~$17,000-18,200) → ~140-155 shares
+   - **Stop:** 10% trailing GTC immediately on fill
+   - **Target:** $135+ (10-12% move); 2:1+ R:R on $90 thesis floor
+   - **Sector check:** Would be 2nd energy position (max allowed = 2 ✓); deployment → ~72%
+   - **Deployment after:** ~72% — closer to 75% floor; may need 5th position later
+
+2. **XLK/SOXX (Tech ETF) — 4th position alternative — WATCH post-CPI**
+   - **Catalyst:** NVDA earnings May 20 = sector catalyst; CSCO reports Wednesday (enterprise AI capex proxy); XLK recovering from Lagging quadrant
+   - **Entry:** Only if CPI benign AND XLK above key resistance; lower priority than XOM given sector rank
+   - **Sizing:** 17-20% equity; consider after XOM decision
+
+3. **FCX (Freeport-McMoRan) — Materials #4 on watchlist — LOW PRIORITY**
+   - Materials sector Leading; copper demand for AI infrastructure
+   - Skip this week — XOM + potential XLK fills deployment gap without adding a 4th sector
+
+### Risk Factors
+- **CPI Tuesday May 12 8:30 AM ET (NAMED BLOCKER):** Hot print (+0.7%+ MoM or core +0.4%+) = rate-hike fear = broad selloff. Impacts all positions.
+- **Iran diplomatic breakdown:** Risk-off Monday open; futures slightly down; BUT oil +2% = net positive for XLE/XOM thesis. Watch equity open — if gap down >1%, reassess position sizing for new entries
+- **NVDA pre-earnings:** Reports May 20 — potential for pre-earnings fade; current stop $196.02 covers downside. Consider tightening if NVDA hits +15% ($230.62) before May 20
+- **CAT stop gap:** Stop at $838.22 is 6.6% below $897.45; thesis intact but CAT +0.53% from entry means limited P&L buffer; needs to hold above $838.22
+- **XLE below HWM:** Price $55.70 below HWM $59.835 — stop locked; oil spike today could push XLE back toward HWM; watch for trail opportunity
+- **Deployment:** 54.6% — below 75% floor; Wednesday urgency check applies if ≤2 slots used by Wednesday close AND deployed < 60%
+
+### Decision
+**HOLD today — CPI Tuesday May 12 is a NAMED BLOCKER within 24h.** Patience rule valid (named blocker exists). No new entries Monday. Monitor XLE for HWM break (trail opportunity if oil sustains rally). Entry window reopens post-CPI: **Wednesday May 13 = priority execution day for XOM (energy slot 2).** Week count: 0/3.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
