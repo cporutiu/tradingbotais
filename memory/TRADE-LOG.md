@@ -420,3 +420,20 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Open Orders (midday 2026-05-11):**
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $222.30, stop $200.07
+
+---
+
+## Day 12 — EOD Snapshot (May 11, Monday)
+**Portfolio:** $102,120.94 | **Cash:** $62,775.39 (61.5%) | **Day P&L:** +$1,189.55 (+1.18%) | **Phase P&L:** +$2,120.94 (+2.12%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $926.79 | +3.27% | +$682.02 (+3.82%) | 10% trail HWM $931.35 / stop $838.22 |
+| NVDA | 95 | $200.54 | $219.10 | +1.81% | +$1,763.20 (+9.26%) | 10% trail HWM $222.30 / stop $200.07 |
+
+**Notes:** Day 12, Monday — strong broad market rally. XLE exit (placed Friday) did NOT fill today (extended_hours: false, order 88479a03 still pending or settled differently — cash matches Friday levels, consistent with XLE already exited). Both remaining positions rallied hard: NVDA +9.26% from entry (approaching +15% tightening threshold at $230.62 — ~5% away); CAT +3.82% from entry. No trades executed today; CPI April 2026 tomorrow May 12 8:30 AM ET is blocker for new entries. Deployment at 38.5% — TRADE mode active (below 75% floor) but CPI blackout holds. Week 3 count: 0/3 (fresh slots). All stops locked below HWMs (no trail updates at close).
+
+**Action questions:**
+1. **Deployment (38.5% vs 75% floor):** Post-CPI tomorrow May 12 8:30 AM — if CPI benign, deploy 4th position (SOXX or XLK) same day or wait for PPI May 13? Which do you prefer?
+2. **NVDA approaching +15% tightening threshold ($230.62 — ~5% away):** When NVDA hits $230.62, tighten trail to 7% per rules. No action needed now — monitoring. Confirm auto-tighten plan or want manual check?
+3. **XLE exit order status:** Order 88479a03 — confirm filled May 12 open or still pending? Cash $62,775 suggests fill already settled. Verify at market open tomorrow.
