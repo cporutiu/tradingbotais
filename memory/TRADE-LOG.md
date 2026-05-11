@@ -363,4 +363,48 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 | NVDA | 95 | $200.54 | $215.13 | +1.72% | +$1,386.05 (+7.28%) | 10% trail (HWM $217.80 / stop $196.02) |
 | XLE | 300 | $57.5551 | $55.70 | -0.45% | -$556.53 (-3.22%) | 10% trail (HWM $59.835 / stop $53.8515) |
 
-**Notes:** Day 11, Friday — NFP Day. No trades executed; week ends 2/3. NFP April 2026: +160K (massive beat vs 62-65K consensus) — strong labor market; market rallied broadly. NVDA led with +1.72% to $215.13 (+7.28% from entry, unrealized +$1,386); CAT edged up +0.20% to $897.45 (+0.53% from entry, +$95 unrealized); XLE continued oil weakness -0.45% to $55.70 (-3.22% from entry, -$557 unrealized) on sustained Hormuz/ceasefire de-escalation selloff. All trailing stops locked (all prices below HWMs). No losers cut (-7% threshold not breached). No stop tightening (NVDA needs $230.62, CAT needs $1,026.59, XLE needs $66.19). Phase P&L hits new high +$924.27 (+0.92%). Week 3 starts Monday May 12 — fresh 3/3 cap; priority: add 4th position (XLK/SOXX) to push deployment above 75% floor.
+**Notes:** Day 11, Friday — NFP Day. No trades executed; week ends 2/3. XLE EXIT QUEUED (see below).
+
+## 2026-05-08 — XLE Proactive Exit (After Close)
+
+**Decision:** Exit XLE proactively — oil thesis (WTI geopolitical premium) deteriorating; WTI fell from $106 to ~$94-97 (-11%); thesis-break floor ($90) only 5% away; position bleeding slowly at -3.22%. User elected to exit rather than wait for stop at $53.85.
+
+| Action | Detail |
+|--------|--------|
+| Cancelled stop 93sh | b1043e8f — deleted |
+| Cancelled stop 207sh | 4968bf9e — deleted |
+| Sell order placed | 88479a03 — 300sh XLE market day; accepted 23:49 UTC; fills Monday May 12 open (extended_hours: false) |
+| Expected fill | ~$55.60-56.00 (Monday open; price may move over weekend) |
+| Cost basis | $57.5551 avg entry |
+| Expected P&L | ~-$470 to -$570 (-2.7% to -3.3%) — beats stop at $53.85 (-6.4% max loss) |
+
+**Capital freed:** ~$16,700 cash unlocked at fill → deployment drops from 54.7% to ~37% → TRADE mode active Monday (must deploy 4th position) NFP April 2026: +160K (massive beat vs 62-65K consensus) — strong labor market; market rallied broadly. NVDA led with +1.72% to $215.13 (+7.28% from entry, unrealized +$1,386); CAT edged up +0.20% to $897.45 (+0.53% from entry, +$95 unrealized); XLE continued oil weakness -0.45% to $55.70 (-3.22% from entry, -$557 unrealized) on sustained Hormuz/ceasefire de-escalation selloff. All trailing stops locked (all prices below HWMs). No losers cut (-7% threshold not breached). No stop tightening (NVDA needs $230.62, CAT needs $1,026.59, XLE needs $66.19). Phase P&L hits new high +$924.27 (+0.92%). Week 3 starts Monday May 12 — fresh 3/3 cap; priority: add 4th position (XLK/SOXX) to push deployment above 75% floor.
+
+---
+
+## 2026-05-11 — XLE Exit Fill Confirmed + Market-Open Snapshot (Monday, Week 3)
+
+**XLE EXIT CLOSED:**
+
+| Ticker | Shares | Entry | Exit | P&L | Notes |
+|--------|--------|-------|------|-----|-------|
+| XLE | 300 | $57.5551 | $56.49 | -$319.53 (-1.85%) | Proactive exit; oil thesis deteriorating; WTI $90 floor 5% away; beats stop loss at $53.85 |
+
+- Order 88479a03 filled at market open May 12 → $56.49/sh avg (cash $45,828 → $62,775, +$16,947 proceeds)
+- XLE stops b1043e8f + 4968bf9e cancelled Friday May 8 — confirmed gone from open orders
+
+**Week trade count: 0/3** (exits don't count; fresh 3 buy slots for week of May 12-16)
+
+**Position status at market-open 2026-05-11:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $900.91 | +$164.42 (+0.92%) | +0.39% | 10% trail HWM $931.35 / stop $838.22 (locked) |
+| NVDA | 95 | $200.54 | $218.2072 | +$1,678.38 (+8.81%) | +1.40% | 10% trail HWM $218.31 / stop $196.479 (auto-trailed) |
+
+**Account:** Equity $101,516.89 | Cash $62,775.39 (61.8%) | Deployed $38,741.50 (38.2%) | DT count: 0 | Phase P&L: +$1,516.89 (+1.52%)
+
+**Notes:** No new trades today — CPI April 2026 tomorrow May 12 8:30 AM ET = named blocker within 24h; HOLD per pre-market plan. XLE exit fills cleanly at $56.49 (-1.85% from avg entry) — controlled exit; avoids stop-triggered loss at $53.85 (-6.4% max). NVDA auto-trailed to new HWM $218.31 / stop $196.479 on intraday strength (+8.81% from entry). CAT stop locked at HWM $931.35 / stop $838.22 (price $900.91 below HWM). No losers cut (-7% thresholds: NVDA +8.81%, CAT +0.92% — both well above). No stop tightening needed (+15% threshold: NVDA $230.62 not reached; CAT $1,026.59 not reached). Deployed 38.2% — TRADE mode active (< 40%) but CPI blocker prevents entry. **Next entry window: Wednesday May 14 or Thursday May 15 post-CPI/PPI.** Priority: SOXX or XLK (4th position, push deployment to ~75%).
+
+**Open Orders (market-open 2026-05-11):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.22
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $218.31, stop $196.479
