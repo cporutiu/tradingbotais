@@ -11,6 +11,15 @@ STEP 1 — Read memory for context:
 - tail of memory/TRADE-LOG.md
 - tail of memory/RESEARCH-LOG.md
 
+STEP 1B — Check for pending user decisions:
+- Scan the tail of memory/TRADE-LOG.md for any "User decisions" block
+  (lines starting with "**User decisions**") in the most recent EOD entry.
+- For each decision found, treat it as a confirmed instruction and carry it
+  forward into today's plan (entry timing, stop tightening, etc.).
+- If a decision references a specific trigger that hasn't fired yet
+  (e.g. "tighten NVDA at $230.62"), note it as an active watch item in
+  STEP 4's RESEARCH-LOG entry.
+
 STEP 2 — Pull live account state:
   bash scripts/alpaca.sh account
   bash scripts/alpaca.sh positions
