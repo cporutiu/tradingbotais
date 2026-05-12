@@ -437,3 +437,7 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **Deployment (38.5% vs 75% floor):** Post-CPI tomorrow May 12 8:30 AM — if CPI benign, deploy 4th position (SOXX or XLK) same day or wait for PPI May 13? Which do you prefer?
 2. **NVDA approaching +15% tightening threshold ($230.62 — ~5% away):** When NVDA hits $230.62, tighten trail to 7% per rules. No action needed now — monitoring. Confirm auto-tighten plan or want manual check?
 3. **XLE exit order status:** Order 88479a03 — confirm filled May 12 open or still pending? Cash $62,775 suggests fill already settled. Verify at market open tomorrow.
+
+**User decisions (2026-05-11):**
+- Q1: **Deploy 4th position May 12** — post-CPI same day if benign. Target: SOXX or XLK.
+- Q2: **NVDA auto-tighten confirmed** — when NVDA hits $230.62, tighten trail to 7% GTC per rules. No manual check needed.
