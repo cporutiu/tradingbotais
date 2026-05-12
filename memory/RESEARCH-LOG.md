@@ -5,6 +5,81 @@ Format each entry:
 
 ---
 
+## 2026-05-12 — Pre-Market Research (Tuesday, Week 3)
+
+### Account Snapshot
+- **Equity:** $101,847.34 | **Cash:** $62,775.34 (61.6%) | **Deployed:** $39,072 (38.4%) | **DT count:** 0
+- **Buying power:** $164,622.68 | **Phase P&L:** +$1,847.34 (+1.85%)
+- **Positions:** 2 open — CAT (20sh) + NVDA (95sh)
+- **Week trade count:** 0/3 (fresh)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $920.00 | +$546.22 (+3.06%) | -0.73% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $217.62 | +$1,622.60 (+8.52%) | -0.83% | 10% trail HWM $222.30 / stop $200.07 (locked) |
+
+### User Decisions Carrying Forward (from 2026-05-11)
+- **Q1 ACTIVE:** Deploy 4th position May 12 post-CPI if benign → CPI benign (market at 7,400+ record high); TRADE mandatory today. Target: SOXX or XLK.
+- **Q2 WATCH:** NVDA auto-tighten at $230.62 → tighten trail to 7% GTC. NVDA at $217.62 = $13.00 / 5.97% away. Active watch item.
+
+### Market Context
+- **WTI:** ~$100.46 (recovering; Robinhood prediction markets >$99 at 81¢ odds) | **Brent:** ~$106-107 (est.)
+- **S&P 500 futures:** ~7,402-7,424 (record territory; six-week win streak; strong)
+- **VIX:** 17.19 (May 8 close) — low risk zone (< 18)
+- **CPI April 2026 (released 8:30 AM ET today):** Consensus headline +0.6% MoM / 3.7% YoY, core +0.3% MoM / 2.7% YoY. Market at all-time highs = absorbed as benign; user decision triggered.
+- **Earnings today:** 171 companies reporting; no major BMO for held names. CSCO/AMAT/BABA later this week — AI/tech sentiment tests.
+- **Economic cycle:** Mid-cycle — GDP +2.0% Q1 2026, ISM Mfg 52.7 (4 months expansion), unemployment 4.3%, Fed holding.
+- **Sector YTD leaders:** Energy 36.98% (#1), Materials 28.20% (#2), Industrials 25.99% (#3), XLK 23.71% (#4)
+- **Market risk:** Low (VIX 17.19)
+
+### Position Updates
+
+**CAT ($920.00, +3.06% from entry $892.689):**
+- Q1 2026: EPS $5.54 vs $4.65e (+19%), revenue +22% to $17.4B, raised FY guidance to low double-digit growth. Construction Industries profit +50% YoY.
+- CFO transition (Kyle Epley, May 1). No new specific May 12 catalyst.
+- -0.73% today — minor pullback, within noise. Stop locked at HWM $931.35 / stop $838.215.
+- Thesis intact; ISM expansion + infrastructure demand.
+
+**NVDA ($217.62, +8.52% from entry $200.54):**
+- Vera Rubin trial production June 2026; Blackwell Ultra ramping; IREN 5GW deal ($3.4B); TSMC April rev +17.5% YoY.
+- Earnings May 20 — the major next catalyst. Analysts bullish; AI agentic inference inflecting.
+- -0.83% today — minor pullback. Stop locked at HWM $222.30 / stop $200.07.
+- **WATCH: tighten to 7% when NVDA hits $230.62 (currently $13.00 / 5.97% away).**
+- Thesis very strong; hold through earnings May 20.
+
+### Trade Ideas
+
+1. **TRADE: XLK (Technology ETF) — 4th position, TODAY (user decision May 11 confirmed)** ✓ PRIMARY
+   - **Catalyst:** CPI benign → user decision triggered; tech sector #4 YTD (+23.71%); AI momentum strong pre-NVDA earnings May 20; AMD +20% last week; NVDA at $217+ and holding; CSCO/AMAT earnings this week as secondary AI sentiment confirmation
+   - **Entry:** Market open today ~$230-245 (confirm live quote at open)
+   - **Sizing:** 17-20% equity ($17,314 - $20,369) → at $240: ~72-85 shares; target ~75-80sh (~$18,000, 17.7%)
+   - **Stop:** 10% trailing GTC immediately on fill
+   - **Target:** +15-20% (~$276-$288); 2:1+ R:R
+   - **Sector check:** 2nd tech position (NVDA = 1st); within 2-per-sector cap ✓; total sectors: Technology + Industrials ✓
+   - **After entry:** Deployed ~56% (still below 75% floor — may need 5th position Thu/Fri)
+   - **Note on SOXX alternative:** SOXX is ~20-25% NVDA-weighted = higher correlation to existing position. XLK preferred for diversification within tech.
+
+2. **WATCH: SOXX (Semiconductor ETF)** — alternative to XLK if XLK R:R fails
+   - Same AI momentum thesis; more semiconductor concentration
+   - Enter only if XLK R:R fails 2:1 check at open; use as fallback
+   - Same sizing: 17-20% equity
+
+3. **HOLD: CAT, NVDA** — theses intact; no cuts, no tightening needed
+
+### Risk Factors
+- **CPI hotter-than-expected risk:** If actual CPI >0.6% MoM or core >0.3% — hawkish Fed reaction; could pressure tech (XLK). Monitor open reaction before placing order.
+- **NVDA earnings May 20 (8 days out):** XLK is ~20% NVDA-weighted; if NVDA sells off on earnings miss, XLK takes the hit. Mitigated by 10% trailing stop.
+- **CAT -0.73% today:** Minor; no catalyst; stop at HWM $931.35/stop $838.215 well above -7% cut threshold ($830.20).
+- **NVDA approaching tighten threshold:** At $230.62, must tighten to 7% immediately.
+- **Deployment after 4th position:** ~56% — still 19 points below 75% floor. May need 5th position this week (Thu/Fri window, no named blockers May 13-14).
+- **Correlation risk:** NVDA + XLK + SOXX = all AI/tech concentration. Ensure 5th position (if needed) comes from Materials (FCX) or different sector.
+
+### Decision
+**TRADE — enter XLK (or SOXX as fallback) at market open.** Deployed 38.4% + confirmed user decision from May 11 (deploy 4th position post-CPI if benign). CPI benign (market at record 7,400+). No named 24h blocker. Tech sector momentum intact. 17-20% sizing, 10% trailing stop GTC immediately on fill. Week count after entry: 1/3. Monitor NVDA for $230.62 tightening trigger throughout today.
+
+---
+
 ## 2026-05-11 — Pre-Market Research (Monday, Week 3)
 
 ### Account Snapshot
