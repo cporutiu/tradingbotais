@@ -476,3 +476,35 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 | XLK | 103 | $175.4940 | $175.54 | +$4.74 (+0.03%) | -1.32% | 10% trail HWM $175.65 / stop $158.085 (new) |
 
 **NVDA tighten watch:** $220.67 vs $230.62 threshold — 4.52% away. Active watch.
+
+**Midday 2026-05-12:**
+- **CAT midday:** $912.14 (-1.58% today; +2.18% from entry $892.689). Stop locked at HWM $931.35 / stop $838.215 (price below HWM — no trail update). No specific catalyst for pullback; ISM expansion + infrastructure thesis fully intact. Well above -7% cut threshold ($830.20). HOLD.
+- **NVDA midday:** $219.96 (+0.24% today; +9.68% from entry $200.54). Stop auto-trailed to HWM $223.75 / stop $201.375 (improved from morning HWM $222.30 / stop $200.07 — new intraday high set). Approaching +15% tighten threshold at $230.62 (~4.85% away from $219.96). AI thesis strong. HOLD.
+- **XLK midday:** $175.21 (-1.50% today; -0.16% from entry $175.4940). Stop auto-trailed to HWM $176.99 / stop $159.291 (XLK hit intraday high $176.99 early then pulled back with market). Normal first-session drift after post-CPI ATH morning. CPI benign + tech AI momentum thesis intact. HOLD.
+- **Losers cut:** None (-7% threshold not breached: CAT +2.18%, NVDA +9.68%, XLK -0.16%)
+- **Stop tightening:** None (+15% thresholds not reached: NVDA needs $230.62, CAT needs $1,026.59; XLK not eligible at -0.16%)
+- **Thesis break:** None. All 3 intact.
+- **Portfolio:** Equity ~$101,885 | Cash ~$44,700 (43.9%) | Deployed ~$57,185 (56.1%, 3 positions) | Week count: 1/3 | 2 trade slots remain (no blockers May 13-14; PPI May 13 ≠ named blocker)
+
+**Open Orders (midday 2026-05-12):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $223.75, stop $201.375 (auto-trailed)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $176.99, stop $159.291 (auto-trailed)
+
+---
+
+## Day 13 — EOD Snapshot (May 12, Tuesday)
+**Portfolio:** $101,886.88 | **Cash:** $44,699.46 (43.9%) | **Day P&L:** -$271.06 (-0.27%) | **Phase P&L:** +$1,886.88 (+1.89%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $912.14 | -1.58% | +$389.02 (+2.18%) | 10% trail (HWM $931.35 / stop $838.215) |
+| NVDA | 95 | $200.54 | $219.98 | +0.25% | +$1,846.80 (+9.69%) | 10% trail (HWM $223.75 / stop $201.375) |
+| XLK | 103 | $175.4940 | $175.21 | -1.50% | -$29.36 (-0.16%) | 10% trail (HWM $176.99 / stop $159.291) |
+
+**Notes:** Day 13, Tuesday — XLK entered at market open (post-CPI benign, week slot 1/3). Broad market pulled back: CAT -1.58%, XLK -1.50% on day; NVDA held green +0.25% with stop auto-trailed to HWM $223.75 / stop $201.375 (improved from $222.30/$200.07). XLK barely negative at close (-0.16% from entry); 10% trail provides 9.1% cushion. Deployment 56.2% — below 75% floor; 2 week slots remain (1/3 used). No tightening thresholds breached. NVDA at +9.69%, approaching +15% auto-tighten trigger at $230.62 (~4.8% away). CAT stop locked (HWM $931.35, price $912.14 below HWM). NVDA position is 20.5% of portfolio (slightly above 20% max rule — mark-to-market growth, not new capital added).
+
+**Action questions:**
+1. **Deployment (56.2% vs 75% floor):** 2 slots remain this week (1/3 used). Add a 5th position this week? Best candidates from research: SOXX, FCX, XOM. Timing: post-PPI May 13 morning, or wait for momentum confirmation on a specific day?
+2. **NVDA $219.98 (+9.69%), auto-tighten trigger at $230.62 (~4.8% away):** User confirmed auto-tighten to 7% trail on May 11. Still valid? Or want manual check first?
+3. **CAT -1.58% today ($912.14, +2.18% from entry):** Infrastructure thesis — any signs of deterioration post-CPI (tariff sensitivity, macro uncertainty), or hold to stop at $838.215 as planned?

@@ -78,6 +78,13 @@ Format each entry:
 ### Decision
 **TRADE — enter XLK (or SOXX as fallback) at market open.** Deployed 38.4% + confirmed user decision from May 11 (deploy 4th position post-CPI if benign). CPI benign (market at record 7,400+). No named 24h blocker. Tech sector momentum intact. 17-20% sizing, 10% trailing stop GTC immediately on fill. Week count after entry: 1/3. Monitor NVDA for $230.62 tightening trigger throughout today.
 
+### Afternoon Addendum (Midday Scan 2026-05-12)
+- **XLK entered at market-open:** 103sh @ $175.4940 avg; stop 4299aece (HWM $175.65/stop $158.085). CPI benign + user decision triggered. Week count: 1/3.
+- **XLK midday $175.21 (-1.50% today; -0.16% from entry):** Hit intraday HWM $176.99 early (stop auto-trailed to $176.99/stop $159.291) then pulled back with broader market giving up post-CPI morning ATH gains. Normal first-session behavior. CPI benign + tech AI momentum thesis intact. HOLD.
+- **NVDA $219.96 (+9.68% from entry; +0.24% today):** Stop auto-trailed to new HWM $223.75 / stop $201.375 (was $222.30/$200.07 at morning open). +15% tighten threshold $230.62 now 4.85% away — active watch.
+- **CAT $912.14 (+2.18% from entry; -1.58% today):** Stop locked at HWM $931.35 / stop $838.215 (price below HWM). No catalyst for pullback. ISM expansion thesis intact. HOLD.
+- **Midday decision:** HOLD all. No cuts, no stop tightening, no thesis breaks. Deployed 56.1% — below 75-85% floor; 2 trade slots remain this week. Assess 5th position Thursday (PPI May 13 is not a named blocker; no qualifying blocker until May 20 NVDA earnings).
+
 ---
 
 ## 2026-05-11 — Pre-Market Research (Monday, Week 3)
