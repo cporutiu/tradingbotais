@@ -51,6 +51,24 @@ Get-ScheduledTask -TaskName "TradingBot-*" | Unregister-ScheduledTask -Confirm:$
 
 ---
 
+## Action Questions — User Feedback Loop
+
+ClickUp is **write-only** for the bot. Answers posted as ClickUp comments are never read by any routine.
+
+### Correct workflow
+1. **EOD daily-summary** appends action questions to the TRADE-LOG.md EOD entry and posts them to ClickUp for visibility.
+2. **User answers** in an interactive Claude Code session (chat). Claude logs the decisions as a `**User decisions (YYYY-MM-DD):**` block directly below the action questions in TRADE-LOG.md and commits/pushes.
+3. **Pre-market STEP 1B** reads the most recent `**User decisions**` block and carries confirmed instructions forward into the day's plan and RESEARCH-LOG watch items.
+
+### User decisions block format (TRADE-LOG.md)
+```
+**User decisions (YYYY-MM-DD):**
+- Q1: <decision text>
+- Q2: <decision text>
+```
+
+---
+
 ## Cloud Routine Setup (Preserved — Alternative)
 
 The original approach used Claude Code cloud routines. Every env var was injected by the routine config; there was no `.env` file in the repo. To restore this approach:

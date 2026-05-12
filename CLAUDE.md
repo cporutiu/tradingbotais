@@ -54,6 +54,21 @@ Ad-hoc slash commands (interactive) live in `.claude/commands/`.
 - Follow sector momentum. Exit a sector after 2 failed trades.
 - Patience > activity.
 
+## Action Questions — Feedback Loop
+
+The EOD daily-summary appends action questions to TRADE-LOG.md and posts them
+to ClickUp. ClickUp is **write-only** — the bot never reads replies there.
+
+**How to respond:**
+1. Answer the questions in an interactive Claude Code session (this chat).
+2. Claude logs the answers to TRADE-LOG.md as a `**User decisions (YYYY-MM-DD):**`
+   block directly below the EOD action questions.
+3. Pre-market STEP 1B reads that block and carries decisions forward as
+   confirmed instructions (entry timing, stop tightening, etc.).
+
+Never answer action questions only in ClickUp — they will not be seen until
+the next pre-market run at earliest, and only if STEP 1B finds the block.
+
 ## API Wrappers
 
 Use bash scripts/alpaca.sh, scripts/perplexity.sh, scripts/clickup.sh.
