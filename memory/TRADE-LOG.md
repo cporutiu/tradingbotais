@@ -441,3 +441,38 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **User decisions (2026-05-11):**
 - Q1: **Deploy 4th position May 12** — post-CPI same day if benign. Target: SOXX or XLK.
 - Q2: **NVDA auto-tighten confirmed** — when NVDA hits $230.62, tighten trail to 7% GTC per rules. No manual check needed.
+
+---
+
+## 2026-05-12 — Market-Open Trades
+
+**Week trade count: 1/3**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-05-12 | XLK | BUY | 103 | $175.4940 | 10% trail GTC (order 4299aece, HWM $175.65, stop $158.085) | $210.59 (+20%) | 2:1 | CPI April 2026 benign (market ATH 7,400+); user decision triggered (deploy post-CPI same day); tech sector #4 YTD (+23.71%); AI momentum pre-NVDA earnings May 20; 4th position boosts deployment toward 75% floor; 2nd tech slot (NVDA = slot 1) |
+
+**Execution notes:**
+- Order 92aaf6e8: 103sh XLK market day, submitted 2026-05-12 09:31:47 ET
+- Fill: 103sh @ $175.4940 avg (partially filled 30sh @ $175.31 at 09:32:35, remainder filled shortly after)
+- Stop order 4299aece: sell 103sh XLK trailing_stop 10% GTC, HWM $175.65, stop $158.085
+- CPI benign (record ATH 7,400+) + user decision May 11 = entry triggered ✓
+- R:R: entry $175.49, trail risk 10% = $17.55, target +20% = $210.59 → 2:1 ✓
+- Week slot used: 1/3
+
+**Portfolio (post-trade 2026-05-12):**
+- Equity ~$101,585 | Cash ~$44,700 | Deployed ~$57,265 (56.4%) | 3 positions | Week count: 1/3 | DT count: 0
+
+**Open Orders (market-open 2026-05-12):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $222.30, stop $200.07
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $175.65, stop $158.085
+
+**Position status at market-open 2026-05-12:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $911.01 | +$366.42 (+2.05%) | -1.70% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $220.67 | +$1,912.34 (+10.04%) | +0.56% | 10% trail HWM $222.30 / stop $200.07 (locked) |
+| XLK | 103 | $175.4940 | $175.54 | +$4.74 (+0.03%) | -1.32% | 10% trail HWM $175.65 / stop $158.085 (new) |
+
+**NVDA tighten watch:** $220.67 vs $230.62 threshold — 4.52% away. Active watch.
