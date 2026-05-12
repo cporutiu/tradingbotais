@@ -780,3 +780,78 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-12 — Pre-market Research (FALLBACK: WebSearch — Alpaca API + Perplexity both 403 host_not_allowed)
+
+### Account Snapshot (last known — EOD May 11; live API unreachable)
+- **Equity:** ~$102,121 | **Cash:** $62,775.39 (61.5%) | **Deployed:** ~$39,345 (38.5%, 2 positions)
+- **Buying power:** ~$125,551 (estimated) | **Daytrade count:** 0
+- **Week trade count:** 0/3 (fresh slots — Week 3)
+- **Positions:** CAT (20sh @ $892.689) + NVDA (95sh @ $200.54)
+- **Open stops:** CAT aa646f6e (HWM $931.35 / stop $838.22) | NVDA e15a4b83 (HWM $222.30 / stop $200.07)
+- **NOTE:** Alpaca API returning 403 (host_not_allowed) — live equity/stop values unverified this session
+
+### Market Context
+- **WTI:** ~$97-98/bbl | **Brent:** ~$104.97/bbl (+0.73%) — Hormuz still effectively closed; Trump dismissed Iran peace proposal; geopolitical premium intact
+- **S&P 500 futures:** -0.4% premarket — CPI-driven caution + Trump Beijing trip (US-China AI/trade talks); market pulling back from record highs
+- **VIX:** 17.19 (close May 11) — moderate zone; not alarming
+- **CPI April 2026 — TODAY 8:30 AM ET:** Consensus headline +0.6% MoM / +3.7% YoY; core +0.3% MoM / +2.7% YoY; energy spike driving headline; this is the named blocker that resolves at 8:30 AM
+- **Earnings BMO today:** None of significance; QBTS minor. This week: Cisco, Alibaba, Applied Materials (AMC)
+- **NVDA earnings:** May 20 BMO — consensus expects upside beat; strong buy (37 analysts, avg PT $270.73)
+- **Economic calendar rest of week:** PPI May 13; retail sales May 15
+- **Sector momentum:** Technology/Semis (+60% YTD SOXX) #1 strength; AI infrastructure capex boom $650-725B in 2026; Energy still elevated (Hormuz); Industrials supported by AI data center infrastructure demand
+
+### Position Updates
+
+**NVDA (~$219-222 premarket, +9.3% from entry $200.54):**
+- AI capex boom intact; $40B+ in AI investments flowing; hyperscalers supply-constrained
+- Approaching +15% tightening threshold ($230.62) — ~5% away; auto-tighten plan confirmed
+- Earnings May 20 — hold; consensus upside beat; no pre-earnings cut
+- Stop: HWM $222.30 / stop $200.07 (from last midday — live value unverified)
+
+**CAT (~$926 premarket, +3.7% from entry $892.689):**
+- Q1 2026 revenue +22% YoY; Power Generation +41% (data center engines/turbines surging)
+- Baird raised PT to $1,165 (from $940) — infrastructure + AI data center buildout thesis intact
+- Trading in $894-929 range; stop locked below HWM $931.35
+- Stop: HWM $931.35 / stop $838.22 (from last EOD — live value unverified)
+
+### Trade Ideas
+
+1. **TRADE: SOXX (iShares Semiconductor ETF) — 4th position, Technology sector** ← PRIMARY
+   - **Catalyst:** AI infrastructure capex $650-725B; semiconductor demand crushing (+60% YTD); Cisco/AMAT earnings this week as sector read-throughs; NVDA May 20 as sector halo catalyst; direct exposure to chip cycle without single-name NVDA concentration risk
+   - **Entry trigger:** Post-CPI 8:30 AM ET — enter market buy IF core CPI ≤0.3% MoM / ≤2.7% YoY (benign); ABORT if hot print (>0.4% core MoM or >3.0% core YoY)
+   - **Sizing:** ~17-20% of ~$102,121 = ~$17,360-20,424 (estimate ~85-95 shares at ~$215-220 SOXX)
+   - **Stop:** 10% trailing GTC immediately on fill
+   - **Target:** +15-20% move; 2:1+ R:R (SOXX ~$248-264 range)
+   - **Post-entry deployment:** ~$56,700 (~55.5%) — below 75% floor; may need 5th position Thursday/Friday
+   - **Sector check:** Technology (3rd sector open — no overlap cap issue: only NVDA in tech; SOXX is ETF not same sector cap concern)
+   - **User confirmation:** May 11 decision block confirmed "Deploy 4th position May 12 post-CPI, target SOXX or XLK" ✓
+   - **SOXX over XLK:** Higher momentum (+60% YTD vs XLK), more direct AI/semiconductor catalyst, broader chip-cycle exposure caps single-name risk
+
+2. **WATCH: XOM (ExxonMobil) — Energy slot 2**
+   - Oil thesis valid (WTI $97-98, Brent $104.97, Hormuz closed); geopolitical premium intact
+   - PASS this week: XLE was exited proactively after thesis deterioration; re-entering energy immediately contradicts exit logic; allow 1-week cooling period before energy re-entry
+   - Revisit Week 4 if oil holds above $95 and Hormuz stays closed
+
+3. **MONITOR: NVDA stop tighten ($230.62 threshold)**
+   - Current ~$219-222 — ~4-5% from tighten trigger
+   - When NVDA hits $230.62: replace GTC trail from 10% → 7%; confirmed per user May 11 decision
+
+### Risk Factors
+- **CPI hot print risk:** Consensus 3.7% YoY; if actual >4.0% headline or >0.4% core MoM → market sells off → HOLD SOXX entry; wait for PPI clarity May 13
+- **Hormuz disruption escalation:** Any naval incident could spike oil and VIX sharply; watch WTI intraday
+- **NVDA earnings May 20:** Hold through; no pre-earnings cut; thesis strongly intact
+- **Alpaca API offline:** Cannot verify live stops or fills; user should confirm CAT/NVDA stop levels are intact at market open
+- **Deployment gap:** After SOXX entry ~55.5% — still 20pt below 75% floor; need 5th position Thu/Fri to comply with deployment rules
+- **S&P futures -0.4% premarket:** Modest weakness; CPI resolution expected to normalize direction by 9:30 AM open
+
+### Decision
+**TRADE — Enter SOXX (4th position) POST-CPI at 8:30 AM ET IF benign (core ≤0.3% MoM).**
+- Deployment at 38.5% with no valid blocker post-CPI → deployment floor rule triggers TRADE default
+- Entry: market order ~9:31 AM ET (1 min after open for price discovery)
+- Sizing: ~17-20% equity (~$17,400-20,400); set 10% trailing GTC immediately
+- ABORT criteria: core CPI >0.4% MoM or >3.0% YoY → HOLD, reassess PPI May 13
+- Week count after SOXX: 1/3
+- Remaining action: 5th position needed Thu/Fri (FCX/XOM) to reach 75% deployment floor
