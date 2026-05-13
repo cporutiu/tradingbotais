@@ -63,31 +63,49 @@ def _get_folder_id(token, folder_name):
     return None
 
 
+_BENZINGA_SENDERS = [
+    "alerts@benzinga.com",
+    "hello@investor.benzinga.com",
+]
+
+
+def _fetch_one_sender(token, endpoint, sender, cutoff):
+    headers = {"Authorization": f"Bearer {token}"}
+    url     = f"{_GRAPH_BASE}/users/{OUTLOOK_USER_EMAIL}/{endpoint}"
+    params  = {
+        "$filter": f"from/emailAddress/address eq '{sender}' and receivedDateTime ge {cutoff}",
+        "$select": "subject,body,receivedDateTime",
+        "$top": 500,
+    }
+    emails = []
+    while url:
+        r = requests.get(url, headers=headers, params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json()
+        for msg in data.get("value", []):
+            subject  = msg.get("subject", "")
+            body_obj = msg.get("body", {})
+            raw_body = body_obj.get("content", "")
+            if body_obj.get("contentType", "").lower() == "html":
+                raw_body = re.sub(r"<[^>]+>", " ", raw_body)
+            emails.append({"subject": subject, "body": raw_body})
+        url    = data.get("@odata.nextLink")
+        params = None  # nextLink already includes all params
+    return emails
+
+
 def _fetch_emails(token):
     cutoff    = (datetime.now() - timedelta(hours=LOOKBACK_HOURS)).strftime("%Y-%m-%dT%H:%M:%SZ")
     folder_id = _get_folder_id(token, OUTLOOK_FOLDER_NAME)
     endpoint  = f"mailFolders/{folder_id}/messages" if folder_id else "messages"
 
-    r = requests.get(
-        f"{_GRAPH_BASE}/users/{OUTLOOK_USER_EMAIL}/{endpoint}",
-        headers={"Authorization": f"Bearer {token}"},
-        params={
-            "$filter": f"from/emailAddress/address eq 'alerts@benzinga.com' and receivedDateTime ge {cutoff}",
-            "$select": "subject,body,receivedDateTime,from",
-            "$top": 50,
-        },
-        timeout=30,
-    )
-    r.raise_for_status()
-
     emails = []
-    for msg in r.json().get("value", []):
-        subject  = msg.get("subject", "")
-        body_obj = msg.get("body", {})
-        raw_body = body_obj.get("content", "")
-        if body_obj.get("contentType", "").lower() == "html":
-            raw_body = re.sub(r"<[^>]+>", " ", raw_body)
-        emails.append({"subject": subject, "body": raw_body})
+    for sender in _BENZINGA_SENDERS:
+        try:
+            batch = _fetch_one_sender(token, endpoint, sender, cutoff)
+            emails.extend(batch)
+        except Exception as e:
+            print(f"[benzinga] Fetch failed for {sender}: {e}", file=sys.stderr)
     return emails
 
 
