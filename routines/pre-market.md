@@ -42,6 +42,16 @@ STEP 2 — Pull live account state:
   bash scripts/alpaca.sh positions
   bash scripts/alpaca.sh orders
 
+STEP 2B — Fetch Benzinga email alerts from Outlook 365:
+  python scripts/fetch_benzinga.py > .tmp/benzinga_signals_$DATE.json
+  cat .tmp/benzinga_signals_$DATE.json
+
+Read the output. Extract the tickers with action=BUY or action=SELL
+(confidence=medium or high only). Note them as BENZINGA_BUYS and
+BENZINGA_SELLS — you will use these in STEP 3.
+If the script errors or all signals are HOLD, proceed normally with no
+Benzinga context.
+
 STEP 3 — Research market context via Perplexity. Run
 bash scripts/perplexity.sh "<query>" for each:
 - "WTI and Brent oil price right now"
@@ -54,6 +64,8 @@ bash scripts/perplexity.sh "<query>" for each:
 - News on any currently-held ticker
 - "Rank these ETFs by 20-day relative strength vs SPY, strongest to weakest, return as a JSON array of ticker symbols only, no explanation: SPY QQQ GLD SLV XLE XLF XLK XLV XLU XLI XLB XLP XLY XLC XLRE IWM HYG EEM SOXX"
 - "US economic cycle stage right now — respond with exactly one of: early-cycle mid-cycle late-cycle recession. Then 2 sentences of rationale based on leading indicators."
+- For each ticker in BENZINGA_BUYS: "Latest analyst commentary and news catalysts for [TICKER] ETF today — is the bullish case supported by macro data or fund flows?"
+- For each ticker in BENZINGA_SELLS: "Latest analyst commentary and news catalysts for [TICKER] ETF today — is the bearish case supported by macro data or sector outflows?"
 
 If Perplexity exits 3, fall back to native WebSearch and note the
 fallback in the log entry.
@@ -104,6 +116,9 @@ print('market-intel.json written')
 STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 - Account snapshot (equity, cash, buying power, daytrade count)
 - Market context (oil, indices, VIX, today's releases)
+- Benzinga signals: list any BUY/SELL tickers from STEP 2B with confidence
+  and summary. If none, write "Benzinga: no actionable signals today."
+- Perplexity validation: did Perplexity confirm or contradict Benzinga signals?
 - 2-3 actionable trade ideas WITH catalyst + entry/stop/target
 - Risk factors for the day
 - Decision: trade or HOLD (default HOLD — patience > activity)
