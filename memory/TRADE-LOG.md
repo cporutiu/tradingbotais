@@ -546,3 +546,19 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $227.16, stop $204.444 (auto-trailed)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $177.33, stop $159.597 (auto-trailed)
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $150.80, stop $135.72 (new)
+
+**Midday 2026-05-13:**
+- **CAT midday:** $902.30 (-1.08% today; +1.08% from entry $892.689). Stop locked at HWM $931.35 / stop $838.215 (price below HWM — no trail update). ISM expansion + infrastructure + analyst upgrade thesis intact. Well above -7% cut threshold ($830.20). HOLD.
+- **NVDA midday:** $226.55 (+2.61% today; +12.97% from entry $200.54). Stop locked at HWM $227.84 / stop $205.056 (price $226.55 below HWM — no trail update). Jensen Huang on Trump China trip / H200 catalyst fully in play. **+15% tighten trigger $230.62 — only 1.79% away**. User-confirmed auto-tighten to 7% trail when hit. HOLD; alert EOD if triggered.
+- **XLK midday:** $177.35 (+1.23% today; +1.06% from entry $175.494). Stop locked at HWM $177.74 / stop $159.966 (price below HWM — no trail update). Tech AI momentum + CPI benign thesis intact. HOLD.
+- **XOM midday:** $151.40 (+0.51% today; +0.42% from entry $150.769). Stop at HWM $151.74 / stop $136.566 (new position, price near HWM). WTI $101-102 + Hormuz risk premium thesis intact. HOLD.
+- **Losers cut:** None (-7% not breached: CAT +1.08%, NVDA +12.97%, XLK +1.06%, XOM +0.42%)
+- **Stop tightening:** None (+15% threshold not breached: NVDA at +12.97%, trigger $230.62 not hit; CAT/XLK/XOM far below threshold)
+- **Thesis break:** None. All 4 intact.
+- **Portfolio:** Equity ~$102,617 | Cash ~$25,099 (24.5%) | Deployed ~$77,518 (75.5%, 4 positions) | Week count: 2/3 | 1 trade slot remains
+
+**Open Orders (midday 2026-05-13):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $227.84, stop $205.056 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $177.74, stop $159.966 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $151.74, stop $136.566 (locked)
