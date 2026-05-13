@@ -508,3 +508,41 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **Deployment (56.2% vs 75% floor):** 2 slots remain this week (1/3 used). Add a 5th position this week? Best candidates from research: SOXX, FCX, XOM. Timing: post-PPI May 13 morning, or wait for momentum confirmation on a specific day?
 2. **NVDA $219.98 (+9.69%), auto-tighten trigger at $230.62 (~4.8% away):** User confirmed auto-tighten to 7% trail on May 11. Still valid? Or want manual check first?
 3. **CAT -1.58% today ($912.14, +2.18% from entry):** Infrastructure thesis — any signs of deterioration post-CPI (tariff sensitivity, macro uncertainty), or hold to stop at $838.215 as planned?
+
+---
+
+## 2026-05-13 — Market-Open Trades
+
+**Week trade count: 2/3**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-05-13 | XOM | BUY | 130 | $150.7689 | 10% trail GTC (order 4d9623bf, HWM $150.80, stop $135.72) | $180.92 (+20%) | 2:1 | WTI $101-102 + Hormuz "ceasefire on life support" → oil risk premium re-intensifying; Energy sector #2 YTD; re-opens Energy after XLE proactive exit; PPI April +0.5% inline → risk-on holds; 4th position boosts deployment to 75% floor; Wednesday urgency week 3 |
+
+**Execution notes:**
+- Order a79c2fa5: 130sh XOM market day, submitted 2026-05-13 09:49:48 ET (14:49:48 UTC)
+- Fill: 130sh @ $150.7689 avg ($19,599.95 cost basis) — filled immediately at market
+- Stop order 4d9623bf: sell 130sh XOM trailing_stop 10% GTC, HWM $150.80, stop $135.72
+- PPI April 2026: +0.5% MoM / +2.2% YoY (inline with 0.5% consensus → risk-on confirmed per decision tree) ✓
+- R:R: entry $150.77, risk 10% = $15.08, target +20% = $180.92, reward $30.15 → 2:1 ✓
+- Energy sector: 0 prior positions → sector cap compliant ✓
+- Week slot used: 2/3
+
+**Portfolio (post-trade 2026-05-13):**
+- Equity ~$102,231 | Cash ~$25,099 | Deployed ~$77,131 (75.4%) | 4 positions | Week count: 2/3 | DT count: 0
+
+**Position status (market-open 2026-05-13):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $901.44 | +$175.02 (+0.98%) | -1.17% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $225.18 | +$2,340.80 (+12.29%) | +1.99% | 10% trail HWM $227.16 / stop $204.444 (auto-trailed) |
+| XLK | 103 | $175.494 | $175.85 | +$36.67 (+0.20%) | +0.37% | 10% trail HWM $177.33 / stop $159.597 (auto-trailed) |
+| XOM | 130 | $150.7689 | $150.75 | -$2.45 (-0.01%) | +0.08% | 10% trail HWM $150.80 / stop $135.72 (new) |
+
+**NVDA tighten watch:** $225.18 vs $230.62 threshold — 2.42% away. Active monitor.
+
+**Open Orders (market-open 2026-05-13):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): active, HWM $227.16, stop $204.444 (auto-trailed)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $177.33, stop $159.597 (auto-trailed)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $150.80, stop $135.72 (new)
