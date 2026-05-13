@@ -862,3 +862,96 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-13 — Pre-Market Research (Wednesday, Week 3)
+
+### Account Snapshot (last known — Alpaca API blocked by sandbox network, fallback to May 12 EOD log)
+- **Equity:** ~$101,887 | **Cash:** ~$44,699 (43.9%) | **Deployed:** ~$57,188 (56.1%) | **DT count:** 0
+- **Positions:** 3 open — CAT (20sh) + NVDA (95sh) + XLK (103sh)
+- **Week trade count:** 1/3 | **Slots remaining:** 2
+
+### Positions (last known prices)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $912.14 | +$389.02 (+2.18%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $219.98 | +$1,846.80 (+9.69%) | 10% trail HWM $223.75 / stop $201.375 |
+| XLK | 103 | $175.4940 | $175.21 | -$29.36 (-0.16%) | 10% trail HWM $176.99 / stop $159.291 |
+
+**Note:** Alpaca API returned 403 (host not in allowlist — sandbox restriction). Account snapshot based on May 12 EOD TRADE-LOG entry. Perplexity also unavailable; used WebSearch fallback.
+
+### User Decisions Carrying Forward (from 2026-05-12 EOD)
+- **Q1 WATCH:** Deploy 5th position this week (2 slots remain). Candidates: SOXX, FCX, XOM. Timing: post-PPI May 13 or momentum confirmation.
+- **Q2 ACTIVE:** NVDA auto-tighten at $230.62 (+15% threshold) → tighten trail to 7% GTC. NVDA at $219.98 = $10.64 / 4.84% away.
+- **Q3 WATCH:** CAT -1.58% yesterday ($912.14, +2.18% from entry) — tariff risk ($700M Q2 headwind). Stop $838.215 intact; hold for thesis break.
+
+### Market Context
+- **WTI:** ~$101-102/bbl | **Brent:** ~$107/bbl — elevated; Hormuz Strait disruption ongoing (geopolitical premium intact); energy thesis valid
+- **S&P 500 futures:** +0.1% premarket (Wed); 83% Polymarket odds of open higher; recovering from May 12 CPI-driven selloff
+- **VIX:** 18.11 (+5.35% day) — medium risk zone; elevated but within normal range (16-25 band)
+- **April CPI (released May 12):** HOT — +0.6% MoM, +3.8% YoY (highest since May 2023); core +0.4% MoM / +2.8% YoY. Energy +3.8% = 40%+ of gain. Fed rate hike odds by year-end rose to ~30% (CME). Market fell May 12. Rate sensitivity headwind for tech/growth.
+- **April PPI (releasing today 8:30 AM ET):** NAMED BLOCKER — no new entries until PPI clears and is digested.
+- **Earnings BMO today:** Alibaba (BABA), Cisco (CSCO) — not held; broad market sentiment catalyst
+- **Trump-Xi meeting May 14-15 (China trip):** NVDA CEO Jensen Huang joining — geopolitical positive for tech/AI; de-escalation catalyst possible
+- **Sector momentum YTD (leaders→laggards):** Energy → Semiconductors/AI → Defense → Industrials → Healthcare; Tech (broad XLK) cooling after AI run but recovering
+
+### Position Updates
+
+**NVDA ($219.48 premarket, ~+9.46% from entry $200.54):**
+- Q1 FY27 earnings May 20; guide $78B revenue (+/- 2%) — likely beat given track record
+- CEO joining Trump China trip (bullish: US-China tech thaw narrative, NVDA export access)
+- Motley Fool: "will soar on May 20" — AI capex explosive, hyperscaler supply-constrained
+- Stop: HWM $223.75 / stop $201.375 — auto-trailed; tighten trigger at $230.62
+- Thesis: INTACT. Hold through earnings May 20.
+
+**CAT ($916.00 premarket range $894.56-$924.46, +2.61% from entry $892.689):**
+- Evercore ISI raised PT $878 → $1,103 (Outperform) | Argus raised PT $820 → $990 (Buy)
+- Q1 2026: +22% revenue growth, record backlog; full-year guidance raised
+- 2025 Annual Report: highest-ever revenues in company history (+32% YTD)
+- Risk: $700M tariff cost projected Q2 2026 — real margin headwind; monitor for guidance cut
+- Stop: HWM $931.35 / stop $838.215 (locked; price below HWM)
+- Thesis: INTACT. Analyst upgrades reinforce hold. Monitor tariff commentary.
+
+**XLK ($174.40 premarket range $171.20-$176.99, -0.62% from entry $175.4940):**
+- Hot CPI creates rate hike headwind for tech/growth names; 30% odds of Fed hike by year-end
+- XLK at slight loss; stop provides 9.1% cushion from entry; thesis (AI + post-CPI recovery) intact
+- Risk: If PPI also hot this morning → accelerated rate hike expectations → tech selling
+- Stop: HWM $176.99 / stop $159.291
+- Thesis: WATCH post-PPI. If PPI hot + VIX spikes above 20, reassess XLK hold.
+
+### Trade Ideas
+
+1. **HOLD — no new entries until PPI clears 8:30 AM ET (named blocker)**
+   - PPI is a principal economic release; named blocker per strategy rules
+
+2. **WATCH: SOXX (iShares Semiconductor ETF) — Tech sector, slot 2 available**
+   - Catalyst: NVDA CEO China trip (export access narrative); semiconductor momentum leader YTD; NVDA earnings May 20 lift
+   - Entry condition: Post-PPI benign + VIX ≤ 18 + SOXX holding above $230 support
+   - Sizing: ~17-20% equity (~$17,300-$20,400), ~75-90 shares at ~$228-230
+   - Stop: 10% trailing GTC immediately on fill
+   - Target: $265 (+15% from entry); 2:1 R:R minimum
+   - Sector check: Tech — would be 3rd tech position (NVDA + XLK + SOXX) → EXCEEDS 2-position sector cap ❌ BLOCKED until one tech position exits
+
+3. **WATCH: XOM (ExxonMobil) — Energy sector, slot available**
+   - Catalyst: Hormuz disruption; WTI $101-102, Brent $107 elevated; Trump China visit may not ease oil supply
+   - Entry condition: Post-PPI benign + oil stable/rising + VIX ≤ 18.5
+   - Sizing: ~17-20% equity (~$17,300-$20,400)
+   - Stop: 10% trailing GTC immediately
+   - Target: +15-20% from entry; 2:1 R:R
+   - Sector check: Energy — opens slot 2 in Energy sector ✓ (max 2 allowed); spans Industrials + Tech + Energy = 3 sectors ✓
+   - **Best candidate for today if PPI benign**
+
+4. **PASS: FCX (Freeport-McMoRan) — Materials**
+   - Lower priority; commodity cycle intact but energy thesis stronger; hot CPI = demand uncertainty
+
+### Risk Factors
+- **PPI 8:30 AM ET — NAMED BLOCKER:** No entries until clear; if hot (like CPI) → delay all entries; reassess XLK thesis
+- **Hot April CPI (+3.8% YoY):** Fed rate hike risk rising (30% by year-end); headwind for XLK and growth names
+- **VIX 18.11 (+5.35%):** Elevated trend — medium risk; position sizing discipline critical; cap new entries at 17-18% equity
+- **NVDA 95sh position = 20.5% equity (mark-to-market):** Technically above 20% cap; organic growth, not new capital. No action needed, but do NOT add more tech (SOXX blocked).
+- **Sector cap breach risk:** NVDA + XLK = 2 tech positions. Any SOXX/tech add = rule violation. Only energy or new sector available.
+- **NVDA earnings May 20:** Week count after today could reach 2-3/3. Manage trade slot carefully.
+
+### Decision
+**HOLD — PPI named blocker until 8:30 AM ET.** Post-PPI: if benign → evaluate XOM entry (Energy slot 2, ~17% equity). SOXX blocked (sector cap: 2 tech positions already). Hot CPI is a headwind but not a thesis-breaker for current positions. All 3 stops intact. NVDA approaching auto-tighten at $230.62 — active watch. CAT analyst upgrades bullish. Week count 1/3, 2 slots remain for Thu-Fri (no NFP blocker this week — NFP was May 8). Wednesday urgency check: deployed 56.1% < 60% threshold, 2 slots available → **must deploy at least 1 position this week per Wednesday urgency rule**.
