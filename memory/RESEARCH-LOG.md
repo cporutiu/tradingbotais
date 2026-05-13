@@ -5,6 +5,106 @@ Format each entry:
 
 ---
 
+## 2026-05-13 — Pre-Market Research (Wednesday, Week 3)
+
+### Account Snapshot
+- **Equity:** $102,726.32 | **Cash:** $44,699.46 (43.5%) | **Deployed:** $58,026.86 (56.5%) | **DT count:** 0
+- **Buying power:** $147,425.78 | **Phase P&L:** +$2,726.32 (+2.73%)
+- **Week trade count:** 1/3 (2 slots remaining)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $915.00 | +$446.22 (+2.50%) | +0.31% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $225.69 | +$2,389.25 (+12.54%) | +2.22% | 10% trail HWM $223.75 → auto-trailing (price above HWM) |
+| XLK | 103 | $175.494 | $177.537 | +$210.43 (+1.16%) | +1.33% | 10% trail HWM $176.99 → auto-trailing (price above HWM) |
+
+**NVDA tighten watch:** $225.69 vs $230.62 threshold — **2.2% away. CRITICAL MONITOR.**
+
+### Open Orders (pre-market)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked — price below HWM)
+- Sell 95 NVDA trailing_stop 10% GTC (e15a4b83): HWM $223.75, stop $201.375 (auto-trailing — price now above HWM)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $176.99, stop $159.291 (auto-trailing — price now above HWM)
+
+### Market Context
+- **Oil:** WTI ~$101-102/bbl; Brent ~$107.05/bbl — elevated; Trump warned Iran ceasefire "on life support" → Hormuz risk premium intensifying again
+- **S&P 500 futures:** ESM26 ~7,445 (+0.25%) — positive premarket; 83% probability higher (Polymarket)
+- **VIX:** 18.11 — medium risk zone (18-25); stable vs recent range 16.18-21.58
+- **Economic calendar today:** **PPI April 2026 at 8:30 AM ET** (expected +0.5% MoM, matching Feb/March pace); EIA crude oil inventories; MBA mortgage apps
+- **Earnings BMO today:** No major market movers
+- **Sector YTD leaders:** Semiconductors (#1), Energy (#2), Defense, Industrials — all leading. REITs, Discretionary, Utilities lagging.
+- **RS ranking (20-day vs SPY, est. strongest→weakest):** SOXX, XLK, XLE, XLI, XLB, XLC, XLF, SPY, QQQ, GLD, IWM, SLV, XLY, XLV, XLP, XLU, HYG, XLRE, EEM
+- **Economic cycle:** mid-cycle — LEI Z-score 0.27 (mild mid-cycle); ISM Mfg 52.7, GDP +2.0%, Fed steady, labor stable. Some late-cycle signals (LEI -0.6% March, inflation persistent).
+- **Market risk:** Medium (VIX 18.11)
+
+### Benzinga Signals
+Benzinga: SSL certificate error (graph_error) — no actionable signals today.
+
+### Congress Signals
+Congress: SSL certificate error (fetch_error) — no actionable signals today.
+
+### MAJOR CATALYST — Jensen Huang Joins Trump's China Trip
+- Trump personally called Jensen Huang and invited him onto Air Force One after media coverage of his absence
+- NVDA CEO is in Beijing alongside Trump to advance **H200 chip sales to China** (Trump admin approved H200 China sales in January)
+- NVDA +2.22% intraday on this news — stock popped 2.4% on initial reports
+- This is a potential deal-unlocking catalyst: if H200 sales resume at scale → major new revenue stream for NVDA
+- Thesis: STRONGLY reinforced. AI hardware demand + China market re-opening = dual tailwind into May 20 earnings
+
+### Position Updates
+
+**CAT ($915.00, +2.50% from entry $892.689):**
+- Evercore ISI raised PT to $1,103 (from $878, Outperform); Argus raised to $990 (from $820, Buy)
+- Q1: 22% revenue growth, record backlog, full-year guidance raised
+- Headwind: $700M in tariff costs projected for Q2 2026 — watch for margin pressure
+- Stop locked at HWM $931.35 / stop $838.215 (price $915 below HWM). No trail update today.
+- Thesis: Intact. ISM expansion + infrastructure demand + analyst upgrades.
+- Action: HOLD. Monitor for HWM retest ($931.35 — 1.8% away).
+
+**NVDA ($225.69, +12.54% from entry $200.54):**
+- Jensen Huang joins Trump China trip → H200 chip sales catalyst (MASSIVE)
+- Earnings May 20: consensus expects beat on Data Center demand; hyperscalers spending accelerating
+- Stop auto-trailing: price $225.69 above HWM $223.75 → Alpaca updating. New stop ~$203.12.
+- **TIGHTEN WATCH: $230.62 is only 2.2% away (user-confirmed auto-tighten to 7% trail)**
+- At 7% trail: new stop = $230.62 × 0.93 = $214.48 → locks in ~$13.94/sh gain from entry vs current 10% trail ($203.12 stop = $22.57/sh gain)
+- Thesis: Reinforced — strongest it's been. China deal catalyst + earnings May 20 + AI capex boom.
+- Action: HOLD. Monitor $230.62 threshold. Do NOT tighten early — wait for exact trigger.
+
+**XLK ($177.537, +1.16% from entry $175.494):**
+- Tech sector leading RS (SOXX #1, XLK #2 in rankings)
+- Stop auto-trailing: price $177.537 above HWM $176.99. New HWM ~$177.54, stop ~$159.79.
+- Sector cap note: NVDA + XLK = 2 tech positions = MAX TECH ALLOCATION. Cannot add SOXX.
+- Thesis: Intact. AI momentum + tech sector leadership. XLK provides broad tech exposure vs NVDA single-stock.
+- Action: HOLD. Normal drift. No tightening needed (+20% = $210.59 far off).
+
+### Trade Ideas
+
+1. **WAIT for PPI (8:30 AM)** — Primary decision gate today. Not a named blocker per strategy rules, but +0.5% expected = hot read → yields spike → NVDA/XLK/CAT pressured. Decision tree:
+   - **PPI benign (<0.3% MoM):** Risk-on confirmed → assess 5th position entry (XOM or FCX)
+   - **PPI inline (0.4-0.5% MoM):** Market likely shrugs → still assess entry, but cautious
+   - **PPI hot (>0.6% MoM):** Yields spike → hold all positions, no new entries
+
+2. **5th position candidates (sector cap enforcement):**
+   - NVDA (95sh) + XLK (103sh) = 2/2 tech slots FULL. SOXX is OFF the table.
+   - **XOM (Energy):** WTI $101-102 with Hormuz/"ceasefire on life support" → oil thesis re-strengthening; XLE already exited proactively; XOM would re-open energy sector. 18-20% sizing (~$18-20K, ~140-155sh). R:R: entry ~$130, trail 10% = $117, target +20% = $156. 2:1 ✓
+   - **FCX (Materials):** Copper demand; 4th sector. Monitor copper prices and FCX spread before entry. Prior attempt failed R:R at $64.45 ask — verify tight spread.
+   - **Priority: XOM > FCX** given oil catalyst re-strengthening today.
+
+3. **Wednesday urgency check:** 1/3 used, deployed 56.5% < 60%, 2 slots remain → **MUST enter at least 1 position Thursday** if no trade placed today.
+
+### Risk Factors
+- **PPI hot (>0.5% MoM at 8:30 AM):** Inflation fears → Fed hawkish → yields spike → NVDA/XLK/CAT growth stocks pressured. If hot: hold all, defer new entry.
+- **NVDA $230.62 tighten trigger ~2.2% away:** If NVDA gaps up on China deal news today, could hit intraday. Plan: Alpaca auto-trail + manual tighten to 7% when triggered.
+- **NVDA sector cap:** Already 2 tech positions. If NVDA surges, portfolio will be tech-heavy (could breach 20% position cap on NVDA if it continues running — currently $21,440 = 20.9%).
+- **CAT tariff headwind:** $700M Q2 tariff impact → margins at risk. Monitor for guidance revision.
+- **Wednesday urgency:** Must deploy by Thursday if today passes without entry.
+
+### Decision
+**WAIT for PPI (8:30 AM), then assess XOM entry.** PPI at 8:30 AM is the day's pivotal data point. If benign or inline: enter XOM (Energy, 5th position, ~18-20% sizing) at or shortly after market open — oil thesis re-strengthening on Iran ceasefire "on life support." If PPI hot: HOLD all, no new entry. Wednesday urgency check applies: if no trade today, MUST open at least 1 position Thursday per deployment floor rules (deployed 56.5% < 60%, 2 slots unused).
+
+**NVDA:** Hold. Do NOT tighten early. Tighten to 7% trail precisely when price hits $230.62 (per user-confirmed plan). Jensen Huang China trip is the biggest NVDA catalyst since the IREN deal.
+
+---
+
 ## 2026-05-12 — Pre-Market Research (Tuesday, Week 3)
 
 ### Account Snapshot
