@@ -587,3 +587,54 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **NVDA tighten imminent:** $226.50 (+12.95%) — +15% trigger at $230.62 is just 1.82% away. User auto-confirmed tighten to 7% trail on May 11. NVDA could hit $230.62 Thursday. Execute stop replacement at open if price ≥ $230.62, or wait for intraday touch?
 2. **Last trade slot (week 2/3, 2 days remaining Thu/Fri):** Use slot this week or carry to next? Best candidates: FCX (Materials, R:R check required), SOXX (semi ETF, 5th position). Deployment at 75.5% — just above floor, not urgent.
 3. **CAT thesis check (-1.08% today, +1.08% from entry):** No specific catalyst identified at midday. Tariff/macro sensitivity remains. Is thesis still solid or showing early cracks?
+
+---
+
+## 2026-05-14 — Market-Open Execution (Thursday, Week 3)
+
+**Week trade count: 2/3** (no new trades — NVDA stop tightened per auto-confirm)
+
+**NVDA STOP TIGHTEN EXECUTED:**
+
+| Action | Detail |
+|--------|--------|
+| Cancelled 10% stop | e15a4b83-add1-4ace-9b15-7ef04c662cd6 — deleted |
+| New 7% stop placed | ddc99535-701a-4be6-ba3d-9967386473c8 — sell 95sh NVDA trailing_stop 7% GTC |
+| HWM | $235.6101 |
+| New stop | $219.117 (+9.27% gain locked in from entry $200.54) |
+| Trigger | +15% rule: entry $200.54 × 1.15 = $230.62 — NVDA at $235.73 = threshold exceeded |
+| Authorized by | User auto-confirm (2026-05-11) |
+
+**Position status at market-open 2026-05-14:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $908.51 | +$316.42 (+1.77%) | +0.69% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $235.73 | +$3,343.05 (+17.55%) | +4.38% | **7% trail** HWM $235.61 / stop $219.117 (tightened) |
+| XLK | 103 | $175.494 | $179.43 | +$405.41 (+2.24%) | +1.46% | 10% trail HWM $179.49 / stop $161.541 (auto-trailed) |
+| XOM | 130 | $150.769 | $152.31 | +$200.35 (+1.02%) | +0.49% | 10% trail HWM $153.12 / stop $137.807 (locked) |
+
+**Account:** Equity $103,938.84 | Cash $25,099.51 (24.1%) | Deployed $78,839.33 (75.8%) | DT count: 0 | Phase P&L: +$3,938.84 (+3.94%)
+
+**Notes:** NVDA surged +4.38% today to $235.73 (+17.55% from entry), blowing through the +15% auto-tighten threshold ($230.62). Executed stop tighten per user-confirmed plan: cancelled 10% stop (e15a4b83), placed 7% trailing stop GTC (ddc99535, stop $219.117). Locks in minimum $18.58/sh gain vs prior $11.53/sh. No new trades — deployed 75.8% (above 75% floor), week count 2/3 (1 slot left), no pre-market research for today's 5th position candidate. Next tighten: NVDA +20% = $240.65 → tighten to 5% trail. No losers cut (-7% threshold not breached). All 4 theses intact.
+
+**Open Orders (market-open 2026-05-14):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop **7%** GTC (ddc99535): active, HWM $235.61, stop $219.117 (new)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $179.49, stop $161.541 (auto-trailed)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $153.12, stop $137.807 (locked)
+
+**Midday 2026-05-14:**
+- **CAT midday:** $918.51 (+2.89% from entry $892.689; +1.80% today). Stop locked at HWM $931.35 / stop $838.215 (price below HWM — no trail update). ISM expansion + AI infrastructure thesis intact. Well above -7% cut threshold ($830.20). HOLD.
+- **NVDA midday:** $237.72 (+18.54% from entry $200.54; +5.27% today). Stop auto-trailing 7% — live HWM $236.54 / stop $219.98 (price $237.72 above HWM → auto-trailing intraday). Jensen Huang China trip / H200 sales + ATH momentum + earnings May 20. **+20% tighten trigger $240.65 — only 1.23% away; imminent**. HOLD; tighten to 5% trail when $240.65 touched.
+- **XLK midday:** $179.65 (+2.37% from entry $175.494; +1.58% today). Stop auto-trailed to HWM $180.215 / stop $162.1935. CPI benign + tech AI momentum thesis intact. HOLD.
+- **XOM midday:** $152.84 (+1.37% from entry $150.769; +0.84% today). Stop locked at HWM $153.1183 / stop $137.807 (price below HWM — no trail update). WTI ~$101.65 + Hormuz risk premium intact. Retail Sales +1.7% (massive beat) = strong consumer = energy demand constructive. HOLD.
+- **Losers cut:** None (-7% not breached: CAT +2.89%, NVDA +18.54%, XLK +2.37%, XOM +1.37%)
+- **Stop tightening:** None (+20% trigger for NVDA = $240.65 not yet reached; current $237.72 — 1.23% away, imminent)
+- **Thesis break:** None. All 4 intact.
+- **Portfolio:** Equity ~$104,426 | Cash $25,100 (24.0%) | Deployed ~$79,327 (76.0%, 4 positions) | Phase P&L: +$4,426 (+4.43%) | Week count: 2/3 | 1 trade slot remains
+
+**Open Orders (midday 2026-05-14):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop **7%** GTC (daa6134f): active, HWM $236.54, stop $219.98 (auto-trailing ↑)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (auto-trailed)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $153.1183, stop $137.807 (locked)
