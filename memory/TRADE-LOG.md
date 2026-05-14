@@ -638,3 +638,28 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop **7%** GTC (daa6134f): active, HWM $236.54, stop $219.98 (auto-trailing ↑)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (auto-trailed)
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $153.1183, stop $137.807 (locked)
+
+---
+
+## Day 15 — EOD Snapshot (May 14, Thursday)
+**Portfolio:** $104,427.16 | **Cash:** $25,099.51 (24.0%) | **Day P&L:** +$1,908.15 (+1.86%) | **Phase P&L:** +$4,427.16 (+4.43%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $918.51 | +1.80% | +$516.42 (+2.89%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| NVDA | 95 | $200.54 | $237.73 | +5.27% | +$3,533.05 (+18.54%) | **7% trail** (HWM $236.54 / stop $219.98) auto-trailing |
+| XLK | 103 | $175.494 | $179.65 | +1.58% | +$428.07 (+2.37%) | 10% trail (HWM $180.215 / stop $162.19) auto-trailed |
+| XOM | 130 | $150.769 | $152.84 | +0.84% | +$269.25 (+1.37%) | 10% trail (HWM $153.12 / stop $137.81) locked |
+
+**Notes:** Day 15, Thursday. No new trades — NVDA stop tighten executed at market-open (7% trail per auto-confirm). Portfolio +$1,908.15 on the day, strongest single-day gain this phase: NVDA surged +5.27% to $237.73 (+18.54% from entry, +$3,533 unrealized) on Jensen Huang China H200 deal momentum + broad risk-on; CAT +1.80% to $918.51 (+2.89% from entry); XLK +1.58% to $179.65 (+2.37% from entry); XOM +0.84% to $152.84 (+1.37% from entry). NVDA stop (7% trail, daa6134f) auto-trailing with HWM $236.54 / stop $219.98. **+20% tighten trigger: $240.65 — NVDA only 1.22% away; imminent for Friday open.** CAT stop locked (HWM $931.35, price $918.51 below HWM). XLK stop auto-trailed to HWM $180.215 / stop $162.19. XOM stop locked (HWM $153.12, price below HWM). Deployment 75.97% — just above 75% floor. Week count: 2/3, 1 slot remaining (Friday).
+
+**Open Orders (EOD 2026-05-14):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop **7%** GTC (daa6134f): active, HWM $236.54, stop $219.98 (auto-trailing)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (auto-trailed)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $153.1183, stop $137.807 (locked)
+
+**Action questions:**
+1. **NVDA +20% tighten imminent ($240.65 — 1.22% away):** Per rules, tighten trail to 5% GTC when $240.65 touched. Auto-execute at Friday open if price ≥ $240.65 (following same auto-confirm pattern as 7% tighten), or manual check first?
+2. **NVDA position size ($22,584 = 21.6% of portfolio):** Unrealized gains pushed NVDA above 20% max rule. No action required (mark-to-market growth, not new capital) — confirming no trim needed, hold to trail?
+3. **Last trade slot (week 2/3, Friday remaining):** Deployment 75.97% — barely above 75% floor. Use slot for FCX or SOXX (5th position), or carry to next week given NVDA nearing +20% and potential volatility pre-earnings May 20?
