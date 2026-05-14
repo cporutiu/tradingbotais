@@ -5,6 +5,116 @@ Format each entry:
 
 ---
 
+## 2026-05-14 — Pre-Market Research (Thursday, Week 3)
+
+### Account Snapshot
+- **Equity:** $103,931.29 | **Cash:** $25,099.51 (24.2%) | **Deployed:** $78,831.78 (75.9%) | **DT count:** 0
+- **Buying power:** $129,030.80 | **Phase P&L:** +$3,931.29 (+3.93%)
+- **Week trade count:** 2/3 (1 slot remaining)
+
+### Positions (at pre-market open)
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $907.83 | +$302.90 (+1.70%) | +0.61% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $235.71 | +$3,341.15 (+17.54%) | +4.38% | **7% trail HWM $235.89 / stop $219.38 (TIGHTENED — see below)** |
+| XLK | 103 | $175.494 | $179.46 | +$408.83 (+2.26%) | +1.48% | 10% trail HWM $179.49 / stop $161.541 (auto-trailed) |
+| XOM | 130 | $150.769 | $152.27 | +$195.15 (+1.00%) | +0.46% | 10% trail HWM $153.12 / stop $137.807 (auto-trailed) |
+
+### NVDA Tighten Executed (STEP 0 — Immediate Action)
+- **Trigger:** NVDA $235.71 > $230.62 threshold (user-confirmed auto-tighten May 11, "No manual check needed")
+- Cancelled existing 10% stop (ddc99535, HWM $235.77, stop $219.26) — prior order e15a4b83 had already auto-replaced
+- **New order daa6134f:** 95sh NVDA trailing_stop **7% GTC**, HWM $235.89, stop **$219.38**
+- Locks in $18.84/sh gain from entry (vs $11.72 at 10% trail)
+- **Next trigger:** NVDA +20% = $240.65 → tighten to 5% trail (2.1% away from $235.71)
+
+### Open Orders (post-tighten)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop **7%** GTC (daa6134f): HWM $235.89, stop $219.38 (tightened)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $179.49, stop $161.541 (auto-trailing)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): HWM $153.12, stop $137.807 (auto-trailing)
+
+### Market Context
+- **WTI:** ~$101.65/bbl (-0.22% from prior); Brent ~$110.43 (May 12) — elevated; Hormuz risk premium intact
+- **S&P 500 futures:** ~7,479-7,483 (+0.31% premarket) — fresh ATH territory; strong
+- **VIX:** ~17.5 (est., declining from 18.11 May 13 close given market rally; medium zone)
+- **Economic releases today:**
+  - 8:30 AM: Import/Export Prices — Export Prices MoM +1.6% (vs +0.5% consensus) — HOT
+  - 8:30 AM: Initial Jobless Claims — rose more than expected (mild labor softening)
+  - **12:30 PM: Retail Sales MoM April — +1.7% (MASSIVE beat vs +0.4% consensus)** → very bullish consumer
+  - 4:00 PM: Monthly Budget Statement (~-$164B est.)
+  - Fed speeches: Williams, Barr
+- **No earnings BMO today for held names**
+- **Sector YTD leaders:** Energy (+38.3% #1), Materials (+9.7% #2), Utilities (+8.3% #3); Tech/XLK lagging YTD but leading 20-day RS via AI momentum
+- **Economic cycle:** Mid-cycle — GDP +2.0%, ISM expansion, Fed steady, AI-driven productivity
+- **Market risk:** Medium (VIX ~17.5; export prices hot, jobless claims mild; offset by retail sales beat and S&P ATH)
+
+### Benzinga Signals
+- **BUYS (medium+):** SPY (high), QQQ (high), NVDA (high — already held), AMD (high), GLD (medium), SLV (medium), IWM (medium)
+- **SELLS (medium+):** EEM (medium)
+- 229 emails scanned (24h lookback, Tue-Fri rule)
+
+### Congress Signals
+Congress: all HOLD (fetch_error — 401 unauthorized to Quiver Quant API).
+
+### Perplexity Validation
+
+**NVDA ($235.71, +17.54%):**
+- Hit ATH this week; Jensen Huang's China remarks (H200 sales) cited as material for investors
+- Thesis: Reinforced. ATH momentum + China deal catalyst + earnings May 20
+
+**AMD (Benzinga HIGH BUY — $445.50 May 13 close):**
+- Q1: Revenue $10.25B (+38%), Data Center $5.8B (+57%), EPS $1.37 vs $1.29e; Q2 guide $11.2B vs $10.52e
+- 8 analyst PT upgrades: $410-$530 range (KeyBanc $530, Bernstein $525, Barclays $500)
+- Up 74% from Apr 14 to May 13 — very extended
+- **BLOCKED: Technology sector at 2/2 (NVDA + XLK). Cannot add AMD as 3rd tech position.**
+
+**CAT ($907.83, +1.70%):**
+- YTD +32.6%; Q1 revenue +22%, EPS beat 19.65%; AI/data center power gen strong
+- Tariff headwind: $2.6B expected 2026 — margin pressure
+- Stop locked HWM $931.35/stop $838.215
+- Thesis intact; ISM expansion + AI infrastructure demand
+
+**XOM ($152.27, +1.00%):**
+- Q1 $4.2B GAAP; record Guyana production; first LNG from Golden Pass; $9.2B shareholder distributions
+- Analyst consensus: Buy, PT $162.05 (+6.4% from $152.27)
+- WTI $101.65 — thesis intact; Hormuz risk premium intact
+- Stop: HWM $153.12 / stop $137.807
+
+**EEM (Benzinga SELL medium):**
+- EEM at $67.59, +20.9% YTD, near 52-week high; China weakness a drag but overall positive sentiment
+- We hold no EEM short position; signal not actionable (no shorts per strategy)
+
+### Trade Ideas
+
+1. **AMD — HIGH CONVICTION BUY (Benzinga), BLOCKED by sector cap**
+   - Q1 crush + analyst upgrades + AI momentum = strongest external signal today
+   - **CANNOT ENTER: Tech sector 2/2 (NVDA + XLK). Rule hard stop.**
+   - If NVDA stop triggered, one tech slot opens → AMD becomes primary candidate next session
+
+2. **FCX (Materials) — potential last slot**
+   - Materials sector #2 YTD (+9.7%)
+   - No Benzinga/Congress signal today
+   - Prior entry attempt failed R:R (wide spread $64.45 ask vs $65.14 PT)
+   - Deployment at 75.9% — floor met; not urgent
+   - Skip: no signal, no compelling catalyst today
+
+3. **HOLD all 4 positions** — deployment floor met (75.9%), week count 2/3 manageable
+   - NVDA 7% stop just placed; +20% trigger ($240.65) is 2.1% away — active watch
+   - Retail Sales +1.7% beat supports consumer/broad market; no immediate threat to any position
+
+### Risk Factors
+- **Export Prices +1.6% MoM (hot):** Inflation persistence → Fed hawkish → growth stocks (NVDA/XLK) at risk. Mitigated by 7% stop on NVDA.
+- **NVDA +20% threshold:** $240.65 is 2.1% away — need to tighten to 5% immediately on touch.
+- **NVDA earnings May 20 (6 days):** XLK (20% NVDA-weighted) will follow NVDA reaction. Both protected by trailing stops.
+- **CAT tariff headwind $2.6B 2026:** Margin compression risk; stop at $838.215 provides 7.6% buffer from $907.83.
+- **Last trade slot:** AMD blocked. FCX has no catalyst. Slot may expire unused — acceptable given 75.9% deployment.
+- **Initial Jobless Claims rose:** Labor softening — watch for deterioration; currently not thesis-breaking.
+
+### Decision
+**HOLD all 4 positions.** Deployment floor met (75.9%). Only actionable signal is AMD (Benzinga high) but blocked by 2/2 tech sector cap. FCX has no trigger. Retail Sales +1.7% beat is bullish for consumer/broad market; no position thesis is broken. NVDA 7% stop in place. Monitor $240.65 for next tighten trigger.
+
+---
+
 ## 2026-05-13 — Pre-Market Research (Wednesday, Week 3)
 
 ### Account Snapshot
