@@ -962,3 +962,68 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-14 — Pre-market Research
+
+*Note: Alpaca API returned 403 "Host not in allowlist" — using EOD May 13 TRADE-LOG state. Perplexity API same 403; all research via WebSearch fallback.*
+
+### Account Snapshot (from EOD May 13)
+- **Equity:** $102,609.99 | **Cash:** $25,099.51 (24.5%) | **Deployed:** ~$77,510 (75.5%)
+- **Day trade count:** 0 | **Week count:** 2/3 (1 slot remains Thu/Fri)
+- **Positions:** 4 (CAT, NVDA, XLK, XOM)
+
+| Ticker | Shares | Entry | EOD May 13 | Unrealized | Stop (HWM / stop) |
+|--------|--------|-------|------------|------------|-------------------|
+| CAT | 20 | $892.689 | $902.30 | +$192.22 (+1.08%) | HWM $931.35 / stop $838.215 |
+| NVDA | 95 | $200.54 | $226.50 | +$2,466.20 (+12.95%) | HWM $227.84 / stop $205.056 |
+| XLK | 103 | $175.494 | $177.352 | +$191.38 (+1.06%) | HWM $177.74 / stop $159.966 |
+| XOM | 130 | $150.769 | $151.40 | +$82.05 (+0.42%) | HWM $151.74 / stop $136.566 |
+
+### Step 1B — Pending User Decisions
+- No "**User decisions (2026-05-13):**" block found in TRADE-LOG.
+- **Carry forward (auto-confirmed May 11):** NVDA auto-tighten to 7% trail when price hits $230.62. Active watch item.
+
+### Market Context
+- **WTI:** $101.54 | **Brent:** $105.87 (WebSearch fallback) — still elevated; off April peak ~$120 but geopolitical premium intact
+- **S&P 500 futures:** +0.12% premarket; SPX closed 7,444.25 (+0.58%) Wed; Nasdaq +1.2%
+- **VIX:** ~17.99-18 — normal range, low-to-mid; 52-week high 35.30 (Mar 9)
+- **Trump-Xi summit (Beijing, May 14-15):** LIVE — trade/tariffs/Taiwan/AI/rare earths on agenda. Goldman expects "stabilization" with China buying US farm goods, energy, aircraft in exchange for avoiding more tariff hikes. Chip export controls a key discussion point. Xi warned Trump on Taiwan ("most important issue"). Markets mixed on summit start.
+- **April Retail Sales 8:30 AM ET:** Consumer demand gauge — NOT a named blocker per strategy
+- **Business Inventories 10:00 AM ET:** Minor release
+- **XOM ex-dividend date: May 15** — hold through today's close captures $1.03/sh × 130sh = **$133.90**
+- **Sector YTD:** Energy +26.0% | Technology +16.7% | Materials +12.9% | Industrials +12.8%
+
+### Position Updates (pre-market May 14)
+- **CAT:** Premarket range $897.38-$922.99. Q1 2026: +22% revenue, record backlog, raised full-year guidance. Evercore PT raised $878→$1,103 (Outperform). Morgan Stanley upgraded to Equal Weight, PT $430→$915. Insider sold 16,283sh May 11 ($14.9M) — watch, not thesis break. Infrastructure + AI data center demand intact.
+- **NVDA:** Premarket $221.57-$227.84. Wells Fargo PT raised $265→$315. Jensen Huang on Trump delegation in Beijing — China AI sales narrative active. **+15% tighten trigger at $230.62; at $227.84 = just $2.78 (1.2%) away — imminent.** Earnings May 20.
+- **XLK:** YTD +21.84%; NVDA 14.9% of ETF. Tech momentum intact on Nasdaq +1.2% Wednesday.
+- **XOM:** Premarket ~$151.23. Ex-dividend May 15 ($1.03/sh). Strong Q1 ($85.14B revenue, EPS beat). Brent $105.87, Iran supply disruptions ongoing. Thesis intact.
+
+### Active Watch Items
+- **NVDA tighten trigger:** At $230.62 → cancel order e15a4b83, place new 7% trail GTC. New stop = $230.62 × 0.93 = **$214.48** (up from $205.056). User auto-confirmed May 11.
+- **XOM ex-dividend May 15:** Hold through today's close to capture $133.90.
+
+### Trade Ideas
+1. **FCX (Materials #4 on watchlist)** — WATCH, not today
+   - **Catalyst:** Trump-Xi stabilization → China copper demand; copper up on summit optimism
+   - **Entry trigger:** Confirmed summit progress + copper +2%+ intraday + VIX <20
+   - **Sizing:** ~17-20% equity (~$17-20k); check R:R before entry
+   - **Risk:** Summit fails or Taiwan escalates → copper selloff; correlated with China sentiment
+   - **Week slot:** Would be 3/3 (last slot) — use only if setup is clean
+
+2. **SOXX (semi ETF)** — PASS this week
+   - Trump-Xi chip export controls could be tailwind, but NVDA (14.9% of XLK) + XLK = already ~35% tech exposure
+   - Sector concentration risk: adding SOXX = 3rd tech-correlated position → violates diversification intent
+
+### Risk Factors
+- **Trump-Xi summit risk:** Taiwan escalation or no tariff progress → broad selloff; tech/energy most exposed
+- **NVDA earnings May 20:** Major event 6 days out; stop at $205.056 (after tighten: $214.48) provides cushion but earnings gap risk real
+- **CAT insider sale:** 16,283sh sold May 11; not thesis-breaking but monitors management conviction
+- **Retail Sales 8:30 AM:** If miss → consumer slowdown narrative resurfaces; CAT/XOM/XLK all exposed
+- **XOM ex-dividend May 15:** Price may drop ~$1.03 on ex-date (dividend drag) — normal, not a stop concern
+- **VIX 18:** Normal; would need spike >25 to reconsider sizing
+
+### Decision
+**HOLD.** Deployment 75.5% — above 75% floor; patience > activity valid. Week count 2/3, 1 slot remains but no forced entry. Primary action today: **WATCH NVDA $230.62 tighten trigger** (1.2% away, imminent). Hold XOM through May 15 ex-dividend. Monitor Trump-Xi summit for FCX entry signal. No new trades unless summit produces clean copper/materials catalyst.
