@@ -46,11 +46,28 @@ STEP 2B — Fetch Benzinga email alerts from Outlook 365:
   python scripts/fetch_benzinga.py > .tmp/benzinga_signals_$DATE.json
   cat .tmp/benzinga_signals_$DATE.json
 
+The script uses an adaptive lookback window:
+- Monday: 72 hours (captures Friday EOD + full weekend alerts)
+- Tuesday–Friday: 24 hours (same-day signals only, avoids stale news)
+Override with NEWS_LOOKBACK_HOURS env var if needed.
+
 Read the output. Extract the tickers with action=BUY or action=SELL
 (confidence=medium or high only). Note them as BENZINGA_BUYS and
 BENZINGA_SELLS — you will use these in STEP 3.
 If the script errors or all signals are HOLD, proceed normally with no
 Benzinga context.
+
+STEP 2C — Fetch congressional trading signals (STOCK Act disclosures):
+  python scripts/fetch_congress.py > .tmp/congress_signals_$DATE.json
+  cat .tmp/congress_signals_$DATE.json
+
+Read the output. Extract tickers with action=BUY or action=SELL
+(confidence=medium or high only). Note them as CONGRESS_BUYS and
+CONGRESS_SELLS — you will use these in STEP 3.
+Pay special attention to tickers that appear in BOTH Benzinga and Congress
+signals (same direction) — treat those as high-conviction.
+If the script errors or all signals are HOLD, proceed normally with no
+congress context.
 
 STEP 3 — Research market context via Perplexity. Run
 bash scripts/perplexity.sh "<query>" for each:
@@ -64,8 +81,10 @@ bash scripts/perplexity.sh "<query>" for each:
 - News on any currently-held ticker
 - "Rank these ETFs by 20-day relative strength vs SPY, strongest to weakest, return as a JSON array of ticker symbols only, no explanation: SPY QQQ GLD SLV XLE XLF XLK XLV XLU XLI XLB XLP XLY XLC XLRE IWM HYG EEM SOXX"
 - "US economic cycle stage right now — respond with exactly one of: early-cycle mid-cycle late-cycle recession. Then 2 sentences of rationale based on leading indicators."
-- For each ticker in BENZINGA_BUYS: "Latest analyst commentary and news catalysts for [TICKER] ETF today — is the bullish case supported by macro data or fund flows?"
-- For each ticker in BENZINGA_SELLS: "Latest analyst commentary and news catalysts for [TICKER] ETF today — is the bearish case supported by macro data or sector outflows?"
+- For each ticker in BENZINGA_BUYS: "Latest analyst commentary and news catalysts for [TICKER] today — is the bullish case supported by macro data or fund flows?"
+- For each ticker in BENZINGA_SELLS: "Latest analyst commentary and news catalysts for [TICKER] today — is the bearish case supported by macro data or sector outflows?"
+- For each ticker in CONGRESS_BUYS (not already covered above): "Latest analyst commentary and news catalysts for [TICKER] today — does the congressional buy signal align with current momentum and sector strength?"
+- For each ticker in CONGRESS_SELLS (not already covered above): "Latest analyst commentary and news catalysts for [TICKER] today — does the congressional sell signal align with any technical deterioration or macro headwinds?"
 
 If Perplexity exits 3, fall back to native WebSearch and note the
 fallback in the log entry.
@@ -118,7 +137,11 @@ STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 - Market context (oil, indices, VIX, today's releases)
 - Benzinga signals: list any BUY/SELL tickers from STEP 2B with confidence
   and summary. If none, write "Benzinga: no actionable signals today."
-- Perplexity validation: did Perplexity confirm or contradict Benzinga signals?
+- Congress signals: list any BUY/SELL tickers from STEP 2C with politician
+  names and trade summary. If none, write "Congress: no actionable signals today."
+  Flag any ticker where Congress and Benzinga agree (same direction) as
+  "CONFLUENT SIGNAL — elevated conviction."
+- Perplexity validation: did Perplexity confirm or contradict Benzinga/Congress signals?
 - 2-3 actionable trade ideas WITH catalyst + entry/stop/target
 - Risk factors for the day
 - Decision: trade or HOLD (default HOLD — patience > activity)
