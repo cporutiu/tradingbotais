@@ -25,7 +25,8 @@ UNIVERSE = [
     # AI/chip research refs
     "AMD","AVGO",
 ]
-LOOKBACK_HOURS = int(os.environ.get("NEWS_LOOKBACK_HOURS", "48"))
+_default_hours = "72" if datetime.now().weekday() == 0 else "24"  # Mon=72h (covers weekend), Tue-Fri=24h
+LOOKBACK_HOURS = int(os.environ.get("NEWS_LOOKBACK_HOURS", _default_hours))
 
 _BULLISH = [
     "upgrade","outperform","strong buy","overweight","breakout","beats","beat",
