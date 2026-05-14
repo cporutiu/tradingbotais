@@ -15,8 +15,15 @@ OUTLOOK_FOLDER_NAME   = os.environ.get("OUTLOOK_FOLDER_NAME", "Benzinga")
 _GRAPH_BASE           = "https://graph.microsoft.com/v1.0"
 
 UNIVERSE = [
+    # Broad market / sector ETFs
     "SPY","QQQ","GLD","SLV","XLE","XLF","XLK","XLV","XLU",
-    "XLI","XLB","XLP","XLY","XLC","XLRE","IWM","HYG","EEM","SOXX"
+    "XLI","XLB","XLP","XLY","XLC","XLRE","IWM","HYG","EEM","SOXX",
+    # Active positions
+    "NVDA","CAT",
+    # Watchlist candidates
+    "XOM","FCX","CVX",
+    # AI/chip research refs
+    "AMD","AVGO",
 ]
 LOOKBACK_HOURS = int(os.environ.get("NEWS_LOOKBACK_HOURS", "48"))
 

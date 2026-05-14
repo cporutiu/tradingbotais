@@ -1,0 +1,15 @@
+# Python dependencies for TradingBotAIS signal fetchers
+# Install: pip install -r requirements.txt
+# Tested on Python 3.14.3 / Windows 11
+
+# HTTP client — used by fetch_congress.py and fetch_benzinga.py
+requests>=2.32.0
+
+# Updated CA bundle — fixes SSL cert verification on some networks
+certifi>=2024.2.2
+
+# Use Windows system cert store so corporate/VPN root CAs are trusted
+pip_system_certs>=4.0
+
+# Microsoft Authentication Library — used by fetch_benzinga.py (Outlook 365 / Graph API)
+msal>=1.30.0
