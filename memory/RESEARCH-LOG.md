@@ -5,6 +5,117 @@ Format each entry:
 
 ---
 
+## 2026-05-15 — Pre-Market Research (Friday, Week 3)
+
+### Account Snapshot
+- **Equity:** $103,247.87 | **Cash:** $25,099.51 (24.3%) | **Deployed:** $78,148.36 (75.7%) | **DT count:** 0
+- **Buying power:** $128,347.38 | **Phase P&L:** +$3,247.87 (+3.25%)
+- **Week count:** 2/3 (1 slot remaining — last day of Week 3)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $908.50 | +$316.22 (+1.77%) | -1.27% | 10% trail HWM $931.35 / stop $838.22 (locked) |
+| NVDA | 95 | $200.54 | $230.83 | +$2,877.55 (+15.10%) | -2.08% | **7% trail** HWM $236.54 / stop $219.98 (locked) |
+| XLK | 103 | $175.494 | $176.47 | +$100.53 (+0.56%) | -1.69% | 10% trail HWM $180.215 / stop $162.19 (locked) |
+| XOM | 130 | $150.769 | $152.87 | +$273.15 (+1.39%) | +0.06% | 10% trail HWM $153.12 / stop $137.81 (locked) |
+
+**NVDA +20% tighten trigger:** $240.65 — NOT reached (high was $237.73 yesterday; current $230.83 is 4.3% below trigger).
+
+### Market Context
+- **Oil:** WTI ~$102.5/bbl | Brent ~$107/bbl — holding elevated; Hormuz risk premium intact
+- **S&P 500 futures:** CME E-mini 7,479.75 (-45.75 / -0.61%) — futures down premarket
+- **VIX:** ~17.08 (low risk zone, < 18)
+- **Economic releases today:**
+  - 10 AM ET: U.S. Import/Export Price Indexes for April 2026 (BLS) — minor impact
+  - **No CPI/PPI/NFP/FOMC today** — those cleared earlier this week
+- **Key event: Fed Chair transition today** — Jerome Powell's term ends May 15; Senate expected to confirm **Kevin Warsh** as successor. Warsh viewed as potentially more hawkish. Market pricing uncertainty → futures down 0.61%.
+- **Week's macro prints (all released Tue-Thu):**
+  - CPI April: +0.6% m/m / +3.7% YoY (headline inline; core +0.4% above 0.3% consensus — slightly hot)
+  - PPI April: +1.4% m/m / +6.0% YoY (confirmed May 13 — much hotter than +0.5% initial estimate; significant inflation concern)
+  - Retail Sales April: Real (CPI-deflated) sales DOWN; gasoline station sales driving volume gains; underlying consumer spending weak
+- **BMO earnings today:** Prenetics Global, SUPV, IBTA — no market movers
+- **Sector YTD leaders:** Energy #1 (+26%), Consumer Staples (+10.7%), Industrials (+9.6%) | Tech lagging YTD but recovering (AI momentum)
+- **RS ranking (20-day vs SPY, strongest→weakest):** SOXX, QQQ, IWM, XLY, XLC, XLK, XLI, XLB, XLV, XLF, XLE, HYG, EEM, XLRE, XLP, SPY, GLD, SLV, XLU
+- **Economic cycle:** mid-cycle. ISM Mfg 52.7 + Services expansion, GDP +2.0%, unemployment 4.3% — expansion intact but decelerating; Fed on hold.
+- **Market risk:** Low (VIX 17.08)
+
+### Benzinga Signals (24h lookback — 189 emails)
+- **BENZINGA_BUYS:** QQQ (medium), GLD (medium), AVGO (high — "Broadcom Surges On New Data Center Framework: Wall Street Vastly Underestimating AI Power Needs", score +10, 8 mentions)
+- **BENZINGA_SELLS:** NVDA (medium — net score -2 across 29 mentions; headline: "Taiwan Semiconductor Sees Global Chip Market Hitting $1.5T By 2030 Amid AI Boom"), AMD (high — score -4, 8 mentions)
+- Held tickers: CAT=HOLD (low confidence), XOM=HOLD (no mention), XLK=HOLD (low confidence)
+
+### Congress Signals (45d lookback)
+- **CONGRESS_BUYS:** None (BUY=0)
+- **CONGRESS_SELLS:**
+  - NVDA (high): 3 buys vs 5 sells — politicians: Daniel Meuser, Elizabeth Fletcher, Gilbert Cisneros (SALE Apr 14), John Boozman, John McGuire, Tim Moore
+  - CAT (medium): Jared Moskowitz SALE 2026-03-31 filed 2026-04-30, $1,001-$15,000
+  - AVGO (high): 1 buy vs 4 sells — Shelley Moore Capito SALE (PARTIAL), David J. Taylor SALE ×2
+
+### Confluent Signals
+- **⚠️ CONFLUENT SELL: NVDA** — Benzinga SELL (medium) + Congress SELL (high) = **elevated conviction bear signal on held position**
+  - However: Benzinga net score only -2 (marginal); Congressional sells are small ($1k-$15k) and span weeks; no new fundamental thesis break; NVDA 7% trail already in place
+  - Perplexity: no specific sell-off catalyst found for NVDA today; hot inflation (PPI +1.4% m/m) is general headwind for growth stocks
+- AVGO: Benzinga BUY vs Congress SELL = conflicting signals; not a held position
+
+### Perplexity Validation of Signals
+- **NVDA sell:** Confirmed macro headwind — hot PPI, Fed Chair change, futures down 0.61% = risk-off tilt for high-multiple tech. But AI demand thesis (TSM: $1.5T chip market by 2030) remains structurally intact. No company-specific negative catalyst found. 7% trail at $219.98 protecting gains. EARNINGS MAY 20 — hold per strategy.
+- **AVGO buy:** Supported by AI data center demand (Meta + Google chip deals, new framework). Congress SELL is small/fragmented. Not pursuing as 5th position today (conflicting signals, market uncertainty).
+- **CAT sell (congress):** Moskowitz's March 31 sale is 6 weeks old and small — likely portfolio rebalancing, not a fundamental signal. Q1 2026 beat (+22% revenue, record backlog) intact. CAT +1.77% from entry; stop protecting at $838.22. Thesis: fully intact.
+
+### Position Updates
+
+**CAT ($908.50, +1.77% from entry $892.689, -1.27% today):**
+- CAT 161% 12-month gain; Q1 2026: EPS $5.54, revenue $17.4B +22% YoY, Power Generation +41% YoY (data center engines/turbines); record backlog; AI infrastructure demand = structural tailwind
+- PPI hot (+1.4% m/m) = tariff/margin pressure narrative may resurface, but Q1 beat absorbs it near-term
+- Stop locked HWM $931.35 / stop $838.22 (price $908.50 below HWM — no trail update)
+- Action: HOLD. Well above -7% cut ($830.20). No tightening needed (+15% = $1,026.59).
+
+**NVDA ($230.83, +15.10% from entry $200.54, -2.08% today):**
+- 7% trail active; HWM $236.54, stop $219.98 (locks in minimum +9.7% from entry)
+- **Confluent SELL signal (Benzinga medium + Congress high)** — noting but not acting; AI thesis intact (TSMC $1.5T forecast, H200 China deal, earnings May 20)
+- +20% tighten trigger ($240.65) NOT reached — $237.73 was the high; current $230.83 is 4.3% below. No tighten needed today.
+- Hot inflation (PPI +1.4% m/m) + Fed Chair change + futures down = risk-off headwind for NVDA today
+- Action: HOLD. Stop doing its job. Monitor for $240.65 tighten trigger (5% trail). Earnings May 20 is main event.
+
+**XLK ($176.47, +0.56% from entry $175.494, -1.69% today):**
+- Tech AI momentum intact; sector RS #6. Pullback today consistent with broad risk-off (Fed Chair change)
+- Stop auto-trailed to HWM $180.215 / stop $162.19 — 8% cushion from current price; well above -7% cut ($158.69)
+- Action: HOLD. Thesis intact. No tightening needed (+15% = $201.82).
+
+**XOM ($152.87, +1.39% from entry $150.769, +0.06% today):**
+- Flat on the day; outperforming broader market (energy resilient vs tech sell-off today)
+- WTI $102.5 / Brent $107 — Hormuz risk premium intact; energy thesis holding
+- Stop locked HWM $153.12 / stop $137.81 (price below HWM — no trail update)
+- Action: HOLD. Thesis intact. No tightening needed (+15% = $173.38).
+
+### Trade Ideas
+
+1. **AVGO — NEW POSITION candidate (5th position, last week slot):**
+   - Benzinga BUY high (score +10, "Broadcom Surges On New Data Center Framework")
+   - AI custom chip + networking play; Meta + Google multi-year deals; all-time high ($437.77)
+   - **SKIP today:** Congress SELL high conflicts; market down 0.61% on Fed Chair change; PPI inflation headwind; NVDA confluent SELL creates risk-off tone for semis; SOXX sector cap already at 2 (NVDA + XLK = tech × 2, AVGO would be 3rd — VIOLATION)
+   - Defer to next week if setup remains clean and market stabilizes post-Warsh confirmation
+
+2. **FCX — Materials, 0 current positions:**
+   - Not signaled by Benzinga/Congress today; no specific catalyst
+   - Could use last week slot but no edge; not today
+
+3. **HOLD all positions — Fed Chair change + hot inflation + futures down = no edge this morning**
+
+### Risk Factors
+- **Fed Chair transition (Kevin Warsh replacing Powell):** Intraday uncertainty; Warsh perceived as potentially more hawkish by some; 3 FOMC governors already favoring hike. Market pricing this uncertainty today (futures -0.61%).
+- **PPI April +1.4% m/m / +6.0% YoY (hot):** Released May 13 — much hotter than the initial +0.5% estimate in trade log. Inflation re-accelerating = hawkish Fed = compression risk for growth stocks (NVDA, XLK). Partially offsets NFP +160K "goldilocks" narrative.
+- **NVDA confluent SELL signal:** Bear signal acknowledged; stop at $219.98 (7% trail) protecting gains. No forced action until stop hits or earnings May 20 guidance disappoints.
+- **Narrow market breadth:** Only ~50% of S&P stocks above 50-day MA despite index near ATH — any leadership stumble amplified.
+- **Last week slot expiring:** 1 slot unused (2/3 week). No deployment floor breach at 75.7%. Expiry is acceptable — patience > activity.
+- **NVDA $240.65 +20% tighten trigger:** Still 4.3% away; may come Monday or next week. Auto-execute per user-confirmed plan (same pattern as 7% tighten). No action today.
+
+### Decision
+**HOLD — no new entries today.** Market-wide risk-off: Fed Chair transition (Powell → Warsh), PPI +1.4% m/m (hot inflation), S&P futures -0.61%. No named 24h blocker but clear headwinds. All 4 positions above entry with stops in place. Confluent SELL on NVDA is noted — stop at $219.98 provides protection; hold through earnings May 20. AVGO was a potential 5th position but sector cap violated (3rd tech slot) and Congress conflicts. Last week slot expires unused — acceptable at 75.7% deployment. **Next entry window: Monday May 18** (fresh 3/3 cap; prepare AVGO, FCX, or GLD setups if market stabilizes post-Warsh).
+
+---
+
 ## 2026-05-14 — Pre-Market Research (Thursday, Week 3)
 
 ### Account Snapshot
