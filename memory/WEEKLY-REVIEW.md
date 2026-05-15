@@ -199,9 +199,10 @@ Template for each entry:
 ### What Didn't Work
 - Underperformed S&P 500 by 1.25% (+0.53% vs +1.78%); deployment gap the primary driver
 - Deployment ended week at 54.7% — fourth consecutive week below 75% floor (target 75-85%)
-- XLE continued to drag: -3.22% from entry, oil fell from $106 to ~$94-97; thesis intact but barely (WTI $90 floor 5% away)
+- XLE continued to drag: -3.22% from entry, oil fell from $106 to ~$94-97; thesis intact but barely (WTI $90 floor 5% away) — **exited proactively after close May 8; market sell 300sh fills Monday May 12 open**
 - FCX entry failed R:R check — no valid fourth position found this week; missed deployment boost opportunity
 - Wednesday urgency check triggered (≥2 slots unused, <60% deployed) but no valid entry existed — structural gap in candidate pipeline depth
+- EOD reviews did not surface thesis-deterioration questions proactively — user had to raise XLE exit in weekly review discussion; **fixed: daily EOD now includes mandatory action questions on thesis health and deployment**
 
 ### Key Lessons
 - R:R pre-validation before the entry window is critical: FCX bid/ask spread was $6.50 at open; need to check spread and ask price Sunday/premarket, not at 9:30 AM
@@ -219,3 +220,73 @@ Template for each entry:
 - **Deployment goal:** Reach ≥65-70% by Wednesday May 14 (4 positions); Wednesday urgency check will apply again
 
 ### Overall Grade: C+
+
+---
+
+## Week ending 2026-05-15
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $100,924.27 (May 8 EOD / May 11 open) |
+| Ending portfolio | $102,844.19 |
+| Week return | +$1,919.92 (+1.90%) |
+| S&P 500 week | +1.40% |
+| Bot vs S&P | +0.50% (first alpha-positive week) |
+| Phase P&L | +$2,844.19 (+2.84% from $100,000 start) |
+| Trades | 2 new (W:0 / L:0 / open:4) |
+| Win rate | N/A (no closed trades) |
+| Best trade | NVDA +12.26% unrealized (drove Thursday +$1,908 day gain) |
+| Worst trade | CAT -0.63% unrealized (risk-off Friday selloff) |
+| Profit factor | N/A (no closed trades) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CAT | $892.689 | $887.06 | -$112.58 (-0.63%) | 10% trail HWM $931.35 / stop $838.215 |
+| NVDA | $200.54 | $225.13 | +$2,336.14 (+12.26%) | 7% trail HWM $236.54 / stop $219.98 |
+| XLK | $175.494 | $175.95 | +$46.97 (+0.26%) | 10% trail HWM $180.215 / stop $162.19 |
+| XOM | $150.769 | $157.64 | +$893.25 (+4.57%) | 10% trail HWM $157.425 / stop $141.68 |
+
+### Sector Watchlist — Week 4 (May 19–23)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | NVDA/XLK (held) | Post-NVDA earnings May 20 clarity; hold or replace per pre-earnings decision |
+| 2 | Energy | XLE | XOM (held) | WTI $100+ sustained; if XOM exits, re-enter XOM/XLE on bounce |
+| 3 | Materials | XLB | FCX | Bid/ask spread <$1 Sunday; R:R ≥2:1 at ask; 5th position if slot available |
+| 4 | Industrials | XLI | CAT (held) | Hold to stop $838.215; exit manually at -7% ($830.20) if thesis breaks |
+
+### What Worked
+- Deployment finally in target zone: 75.6% at week end (4 positions vs 3 last week)
+- First alpha-positive week: +1.90% vs S&P +1.40% → +0.50% outperformance
+- XOM entry well-timed: WTI/Hormuz premium resilient; +4.57% in 2 sessions; best Friday performer
+- NVDA 7% stop tighten executed cleanly when $230.62 threshold breached Thursday; locking +9.7% floor
+- XLK entry validated: CPI benign + AI momentum thesis intact; +0.26% after 3 days
+
+### What Didn't Work
+- Friday risk-off (-$1,482) erased most of Thursday's gains (+$1,908); net week P&L dampened by single-day reversal
+- CAT -3.47% Friday, now -0.63% from entry; no specific catalyst — tariff/macro sensitivity real; thesis integrity uncertain
+- NVDA stop $219.98 only 2.3% below Friday close $225.13 — gap-down risk on May 20 earnings not hedged
+- Last trade slot (2/3 used) carried unused to Week 4; deployment barely above 75% floor
+- Hot PPI + Warsh Fed Chair rumor = new macro tail risk not anticipated; no defensive repositioning before close
+
+### Key Lessons
+- 75%+ deployment is the alpha unlock — first week above floor = first alpha-positive week; validates the strategy rule
+- NVDA earnings May 20 is the portfolio's single biggest risk; 7% stop protects +9.7% floor but a gap-down on miss can blow through it — need explicit hold/trim/exit decision before May 19 close
+- XOM is the surprise outperformer: WTI holding $100+ validates energy re-entry after proactive XLE exit
+- CAT needs a thesis check — two consecutive weeks of weakness, now below entry; if tariff fears escalate, stop trigger is only $49 away ($838.215 vs $887)
+- Risk-off macro events (PPI hot, Fed Chair regime change) can compress alpha in a single session; position diversification across sectors is working as XOM bucked the trend
+
+### Adjustments for Next Week
+- **NVDA earnings May 20:** Decide before May 19 close: (a) hold through with 7% stop, (b) exit partial 30-50sh, (c) exit full to avoid gap risk. Stop $219.98 only 2.3% below close — gap-down on miss exceeds stop buffer. **This is the #1 action item.**
+- **CAT monitor:** Stop at $838.215; if price approaches $838 or thesis breaks (tariff guidance, ISM contract), exit manually. Consider replacing with FCX or SOXX if CAT exits.
+- **5th position:** FCX if bid/ask spread <$1.00 confirmed Sunday and R:R ≥2:1; SOXX as fallback if semis recover post-NVDA earnings. Week 4 has 3 fresh slots.
+- **Macro watch:** PPI hot trend + Warsh risk = rate-sensitive names (CAT, XLK) under pressure; XOM/energy is the macro hedge.
+- **Deployment:** Maintain ≥75% floor; if NVDA exits, replace within 1-2 sessions to avoid cash drag.
+
+### Overall Grade: B
