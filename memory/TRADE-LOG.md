@@ -682,3 +682,28 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 95 NVDA trailing_stop **7%** GTC (daa6134f): active, HWM $236.54, stop $219.98 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $156.52, stop $140.868 (auto-trailed ↑)
+
+---
+
+## Day 16 — EOD Snapshot (May 15, Friday)
+**Portfolio:** $102,945.00 | **Cash:** $25,099.51 (24.4%) | **Day P&L:** -$1,482.16 (-1.42%) | **Phase P&L:** +$2,945.00 (+2.95%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $888.31 | -3.47% | -$87.58 (-0.49%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| NVDA | 95 | $200.54 | $225.1525 | -4.49% | +$2,338.19 (+12.27%) | 7% trail (HWM $236.54 / stop $219.98) locked |
+| XLK | 103 | $175.494 | $176.30 | -1.78% | +$83.02 (+0.46%) | 10% trail (HWM $180.215 / stop $162.1935) locked |
+| XOM | 130 | $150.769 | $157.93 | +3.37% | +$930.95 (+4.75%) | 10% trail (HWM $157.425 / stop $141.6825) auto-trailed |
+
+**Notes:** Day 16, Friday. Risk-off sell: broad market down on hot PPI + Fed Chair Warsh fears. No new trades — week closed 2/3, carrying last slot to Week 4. Portfolio -$1,482.16 on the day: NVDA -4.49% to $225.15 (+12.27% from entry, +$2,338 unrealized; stop $219.98 locked at 7% from HWM $236.54); CAT -3.47% to $888.31 (-0.49% from entry, -$88 unrealized — back below entry); XLK -1.78% to $176.30 (+0.46% from entry, +$83 unrealized); XOM bucked trend +3.37% to $157.93 (+4.75% from entry, +$931 unrealized; HWM auto-trailed to $157.425 / stop $141.6825). No -7% cuts triggered (CAT -0.49% from entry; all others positive). Deployment 75.6% — just above 75% floor. **Critical: NVDA earnings May 20 (3 trading days). Stop $219.98 is only 2.3% below close $225.15 — gap-down risk on earnings.** Week 4 begins Monday with 3 full trade slots.
+
+**Open Orders (EOD 2026-05-15):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 95 NVDA trailing_stop **7%** GTC (daa6134f): active, HWM $236.54, stop $219.98 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $157.425, stop $141.6825 (auto-trailed ↑)
+
+**Action questions:**
+1. **NVDA earnings May 20 (3 days):** Stop $219.98 only 2.3% below close $225.15. Options: (a) hold through earnings to stop — trust the 7% trail, (b) exit before May 20 close to avoid gap-down risk, (c) trim partial position before earnings. Which?
+2. **CAT thesis check:** -3.47% today, -0.49% from entry. No specific catalyst — risk-off macro + tariff sensitivity. Is CAT thesis deteriorating or is this a buyable pullback? Exit CAT proactively, or hold to stop ($838.215)?
+3. **Week 4 5th position:** Deployment 75.6%, 3 fresh trade slots next week. Best entry: FCX (Materials momentum), SOXX (semi ETF), or other? Entry timing: Monday open, or wait for Monday close after macro re-evaluation?
