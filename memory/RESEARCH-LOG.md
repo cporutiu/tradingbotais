@@ -1072,3 +1072,70 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-15 — Pre-market Research (Friday, Week 3)
+
+### Account Snapshot
+- **Equity:** ~$104,427 (EOD May 14 baseline — Alpaca API blocked: cloud IP not in allowlist) | **Cash:** $25,099.51 (24.0%) | **Deployed:** ~$79,327 (75.97%)
+- **Daytrade count:** 0 | **Phase P&L:** +$4,427 (+4.43%) | **Week trade count:** 2/3 (1 slot remaining — today Friday)
+- **Positions:** 4 open — CAT (20sh @ $892.689), NVDA (95sh @ $200.54), XLK (103sh @ $175.494), XOM (130sh @ $150.769)
+- **Trailing stops:** CAT aa646f6e (10%, HWM $931.35 / stop $838.215 locked) | NVDA daa6134f (7%, HWM ~$237.73 / stop ~$221.09 auto-trailing) | XLK 4299aece (10%, HWM $180.215 / stop $162.19) | XOM 4d9623bf (10%, HWM $153.12 / stop $137.807 locked)
+- **API fallback:** Alpaca + Perplexity APIs blocked (host_not_allowed — cloud IP not in allowlist); used WebSearch fallback; live prices unconfirmed
+
+### Market Context
+- **WTI:** ~$102-105/bbl | **Brent:** ~$106.89/bbl — elevated; Hormuz disruption (~4M bbl/day drop) intact; energy thesis supported
+- **S&P 500:** Closed at record **7,501.24** Thursday (+0.77%); premarket futures **-1.05%** (~-79pts to 7,446) — profit-taking after ATH; Nasdaq also hit ATH Thursday
+- **VIX:** ~18.01 — moderate risk zone (15-25 normal); slightly improved from prior week's 18.51
+- **Today's releases:** University of Michigan Consumer Sentiment (preliminary, 10:00 AM ET) — mild mover; NO CPI/NFP/FOMC today
+- **Special event:** Jerome Powell's Fed Chair term ends today; Kevin Warsh (inflation hawk) expected Senate confirmation — bond market repricing risk; watch 10Y yield
+- **Earnings BMO today:** Lighter calendar; no portfolio names reporting; NVDA earnings Wed May 20 (5 days out — key risk)
+- **This week's catalysts driving the rally:** NVDA H200 China approval (+4.4% Thursday), Cisco guidance raise (+13.4% Thursday), US-China Beijing summit optimism, record S&P 7,501 and Dow 50,000 Thursday
+- **Sector YTD leaders:** Energy, Industrials, Materials leading; Tech recovering on AI momentum; Semis, energy, defense, industrials driving market
+
+### Position Premarket Levels (WebSearch estimates, unconfirmed)
+| Ticker | EOD Close | Premarket Est. | Change | Stop | Status |
+|--------|-----------|----------------|--------|------|--------|
+| NVDA | $237.73 | ~$229.90 | -3.3% | 7% trail ~$221.09 | Safe — broad tech pullback |
+| CAT | $918.51 | ~$897.09 | -2.3% | 10% trail $838.215 | Safe — market-wide pullback |
+| XOM | $152.84 | ~$152-153 | flat | 10% trail $137.807 | Safe — oil elevated |
+| XLK | $179.65 | est. ~$177 | ~-1.5% | 10% trail $162.19 | Safe — follows tech |
+
+### Trade Ideas
+
+1. **WATCH: FCX (Freeport-McMoRan) — Materials #4 on watchlist | Week 4 candidate**
+   - **Catalyst:** Copper supercycle; ISM manufacturing expansion (52.7); AI data center + infrastructure copper demand
+   - **Entry zone:** $45-48 on pullback to support; confirm Materials sector holds above XLB 50-day MA
+   - **Sizing:** ~17-20% equity (~$17,700-$20,900 at current equity)
+   - **Stop:** 10% trailing GTC immediately on fill
+   - **Target:** $55-60 (15-25% move); 2:1+ R:R
+   - **Sector check:** Opens Materials slot (sector 4); CAT=Industrials, NVDA/XLK=Tech, XOM=Energy — no conflict
+   - **Today:** PASS — market pullback + NVDA earnings risk next week; set up for Week 4 Monday/Tuesday
+
+2. **WATCH: SOXX (Semiconductor ETF) — 5th position candidate**
+   - **Catalyst:** AI infrastructure supercycle; NVDA earnings May 20 as sector catalyst
+   - **Risk:** Already 21% NVDA exposure; SOXX = compounding semi concentration pre-earnings; "sell the news" risk
+   - **Today:** PASS — excess semi exposure; reassess post-NVDA earnings May 21+
+
+3. **MONITOR: NVDA stop management**
+   - +20% tighten trigger at $240.65 — NOT hit (premarket ~$229.90, well below)
+   - If NVDA opens or trades ≥$240.65 intraday: cancel daa6134f, place 5% trailing GTC immediately
+   - Premarket pullback makes $240.65 intraday unlikely; watch throughout session
+
+### Risk Factors
+- **NVDA earnings May 20 (5 days):** Largest position (21% equity, +18.54% unrealized). "Sell the news" risk elevated; 7% trail protects minimum $18.58/sh gain (~$1,765 locked profit floor)
+- **Fed Chair transition today:** Warsh = hawk; bond market may reprice; 10Y yield could spike → tech multiple compression risk
+- **S&P futures -1.05%:** Broad profit-taking after records; tech-led pullback in premarket
+- **NVDA premarket -3.3%:** Pullback to ~$229.90; well above 7% stop (~$221); no stop-out risk, but notable reversal from $237.73
+- **CAT premarket -2.3%:** Stop at $838.215 (safe); no thesis change
+
+### Decision
+**HOLD — do not use last trade slot (Week 2/3) today.**
+- Deployed 75.97% (above 60% floor) → HOLD valid per strategy rules without named blocker
+- Broad market pulling back after ATH; tech under pressure pre-open
+- NVDA earnings May 20 = sector-wide risk event; avoid adding semi exposure
+- Powell succession uncertainty = macro wild card today
+- No fresh setup with compelling R:R in current risk environment
+- **Carry 1 remaining slot to Week 4**; FCX primary candidate for Monday/Tuesday entry
+- Monitor NVDA at $240.65 for 5% stop tighten; all other stops trail automatically
