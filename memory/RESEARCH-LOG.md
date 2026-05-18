@@ -5,6 +5,127 @@ Format each entry:
 
 ---
 
+## 2026-05-18 — Pre-Market Research (Monday, Week 4)
+
+### Account Snapshot
+- **Equity:** $103,528.13 | **Cash:** $25,099.51 (24.2%) | **Long MV:** $78,428.62 (75.8%)
+- **DT count:** 0 | **Phase P&L:** +$3,528.13 (+3.53%)
+- **Week 4:** 3/3 trade slots fresh (exits don't count)
+- **Deployed:** 75.8% — at floor (75-85% target)
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $893.19 | +$10.02 (+0.06%) | +0.55% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $230.20 | +$2,817.74 (+14.79%) | +2.17% | **7% trail** HWM $236.54 / stop $219.98 (locked) |
+| XLK | 103 | $175.494 | $177.86 | +$243.70 (+1.35%) | +0.91% | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $156.74 | +$776.25 (+3.96%) | -0.75% | 10% trail HWM $157.425 / stop $141.6825 (locked) |
+
+**Active watch items from prior EOD unanswered action questions:**
+1. **NVDA earnings May 20 AMC** — Hold/trim/exit decision still pending (unanswered from May 15 EOD)
+2. **CAT thesis check** — -3.47% May 15, now -0.49% from entry — pending
+3. **Week 4 5th position** — FCX or SOXX entry timing pending
+
+### Market Context
+- **WTI:** ~$105-106/bbl (major surge from ~$94-97 last week — +10-12% reversal; US naval blockade of Iran extending)
+- **Brent:** ~$110-111/bbl
+- **S&P 500 futures (ESM26):** ~7,409-7,418 — down ~0.5-1.4% premarket from May 14 close ~7,525
+- **VIX:** ~17.87 (May 13 close) — LOW risk zone (< 18); May VIX futures expire tomorrow May 19 (last full trading day today)
+- **Economic cycle:** Mid-cycle — GDP +2.0% Q1, ISM Mfg 52.7 + Services 53.8 (expansion), unemployment ~4%, Fed holding
+- **Market risk:** Low (VIX ~17.87)
+
+### Economic Calendar
+- **Today (May 18):** No CPI/PPI/FOMC/NFP — clean. VIX May options last trading day.
+- **BMO today:** BIDU, RYAAY, BRC, IQ, SOHU — no market-moving held-name catalysts
+- **CRITICAL — NVDA earnings AMC May 20 (Wednesday):** Sky-high expectations. Consensus ~$43.2B revenue Q1 FY2027. 97% beat probability priced on Polymarket. History: fell on 3 of last 4 earnings despite beats. Blackwell demand, gross margins, and guidance are key watch items.
+- **May 19:** VIX May futures expiration
+- **June 5:** NFP May 2026 | June 10: CPI | June 11: PPI
+
+### Benzinga Signals (72h lookback — Monday)
+- **BUYS (high confidence):** NVDA (score +4; "China AI crown lost but story far from over"; 42 mentions) — confirms hold thesis, AI demand intact
+- **SELLS (high confidence):** SPY (score -4), GLD (score -16; gold death cross / ETF outflows), XLE (score -7), **XLK (score -4, 2 mentions)**, XLY (score -5), IWM (score -3), **XOM (score -3, 2 mentions)**, CVX (score -4), AMD (score -12)
+- **Held names: XLK = SELL signal (bearish); XOM = SELL signal (bearish); NVDA = BUY signal (bullish); CAT = no mention (neutral)**
+
+### Congress Signals
+- Congress: no actionable signals today (fetch_error — API unavailable).
+
+### Confluent Signals
+- None (no Congress data to cross-reference).
+
+### Perplexity Validation of Benzinga Signals
+- **NVDA BUY:** Partially confirmed. Benzinga bearish tone on broader tech/semis (AMD -12 score, XLK -4) but NVDA specifically bullish. Invezz reports NVDA down ~4.4% Friday ahead of earnings = profit-taking/positioning, not fundamentals. Today bouncing +2.17%. Perplexity confirms AI thesis intact; earnings May 20 = key. Street target ~$269, 97% beat probability. **Benzinga BUY confirmed as hold thesis — do not exit on bearish macro backdrop.**
+- **XLK SELL:** Partially confirmed. Benzinga bearish. XLK RSI ~79-80 (overbought); -1.73% on May 17; semiconductor-heavy = NVDA earnings event risk. However XLK +0.91% today. Benzinga SELL signal = risk flag into NVDA earnings, not immediate exit signal given 10% stop protecting at $162.19. **Monitor — stop doing its job.**
+- **XOM SELL:** Contradicted by macro. WTI surged from $94-97 → $105-106 (+10-12%) over weekend. Naval blockade of Iran extending = geopolitical premium re-intensifying. Benzinga SELL based on prior week's oil weakness thesis — now stale. XOM Bernstein: Outperform target $182. Argus: Buy target $169. XOM current $156.74 — bullish. **Benzinga SELL contradicted; WTI surge = XOM bull thesis intact.**
+
+### Position Updates
+
+**CAT ($893.19, +0.06% from entry $892.689, +0.55% today):**
+- Barely above entry. Feb-May 2026: up 161% 1-year, +32% YTD but at $893 now close to entry cost.
+- Q1 2026: EPS $5.54 adj, revenue +22% to $17.4B, record backlog $63B (+79%), raised FY guidance. Fundamentals intact.
+- Analysts: consensus target $923 (16 Buy / 9 Hold), implying ~3.5% upside. Some targets below current price.
+- Tariff risk: ~$2.6B FY2026 headwind. CFO transition (Kyle Epley May 1).
+- Stop locked: HWM $931.35 / stop $838.215. Well above -7% cut threshold ($830.20).
+- **Action: HOLD.** Thesis intact. CAT recovering toward entry today. Stop protecting.
+
+**NVDA ($230.20, +14.79% from entry $200.54, +2.17% today):**
+- CRITICAL: Earnings AMC May 20 (2 days). Sky-high expectations: Q1 FY2027 revenue ~$43.2B, 97% beat probability.
+- Key risks: "sell the news" pattern (fell 3 of last 4 earnings despite beats); stock fell 4.4% Friday on profit-taking; today bouncing +2.17%.
+- Stop: 7% trail, HWM $236.54, stop $219.98. Gap current→stop: $10.22 (4.44%).
+- Gap-down risk on earnings miss/guidance disappointment could breach stop. Max stop loss from current: -4.44%.
+- Street target ~$269; Tikr model ~$445. AI thesis structurally intact (Blackwell ramping, $51.1B net cash).
+- +20% tighten trigger = $240.65 — NOT YET REACHED (HWM was $236.54 on May 14).
+- **WATCH: Unanswered May 15 question — hold/trim/exit before May 20 AMC?**
+- **Recommendation: HOLD to stop.** 7% trail locks in +9.7% min gain from entry. Earnings gap-down would trigger stop at $219.98 = still +9.7% profit from entry $200.54. Trimming forfeits upside if NVDA beats and raises guidance.
+
+**XLK ($177.86, +1.35% from entry $175.494, +0.91% today):**
+- Benzinga SELL signal (medium confidence). NVDA is ~15.2% of XLK — earnings event risk embedded.
+- RSI overbought (~79-80). -1.73% last Friday. Today recovering +0.91%.
+- Stop: 10% trail HWM $180.215 / stop $162.1935. Provides 8.8% cushion from current.
+- Thesis: CPI benign + tech AI momentum + NVDA pre-earnings. Benzinga SELL = heightened risk flag, not thesis break.
+- **Action: HOLD.** Stop protecting. If NVDA earnings gap triggers XLK weakness, stop absorbs it.
+
+**XOM ($156.74, +3.96% from entry $150.769, -0.75% today):**
+- WTI surged $94-97 → $105-106 (+10-12%) over weekend on US naval blockade of Iran extension. Thesis re-energized.
+- Q1 2026: EPS $2.09 ex-items. Bernstein: Outperform target $182. Argus: Buy target $169. ATH was $159.15.
+- XOM hit $157.93 last Friday (our EOD). Today slightly down -0.75% to $156.74 = minor pullback in context of oil surge.
+- Stop: 10% trail HWM $157.425 / stop $141.6825.
+- **+15% tighten trigger = $150.769 × 1.15 = $173.38** — not yet reached.
+- **Action: HOLD.** WTI surge re-validates energy thesis. XOM approaching ATH $159.15 — potential new HWM if oil holds.
+
+### Trade Ideas
+
+1. **HOLD all positions** — Deployed 75.8%, at floor. Primary event = NVDA earnings May 20 AMC. All 4 positions have active stops.
+   - CAT: thesis intact, recovering to entry. HOLD to stop.
+   - NVDA: +14.79% from entry, 7% trail at $219.98. HOLD through earnings per strategy (no pre-earnings cut) — stop is protection. Decide hold/trim before May 20 AMC.
+   - XLK: +1.35%, Benzinga SELL flag but stop protecting. HOLD.
+   - XOM: WTI surge re-validates thesis. HOLD.
+
+2. **5th position (1 slot carry from Week 3):** Deployment 75.8% — barely above 75% floor. Strategy calls for 75-85% deployment. No urgency this week given NVDA earnings Wednesday = event risk for all tech positions.
+   - **FCX (Materials):** Copper momentum; if NVDA earnings positive + oil stable post-Wednesday, FCX for Thursday/Friday.
+   - **SOXX:** NVDA-heavy (~20%+); avoid if NVDA earnings gap creates sector volatility.
+   - **Timing:** Do NOT enter 5th position before NVDA earnings May 20 AMC. Assess Thursday May 21 post-earnings.
+
+3. **Active watch items:**
+   - NVDA stop: $219.98 (7% trail). If NVDA gaps below $219.98 on earnings = fill, walk away with +9.7% profit.
+   - NVDA +20% trigger: $240.65. If NVDA surges post-earnings → tighten to 5% trail immediately.
+   - XOM approaching ATH $159.15 — if XOM breaks ATH, stop will auto-trail to new HWM.
+   - CAT: needs to break above $931.35 to set new HWM and trail stop higher.
+
+### Risk Factors
+- **NVDA earnings May 20 AMC:** Biggest risk this week. 97% beat priced in = "sell the news" risk. Gap-down >4.44% would trigger 7% stop. Strategy: hold to stop. No pre-earnings exit.
+- **S&P futures down 0.5-1.4% premarket:** Broad market weakness. Energy outperforming (WTI surge); tech underperforming (NVDA pre-earnings positioning).
+- **XLK + NVDA correlation:** Both positions exposed to tech/NVDA earnings event. Combined exposure ~$40K (38.6% of equity). Stop protecting both.
+- **Benzinga SELL on XLK and XOM:** XOM signal contradicted by WTI surge (bullish). XLK signal valid as risk flag but thesis intact.
+- **Oil surge sustainability:** WTI +10-12% in days. If blockade de-escalates (Hormuz pattern repeating), XOM could reverse. Stop at $141.68 = 9.6% buffer from $156.74.
+- **CAT near entry:** -0.49% from entry. Any additional macro/tariff pressure puts stop within sight. Stop at $838.215 = 6.2% below current.
+- **VIX expiration today:** May VIX futures expire tomorrow. Last full trading day today = potential intraday volatility.
+
+### Decision
+**HOLD — NVDA earnings blackout zone.** All 4 positions have active GTC trailing stops. Deployed 75.8% (at floor). No new trades before NVDA AMC May 20 (Wednesday). Reassess for 5th position (FCX) Thursday May 21 post-earnings. No user decisions carried forward (prior action questions remain unanswered — will surface again at EOD today).
+
+**NVDA earnings strategy:** Hold to stop at $219.98. If post-earnings gap-down triggers stop = locked in +9.7% profit. If beat/guide-up = watch for $240.65 to tighten to 5%. Do NOT pre-exit.
+
+---
+
 ## 2026-05-15 — Pre-Market Research (Friday, Week 3)
 
 ### Account Snapshot
