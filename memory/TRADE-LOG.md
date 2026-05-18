@@ -779,4 +779,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Open Orders (midday 2026-05-18):**
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+
+---
+
+## Day 17 — EOD Snapshot (May 18, Monday)
+**Portfolio:** $102,094.89 | **Cash:** $45,993.11 (45.1%) | **Day P&L:** -$850.11 (-0.83%) | **Phase P&L:** +$2,094.89 (+2.09%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $863.95 | -2.74% | -$574.78 (-3.22%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $174.36 | -1.08% | -$116.80 (-0.65%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $160.49 | +1.63% | +$1,263.75 (+6.45%) | 10% trail HWM $161.73 / stop $145.557 (auto-trailed ↑) |
+
+**Notes:** NVDA 7% trailing stop triggered intraday (exit ~$219.98, realized +9.73% / ~+$1,847). 3 positions remain: CAT (-3.22%) and XLK (-0.65%) drifted lower in risk-off tape; XOM (+6.45%) held strong on WTI oil strength. No new buys — pre-NVDA-earnings blackout honored. Deployment fell to 55.0% following NVDA exit — below 75% floor. Re-entry candidate FCX earmarked for Thursday May 21 post-earnings. Week buy count: 0/3 (all slots available).
+
+**Open Orders (EOD 2026-05-18):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $161.73, stop $145.557 (auto-trailed ↑)
+
+**Action questions:**
+1. **Deployment 55% (below 75% floor):** NVDA exit freed ~$20,893. NVDA reports AMC May 20. Plan: enter FCX (Materials momentum) Thursday May 21 post-earnings reaction at ~$20K? Or different candidate/timing?
+2. **CAT thesis check:** -3.22% from entry, -2.74% today on no specific catalyst. Stop $838.215 (8.9% below entry; HWM-locked at $931.35). Record $63B backlog + ISM expansion intact. Exit CAT proactively, or hold to stop?
+3. **Week slots:** 0/3 buys used, 4 days remain. 3 full slots available. Prioritize FCX entry Thursday + hold remaining 2 slots, or any urgency to deploy sooner?
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $161.23, stop $145.107 (auto-trailed ↑)
