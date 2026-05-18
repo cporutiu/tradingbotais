@@ -5,6 +5,105 @@ Format each entry:
 
 ---
 
+## 2026-05-18 — Pre-Market Research (Monday, Week 4)
+
+### Account Snapshot
+- **⚠️ Alpaca API unavailable (403 Host not in allowlist — cloud IP blocked)** — using EOD May 15 estimates
+- **Equity (est.):** ~$102,945 | **Cash:** $25,099.51 (24.4%) | **Deployed:** ~$77,845 (75.6%) | **DT count:** 0
+- **Phase P&L:** +$2,945 (+2.95%) | **Week count:** 0/3 (fresh — Week 4)
+
+### Positions (last known: EOD May 15)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $888.31 | -$87.58 (-0.49%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| NVDA | 95 | $200.54 | $225.15 | +$2,338.05 (+12.27%) | **7% trail** HWM $236.54 / stop $219.98 (locked) |
+| XLK | 103 | $175.494 | $176.30 | +$83.02 (+0.46%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $157.93 | +$930.95 (+4.75%) | 10% trail HWM $157.425 / stop $141.6825 (auto-trailed) |
+
+**⚠️ PENDING USER DECISIONS (EOD May 15 action questions — no responses logged yet):**
+1. NVDA earnings May 20: hold to stop / exit before close / trim partial?
+2. CAT thesis: pullback buyable or deteriorating? Hold to stop ($838.215)?
+3. Week 4 5th position: FCX / SOXX / other — Monday open or wait?
+
+### Market Context
+- **Oil:** WTI ~$107.26/bbl (+1.75% premarket) | Brent ~$110.62/bbl (+1.24%) — surging on UAE Barakah nuclear plant drone strike (May 17) and Hormuz closure; WTI +11% weekly gain
+- **S&P 500 futures:** E-mini -42.75 pts (-0.58%) — risk-off; drone strike on UAE nuclear plant + elevated oil sending futures lower
+- **VIX:** 18.99 (+3.04%) — medium risk zone (18-25); elevated from last-known 17.08 (May 15 close)
+- **Geopolitical:** UAE Barakah nuclear plant struck by drone May 17; fire in outer perimeter only; no radiation leak; all 4 units operating normally. Investigation ongoing — source unconfirmed. IAEA expressed "grave concern." Brent +$1.36 (+1.24%) on the news.
+- **Key event this week: NVDA earnings May 20 AMC** — Wall Street consensus ~$78B revenue, $1.77 non-GAAP EPS (+77-78% YoY). Key tells: gross margin, Q2 guide, China commentary. BofA raised PT $300→$320. Single most important event for tech/AI sentiment.
+- **Economic calendar this week:**
+  - Tue May 19: Housing Starts + Building Permits (8:30 AM ET); Pending Home Sales (10 AM ET)
+  - Wed May 20: NVDA earnings AMC (5 PM ET conference call); Fed minutes release
+  - Thu May 21: Initial Claims + Philadelphia Fed Manufacturing Survey (8:30 AM ET)
+  - Fri May 22: UMich Consumer Sentiment Final (10 AM ET)
+  - **No CPI/PPI/NFP/FOMC this week**
+- **Earnings this week:** NVDA AMC May 20; Walmart AMC May 21; 50 reports Monday (no market movers BMO today)
+- **Sector YTD leaders:** Energy #1 (+26%), Consumer Staples (+10.7%), Industrials (+9.6%) | Tech recovering on AI momentum | S&P 500 YTD +6.0% (as of May 8)
+- **Market regime:** Mid-cycle expansion; ISM Mfg 52.7, GDP +2.0%; Fed on hold; inflation re-accelerating (PPI +1.4% m/m Apr); Kevin Warsh replacing Powell as Fed Chair
+- **Note:** Perplexity API 403 (unavailable); all research via WebSearch fallback
+
+### Position Updates
+
+**CAT ($888.31, -0.49% from entry $892.689):**
+- Analyst upgrades: Evercore ISI PT raised to $1,103 (from $878), Baird to $1,165, Morgan Stanley upgraded to Equal Weight PT $915
+- Q1 2026 confirmed strong: revenue +22%, operating profit +20%, EPS +30%; management raised guidance and 5-year forecast; Power Generation segment +41% YoY (data center engines)
+- Insider selling: Group President Denise Johnson sold 12,605 shares ($11.4M) + 6,196 shares ($5.6M); CAO Schaupp sold 360 shares — notable but routine executive sales vs Q1 beat
+- Risk-off Monday open (futures -0.58%) + oil surge → industrials may drift lower; tariff/margin concerns persist
+- Stop: HWM $931.35 / stop $838.215 — 5.7% buffer from last close ($888.31); well above -7% cut ($829.92)
+- **Action: HOLD.** Thesis intact (analyst consensus bullish). Stop protecting. No -7% cut needed.
+
+**NVDA ($225.15, +12.27% from entry $200.54):**
+- BofA raised PT $300 → $320; CEO Jensen Huang joining Trump/Xi Beijing summit (H200 China deal tailwind)
+- Earnings May 20 AMC — largest event risk this week; street expects $78B revenue / $1.77 EPS (+77-78% YoY)
+- Stop $219.98 is only ~2.3% below last close $225.15 — **gap-down risk on earnings**; stop may not protect fully if large miss
+- +20% tighten trigger $240.65 NOT reached — current $225.15 is 6.9% below trigger; risk-off open pushes this further out
+- Confluent SELL noted from May 15 (Benzinga medium + Congress high) — AI thesis structurally intact; holding to stop
+- **Action: HOLD.** Earnings May 20 is the inflection. Stop at $219.98 locking in +9.7% min gain from entry. Pre-earnings user decision still open (hold/trim/exit).
+
+**XLK ($176.30, +0.46% from entry $175.494):**
+- S&P futures -0.58% + oil surge = headwind for tech ETF Monday open
+- Stop: HWM $180.215 / stop $162.1935 — 8.0% buffer from last close; thesis intact
+- **Action: HOLD.** Small positive unrealized; stop protecting. No cut needed.
+
+**XOM ($157.93, +4.75% from entry $150.769):**
+- Oil surge (+1.75% premarket, WTI $107.26) on UAE drone strike = directly bullish for XOM
+- XOM climate lawsuit: Texas jury found not liable in securities fraud case — removed tail risk
+- Recent earnings beat: EPS $1.16 vs estimate $0.98 (+17.91% surprise); Q1 strong
+- Stop: HWM $157.425 / stop $141.6825 (auto-trailed Friday) — likely to trail higher on today's oil strength
+- **Action: HOLD.** Oil thesis strengthened by UAE escalation. Stop will auto-trail on new HWM today.
+
+### Trade Ideas
+
+1. **NO NEW TRADES TODAY — HOLD all 4 positions**
+   - Deployment 75.6% (above 75% floor → patience valid per strategy rule 11)
+   - Market risk-off (-0.58% futures, VIX 18.99) + UAE geopolitical uncertainty
+   - NVDA earnings May 20 is primary focus — no new capital at risk ahead of event
+   - EOD action questions (May 15) still unanswered — need user decisions before adding 5th position
+
+2. **FCX (Materials, 5th position) — SETUP for post-NVDA entry (May 21)**
+   - Commodity cycle thesis; energy/geopolitical premium spilling into materials
+   - Entry window: May 21 (Thursday), after NVDA earnings reaction confirmed
+   - If NVDA beats + market risk-on → enter FCX $17-20% position size
+   - If NVDA misses + broad tech sell → hold cash, protect existing positions
+   - **Not today.** Prepare setup for Thursday entry.
+
+3. **SOXX (Semi ETF) — alternative 5th position if FCX not ready May 21**
+   - AI infrastructure cycle; NVDA beat would validate semis broadly
+   - Same entry logic: wait for NVDA May 20 reaction before committing
+
+### Risk Factors
+- **NVDA earnings gap risk (May 20):** Stop $219.98 is only 2.3% below $225.15 close; a large earnings miss could gap through stop. User decision needed on hold/trim before May 20 close.
+- **UAE Barakah escalation:** Source of drone attack unconfirmed; Iran suspected. If attribution confirmed and Gulf tensions escalate further → Hormuz could fully close → oil $120+; equity markets face severe risk-off. Holding XOM is the right hedge.
+- **VIX 18.99:** Moving into medium risk zone; monitor for spike above 20 which warrants further caution
+- **CAT insider selling:** Three executives, multiple large transactions — not a thesis break but a watch item
+- **Oil at $107 WTI:** Energy positive (XOM), but broad market headwind (inflation + consumer pressure); PPI already hot
+- **Kevin Warsh / hawkish Fed:** 3 FOMC governors hawkish; policy uncertainty adding premium to rates; compression risk for NVDA/XLK
+
+### Decision
+**HOLD — no new entries today.** Market risk-off (-0.58% futures, VIX 18.99, UAE escalation). Deployment 75.6% (above 75% floor; patience valid). NVDA earnings May 20 is the week's pivotal event — no new capital before that clears. EOD May 15 action questions (NVDA pre-earnings, CAT thesis, 5th position) still pending user response; carrying forward. Oil surge benefits XOM; stops intact on all 4 positions. Next entry window: Thursday May 21 (post-NVDA earnings) for FCX or SOXX as 5th position if NVDA beats.
+
+---
+
 ## 2026-05-15 — Pre-Market Research (Friday, Week 3)
 
 ### Account Snapshot
