@@ -835,3 +835,26 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.32, stop $146.988 (auto-trailed ↑)
+
+---
+
+## Day 18 — EOD Snapshot (May 19, Tuesday)
+**Portfolio:** $102,127.52 | **Cash:** $45,993.09 (45.0%) | **Day P&L:** +$32.65 (+0.03%) | **Phase P&L:** +$2,127.52 (+2.13%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $860.15 | -0.44% | -$650.78 (-3.65%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $173.12 | -0.71% | -$244.75 (-1.35%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $162.31 | +1.13% | +$1,500.35 (+7.66%) | 10% trail HWM $163.32 / stop $146.988 (auto-trailed ↑) |
+
+**Notes:** Day 18, Tuesday. Quiet drift day — no trades, no stops hit. Portfolio +$32.65 on the day. CAT continued multi-day slide to $860.15 (-3.65% from entry, -0.44% today); stop $838.215 now only 2.5% below close — auto-exit possible on any further weakness. XLK -0.71% to $173.12 (-1.35% from entry); macro tech softness, thesis intact. XOM +1.13% to $162.31 (+7.66% from entry); HWM auto-trailed $161.73 → $163.32; stop $145.557 → $146.988. Deployment 55.0% — below 75% floor. **NVDA reports AMC tonight (May 19) — pre-earnings blackout honored, no new buys.** Week buy count: 0/3 (3 full slots available). 5th position (SOXX) targeted for Thursday May 21 post-NVDA reaction.
+
+**Open Orders (EOD 2026-05-19):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.32, stop $146.988 (auto-trailed ↑)
+
+**Action questions:**
+1. **NVDA earnings AMC tonight:** SOXX 5th position planned for Thursday May 21 post-reaction. Confirm entry: SOXX ~$20K (~113 shares @~$177)? Or different size/candidate/timing?
+2. **CAT stop proximity:** -3.65% from entry; stop $838.215 is 2.5% below close $860.15. CAT has drifted lower 4 straight days. If tomorrow opens weak, auto-exit likely. Exit CAT proactively at tomorrow's open, or hold to stop?
+3. **Deployment 55% (below 75% floor):** 3 fresh buy slots this week. Priority: 1 position Thursday (SOXX/FCX), then hold remaining 2 slots. Or add 2 names Thursday if NVDA reaction is bullish? Which?
