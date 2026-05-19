@@ -1304,3 +1304,91 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-19 — Pre-market Research (Week 4, Day 18 — Tuesday)
+
+**[NOTE: Alpaca API and Perplexity both 403 (cloud IP not allowlisted). Account snapshot from EOD May 18 TRADE-LOG. WebSearch fallback for all market data.]**
+
+### Account Snapshot (EOD May 18 — last known)
+- **Equity:** $102,094.89 | **Cash:** $45,993.11 (45.1%) | **Deployed:** $56,102 (54.9%, 3 positions)
+- **Buying power:** ~$91,986 | **Daytrade count:** 0
+- **Week 4 buy count:** 0/3 (all 3 slots available)
+- **Phase P&L:** +$2,094.89 (+2.09%)
+
+| Ticker | Shares | Entry | Close (May 18) | Unrealized | Stop |
+|--------|--------|-------|----------------|------------|------|
+| CAT | 20 | $892.689 | $863.95 | -$574.78 (-3.22%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $174.36 | -$116.80 (-0.65%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $160.49 | +$1,263.75 (+6.45%) | 10% trail HWM $161.73 / stop $145.557 (auto-trailed) |
+
+### Market Context
+- **WTI:** ~$105-106/bbl | **Brent:** ~$102-111/bbl — volatile; geopolitical premium (Iran/Hormuz) intact
+- **S&P 500 Futures:** ~7,383-7,385 (slightly positive premarket)
+- **VIX:** ~18.99 (+3.04%, opened 19.25) — medium risk zone (18-25)
+- **CPI (May 12):** 3.8% | **Unemployment (May 8):** 4.3%
+- **Bond yields:** 10-yr >4.50%, 30-yr >5.0% — elevated; pressure on growth/tech valuations
+- **Today's releases:** No major data (no CPI/PPI/FOMC/NFP)
+- **Earnings BMO today (May 19):** HD (Home Depot) — Q1 EPS est $3.41 (-4.2% YoY), revenue est $41.6B (+4.4%); housing soft but Pro demand steady
+- **Earnings AMC tomorrow (May 20):** NVDA — major AI sector catalyst; consensus bullish
+- **Key catalyst:** NVDA earnings May 20 AMC = binary event for tech/AI/XLK; market-wide read-through
+
+### Sector Momentum YTD 2026 (revised)
+| Rank | Sector | ETF | Status |
+|------|--------|-----|--------|
+| 1 | Materials | XLB | Leading (+22% YTD — now #1) |
+| 2 | Energy | XLE | Leading |
+| 3 | Consumer Staples | XLP | Leading |
+| 4 | Industrials | XLI | Leading |
+| 5 | Healthcare | XLV | Weakening |
+| 6 | Technology | XLK | Lagging |
+| 7 | Communications | XLC | Lagging |
+| 8 | Consumer Disc. | XLY | Lagging |
+
+### Position Updates
+- **CAT ($863.95, -3.22%):** Q1 EPS beat by 19.3% ($5.54 actual), revenue +22% YoY, backlog $63B. Evercore ISI PT raised to $1,103 (from $878, Outperform). Dividend $1.51/sh payable today (May 19) to holders of record April 20. New CFO Kyle Epley (May 1). Acquired Zimeno Inc. (April 14). **Thesis significantly strengthened — HOLD to stop $838.215.** Stop 2.9% below current close; no action needed. Cannot move stop down per strategy.
+- **XLK ($174.36, -0.65%):** NVDA is 15.52% of XLK; Apple (11.86%), MSFT (8.24%) also major holdings. XLK tech sector lagging YTD. NVDA earnings AMC tomorrow = binary event for this position. Stop $162.1935 comfortable. **HOLD through NVDA catalyst.**
+- **XOM ($160.49, +6.45%):** Closed ~$161.52 on May 18 (range $155.24-$161.73). Q1 revenue $85.1B. Texas jury ruled NOT liable in securities fraud case (removes overhang). Oil thesis intact. Stop auto-trailed to HWM $161.73/stop $145.557. +15% tighten trigger = $173.38 (not yet). **HOLD; watch for new HWM.**
+
+### STEP 1B — User Decisions Scan
+- No "**User decisions**" block found in TRADE-LOG.md for May 18 EOD.
+- Carrying forward EOD May 18 action question defaults per strategy rules:
+  - **Q1 answer (default):** Deploy FCX post-NVDA clarity → Thursday May 21
+  - **Q2 answer (default):** CAT thesis CONFIRMED intact (Q1 beat, PT raise) → HOLD to stop
+  - **Q3 answer (default):** Enter 1 position Thursday (FCX); preserve remaining 2 slots
+
+### Trade Ideas
+1. **FCX (Freeport-McMoRan) — Thursday May 21** [PRIMARY]
+   - **Catalyst:** Materials sector #1 YTD (+22%); copper demand from AI data center buildout + EV transition; Q1 adjusted net profit +130% ($0.57/sh); Deutsche Bank PT $72, UBS PT $74
+   - **Entry:** Thursday open post-NVDA reaction; target ~$61-63 range
+   - **Sizing:** ~110 shares × $62 = ~$6,820... wait, need 17-20% of $102K = ~$17,300-20,400. At $62/sh: ~280 shares ≈ $17,360. Adjust to 280 shares.
+   - **Stop:** 10% trailing GTC immediately on fill
+   - **Target:** $72-74 (16-20% upside, Deutsche Bank/UBS consensus); 2:1+ R:R
+   - **Risk:** Grasberg mud rush operational disruption (slower ramp); Morgan Stanley downgrade; bond yield headwind for Materials
+   - **Sector check:** Opens 4th sector (Materials); total sectors: Energy + Tech + Industrials + Materials ✓
+
+2. **NVDA re-entry (Thursday May 21 — conditional)** [SECONDARY]
+   - **Condition:** NVDA beats + guides up AMC May 20 → gap up Thursday
+   - **Entry:** Only if strong conviction gap (>5% premarket); would use week slot 2/3
+   - **Sizing:** 17-20% of equity
+   - **Risk:** Re-entry chasing after already exited at stop; gap exhaustion risk
+   - **Note:** Not a day trade (exit was May 18, entry would be May 21 = 3 days apart)
+
+3. **XOM continuation — HOLD** [PASSIVE]
+   - At +6.45%; need +15% = $173.38 to tighten trail to 7%. Oil thesis intact. No new action needed.
+
+### Risk Factors
+- **VIX ~19:** Medium zone; elevated. Position sizing discipline maintained (17-20% max).
+- **NVDA AMC May 20:** Binary for XLK (15.52% NVDA weight). If NVDA misses, XLK may gap down — stop $162.1935 absorbs it. Holding through the event per strategy (stop is the hedge).
+- **Bond yields >4.50%/10-yr:** Ongoing headwind for growth stocks; keeps VIX elevated.
+- **CAT stop proximity:** Current $863.95 is only 3.0% above stop $838.215. A down day on CAT pushes near the trigger. Thesis is strong (PT $1,103 Evercore) — stay the course.
+- **HD earnings BMO today:** If HD misses badly, construction/industrial sentiment may weigh on CAT intraday.
+- **Deployment floor:** 54.9% deployed — below 75% floor. Must enter at least 1 position this week. Thursday FCX satisfies the obligation.
+
+### Decision
+**HOLD today (Tuesday May 19). No new entries.**
+- Rationale: NVDA earnings AMC tomorrow (May 20) = qualified uncertainty event that affects XLK directly. Allow this to resolve before deploying.
+- **Thursday May 21:** Enter FCX (~280 shares, ~$17,360, ~17% of equity) at market open. Place 10% trailing stop GTC immediately. Week count: 1/3.
+- Wednesday urgency rule: If ≥2 trade slots unused at Wednesday close AND deployed <60% → must enter 1 position Thursday. Currently 3 slots unused, 54.9% deployed — Thursday FCX entry is **mandatory per strategy rules**.
+- **Active watches:** CAT stop ($838.215) proximity; XOM new HWM >$161.73 → auto-trail; NVDA gap-up Thursday = conditional re-entry signal.
