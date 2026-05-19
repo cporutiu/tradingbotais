@@ -803,3 +803,35 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **CAT thesis check:** -3.22% from entry, -2.74% today on no specific catalyst. Stop $838.215 (8.9% below entry; HWM-locked at $931.35). Record $63B backlog + ISM expansion intact. Exit CAT proactively, or hold to stop?
 3. **Week slots:** 0/3 buys used, 4 days remain. 3 full slots available. Prioritize FCX entry Thursday + hold remaining 2 slots, or any urgency to deploy sooner?
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $161.23, stop $145.107 (auto-trailed ↑)
+
+---
+
+## Midday 2026-05-19 (Tuesday, Week 4, Day 18)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| CAT | 20 | $892.689 | $860.15 | -$650.78 (-3.65%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $173.12 | -$244.75 (-1.35%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $162.31 | +$1,500.35 (+7.66%) | 10% trail HWM $163.32 / stop $146.988 (auto-trailed ↑) |
+
+**Losers cut:** None. CAT -3.65% and XLK -1.35% both above -7% cut threshold. No action.
+
+**Stop tightening:** None. XOM +7.66% — below +15% tighten threshold ($173.38). CAT/XLK below entry.
+- XOM: HWM auto-trailed from $161.73 → $163.32; stop from $145.557 → $146.988 (Alpaca confirmed)
+- CAT/XLK: stops locked (price below HWM on both — no trail update)
+
+**Thesis check:**
+- CAT: Drifting lower (-3.65%) but no intraday catalyst. Tariff-pressure macro pattern (same as May 7 -3.53%). Q1 record backlog $63B + ISM expansion intact. Stop $838.215 only 2.6% below current $860.15 — auto-exit may occur soon. No manual thesis break. HOLD to stop.
+- XLK: Broad tech softness. No stock-specific catalyst. Thesis intact. HOLD.
+- XOM: Continuing strength on WTI oil. HWM auto-trailed ↑. Thesis intact. HOLD.
+
+**Intraday research:** No unexplained moves. XOM strength tracks oil. Perplexity skipped.
+
+**Portfolio:** Equity ~$101,656 | Cash $45,993 (45.2%) | Deployed ~$56,134 (55.2%, 3 positions) | Week buy count: 0/3
+**NVDA earnings AMC tonight:** SOXX 5th position entry watch for Thursday May 21 post-reaction.
+
+**Open Orders (midday 2026-05-19):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.32, stop $146.988 (auto-trailed ↑)
