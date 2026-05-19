@@ -5,6 +5,108 @@ Format each entry:
 
 ---
 
+## 2026-05-19 — Pre-Market Research (Tuesday, Week 4)
+
+### Account Snapshot
+- **Equity:** $101,648.51 | **Cash:** $45,993.09 (45.3%) | **Deployed:** $55,655.42 (54.8%) | **DT count:** 0
+- **Buying power:** $147,641.60 | **Phase P&L:** +$1,648.51 (+1.65%)
+- **Week trade count:** 0/3 (fresh)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $850.01 | -$853.55 (-4.78%) | -1.61% | 10% trail HWM $931.35 / stop $838.215 (**CRITICAL: 1.39% away**) |
+| XLK | 103 | $175.494 | $171.32 | -$429.92 (-2.38%) | -1.74% | 10% trail HWM $180.215 / stop $162.194 (locked) |
+| XOM | 130 | $150.769 | $161.585 | +$1,406.10 (+7.17%) | +0.68% | 10% trail HWM $162.12 / stop $145.908 (auto-trailed ↑) |
+
+### Open Orders
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $162.12, stop $145.908 (auto-trailed ↑)
+
+### User Decisions Carrying Forward
+- No confirmed user decisions found in TRADE-LOG for May 18 EOD questions. Prior plan: FCX entry Thursday May 21 post-NVDA earnings — treat as intent, not confirmed instruction.
+
+### Market Context
+- **WTI:** ~$103/bbl | **Brent:** ~$111/bbl (oil elevated; Hormuz risk premium intact)
+- **S&P 500 futures (premarket):** Risk-off — SPY -0.42%, QQQ -0.69%, IWM -0.52%; SQQQ +2.16%. Three consecutive down sessions for IWM.
+- **VIX:** 18.13 — **MEDIUM** risk zone (18-25); up from 17.82 yesterday
+- **Economic cycle:** Mid-cycle — GDP ~2.2% 2026, unemployment ~4.5%, Fed holding
+- **Key catalysts today:**
+  - Treasury yields at cycle highs; money markets pricing ~0% Fed cut probability in 2026, ~50% chance of rate HIKE in December → hawkish repricing is the dominant macro driver
+  - 7-week 17% rally from ATH unwinding; "everything long is red, everything short is green" pre-market
+  - Energy diverging positively (oil $103+) while tech sells off (rate sensitivity + high P/E compression)
+  - NVDA earnings **AMC tomorrow May 20** — the single largest catalyst of the week
+- **JOLTS 10 AM ET today** — job openings data; could move market but NOT a named blocker per strategy rules
+- **No major BMO earnings today** affecting held names
+- **RS ranking (20-day vs SPY):** SOXX > QQQ > XLK > XLY > XLC > SPY > XLI > XLF > XLB > XLV > IWM > XLE > HYG > EEM > XLP > GLD > SLV > XLU > XLRE
+
+### Benzinga Signals
+- **BUY (medium/high):** CAT (medium, score +2), AMD (high, score +3), AVGO (high, score +5)
+- **SELL (medium/high):** SPY (high), QQQ (high), XLE (high), IWM (high), XOM (high, score -3), CVX (high, score -7), XLK (medium, score -4), XLI (medium, score -4)
+- **Notable:** Broad SELL sweep across major indices/sectors; XOM SELL (high) is a concern for held position at consensus PT. CAT BUY (medium) is contradicted by price action (-1.61% today).
+
+### Congress Signals
+- Congress: no BUY signals for tracked ETFs/tickers
+- **SELL (high):** AVGO — 4 politicians selling (David J. Taylor ×2, Shelley Moore Capito, Jared Moskowitz)
+- AMD: HOLD (1 buy + 1 sell = mixed, no conviction)
+
+### Confluent Signals
+- AVGO: Benzinga BUY (high) vs Congress SELL (high) → **CONFLICTING, no trade**
+- No same-direction confluent signals today
+
+### Perplexity Validation of Benzinga/Congress Signals
+- **XOM SELL (Benzinga):** Supported — analyst consensus PT $162.05 is essentially AT current price $161.585 (0% upside). Analysts explicitly recommend "cautious/neutral stance." Benzinga signal validated by price target exhaustion.
+- **XLK SELL (Benzinga):** Partially supported — macro rate pressure (yields at cycle highs) compressing tech multiples. AI thesis structurally intact; this is valuation/positioning correction, not thesis break. XLK's 10% stop still provides adequate buffer.
+- **CAT BUY (Benzinga):** Contradicted by price action and macro risk-off. Note: CAT paying $1.51/share dividend today May 19 (ex-div effect on price). Inventory overhang concerns per some analysts. ISM expansion thesis still intact fundamentally.
+- **AMD BUY (Benzinga):** Validated — 51 analysts, avg PT $460.79 (Buy consensus). AI GPU momentum, MI450/Helios launches, multi-gigawatt data center commitments. Export restriction on China is primary risk. AMD not a current position.
+
+### Held Ticker News
+**CAT ($850.01, -4.78% from entry):**
+- Dividend $1.51/share payable **today May 19** — ex-dividend effect partially explains today's decline
+- Some analysts note inventory overhang as a concern; Barclays target cut (data may be stale/2024)
+- Citigroup raised PT to $905 (Buy); ISM expansion + infrastructure thesis structurally intact
+- **CRITICAL:** Stop $838.215 only 1.39% away ($11.79). Risk-off tape may trigger stop today.
+- -7% cut threshold: $830.20 (stop $838.215 would fire first = -6.1% loss from entry)
+
+**XLK ($171.32, -2.38% from entry):**
+- Tech sector broad selloff on rate/inflation repricing. Not a thesis break.
+- AI momentum (48% semis/equipment exposure) structurally intact
+- NVDA pre-market $229-$230 (+2% vs close $225.32) — bullish into earnings
+- Stop $162.194 (5.3% below current) — adequate buffer
+
+**XOM ($161.585, +7.17% from entry):**
+- **AT consensus PT ($162.05)** — Benzinga SELL (high) reflects limited upside from here
+- Q1 2026 earnings: $4.2B reported; $20B 2026 buyback program; dividend yield 2.6%; solid
+- WTI $103/bbl — 13.6% above $90 thesis-break floor; Hormuz risk premium intact
+- Outperforming broad market today (+0.68% vs SPY -0.42%) = energy sector decoupling
+- Stop HWM $162.12 / stop $145.908 — protecting +7.17% gain with 9.7% buffer
+- Hold: thesis intact, stop protecting. But at consensus target — monitor for trend breakdown.
+
+### Trade Ideas
+1. **HOLD all — NO new positions today** (VIX 18.13 medium; risk-off tape; NVDA earnings AMC tomorrow creates sector uncertainty for XLK)
+   - Deployed 54.8% > 40% = NOT mandatory TRADE mode per deployment floor rule
+   - NVDA earnings tomorrow = de facto blocker for XLK/tech sector entries
+   - Wait for Thursday May 21 post-NVDA earnings to reassess 5th position (FCX or SOXX)
+
+2. **WATCH: CAT stop trigger** — Stop $838.215 only 1.39% from current $850.01. Risk-off tape. If triggered today, loss would be ~-$1,090 (-6.1% from entry). Capital freed: ~$16,800. Monitor at open.
+
+3. **WATCH: XOM at consensus PT** — If XOM begins to fade back from $162, consider proactive exit to lock +7.17% rather than waiting for stop at $145.91 (-9.7% below current). Benzinga SELL (high) provides warning. Thesis intact but upside limited.
+
+4. **NEXT ENTRY (Thursday May 21):** Post-NVDA earnings reaction. FCX or SOXX. Deployment 55% — below 75% floor; 1-2 positions needed. Week has 3 slots available. Do NOT enter before NVDA clears.
+
+### Risk Factors
+- **CAT stop imminent:** $838.215 only 1.39% below current price in a risk-off tape. High probability of trigger today.
+- **NVDA AMC earnings tomorrow:** XLK (48% semis) will react. If NVDA misses → XLK down → stop at $162.194 at risk. If beats → XLK up → new HWMs.
+- **Yields at cycle highs / hawkish Fed repricing:** Core systemic risk; compresses tech multiples and drives risk-off. Not new information but intensifying.
+- **XOM at consensus PT:** Limited analyst upside from here. Benzinga SELL (high). Stop at $145.91 still provides 9.7% buffer but represents a large give-back from current +7.17%.
+- **Deployment 55%:** Below 75% floor but above 40% TRADE threshold. Not urgent today given NVDA blocker; becomes urgent Thursday post-earnings.
+
+### Decision
+**HOLD — no new positions today.** Risk-off tape (VIX 18.13, yields at cycle highs, broad market down). NVDA earnings AMC tomorrow creates sector-level uncertainty for XLK. Deployed 54.8% > 40% threshold = patience > activity applies. CAT stop trigger likely imminent — let it execute per rules. Reassess for FCX/SOXX entry Thursday May 21 post-NVDA earnings.
+
+---
+
 ## 2026-05-18 — Pre-Market Research (Monday, Week 4)
 
 ### Account Snapshot
@@ -1304,3 +1406,68 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - **XLE midday:** $59.555 (+3.48% from avg entry). Stops locked HWM $59.835 / stop $53.8515. Energy thesis intact.
 - **Action:** None. No cuts, no stop tightening.
 - **Deployment:** 54.4% — below 75-85% floor. Must enter 4th position Wednesday (last pre-NFP window). Candidates: XOM (energy slot 2) or FCX (Materials). Confirm oil stability + VIX Wednesday morning.
+
+---
+
+## 2026-05-19 — Pre-Market Research (Tuesday, Week 4, Day 18)
+
+**Account snapshot:** Equity $101,649.16 | Cash $45,993.09 | Deployed 54.7% (3 positions) | DT count: 0 | Week buy count: 0/3
+
+**Positions at open:**
+| Ticker | Entry | Current | Unrlzd | Stop | Status |
+|--------|-------|---------|--------|------|--------|
+| CAT | $892.689 | $850.39 | -4.74% | $838.215 (HWM $931.35 locked) | ⚠️ 1.4% above stop |
+| XLK | $175.494 | $171.29 | -2.40% | $162.1935 (HWM $180.215 locked) | 5.3% above stop |
+| XOM | $150.769 | $161.58 | +7.17% | $145.908 (HWM $162.12 auto-trailing) | 9.5% above stop |
+
+**Market context:**
+- **WTI Jun futures:** ~$102.12 (CME, morning); Brent ~$110.08 (May 18 close) — oil slightly lower
+- **SPX futures:** ~6,657.50 +0.10% (+6.5 pts) — mildly positive premarket
+- **VIX:** 18.13 today (medium risk; range 17.75-18.43 this week)
+- **NVDA earnings AMC tomorrow May 20** — Q1 FY27, 2:00 PM PT (confirmed by NVIDIA IR)
+- **Key macro releases today:** regional Fed surveys, housing data (no major CPI/NFP/FOMC)
+
+**Benzinga signals (24h lookback):**
+- BUY high: SOXX ("Hedge Funds Go All-In On Semiconductors"), AMD, AVGO
+- BUY medium: CAT
+- SELL high: SPY, QQQ, XLE, IWM, XOM, CVX
+- SELL medium: XLK, NVDA
+
+**Congressional (STOCK Act, 45d lookback):**
+- No buy signals for watched tickers
+- SELL medium: CAT (Moskowitz, 1 trade $1K-$15K, March 31 — small/stale, not significant)
+- SELL high: AVGO (4 sells vs 1 buy), NVDA (already exited)
+- HOLD: FCX, XOM, AMD — no activity
+
+**RS Ranking (20-day vs SPY, strongest → weakest):**
+`SOXX > QQQ > XLY > XLK > XLC > XLI > XLB > XLE > SPY > IWM > EEM > XLV > XLF > XLP > XLRE > XLU > HYG > GLD > SLV`
+
+**Cycle stage:** Mid-cycle — AI capex supercycle intact; inflation sticky (~18.43 VIX); J.P. Morgan assigns ~35% U.S. recession probability but baseline is expansion. Consumer/earnings resilient.
+
+**5th position candidates:**
+| Ticker | Price | RS | Benzinga | Congress | NVDA Exposure | Notes |
+|--------|-------|----|----------|----------|---------------|-------|
+| SOXX | $482 | #1 | BUY high | HOLD | ~15% direct | ⚠️ NVDA AMC tomorrow |
+| FCX | $58.37 | #7 (XLB) | HOLD | HOLD | None | Oil softening; no catalyst |
+| AMD | ~$396 | indirect | BUY high | HOLD | Indirect semi | Wide bid-ask spread |
+
+**CAT thesis check (Q1 2026 actuals):**
+- Q1 2026: revenue +22% YoY to $17.4B, record backlog, profit $5.47/sh
+- Tariff headwind: ~$2.6B estimated 2026 costs; margins compressed (13.9% vs 18.0% prior year)
+- Analyst consensus: avg $923.14 PT (25 analysts: 16 Buy, 9 Hold) — current $850.39 is 8% below avg PT
+- Stop $838.215 only $12.17 (1.4%) below current price — auto-exit likely if any further weakness
+
+**SOXX setup:**
+- Current ~$482 (down ~2.8% from $496 close May 18); 52-week range $202-$533
+- Benzinga BUY high; RS #1; YTD +69-77%; AI/data center AI secular tailwind
+- NVDA (~15% weight in SOXX) reports AMC tomorrow — creates gap risk both directions
+- Pre-EOD May 18 plan: enter FCX or SOXX Thursday May 21 post-earnings reaction
+
+### Decision
+**HOLD — no new trades today.**
+- Deployed 54.7% < 75% floor but > 40% mandatory threshold → Patience allowed only with named blocker
+- Named blocker: NVDA AMC tomorrow directly impacts SOXX (primary candidate, RS #1, ~15% weight). Entering SOXX today = buying its largest component the day before earnings.
+- FCX has no catalyst and oil headwinds (WTI $102, softening from $106)
+- Plan: reassess SOXX entry Thursday May 21 after NVDA reaction; if NVDA beats big + SOXX gaps up with momentum, enter on continuation. If miss, avoid.
+- CAT stop $838.215 at risk; if triggered today = automatic exit at ~-6.4% realized loss (within -7% rule; stop doing its job)
+- Unanswered EOD May 18 action questions: FCX vs SOXX timing, CAT proactive exit, week slot priority — still pending user response
