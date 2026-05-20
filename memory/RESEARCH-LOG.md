@@ -5,6 +5,124 @@ Format each entry:
 
 ---
 
+## 2026-05-20 — Pre-Market Research (Wednesday, Week 4)
+
+### Account Snapshot
+- **Equity:** $102,403.02 | **Cash:** $45,993.09 (45.0%) | **Deployed:** $56,409.93 (55.1%) | **DT count:** 0
+- **Buying power:** $148,396.11 | **Phase P&L:** +$2,403.02 (+2.40%)
+- **Week trade count:** 0/3 (fresh — all 3 slots available)
+
+### Positions
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $869.00 | -$473.78 (-2.65%) | +1.03% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $175.21 | -$29.25 (-0.16%) | +1.14% | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $161.41 | +$1,383.35 (+7.06%) | -0.70% | 10% trail HWM $163.32 / stop $146.988 (auto-trailed ↑) |
+
+### Open Orders
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.32, stop $146.988 (auto-trailed ↑)
+
+### User Decisions Carrying Forward (STEP 1B)
+- No confirmed User decisions block found in TRADE-LOG for May 19 EOD questions. Prior plan remains intent only:
+  - **SOXX 5th position Thursday May 21 post-NVDA reaction** — treat as strong intent, not confirmed instruction. Await user confirmation.
+  - **CAT hold/exit decision** — still pending from May 19 EOD.
+
+### Market Context
+- **WTI:** ~$104-105/bbl (CME CLN6 $104.28 May 19 close) | **Brent:** ~$110/bbl — elevated; Hormuz risk premium intact
+- **S&P 500 futures:** +0.1% premarket (~6,657.50); chip stocks rebounding ahead of NVDA earnings; yesterday closed -0.7%
+- **VIX:** 17.82 close May 18; spot ~18.23 May 19 → **MEDIUM** risk zone (18-25)
+- **Economic cycle:** late-cycle — yield curve inverted, unemployment drifting up 33 months record-long without NBER recession; Fed cutting from restrictive levels
+- **Key catalysts today:**
+  - **NVDA earnings AMC tonight (May 20)** — Q1 FY2027; consensus EPS $1.76-1.78, revenue ~$79.2B (+79.5% YoY). THE dominant event of the week. XLK (~8% NVDA) will react tomorrow.
+  - **FOMC Minutes at 1:00 PM ET** — rate expectations in play; markets sensitive to hawkish tone (yields at cycle highs yesterday)
+  - No CPI, PPI, or jobs data today
+- **Sector YTD 2026 leaders:** Energy +22% (#1), Consumer Staples (#2), Industrials (#3), Materials (#4); XLK "lagging" quadrant YTD but 20-day RS shows tech/semi bounce
+- **RS ranking (20-day vs SPY, est.):** QQQ > SOXX > XLK > XLY > XLC > XLF > XLI > XLB > XLV > XLP > XLU > XLRE > XLE > IWM > HYG > EEM > GLD > SLV
+- **Market risk:** Medium (VIX 18.23)
+
+### Benzinga Signals
+- **BUY (high):** SPY (score +9), XOM (score +3), AMD (score +5), AVGO (score +4)
+- **SELL (high):** IWM (score -5), NVDA (score -3, post-earnings trade-strategy article — we already exited May 18)
+- **SELL (medium):** SLV (score -2)
+- **Notable:** XOM BUY (high) supports existing position. NVDA SELL is moot (position closed May 18). AMD + AVGO BUY (both high) are 5th-position candidates.
+
+### Congress Signals
+- Congress: 401 Unauthorized error from Quiver Quant API — no signals. Proceed without congress context.
+
+### Confluent Signals
+- None — Congress data unavailable.
+
+### Perplexity Validation
+
+**XOM (BUY Benzinga high):** Supported — WTI $104-105/bbl, Brent $110, Guyana record production, Permian expansion, $20B 2026 buyback program. 20 analysts consensus Buy. Consensus PT $162.05 is near current $161.41 (limited near-term upside per consensus), but Tikr model implies $196 DCF target. Oil thesis very strong — above $90 thesis-break floor by 16%. Hold.
+
+**AMD (BUY Benzinga high):** Partially supported — 34 analyst consensus Buy, $399.32 PT. Strong AI/server demand (>50% YoY server-CPU growth). But crowded trade; February 2026 forecast miss triggered -15-16% one-day drop. Pre-NVDA derisking volatility likely. Interesting as 5th position candidate post-NVDA.
+
+**AVGO (BUY Benzinga high):** Well-supported — better quality than AMD; AI networking/custom silicon for hyperscalers; diversified (semis + software); strong FCF. More resilient than pure-beta AI trade. Strong 5th position candidate.
+
+**NVDA (SELL Benzinga high):** Moot — exited May 18 at $219.98 (+9.73%). Signal is a post-earnings trade strategy article; not relevant to our portfolio.
+
+**IWM (SELL Benzinga high):** Consistent with risk-off and "lagging" quadrant positioning. No IWM exposure.
+
+### Held Ticker News
+
+**CAT ($869.00, -2.65% from entry, recovering +1.03% today):**
+- New bull catalyst: AI data-center power demand adding to industrial thesis (Caterpillar power-generation business benefits from data-center buildouts)
+- Q1 2026: +22% revenue to $17.4B, record backlog, FY guidance raised — fundamentals intact
+- Tariff headwind: $2.6B for FY2026 vs prior estimate $700M Q2 only — ELEVATED risk vs prior research
+- Analyst forecasts: CoinCodex $1,005 by end-2026; Tikr $935 by Dec 2028; Investing.com consensus only +4.2% upside near-term
+- Stop $838.215 is **3.6% below current $869** — recovering today but multi-session drift pattern is concerning
+- Action: HOLD to stop; recovering today eases pressure. If FOMC Minutes hawkish at 1 PM, risk-off could resume.
+
+**XLK ($175.21, -0.16% from entry, +1.14% today):**
+- Rebounding pre-NVDA earnings (chip stocks leading). XLK has ~8% NVDA exposure
+- NVDA earnings AMC tonight — XLK tomorrow: beat → XLK likely new HWM, stop auto-trails; miss → XLK pressure, stop $162.1935 at risk
+- Tech sector in "lagging" YTD quadrant but 20-day RS shows semis/tech bouncing — short-term positive
+- Action: HOLD. Let NVDA earnings dictate direction. Stop at $162.1935 provides 7.4% buffer.
+
+**XOM ($161.41, +7.06% from entry, -0.70% today):**
+- Benzinga BUY (high) confirms oil thesis. WTI $104-105 = strong fundamental support
+- Q1 2026: $4.2B earnings; $9.2B Q1 shareholder distributions; Golden Pass LNG Train 1 online
+- Consensus PT $162.05 (essentially AT current price) — near-term upside limited per consensus
+- Tikr DCF model: $196 target (~21% upside) if project execution holds
+- Stop HWM $163.32 / stop $146.988 — protecting +7.06% gain with 8.9% buffer
+- Action: HOLD. Oil thesis intact. Stop auto-trailing. No proactive exit needed.
+
+### Trade Ideas
+
+1. **HOLD all — NO new positions today** (NVDA earnings AMC tonight = de facto tech/semi blocker; FOMC Minutes 1 PM ET adds uncertainty)
+   - Deployed 55.1% > 40% = patience > activity applies
+   - Best entry window: **Thursday May 21 open**, post-NVDA reaction direction confirmed
+
+2. **5th position candidates (Thursday post-NVDA reaction):**
+   - **SOXX (semiconductor ETF):** Direct NVDA-earnings beneficiary; diversified semi exposure; ~$20K (112-115sh @~$177); R:R 2:1 if sector momentum holds. Preferred if NVDA beats.
+   - **AVGO (Broadcom):** Benzinga BUY high; quality AI networking/custom silicon; strong FCF; less crowded than AMD. ~$20K (~110sh @~$182). Preferred if want single-name over ETF.
+   - **AMD:** Benzinga BUY high but crowded and volatile. Lower conviction vs AVGO.
+   - **Priority:** SOXX > AVGO > AMD. If NVDA miss, defer all tech/semi entries; reassess FCX (Materials) instead.
+
+3. **CAT monitor:** Recovering +1.03% today. If FOMC Minutes hawkish → risk-off resumes → stop $838.215 potentially triggered. If holds above $845, thesis stabilizing. No proactive action.
+
+### Risk Factors
+- **NVDA AMC tonight (primary):** Beat = XLK + semis rally tomorrow, SOXX entry confirmed. Miss = XLK pressure, SOXX entry deferred. Biggest binary event this week.
+- **FOMC Minutes 1 PM ET:** Hawkish tone → yields rise → tech/growth selloff → XLK + CAT pressured. Risk-off tape resumption.
+- **CAT stop proximity:** $838.215 is 3.6% below $869. Multi-session downtrend; recovering today but fragile. Hawkish FOMC = risk.
+- **XOM at consensus PT ($162.05):** Limited sell-side upside from here. Stop at $146.988 = -8.9% give-back from current. If oil thesis turns → exit before stop.
+- **Deployment 55%:** Below 75% floor. One entry Thursday brings to ~74%; two entries bring to ~93% (over floor). Plan: 1 entry Thursday + 1 entry later this week if first position stabilizes.
+
+### Decision
+**HOLD — no new positions today.** NVDA earnings AMC tonight = de facto tech/semi blackout. FOMC Minutes at 1 PM adds macro uncertainty. Deployed 55.1% > 40% = strategy patience rule applies. **Plan: enter SOXX (or AVGO if NVDA miss warrants more defensive semi play) Thursday May 21 open post-earnings reaction.** If NVDA misses badly, pivot to FCX (Materials) as 5th position instead.
+
+**CAT + XLK + XOM:** HOLD all to stops. No proactive exits today.
+
+**Action questions:**
+1. **5th position Thursday:** If NVDA beats tonight → SOXX entry at Thursday open (112-115sh ~$20K)? Or AVGO/AMD instead? Confirm ticker and sizing.
+2. **CAT (stop $838.215, 3.6% away, recovering today):** Multi-day drift below entry. Hold to stop as planned, or exit proactively before FOMC Minutes risk at 1 PM? Your call.
+3. **FOMC Minutes 1 PM ET:** No action needed on our end — existing stops protect. Just monitoring for risk-off escalation. Confirm awareness.
+
+---
+
 ## 2026-05-19 — Pre-Market Research (Tuesday, Week 4)
 
 ### Account Snapshot
