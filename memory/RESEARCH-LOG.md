@@ -1471,3 +1471,75 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - Plan: reassess SOXX entry Thursday May 21 after NVDA reaction; if NVDA beats big + SOXX gaps up with momentum, enter on continuation. If miss, avoid.
 - CAT stop $838.215 at risk; if triggered today = automatic exit at ~-6.4% realized loss (within -7% rule; stop doing its job)
 - Unanswered EOD May 18 action questions: FCX vs SOXX timing, CAT proactive exit, week slot priority — still pending user response
+
+---
+
+## 2026-05-20 — Pre-Market Research (Wednesday, Week 4, Day 19)
+
+**⚠️ API NOTE:** Alpaca and Perplexity APIs returned 403 "Host not in allowlist" from cloud execution environment. Account snapshot from EOD May 19 TRADE-LOG. Market data via WebSearch fallback (noted per workflow).
+
+**Account snapshot (EOD May 19 baseline):** Equity ~$102,128 | Cash $45,993 | Deployed ~55.0% (3 positions) | DT count: 0 | Week buy count: 0/3
+
+**Positions at open (estimated from last known + premarket):**
+| Ticker | Entry | Last Close | Premarket Est. | Unrealized | Stop | Status |
+|--------|-------|------------|----------------|------------|------|--------|
+| CAT | $892.689 | $850.75 | ~$848-852 | ~-4.7% | $838.215 (HWM $931.35 locked) | ⚠️ ~1.5% above stop |
+| XLK | $175.494 | $174.36 | $173.26 | ~-1.3% | $162.1935 (HWM $180.215 locked) | 6.5% above stop |
+| XOM | $150.769 | $162.50 | ~$162-163 | ~+7.7% | ~$146.99 (HWM $163.32 auto-trailing) | 9.5% above stop |
+
+**Market context:**
+- **WTI:** ~$103.49 | **Brent:** ~$111.15 — elevated; Strait of Hormuz disruption ongoing (XOM bullish)
+- **SPX futures:** +0.21% premarket; SPX closed 7,353.61 (-0.67%) May 19; 15%+ rally since March low
+- **VIX:** ~17.96 (medium risk; stable)
+- **NVDA earnings AMC tonight** — Q1 FY27; biggest single market event this week; ~22% of XLK, ~15% of SOXX
+- **FOMC minutes release today** — final chapter of Powell era; hawkish tone expected (persistent inflation, rates on hold); informational, not decision — NOT a named blocker per strategy
+- **No major BMO earnings today** (39 total scheduled; NVDA is the only market-moving name)
+- **No CPI/NFP/GDP today**
+
+**Sector momentum (updated):**
+- Leading: Industrials (XLI), Materials (XLB +22% YTD — dominant), Energy (XLE), Consumer Staples (XLP)
+- Lagging: Technology (XLK), Communications (XLC), Consumer Discretionary (XLY), Financials (XLF)
+- XLK thesis note: sector classified as Lagging in current momentum map — weighs on thesis
+
+**Ticker-specific updates:**
+- **CAT:** Analyst downgrades — UBS → Sell, Morgan Stanley → Underweight (new info since entry). Tariff costs $700M Q2 alone, $2.2-2.4B full year. Stock off -4.7% from entry $892.689 → $850.75. Stop at $838.215 is 1.5% below close. Auto-exit imminent on any weakness. Thesis integrity: record $63B backlog and ISM expansion still valid, but headwinds intensifying.
+- **XOM:** Q1 beat (EPS $1.16 vs $0.98 est); WTI $103.49/Brent $111.15; Strait of Hormuz disruption reducing global supply. HWM auto-trailing. Thesis intact and strengthening. XOM went ex-div May 15 ($1.03/share June 10).
+- **XLK:** Premarket $173.26 vs $174.36 close (−0.6%). Sector classified Lagging. Thesis weakening but stop $162.1935 provides 6.5% buffer. NVDA earnings tonight will determine direction.
+
+**Trade ideas (Thursday May 21 entry — Wednesday urgency rule triggered: 3 slots unused + deployed 55% < 60%):**
+
+| Candidate | Price | RS | Sector Status | Catalyst | Entry | Stop | Target | R:R |
+|-----------|-------|----|---------------|----------|-------|------|--------|-----|
+| SOXX | ~$482 | #1 | Leading (semis) | NVDA beat AMC tonight | ~$482, ~41sh (~$19.8K) | 10% trail GTC | +20% ($578) | 2:1 |
+| FCX | ~$59 | #7 (XLB) | Leading (+22% YTD) | Materials cycle; copper/AI infra demand | ~$59, ~338sh (~$20K) | 10% trail GTC | +20% ($70.80) | 2:1 |
+| XOM (add) | ~$163 | — | Leading (Energy) | Strait of Hormuz / WTI strength | Possible 2nd energy slot ~$163, ~123sh (~$20K) | 10% trail GTC | +15% ($187) | 1.5:1 |
+
+- **SOXX priority:** If NVDA beats big and SOXX opens with momentum → enter SOXX Thursday. Condition: NVDA Q1 EPS beat + revenue beat; SOXX opens > $482 (no gap-fill collapse). ~41 shares @$482 = $19,762.
+- **FCX fallback:** If NVDA disappoints or SOXX opens volatile → enter FCX instead. Materials sector #1 YTD momentum, no NVDA exposure, copper AI infrastructure tailwind. ~338 shares @$59 = $19,942.
+- **XOM add (lower priority):** Thesis strongest of three; but already at 1 energy position; enter only if deploying 2nd slot is needed to hit 75% floor and SOXX/FCX not viable.
+
+**Risk factors:**
+- CAT auto-exit risk: stop $838.215 ~1.5% below close; analyst downgrades add selling pressure; if triggered, frees ~$17K cash → redeploy to FCX or hold for SOXX
+- NVDA miss AMC: SOXX -5% to -10% gap risk; XLK stop at $162.1935 could be tested if XLK drops -6%+; in that scenario pivot to FCX Thursday
+- FOMC minutes: hawkish language → yield spike → growth/tech selloff risk; monitor midday
+- Strait of Hormuz escalation: WTI spike risk (XOM bullish), broader market headwind (risk-off)
+- XLK "Lagging" sector classification: if NVDA disappoints, XLK thesis breaks → consider proactive exit pre-stop
+- SPX 15% rally since March without correction; rising bond yields weighing (risk of pullback)
+
+**Wednesday urgency check:**
+- Slots unused: 3 (≥2 ✓) | Deployed: 55% (<60% ✓) → **Must open ≥1 position Thursday May 21**
+- NVDA AMC tonight: not a "held name" blocker (NVDA not in portfolio), but semis direction depends on result
+- Strategy: SOXX if NVDA beats; FCX if NVDA misses or SOXX volatile
+
+### Decision
+**HOLD today (Wednesday May 20).** No new positions:
+- Deployed 55% (>40% mandatory floor — patience allowed)
+- NVDA reports AMC tonight → entering SOXX/XLK-correlated positions today = buying into event risk
+- FOMC minutes today → midday volatility possible
+- CAT stop at $838.215 doing its job; hold to stop; no proactive exit unless thesis break confirmed (analyst downgrades noted but backlog/ISM still valid)
+
+**Thursday May 21 TRADE (mandatory per Wednesday urgency rule):**
+- **Primary: SOXX** if NVDA beats (EPS + revenue beat, strong guidance) AND SOXX opens with momentum above $482
+- **Fallback: FCX** if NVDA disappoints or SOXX opens volatile/gapping erratically
+- Size: ~$20K (~17-18% of equity); 10% trailing stop GTC immediately on fill
+- If CAT auto-exits today: deploy freed cash into FCX Thursday regardless of NVDA outcome (2 entries Thursday = use 2 of 3 buy slots)
