@@ -857,4 +857,35 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 **Action questions:**
 1. **NVDA earnings AMC tonight:** SOXX 5th position planned for Thursday May 21 post-reaction. Confirm entry: SOXX ~$20K (~113 shares @~$177)? Or different size/candidate/timing?
 2. **CAT stop proximity:** -3.65% from entry; stop $838.215 is 2.5% below close $860.15. CAT has drifted lower 4 straight days. If tomorrow opens weak, auto-exit likely. Exit CAT proactively at tomorrow's open, or hold to stop?
+
+---
+
+## Midday 2026-05-20 (Wednesday, Week 4, Day 19)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $873.57 | -$382.38 (-2.14%) | +1.56% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $176.67 | +$121.13 (+0.67%) | +1.98% | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $156.39 | +$730.75 (+3.73%) | -3.79% | 10% trail HWM $163.68 / stop $147.312 (auto-trailed ↑) |
+
+**Losers cut:** None. No position at -7%: CAT -2.14%, XLK +0.67%, XOM +3.73%.
+
+**Stop tightening:** None. XOM +3.73% — below +15% threshold ($173.38). CAT/XLK below entry.
+- XOM: HWM auto-trailed from $163.32 → $163.68 (new intraday high set before afternoon decline); stop $146.988 → $147.312 (Alpaca confirmed)
+
+**Thesis check:**
+- CAT: Recovering +1.56% today after 4-day slide. Stop $838.215 = 3.9% below $873.57 (reduced pressure vs. prior days). ISM expansion + record $63B backlog intact. No thesis break. HOLD to stop.
+- XLK: +0.67% from entry, bouncing +1.98% ahead of NVDA AMC. Broad tech pre-earnings bid. Thesis intact. HOLD.
+- XOM: **⚠️ Thesis weakened.** -3.79% today (pre-market opened -0.70%; steeper intraday decline). Perplexity: geopolitical oil-premium compression — Iran/Middle East de-escalation talks cited as unwinding the "war premium" in WTI. Thesis was WTI elevated on Hormuz/Iran geopolitical risk. WTI still $100+ so thesis not broken; stop at $147.312 protects +3.73% gain with 5.8% buffer. Pre-market flag: "If oil thesis turns → exit before stop." That threshold not yet reached — WTI above $100, Benzinga BUY high this AM. **HOLD to stop. Monitor WTI closely; if sustained drop below $95-96, thesis breaks — cut manually.**
+
+**Intraday research (STEP 6):** Perplexity on XOM -3.79% decline. Source: de-escalation signal + post-rally profit-taking. Not a single hard catalyst; thesis weakened not broken. WTI fundamentals still supportive. See afternoon addendum in RESEARCH-LOG.
+
+**Portfolio:** Equity ~$101,993 | Cash $45,993 (45.1%) | Deployed $55,999 (54.9%, 3 positions) | Week buy count: 0/3
+**NVDA earnings AMC tonight** — XLK and SOXX (5th position candidate) will react tomorrow.
+
+**Open Orders (midday 2026-05-20):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (auto-trailed ↑)
 3. **Deployment 55% (below 75% floor):** 3 fresh buy slots this week. Priority: 1 position Thursday (SOXX/FCX), then hold remaining 2 slots. Or add 2 names Thursday if NVDA reaction is bullish? Which?

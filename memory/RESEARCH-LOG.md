@@ -121,6 +121,13 @@ Format each entry:
 2. **CAT (stop $838.215, 3.6% away, recovering today):** Multi-day drift below entry. Hold to stop as planned, or exit proactively before FOMC Minutes risk at 1 PM? Your call.
 3. **FOMC Minutes 1 PM ET:** No action needed on our end — existing stops protect. Just monitoring for risk-off escalation. Confirm awareness.
 
+### Afternoon Addendum (Midday Scan 2026-05-20)
+- **XOM -3.79% intraday (midday $156.39 vs. pre-market $161.41):** Perplexity research — geopolitical oil-premium compression. Iran/Middle East de-escalation talk cited as primary driver (same pattern as April 2026 Chevron/XOM -5% episode on de-escalation headlines). Thesis weakened, not broken: WTI still $100+, Benzinga BUY (high) this morning, stop HWM auto-trailed to $163.68 before decline, stop now $147.312 (5.8% below current). Manual cut threshold: sustained WTI decline toward $95-96. No cut today.
+- **CAT midday $873.57 (+1.56% today):** Recovering after 4-day slide. Stop $838.215 = 3.9% away (less pressure). No action.
+- **XLK midday $176.67 (+1.98% today):** Pre-NVDA bid. Thesis intact. No action.
+- **NVDA earnings AMC tonight:** XLK (~8% NVDA) and SOXX (5th position candidate, ~15% NVDA) will gap accordingly tomorrow.
+- **Portfolio:** Equity ~$101,993 | Deployed 54.9% | Week buy count: 0/3. No trades executed.
+
 ---
 
 ## 2026-05-19 — Pre-Market Research (Tuesday, Week 4)
