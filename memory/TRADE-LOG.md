@@ -888,4 +888,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (auto-trailed ↑)
-3. **Deployment 55% (below 75% floor):** 3 fresh buy slots this week. Priority: 1 position Thursday (SOXX/FCX), then hold remaining 2 slots. Or add 2 names Thursday if NVDA reaction is bullish? Which?
+
+---
+
+## Day 19 — EOD Snapshot (May 20, Wednesday)
+**Portfolio:** $102,059.84 | **Cash:** $45,993.09 (45.1%) | **Day P&L:** -$67.68 (-0.07%) | **Phase P&L:** +$2,059.84 (+2.06%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $873.57 | +1.56% | -$382.38 (-2.14%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $177.33 | +2.36% | +$188.77 (+1.04%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $156.39 | -3.79% | +$730.75 (+3.73%) | 10% trail HWM $163.68 / stop $147.312 (auto-trailed ↑) |
+
+**Notes:** Day 19, Wednesday. Divergent tape on NVDA earnings day: tech surged while energy sold off. XLK +2.36% to $177.33 (+1.04% from entry) — recovered above entry for first time since May 12; NVDA anticipation driving semis/tech bid. CAT +1.56% to $873.57 (-2.14% from entry) — partial recovery after 4-session slide; stop $838.215 now 4.1% below close. XOM -3.79% to $156.39 (+3.73% from entry) — energy-to-tech rotation + Iran/Middle East de-escalation talks compressing Hormuz risk premium; WTI still $100+ (thesis weakened, not broken); HWM auto-trailed $163.32 → $163.68, stop → $147.312 (5.8% buffer). No trades, no stops triggered. Week buy count: 0/3. **NVDA reports Q1 FY27 AMC tonight — beat = confirm 5th position (SOXX or AVGO) entry Thursday; miss = hold all slots.**
+
+**Open Orders (EOD 2026-05-20):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (auto-trailed ↑)
+
+**Action questions:**
+1. **XOM -3.79% today (thesis weakened):** Energy-to-tech rotation + Iran de-escalation compressing oil war premium. WTI still $100+ (not broken); stop $147.312 (5.8% buffer from $156.39). Midday thesis: "weakened not broken." Is this sufficient for proactive exit, or hold to stop?
+2. **NVDA AMC tonight — 5th position:** If beat, enter Thursday morning: SOXX (~$20K, ~41sh @~$482, semi beta) or AVGO (~$20K, ~67sh @~$299, custom silicon + AI networking + FCF quality)? Entry on gap-up continuation or wait for intraday pullback? If miss, hold all 3 slots this week?
+3. **CAT hold/exit:** -2.14% from entry, stop buffer restored to 4.1%. Thesis intact (AI power demand + $63B backlog). Exit proactively or hold to stop?
+4. **Deployment 54.9% (below 75% floor):** 0/3 buy slots used, Thu + Fri remaining. Enter 1 name Thursday + hold 2 slots, or enter 2 if NVDA reaction is clearly bullish?
