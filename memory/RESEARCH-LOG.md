@@ -1596,3 +1596,149 @@ HOLD — no new positions. AMZN reports AMC tonight = unacceptable gap risk for 
 - Plan: reassess SOXX entry Thursday May 21 after NVDA reaction; if NVDA beats big + SOXX gaps up with momentum, enter on continuation. If miss, avoid.
 - CAT stop $838.215 at risk; if triggered today = automatic exit at ~-6.4% realized loss (within -7% rule; stop doing its job)
 - Unanswered EOD May 18 action questions: FCX vs SOXX timing, CAT proactive exit, week slot priority — still pending user response
+
+---
+
+## 2026-05-21 — Pre-Market Research (Thursday, Week 4, Day 20)
+
+### Account Snapshot
+- **Equity:** $101,915.30 | **Cash:** $45,993.09 (45.1%) | **Deployed:** $55,922.21 (54.9%, 3 positions) | **DT count:** 0
+- **Buying power:** $147,908.39 | **Phase P&L:** +$1,915.30 (+1.92%)
+- **Week trade count:** 0/3 (all 3 slots available; 2 days remain: Thu + Fri)
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $864.89 | -$555.98 (-3.11%) | -0.88% | 10% trail HWM $931.35 / stop $838.215 (locked, 3.1% from current) |
+| XLK | 103 | $175.494 | $176.11 | +$63.45 (+0.35%) | -0.58% | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $157.5775 | +$885.13 (+4.52%) | +0.83% | 10% trail HWM $163.68 / stop $147.312 (auto-trailed) |
+
+### Open Orders (pre-market)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): HWM $163.68, stop $147.312 (auto-trailed)
+
+### User Decisions Carrying Forward (from EOD May 19/20)
+No user decisions block found. EOD May 20 action questions remain open. Carrying forward as default plan:
+- NVDA beat confirmed (see Market Context). Deployment floor rules require entry today (Wednesday urgency: 0/3 slots at Wed close, 54.9% < 60%). Must enter at least 1 position today.
+
+### Market Context
+- **WTI:** ~$99/bbl (CME last $98.99) — declining from $101-106 range; Iran de-escalation compressing war premium
+- **Brent:** ~$103-106 (est.)
+- **S&P 500 futures:** Modestly lower; cautious post-NVDA reaction (beat but stock down >1% AH on competition fears)
+- **VIX:** 18.06 (medium risk; up from 17.82 prior day)
+- **Economic releases today:**
+  - Initial Jobless Claims 8:30 AM: 211K (vs 210K consensus — in-line, benign)
+  - Philly Fed Manufacturing 8:30 AM: Business Conditions 40.8, New Orders 33.0, Prices Paid 59.3, CAPEX 35.2 (strong)
+  - S&P Global PMI Flash Mfg 9:45 AM: 54.5 actual (vs 53.0 consensus — beat); Composite 51.7
+  - FOMC Minutes: 2:00 PM ET (not a named blocker but potential afternoon volatility)
+  - Fed Waller speech: 1:45 PM ET
+  - No US CPI/PPI today
+- **NVDA Q1 FY2027 results (AMC May 20): MASSIVE BEAT**
+  - Revenue $81.6B (+85% YoY) vs $79.15B estimate — beat ~4%
+  - Adjusted EPS $1.87 vs $1.77 estimate
+  - Data Center $75.2B (beat)
+  - Q2 FY27 guide $91B vs $87.2B consensus — guidance beat
+  - Gross margin ~74.9% (in-line)
+  - Stock DOWN >1% AH: concerns over AI competition + customers building chips in-house ("sell the news")
+- **RS Ranking (20-day, strongest to weakest):** SOXX, QQQ, XLK, XLY, XLC, IWM, XLI, XLE, XLF, XLV, SPY, EEM, HYG, XLB, XLP, XLU, XLRE, GLD, SLV
+- **Sector YTD:** Energy #1, Consumer Staples #2, Industrials #3, Materials #4; Tech leading 20-day RS
+- **Economic cycle:** Late-cycle — GDP +2.0%, unemployment rising gradually 33+ months, restrictive monetary policy, AI-led narrow bull market
+- **Market risk:** Medium (VIX 18.06)
+
+### Benzinga Signals
+- **BUYS (medium+):** GLD (high), AMD (high), AVGO (high)
+- **SELLS (medium+):** SPY (high), QQQ (high), NVDA (high), SOXX (high), XLY (high), XLP (medium), IWM (medium)
+- 193 emails scanned (24h lookback)
+
+### Congress Signals
+- **BUYS (medium+):** FCX (high — Josh Gottheimer PURCHASE Apr 15, filed May 19), AMD (high — Josh Gottheimer PURCHASE Apr 27, filed May 19)
+- **SELLS (medium+):** NVDA (high — already exited May 18!), CAT (medium — Moskowitz SALE Mar 31, small/stale), AVGO (high — net selling overall)
+
+### Confluent Signals
+- **CONFLUENT BUY: AMD** — Benzinga BUY high + Congress BUY high = **elevated conviction; highest-priority new position candidate**
+  - Gottheimer purchased AMD Apr 27; Q1 beat (revenue +38%, Data Center +57%); analyst consensus overwhelmingly Buy (41% strong buy, 41% buy, 0% sell)
+- **CONFLUENT SELL: NVDA** (Benzinga + Congress) — already exited May 18 at $219.98 (+9.73%). Correct call confirmed.
+
+### Perplexity Validation
+
+**NVDA (exited — no action):**
+- Massive beat but AH weakness = market already priced in perfection. Exit at $219.98 (May 18) avoided AH selloff. Risk management worked.
+
+**AMD (~$399, Confluent BUY — 5th position):**
+- Q1 2026: Revenue $10.25B (+38%), Data Center $5.8B (+57%), EPS $1.37 vs $1.29e, Q2 guide $11.2B vs $10.52e
+- 34 analysts: 41% Strong Buy, 41% Buy, 0% Sell; consensus PT $399.32
+- Up 74% in April; SOXX (#1 20-day RS) and XLK (#3) confirm semiconductor/tech sector leadership
+- AI inference + agentic AI driving server CPU/GPU demand; TSMC EPS +58% YoY validates demand chain
+- Risk: AMD at/near consensus target ($399); upside requires analyst upgrades (Q1 beat is the catalyst)
+- NVDA AH weakness may create better AMD entry (sympathy selloff = opportunity to buy the dip)
+
+**AVGO (~$417, Benzinga BUY vs Congress SELL — conflicting):**
+- Best-of-breed custom AI accelerators; 94% Buy ratings; Morningstar FV $596; Evercore PT $582
+- Congress net selling conflicts with Benzinga BUY. If AMD fills tech slot 2, AVGO violates sector cap anyway. SKIP.
+
+**GLD (~$417, Benzinga BUY high):**
+- 20-day RS rank #18 of 19 (very weak momentum). Down 18% from 52-week high $509.70. Not following strategy (sector momentum). SKIP.
+
+**SOXX (Benzinga SELL high — prior 5th position plan from May 19):**
+- Was primary 5th position candidate. Plan was "enter if NVDA beats big and SOXX gaps up."
+- NVDA beat massively but stock down AH = no gap-up continuation signal.
+- Benzinga SELL high on SOXX today directly contradicts entry. AMD higher conviction (confluent vs. single-source). SKIP SOXX.
+
+**FCX (~$59, Congress BUY high — secondary candidate):**
+- Gottheimer PURCHASE Apr 15, filed May 19; Materials sector empty (good diversification)
+- Q1 beat (EPS $0.57 vs $0.47) but Grasberg guidance cut (copper -0.3B lbs; gold -150K oz); Morgan Stanley downgraded Equal Weight ($66 PT); MarketBeat avg PT $65.14 (+7% upside)
+- No Benzinga signal. Lower conviction than AMD. DEFER to Friday.
+
+### Position Updates
+
+**CAT ($864.89, -3.11% from entry $892.689):**
+- Q1 2026 intact: 22% revenue growth, record $63B backlog, raised FY guidance, AI power demand thesis solid
+- Congress SELL medium = Moskowitz old March 31 sale ($1K-$15K) — noise, not thesis break
+- Stop $838.215 only 3.1% from current — risk of auto-trigger if market opens risk-off on NVDA AH weakness
+- Action: **HOLD to stop.** Thesis intact. Stop doing its job.
+
+**XLK ($176.11, +0.35% from entry $175.494):**
+- XLK ~20% NVDA-weighted; may open slightly lower on NVDA AH sympathy
+- RS #3 (20-day); tech sector momentum intact; NVDA beat confirms AI demand cycle broadly positive
+- Stop HWM $180.215 / stop $162.1935 — 7.9% buffer; well protected
+- Action: **HOLD.** Thesis intact.
+
+**XOM ($157.5775, +4.52% from entry $150.769):**
+- WTI ~$99 (declining from $101-106); de-escalation compressing Hormuz war premium
+- Street PT $163.95 (~4% upside from current). Thesis weakened not broken.
+- Manual exit trigger: WTI < $95-96 (not reached; current $99)
+- Stop HWM $163.68 / stop $147.312 — 6.5% buffer
+- Action: **HOLD to stop.** Monitor WTI; if sustained drop below $95-96, cut manually.
+
+### Trade Ideas
+
+1. **AMD — 5th position, TODAY (mandatory by deployment rules):**
+   - CONFLUENT BUY (Benzinga + Congress high); Josh Gottheimer Apr 27 purchase
+   - Q1 beat: revenue +38%, Data Center +57%; overwhelmingly bullish analyst consensus
+   - Tech slot 2 available (NVDA exited; XLK = slot 1) — sector cap compliant
+   - Sizing: 17-20% equity (~50sh @ ~$399 = ~$19,950, ~19.6% of equity)
+   - Stop: 10% trailing GTC immediately on fill (~$359 stop)
+   - Target: +20% = $478.80 → R:R 2:1
+   - Entry timing: assess first 15-30 min at open; enter if AMD not down >5% on NVDA sympathy
+   - Note: AMD at consensus target — upside requires upgrades post-Q1 beat (likely but priced-in risk)
+
+2. **FCX — possible Friday:**
+   - Congress BUY high; Materials sector empty; defer after AMD entry confirmed
+
+3. **HOLD CAT, XLK, XOM** — no proactive exits; stops doing the work
+
+### Risk Factors
+- **NVDA AH weakness:** "Sell the news" on massive beat. XLK and AMD may open lower on sympathy. If AMD opens down >5%, delay entry; watch for intraday stabilization.
+- **CAT stop proximity:** $838.215 = 3.1% from $864.89. Any risk-off open (NVDA AH ripple) could trigger auto-exit. Expected realized loss ~-6.4% = within -7% rule; stop working correctly.
+- **FOMC Minutes 2pm + Fed Waller 1:45pm:** AMD entry should be completed before afternoon Fed noise.
+- **WTI declining ($99):** XOM thesis weakening. Manual exit at $95-96 not triggered; monitor throughout session.
+- **AMD at consensus target:** Limited near-term upside without analyst upgrades. Entering near Street's 12-month PT is a risk; Q1 beat is the upgrade catalyst.
+
+### Decision
+**TRADE — AMD entry at market open.** Wednesday urgency check mandates entry (0/3 slots, 54.9% < 60% at Wed close). Confluent BUY on AMD is highest-conviction signal available. NVDA massive beat confirms AI hardware demand cycle; AMD benefits with open tech slot 2. SOXX eliminated (Benzinga SELL high + no gap-up). AVGO eliminated (conflicting Congress). GLD eliminated (weak RS). FCX deferred to Friday. CAT/XLK/XOM: hold to stops.
+
+**Active watch items:**
+- AMD entry at open (~50sh @ market) — complete before FOMC Minutes 2pm
+- CAT stop $838.215 — may auto-trigger if risk-off open; expected exit if hit
+- XOM: if WTI drops below $95-96 intraday, manual exit
