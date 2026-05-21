@@ -5,6 +5,124 @@ Format each entry:
 
 ---
 
+## 2026-05-21 — Pre-Market Research (Thursday, Week 4)
+
+### API Status
+- **Alpaca API:** BLOCKED — `403 host_not_allowed` (cloud environment IP not in account allowlist). Using TRADE-LOG last-known state (EOD May 20) for account snapshot.
+- **Perplexity API:** BLOCKED — same cloud IP restriction. Fell back to native WebSearch for all market data (fallback noted per protocol).
+
+### Account Snapshot (TRADE-LOG EOD May 20 — last confirmed)
+- **Equity:** ~$102,060 | **Cash:** $45,993 (45.1%) | **Deployed:** ~$56,067 (54.9%) | **DT count:** 0
+- **Phase P&L:** +$2,060 (+2.06%)
+- **Week trade count:** 0/3 (fresh — ALL 3 slots available)
+- **⚠️ WEDNESDAY URGENCY TRIGGERED:** 0/3 slots used at Wed close AND deployed 55% < 60% → MUST enter ≥1 position today (Thursday) per strategy deployment floor rules
+
+### Positions (EOD May 20, unverified — Alpaca blocked)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $873.57 | -$382.38 (-2.14%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $177.33 | +$188.77 (+1.04%) | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $156.39 | +$730.75 (+3.73%) | 10% trail HWM $163.68 / stop $147.312 (auto-trailed) |
+
+### Open Orders (EOD May 20, unverified — Alpaca blocked)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $180.215, stop $162.1935
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): HWM $163.68, stop $147.312
+
+### User Decisions Carrying Forward (STEP 1B)
+- **May 20 EOD action questions UNANSWERED** — no confirmed User decisions block found
+- Prior strong intent (unconfirmed): SOXX 5th position Thursday post-NVDA reaction
+- Wednesday urgency rule overrides: TRADE is mandatory today regardless of unanswered questions
+- Pending user decisions (surface again in EOD today):
+  1. XOM — proactive exit or hold to stop?
+  2. SOXX vs AVGO for 5th position?
+  3. CAT — hold or exit proactively?
+  4. Enter 1 or 2 new positions this week?
+
+### Market Context
+- **WTI:** $97.33-$99.96/bbl (May 20 fell -6.55% to $97.33; stabilizing May 21 at $98-100). Iran deal "final stages" per Trump — Hormuz war premium rapidly compressing
+- **Brent:** $105.36/bbl (prev close $105.48)
+- **S&P 500:** Market snapped 3-day losing streak May 20 on cooling oil + yields; Thursday opens positive on NVDA beat + risk-on
+- **VIX:** ~17.26 — **LOW** risk zone (< 18); constructive for new entries
+- **Economic cycle:** Mid-cycle (GDP +2.0% Q1, ISM expansion, Fed holding)
+- **Key data today (NOT named blockers):**
+  - 8:30 AM: Jobless Claims, Housing Starts, Philly Fed Manufacturing
+  - 9:45 AM: PMI Composite Flash
+  - BMO earnings: **WMT** (Q1; $174.69B rev est, $0.66 EPS — major consumer read) + **DE** (Q2; $11.4B rev, $5.74 EPS — industrial read)
+
+### NVDA Q1 FY2027 Earnings (AMC May 20) — Key Event
+- **Revenue:** $81.6B (est $80.4B; +85% YoY; +20% QoQ) — BEAT ✓
+- **Non-GAAP EPS:** $1.87 (est $1.76; +6.25% beat) — BEAT ✓
+- **Data Center:** $75.2B (+92% YoY) — record
+- **Gross margins:** 74.9% / 75.0% non-GAAP — strong
+- **Buybacks:** $80B additional authorization
+- **Dividend:** Raised 25x ($0.01 → $0.25/share)
+- **Stock reaction:** Premarket +1.19% to $223.23; full session high $226.94, close $220.66 (~flat vs $220.61 prior)
+- **Verdict: SELL THE NEWS** — blockbuster beat on every metric, stock essentially flat. Already fully priced in.
+
+### Held Ticker Updates
+
+**CAT ($873.57, -2.14% from entry $892.689):**
+- Morgan Stanley upgraded Equal Weight (PT $915 from $430) — not bullish, just neutral
+- Evercore ISI Outperform PT $1,103 (confirmed prior weeks)
+- **BEARISH INSIDER SIGNAL:** Group President Denise Johnson sold 12,605sh ($11.4M) + 6,196sh ($5.6M); CAO sold 360sh ($326K) — $17M+ insider selling in May 2026
+- DE BMO today — industrial read; beat/miss could move CAT sympathetically
+- Stop $838.215 = 4.1% below last close $873.57; thesis intact (ISM expansion, $63B backlog)
+- Action: **HOLD to stop.** Insider selling is bearish signal but not strategy-rule exit trigger. If DE misses badly, monitor for stop approach.
+
+**XLK ($177.33, +1.04% from entry $175.494):**
+- NVDA beat positive for XLK (~15% NVDA weight); muted NVDA reaction limits XLK upside
+- Tech sector getting a lift post-NVDA AMC; stop HWM $180.215 / stop $162.1935 (7.7% buffer)
+- Action: **HOLD.** Thesis intact. May set new HWM if tech rallies on NVDA beat.
+
+**XOM ($156.39, +3.73% from entry $150.769):**
+- **THESIS UNDER PRESSURE:** WTI fell -6.55% May 20 to $97.33; stabilizing $97-100 today; Iran deal "final stages" = Hormuz war premium evaporating
+- Thesis-break floor: WTI sustained below $90 → not there yet ($97-100 = 7-11% above floor)
+- But SPEED of decline ($105 → $97 in 3 days) is concerning
+- Analyst consensus PT $162.05 — at/near our last price $156.39 (6 analysts upside remaining)
+- Stop HWM $163.68 / stop $147.312 = 5.8% buffer from last close
+- Action: **HOLD to stop.** Manual cut trigger: WTI sustained drop below $93-94 (above that, thesis intact). Stop doing its job.
+
+### Trade Ideas
+
+1. **AVGO (5th position, 2nd tech slot) — PREFERRED** [MANDATORY TRADE per Wednesday urgency]
+   - **Catalyst:** NVDA blockbuster beat → AI/data center spending acceleration → AVGO (custom silicon + networking) is primary beneficiary; Benzinga BUY high (multiple prior weeks); ATH $442.36 on May 14 = pullback to ~$415-420 (-6% from ATH) = buy-the-dip opportunity
+   - **Why AVGO over SOXX:** NVDA "sell the news" = SOXX headwind (SOXX top holding is AVGO 8%; SOXX lacks NVDA overhang when NVDA's own reaction is muted); AVGO quality > SOXX beta; FCF strong; less single-stock risk
+   - **Entry:** ~$415-420 (premarket; enter near/after 8:30 if Jobless Claims not alarming); avoid chasing any premarket gap
+   - **Sizing:** 17-20% of equity → 45sh @ $418 = $18,810 (18.4%) ✓
+   - **Stop:** 10% trailing GTC immediately on fill (~$376-$378)
+   - **Target:** +20% → ~$501-504; analysts varied ($400+ consensus likely exceeds); R:R 2:1 ✓ (10% risk, 20% target)
+   - **Sector check:** Tech (XLK = slot 1, AVGO = slot 2 → 2/2 = max tech). All 3 positions span: Energy + Industrials + Tech × 2 → 3 sectors (compliant ✓ — when ≥3 positions, must span ≥2 sectors ✓)
+   - **Week count:** 1/3 after this trade
+
+2. **SOXX (fallback if AVGO R:R fails at open)**
+   - Same thesis; more NVDA-correlated; ~41sh @ $482-490 = ~$19,762-$20,090 (19.4-19.7%)
+   - Enter only if AVGO R:R fails 2:1 check at open
+
+3. **HOLD existing 3 positions** — all to stops; no proactive exits today unless XOM oil thesis breaks
+
+### Risk Factors
+- **XOM oil thesis:** WTI $97-99, declining rapidly on Iran deal. If WTI breaks $93-94 today → exit XOM before stop ($147.312). Monitor WTI intraday.
+- **NVDA sell the news:** Muted stock reaction to blockbuster beat. AI trade "priced to perfection" — sector may range-bound near-term. Limits XLK + AVGO upside.
+- **CAT insider selling ($17M+):** Bearish signal; stock below entry; stop only 4.1% away. DE miss today could trigger sympathetic selloff.
+- **WMT BMO:** Consumer health read. Miss = risk-off signal; beat = market supportive.
+- **Deployment 55%:** Below 75% floor. One entry brings to ~73%; two entries brings to ~91%. Plan: 1 entry today (AVGO), assess 2nd entry Friday only if first stabilizes.
+- **Jobless Claims (8:30 AM):** If notably elevated (>250K), reconsider entry timing. Not a named blocker but alarming data = wait for market to absorb.
+
+### Decision
+**TRADE — enter AVGO (5th position, 2nd tech slot) today.** Wednesday urgency rule mandates ≥1 entry (0/3 slots used at May 20 close, deployed 55% < 60%). NVDA blockbuster beat validates AI data center spending acceleration → AVGO direct beneficiary. Prefer AVGO over SOXX due to NVDA sell-the-news dynamic. Wait for 8:30 AM data; enter near/after 10 AM if Jobless Claims not alarming. 45sh @~$418, 10% trailing GTC immediately on fill. Existing positions: HOLD all to stops.
+
+**XOM watch:** If WTI falls through $93-94 intraday, exit XOM proactively before stop.
+**CAT watch:** If DE misses badly and CAT approaches $840, prepare for stop execution.
+
+**Action questions (surface at EOD):**
+1. **AVGO entry confirmed?** Proceeded per Wednesday urgency rule. Ticker AVGO, 45sh ~$418, 10% trail GTC. Confirm or override.
+2. **XOM thesis break watch:** WTI at $97-99 declining on Iran deal. Exit proactively if WTI < $93-94, or hold to stop $147.312 as strategy rules dictate?
+3. **CAT proactive exit:** -2.14% from entry, $17M insider selling, stop only 4.1% away. Exit at open or hold to stop?
+4. **2nd entry Friday (week slot 2/3):** If AVGO stabilizes today and oil/macro benign, what's the 2nd candidate? FCX (Materials, 3rd sector), or hold 2 remaining slots to Week 5?
+
+---
+
 ## 2026-05-20 — Pre-Market Research (Wednesday, Week 4)
 
 ### Account Snapshot
