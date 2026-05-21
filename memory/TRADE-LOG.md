@@ -912,3 +912,30 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **NVDA AMC tonight — 5th position:** If beat, enter Thursday morning: SOXX (~$20K, ~41sh @~$482, semi beta) or AVGO (~$20K, ~67sh @~$299, custom silicon + AI networking + FCF quality)? Entry on gap-up continuation or wait for intraday pullback? If miss, hold all 3 slots this week?
 3. **CAT hold/exit:** -2.14% from entry, stop buffer restored to 4.1%. Thesis intact (AI power demand + $63B backlog). Exit proactively or hold to stop?
 4. **Deployment 54.9% (below 75% floor):** 0/3 buy slots used, Thu + Fri remaining. Enter 1 name Thursday + hold 2 slots, or enter 2 if NVDA reaction is clearly bullish?
+
+---
+
+## 2026-05-21 — Market-Open Trades (Day 20, Thursday, Week 4)
+
+**Week trade count: 1/3**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-05-21 | AMD | BUY | 40 | $443.38 | 10% trail GTC (order a2f1f030, HWM $443, stop $398.70) | $579 (+30.6%) | 3.03:1 | NVDA Q1 FY27 massive beat ($81.6B +85% YoY, Q2 guide $91B vs $87.2B est) confirms AI hardware demand; AMD Q1 +38% rev, Data Center +57%; Confluent BUY (Benzinga BUY high + Congress BUY high — Gottheimer Apr 27 purchase); Evercore ISI PT $579 (May 19); Tech slot 2 (XLK=slot 1, NVDA exited); Wednesday urgency check mandated entry (0/3 slots, 55% deployed at Wed close) |
+
+**Execution notes:**
+- Order 68215b27: 40sh AMD market day, submitted 2026-05-21 09:50:48 ET
+- Fill: 40sh @ $443.38 avg (gapped up from ~$399 pre-market on NVDA beat; fill on market open)
+- Stop order a2f1f030: sell 40sh AMD trailing_stop 10% GTC, HWM $443, stop $398.70
+- AMD gap-up from ~$399 pre-market; Evercore ISI PT $579 supports 2:1+ R:R at entry
+- No AMD analyst upgrades confirmed post-NVDA beat yet; upgrades expected to follow
+- FOMC Minutes 2pm + Fed Waller 1:45pm — entry completed pre-Fed noise ✓
+- Week slot used: 1/3 | DT count: 0
+
+**Open Orders (post-trade 2026-05-21):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $443, stop $398.70
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (auto-trailed)
+
+**Portfolio (post-trade 2026-05-21):** Equity ~$102,050 | Cash ~$28,258 (27.7%) | Deployed ~$73,793 (72.3%, 4 positions) | Week count: 1/3 | DT count: 0
