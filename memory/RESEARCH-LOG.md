@@ -1741,4 +1741,86 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 **Active watch items:**
 - AMD entry at open (~50sh @ market) — complete before FOMC Minutes 2pm
 - CAT stop $838.215 — may auto-trigger if risk-off open; expected exit if hit
+
+---
+
+## 2026-05-22 — Pre-Market Research (Day 21, Friday, Week 4)
+*Alpaca/Perplexity APIs blocked (host not in allowlist) — account state from EOD 2026-05-21; market data via WebSearch fallback.*
+
+### Account Snapshot (EOD 2026-05-21 — last known)
+| Item | Value |
+|------|-------|
+| Equity | ~$102,478 |
+| Cash | ~$28,258 (27.7%) |
+| Deployed | ~$73,793 (72.3%, 4 positions) |
+| Daytrade count | 0/3 |
+| Week buy count | 1/3 |
+
+### Positions (last known)
+| Ticker | Shares | Entry | EOD Close | Unrealized | Stop |
+|--------|--------|-------|-----------|------------|------|
+| AMD | 40 | $443.38 | $454.50 | +2.51% | 10% trail HWM $451.12 / stop $406.008 |
+| CAT | 20 | $892.689 | $872.06 | -2.31% | 10% trail HWM $931.35 / stop $838.215 |
+| XLK | 103 | $175.494 | $179.51 | +2.29% | 10% trail HWM $180.215 / stop $162.194 |
+| XOM | 130 | $150.769 | $154.69 | +2.60% | 10% trail HWM $163.68 / stop $147.312 |
+
+### Market Context (WebSearch fallback)
+- **WTI:** ~$96.35 (May 21 close, -2% session); Brent ~$102.58 (May 21 close). May 22 pre-mkt: Brent up ~1.89% to ~$104.52; WTI recovering toward ~$98. WTI touched manual exit trigger ($95-96) range yesterday; today rebounding.
+- **S&P 500 futures:** +0.39% pre-market; 78% Polymarket probability of positive open
+- **VIX:** 16.76 (May 21 close); ~17.26 monthly avg; low-moderate fear
+- **Treasury yields (KEY RISK):** 30yr at highest since 2007 (~5%+); 10yr ~4.3–4.5%; 2yr >4%. Surging yields = equities headwind, especially growth/tech.
+- **Kevin Warsh sworn in as Fed Chair today:** Hawkish. No rate cuts expected 2026 (CME FedWatch). Structural regime shift to higher-for-longer.
+- **OpEx Friday:** Risk-off intraday flows possible.
+
+### Today's Releases
+- **Final UMich Consumer Sentiment** (10am ET) — watch inflation expectations sub-component
+- **LEI / Conference Board** (10am ET)
+- No CPI, FOMC, NFP, or GDP Advance — macro calendar light
+
+### BMO Earnings
+- **John Deere (DE) BMO:** Industrial peer; miss could weigh on CAT sympathy. No held-name BMO.
+
+### Sector Momentum YTD
+| Priority | Sector | ETF | Status |
+|----------|--------|-----|--------|
+| 1 | Materials | XLB | Leading +22% YTD — dominant breakout |
+| 2 | Industrials | XLI | Leading |
+| 3 | Energy | XLE | Leading |
+| 4 | Technology | XLK | Lagging technically; mega-cap driven |
+
+### Position Thesis Checks
+**AMD (~$449.59 pre-mkt, +1.4% from entry $443.38):**
+- $10B Taiwan investment; AI demand structural; YTD +109%; avg PT $472.17 (upside case $600)
+- Stop $406.008 (~9.7% buffer). Rising yields headwind; AI demand dominant thesis. HOLD.
+
+**CAT (~$874.50, -2.04% from entry $892.689):**
+- Analyst avg PT $920.14; Buy consensus (28 analysts). DE BMO — watch industrial read-through.
+- Stop $838.215 = ~4.2% buffer. Thesis intact. HOLD to stop.
+
+**XLK (~$178.93, +1.97% from entry $175.494):**
+- Near 52wk high $180.22. Warsh hawkish + yield spike = near-term valuation headwind.
+- Stop $162.194 = ~9.4% buffer. If XLK clears $180.22, stop auto-trails. HOLD.
+
+**XOM (~$155.12, +2.88% from entry $150.769):**
+- WTI hit $96.35 (May 21) — AT manual exit trigger ($95–96). Today rebounding (Brent +1.89%).
+- Venezuela restart talks = additional supply headwind for oil medium-term.
+- Analyst avg PT $167.86. Manual trigger: WTI sustained close below $95. Not triggered today.
+- HOLD. If WTI closes below $95 today or Monday, cut manually.
+
+### Trade Ideas
+1. **SOXX (deferred 5th position):** PHLX hit fresh ATH; AI demand intact. Skip today — OpEx Friday + Warsh inauguration + 30yr yield at 17yr high. Deployed 72.3% ≥ 60% → patience valid per strategy. Reassess Monday.
+2. **FCX:** Materials #1 YTD (+22%), Congress BUY high; copper guidance cut + MS downgrade = defer. Next week.
+3. **No new trades today.**
+
+### Risk Factors
+- **Warsh hawkish Fed:** No cuts 2026. Sustained yield pressure = structural headwind for all equities.
+- **30yr yield >5%:** Highest since 2007. Risk-off spike possible on any macro surprise.
+- **XOM manual trigger:** WTI $96.35 yesterday (at trigger); rebounding today. Watch Friday WTI close.
+- **CAT stop proximity:** -2.04% from entry, stop 4.2% away. Risk-off open = auto-trigger risk.
+- **OpEx Friday volatility:** Intraday whipsaw possible; trailing stops at risk of noise-trigger.
+
+### Decision
+**HOLD. No new positions today.** Deployed 72.3% ≥ 60% → patience > activity valid per strategy. Warsh inauguration + yield spike + OpEx Friday = wait for Monday pre-market to reassess SOXX/FCX. All four positions within expected parameters; no -7% cuts required.
+
+**Week 4 summary:** 1 trade executed (AMD Thu). 2/3 slots carried into Week 5. Deployment 72.3%.
 - XOM: if WTI drops below $95-96 intraday, manual exit
