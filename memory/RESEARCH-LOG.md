@@ -5,6 +5,124 @@ Format each entry:
 
 ---
 
+## 2026-05-22 — Pre-Market Research (Friday, Week 4, Day 21)
+
+### Account Snapshot
+- **Equity:** $102,730.65 | **Cash:** $28,257.89 (27.5%) | **Deployed:** $74,472.76 (72.5%, 4 positions) | **DT count:** 0
+- **Buying power:** $130,988.54 | **Phase P&L:** +$2,730.65 (+2.73%)
+- **Week trade count:** 1/3 (2 slots remaining today; last day of Week 4)
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $461.19 | +$712.40 (+4.02%) | +2.58% | 10% trail HWM $451.12 / stop $406.008 (auto-trailing — price above HWM) |
+| CAT | 20 | $892.689 | $870.39 | -$445.98 (-2.50%) | +0.51% | 10% trail HWM $931.35 / stop $838.215 (locked, 3.7% buffer) |
+| XLK | 103 | $175.494 | $179.51 | +$413.88 (+2.29%) | +0.51% | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $154.80 | +$524.05 (+2.67%) | -0.32% | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+### Open Orders (pre-market)
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): HWM $451.12, stop $406.008 (auto-trailing ↑ — AMD $461.19 > HWM $451.12)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): HWM $163.68, stop $147.312 (locked)
+
+### Market Context
+- **WTI:** ~$97-99/bbl (CLN26 +3.14/+3.20% pre-market — significant oil bounce); **Brent:** ~$104-106/bbl
+- **S&P 500 futures:** ESM26 ~7,482.75 +16.75 (+0.22%) — positive open expected; risk-on reversal after Thursday's tech-led tape
+- **VIX:** ~17.5 est (articles cite range 16.55-18.06 this week; last confirmed 18.06 May 21; risk-on today = likely lower)
+- **Market risk:** Low (VIX est <18)
+- **Economic releases today:**
+  - State Employment & Unemployment April 2026 — 10:00 AM ET (minor)
+  - Michigan Consumer Sentiment Final — 2:00 PM ET (market-moving)
+  - CB Leading Index MoM — 2:00 PM ET
+  - Michigan 5-Year Inflation Expectations — 2:00 PM ET
+  - Fed Waller speech — 3:00 PM ET
+  - Baker Hughes rig count — 5:00 PM ET (after close)
+  - **NOTE: Memorial Day Monday May 25 — 3-day weekend. No trading Monday.**
+- **Earnings BMO today:** No major U.S. names
+- **Sector YTD leaders (Leading quadrant):** Energy #1 (~20-22%), Industrials, Materials, Consumer Staples; Technology Lagging large-cap (but SOXX/XLK leading 20-day RS)
+- **RS Ranking (20-day vs SPY, strongest → weakest):** SOXX > QQQ > XLY > XLC > XLK > IWM > XLI > XLE > SPY > XLB > XLF > XLV > HYG > EEM > XLP > XLU > GLD > SLV > XLRE
+- **Economic cycle:** Late-cycle — unemployment rising 33+ months, GDP +2.0%, AI-led narrow bull market; Morgan Stanley warns slow-growth environment ahead
+
+### Benzinga Signals
+- **SELLS (medium+):** AMD (high — "Plans to Invest Billions in Taiwan for AI Chips", score -12, 39 mentions), AVGO (medium), SPY (high), QQQ (high), XLE (medium)
+- **BUYS (medium+):** None
+- ⚠️ **ALERT: AMD Benzinga SELL high** — we hold AMD. Benzinga negative on AMD's Taiwan AI chip investment announcement (capex concern vs. bullish positioning, ambiguous signal)
+
+### Congress Signals (45d lookback — same as prior days)
+- **BUYS (high):** FCX (Gottheimer Apr 15, filed May 19), AMD (Gottheimer Apr 27/23 + Cisneros Apr 14, filed May 19)
+- **SELLS (medium+):** CAT (Moskowitz Mar 31 — stale/small, noise), AVGO (high — 3 sells vs 1 buy)
+- **NOTE: Congress data unchanged from May 21** — all signals are same STOCK Act filings
+
+### Confluent Signals
+- **AMD CONFLICT:** Benzinga SELL high vs Congress BUY high — we hold AMD. Net assessment: HOLD to stop. Benzinga negative tone appears to be about short-term capex concerns on Taiwan AI investment announcement, not a fundamental thesis change. AMD AI thesis intact (Data Center +57% Q1, Confluent BUY was entry catalyst). Stop at ~$415 (auto-trailing from $461.19) protects +6% floor.
+- **FCX:** Congress BUY high, no Benzinga signal — elevated conviction but no new news today
+
+### Perplexity Validation
+
+**AMD ($461.19, +4.02% from entry):**
+- Analyst consensus: 34 analysts, Buy, consensus PT range $399-461; Barclays PT $500 (Overweight), Truist PT $478
+- Bullish drivers confirmed: AI inference, Data Center, Meta/OpenAI partnerships, >50% server revenue YoY growth
+- Concerns: stock at/near consensus targets at $461; Taiwan investment capex = margin pressure risk
+- Benzinga negative tone: capex expansion news read bearishly by short-term market
+- Perplexity: bullish thesis intact but "more sector-specific than universally supportive macro" — China export risk, capex cycle timing are key uncertainties
+- **Action: HOLD to stop. Thesis intact. Stop auto-trailing from HWM $451.12 toward ~$415.**
+
+**CAT ($870.39, -2.50% from entry):**
+- Q1 2026: revenue +22% YoY to $17.4B, EPS $5.54 vs $4.62e, record $63B backlog, raised FY guidance low double-digit growth
+- Margin slight compression: operating margin 17.7% vs 18.1% prior year; tariff headwind $710M in Q1
+- No new bearish catalyst today; Perplexity: no thesis break
+- Stop $838.215 = 3.7% buffer from $870.39 (increased since yesterday's +0.51% move)
+- **Action: HOLD to stop. Thesis intact. ISM expansion + AI power demand structural tailwind.**
+
+**XOM ($154.80, +2.67% from entry):**
+- WTI up +3.14/+3.20% pre-market today — significant bounce (Hormuz risk premium fluctuating)
+- XOM thesis re-strengthening: oil back above $97-99, Brent $104-106
+- Prior manual exit trigger was WTI < $95-96 — not reached; WTI bounced well above
+- XOM was -0.32% yesterday but oil strongly bid today; XOM likely opens up +2-3%
+- If XOM sets new HWM above $163.68 today → stop auto-trails higher ↑
+- **Action: HOLD to stop. Oil thesis re-strengthening on today's WTI +3.2% bounce.**
+
+**SOXX — 5th position candidate (ruled out today):**
+- RS #1 (20-day vs SPY) — strongest sector ETF
+- NVDA Q1 FY27 beat confirms AI demand (revenue +85% YoY, Q2 guide $91B vs $87.2B)
+- BUT: sector cap violation — AMD (Tech slot 1) + XLK (Tech slot 2) = max 2 tech positions already. SOXX is Technology/Semiconductors = 3rd tech position → NOT ELIGIBLE
+- Also: SOXX up ~50% YTD, extended, P/E 49-55x, high beta 2.1
+
+**FCX — 5th position candidate:**
+- Congress BUY high (Gottheimer Apr 15); copper >$6/lb tight market
+- Q1 2026: EPS $0.61, revenue $6.23B; Grasberg Block Cave restart Q2 2026
+- MS PT $70 Overweight (raised from $53); MarketBeat avg PT $65.72; range $46-$81
+- R:R at ~$61 entry: risk $6.1 (10% stop), target $73-81 (high PT range) → R:R 2.0-3.3:1 ✓ (using high analyst targets)
+- Materials sector empty (good diversification)
+- **Constraint: Adding FCX at 17% sizing (~$17,464) pushes deployed to ~89% — above 85% max**
+- **Friday risk: entering on Friday = holding through 3-day Memorial Day weekend (Mon May 25 market closed)**
+- **Decision: DEFER FCX to Week 5 (Monday May 27 or Tuesday May 28)**
+
+### Trade Ideas
+1. **HOLD AMD, CAT, XLK, XOM** — all 4 positions have intact theses; stops working correctly
+2. **FCX — defer to Week 5 Monday/Tuesday**
+   - Catalyst: Congress BUY high, copper $6+/lb, Materials sector empty, MS PT $70 Overweight
+   - 3-day weekend risk militates against Friday entry
+   - 85% deployment cap constraint with current 4 positions
+   - Sizing when deployed: ~$18K (~296sh @~$61), 10% trail GTC, target $73+ (2:1)
+
+### Risk Factors
+- **3-day Memorial Day weekend:** Market closed Monday May 25. Any weekend geopolitical event (Hormuz, Iran deal, tariff news) = gap risk at Monday's open. Reduced ability to react.
+- **AMD Benzinga SELL high:** Taiwan AI investment news may create continued selling pressure. Stop at ~$415 protects +6% floor from $443.38 entry.
+- **CAT stop proximity ($838.215 = 3.7% below $870.39):** Any sharp risk-off session today could trigger auto-exit.
+- **Michigan Consumer Sentiment 2pm:** If weak (persistent inflation expectations), could pressure equities into close.
+- **Deployment 72.5%:** Below 75% floor but above 40% mandatory threshold; XOM rally today likely pushes deployed naturally toward 73-74%.
+- **XOM auto-trail:** If XOM opens +2-3% on WTI strength, HWM should trail to new high and stop should advance above $163.68 prior HWM.
+
+### Decision
+**HOLD — no new entries today.**
+- Deployment 72.5% is below 75% floor but above 40% mandatory TRADE threshold; HOLD is valid given: (a) 3-day Memorial Day weekend entry risk, (b) FCX adds ~89% deployed (above 85% cap), (c) SOXX ruled out by sector cap (3rd tech position)
+- FCX is primary Week 5 candidate — enter Monday May 27 or Tuesday May 28 post-Memorial Day open
+- All 4 existing positions: HOLD to stops; AMD auto-trail should update to ~$415 stop intraday; XOM likely rallies on WTI +3.2%
+
+---
+
 ## 2026-05-20 — Pre-Market Research (Wednesday, Week 4)
 
 ### Account Snapshot
