@@ -290,3 +290,73 @@ Template for each entry:
 - **Deployment:** Maintain ≥75% floor; if NVDA exits, replace within 1-2 sessions to avoid cash drag.
 
 ### Overall Grade: B
+
+---
+
+## Week ending 2026-05-22
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $102,844.19 (May 15 EOD / Week 3 end) |
+| Ending portfolio | $103,277.06 |
+| Week return | +$432.87 (+0.42%) |
+| S&P 500 week | ~+0.5% (cap-weighted; equal-weight +1.5%; extending 8-week win streak) |
+| Bot vs S&P | ~-0.08% (roughly flat vs benchmark) |
+| Phase P&L | +$3,277.06 (+3.28% from $100,000 start) |
+| Trades | 2 (W:1 / L:0 / open:4) — 1 closed (NVDA stop), 1 new buy (AMD) |
+| Win rate | 100% (1 closed trade, 0 losers) |
+| Best trade | NVDA +9.73% ($+1,847 realized — 7% trailing stop triggered May 18) |
+| Worst trade | N/A (no losing closed trades) |
+| Profit factor | ∞ (1 winner, 0 losers — insufficient for meaningful ratio) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| NVDA | $200.54 (May 4) | $219.98 (May 18) | +$1,847 (+9.73%) | 7% trailing stop triggered intraday; 14-day hold; auto-exit per tighten rule |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $443.38 | $467.54 | +$966 (+5.45%) | 10% trail HWM $481.41 / stop $433.269 |
+| CAT | $892.689 | $879.89 | -$258 (-1.44%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | $175.494 | $180.39 | +$469 (+2.60%) | 10% trail HWM $181.73 / stop $163.557 |
+| XOM | $150.769 | $154.92 | +$516 (+2.75%) | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+### Sector Watchlist — Week 5 (May 27–30)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Materials | XLB | FCX | Deferred from Week 4; enter Tue May 27 ~$20K if R:R ≥2:1 and spread <$1 at open; restores deployment ≥75% |
+| 2 | Energy | XLE | XOM (held) | Hold to stop $147.312; exit proactively if WTI closes below $95-96 (thesis break); no add |
+| 3 | Industrials | XLI | CAT (held) | Hold to stop $838.215; 4 weeks below entry = thesis reassessment; exit manually if ISM contracts |
+| 4 | Technology | XLK | AMD/XLK (held) | Sector at cap (2 positions); no new tech buys until one exits |
+
+### What Worked
+- NVDA stop discipline executed perfectly: 7% trailing stop auto-triggered at $219.98, locking +9.73% realized gain on a volatile pre-earnings drop that blew through $229 → $219 in a single session
+- AMD entry timing was excellent: entered $443.38 post-NVDA beat gap-up May 21; closed week at +5.45% (+$966 unrealized) in one session
+- Pre-NVDA earnings blackout fully honored Mon–Tue (May 18–19): no buys into gap-down risk; correct
+- XLK recovered above entry (+2.60%) on NVDA beat momentum; tech sector allocation validated
+- XOM sustained +2.75% unrealized despite energy-to-tech rotation and Iran de-escalation headwinds; WTI stayed above $95-96 thesis-break line
+
+### What Didn't Work
+- Deployment collapsed to 55% after NVDA exit (May 18) and stayed there 2 sessions before AMD buy May 21; week ended at 72.6% — still below 75% floor for the 5th consecutive week
+- Only 1 of 3 buy slots used (AMD) — FCX deferred twice (Weeks 3 and 4), SOXX blocked by sector cap; leaving cash idle heading into 3-day weekend
+- CAT fourth consecutive week below entry: -1.44% unrealized; no specific catalyst but persistent macro/tariff drag; approaching slow-bleed territory
+- XOM thesis visibly weakening: energy-to-tech rotation + Iran de-escalation compressing Hormuz risk premium; WTI slipped toward $97-99 from $106 peak
+- Bot returned +0.42% vs S&P ~+0.5% — marginal underperformance; deployment gap is the primary structural drag
+
+### Key Lessons
+- NVDA stop discipline payoff: the 7% tighten rule (applied at +15%) caught a profitable exit that a looser 10% stop would have held longer into earnings gap-down risk; rule is proven — keep it
+- Gap-up entries post-catalyst beat are valid: AMD +5.45% in one session validates entering at open the morning after a massive beat, even above prior close; don't wait for a pullback that may not come
+- 3-day holiday weekends require pre-Thursday deployment action: FCX was a valid entry all week but kept being deferred; going into a 3-day weekend at 72.6% deployed means 4 days without ability to redeploy if something hits a stop
+- CAT at 4 weeks below entry with no specific catalyst is a different situation than "temporary weakness"; the record $63B backlog and ISM expansion are still intact but the market isn't rewarding the thesis yet — manual threshold needed
+- Equal-weight S&P +1.5% vs cap-weight +0.5%: broad market rally, small/mid-cap led — suggests further sector diversification into Materials (FCX) is the right call for Week 5
+
+### Adjustments for Next Week
+- **FCX Tuesday May 27 mandatory:** 5th position, Materials sector, ~$20K (~333sh @~$60); restores deployment to ~90%+; do NOT defer again; only blocker = FCX bid/ask spread >$1 at open
+- **CAT exit trigger added:** If CAT closes below $860 on any session OR macro ISM contracts below 50, exit manually; 4 weeks of underperformance = thesis questionable; do not let this become a -7% cut
+- **XOM exit trigger confirmed:** WTI close below $95 = thesis break = exit immediately; do not wait for stop $147.312 (4.9% buffer is too wide if thesis is broken)
+- **AMD next tighten:** +15% from $443.38 = $509.89; apply 7% trail at that level; monitor daily
+- **Deployment goal:** ≥80% by Wednesday May 28 (FCX Tue + hold 4 positions = 5 total ~90% deployed); never enter a 3-day weekend below 75% floor again
+
+### Overall Grade: B-
