@@ -1001,3 +1001,39 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 4. **Week count 1/3 with Friday remaining:** If entering SOXX Friday = 2/3. Limit to 1 buy (SOXX only), or leave both remaining slots open for next week?
 
 **Portfolio (post-trade 2026-05-21):** Equity ~$102,050 | Cash ~$28,258 (27.7%) | Deployed ~$73,793 (72.3%, 4 positions) | Week count: 1/3 | DT count: 0
+
+---
+
+## Midday 2026-05-22 (Friday, Week 4, Day 21)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $467.45 | +$962.80 (+5.43%) | +3.97% | 10% trail HWM $481.41 (auto-trailed ↑) / stop $433.269 |
+| CAT | 20 | $892.689 | $886.09 | -$131.98 (-0.74%) | +2.33% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $180.69 | +$535.19 (+2.96%) | +1.17% | 10% trail HWM $181.73 (auto-trailed ↑) / stop $163.557 |
+| XOM | 130 | $150.769 | $154.70 | +$511.05 (+2.61%) | -0.38% | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+**Losers cut:** None. No position at -7%.
+
+**Stop tightening:** None manual. Alpaca server-side auto-trails:
+- AMD: HWM $451.12 → $481.41 (AMD touched $481.41 intraday = +8.6% from entry, now at $467.45); stop $406.008 → $433.269
+- XLK: HWM $180.215 → $181.73 (new intraday high); stop $162.1935 → $163.557
+- CAT/XOM: stops locked (price below respective HWMs)
+- No position at +15% threshold; no manual tightening warranted.
+
+**Thesis check:**
+- AMD: +5.43% from entry; hit $481.41 intraday HWM before pulling back to $467.45. AI hardware demand intact (NVDA beat confirms demand chain; AMD Data Center +57% Q1). Benzinga SELL high (Taiwan capex concern) = short-term noise; stop at $433.269 protects +6% floor from entry. HOLD.
+- CAT: -0.74% from entry but recovering +2.33% today from multi-session slide ($865.95 → $886.09). Stop buffer restored to 5.4% ($886.09 vs $838.215). ISM expansion + $63B backlog intact. HOLD.
+- XLK: +2.96% at $180.69; new intraday HWM $181.73 (auto-trailed). Broad tech bid continuing post-NVDA beat. HOLD.
+- XOM: -0.38% today to $154.70 despite WTI +3.2% pre-market bounce. WTI still ~$97-99, well above $95-96 manual exit trigger. HWM $163.68 / stop $147.312 (4.8% buffer). Thesis intact. HOLD.
+
+**Pre-market decision confirmed:** HOLD all 4. No new entries today (3-day Memorial Day weekend, FCX deployment cap exceeded, SOXX sector cap violation). FCX deferred to Week 5 (Monday May 27 or Tuesday May 28).
+
+**Portfolio:** Equity ~$103,400 | Cash $28,257.89 (27.3%) | Deployed $75,141.87 (72.7%, 4 positions) | Day P&L: +$1,255.77 (+1.22%) | Phase P&L: +$3,400 (+3.40%) | Week buy count: 1/3
+
+**Open Orders (midday 2026-05-22):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $481.41 (auto-trailed ↑), stop $433.269
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $181.73 (auto-trailed ↑), stop $163.557
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (locked)
