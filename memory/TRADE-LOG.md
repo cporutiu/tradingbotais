@@ -940,6 +940,42 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 
 ---
 
+## Midday 2026-05-21 (Thursday, Week 4, Day 20)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $454.50 | +$444.80 (+2.51%) | +1.55% | 10% trail HWM $451.12→$454.50+ (auto-trailed) / stop $406.008→$409.05+ |
+| CAT | 20 | $892.689 | $872.06 | -$412.58 (-2.31%) | -0.06% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $179.51 | +$413.65 (+2.29%) | +1.34% | 10% trail HWM $180.215 / stop $162.1935 (locked) |
+| XOM | 130 | $150.769 | $154.69 | +$509.75 (+2.60%) | -1.02% | 10% trail HWM $163.68 / stop $147.312 (auto-trailed) |
+
+**Losers cut:** None. No position at -7%: AMD +2.51%, CAT -2.31%, XLK +2.29%, XOM +2.60%.
+
+**Stop tightening:** None. No position at +15% threshold (AMD closest at +2.51%).
+- AMD: HWM auto-trailed from $451.12 → $454.50+ (Alpaca server-side; stop from $406.008 → $409.05+)
+- CAT/XLK: stops locked (price below HWM on both)
+- XOM: HWM $163.68 unchanged (price $154.69 well below HWM)
+
+**Thesis check:**
+- AMD: Gapped up on NVDA massive beat as expected; +2.51% from $443.38 entry. HWM auto-trailing. Thesis intact — AI hardware demand confirmed; Evercore ISI PT $579 support. HOLD.
+- CAT: Flat -0.06% today ($872.06). Stop $838.215 = 3.9% buffer. Q1 $63B backlog + ISM expansion intact. No thesis break. HOLD to stop.
+- XLK: +1.34% today to $179.51 (+2.29% from entry). Near HWM $180.215 — potential new HWM if it pushes above. Broad tech bid on NVDA beat. Thesis intact. HOLD.
+- XOM: -1.02% today to $154.69. **Perplexity research (STEP 6):** WTI CLN26 ~$99.51 (CME); Iran de-escalation thesis NOT continuing to weaken oil — market oscillating. WTI "jumped on doubts Strait of Hormuz will reopen" (+3% intraday earlier). De-escalation bearish thesis appears intermittent/fragile. WTI above $95-96 manual exit trigger. Thesis: weakened previously but re-strengthening today. HOLD to stop.
+
+**Intraday research (STEP 6):** Perplexity on XOM/WTI. WTI ~$100, Iran deal doubts re-emerging (WTI up +3% at one point today). Prediction market 86% "WTI closes DOWN today" — but medium-term supply risk elevated. Thesis NOT broken. No manual cut.
+
+**Portfolio:** Equity $102,478.32 | Cash $28,257.89 (27.6%) | Deployed $74,220.43 (72.4%, 4 positions) | Day P&L: +$472.21 (+0.46%) | Week buy count: 1/3
+**FCX:** Secondary candidate (Congress BUY high, Materials sector empty); defer to Friday. 2 buy slots remain.
+
+**Open Orders (midday 2026-05-21):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM ~$454.50+ (auto-trailed), stop ~$409.05+
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $180.215, stop $162.1935 (locked)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (auto-trailed)
+
+---
+
 ## Day 20 — EOD Snapshot (May 21, Thursday)
 **Portfolio:** $102,478.32 | **Cash:** $28,257.89 (27.6%) | **Day P&L:** +$418.48 (+0.41%) | **Phase P&L:** +$2,478.32 (+2.48%)
 
