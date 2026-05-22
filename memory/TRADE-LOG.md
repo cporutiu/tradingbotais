@@ -1037,3 +1037,29 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $181.73 (auto-trailed ↑), stop $163.557
 - Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (locked)
+
+---
+
+## Day 21 — EOD Snapshot (May 22, Friday)
+**Portfolio:** $103,277.06 | **Cash:** $28,257.89 (27.4%) | **Day P&L:** +$1,133.07 (+1.11%) | **Phase P&L:** +$3,277.06 (+3.28%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 40 | $443.38 | $467.54 | +3.99% | +$966.40 (+5.45%) | 10% trail HWM $481.41 / stop $433.269 (auto-trailed ↑) |
+| CAT | 20 | $892.689 | $879.89 | +1.61% | -$255.98 (-1.43%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $180.39 | +1.00% | +$504.29 (+2.79%) | 10% trail HWM $181.73 / stop $163.557 (auto-trailed ↑) |
+| XOM | 130 | $150.769 | $154.92 | -0.24% | +$539.65 (+2.75%) | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+**Notes:** Day 21, Friday. Strong close to the week — portfolio +$1,133.07 (+1.11%) on broad market strength post-NVDA beat. AMD led +3.99% to $467.54 (+5.45% from entry); HWM auto-trailed to $481.41 / stop $433.269. XLK +1.00% to $180.39 (+2.79% from entry); HWM auto-trailed $181.73 / stop $163.557. XOM -0.24% to $154.92 (+2.75% from entry) — energy-to-tech rotation pattern day 3; stop $147.312 locked (4.9% buffer). CAT +1.61% to $879.89 (-1.43% from entry); stop $838.215 locked (4.7% buffer). No trades, no stops triggered. Week buy count: 1/3. Deployment 72.6% — below 75% floor heading into 3-day Memorial Day weekend; next trading day Tuesday May 27. FCX deferred to Week 5.
+
+**Open Orders (EOD 2026-05-22):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $481.41 (auto-trailed ↑), stop $433.269
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $181.73 (auto-trailed ↑), stop $163.557
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (locked)
+
+**Action questions:**
+1. **Deployment 72.6% (<75% floor) heading into 3-day weekend:** FCX deferred from today. Next trading day Tuesday May 27. Enter FCX (~$19-20K, Materials slot) Tuesday to restore deployment ≥75%, or wait for pre-market confirmation?
+2. **XOM thesis day 3 deterioration:** Energy-to-tech rotation; -0.24% today despite broad market up; stop $147.312 (4.9% buffer from $154.92). Pattern consistent — de-escalation compressing oil war premium. Exit XOM proactively before 3-day weekend, or hold to stop?
+3. **CAT persistent entry underperformance:** -1.43% from entry after 3 weeks held; +1.61% recovery today but still below entry. Stop $838.215 (4.7% buffer). Thesis intact (AI infra + $63B backlog). Exit proactively or hold to stop?
+4. **Week count 1/3 — all remaining slots carry to Week 5:** Enter 1 name (FCX only) Tue May 27, or enter 2 names (FCX + SOXX) to maximize deployment toward 75%+ floor?
