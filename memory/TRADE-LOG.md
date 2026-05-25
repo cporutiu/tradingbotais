@@ -1062,4 +1062,33 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **Deployment 72.6% (<75% floor) heading into 3-day weekend:** FCX deferred from today. Next trading day Tuesday May 27. Enter FCX (~$19-20K, Materials slot) Tuesday to restore deployment ≥75%, or wait for pre-market confirmation?
 2. **XOM thesis day 3 deterioration:** Energy-to-tech rotation; -0.24% today despite broad market up; stop $147.312 (4.9% buffer from $154.92). Pattern consistent — de-escalation compressing oil war premium. Exit XOM proactively before 3-day weekend, or hold to stop?
 3. **CAT persistent entry underperformance:** -1.43% from entry after 3 weeks held; +1.61% recovery today but still below entry. Stop $838.215 (4.7% buffer). Thesis intact (AI infra + $63B backlog). Exit proactively or hold to stop?
+
+---
+
+## Midday 2026-05-25 (Monday, Memorial Day — MARKET CLOSED)
+
+**Market status:** US markets closed. All prices frozen at May 22 close. No trading possible.
+
+**Positions (static — May 22 EOD prices):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 40 | $443.38 | $467.51 | +$965.20 (+5.44%) | 10% trail HWM $481.41 / stop $433.269 |
+| CAT | 20 | $892.689 | $879.89 | -$255.98 (-1.43%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $180.39 | +$504.29 (+2.79%) | 10% trail HWM $181.73 / stop $163.557 |
+| XOM | 130 | $150.769 | $154.92 | +$539.65 (+2.75%) | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+**Losers cut:** None. No position at -7%.
+**Stop tightening:** None. No position at +15% threshold.
+
+**Thesis check:**
+- AMD: HOLD — AI hardware demand intact; Benzinga SELL high (Taiwan capex) is short-term noise. Stop $433.269 protects +5.4% floor.
+- CAT: HOLD — ISM expansion + $63B backlog intact; stop buffer 4.7%. No thesis break.
+- XLK: HOLD — RS #3 vs SPY; tech/AI momentum intact post-NVDA beat. HWM $181.73 / stop $163.557.
+- XOM: ⚠️ **THESIS BROKEN** — WTI $91.65 (May 25 holiday) confirmed BELOW $95-96 manual exit trigger. Pre-market research documents full analysis. Cannot exit today (market closed). **EXECUTE: Sell 130 XOM market order at Tuesday open (May 27). Cancel trailing stop aa[4d9623bf] after fill.**
+
+**Action queued for Tuesday May 27:**
+1. Market open: sell 130 XOM → cancel GTC order 4d9623bf → log realized P&L
+2. Wed May 28 (or Thu post-PCE): enter FCX ~$18-20K, Materials slot, 10% trail GTC immediately
+
+**No action today. No notification sent. No commit (memory file changed — commit below).**
 4. **Week count 1/3 — all remaining slots carry to Week 5:** Enter 1 name (FCX only) Tue May 27, or enter 2 names (FCX + SOXX) to maximize deployment toward 75%+ floor?
