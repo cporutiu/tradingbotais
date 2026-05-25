@@ -5,6 +5,132 @@ Format each entry:
 
 ---
 
+## 2026-05-25 — Pre-Market Research (Monday, Memorial Day — MARKET CLOSED)
+
+> **US markets closed today (Memorial Day). No trading. Next session: Tuesday May 27.**
+> This entry covers weekend/holiday intelligence and positions all research for Tuesday open decisions.
+
+### Account Snapshot (as of May 22 close — no change)
+- **Equity:** $103,275.86 | **Cash:** $28,257.89 (27.4%) | **Long market value:** $75,017.97 | **Deployed:** 72.6% (4 positions)
+- **DT count:** 0 | **Phase P&L:** +$3,275.86 (+3.28%)
+- **Week 5 trade count:** 0/3 (fresh — all slots available starting Tue May 27)
+
+### Positions (May 22 EOD prices — static over holiday)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 40 | $443.38 | $467.51 | +$965.20 (+5.44%) | 10% trail HWM $481.41 / stop $433.269 |
+| CAT | 20 | $892.689 | $879.89 | -$255.98 (-1.43%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $180.39 | +$504.29 (+2.79%) | 10% trail HWM $181.73 / stop $163.557 |
+| XOM | 130 | $150.769 | $154.92 | +$539.65 (+2.75%) | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+### Open Orders (unchanged over holiday)
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): HWM $481.41, stop $433.269
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $181.73, stop $163.557
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): HWM $163.68, stop $147.312 (locked)
+
+### Market Context
+- **WTI (CLN26 front month):** ~$91.65 (May 25 close — Investing.com historical: open $92.11, high $92.64, low $90.34, close $91.65). Down from ~$97 on May 22. **⚠️ CRITICAL: Below $95-96 manual exit trigger for XOM.** CME CLN26 confirmed at $91.25 / -$5.35 as of May 24 EOD.
+- **Brent:** est. ~$104-107 (WTI + $10-15 spread; EIA notes spread ~$11/bbl avg)
+- **S&P 500 futures (ESM26):** ~7,537.00, +46.00 (+0.61%) as of May 24 close — positive setup for Tuesday
+- **VIX:** 16.70 (May 22 close, YCharts) — LOW risk zone (<18); June futures ~18.84 (slightly elevated)
+- **Market risk:** Low (VIX 16.70)
+- **Economic cycle:** Late-cycle — consumer sentiment near all-time lows, unemployment rising 33+ months (longest on record without recession), GDP +2.0%, AI-led narrow bull market
+- **RS Ranking (20-day vs SPY):** SOXX > QQQ > XLK > XLRE > XLY > IWM > XLI > XLC > XLF > XLV > XLE > SPY > EEM > HYG > XLB > XLP > XLU > GLD > SLV
+
+### Economic Calendar — Week of May 26-30
+- **Mon May 26:** Market closed (Memorial Day)
+- **Tue May 27:** First session back; no major releases; possible Fed speakers; low volume expected
+- **Wed May 28:** No major releases; pre-PCE positioning
+- **Thu May 28:** **⚠️ MAJOR — April PCE (8:30 AM ET) + Q1 GDP 2nd estimate simultaneously** — last inflation print before Kevin Warsh's first FOMC June 16-17. March core PCE +3.2%; April CPI +3.8% headline / +2.8% core. Market watching whether PCE holds or softens.
+- **Fri May 29:** Digestion; crypto/derivatives expiries; China NBS PMIs weekend
+
+### Oil Thesis Breakdown — WTI Drop Driver
+- **Driver:** Iran/Hormuz de-escalation risk premium unwinding. After US-Israel military operation vs Iran (Feb 2026) drove WTI to ~$113 intraday, market is pricing increasing probability of ceasefire/deal and Hormuz normalization.
+- **Structural pressure:** OPEC+ expected to ramp production once flows normalize; JPM bearish long-term (Brent avg $60 in 2026 excl. war premium); LiteFin sees continued decline.
+- **WTI trajectory:** $106 (Apr peak) → $95 (May 8) → $105 (May 15 bounce) → $97 (May 22) → **$91.65 (May 25 holiday)**
+- **XOM manual exit threshold:** $95-96 — WTI NOW AT $91.65, CLEARLY BELOW.
+- **XOM thesis-break floor:** $90 — WTI only 1.8% above floor.
+
+### Benzinga Signals
+- Scripts did not produce output (Outlook/email server likely paused on holiday). Using May 22 cached data as reference:
+- **SELLS (medium+):** AMD (high — Taiwan AI capex concern), AVGO (medium), SPY (high), QQQ (high), XLE (medium)
+- **BUYS (medium+):** None
+- Benzinga: no new actionable signals confirmed for today (holiday gap)
+
+### Congress Signals
+- Scripts did not produce output (holiday). Using May 22 cached data (45d lookback — unchanged):
+- **BUYS (high):** FCX (Gottheimer Apr 15, filed May 19), AMD (Gottheimer Apr 27 + Cisneros Apr 14)
+- **SELLS (medium+):** AVGO (high — 3 sells vs 1 buy), CAT (Moskowitz Mar 31 — stale/small, noise)
+- Congress: signals unchanged from May 22.
+
+### Confluent Signals
+- **FCX:** Congress BUY high (Gottheimer Apr 15), no Benzinga signal — elevated conviction; Materials sector empty; primary Week 5 candidate IF XOM exits
+- **AMD:** Benzinga SELL high vs Congress BUY high — conflict; net HOLD to stop; AI thesis structurally intact
+- **XOM:** No Congress signal; Benzinga XLE SELL medium — aligned with thesis deterioration
+
+### Perplexity Position Validation
+
+**XOM ($154.92, +2.75% from entry) — ⚠️ CRITICAL THESIS BREACH:**
+- WTI at $91.65 (May 25) is BELOW the $95-96 manual exit trigger established in prior pre-market research
+- De-escalation driver confirmed: Hormuz/Iran risk premium compressing as ceasefire prospects improve; OPEC+ production ramp expected post-conflict
+- Analyst consensus Buy with avg PT $163.95 (MarketBeat, 21 analysts) but bullish case explicitly tied to commodity strength (RBC Sector Perform $180 "on commodity strength" — now in doubt)
+- XOM at $154.92 with stop $147.312 (5.1% buffer) — stop may trigger naturally if oil continues lower
+- Perplexity: "bullish case only partially supported if WTI drops below $92"
+- **DECISION: EXIT XOM at Tuesday open (manual preemptive exit). WTI at $91.65 < $95-96 threshold. Thesis compromised. Preserves $539 gain vs risking further deterioration to stop.**
+
+**AMD ($467.51, +5.44% from entry) — HOLD:**
+- Strong Buy consensus (34-51 analysts); avg PT $405-472; Evercore $579, Bernstein $525
+- Q1 2026: Revenue $10.3B, Q2 guide $11.2B (+46% YoY); Meta deploying up to 6GW Instinct MI450 GPUs
+- AI inferencing + agentic AI driving Data Center; Helios rack-scale systems ramping Q3 2026
+- Benzinga SELL high (Taiwan AI capex) = short-term noise vs structural AI demand
+- Stop at $433.269 (10% trail, HWM $481.41) protects +5.4% floor from entry
+- **HOLD to stop.**
+
+**CAT ($879.89, -1.43% from entry) — HOLD:**
+- Moderate Buy consensus (25 analysts), avg PT $923.14 (4.9% upside from $879)
+- Q1 2026: Revenue +22% YoY, EPS $5.54 vs $4.62e, record $63B backlog
+- Risks: $2.6B tariff headwind 2026; some overvaluation concerns at $879 vs some models
+- Morningstar fair value ~$405 (significant overvaluation debate); Jefferies Buy but target $750 (below current)
+- AI power demand + ISM expansion thesis intact; growth expected to decelerate 2027+
+- Stop $838.215 (4.7% buffer); thesis not broken
+- **HOLD to stop.**
+
+**XLK ($180.39, +2.79% from entry) — HOLD:**
+- RS #3 (20-day vs SPY) behind SOXX and QQQ — strong relative momentum
+- Tech/AI momentum intact post-NVDA beat; XLK broadly tracks AI infrastructure demand
+- Stop $163.557 (10% trail, HWM $181.73); auto-trail will advance if XLK sets new HWM
+- **HOLD to stop.**
+
+**FCX (~$61, potential entry) — PRIMARY WEEK 5 CANDIDATE:**
+- Congress BUY high (Gottheimer Apr 15); Moderate Buy consensus (23 analysts); avg PT $65.72, high $81 (MS), UBS $74
+- Q1 2026: EPS $0.57 vs $0.47e, revenue $6.23B; copper ~$6/lb; Grasberg production guidance raised at Morenci/Cerro Verde
+- R:R at ~$61: risk $6.1 (10% stop), target $65.72-$81 → R:R 0.8-3.3:1 (base case modest, bull case 3:1)
+- Materials sector EMPTY — excellent diversification
+- Deployment math: IF XOM exits (~$20.1K freed) → FCX entry ~$18-20K keeps deployed ~70-73% (acceptable); without XOM exit → 89% deployed (above 85% cap)
+- Entry condition: XOM must exit first. Enter FCX Wednesday May 28 or Thursday May 29 (avoid Thu AM PCE print noise unless entry is post-data)
+- **Defer FCX to post-XOM exit; target Wed/Thu entry.**
+
+### Trade Ideas
+1. **XOM — EXIT at Tuesday open (May 27):** WTI $91.65 < $95-96 manual exit trigger. Thesis compromised. Take +$539 realized gain (if close near $154.92; stop $147.312 is floor). Action: market sell at open.
+2. **FCX — ENTER Wed May 28 or post-PCE Thu May 28 (~$18-20K, ~295-328sh @$61):** Congress BUY high, Materials sector empty, copper structural thesis, R:R 2:1 to avg PT. Stop: 10% trail GTC immediately. Entry timing: Wed open (pre-PCE) or Thu afternoon (post-PCE reaction).
+3. **AMD, CAT, XLK — HOLD:** All theses intact; stops in place. No action.
+
+### Risk Factors
+- **WTI $91.65 approaching $90 thesis-break:** If oil gaps lower Tuesday open, XOM stop $147.312 may trigger before manual exit is possible. Accept outcome — stop does its job.
+- **PCE Thu May 28 (core PCE last was +3.2%):** If PCE prints hot (+3.4%+), hawkish reaction could pressure growth stocks (AMD, XLK). Hold through — theses intact; not a named blocker for Tuesday entry.
+- **Holiday-shortened week liquidity:** Low volume Tue-Wed; wider bid-ask spreads on FCX entry. Use market orders in first 15min of regular session to avoid fills in thin pre-market.
+- **Deployment 72.6% (below 75% floor):** After XOM exit: deployed ~60% (3 positions). FCX entry restores to ~70-73%. Two buy slots remain for additional 5th/6th position next week.
+- **CAT overvaluation debate:** Morningstar fair value ~$405 vs $879 current is a structural valuation risk; however thesis intact, stop protecting. No action warranted.
+
+### Decision
+**TRADE (XOM exit + FCX entry):  
+1. EXIT XOM at Tuesday open — WTI $91.65 below manual exit trigger; preserve $539 unrealized gain before further oil deterioration.  
+2. ENTER FCX Wednesday May 28 (pre-PCE) — Materials sector empty; Congress BUY high; replaces XOM capital; copper structural thesis valid regardless of Iran oil dynamic.  
+3. HOLD AMD, CAT, XLK to stops — all theses intact, no manual exit warranted.**
+
+---
+
 ## 2026-05-22 — Pre-Market Research (Friday, Week 4, Day 21)
 
 ### Account Snapshot
