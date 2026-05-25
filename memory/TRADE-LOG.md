@@ -1091,4 +1091,30 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. Wed May 28 (or Thu post-PCE): enter FCX ~$18-20K, Materials slot, 10% trail GTC immediately
 
 **No action today. No notification sent. No commit (memory file changed — commit below).**
+
+---
+
+## Day 22 — EOD Snapshot (May 25, Monday — Memorial Day)
+**Portfolio:** $103,275.86 | **Cash:** $28,257.89 (27.4%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** +$3,275.86 (+3.28%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 40 | $443.38 | $467.51 | 0% | +$965.20 (+5.44%) | 10% trail HWM $481.41 / stop $433.269 |
+| CAT | 20 | $892.689 | $879.89 | 0% | -$255.98 (-1.43%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $180.39 | 0% | +$504.29 (+2.79%) | 10% trail HWM $181.73 / stop $163.557 |
+| XOM | 130 | $150.769 | $154.92 | 0% | +$539.65 (+2.75%) | 10% trail HWM $163.68 / stop $147.312 (locked) |
+
+**Notes:** Day 22, Monday Memorial Day — market closed. All prices frozen at May 22 EOD. No trades, no changes. Equity $103,275.86 essentially unchanged vs Day 21 close ($103,277.06; -$1.20 rounding artifact). Deployment 72.6%, below 75% floor. XOM exit queued for Tuesday May 26 open (WTI $91.65 confirmed below $95-96 manual trigger). CAT at -1.43% from entry, stop buffer 4.7% — thesis intact but underperforming. Week 5 trade budget: 0/3, first trading day Tuesday May 26.
+
+**Open Orders (EOD 2026-05-25 — unchanged from May 22):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $481.41, stop $433.269
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $181.73, stop $163.557
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf): active, HWM $163.68, stop $147.312 (locked)
+
+**Action questions:**
+1. **XOM exit confirmed — verify plan:** Sell 130 XOM market order at Tuesday May 26 open, then cancel GTC 4d9623bf. Still the call?
+2. **Post-XOM deployment ~52%:** After XOM exit, 3 positions (~$55K), cash ~$48K. FCX entry (~$18-20K, Materials) restores to ~70%. Need a second entry to clear 75%. Candidates: SOXX (Semis, deferred from Week 4), GLD (safe haven if macro deteriorates), or hold for breakout confirmation?
+3. **CAT -1.43% after 4 weeks:** Stop buffer 4.7% ($838.215 vs $879.89). No thesis break but persistent underperformance. Exit proactively or hold to stop?
+4. **Week 5 budget 0/3, 4 trading days (Tue–Fri):** Plan FCX + 1 additional this week, or save slots for next week confirmation?
 4. **Week count 1/3 — all remaining slots carry to Week 5:** Enter 1 name (FCX only) Tue May 27, or enter 2 names (FCX + SOXX) to maximize deployment toward 75%+ floor?
