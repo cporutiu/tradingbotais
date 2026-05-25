@@ -1859,4 +1859,138 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 **Active watch items:**
 - AMD entry at open (~50sh @ market) — complete before FOMC Minutes 2pm
 - CAT stop $838.215 — may auto-trigger if risk-off open; expected exit if hit
+
+---
+
+## Pre-Market Research — 2026-05-25 (Memorial Day → Tuesday May 26 open)
+
+**NOTE: Markets CLOSED today (Memorial Day). First trading day is Tuesday May 26.**
+**NOTE: Alpaca API and Perplexity API blocked by network policy — used WebSearch fallback throughout.**
+
+### Account Snapshot (last known: May 22 EOD)
+- **Equity:** $103,277.06 | **Cash:** $28,257.89 (27.4%) | **Deployed:** ~$75,019 (72.6%, 4 positions)
+- **Phase P&L:** +$3,277.06 (+3.28%) | **Week 4 buy count:** 1/3 (Week 5 starts Tue May 26, fresh 3-slot budget)
+- **DT count:** 0/3
+
+| Ticker | Shares | Entry | Last Close (5/22) | Unrealized | Stop |
+|--------|--------|-------|-------------------|------------|------|
+| AMD | 40 | $443.38 | $467.54 | +$966.40 (+5.45%) | HWM $481.41 / stop $433.269 |
+| CAT | 20 | $892.689 | $879.89 | -$255.98 (-1.43%) | HWM $931.35 / stop $838.215 |
+| XLK | 103 | $175.494 | $180.39 | +$504.29 (+2.79%) | HWM $181.73 / stop $163.557 |
+| XOM | 130 | $150.769 | $154.92 | +$539.65 (+2.75%) | HWM $163.68 / stop $147.312 |
+
+**Open GTC orders (as of May 22 EOD):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece)
+- Sell 130 XOM trailing_stop 10% GTC (4d9623bf)
+
+### Market Context
+- **WTI:** ~$91-93 est. (Brent $95.43, range $94.22-$99.59; WTI typically $2-4 below Brent) — **DOWN ~6% today on Iran deal progress** ← CRITICAL for XOM
+- **Brent:** $95.43 (previous close $100.21) — 6% decline on Memorial Day
+- **S&P 500 futures:** Positive heading into Tuesday; Iran deal optimism; last week Dow +2.13%, S&P +0.88%, Nasdaq +0.45%
+- **VIX:** 16.76 (May 22 close) — risk-on, low volatility
+- **Kevin Warsh** taking oath as new Fed chair — first public comments could move rates expectations
+- **Iran deal:** Not finalized; conditional ceasefire; Strait of Hormuz still partially closed (~5% pre-conflict volume); deal could add 1-2M bbl/day supply if completed
+
+**Economic calendar Week of May 26:**
+- Tue May 26: Consumer Confidence 10am, Dallas Fed Mfg 10:30am; AZO/ZS earnings
+- Wed May 27: MRVL/CRM/SNOW/SNPS earnings; April new home sales — **MRVL critical for AMD/tech momentum**
+- Thu May 28: **Q1 GDP 2nd estimate + PCE prices 8:30am** ← **named blocker; no new entries on/before this date**
+- Fri May 29: No major data
+
+**Sector YTD (as of ~May 15):**
+1. Energy: +34.4% (deteriorating fast — Iran deal compression)
+2. Technology: +18.0% (AI demand intact; AMD upgrades)
+3. Industrials: +11.1%
+4. Materials: +10.0% (copper at ATH $6.44/lb)
+5. Consumer Staples: +11.8%
+
+### ⚠️ CRITICAL ALERT — XOM Manual Exit Trigger Breached
+
+- **Manual exit rule:** Exit XOM if WTI sustains below $95-96/bbl
+- **Today:** WTI estimated ~$91-93 (Brent $95.43 − typical $2-4 spread); 6% decline on Iran deal
+- **Status:** Trigger **BREACHED**
+- **Action:** Confirm actual WTI spot at Tuesday 9:30am open; if confirmed < $95, execute market order to close XOM
+- XOM at +2.75% from entry ($539.65 unrealized) — exit harvests a small gain before further deterioration
+- XOM stop at $147.312 is 4.8% below last close ($154.92) — passive stop alone risks a larger loss if Iran deal closes
+
+### Position Updates
+
+**AMD ($467.54, +5.45% from entry):**
+- Post-Q1 blowout analyst upgrades: Bernstein OW $525, Barclays $500, Cantor $500, BofA $450
+- AMD up 320% YoY, >$650B market cap; Data Center +57%, AI inference demand intact
+- MRVL earnings Wed May 27 = semiconductor read-through; strong MRVL typically lifts AMD
+- Stop $433.269 (HWM $481.41) — 7.3% buffer from $467.54. Well protected.
+- **HOLD.** Thesis strengthening.
+
+**CAT ($879.89, -1.43% from entry):**
+- All-time high $931.35 (May 7); now 5.5% off ATH; stop buffer $838.215 = 4.7%
+- Evercore raised PT to $1,103 (Outperform); analyst avg $920.14 (+4.6% upside from $879.89)
+- Group President Denise Johnson sold 12,605sh May 15 ($11.4M) — insider selling at ATH; noteworthy
+- Power & Energy segment: data center demand driving growth; thesis structurally intact
+- CAT stop $838.215 (4.7% buffer); no new reason to exit manually
+- **HOLD to stop.** Monitor; if CAT closes below $860 two consecutive days, reassess.
+
+**XLK ($180.39, +2.79% from entry):**
+- Semiconductor concentration (42% weighting) = direct MRVL/AI beneficiary
+- XLK outperforming FTEC YTD; tech sector momentum intact
+- Stop auto-trailing: HWM $181.73 / stop $163.557 — 9.3% buffer
+- **HOLD.** Thesis intact.
+
+**XOM ($154.92, +2.75% from entry):**
+- **WTI trigger breached** (see CRITICAL ALERT above)
+- Iran de-escalation compressing war premium: 4 consecutive days of energy-to-tech rotation
+- Confirm WTI at Tuesday open; execute manual exit if WTI < $95
+- Exit harvests +$539.65 gain; stop at $147.312 preserves max +$539 floor passively but could decay further
+
+### EOD May 22 Action Questions — Updated Recommendations
+
+*(No user decision block found — providing updated guidance based on today's research)*
+
+1. **Deployment 72.6% (<75%):** FCX entry Tuesday (after confirming XOM exit or as additive 5th position). If XOM exited + FCX entered: deployment stays ~72.6% (XOM swap). Patience valid at ≥60% deployment. PCE blocker Thu = complete all entries Tuesday.
+2. **XOM thesis:** **EXIT Tuesday** — WTI trigger confirmed breached during 3-day weekend. Not a proactive preference call; the stated rule is triggered.
+3. **CAT underperformance:** **HOLD to stop.** +$1,103 Evercore PT and insider sell (at ATH) are net-neutral. Stop $838.215 doing its job. No -7% rule violation.
+4. **Week count 1/3 → Week 5:** FCX = 1st entry of Week 5 (1/3 slots used). PCE/GDP Thu blocker: all entries must complete Tue-Wed. 2 remaining slots for genuine catalysts only.
+
+### Trade Ideas
+
+1. **XOM — Manual exit Tuesday open (MANDATORY if WTI confirmed < $95)**
+   - Close 130sh XOM at market; harvest +$539 gain
+   - Frees ~$20,140 cash
+   - Rule-based exit; not discretionary
+
+2. **FCX — Entry Tuesday (Materials slot; replace XOM)**
+   - Barclays OW initiation May 21; UBS PT $75 ($61.99 = 21% upside to UBS PT); analyst avg $67.47
+   - Copper at all-time high $6.44/lb; Congress BUY (Gottheimer Apr 15, filed May 19)
+   - Materials sector empty (good diversification; sector cap compliant)
+   - Sizing: ~325sh @ ~$62 = ~$20,150 (~19.5% of equity)
+   - Stop: 10% trailing GTC immediately on fill (~$55.80 stop)
+   - Target: +15% = ~$71.30 → R:R 2.3:1 (using 10% trailing stop)
+   - Risk: Grasberg guidance cut (copper/gold output cut through 2031); enter only if XOM exited same day
+   - Entry timing: complete before May 28 PCE/GDP blocker; do not enter on/after Wed if PCE within 24h
+
+3. **HOLD AMD, CAT, XLK** — no changes
+
+### Risk Factors
+- **Iran deal closure:** WTI could bounce sharply if deal falls through. Confirm WTI at open before exiting XOM. If WTI opens above $96, do NOT exit XOM yet.
+- **PCE + Q1 GDP Thu May 28 8:30am:** Named blocker; no new entries on/before May 28. All actions must occur Tuesday.
+- **MRVL earnings Wed May 27:** Strong MRVL = AMD/XLK tailwind; weak MRVL = risk-off for tech. Monitor AMD stop $433.269.
+- **Kevin Warsh oath/remarks:** Any hawkish surprise could compress tech multiples. Short-term risk to AMD/XLK.
+- **CAT insider selling:** Denise Johnson sold $11.4M May 15. Not thesis-breaking but a flag.
+- **FCX Grasberg cuts:** Copper output guidance cut through 2031 caps upside. Size at 19.5%, not max 20%.
+
+### Decision
+**TRADE — Tuesday May 26:**
+1. **Exit XOM** at open if WTI confirmed < $95 (rule-based; not discretionary)
+2. **Enter FCX** ~325sh @ market (Materials replacement; complete before Wed May 28 blocker)
+3. **HOLD** AMD, CAT, XLK
+
+**Deployment post-trades:** ~72.6% (XOM→FCX swap net-neutral). Patience valid (≥60%). Week 5 buy count: 1/3 (FCX). 2 remaining slots for Week 5 post-PCE.
+
+**Active watch items for Tuesday:**
+- 9:30am: Confirm WTI spot price; execute XOM exit if < $95
+- After XOM exit confirmed: enter FCX ~325sh market order + immediate 10% trailing stop GTC
+- AMD stop $433.269: watch for MRVL sympathy if MRVL earnings disappoints (Wed)
+- CAT stop $838.215: 4.7% buffer; watch for risk-off gap at open
 - XOM: if WTI drops below $95-96 intraday, manual exit
