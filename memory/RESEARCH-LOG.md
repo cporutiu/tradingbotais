@@ -1986,3 +1986,91 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 - AMD entry at open (~50sh @ market) — complete before FOMC Minutes 2pm
 - CAT stop $838.215 — may auto-trigger if risk-off open; expected exit if hit
 - XOM: if WTI drops below $95-96 intraday, manual exit
+
+---
+
+## 2026-05-26 — Pre-Market Research (Tuesday — FIRST TRADING DAY WEEK 5)
+
+> **⚠️ CRITICAL: Alpaca API returning 403 — cannot pull live account data, cannot execute orders. User must verify credentials before open. XOM exit CANNOT execute without API access.**
+
+### Account Snapshot (last known — EOD May 22)
+- **Equity:** ~$103,276 | **Cash:** $28,258 (27.4%) | **Deployed:** ~$75,018 (72.6%)
+- **Positions:** AMD (40sh @ $443.38), CAT (20sh @ $892.689), XLK (103sh @ $175.494), XOM (130sh @ $150.769)
+- **Week 5 trade budget:** 0/3 used
+- **API status:** 403 Forbidden — both Alpaca and Perplexity wrappers blocked; research via WebSearch fallback
+- **Perplexity fallback:** All queries answered via native WebSearch (Perplexity also 403)
+
+### Market Context
+- **WTI crude:** ~$87 premarket (down ~5%+ from $91.65 Memorial Day close); Iran-US peace talks "proceeding nicely" (Trump Mon); framework includes Hormuz reopening
+- **Brent crude:** ~$98.11 (up 0.89% May 26); WTI-Brent spread ~$10-11; energy sector under pressure
+- **S&P 500 futures:** +0.54% premarket; Polymarket 91% probability of higher open
+- **VIX:** 17.26 — orderly, no fear spike
+- **Iran catalyst:** Trump confirmed talks "proceeding nicely" Monday; framework = 2-month ceasefire, Hormuz reopens, US lifts blockade; oil war premium rapidly deflating
+- **Economic releases today:** Consumer Confidence 10:00am ET; no FOMC/CPI/NFP
+- **Economic releases this week:** PCE Deflator Thursday May 28 08:30 (key inflation read)
+- **Earnings today:** AutoZone (AZO) and Zscaler (ZS) — neither held
+
+### Position Updates
+
+**AMD ($457.82 premarket, +3.2% from entry $443.38):**
+- CEO Lisa Su initiating volume production on 2nm Venice CPU family; "strong confidence" on tens-of-billions AI revenue in 2027
+- $10B Taiwan investment announced May 21 (capex concern from prior week = company commitment, bullish reframe)
+- Goldman PT $450, Bernstein PT $525; AMD +114% YTD per heygotrade data
+- Stop HWM $481.41 / stop $433.269 (order a2f1f030); premarket price ~$458 = 5.4% above stop
+- **Action: HOLD.** Thesis strengthened. 2nm production initiation is a fresh catalyst.
+
+**CAT ($879.89 last close, -1.43% from entry $892.689):**
+- **Analyst downgrades:** UBS → Sell, Morgan Stanley → Underweight (tariff headwind $700M Q2, $2.2-2.4B FY estimate)
+- ATH $931.35 on May 7 then declining; market cap down 4.15% last week
+- Analyst avg PT $920.14; 28 analysts avg "Buy"; Q1 beat intact (+22% rev, +30% adj EPS, FY guidance raised)
+- Stop $838.215 = 4.7% buffer from $879.89 (locked at HWM $931.35); today risk-ON open reduces auto-trigger risk
+- **Thesis check:** AI power + $63B backlog intact; downgrades are valuation/tariff noise not thesis break
+- **Action: HOLD to stop.** Downgrades noted but insufficient to exit ahead of stop.
+
+**XLK ($180.39 last close, +2.79% from entry $175.494):**
+- Tech sector: -3% YTD but AI/semiconductor names leading; S&P +0.54% today favors XLK
+- Stop HWM $181.73 / stop $163.557 (order 4299aece); 9.5% buffer
+- **Action: HOLD.** Momentum intact.
+
+**XOM ($154.92 last close, +2.75% from entry $150.769) — ⚠️ EXIT QUEUED:**
+- **WTI NOW ~$87** (down from $91.65 on May 25) — FAR below $95-96 manual exit trigger
+- Iran peace framework = structural oil supply increase; war premium deflating rapidly
+- XOM likely to open $149-153 range (oil -5%+, typical ~0.5-0.7x beta)
+- **TRAILING STOP RISK: $147.312 = ~3% buffer from estimated open price; could auto-trigger on volatility**
+- XOM also in talks for Venezuela oil production rights (bearish for price; adds supply)
+- **Action: SELL 130 XOM market order at open; CANCEL GTC order 4d9623bf. ⚠️ BLOCKED BY API 403.**
+- Estimated realized P&L at $151: +$28 (+0.02% from entry $150.769) — near breakeven after 4 weeks; oil thesis fully invalidated.
+
+### Trade Ideas
+
+1. **FCX — Entry today or Wed (Materials slot, ~17-20% equity):**
+   - Trading ~$61.11 (down from $63.07 ATH $70.97 on Apr 20; -14% from ATH)
+   - Analyst avg PT $70.01 (+14.6% upside); Congress BUY high (Gottheimer Apr 15, filed May 19)
+   - **Headwind: Grasberg guidance cut** — -9% copper, -7% gold production through 2031; Morgan Stanley downgraded Equal Weight
+   - Copper demand intact long-term (AI infra, EVs, grid); Iran deal = risk-off pause for commodities near-term
+   - Sizing: ~295sh @ $61.11 = ~$18,027 (~17.5% equity); 10% trail GTC immediately
+   - **Condition: DEFER until XOM exit confirmed + market stabilizes.** Grasberg cut lowers conviction; enter Wed May 27 or Thu May 28 post-PCE clarity.
+   - Alternative: reduce to ~$15K position (~245sh) given production headwinds
+
+2. **Post-XOM deployment gap (~52% after exit):**
+   - After XOM sale (~$20K freed): 3 positions + $48K cash = ~53% deployed; below 75% floor
+   - FCX entry brings to ~70%; still below floor — need 2nd entry this week
+   - Candidates: SOXX (prior deferred; tech momentum intact), AMAT (semis infra), or wait for cleaner setup
+   - **Week 5 budget: 0/3 — can execute FCX + 1 more this week**
+
+3. **No additional conviction entries today:** Prioritize XOM exit execution, confirm FCX on Wednesday with post-PCE read
+
+### Risk Factors
+- **⚠️ Alpaca API 403 — HIGHEST URGENCY:** Cannot execute queued XOM exit or FCX entry. User must fix credentials before market open (9:30am ET). Check Alpaca dashboard for account/key status.
+- **XOM trailing stop proximity:** At estimated open ~$151, stop $147.312 = ~2.4% buffer; oil volatility could auto-trigger before manual exit executed. If API comes up mid-session, may need market order ASAP.
+- **PCE Thursday May 28 (08:30 ET):** Any hot print will reprice rate expectations and hit growth stocks. Don't add new names Fri (options expiry noise); target entries Tue-Thu.
+- **Iran deal uncertainty:** If talks collapse over uranium enrichment (Supreme Leader hardline), oil surges +10%+ immediately. Don't short energy or rush XOM exit at bad price.
+- **CAT tariff overhang:** $2.2-2.4B FY tariff cost is real; multiple Sell-side downgrades. If stock gaps below $870, stop proximity increases. Monitor.
+
+### Decision
+**TRADE — XOM EXIT mandatory at open (thesis fully broken, WTI ~$87 vs $95-96 trigger).**
+- XOM: Sell 130 shares market order at open → cancel GTC 4d9623bf → log realized P&L
+- FCX: DEFER to Wed May 27 (confirm Grasberg impact; PCE data Thu helps size conviction)
+- AMD, CAT, XLK: HOLD — no changes
+- **BLOCKED: Alpaca API 403 prevents all order execution. Priority: fix API before 9:30am ET.**
+- Week 5 buy count after XOM exit: 0/3 (exits don't count; first buy slot open for FCX Wed)
