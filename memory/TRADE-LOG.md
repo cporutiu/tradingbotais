@@ -1118,3 +1118,51 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 3. **CAT -1.43% after 4 weeks:** Stop buffer 4.7% ($838.215 vs $879.89). No thesis break but persistent underperformance. Exit proactively or hold to stop?
 4. **Week 5 budget 0/3, 4 trading days (Tue–Fri):** Plan FCX + 1 additional this week, or save slots for next week confirmation?
 4. **Week count 1/3 — all remaining slots carry to Week 5:** Enter 1 name (FCX only) Tue May 27, or enter 2 names (FCX + SOXX) to maximize deployment toward 75%+ floor?
+
+**User decisions (2026-05-25):**
+- **XOM exit:** Confirmed — sell 130 XOM at Tuesday May 26 open; cancel GTC 4d9623bf after fill.
+- **Week 5 entries:** Enter both FCX (~$19-20K, Materials) AND SOXX (~$19-20K, Semis) this week. FCX Tue or Wed; SOXX Tue or Wed (post-PCE Thursday blackout applies — both entries must be placed by Wed close or post-PCE Friday).
+- **New rule added — time-based exit:** If any position is below entry after 5 full weeks held with no thesis catalyst restoring momentum, exit manually regardless of stop. (Added to TRADING-STRATEGY.md Rule 12.)
+- **New rule added — 3-day weekend thesis check:** Never hold a thesis-deteriorating position into a 3-day weekend. If a position is on active thesis-break watch (WTI below trigger, ISM contraction signal, sector rotation confirmed) by Thursday close before a 3-day weekend, exit Friday regardless of stop proximity. (Added to TRADING-STRATEGY.md Rule 13.)
+
+---
+
+## 2026-05-26 — Market-Open Execution (Tuesday, Week 5, Day 23)
+
+**Week trade count: 0/3** (exit only — no new buys)
+
+**XOM EXIT CLOSED:**
+
+| Ticker | Shares | Entry | Exit | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| XOM | 130 | $150.769 | $153.268 | +$324.86 (+1.66%) | Proactive exit; WTI $91.65 confirmed below $95-96 manual trigger; oil thesis broken; GTC 4d9623bf cancelled prior to sell |
+
+- Cancelled GTC stop 4d9623bf (HWM $163.68 / stop $147.312) — confirmed deleted from open orders
+- Market sell order 5b7d4102: 130sh XOM day — submitted 09:33:56 ET; fully filled over ~10 min (paper engine partial fills); avg exit $153.268 (~$19,924.81 proceeds)
+- Entry cost basis $19,599.95; exit proceeds $19,924.81; realized P&L +$324.86 (+1.66%)
+- XOM held May 13–May 26: 13 days; proactive exit before oil hits $90 thesis-break floor
+- Week buy slot used: 0/3 (exits don't count)
+
+**Position status at market-open 2026-05-26:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $487.80 | +$1,776.80 (+10.02%) | +4.34% | 10% trail HWM $489.55 / stop $440.595 (auto-trailed ↑) |
+| CAT | 20 | $892.689 | $898.80 | +$122.22 (+0.69%) | +2.15% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $183.73 | +$848.31 (+4.69%) | +1.84% | 10% trail HWM $183.425 / stop $165.0825 (auto-trailed ↑) |
+
+**Account post-XOM-exit:**
+- Equity $104,726.23 | Cash $48,182.70 (46.0%) | Deployed $56,543.53 (54.0%) | 3 positions | Week count: 0/3 | DT count: 0 | Phase P&L: +$4,726.23 (+4.73%)
+
+**Stop updates vs EOD May 22:**
+- AMD: HWM $481.41 → $489.55; stop $433.269 → $440.595 (auto-trailed on open surge)
+- XLK: HWM $181.73 → $183.425; stop $163.557 → $165.0825 (auto-trailed)
+- CAT: HWM $931.35 / stop $838.215 (still locked — price below HWM)
+
+**AMD +15% tighten watch:** $487.80 vs threshold $509.89 (+15% = $443.38 × 1.15) — 4.5% away; active monitor.
+
+**Open Orders (market-open 2026-05-26):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $489.55, stop $440.595 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $183.425, stop $165.0825 (auto-trailed ↑)
+
+**No new buys today** — FCX and SOXX entries planned for Wednesday May 27 per user decision. Deployment 54.0% (below 75% floor; FCX + SOXX entries Wednesday will restore to ~72-75%).
