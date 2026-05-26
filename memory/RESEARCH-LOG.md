@@ -1986,3 +1986,101 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 - AMD entry at open (~50sh @ market) — complete before FOMC Minutes 2pm
 - CAT stop $838.215 — may auto-trigger if risk-off open; expected exit if hit
 - XOM: if WTI drops below $95-96 intraday, manual exit
+
+---
+
+## 2026-05-26 Pre-Market Research (Tuesday — first trading day Week 5)
+
+### Account Snapshot (pre-open, pre-XOM exit)
+- **Equity:** $104,055.96 | **Cash:** $28,257.89 (27.2%) | **Day P&L:** +$780.10 (+0.75% vs May 22 close, pre-market prices)
+- **Deployed:** $75,798.07 (72.8%) | 4 positions | DT count: 0
+- **Positions:** AMD 40sh @$481.50 (+8.60% / +$1,524.80), CAT 20sh @$890.40 (-0.26% / -$45.78), XLK 103sh @$183.09 (+4.33% / +$782.39), XOM 130sh @$152.86 (+1.39% / +$271.85)
+- **Note:** AMD HWM $481.41 — today's open $481.50 exceeds HWM, auto-trail fires
+
+### Market Context
+- **WTI:** ~$91-92/bbl (FxPro $91.94, Polymarket $91) — CONFIRMED below $95-96 manual XOM exit trigger. Brent implied ~$102-103
+- **S&P 500 futures:** +0.10% (~+6.5 pts), slightly positive open
+- **VIX:** 16.85 — LOW (market_risk = **low**)
+- **Key catalyst:** QCOM +11.6% AH on earnings beat + AI-chip guidance → massive SOXX/semis gap-up today; semiconductor AI capex cycle confirmed intact
+- **Economic calendar today:** FHFA Home Price Index 8am, Consumer Confidence 10am, Dallas Fed Mfg 10:30am — no CPI/PPI/PCE/FOMC today
+- **⚠️ PCE Thursday May 28 (8:30am)** — named blocker; no new entries Thursday; all entries must be placed by Wednesday close
+- **Economic cycle:** mid-cycle
+- **Sector RS ranking (20-day):** SOXX #1, QQQ #2, XLY #3, XLK #4, IWM #5, XLC #6, XLI #7, XLF #8, XLE #9
+
+### Benzinga Signals (24h lookback)
+- SELL medium: SPY, QQQ (holiday-weekend noise — "is market open today" stories, not actionable)
+- SELL medium: NVDA (Nvidia $10T valuation articles — momentum chasing, not bearish catalyst)
+- **Benzinga: no actionable BUY signals today.**
+
+### Congress Signals
+- **BUY high (PRIORITY):** FCX — Josh Gottheimer PURCHASE 2026-04-15 filed 2026-05-19 ($1K-$15K)
+- **BUY high (PRIORITY):** AMD — Josh Gottheimer PURCHASE 2026-04-27 & 04-23 filed 2026-05-19 + Cisneros PURCHASE ($15K-$50K) — **already held**
+- SELL high: NVDA — Daniel Meuser, Elizabeth Fletcher, Gilbert Cisneros, John Boozman, John McGuire, Tim Moore (buy_count 2, sell_count 5 — net sell pressure)
+- SELL high: AVGO — Moskowitz, Capito, D.J. Taylor (buy_count 1, sell_count 3 — net sell)
+- SELL medium: CAT — Moskowitz SALE 2026-03-31 filed 2026-04-30 ($1K-$15K) — old trade, low signal
+- **No confluent BUY (Congress + Benzinga same direction) — FCX is Congress-only BUY; AMD already held**
+
+### Perplexity Validation
+- **FCX:** Q1 2026 earnings beat ($6.2B revenue); Grasberg guidance cut (copper -0.3B lbs, gold -150K oz due to mudslide — transitory); Morenci leach +300-400M lbs by 2027; MarketBeat avg target $65.72 (+6% from ~$62); Morgan Stanley Equal Weight $66 PT; UBS $74 PT. Congress BUY high supported — bullish case intact on copper structural demand + US brownfield growth, but limited near-term upside. ENTRY CONFIRMED.
+- **SOXX:** RS #1 (20-day); 50% YTD, 74.5% NAV total return through May 21; QCOM +11.6% AH = today's gap-up catalyst; ~$536 last price (May 25), likely opens $555-565. AI capex cycle intact post-NVDA + QCOM beats. Momentum validated. ENTRY CONFIRMED.
+- **AMD ($481.50):** +8.6% from entry $443.38. Q1 2026 revenue +38%, Data Center +57%. MarketBeat avg target $410 — AMD now ABOVE avg analyst target. Congress BUY (already held). HOLD — stop $433.269 doing its job; let winner run. No proactive exit.
+- **XOM ($152.86):** WTI $91-92 confirmed BELOW $95-96 manual exit trigger. Down -1.33% pre-market. EXIT AT OPEN today confirmed per May 25 user decision.
+- **CAT ($890.40):** -0.26% from entry; Congress SELL medium (old March Moskowitz sale — noise). ISM expansion + $63B backlog thesis intact. Stop $838.215 (5.9% buffer). HOLD to stop.
+- **XLK ($183.09):** +4.33% from entry; RS #4; tech momentum intact post-NVDA/QCOM. HWM $181.73 exceeded today → stop will auto-trail to ~$164.78. HOLD.
+
+### Trade Ideas
+
+**1. SELL 130 XOM at market open — MANDATORY (user confirmed)**
+- WTI $91.94 confirmed below $95-96 manual trigger
+- Cancel GTC order 4d9623bf after fill
+- Expected realized P&L: ~+$271-$540 depending on open price (~+1-3%)
+- Week buy count unchanged (this is an exit)
+
+**2. BUY SOXX — today, first trading day after 3-day weekend (user confirmed)**
+- Catalyst: QCOM +11.6% AH → semiconductor/AI gap-up; SOXX RS #1
+- Sizing: 17% equity = $17,689 / ~$560 ≈ 31-32 shares (size at open after assessing first 15-30 min)
+- Stop: 10% trailing GTC immediately on fill
+- Target: +20% = ~$672 → R:R 2:1
+- Entry timing: assess SOXX open; if gap is orderly (not panic spike), enter; do NOT chase if SOXX opens >+8% from $536
+- Counts as Week 5 buy #1
+
+**3. BUY FCX — today or Wednesday (user confirmed)**
+- Congress BUY high (Gottheimer priority); Materials sector slot open; Q1 earnings beat
+- Sizing: 17% equity ≈ $17,689 / ~$62 ≈ 285 shares
+- Stop: 10% trailing GTC immediately on fill (~$55.80 stop)
+- Target: +15-20% = $71-$74 → R:R 2:1 (limited near-term upside per analysts, but copper structural thesis)
+- If entering FCX today: do NOT enter before Consumer Confidence 10am (Materials/cyclicals sensitive)
+- Counts as Week 5 buy #2
+
+**Deployment after XOM exit + FCX + SOXX entries:**
+- Post-XOM cash: ~$48,130
+- New entries cost: ~$17,700 + $17,700 = ~$35,400
+- Post-entries deployed: $55,926 + $35,400 = $91,326 / $104,056 = **87.7%** — slightly above 85% cap
+- Note: unavoidable overage given minimum 17% sizing × 5 positions; monitoring existing positions for natural reduction. Accept ~87-88% deployment this week given momentum context.
+
+### Stop Tightening Check
+- AMD $481.50: entry $443.38 × 1.15 = $510.39 threshold not reached (+15% trigger). No tightening yet. HWM auto-trailing up.
+- XLK $183.09: entry $175.494 × 1.15 = $201.82 — far from threshold. HOLD
+- CAT $890.40: entry $892.689 × 1.15 = $1,026.59 — far from threshold. HOLD
+
+### Risk Factors
+- SOXX gap-up "buy the news" risk after QCOM beat — sector momentum strong enough to absorb, but watch first 15-30 min
+- FCX: Morgan Stanley Equal Weight, only 6% avg upside; Grasberg execution risk through 2027; limited catalyst until H2 2026 volume recovery
+- Deployment at ~87-88% after entries — slightly above 85% cap; no action needed unless new position underperforms
+- AMD above consensus target ($410): limited analyst upgrade catalysts; any AI spending slowdown news = downside risk; stop doing the job
+- PCE Thursday May 28 — blackout day; no entries; all entries must be completed by COB Wednesday
+- Consumer Confidence 10am today — minor catalyst, don't enter FCX immediately pre-release
+
+### Decision
+**TRADE — XOM exit + SOXX + FCX entries today**
+- XOM: sell market open, cancel GTC 4d9623bf (user confirmed)
+- SOXX: enter today — assess first 15-30 min, enter if gap is orderly (user confirmed)
+- FCX: enter today after 10am Consumer Confidence or Wednesday — user confirmed
+- Week 5 budget: uses 2/3 buy slots (SOXX + FCX), 1 slot remaining for rest of week
+
+### Active Watch Items
+- XOM: sell market open → cancel GTC 4d9623bf → log realized P&L
+- SOXX: assess open, enter ~31-32 shares @~$560 → place 10% trailing stop GTC immediately
+- FCX: enter ~285 shares @~$62 (today post-10am or Wednesday) → place 10% trailing stop GTC immediately
+- AMD: HWM update — new HWM should auto-trail from $481.50 open; verify stop auto-updated in orders
+- PCE Thursday May 28 — hard blackout; no new entries
