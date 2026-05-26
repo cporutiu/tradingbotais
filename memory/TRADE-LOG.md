@@ -1166,3 +1166,34 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $183.425, stop $165.0825 (auto-trailed ↑)
 
 **No new buys today** — FCX and SOXX entries planned for Wednesday May 27 per user decision. Deployment 54.0% (below 75% floor; FCX + SOXX entries Wednesday will restore to ~72-75%).
+
+---
+
+## Midday 2026-05-26 (Tuesday, Week 5, Day 23)
+
+**Positions (midday ~12:30pm ET):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $496.96 | +$2,143.20 (+12.08%) | +6.30% | 10% trail HWM $497.535 / stop $447.782 (auto-trailed ↑) |
+| CAT | 20 | $892.689 | $904.66 | +$239.42 (+1.34%) | +2.82% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $184.63 | +$941.02 (+5.21%) | +2.35% | 10% trail HWM $186.00 / stop $167.40 (auto-trailed ↑) |
+
+**Portfolio:** ~$105,171 | Cash $48,183 (45.8%) | Deployed $56,988 (54.2%, 3 positions) | Day P&L: ~+$1,895 (+1.83% vs May 22 close) | Phase P&L: +$5,171 (+5.17%)
+
+**Losers cut:** None. No position at ≤-7%.
+
+**Stop tightening:** None. AMD at +12.08% — approaching +15% threshold ($510.39), not yet reached ($496.96, 2.71% away). Alpaca auto-trailing AMD (HWM $497.535) and XLK (HWM $186.00). CAT locked.
+
+**Thesis check:**
+- AMD: +12.08% — NVDA outlined $200B CPU market opportunity → AI chip sector bid; **Evercore ISI raised AMD PT to $579 (Outperform)**; Q2 guidance $11.2B (+46% YoY). Thesis strengthening. HOLD. **Watch $510.39 for 7% trail tighten.**
+- CAT: +1.34% from entry (recovered from -1.43% at EOD May 22); +2.82% today. ISM expansion + $63B backlog intact. HOLD.
+- XLK: +5.21% — tech/AI momentum intact; new HWM $186.00 / stop $167.40. HOLD.
+
+**AMD +15% tighten watch:** Threshold $510.39 ($443.38 × 1.15). Current $496.96 = 2.71% away. If AMD closes ≥$510.39 today → tighten tomorrow pre-market: cancel a2f1f030, place 7% trailing GTC.
+
+**Open Orders (midday 2026-05-26):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $497.535, stop $447.782 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.00, stop $167.40 (auto-trailed ↑)
+
+**Next action:** FCX (~285sh @~$62) + SOXX (~31-32sh @~$560) entries Wednesday May 27 (pre-PCE Thursday blackout). No action today. No ClickUp notification (no trades executed).

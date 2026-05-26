@@ -2084,3 +2084,17 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 - FCX: enter ~285 shares @~$62 (today post-10am or Wednesday) → place 10% trailing stop GTC immediately
 - AMD: HWM update — new HWM should auto-trail from $481.50 open; verify stop auto-updated in orders
 - PCE Thursday May 28 — hard blackout; no new entries
+
+---
+
+### 2026-05-26 Afternoon Addendum — AMD Catalyst Verification
+
+**Query:** Why is AMD up +6.3% intraday on May 26?
+
+**Findings (Perplexity):**
+- **Primary catalyst:** NVDA outlined **$200B CPU market opportunity** in AI/data center → read-through bid across AI chip names
+- **Analyst upgrade:** Evercore ISI raised AMD PT to **$579 (Outperform)** — significant; AMD currently ~$497, implies +16% further upside
+- **Fundamental support:** Q1 2026 revenue $10.3B, Data Center +57% YoY; Q2 guidance $11.2B (+46% YoY); MI450/Helios accelerator pipeline growing
+- **Sector context:** Broad Nasdaq up; AI capex cycle intact post-NVDA + QCOM beats
+
+**Conclusion:** Move is thesis-driven, not noise. No exit rationale. AMD +15% tighten threshold ($510.39) 2.71% away — monitor into close. HOLD confirmed.
