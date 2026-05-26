@@ -1197,3 +1197,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.00, stop $167.40 (auto-trailed ↑)
 
 **Next action:** FCX (~285sh @~$62) + SOXX (~31-32sh @~$560) entries Wednesday May 27 (pre-PCE Thursday blackout). No action today. No ClickUp notification (no trades executed).
+
+---
+
+## Day 23 — EOD Snapshot (May 26, Tuesday — Week 5)
+**Portfolio:** $105,582.21 | **Cash:** $48,182.70 (45.6%) | **Day P&L:** +$2,306.35 (+2.23%) | **Phase P&L:** +$5,582.21 (+5.58%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 40 | $443.38 | $503.90 | +7.78% | +$2,420.80 (+13.65%) | 10% trail HWM $506.96 / stop $456.264 |
+| CAT | 20 | $892.689 | $908.55 | +3.26% | +$317.22 (+1.78%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $185.17 | +2.65% | +$996.63 (+5.51%) | 10% trail HWM $186.00 / stop $167.40 |
+
+**Notes:** Strong broad rally. XOM exit at open (+$324.86, +1.66%) freed ~$48K cash. AMD surged to +13.65% from entry; HWM $506.96 is 0.58% below the +15% tighten trigger ($509.89) — very close. CAT recovered to +1.78% from entry on +3.26% day. XLK at +5.51%. Deployment 54.4% (3 positions), below 75% floor. FCX + SOXX entries Wednesday will restore deployment to ~70-75%. Week buys 0/3 used.
+
+**Open Orders (EOD 2026-05-26):**
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): active, HWM $506.96, stop $456.264 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.00, stop $167.40
+
+**Action questions:**
+1. **AMD +15% tighten imminent:** HWM $506.96 vs threshold $509.89 (0.58% away). Pre-market Wednesday: tighten AMD to 7% trail if HWM hits $509.89? Or wait for confirmed close above?
+2. **Deployment 54.4% — below 75% floor:** FCX (~285sh @~$62, Materials) + SOXX (~31-32sh @~$560, Semis) both Wednesday per prior decision — still confirmed? PCE Thursday blackout means both must execute by Wed close.
+3. **CAT at +1.78% after 22 days held:** Recovering but lagging vs AMD/XLK. Stop buffer 7.84% ($908.55 vs $838.215). Hold to stop or exit proactively for a stronger name?
+4. **Week budget 0/3, 3 days remaining (Wed-Fri):** FCX + SOXX = 2 slots. Reserve 3rd slot or opportunistically deploy post-PCE Friday if a strong setup appears?
