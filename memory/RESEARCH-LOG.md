@@ -2098,3 +2098,103 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 - **Sector context:** Broad Nasdaq up; AI capex cycle intact post-NVDA + QCOM beats
 
 **Conclusion:** Move is thesis-driven, not noise. No exit rationale. AMD +15% tighten threshold ($510.39) 2.71% away — monitor into close. HOLD confirmed.
+
+---
+
+## 2026-05-27 — Pre-Market Research (Wednesday, Week 5, Day 24)
+
+> **⚠️ API NOTE:** Alpaca and Perplexity blocked (cloud container IP not in allowlist — `x-deny-reason: host_not_allowed`). Account snapshot from last known EOD May 26. Market data via WebSearch fallback.
+
+### STEP 1B — User Decisions Carried Forward
+- **No "User decisions" block found** in EOD May 26 trade log (action questions unanswered).
+- **Confirmed from prior sessions:** FCX + SOXX entries Wednesday May 27 — carry forward as confirmed.
+- **Active watch items:**
+  - AMD +15% tighten: HWM $506.96 vs trigger $509.89 (0.58% gap) — monitor open; if hit → cancel a2f1f030, place 7% trailing GTC
+  - PCE + GDP Thu May 28 — hard blackout; all entries must complete today
+
+### Account Snapshot (EOD May 26 — live API unavailable)
+- **Equity:** $105,582.21 | **Cash:** $48,182.70 (45.6%) | **Deployed:** $57,399.51 (54.4%)
+- **DT count:** 0 | **Week buys:** 0/3 | **Phase P&L:** +$5,582.21 (+5.58%)
+
+### Positions (EOD May 26 prices)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| AMD | 40 | $443.38 | $503.90 | +$2,420.80 (+13.65%) | 10% trail HWM $506.96 / stop $456.264 |
+| CAT | 20 | $892.689 | $908.55 | +$317.22 (+1.78%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $185.17 | +$996.63 (+5.51%) | 10% trail HWM $186.00 / stop $167.40 |
+
+### Open Orders (EOD May 26)
+- Sell 40 AMD trailing_stop 10% GTC (a2f1f030): HWM $506.96, stop $456.264
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $186.00, stop $167.40
+
+### Market Context (WebSearch fallback — Perplexity unavailable)
+- **WTI crude:** ~$91-94/bbl — confirmed below $95-96 manual trigger (XOM already exited May 26)
+- **Brent crude:** ~$99.18/bbl (May 27)
+- **S&P 500:** 7,519.12 (all-time high, +0.61% May 26) | **Nasdaq:** 26,656.18 (+1.19% May 26)
+- **VIX:** 16.59 (May 26 close) — LOW, risk-on
+- **Key catalyst:** Iran peace talk optimism; Rubio: "little bit of movement" toward deal — geopolitical risk premium unwinding, broad rally
+- **Semis surge:** MU +19% (UBS >100% upside, $1T market cap), VanEck Semi ETF +3%+ to 52-week high; SOXX $570.09 close May 26 (+6.10%), overnight $577.35 (+1.27%)
+- **FCX:** $64.46 (+3.98% May 26); Barclays initiated Overweight $77 PT; $3B new credit facility; copper demand intact
+- **AMD:** Thesis intact — Goldman/Bernstein doubled PTs; $10B Taiwan AI investment; Meta + OpenAI multi-gen Instinct deals; Q1 +38% rev, Q2 guidance $11.2B (+46% YoY)
+- **CAT:** +3.05% May 26; Q1 revenue +22% to $17.4B, EPS +30% to $5.54; $63B backlog; AI/data center power generation demand; tariff headwinds (Resource Industries -39% profit); analyst avg target $920.14
+
+### Economic Calendar (WebSearch)
+- **Today May 27:** April New Home Sales (minor) — no blackout impact
+- **Tomorrow May 28 (Thu): ⚠️ HARD BLACKOUT — April PCE + Q1 GDP 2nd estimate (8:30 AM ET)** — no new entries Thursday
+- PCE context: March core PCE +3.2%; April CPI +3.8% headline / +2.8% core; Kevin Warsh first FOMC June 16-17
+
+### Earnings (May 27)
+- **BMO:** No held-name earnings today
+- **AMC tonight:** MRVL, CRM, SNPS, SNOW — semis catalyst; MRVL could further boost SOXX momentum tomorrow (but Thursday = blackout, no action available)
+
+### Sector Momentum (WebSearch — YTD 2026)
+- **Materials:** +22% YTD — #1 sector (FCX thesis intact)
+- **Industrials:** +14.3% YTD (CAT aligned)
+- **Technology:** Recovering — AI/semis leading; SOXX +50%+ YTD; early 2026 laggard but now momentum leader
+
+### Trade Ideas (Wednesday May 27 — TRADE day, PCE blackout tomorrow)
+
+**1. BUY FCX — ~280sh @~$64-65 (CONFIRMED from prior session)**
+- Catalyst: Materials #1 sector (+22% YTD); Barclays Overweight $77 PT (initiated); $3B credit facility; copper structural demand; Q1 revenue beat
+- Sizing: 17% × $105,582 = $17,949 / $65 ≈ **276sh** (adjust at market open)
+- Stop: 10% trailing GTC immediately on fill (~$58.50 floor)
+- Target: $77 Barclays PT → R:R >2:1
+- Entry: Market open or within first 30 min; no blocker (no BMO earnings today)
+- Week count: Buy #1
+
+**2. BUY SOXX — ~31sh @~$575 (CONFIRMED from prior session)**
+- Catalyst: AI capex cycle intact; MU +19%, SOXX at 52-week highs; MRVL AMC tonight may add tailwind; RS #1 sector ETF
+- Sizing: 17% × $105,582 = $17,949 / $577 ≈ **31sh**
+- Stop: 10% trailing GTC immediately on fill (~$519 floor)
+- Target: +20% = ~$692 → R:R 2:1
+- Entry: Assess first 15-30 min; enter if gap is orderly (<+5% from prior close); do NOT chase if SOXX opens >+8%
+- Week count: Buy #2
+
+**Post-entries deployment estimate:**
+- FCX: ~276sh × $65 = ~$17,940
+- SOXX: ~31sh × $577 = ~$17,887
+- New entries total: ~$35,827
+- Deployed post-entries: $57,399 + $35,827 = **$93,226 / $105,582 = 88.3%** — above 85% cap; unavoidable with 5-position 17% minimum sizing; acceptable this week
+
+**3. AMD +15% TIGHTEN WATCH (active monitor)**
+- Trigger: $509.89 (entry $443.38 × 1.15); HWM $506.96 → 0.58% gap
+- Action if triggered: Cancel order a2f1f030; place 7% trailing stop GTC on 40 AMD
+- AMD closed $503.90 May 26; may test $509.89 today given broad strength
+
+### Risk Factors
+- SOXX at all-time highs on gap-up momentum — buy-the-news risk; assess open before committing
+- PCE + GDP Thu May 28: if hot print → tech/semis sell-off; both new positions immediately exposed
+- Deployment 88.3% post-entries (above 85% cap) — no buffer for a 6th position; acceptable
+- AMD above old consensus target ($410); Goldman/Bernstein upgrades partially offset; stop managing the risk
+- Iran peace deal collapse risk — risk premium could return, reversing today's bid
+- MRVL AMC tonight: miss could weigh on semis Thursday, but Thursday blackout means no action available regardless
+
+### Decision
+**TRADE — Execute FCX + SOXX entries today (last window before PCE blackout Thu May 28)**
+- FCX: ~276sh @~$65; 10% trailing stop GTC immediately on fill
+- SOXX: ~31sh @~$577; 10% trailing stop GTC immediately on fill; assess first 15-30 min
+- AMD: Monitor $509.89 tighten trigger; if hit → cancel a2f1f030, place 7% trailing GTC
+- CAT: HOLD to stop; no action
+- XLK: HOLD to stop; no action
+- Thursday May 28: NO entries (PCE + GDP blackout)
