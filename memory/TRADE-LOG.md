@@ -1221,3 +1221,50 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **Deployment 54.4% — below 75% floor:** FCX (~285sh @~$62, Materials) + SOXX (~31-32sh @~$560, Semis) both Wednesday per prior decision — still confirmed? PCE Thursday blackout means both must execute by Wed close.
 3. **CAT at +1.78% after 22 days held:** Recovering but lagging vs AMD/XLK. Stop buffer 7.84% ($908.55 vs $838.215). Hold to stop or exit proactively for a stronger name?
 4. **Week budget 0/3, 3 days remaining (Wed-Fri):** FCX + SOXX = 2 slots. Reserve 3rd slot or opportunistically deploy post-PCE Friday if a strong setup appears?
+
+---
+
+## 2026-05-27 — Market-Open Execution (Wednesday, Week 5, Day 24)
+
+**Week trade count: 0/3** (no new buys — stop tighten only; both planned entries blocked by hard-check rules)
+
+**AMD STOP TIGHTENED (10% → 7%):**
+
+| Action | Detail |
+|--------|--------|
+| Cancelled 10% stop | a2f1f030 — HWM $510.07, stop $459.063 — deleted |
+| New 7% stop placed | 96cbc82c — sell 40sh AMD trailing_stop 7% GTC |
+| HWM | $502.955 (at time of new order placement) |
+| New stop | $467.748 (locks in +$24.37/sh = +5.5% from entry $443.38) |
+| Trigger | +15% rule: entry $443.38 × 1.15 = $509.887 — AMD HWM today $510.07 = threshold exceeded |
+| Authorized by | User auto-confirm (EOD 2026-05-25 decisions) |
+
+**SOXX — SKIPPED (sector cap violation):**
+- AMD (Technology) + XLK (Technology) = 2/2 sector cap already filled
+- SOXX (Semiconductors/Technology) = 3rd tech position → HARD RULE VIOLATION
+- Same block as 2026-05-20 research ("SOXX is Technology/Semiconductors = 3rd tech position → NOT ELIGIBLE")
+- User pre-confirmed SOXX entry on 2026-05-25 but sector cap hard rule takes precedence
+- **Action needed:** Exit AMD or XLK to open a tech slot, then SOXX can enter; OR explicitly add SOXX as sector-cap exception in strategy rules
+
+**FCX — SKIPPED (R:R fails at live quote):**
+- Live quote: bid $60.59 / ask $67.62 ($7.03 spread — anomalously wide, same pattern as May 6 skip)
+- At ask $67.62: analyst avg PT $65.72 = NEGATIVE reward — fails 2:1 requirement
+- At ask $67.62: MS target $81 = ($81-$67.62) / $6.76 = 1.98:1 — still below 2:1 minimum
+- Research planned entry at ~$62; live ask $5.62 higher = thesis price invalidated
+- Same decision as 2026-05-06: "R:R fails 2:1 minimum. No order placed."
+
+**Position status at market-open 2026-05-27:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $505.25 | +$2,474.80 (+13.95%) | +0.27% | **7% trail** HWM $502.955 / stop $467.748 (TIGHTENED) |
+| CAT | 20 | $892.689 | $902.15 | +$189.22 (+1.06%) | -0.70% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $185.54 | +$1,034.74 (+5.72%) | +0.22% | 10% trail HWM $186.265 / stop $167.639 (auto-trailed) |
+
+**Account:** Equity $105,540 | Cash $48,182.67 (45.6%) | Deployed $57,363 (54.4%, 3 positions) | DT count: 0 | Phase P&L: +$5,540 (+5.54%) | Week buys: 0/3
+
+**⚠️ DEPLOYMENT WARNING:** 54.4% deployed — below 75% floor. Both planned entries blocked. User input needed on SOXX sector-cap conflict before next window (PCE blackout Thursday May 28 = no new entries until Friday post-PCE or next week).
+
+**Open Orders (market-open 2026-05-27):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $502.955, stop $467.748 (TIGHTENED)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.265, stop $167.639 (auto-trailed)
