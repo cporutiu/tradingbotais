@@ -1268,3 +1268,41 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $502.955, stop $467.748 (TIGHTENED)
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.265, stop $167.639 (auto-trailed)
+
+---
+
+## Midday 2026-05-27 (Wednesday, Week 5, Day 24)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $493.44 | +$2,002.40 (+11.29%) | -2.07% | **7% trail** HWM $504.71 / stop $469.38 (auto-trailed ↑) |
+| CAT | 20 | $892.689 | $907.74 | +$300.92 (+1.69%) | -0.09% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $183.76 | +$851.40 (+4.71%) | -0.75% | 10% trail HWM $186.265 / stop $167.639 (locked) |
+
+**Losers cut:** None. No position at ≤-7%: AMD +11.29%, CAT +1.69%, XLK +4.71%.
+
+**Stop tightening:** None manual required.
+- AMD: HWM auto-trailed from $502.955 → $504.71 (AMD ran up briefly after 7% stop placement this morning); stop $467.748 → $469.38. Next tighten trigger: +20% = $532.06 (current $493.44 = 7.8% away).
+- CAT/XLK: stops locked (price below HWM on both).
+
+**Thesis check:**
+- AMD: Normal -2.07% pullback after yesterday's +7.78% surge. AI hardware demand intact (NVDA beat, Evercore ISI PT $579). 7% trail ($469.38) provides 5.1% buffer from $493.44. **HOLD.**
+- CAT: Flat -0.09% at $907.74 (+1.69% from entry). ISM expansion + $63B backlog intact. Stop buffer 7.6% ($907.74 vs $838.215). No thesis break. **HOLD.**
+- XLK: Mild -0.75% to $183.76 (+4.71% from entry). Broad tech consolidation post-NVDA-beat rally. Thesis intact. **HOLD.**
+
+**Intraday research:** None triggered. AMD pullback is normal consolidation; no unexplained moves across any position.
+
+**Portfolio:** Equity ~$105,035 | Cash $48,183 (45.9%) | Deployed ~$56,820 (54.1%, 3 positions) | Phase P&L: +$5,035 (+5.04%) | Week buy count: 0/3
+**PCE blackout Thursday May 28 8:30 AM ET — no new entries tomorrow.** Next entry window: Friday May 29 post-PCE (if benign) or Monday June 1.
+
+**Deployment note:** 54.1% deployed — below 75% floor. SOXX blocked (sector cap; AMD + XLK = 2/2 tech slots); FCX blocked (R:R fail — live ask $67.62, analyst PT $65.72 = negative reward). **User input required on SOXX resolution before Friday window:**
+- Option A: Exit XLK (underperforming vs SOXX RS #7 vs #1), enter SOXX to upgrade the tech slot
+- Option B: Exit AMD to open a tech slot (stops-out AMD at +11.3% floor vs SOXX entry)
+- Option C: Explicitly add SOXX as sector-cap exception in strategy rules (2 ETFs don't compete)
+- FCX: keep watching for spread to normalize (has anomalously wide bid/ask twice now)
+
+**Open Orders (midday 2026-05-27):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $504.71, stop $469.38 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.265, stop $167.639 (locked)
