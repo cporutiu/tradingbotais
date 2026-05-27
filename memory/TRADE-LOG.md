@@ -1306,3 +1306,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $504.71, stop $469.38 (auto-trailed ↑)
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.265, stop $167.639 (locked)
+
+---
+
+## Day 24 — EOD Snapshot (May 27, Wednesday)
+**Portfolio:** $105,120.61 | **Cash:** $48,182.67 (45.8%) | **Day P&L:** -$461.60 (-0.44%) | **Phase P&L:** +$5,120.61 (+5.12%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 40 | $443.38 | $495.05 | -1.75% | +$2,066.80 (+11.65%) | 7% trail (HWM $504.71 / stop $469.38) |
+| CAT | 20 | $892.689 | $910.29 | +0.19% | +$351.94 (+1.97%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| XLK | 103 | $175.494 | $183.79 | -0.73% | +$854.34 (+4.73%) | 10% trail (HWM $186.265 / stop $167.64) locked |
+
+**Notes:** Day 24, Wednesday. AMD stop tightened to 7% trail at market-open per user auto-confirm (HWM hit $510.07, threshold $509.89 exceeded). Both planned entries blocked: FCX (R:R fail — live ask $67.62, analyst PT $65.72 = negative reward, same as May 6 skip); SOXX (sector cap — AMD + XLK = 2/2 tech slots filled, SOXX = 3rd tech = hard rule violation). Portfolio -$461.60 (-0.44%): AMD pulled back -1.75% to $495.05 after yesterday's +7.78% surge (+11.65% from entry, 7% stop $469.38, HWM $504.71); CAT edged up +0.19% to $910.29 (+1.97% from entry, 10% stop $838.215 locked at HWM $931.35); XLK -0.73% to $183.79 (+4.73% from entry, stop $167.64 locked). Deployment 54.2% — critically below 75% floor. PCE blackout Thursday May 28 — no new entries tomorrow. Next window: Friday May 29 post-PCE (if benign). Week buy count: 0/3.
+
+**Open Orders (EOD 2026-05-27):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $504.71, stop $469.38 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.265, stop $167.64 (locked)
+
+**Action questions:**
+1. **SOXX sector-cap resolution (deployment 54.2%):** AMD + XLK = 2/2 tech slots; SOXX blocked as 3rd tech position. Options: **(A) Exit XLK** (RS #3 — SOXX RS #1, upgrade same dollar size), **(B) Add SOXX as sector-cap exception** (ETFs don't compete with single stocks; same sector but different instrument class). PCE Thursday blocks; Friday window available post-PCE. Which?
+2. **CAT persistence (+1.97% after 22 days from May 5 entry):** Rule 12 5-week exit trigger = June 5. Stop buffer 8.2% ($910.29 vs $838.215). No thesis break but weakest ROI. Exit proactively to free capital for higher-conviction name, or hold to 5-week rule?
+3. **Deployment 54.2% (<75% floor) — fallback candidate:** If SOXX remains blocked and FCX spread stays anomalous, what is the 5th position? GLD (safe haven macro hedge)? Other sector? Or accept sub-75% until SOXX resolved?
+4. **Week budget 0/3, 2 days remaining (Fri + next week):** If SOXX resolution confirmed: enter Friday post-PCE (~$19-20K SOXX or replacement), or wait for Monday open confirmation?
