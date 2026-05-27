@@ -2098,3 +2098,130 @@ No user decisions block found. EOD May 20 action questions remain open. Carrying
 - **Sector context:** Broad Nasdaq up; AI capex cycle intact post-NVDA + QCOM beats
 
 **Conclusion:** Move is thesis-driven, not noise. No exit rationale. AMD +15% tighten threshold ($510.39) 2.71% away — monitor into close. HOLD confirmed.
+
+---
+
+## 2026-05-27 — Pre-Market Research (Wednesday, Week 5, Day 24)
+
+### Account Snapshot
+- **Equity:** $106,111.86 | **Cash:** $48,182.67 (45.4%) | **Deployed:** $57,929.19 (54.6%, 3 positions)
+- **Phase P&L:** +$6,111.86 (+6.11%) | **Week buys:** 0/3 | **DT count:** 0
+- **AMD +15% TIGHTEN TRIGGER CROSSED:** Current $510.40 vs threshold $509.89 — action required NOW
+
+| Ticker | Shares | Entry | Current | Unrealized | Stop |
+|--------|--------|-------|---------|------------|------|
+| AMD | 40 | $443.38 | $510.40 | +$2,680.80 (+15.1%) | 10% trail HWM $506.96 / stop $456.264 → **TIGHTEN TO 7% TODAY** |
+| CAT | 20 | $892.689 | $914.00 | +$426.22 (+2.39%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $186.73 | +$1,157.31 (+6.41%) | 10% trail HWM $186.00 / stop $167.40 (auto-trailed) |
+
+### Market Context
+- **WTI:** $91.96/bbl | **Brent:** $98.00/bbl — oil below $95-96 exit trigger (XOM already exited; no new energy position)
+- **S&P 500 futures (ESM26):** ~7,538-7,544 (record territory, +0.6% slightly positive)
+- **VIX:** 16.59 (May 25 close) — LOW risk zone (< 18); market_risk = **low**
+- **Economic cycle:** Mid-cycle
+
+### Economic Calendar Today (May 27)
+- **GDP 2nd estimate Q1 2026:** 3.7% actual (vs 4.5% prior — significant downward revision; economy decelerating)
+- **Non-defense capital goods orders ex-air:** +3.4% actual (huge beat vs +0.5% est — capex surge, bullish for tech/industrials)
+- **Durable Goods ex-transport:** +0.9% actual (beat vs 0.5% est)
+- **Jobless Claims:** 209K actual (beats 215K est — labor market tight)
+- **Richmond Fed Mfg (9am):** TBD
+- NO CPI/PPI/FOMC today
+- **⚠️ PCE (Personal Income and Outlays April 2026): CONFIRMED Thursday May 28 8:30am ET — hard blackout stands. All entries by today COB.**
+
+### Benzinga Signals (24h lookback)
+- **BUYs (high):** QQQ (score +10, 13 mentions), NVDA (score +5, 29 mentions), IWM (score +4, 6 mentions), AVGO (score +3, 4 mentions)
+- **BUYs (medium):** SOXX (score +2, 6 mentions), XLK (+2), GLD (+2), SLV (+2), XLE (+2)
+- **SELLs (high):** AMD (score -3, 14 mentions — "Jensen Huang declares China very important" = China competition noise, not demand collapse)
+- **FCX:** HOLD low confidence
+- **Held names: AMD = Benzinga SELL high (contradicted by fundamentals — see Perplexity below)**
+
+### Congress Signals
+- **BUY high (PRIORITY):** FCX — Josh Gottheimer PURCHASE 2026-04-15 filed 2026-05-19
+- **BUY high:** AMD — Josh Gottheimer x2 + Cisneros (already held — confirms hold)
+- **SELL high:** NVDA — 5 sells vs 2 buys (Daniel Meuser, E. Fletcher, G. Cisneros, J. Boozman, J. McGuire, T. Moore)
+- **SELL high:** AVGO — 3 sells vs 1 buy (D.J. Taylor, Moskowitz, Capito)
+- **SELL medium:** CAT — Moskowitz SALE 2026-03-31 (old, low signal)
+
+### Confluent Signals
+- **None.** AVGO = Benzinga BUY high vs Congress SELL high → contradicted, skip.
+- FCX = Congress-only BUY (Benzinga neutral) — lower conviction but user confirmed.
+
+### Perplexity Validation
+
+**AMD ($510.40 — +15.1% from entry, TIGHTEN TRIGGER CROSSED):**
+- Benzinga SELL high (China AI competition) is NOT confirmed by fundamentals
+- TSMC Q1 +40.6% YoY, AMD Data Center +57% Q1, OpenAI/Meta multi-billion partnerships active
+- Consensus: 34 analysts BUY, avg target $405-$579; Evercore ISI $579 Outperform (unchanged)
+- AI spending slowdown: NO current evidence; capex still accelerating
+- **Decision: Benzinga SELL is noise. Tighten AMD to 7% trail as planned. Thesis intact.**
+
+**SOXX (~$574 — RS #1):**
+- 78.6% YTD NAV, record ATH; QCOM +11.6% + NVDA beat = semi momentum confirmed
+- AI capex supercycle intact; hedge fund exposure at record highs; Benzinga BUY medium
+- Risks: crowded trade at elevated valuation; capex digestion possible H2 2026
+- **Decision: ENTER today. Confirmed per user decision (Week 5 entry #1).**
+
+**FCX (~$62 — Congress BUY high PRIORITY):**
+- Q1 2026 beat ($0.57 EPS); copper structural demand (AI/grid/EVs/defense); analyst avg target $65.72 (+6%)
+- Risks: Grasberg guidance cut (mudslide fix in progress); Morgan Stanley Equal Weight $66; stock fell -12.6% on Q1 earnings day despite beat
+- Copper momentum: broadly supportive (copper miners +3-4% recently on easing yields); China restocking
+- Congressional buy directionally aligned with copper thesis but stock in "prove-it" phase on execution
+- **Decision: ENTER today. Confirmed per user decision (Week 5 entry #2). Lower conviction.**
+
+**CAT ($914.00 — +2.39% from entry):**
+- Congress SELL medium (old Moskowitz March sale — noise); ISM expansion + $63B backlog intact; recovering above entry
+- Stop $838.215 (8.3% below $914); no thesis break. **HOLD to stop.**
+
+**XLK ($186.73 — +6.41% from entry):**
+- Benzinga BUY medium; RS #7; tech momentum intact; HWM $186.00 exceeded today — stop will auto-trail
+- **HOLD.** XLK tighten threshold: $175.494 × 1.15 = $201.82 — far; 10% trail adequate.
+
+### RS Ranking (20-day, strongest to weakest)
+SOXX #1 > QQQ #2 > XLE #3 > IWM #4 > XLF #5 > XLY #6 > XLK #7 > EEM #8 > XLV #9 > XLI #10 > XLB #11 > XLRE #12 > HYG #13 > SPY #14 > XLP #15 > XLC #16 > XLU #17 > GLD #18 > SLV #19
+
+### Trade Ideas
+
+**1. TIGHTEN AMD 10% → 7% trail (IMMEDIATE):**
+- Trigger crossed: $510.40 > $509.89 (+15% threshold)
+- Cancel order a2f1f030 (HWM $506.96, stop $456.264)
+- Place new 7% trailing stop GTC on 40 AMD
+- New stop at current price: ~$510.40 × 0.93 = ~$474.67 (locks in minimum +7% from current)
+
+**2. ENTER SOXX (~31 shares @~$574 = ~$17.8K, 17% equity):**
+- Catalyst: RS #1, AI capex supercycle, QCOM+NVDA beats, Benzinga BUY medium
+- Stop: 10% trailing GTC immediately on fill (~$516 area)
+- Target: +20% = ~$689 | R:R 2.0:1
+- Entry: assess first 30 min; do NOT chase if gap >+5% from $574
+
+**3. ENTER FCX (~290 shares @~$62 = ~$17.98K, 17% equity):**
+- Catalyst: Congress BUY high (Gottheimer PRIORITY), copper structural demand, Q1 beat
+- Stop: 10% trailing GTC immediately on fill (~$55.80 area)
+- Target: +15% = ~$71.30 | R:R ~1.5:1
+- Entry: after Richmond Fed 9am; enter when market stabilizes
+
+**Post-entry deployment estimate:**
+- AMD ~$20,416 + CAT ~$18,280 + XLK ~$19,233 + SOXX ~$17,800 + FCX ~$17,980 = ~$93,709 / $106,112 = **88.3%**
+- Slightly above 85% cap; acceptable (minimum 17% sizing × 5 positions unavoidable)
+
+### Risk Factors
+1. **GDP 3.7% (vs 4.5% prior):** Growth deceleration — cyclicals (FCX) most exposed; watch ISM
+2. **PCE Thursday May 28 8:30am:** Hard blackout — all entries MUST complete by today COB
+3. **AMD Benzinga SELL high:** Noise (China AI fear); tightened trail mitigates; AMD at ATH
+4. **SOXX at 78.6% YTD ATH:** Crowded trade; 10% trail is the exit discipline
+5. **FCX Grasberg execution:** Limited near-term catalyst; Grasberg throughput confirmation needed H2 2026
+6. **GDP slowdown + hot PCE MoM (from GDP):** Mixed signal — growth slowing but inflation sticky
+
+### Decision
+**TRADE — 3 actions today (all must complete by COB; PCE Thursday blackout):**
+1. Tighten AMD: cancel a2f1f030, place 7% trailing stop GTC on 40 AMD
+2. Enter SOXX: ~31 shares @~$574, 10% trail GTC
+3. Enter FCX: ~290 shares @~$62, 10% trail GTC
+Week budget after: 2/3 slots used; 1 slot remains for Friday (post-PCE)
+
+### Active Watch Items
+- **AMD tighten:** IMMEDIATE — HWM has auto-trailed since yesterday; cancel old order, place 7% trail
+- **SOXX open price:** Assess first 30 min; QCOM-driven momentum may gap; do not chase
+- **FCX entry:** Post-Richmond Fed (9am); copper momentum supporting; enter on stable open
+- **PCE Thursday May 28 8:30am:** Hard blackout — no new entries Thursday
+- **XLK HWM:** Price $186.73 > HWM $186.00 — verify stop auto-trailed in orders today
