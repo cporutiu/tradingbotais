@@ -1392,3 +1392,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $527.20, stop $490.30 (auto-trailed ↑)
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $187.57, stop $168.813 (auto-trailed ↑)
+
+---
+
+## Day 25 — EOD Snapshot (May 28, Thursday)
+**Portfolio:** $105,907.28 | **Cash:** $48,182.67 (45.5%) | **Day P&L:** +$786.67 (+0.75%) | **Phase P&L:** +$5,907.28 (+5.91%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 40 | $443.38 | $518.09 | +4.55% | +$2,988.40 (+16.85%) | 7% trail (HWM $527.20 / stop $490.30) |
+| CAT | 20 | $892.689 | $887.67 | -2.45% | -$100.38 (-0.56%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| XLK | 103 | $175.494 | $186.87 | +1.32% | +$1,171.73 (+6.48%) | 10% trail (HWM $187.58 / stop $168.822) |
+
+**Notes:** Day 25, Thursday. PCE blackout observed — no new entries. AMD surged intraday to HWM $527.20 then pulled back to close $518.09 (+16.85% from entry); 7% trail stop auto-moved to $490.30. +20% tighten trigger ($443.38 × 1.20 = $532.056) is $4.86 above current HWM — imminent for Friday. CAT dropped -2.45% to $887.67, crossing into negative territory (-$100.38, -0.56% from entry); stop $838.215 locked 5.6% below close; 5-week rule triggers June 5. XLK +1.32% to $186.87 (+6.48%); HWM $187.58, stop $168.822. Deployment 54.5% — below 75% floor. PCE blackout lifts for Friday; CVX candidate (~103sh ~$20K) pending user go/no-go. Week count 0/3.
+
+**Open Orders (EOD 2026-05-28):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $527.20, stop $490.30 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $187.58, stop $168.822 (auto-trailed ↑)
+
+**Action questions:**
+1. **AMD +20% tighten imminent:** HWM $527.20 vs trigger $532.056 — only $4.86 away. Pre-authorize: on any open/intraday move past $532.056, cancel 96cbc82c and replace with 5% trailing GTC? Or handle manually at market-open?
+2. **CAT turned negative (-0.56% from entry, -2.45% today):** 5-week rule = June 5 (8 days). Thesis intact (ISM expansion, $63B backlog) but price action weakening two straight sessions. **Exit CAT proactively to redeploy capital, or hold to 5-week rule?**
+3. **Deployment 54.5% (<75% floor):** PCE blackout lifted. CVX next candidate (~103sh). Enter Friday post-open, or wait for Monday confirmation signal?
+4. **SOXX resolution (open from May 27):** AMD + XLK = 2/2 tech slots; SOXX blocked as 3rd tech. **(A) Exit XLK → enter SOXX** (upgrade to RS #1), or **(B) Declare ETFs don't count against sector cap** (add rule exception)?
