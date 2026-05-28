@@ -1330,3 +1330,65 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **CAT persistence (+1.97% after 22 days from May 5 entry):** Rule 12 5-week exit trigger = June 5. Stop buffer 8.2% ($910.29 vs $838.215). No thesis break but weakest ROI. Exit proactively to free capital for higher-conviction name, or hold to 5-week rule?
 3. **Deployment 54.2% (<75% floor) — fallback candidate:** If SOXX remains blocked and FCX spread stays anomalous, what is the 5th position? GLD (safe haven macro hedge)? Other sector? Or accept sub-75% until SOXX resolved?
 4. **Week budget 0/3, 2 days remaining (Fri + next week):** If SOXX resolution confirmed: enter Friday post-PCE (~$19-20K SOXX or replacement), or wait for Monday open confirmation?
+
+---
+
+## Market-Open 2026-05-28 (Thursday, Week 5, Day 25 — PCE BLACKOUT)
+
+**No trades — PCE April 2026 8:30 AM ET = named blocker; blackout in effect.**
+
+- **Equity:** $105,446.43 | **Cash:** $48,182.67 (45.7%) | **Deployed:** $57,263.76 (54.3%) | **DT count:** 0 | **Phase P&L:** +$5,446.43 (+5.45%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $505.73 | +$2,494.00 (+14.06%) | +2.06% | **7% trail** HWM $506.20 / stop $470.77 (auto-trailed ↑ from $469.38) |
+| CAT | 20 | $892.689 | $897.50 | +$96.22 (+0.54%) | -1.37% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $185.32 | +$1,012.08 (+5.60%) | +0.48% | 10% trail HWM $186.265 / stop $167.64 (locked) |
+
+- **AMD:** HWM auto-trailed from $504.71 → $506.20 on open surge; stop from $469.38 → $470.77. AMD at $505.73 — just below new HWM (locked). +20% tighten trigger $532.06 = 5.2% away, not imminent.
+- **CAT:** -1.37% today to $897.50 (+0.54% from entry). Stop locked at HWM $931.35 / stop $838.215. 6.6% buffer from current. June 5 five-week rule = 8 days. No thesis break.
+- **XLK:** +0.48% today to $185.32 (+5.60% from entry). Stop locked at HWM $186.265 / stop $167.64. Thesis intact.
+- **PCE result:** Released 8:30 AM ET today. Perplexity could not confirm April 2026 actuals (BEA only through March). Market reaction (AMD +2.06%, XLK +0.48%) suggests benign / not shock-to-upside. Friday entry decision for CVX requires PCE ≤3.5% YoY — will confirm at EOD/midday.
+- **Losers cut:** None (-7% not breached: AMD +14.06%, CAT +0.54%, XLK +5.60%)
+- **Stop tightening:** None (+20% trigger AMD $532.06 not reached; CAT/XLK far from +15%)
+- **Thesis break:** None. All 3 intact.
+- **Week count:** 0/3. **Next entry window: Friday post-PCE confirmation (CVX ~103sh if PCE ≤3.5%).**
+
+**Open Orders (market-open 2026-05-28):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $506.20, stop $470.77 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $186.265, stop $167.64 (locked)
+
+---
+
+## Midday 2026-05-28 (Thursday, PCE Blackout, Week 5, Day 25)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $522.09 | +$3,148.40 (+17.75%) | +5.36% | **7% trail** HWM $527.20 / stop $490.30 (auto-trailed ↑) |
+| CAT | 20 | $892.689 | $901.76 | +$181.42 (+1.02%) | -0.90% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $187.53 | +$1,239.71 (+6.86%) | +1.68% | 10% trail HWM $187.57 / stop $168.813 (auto-trailed ↑) |
+
+**Losers cut:** None. No position at ≤-7%: AMD +17.75%, CAT +1.02%, XLK +6.86%.
+
+**Stop tightening:** None manual required yet.
+- AMD: HWM auto-trailed from $506.20 → $527.20 on intraday surge (+5.36%); stop from $470.77 → $490.30. **⚠️ +20% tighten trigger $532.056 ($443.38 × 1.20) — HWM $527.20 = only 0.92% away. IMMINENT. Cancel 96cbc82c and place 5% trailing GTC when HWM hits $532.056.**
+- XLK: HWM auto-trailed from $186.265 → $187.57; stop from $167.64 → $168.813.
+- CAT: stop locked (price below HWM — no trail update).
+
+**Thesis check:**
+- AMD: +17.75% — AI hardware demand momentum intact; NVDA Q1 beat confirms demand chain; Evercore ISI PT $579 remains upside target. **HOLD. Monitor for $532.056 tighten trigger.**
+- CAT: +1.02% from entry; -0.90% intraday on mild profit-taking/risk-off. ISM expansion + $63B backlog intact. Stop buffer 7.0% ($901.76 vs $838.215). No thesis break. **HOLD.**
+- XLK: +6.86% — broad tech bid; new intraday HWM $187.57; AI momentum intact. **HOLD.**
+
+**Intraday research (STEP 6):** None triggered. AMD +5.36% intraday is consistent with AI hardware sector momentum (NVDA beat tailwind; no single new catalyst needed). No unexplained sharp moves across any position.
+
+**No new entries — PCE April 2026 blackout in effect (8:30 AM ET named blocker).** Next window: Friday May 29 post-PCE reaction.
+
+**Portfolio:** Equity ~$106,413 | Cash $48,183 (45.3%) | Deployed ~$58,234 (54.7%, 3 positions) | Phase P&L: +$6,413 (+6.41%) | Week buy count: 0/3
+
+**Open Orders (midday 2026-05-28):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $527.20, stop $490.30 (auto-trailed ↑)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $187.57, stop $168.813 (auto-trailed ↑)
