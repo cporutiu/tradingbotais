@@ -2225,3 +2225,127 @@ Week budget after: 2/3 slots used; 1 slot remains for Friday (post-PCE)
 - **FCX entry:** Post-Richmond Fed (9am); copper momentum supporting; enter on stable open
 - **PCE Thursday May 28 8:30am:** Hard blackout — no new entries Thursday
 - **XLK HWM:** Price $186.73 > HWM $186.00 — verify stop auto-trailed in orders today
+
+---
+
+## Pre-Market Research 2026-05-28 (Thursday, Week 5, Day 25)
+
+### Account Snapshot
+| Field | Value |
+|-------|-------|
+| Equity | $104,568.13 |
+| Cash | $48,182.67 (46.1%) |
+| Deployed | $56,385.46 (53.9%) |
+| Long positions | 3 (AMD, CAT, XLK) |
+| DT count | 0 |
+| Week buys | 0/3 |
+
+| Ticker | Shares | Entry | Pre-market | Unreal P&L | Stop |
+|--------|--------|-------|------------|------------|------|
+| AMD | 40 | $443.38 | $487.31 | +$1,757 (+9.91%) | 7% trail HWM $504.71 / stop $469.38 |
+| CAT | 20 | $892.69 | $902.00 | +$186 (+1.04%) | 10% trail HWM $931.35 / stop $838.215 |
+| XLK | 103 | $175.49 | $183.04 | +$777 (+4.30%) | 10% trail HWM $186.265 / stop $167.64 |
+
+### Market Context
+- **Oil:** WTI ~$92-94/bbl, Brent ~$97-100/bbl (+2-4% today). Iran/Hormuz crisis ongoing since Feb 28 — strait de facto closed. US struck Iranian military site near Hormuz overnight. No deal in sight. Dallas Fed model: Hormuz closure removes ~20% global supply, WTI ~$98.
+- **S&P 500 futures:** ESM6 7,532.25 -7.75 (-0.10%) — essentially flat pre-PCE.
+- **VIX:** ~17-18 (June VIX futures 18.25, +2.47%); risk = medium.
+- **PCE April data:** Releasing TODAY 8:30am ET. Prior: Core PCE March +3.2% YoY; U of Michigan notes core ran at 4.3% annualized Dec 2025-March 2026. Consensus ~3.3% YoY. HOT print (>3.5%) = risk-off tech/growth selloff.
+- **Earnings BMO:** RBC Royal Bank (RY) — not portfolio-relevant.
+- **Cycle stage:** late-cycle. LEI fragile, elevated recession risk, no baseline recession.
+- **RS Ranking (20-day):** SOXX #1 > QQQ #2 > XLK #3 > XLY #4 > XLC #5 > IWM #6 > XLF #7 > XLI #8 > XLV #9 > XLB #10 > XLE #11 > SPY #12 > HYG #13 > EEM #14 > XLP #15 > XLRE #16 > XLU #17 > GLD #18 > SLV #19
+  - Note: XLE RS #11 despite YTD energy leadership — recent tech rally dominated 20-day window. Iran catalyst may shift energy RS higher from here.
+
+### Benzinga Signals
+- **BUY high:** SPY, QQQ, CVX ("Gold Falls To Two-Month Low As Iran War Fears Send Oil Prices, Dollar Climbing")
+- **BUY medium:** NVDA, XOM
+- **SELL high:** GLD (gold dropped as dollar/oil spiked on Iran fears), IWM (small cap underperformance in stagflation)
+- All other watchlist tickers: HOLD or no_mention.
+
+**BENZINGA_BUYS (actionable):** CVX (high), XOM (medium), NVDA (medium)
+
+### Congress Signals
+- **BUY high [PRIORITY]:** FCX — Josh Gottheimer PURCHASE Apr 15 (filed May 19)
+- **BUY high [PRIORITY]:** AMD — Josh Gottheimer PURCHASE Apr 23 + Apr 27 (filed May 19); Gilbert Cisneros PURCHASE Apr 14 (filed May 8) — already held, confirms thesis
+- **SELL high:** NVDA — Meuser SALE Apr 24 + Cisneros SALE Apr 14 (net sell despite some purchases)
+- **SELL high:** AVGO — Capito SALE (partial) Apr 13; Taylor SALE x2 Apr 27
+- **SELL medium:** CAT — Moskowitz SALE Mar 31 (old noise, previously noted)
+
+**CONGRESS_BUYS (actionable):** FCX (high), AMD (high — already held)
+**CONGRESS_SELLS (notable):** AVGO (high — not held, informational only)
+
+**Confluent signals:**
+- AMD: Congress BUY high — held, thesis confirmed
+- CVX: Benzinga BUY high + Iran macro catalyst directly confirmed — ELEVATED CONVICTION
+- NVDA: CONFLICTING (Benzinga BUY medium vs Congress SELL high) — neutral, no action
+
+### Perplexity Validation
+
+**CVX (~$182-183):**
+- Iran/Hormuz directly confirmed: CEO Wirth warned Strait closure = global oil shortage. Q1 EPS beat +$0.44; upstream profit +29% on 21% crude price rise.
+- Street: 42 analysts, Strong Buy, median PT $220 (~+21% from $182). JPM, Stifel, DA Davidson all constructive.
+- Permian/Guyana expansion active. LNG = stable cash engine. Integrated structure captures upstream spike.
+- **Benzinga BUY high confirmed. CVX = cleanest entry for Friday post-PCE.**
+
+**AMD ($487.31 — +9.91% from entry):**
+- Q1 revenue $10.3B, Q2 guide $11.2B (+46% YoY). AI data center demand intact.
+- Support $470.53, resistance $511-512. Stop $469.38 at ~3.7% buffer — watch PCE-driven selloff.
+- HSBC downgraded to Hold on valuation (~33x out-year EPS). BofA/DA Davidson still Buy. Congress BUY high aligns.
+- **HOLD — 7% trail manages downside. If stop triggered, locks +$1,040 minimum gain.**
+
+**CAT ($902.00 — +1.04% from entry):**
+- Morgan Stanley doubled PT to $915 (EW). JPMorgan PT $1,125 (OW). Q1 rev +22% to $17.4B, EPS $5.54 beat 20%.
+- Data center power gen + mining equipment + IIJA construction = structural thesis intact.
+- Congress SELL medium (Moskowitz March) = stale noise. **HOLD — June 5 five-week rule is 8 days away.**
+
+**XLK ($183.04 — +4.30% from entry):**
+- RS #3 on 20-day. Tech momentum intact. PCE risk: hot print could trigger risk-off tech rotation.
+- Stop $167.64 (8.4% buffer). **HOLD pending PCE reaction.**
+
+**NVDA (~$220 range):**
+- BofA PT $320 (Buy). TD Cowen conference today. Congress SELL high = stale old trades.
+- Not held. Blocked by tech sector cap (AMD+XLK = 2/2). Not actionable until cap resolved.
+
+### Trade Ideas
+
+**1. ENTER CVX Friday post-PCE (HIGH CONVICTION — primary Friday target):**
+- Catalyst: Iran/Hormuz crisis = structural oil supply shock + Benzinga BUY high + CEO warned shortage + Q1 beat + PT $220.
+- Sector: Energy — no sector cap conflict (AMD=Tech, CAT=Industrials, XLK=Tech).
+- Sizing: ~103 shares @~$183 = ~$18,849 (~18% of $104,568 equity).
+- Stop: 10% trailing GTC immediately on fill (~$165 area).
+- Target: $220 analyst median = +20%; R:R ~2:1.
+- Entry condition: Core PCE April ≤3.5% YoY. If >3.5%, assess Monday.
+- Post-entry deployed: $56,385 + $18,849 = $75,234 / $104,568 = 71.9%.
+
+**2. SOXX/XLK resolution (pending user decision from May 27 EOD questions):**
+- SOXX RS #1 vs XLK RS #3. Sector cap: AMD+XLK = 2/2 tech slots.
+- Option A: Exit XLK (RS #3), enter SOXX (RS #1) — upgrades tech slot; capital neutral.
+- Option B: Enter CVX only on Friday (fills 1 slot, brings to ~72%); revisit SOXX/XLK on Monday with PCE clarity.
+- PCE result informs: if hot print, both XLK and SOXX could be hit — may favor Option B.
+
+**3. FCX (WATCH — no entry yet):**
+- Congress BUY high (Gottheimer). Copper structural demand + grid/AI/EV buildout.
+- Monitor bid/ask spread normalization. R:R invalid at prior ask $67.62 (analyst PT $65.72 = negative reward).
+- Recheck spread on Monday; re-evaluate if spread tightens and price dips to ~$62 entry zone.
+
+### Risk Factors
+1. **PCE print 8:30am ET (PRIMARY):** Core PCE consensus ~3.3%. University of Michigan analysis: 4.3% annualized Dec-March. Hot >3.5% = tech selloff + AMD stop test at $469.38 (3.7% buffer).
+2. **Iran/Hormuz escalation:** US overnight strikes near Hormuz. Stalled talks. Oil risk premium elevated. Stagflation = defensive rotation away from growth.
+3. **AMD stop proximity ($469.38 = 3.7% buffer):** PCE-driven move could trigger stop. If triggered: +$1,040 minimum locked-in gain on 40sh. Frees capital for CVX/SOXX.
+4. **Deployment 53.9% below 75% floor:** Wednesday urgency rule triggered (≥2 slots unused + deployed <60% at Wednesday close). PCE exception applies Thursday. 1 entry required Friday minimum.
+5. **CAT June 5 five-week exit:** 8 days. No thesis break, but rule is mechanical — exit regardless of stop proximity if price below entry at June 5.
+
+### Decision
+**HOLD all positions today — PCE BLACKOUT, no new entries Thursday.**
+- PCE 8:30am is the binary decision point for Friday entries.
+- Friday primary plan: **Enter CVX ~103sh @~$183, 10% trail GTC** if core PCE ≤3.5%.
+- Friday secondary: User decision needed on SOXX/XLK resolution for second slot.
+- Week budget remaining: 3/3 slots open. 2 days (Fri + carry to Mon).
+
+### Active Watch Items
+- **PCE 8:30am ET today** — Core result determines Friday. ≤3.5% = green light for CVX. >3.5% = wait and reassess Monday.
+- **AMD stop $469.38** — 3.7% buffer from $487.31. Monitor intraday on PCE release.
+- **CVX Friday plan** — ~103sh @~$183, Energy sector, 10% trail GTC post-PCE.
+- **SOXX action question** — EOD questions from May 27 still unanswered (SOXX sector-cap, CAT proactive exit, fallback candidate, week budget timing).
+- **CAT June 5 timer** — 8 days to 5-week rule trigger. Thesis intact but clock is ticking.
+- **FCX spread** — Monitor normalization; re-evaluate if ask approaches $62 zone.
