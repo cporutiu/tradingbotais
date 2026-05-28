@@ -2225,3 +2225,86 @@ Week budget after: 2/3 slots used; 1 slot remains for Friday (post-PCE)
 - **FCX entry:** Post-Richmond Fed (9am); copper momentum supporting; enter on stable open
 - **PCE Thursday May 28 8:30am:** Hard blackout — no new entries Thursday
 - **XLK HWM:** Price $186.73 > HWM $186.00 — verify stop auto-trailed in orders today
+
+---
+
+## 2026-05-28 — Pre-Market Research (Thursday, Week 5, Day 25)
+
+### Account Snapshot (from EOD May 27 — Alpaca API blocked from cloud IP; live data unavailable)
+- **Equity:** $105,120.61 | **Cash:** $48,182.67 (45.8%) | **Deployed:** ~$56,938 (54.2%, 3 positions)
+- **Phase P&L:** +$5,120.61 (+5.12%) | **Week buys:** 0/3 | **DT count:** 0
+
+| Ticker | Shares | Entry | EOD Close | Unrealized | Stop |
+|--------|--------|-------|-----------|------------|------|
+| AMD | 40 | $443.38 | $495.05 | +$2,066.80 (+11.65%) | 7% trail HWM $504.71 / stop $469.38 (tightened) |
+| CAT | 20 | $892.689 | $910.29 | +$351.94 (+1.97%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $183.79 | +$854.34 (+4.73%) | 10% trail HWM $186.265 / stop $167.64 (locked) |
+
+*Note: Perplexity and Alpaca both returned "Host not in allowlist" from cloud runner IP. All market data via WebSearch fallback.*
+
+### Market Context
+- **WTI:** ~$88.39 (May 27 low) | **Brent:** $96.30 (+2.13% May 28) — Brent rallying on Iran/Hormuz peace negotiations; WTI well below $95 exit trigger (XOM already exited)
+- **S&P 500 futures (ESM26):** 7,538.50 premarket (range 7,532.75–7,551.25) — near ATH; S&P 500 Equal Weight + DJIA at fresh all-time highs
+- **VIX:** 17.26 (monthly avg) / 17.01 prior close — moderate; risk-on environment
+- **Market tone:** Bullish. Rally driven by chip strength + Iran peace hopes; market concentrating in AI/semi names
+
+### Economic Calendar Today (May 28 — PCE BLACKOUT DAY)
+- **PCE (Personal Income & Outlays April 2026): 8:30am ET — HARD BLACKOUT. No new entries today.**
+  - March core PCE was +3.2% YoY; April print TBD — key Fed watch item
+- **Durable Goods:** On calendar (already released: May 27 ex-transport +0.9% beat)
+- **Initial Claims / Continuing Claims:** On calendar
+- **Q2 GDP Second Estimate:** On calendar
+- **EIA Crude/Gas Inventories:** On calendar
+- **Earnings today (BMO/AMC):** ADSK, BBY, BURL, COST, DELL, DLTR, GAP, MDB, OKTA — heavy earnings day but none are held positions
+
+### Sector Momentum (YTD)
+- **Leading:** Materials (+22% YTD), Consumer Staples, Industrials, Energy
+- **Lagging:** Technology (XLK), Comm Services, Consumer Discretionary, Financials
+- **Improving:** Real Estate (XLRE), Utilities
+- **Weakening:** Healthcare
+- *Note: XLK/tech is "Lagging" in rotation model but AI-driven names (SOXX, NVDA) diverge strongly — semi sub-sector momentum intact*
+
+### Held Ticker News
+- **AMD (+11.65% from entry):** Q1 2026 revenue $10.3B; Data Center +57% YoY (record $5.8B); Q2 guide $11.2B ±$300M; OpenAI/Meta GPU commitments intact. Analysts: 34 Buy, Evercore ISI $579. 7% trail ($469.38) locks in floor. **Thesis intact — HOLD.**
+- **CAT (+1.97% from entry):** Q1 revenues +22% to $17.4B; record order backlog; raised full-year outlook; analysts reiterate Buy/raised targets; +3.05% on May 26. Infrastructure + data center demand tailwinds added. 5-week exit trigger = June 5 (8 days). **Thesis significantly stronger — HOLD.**
+- **XLK (+4.73% from entry):** Tech sector EPS +43% expected FY2026; NVDA (14.5%) + AAPL (11.9%) top holdings; "Lagging" rotation tag but AI component driving. Stop auto-trails above HWM $186.265. **HOLD.**
+- **SOXX (~$570 NAV, +89.56% YTD):** RS #1 maintained. Pending user decision on sector-cap resolution for entry. Strong semi AI capex supercycle thesis intact.
+
+### Trade Ideas
+1. **SOXX (primary candidate — entry window Friday post-PCE or Monday):**
+   - Catalyst: RS #1, +89.56% YTD, AI capex supercycle, SOXX NAV ~$570
+   - Blocked today (PCE blackout) AND pending user sector-cap resolution
+   - Entry: ~30 shares @~$570 = ~$17,100 (17% of equity); 10% trail GTC
+   - Target: +20% = $684; R:R 2:1 minimum
+   - **REQUIRES user decision on sector-cap conflict before Friday window**
+
+2. **COST (watch post-earnings today):**
+   - Reporting earnings today; Consumer Staples = "Leading" sector; no Staples exposure in portfolio
+   - If strong beat + positive reaction, consider next week entry
+   - Not actionable today (blackout + need post-earnings confirmation)
+
+3. **GLD / other fallback:** RS #18 — bottom of RS rankings. Does NOT qualify per strategy sector-momentum rules. Skip.
+
+### Risk Factors
+1. **PCE print today 8:30am:** If core PCE > consensus → market selloff possible; bonds drop, growth stocks reprice; stays hot = Fed on hold longer
+2. **Deployment 54.2% (<75% floor):** Critically underdeployed. SOXX resolution required before Friday entry window
+3. **CAT 5-week exit trigger June 5:** Approaching but thesis now significantly stronger (raised guidance, record backlog). Likely extend hold; user decision pending
+4. **Oil drop risk:** Iran deal → oil supply normalization → Brent back toward $85. No energy position open — neutral impact
+5. **SOXX crowded trade:** +89.56% YTD; trail discipline is the risk mgr
+6. **Alpaca + Perplexity API blocked from cloud runner:** Cannot verify live stop positions or place intraday orders from this environment; user must verify stop status in Alpaca dashboard
+
+### Decision
+**HOLD — PCE BLACKOUT. No new entries today.**
+- All 3 positions pass thesis check; no losers to cut (AMD +11.65%, CAT +1.97%, XLK +4.73%)
+- No stop tightening triggered (AMD stop already at 7%; next trigger +20% = $532.06 = 7.5% above $495.05; CAT/XLK stops locked)
+- **Urgent action required from user:**
+  - SOXX sector-cap resolution (Option A: exit XLK → enter SOXX; Option B: grant SOXX sector-cap exception)
+  - CAT hold-or-exit before June 5 five-week trigger
+- **Next entry window: Friday May 29 post-PCE (if data benign)**
+
+### Active Watch Items
+- **PCE 8:30am ET:** If benign (<+3.0% core MoM), Friday entry opens; if hot, delay to Monday
+- **SOXX:** Entry candidate Friday/Monday pending user decision on sector-cap
+- **CAT:** June 5 five-week exit trigger approaching; reassess EOD today post-PCE
+- **AMD:** Next tighten trigger +20% = $532.06 (7.5% above $495.05)
+- **XLK stop:** Verify HWM auto-trailed in Alpaca (EOD May 27 HWM $186.265)
