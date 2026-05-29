@@ -2349,3 +2349,121 @@ Week budget after: 2/3 slots used; 1 slot remains for Friday (post-PCE)
 - **SOXX action question** — EOD questions from May 27 still unanswered (SOXX sector-cap, CAT proactive exit, fallback candidate, week budget timing).
 - **CAT June 5 timer** — 8 days to 5-week rule trigger. Thesis intact but clock is ticking.
 - **FCX spread** — Monitor normalization; re-evaluate if ask approaches $62 zone.
+
+---
+
+## Pre-Market 2026-05-29 (Friday, Week 5, Day 26)
+
+### Account Snapshot
+- **Equity:** $106,450.74 | **Cash:** $48,182.67 (45.3%) | **Deployed:** $58,268.07 (54.7%) | **DT count:** 0 | **Phase P&L:** +$6,450.74 (+6.45%)
+- **Week buy count:** 0/3
+
+### Positions (live pre-market)
+| Ticker | Shares | Entry | Pre-mkt | Unrealized | Stop |
+|--------|--------|-------|---------|------------|------|
+| AMD | 40 | $443.38 | $524.052 | +$3,226.88 (+18.19%) | 7% trail HWM $527.20 / stop $490.30 |
+| CAT | 20 | $892.689 | $891.435 | -$25.09 (-0.14%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $189.10 | +$1,401.42 (+7.76%) | 10% trail NEW HWM $189.10 > prior $187.58, stop auto-trails to $170.19 |
+
+### User Decisions Pending (EOD May 27 & May 28 -- NO RESPONSES YET)
+1. **AMD +20% tighten (imminent):** Pre-authorize cancel 96cbc82c + 5% trail GTC when HWM hits $532.056?
+2. **CAT proactive exit:** -0.14% from entry; June 5 five-week rule = 7 days. Exit to free capital, or hold to rule?
+3. **CVX entry:** PCE confirmed benign. Enter Friday?
+4. **SOXX resolution:** AMD+XLK = 2/2 tech; SOXX blocked as 3rd. (A) Exit XLK->SOXX, or (B) ETF sector-cap exception?
+
+### Market Context
+- **WTI (July 2026 futures):** ~$90.39 (CME, May 27 close) -- declined from $103+ in early May. Below $95-96 XOM-exit threshold. Iran/Hormuz risk premium intact but oil trend weakening.
+- **S&P 500 futures:** CME E-mini (ESM6) last ~7,540. Market flat after PCE below expectations + GDP downward revision (Schwab).
+- **VIX:** 16.29 (May 27 close); trending 15.8-16 today. **Risk = LOW** (below 18).
+- **PCE April 2026:** Released May 28 -- came in BELOW expectations (Schwab confirmed). GDP 2nd estimate revised down. Benign macro = green light for risk-on entries.
+- **Iran/Hormuz:** US overnight strikes near Hormuz. Stalled talks. Oil risk premium elevated but price trending down.
+- **Cycle stage:** mid-cycle. GDP 1.8-2.6% growth, monetary policy easing-but-restrictive, unemployment rising but not recessionary.
+- **Today data releases (8:30 AM ET):** Advance Economic Indicators (trade/inventory -- LOW impact), Initial Jobless Claims. Chicago PMI 9:45 ET. New Home Sales 10:00 ET. Fed speakers: Bowman 9:10, Daly 12:40. **No blocking catalysts.** PCE/GDP digested yesterday.
+
+### Benzinga Signals (May 29 -- 172 emails, 24h lookback)
+- **BUY high:** NVDA ("Trade Strategy -- SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, TSLA")
+- **BUY high:** IWM ("Small-Cap Lead Might Be The Most Dangerous Trade Right Now" -- headline cautionary despite BUY signal)
+- **BUY medium:** QQQ (same trade strategy article as NVDA)
+- **SELL high:** GLD ("Gold Falls To Two-Month Low As Iran War Fears Send Oil/Dollar Climbing")
+- **SELL medium:** SPY ("Dissecting The Blow-Off Top -- Why Historic Market Peaks Share One Mechanical Signature")
+
+**BENZINGA_BUYS:** NVDA (high), IWM (high), QQQ (medium) | **BENZINGA_SELLS:** GLD (high), SPY (medium)
+
+### Congress Signals (cached May 28 -- API 401 error today)
+- **BUY high [PRIORITY]:** FCX -- Josh Gottheimer PURCHASE Apr 15
+- **BUY high [PRIORITY]:** AMD -- Gottheimer Apr 23+27; Cisneros Apr 14 (already held)
+- **SELL high:** NVDA (net 5 sells vs 2 buys) | **SELL high:** AVGO | **SELL medium:** CAT (stale)
+
+**Confluent signal -- NVDA:** Benzinga BUY high vs Congress SELL high = CONFLICTING. Tech cap full anyway. No action.
+
+### RS Ranking (20-day, today)
+SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLF(7) > IWM(8) > XLE(9) > SPY(10) > XLB(11) > XLV(12) > XLRE(13) > XLP(14) > XLU(15) > EEM(16) > HYG(17) > GLD(18) > SLV(19)
+
+vs May 28: XLE #11 -> #9 (energy improving), XLI #8 -> #6, SPY #12 -> #10. Top 3 unchanged.
+
+### Perplexity Validation
+
+**CVX (~$182-183):**
+- WTI ~$90 (July futures) -- softer than $103+ when CVX was first identified. Below XOM-exit $95-96 threshold. Iran risk premium ongoing but oil trend down.
+- Hess arbitration cleared -> $53B deal unblocked (new company-specific catalyst). +3.4% on ruling day.
+- Q1 EPS beat; upstream profit +29%; SE Asian downstream sale $2.2B to Eneos.
+- Street: 42 analysts, Strong Buy, median PT $220 (~+20%). P/E 31.65, yield 3.8%.
+- **Assessment: Thesis softer with WTI $90 vs $103+. Hess catalyst adds company-specific upside. Energy RS improving. Conditional entry OK if WTI holds above $88 at open.**
+
+**AMD ($524.052):**
+- +18.19% from entry. Q1: $10.3B revenue, EPS $1.37 beat. +20% tighten trigger $532.056 -- HWM $527.20 = $4.85 away. HIGH PRIORITY.
+- Congress BUY high x3 (Gottheimer x2 + Cisneros). Thesis intact. HOLD + monitor tighten.
+
+**CAT ($891.435):**
+- -0.14% from entry. 5-week rule June 5 = 7 trading days. P/E ~45.27x (rich for cyclical).
+- Q1: $17.4B revenue +22%, $63B backlog record, guidance raised. Short interest 1.82% (low).
+- Thesis intact but price action weak 2 days. User decision pending.
+
+**XLK ($189.10):**
+- RS #3. +7.76% from entry. NEW HWM -- stop auto-trails to $170.19. Bollinger Band breach (overbought) but MACD just turned positive. HOLD.
+
+### Trade Ideas
+
+**1. ENTER CVX -- FRIDAY OPEN (CONDITIONAL, PRIMARY)**
+- Catalyst: PCE benign; Hess deal cleared; Iran/Hormuz risk; Energy RS #9 improving; Q1 beat; 3.8% yield.
+- OIL GATE: WTI must be >= $88 at open. If below $88, defer to Monday.
+- Sector: Energy. No cap conflict (AMD=Tech, CAT=Industrials, XLK=Tech).
+- Sizing: ~103sh @~$183 = ~$18,849 (~17.7% of equity).
+- Stop: 10% trailing GTC immediately on fill.
+- Target: $220 PT = +20%. R:R ~2:1.
+- Post-entry deployed: $77,117 / $106,451 = 72.4% (hits deployment floor).
+
+**2. AMD +20% TIGHTEN (ACTIVE WATCH)**
+- HWM $527.20 vs trigger $532.056 = $4.85 gap. AMD $524.052 pre-mkt.
+- If AMD HWM hits $532.056: CANCEL 96cbc82c -> REPLACE with 5% trailing GTC.
+
+**3. XLK STOP VERIFY**
+- Current $189.10 > prior HWM $187.58. Confirm stop auto-trailed to $170.19.
+
+**4. CAT EXIT DECISION (PENDING USER)**
+- No action without user decision. June 5 rule = mechanical exit if still below entry.
+
+**5. FCX (WATCH ONLY)**
+- Congress BUY high persists. Check bid/ask spread normalization. Avoid if ask above $62 zone.
+
+### Risk Factors
+1. **WTI declining ($90 vs $103+ peak):** CVX thesis softer. Energy RS improving but oil trend down. $88 gate check at open.
+2. **SPY "blow-off top" warning (Benzinga):** Contrarian concern. VIX low (complacency risk). Monitor.
+3. **AMD stop $490.30:** 6.4% buffer from $524. Well-placed. Tighten imminent.
+4. **XLK overbought:** Bollinger Band breach, RSI overbought. Short-term pullback risk. Stop $170.19 provides buffer.
+5. **Deployment 54.7% (<75% floor):** CVX entry brings to 72.4%.
+6. **CAT June 5 five-week rule:** 7 days. Currently -$1.25/sh below entry.
+
+### Decision
+**TRADE -- Enter CVX at open (post first 15-min candle) if WTI >= $88.**
+All other positions: HOLD.
+AMD: watch $532.056 tighten trigger.
+CAT/XLK: HOLD pending user decisions.
+
+### Active Watch Items
+- **CVX open entry** -- ~103sh @~$183, Energy, 10% trail GTC. WTI $88 gate check.
+- **AMD $532.056 tighten** -- Cancel 96cbc82c + place 5% trail GTC when HWM breaches.
+- **XLK HWM $189.10** -- Verify stop auto-trailed to $170.19.
+- **CAT June 5 timer** -- 7 trading days. User decision: exit now or hold to rule.
+- **SOXX sector-cap resolution** -- Unanswered since May 27. Tech cap full.
+- **FCX spread** -- Watch for normalization below $62 entry zone.
