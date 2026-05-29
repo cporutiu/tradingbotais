@@ -1416,3 +1416,44 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **CAT turned negative (-0.56% from entry, -2.45% today):** 5-week rule = June 5 (8 days). Thesis intact (ISM expansion, $63B backlog) but price action weakening two straight sessions. **Exit CAT proactively to redeploy capital, or hold to 5-week rule?**
 3. **Deployment 54.5% (<75% floor):** PCE blackout lifted. CVX next candidate (~103sh). Enter Friday post-open, or wait for Monday confirmation signal?
 4. **SOXX resolution (open from May 27):** AMD + XLK = 2/2 tech slots; SOXX blocked as 3rd tech. **(A) Exit XLK → enter SOXX** (upgrade to RS #1), or **(B) Declare ETFs don't count against sector cap** (add rule exception)?
+
+---
+
+## 2026-05-29 — Market-Open Trades (Friday, Week 5, Day 26)
+
+**Week trade count: 1/3** (CVX order pending fill)
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-05-29 | CVX | BUY | 103 | PENDING | 10% trail GTC (pending fill) | $220 (+20%) | 2:1 | PCE April benign; Hess arbitration cleared ($53B deal unblocked, +catalyst); WTI $88.63 ≥ $88 gate; Energy RS #9 improving; Q1 EPS beat (+29% upstream); Energy sector empty; deployment floor push to ~72% |
+
+**Execution notes:**
+- Order dfbfc9b9: 103sh CVX market day, submitted 2026-05-29 09:32:14 ET
+- Status: **PENDING FILL** — Alpaca paper engine delay at open; CVX ask $183.50 at 09:34 ET; no fill confirmed after 4 min (same pattern as NVDA 2026-05-04)
+- WTI gate: $88.63 (CLN26) ✓ ≥ $88 threshold
+- Hard-checks: positions → 4 (≤6 ✓); week count 1/3 (≤3 ✓); sizing ~17.8% (17-20% ✓); sector Energy=0 → cap OK ✓; DT=0 ✓
+- Stop: place 10% trailing GTC immediately once fill confirmed at midday scan
+- Approximate entry zone: $183-184 (CVX ask $183.50 at time of order)
+- Approximate stop: ~$165.30 (10% below $183.50 entry)
+- Week slot used: 1/3 (pending confirmation)
+
+**Position status at market-open 2026-05-29:**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $517.01 | +$2,945.20 (+16.61%) | -0.21% | 7% trail HWM $527.20 / stop $490.30 (locked) |
+| CAT | 20 | $892.689 | $882.84 | -$196.98 (-1.10%) | -0.54% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $189.235 | +$1,415.32 (+7.83%) | +1.28% | 10% trail HWM $189.95 / stop $170.955 (auto-trailed ↑) |
+
+**XLK stop auto-trail confirmed:** HWM updated to $189.95, stop $170.955 (from prior $187.58/$168.822) — working correctly ✓
+
+**AMD tighten watch:** HWM $527.20 vs trigger $532.056 — $4.86 gap; not triggered at open. Monitor intraday.
+
+**CAT:** -1.10% from entry (no user decision received on proactive exit). Holding per default — no action without user response. 5-week rule: June 5 (7 days).
+
+**No user decisions received** for EOD May 28 action questions 1-4. All carry as unanswered.
+
+**Open Orders (market-open 2026-05-29):**
+- Buy 103 CVX market day (dfbfc9b9): PENDING FILL
+- Sell 40 AMD trailing_stop 7% GTC (96cbc82c): active, HWM $527.20, stop $490.30
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $189.95, stop $170.955 (auto-trailed ↑)
