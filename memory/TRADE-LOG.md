@@ -1457,3 +1457,43 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 40 AMD trailing_stop 7% GTC (96cbc82c): active, HWM $527.20, stop $490.30
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $189.95, stop $170.955 (auto-trailed ↑)
+
+---
+
+## Midday 2026-05-29 (Friday, Week 5, Day 26)
+
+**CVX FILL CONFIRMED + STOP PLACED:**
+- Order dfbfc9b9: 103sh CVX filled @ $182.363592 avg (cost basis $18,783.45)
+- Stop placed: order 52322270 — sell 103sh CVX trailing_stop 10% GTC, HWM $181.665, stop $163.4985
+- All 4 positions now fully protected with GTC trailing stops ✓
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $508.97 | +$2,623.60 (+14.79%) | -1.76% | **7% trail** HWM $527.20 / stop $490.30 (locked) |
+| CAT | 20 | $892.689 | $873.42 | -$385.38 (-2.16%) | -1.61% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $181.64 | -$74.53 (-0.40%) | -0.76% | 10% trail HWM $181.665 / stop $163.499 (new) |
+| XLK | 103 | $175.494 | $190.57 | +$1,552.83 (+8.59%) | +1.99% | 10% trail HWM $191.63 / stop $172.467 (auto-trailed ↑) |
+
+**Losers cut:** None. No position at ≤-7%: AMD +14.79%, CAT -2.16%, CVX -0.40%, XLK +8.59%.
+
+**Stop tightening:** None required.
+- AMD: 7% trail already placed (tightened at +15% per rule). Next trigger: +20% = $532.056. HWM $527.20 — $4.86 gap, NOT YET triggered. Current $508.97 = 4.4% below HWM; stop locked.
+- XLK: HWM auto-trailed from $189.95 → $191.63 today (new intraday high). Stop $172.467. +15% trigger = $201.82 — not reached.
+- CAT/CVX: Far below +15% threshold. No action.
+
+**Thesis check:**
+- AMD: +14.79% — AI hardware demand intact; NVDA Q1 beat confirms demand chain; Evercore PT $579; normal -1.76% pullback after prior days' surge. **HOLD.**
+- CAT: -2.16% from entry; continued weakness (-1.61% today). Stop buffer 4.1% ($873.42 vs $838.215). 5-week rule: June 5 (7 days). ISM expansion + $63B backlog thesis intact; no specific catalyst for today's decline. Watching closely — if weekly close below $870, re-evaluate thesis health. **HOLD to stop/5-week rule.**
+- CVX: New position (-0.40%). Hess arbitration cleared + WTI $88.63 thesis intact. Normal first-session drift. **HOLD.**
+- XLK: +8.59%; new HWM today. Tech AI momentum strong. **HOLD.**
+
+**Intraday research:** Not triggered. No positions moving sharply without obvious cause. CAT -1.61% consistent with multi-week weakness pattern (no new catalyst); AMD -1.76% is normal consolidation post-surge.
+
+**Portfolio:** Equity ~$105,564 | Cash ~$29,399 (27.8%) | Deployed ~$76,165 (72.2%, 4 positions) | Phase P&L: +$5,564 (+5.56%) | Week buy count: 1/3
+
+**Open Orders (midday 2026-05-29):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $527.20, stop $490.30 (locked)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $181.665, stop $163.499 (new)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $191.63, stop $172.467 (auto-trailed ↑)
