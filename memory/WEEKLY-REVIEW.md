@@ -360,3 +360,75 @@ Template for each entry:
 - **Deployment goal:** ≥80% by Wednesday May 28 (FCX Tue + hold 4 positions = 5 total ~90% deployed); never enter a 3-day weekend below 75% floor again
 
 ### Overall Grade: B-
+
+---
+
+## Week ending 2026-05-29
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $103,277.06 (May 22 EOD / Week 4 end; May 25 Memorial Day closed) |
+| Ending portfolio | $105,912.30 |
+| Week return | +$2,635.24 (+2.55%) |
+| S&P 500 week | +0.58% (8th consecutive positive week) |
+| Bot vs S&P | +1.97% |
+| Phase P&L | +$5,912.30 (+5.91% from $100,000 start) |
+| Trades | 2 (W:1 / L:0 / open:4) — 1 closed (XOM proactive exit), 1 new buy (CVX) |
+| Win rate | 100% (1 closed trade, 0 losers) |
+| Best trade | AMD +16.17% unrealized (+$2,868) — NVDA-beat momentum |
+| Worst trade | CAT -2.09% unrealized (-$374) — persistent macro drag |
+| Profit factor | ∞ (1 winner, 0 losers — insufficient for meaningful ratio) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| XOM | $150.769 (May 13) | $153.268 (May 26) | +$324.86 (+1.66%) | Proactive exit: WTI $91.65 confirmed below $95-96 manual trigger; oil thesis broken; 13-day hold; avoids stop at $147.312 |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $443.38 | $515.08 | +$2,868 (+16.17%) | 7% trail HWM $527.20 / stop $490.30 (locked) |
+| CAT | $892.689 | $874.00 | -$374 (-2.09%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | $182.364 | $182.32 | -$5 (-0.03%) | 10% trail HWM $181.665 / stop $163.499 (new — day 1) |
+| XLK | $175.494 | $190.79 | +$1,575 (+8.72%) | 10% trail HWM $191.63 / stop $172.467 (auto-trailed) |
+
+### Sector Watchlist — Week 6 (June 2–6)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | SOXX | Sector-cap conflict unresolved (AMD + XLK = 2/2); resolve via rule exception or XLK exit before entry |
+| 2 | Energy | XLE | CVX (held) | Hold to stop $163.499; exit proactively if WTI closes below $85 (thesis break); Hess catalyst active |
+| 3 | Industrials | XLI | CAT (held) | 5-week rule triggers June 5; exit manually at open June 5 if still below entry; watch $860 close as early exit signal |
+| 4 | Materials/Macro | GLD/XLB | GLD | FCX blocked 3 consecutive weeks (anomalous wide spread); pivot to GLD or XLB ETF if Materials slot needed |
+
+### What Worked
+- AMD NVDA-beat momentum: post-catalyst entry (May 21 gap-up) continues to deliver; +16.17% unrealized in 8 days; 7% tighten rule executed cleanly ($509.89 hit May 27)
+- XOM proactive exit per thesis-break rule: WTI $91.65 vs $95-96 trigger; exited +$324.86 vs risking stop at $147.312 (-4.9% below exit price); rule proved its value
+- XLK auto-trailing new HWMs all week: +8.72% from entry; stop advanced from $163.557 → $172.467 through multiple new highs
+- CVX entry validated PCE gate: benign PCE + Hess arb cleared + WTI $88.63 ≥ $88 gate all confirmed before buy; energy sector was empty at entry; R:R 2:1 ✓
+- Alpha delivered: +2.55% vs S&P +0.58% = +1.97% outperformance — strongest relative week in the challenge
+
+### What Didn't Work
+- FCX blocked for 3rd consecutive week: bid/ask spread consistently $6.50–$7.03 (anomalously wide); analyst avg PT $65.72 < live ask = negative reward; Materials slot unfilled for 5 weeks
+- SOXX blocked by sector cap for 2nd consecutive week: AMD + XLK fill 2/2 tech slots; RS #1-ranked sector ETF unavailable; structural constraint on deployment
+- Deployment 72.2% at week end — 6th consecutive week below 75% floor; both planned entries (FCX + SOXX) blocked by hard rules Wednesday; CVX restores 4th position but still 2.8% short of floor
+- CAT underperformance: -2.09% from entry after 24 days; 5-week rule triggers June 5; stop locked 6.4% below close; capital not earning adequate return
+- AMD +20% tighten ($532.056) not triggered: HWM $527.20 = $4.86 gap; intraday runs reversed before confirmation; open into Week 6
+
+### Key Lessons
+- Post-catalyst gap-up entries remain the portfolio's strongest alpha source: entering the morning after a massive beat at open (AMD May 21, NVDA May 4) — without waiting for pullback — is validated twice now; don't overthink gap-up entries when thesis is intact
+- FCX is not tradeable at current market conditions: analyst PT and bid/ask spread are persistently misaligned; three consecutive R:R failures with same underlying problem (spread too wide vs PT) = abandon FCX for Week 6; look for Materials/macro alternatives (GLD, XLB)
+- SOXX sector-cap conflict is the #1 structural bottleneck: the best-ranked sector ETF (RS #1 × 2 weeks running) is perpetually blocked because we hold AMD + XLK; a rule decision is needed (ETF exception or swap)
+- CVX thesis is delicate: entered at $182.36 with WTI $88.63 (only $3.63 above thesis break gate $85); any sustained oil move to $85 = exit immediately; do not wait for stop at $163.499 if thesis breaks
+- Oil thesis entry timing vs. trend: WTI was $106 (April peak) → $91 (May 25) → $88 at CVX entry; structural downtrend intact; CVX entry predicated on Hess catalyst, not WTI reversal — re-verify catalyst validity every session
+
+### Adjustments for Next Week
+- **AMD +20% tighten ($532.056):** HWM $527.20 ($4.86 gap). Pre-authorize: cancel 96cbc82c, place 5% trailing GTC on any open/intraday touch of $532.056 Monday-forward
+- **CAT 5-week exit June 5:** If CAT closes below $860 any session before June 5 → exit manually. If above $860 at Thursday close June 4 → exit at open June 5 per Rule 12; no exceptions
+- **SOXX sector-cap decision (mandatory before Monday open):** Option A — Exit XLK, enter SOXX (upgrades RS slot #3 → #1); Option B — ETF exception rule (ETFs don't count toward sector cap vs. single stocks). User must decide; both entries remain blocked until resolved
+- **CVX watch:** If WTI closes below $85 on any session → exit CVX manually (same pattern as XOM/XLE thesis-break logic); do not wait for stop at $163.499
+- **FCX: abandon for Week 6.** Pivot to GLD (macro safe-haven hedge) or XLB ETF (Materials sector, tighter spreads) if 5th position slot available
+- **NFP June 5 (Friday):** Named blocker; last entry window is Thursday June 4; plan any new entries by Wed June 3 to avoid being caught at week-end
+- **Deployment goal:** ≥75% by Wednesday June 4 via SOXX entry (after sector-cap resolution) or CAT replacement; never below 75% for 7th consecutive week
+
+### Overall Grade: B+
