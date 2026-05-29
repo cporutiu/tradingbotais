@@ -1497,3 +1497,29 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
 - Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $181.665, stop $163.499 (new)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $191.63, stop $172.467 (auto-trailed ↑)
+
+---
+
+## Day 26 — EOD Snapshot (May 29, Friday — Week 5)
+**Portfolio:** $105,912.30 | **Cash:** $29,399.22 (27.8%) | **Day P&L:** +$5.02 (+0.00%) | **Phase P&L:** +$5,912.30 (+5.91%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 40 | $443.38 | $515.08 | -0.58% | +$2,868.00 (+16.17%) | 7% trail (HWM $527.20 / stop $490.30) locked |
+| CAT | 20 | $892.689 | $874.00 | -1.54% | -$373.78 (-2.09%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| CVX | 103 | $182.364 | $182.316 | -0.39% | -$4.94 (-0.03%) | 10% trail (HWM $182.65 / stop $164.385) new |
+| XLK | 103 | $175.494 | $190.79 | +2.11% | +$1,575.49 (+8.72%) | 10% trail (HWM $191.63 / stop $172.467) locked |
+
+**Notes:** Day 26, Friday. CVX confirmed filled at midday ($182.364 avg, 103sh); 10% trailing stop placed (52322270, HWM $182.65, stop $164.385 — auto-trailed ↑ from midday $163.499). Day P&L nearly flat (+$5.02): XLK surged +2.11% to $190.79 (+8.72% from entry, new HWM $191.63) on broad tech bid; AMD pulled back -0.58% to $515.08 (+16.17% from entry, 7% stop locked HWM $527.20 / stop $490.30); CAT slid further -1.54% to $874.00 (-2.09% from entry, continuing multi-session weakness, stop $838.215 locked, 5-week rule June 5); CVX opened -0.39% to $182.316 (first session drift, thesis intact — Hess arbitration + WTI gate). Deployment 72.2% — below 75% floor; SOXX and FCX remain blocked (sector cap + spread anomaly respectively). AMD +20% tighten trigger $532.056 = HWM $527.20 + $4.84 — watch for Monday. Week buy count: 1/3.
+
+**Open Orders (EOD 2026-05-29):**
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): active, HWM $527.20, stop $490.30 (locked)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $182.65, stop $164.385 (auto-trailed ↑)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $191.63, stop $172.467 (locked)
+
+**Action questions:**
+1. **AMD +20% tighten imminent:** HWM $527.20 vs trigger $532.056 — $4.84 away. Pre-authorize auto-execute Monday open/intraday: cancel 96cbc82c, place 5% trailing GTC when HWM hits $532.056?
+2. **CAT thesis deteriorating (-2.09% from entry, day 4 of weakness, close $874.00):** Stop buffer 4.1% ($838.215 vs $874.00); 5-week rule = June 5 (7 days). Four weeks of underperformance with no recovery catalyst. Exit CAT proactively to redeploy capital, or hold to 5-week rule?
+3. **Deployment 72.2% (<75% floor):** SOXX blocked (2/2 tech cap), FCX blocked (spread anomaly recurring). 5th position candidate for next week — GLD (macro hedge), another Energy name, or other? Or accept 72% until SOXX sector-cap resolution?
+4. **SOXX resolution (carry from May 27):** AMD + XLK = 2/2 tech slots; SOXX = 3rd tech = hard rule violation. Option A: Exit XLK (RS #3) → enter SOXX (RS #1) same ~$20K. Option B: Declare ETFs exempt from sector cap (2 ETFs in same sector ≠ concentrated stock risk). Which?
