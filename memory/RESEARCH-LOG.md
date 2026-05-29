@@ -5,6 +5,137 @@ Format each entry:
 
 ---
 
+## 2026-05-29 — Pre-Market Research (Friday, Week 5, Day 26)
+
+> **Fallback note: Alpaca API and Perplexity both blocked by environment network policy (Host not in allowlist). Account state from EOD May 28 snapshot. Market data via WebSearch fallback.**
+
+### Account Snapshot (EOD May 28 — last known state)
+- **Equity:** $105,907.28 | **Cash:** $48,182.67 (45.5%) | **Deployed:** ~$57,724.61 (54.5%, 3 positions)
+- **DT count:** 0 | **Phase P&L:** +$5,907.28 (+5.91%)
+- **Week 5 trade count:** 0/3 (all slots available — last day of Week 5)
+
+### Positions (EOD May 28 basis)
+| Ticker | Shares | Entry | EOD Price | Unrealized | Stop |
+|--------|--------|-------|-----------|------------|------|
+| AMD | 40 | $443.38 | $518.09 | +$2,988.40 (+16.85%) | **7% trail** HWM $527.20 / stop $490.30 |
+| CAT | 20 | $892.689 | $887.67 | -$100.38 (-0.56%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| XLK | 103 | $175.494 | $186.87 | +$1,171.73 (+6.48%) | 10% trail HWM $187.58 / stop $168.822 |
+
+### Open Orders (EOD May 28)
+- Sell 40 AMD trailing_stop **7%** GTC (96cbc82c): HWM $527.20, stop $490.30
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $187.58, stop $168.822
+
+### STEP 1B — Pending User Decisions (EOD May 28 action questions — UNANSWERED)
+No "User decisions" block found in TRADE-LOG for EOD May 28. Questions remain open:
+1. **AMD +20% tighten** ($532.056 trigger, $4.86 from HWM $527.20) — pre-authorize auto-execute or manual?
+2. **CAT proactive exit vs hold to June 5 five-week rule** — unanswered; treating as HOLD per prior default
+3. **CVX entry post-PCE** — evaluate below (PCE benign but oil thesis fails)
+4. **SOXX sector-cap resolution** — AMD + XLK = 2/2 tech slots; unanswered; treating as blocked
+
+### Market Context
+- **WTI (CLN26):** ~$89.53 (May 28 close, +0.96%) — ⚠️ **BELOW $90 thesis-break floor**
+- **Brent:** ~$96.57 (May 28 close, +2.41%)
+- **S&P 500 futures (ESM26):** ~7,585 (May 28 close, +0.33%); ATH territory; chip stocks leading
+- **VIX:** 15.74 — LOW risk zone (<18); 52wk high 35.30 (Mar 9), 52wk low 13.38 (Dec 24, 2025)
+- **Market risk:** Low
+- **Oil driver:** Iran/Hormuz peace deal reports — Strait of Hormuz could reopen in ~1 month. Geopolitical premium compressing. Oil bearish catalyst.
+- **Today (May 29):** No major data. Minor: Multivariate Core Trend Inflation 10 AM, NY Fed Nowcast 12:45 PM. Quiet pre-holiday-weekend tape. Memorial Day risk (Saturday, no market impact).
+
+### PCE April 2026 — CONFIRMED RESULT (released May 28)
+- **Headline PCE YoY:** +3.8% (in line vs +3.8% consensus, up from +3.5% March)
+- **Core PCE YoY:** +3.3% (slightly hot vs +3.3% consensus, up from +3.2% March)
+- **Headline PCE MoM:** +0.4% (slightly cooler than +0.5% expected — BENIGN)
+- **Core PCE MoM:** +0.2% (cooler than +0.3% expected — BENIGN)
+- **Assessment:** PCE in line to slightly cool monthly. Markets rallied post-print (AMD +4.55% May 28, XLK +1.32%). PCE blackout **lifted** for Friday entry decisions.
+
+### Economic Calendar Today
+- No CPI / PPI / FOMC / NFP
+- Minor: NY Fed Multivariate Core Trend Inflation 10 AM ET, NY Fed Nowcast 12:45 PM
+- Memorial Day weekend: no market Saturday/Monday (no market Monday — US holiday)
+
+### S&P 500 Sector YTD Ranking (2026 estimate)
+Financials ~+22% (#1 YTD per recent data), Healthcare (flight-to-safety), Industrials, Materials, Consumer Staples gaining; Technology cooling YTD though 20-day RS: SOXX > QQQ > XLK leading semis/tech short-term.
+
+### Held Ticker News (WebSearch)
+
+**AMD ($518.09 EOD May 28, +16.85% from entry — WebSearch confirms $495-518 range):**
+- AMD +3.17% on May 28 per Tradingkey (consistent with TRADE-LOG +4.55% EOD); AI thesis very strong
+- Q1 2026: Revenue $10.3B (+38% YoY); Data Center $5.8B (+57% YoY); Q2 guide $11.2B vs $10.52e estimate
+- Analyst consensus: Buy (34 analysts); Evercore ISI PT $579; Bernstein $525; Barclays $500
+- Rocket One partnership into AMD AI Developer Program — AI ecosystem expanding
+- AMD +114% YTD 2026; forward P/E ~59x (elevated but growth-justified vs AI demand)
+- **Active watch:** +20% tighten trigger $532.056 — AMD HWM $527.20 (0.92% away). IMMINENT. Execute when hit.
+- **Thesis:** Intact and strong. HOLD.
+
+**CAT ($887.67 EOD May 28, -0.56% from entry — turned negative):**
+- Gained +3.26% on May 26 (ISM expansion / infrastructure narrative); pulled back -2.45% May 28
+- Q1 2026: EPS $5.54, Revenue $17.4B (+22% YoY), record $63B backlog; FY guidance raised
+- Analyst avg PT $900.24 (above current $887.67); high $1,165
+- Tariff headwind $2.6B FY2026; Resource Industries -39% profit in Q1
+- Group President sold $11.4M shares May 14 — insider signal worth noting
+- **Stop:** $838.215 (5.6% buffer from $887.67); 5-week rule = June 5 (7 days)
+- **Thesis:** Intact (ISM expansion, infrastructure, AI power demand) but price action weakening
+- **HOLD.** No user decision to exit. Monitor for $838.215 stop.
+
+**XLK ($186.87 EOD May 28, +6.48% from entry):**
+- May 28 price confirmed ~$187.43 (+1.63%); Apple Q2 2026 earnings beat (Q1 was strong)
+- ETF earnings growth: +43% YoY 2026, +24% in 2027 expected; top holdings NVDA 13.64%, AAPL 12.05%, MSFT 8.09%
+- Thesis intact: tech AI momentum, CPI/PCE benign, NVDA beat in ecosystem
+- Stop HWM $187.58 / stop $168.822 (10% trail)
+- **HOLD.**
+
+### CVX Assessment (Planned Friday Entry — BLOCKED)
+- CVX was planned as the ~103sh (~$20K) Energy position for today (post-PCE, week slot 1/3)
+- **WTI $89.53 (May 28 close) — BELOW $90 thesis-break floor**
+- Iran peace deal / Hormuz reopening in ~1 month = structural bearish driver for oil premium
+- This is **the exact same thesis-break pattern that triggered XOM proactive exit on May 27**
+- Entering CVX while WTI < $90 and Hormuz de-escalation active = entering a broken thesis
+- **Decision: SKIP CVX.** Oil thesis fails same test XOM failed. No Energy position until WTI stabilizes > $95 on sustained basis.
+
+### SOXX Assessment (Blocked — unchanged)
+- AMD + XLK = 2/2 Tech sector slots; SOXX (Technology/Semiconductors) = 3rd tech = hard rule violation
+- No user decision received to resolve (Option A: exit XLK, Option B: add ETF exception)
+- **Remain blocked until user resolves.**
+
+### FCX Assessment (Recurring Blocker)
+- 3rd consecutive failure: bid/ask spread anomalously wide (ask $67.62 on May 27, analyst PT $65.72 = negative reward)
+- R:R fails 2:1 minimum rule — same block as May 6 and May 27
+- Do not enter until spread normalizes and entry price < analyst PT
+
+### Trade Ideas for Today
+1. **AMD — Auto-tighten to 5% trail when HWM hits $532.056:** Execute immediately if AMD trades up ~1% from open. Cancel 96cbc82c, place new 5% trailing GTC. Locks in minimum +20% = $532/sh from $443.38 entry.
+2. **CVX — SKIP:** WTI $89.53 < $90 thesis-break floor; Hormuz de-escalation active.
+3. **SOXX — SKIP (blocked):** Awaiting user resolution on sector-cap question.
+4. **FCX — SKIP:** Persistent wide spread; R:R fails.
+5. **NEW SECTOR CANDIDATES for next week (Monday June 1):**
+   - **XLF (Financials):** #1 YTD sector (+22%); rising rate environment benefits banks; would open new sector (0 current positions); entry candidate if thesis validates
+   - **XLV (Healthcare):** Flight-to-safety late-cycle; 0 positions in sector; worth researching
+   - **GLD:** Not strategy priority; no catalyst today
+
+### Risk Factors
+- **WTI $89.53 — near-zero buffer above $90 thesis-break floor** for any future energy plays. Monitor closely.
+- **Iran/Hormuz peace progress:** Accelerating de-escalation = continued oil headwind. Could gap oil lower at next open.
+- **CAT approaching stop ($838.215 = 5.6% below close $887.67):** Three sessions of weakness; tariff headwinds + insider selling. Stop at risk in any risk-off session.
+- **AMD +20% tighten imminent:** Failure to tighten at trigger = leaving floor protection on table. Execute today if AMD moves up ~1%.
+- **Deployment 54.5% (<75% floor):** Two consecutive weeks below floor. CVX/SOXX/FCX all blocked = structural deployment constraint. Resolution requires: SOXX sector-cap decision OR a new sector entry (XLF/XLV). Monday is urgent.
+- **Pre-holiday Friday:** Lower volume, wider spreads; avoid opening new positions in thin tape unless high conviction.
+- **VIX 15.74 (LOW):** Complacency risk into weekend given Iran peace deal uncertainty.
+
+### Decision
+**HOLD — no new entries today.**
+- CVX: oil thesis fails ($89.53 WTI < $90 floor; Hormuz de-escalation mirrors XOM exit pattern). Skip.
+- SOXX: sector cap blocked (awaiting user resolution).
+- FCX: persistent R:R failure.
+- Deployment 54.5% is below 75% floor but above 40% mandatory TRADE threshold — patience rule applies when no qualifying candidate exists.
+- **Active watches today:**
+  - AMD tighten: cancel 96cbc82c, place 5% GTC if HWM hits $532.056
+  - CAT stop $838.215: accept trigger if hit; do not chase down
+  - XLK: HOLD; let stop trail
+- **Monday June 1 priority:** Research XLF (Financials, #1 YTD) or XLV (Healthcare) to resolve deployment gap; user must also resolve SOXX sector-cap question to unblock that path.
+
+---
+
 ## 2026-05-25 — Pre-Market Research (Monday, Memorial Day — MARKET CLOSED)
 
 > **US markets closed today (Memorial Day). No trading. Next session: Tuesday May 27.**
