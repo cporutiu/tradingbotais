@@ -2467,3 +2467,106 @@ CAT/XLK: HOLD pending user decisions.
 - **CAT June 5 timer** -- 7 trading days. User decision: exit now or hold to rule.
 - **SOXX sector-cap resolution** -- Unanswered since May 27. Tech cap full.
 - **FCX spread** -- Watch for normalization below $62 entry zone.
+
+
+---
+
+## 2026-06-01 Pre-Market Research (Monday, Week 6, Day 27)
+
+### Account Snapshot
+- **Equity:** $105,386.67 | **Cash:** $29,399.22 (27.9%) | **Deployed:** $75,987.45 (72.1%, 4 positions) | **DT count:** 0
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 40 | $443.38 | $493.04 | +$1,986 (+11.2%) | **7% trail HWM $527.20 / stop $490.30 — WARNING: ONLY $2.74 ABOVE STOP** |
+| CAT | 20 | $892.689 | $872.99 | -$394 (-2.21%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $183.45 | +$112 (+0.60%) | 10% trail HWM $182.65 / stop $164.385 |
+| XLK | 103 | $175.494 | $193.31 | +$1,835 (+10.15%) | 10% trail HWM $191.63 / stop $172.467 |
+
+### Open Orders
+- Sell 40 AMD trailing_stop 7% GTC (96cbc82c): HWM $527.20, stop $490.30 -- NEAR TRIGGER ($2.74 gap)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $182.65, stop $164.385
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $191.63, stop $172.467
+
+### Pending User Decisions (May 29 EOD, unanswered)
+1. AMD +20% tighten pre-authorization ($532.056) -- NOT in play today (price $493 vs $532)
+2. CAT exit proactively or hold to June 5 rule -- unanswered, carrying
+3. Deployment 5th position candidate (SOXX blocked, FCX spread) -- carry
+4. SOXX sector-cap resolution -- carry
+
+### Market Context
+- **WTI:** ~$89.80/bbl | **Brent:** $93.91 (+3.06% today) -- oil surging, well above $88 gate. CVX thesis strengthening.
+- **S&P 500 futures:** ~7,590 (slight positive)
+- **VIX:** 15.9 (LOW) -- market_risk: low
+- **ISM Manufacturing PMI (May):** Due 10:00 ET today. Prior 52.7 expansion. Consensus 52.6-53.7. WATCH: strong print = CAT hold confirmed; print <50 = CAT exit catalyst.
+- **Jobs week:** ISM today -> JOLTS Tue -> ADP+AVGO earnings Wed -> Jobless claims Thu -> NFP Fri. High macro density.
+- **Cycle stage:** late-cycle (solid but moderating GDP +2.0% Q1; AI capex supporting; energy inflation risk)
+
+### Benzinga Signals (72h lookback -- Monday)
+- **BUYS (high):** SPY, QQQ, IWM, NVDA, CAT, AVGO
+- **SELLS:** None
+- IWM flagged BUY high -- but article title "Small-Cap Lead Might Be The Most Dangerous Trade Right Now" (contrarian caution)
+- CAT BUY signal conflicts with current price weakness (score=3, low-bar)
+- AVGO BUY high: pre-earnings positioning ahead of June 3 report
+
+### Congress Signals
+- **BUYS (high):** AMD (Gottheimer x2 + Cisneros -- already held), FCX (Gottheimer -- unchanged)
+- **SELLS (high):** NVDA (net 5 sells; tech cap full, no action), AVGO (net 3 sells -- Taylor x2, Capito)
+- **SELLS (medium):** CAT (Moskowitz, stale)
+
+### Confluent Signals
+- **AVGO:** Benzinga BUY high vs Congress SELL high -> CONFLICTING. Tech cap full (2/2). No action.
+- **NVDA:** Benzinga BUY high vs Congress SELL high -> CONFLICTING. Tech cap full. No action.
+- **CAT:** Benzinga BUY high vs Congress SELL medium -> mild conflict. ISM today is tiebreaker.
+
+### Perplexity Validation
+- **AMD:** Q1 $10.3B +38% YoY intact. Stock -4.3% weekend to $493.04 -- only $2.74 above 7% stop $490.30. No fundamental negative catalyst; consolidation after surge. Stop is working as designed.
+- **CAT:** Q1 EPS $5.54 (+20% beat), rev $17.4B +22%, $63B backlog, guidance raised. Morgan Stanley upgraded to $915 PT. Benzinga BUY confirmed by fundamentals. Congress SELL stale (Moskowitz). ISM data today is key.
+- **CVX:** Q1 EPS $1.41 vs $0.92 (+46% beat). Brent +3.06% today to $93.91 -- oil surging. Hess integration delivering. TCO monthly dividends. Microsoft AI power plant ($7B) in negotiation. Q2 accounting reversal of $2.9B = earnings tailwind. Thesis strongly intact.
+- **XLK:** RS dropped #3 -> #7 on 20-day. New HWM today at $193.31 -- stop auto-trails to ~$173.98. Still +10.15%. Tech RS fading but not broken.
+
+### RS Ranking (20-day vs SPY, June 1)
+SOXX(1) > QQQ(2) > IWM(3) > EEM(4) > XLY(5) > XLC(6) > XLK(7) > XLI(8) > XLF(9) > HYG(10) > XLE(11) > XLV(12) > XLRE(13) > XLB(14) > SPY(15) > XLP(16) > GLD(17) > SLV(18) > XLU(19)
+
+Key changes vs May 29: IWM #8 -> #3 (small-cap rotation), EEM #16 -> #4, XLK #3 -> #7, XLE #9 -> #11
+
+### Trade Ideas
+
+**1. HOLD ALL -- deployment at ceiling**
+Adding 5th position at 17% = ~$17,900 -> deployed 88-89% (over 85% cap). Cannot add until AMD stops out or deliberate exit.
+
+**2. AMD stop management -- CRITICAL**
+Current $493.04 vs stop $490.30 = $2.74 gap. Let stop work; do not manually exit above $490.30. Stop locks in +10.6% profit if triggered.
+
+**3. IWM as AMD replacement (conditional on AMD stop-out)**
+RS #3 (up from #8), Benzinga BUY high. No sector cap conflict (broad market). Sizing: 17% ~$17,900 (~112sh @ ~$160). 10% trail GTC on fill. Entry post-first-candle if AMD stops out. Caution: NFP Friday = labor-week gap risk for small-caps.
+
+**4. CAT -- ISM-dependent hold**
+ISM >= 50 at 10:00 ET: hold to June 5 rule. ISM < 50 (contraction): manual exit, thesis break.
+
+**5. AVGO -- watch only**
+Q2 earnings June 3 AMC (AI semis +140% YoY guided). Conflicting signals + tech cap full. No entry.
+
+### Risk Factors
+1. AMD near stop ($490.30) -- likely stop-out today; locks in +10.6% profit (good outcome)
+2. ISM Manufacturing 10:00 ET -- CAT thesis tiebreaker
+3. NFP Friday (June 5) -- late-cycle labor surprise risk; IWM vulnerable
+4. AVGO June 3 earnings -- vol could affect QQQ/XLK pre-earnings
+5. Oil spike (Brent +3%) -- Iran-driven; could reverse if Iran talks resume
+6. XLK RS fading -- tech sector losing 20-day momentum
+
+### Decision
+**HOLD all 4 positions. No new entries today (deployment ceiling).**
+- Let AMD stop work at $490.30. On stop-out: IWM replacement setup.
+- CAT: hold to June 5 UNLESS ISM < 50 at 10:00 ET (then manual exit)
+- CVX/XLK: HOLD
+- AMD +20% tighten ($532.056): not in play (price $493 vs trigger $532)
+
+### Active Watch Items
+- **AMD stop $490.30** -- IMMINENT. On trigger -> IWM entry (post-candle, 17% sizing, 10% trail GTC)
+- **ISM Manufacturing 10:00 ET** -- CAT tiebreaker. <50 = manual CAT exit
+- **XLK HWM $193.31 (new today)** -- stop auto-trails to ~$173.98
+- **AVGO June 3 AMC** -- watch only; pre-earnings vol
+- **NFP Friday June 5** -- same day as CAT 5-week rule; exit CAT before Friday risk if at/below entry
+- **CAT 5-week rule June 5** -- 4 trading days; mechanical exit if still below entry
