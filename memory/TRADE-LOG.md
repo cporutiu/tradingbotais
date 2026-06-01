@@ -1606,3 +1606,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **IWM entry (pre-authorized, awaiting confirmation):** AMD stopped out at ~$490.30 (+10.58% realized). Deployment 53.6% → below 75% floor. Pre-market + market-open log planned IWM as replacement (~62sh @~$287, 17% ~$17,900, week slot 1/3, 10% trail GTC immediately). Confirm entry today, or decline given NFP Friday (June 5) small-cap gap risk?
 2. **CAT June 5 exit timing:** ISM 54.0 confirms expansion — hold to 5-week rule (June 5). But June 5 is also NFP Friday. Exit CAT Thursday June 4 close (pre-NFP) to avoid labor-data gap risk on a below-entry position?
 3. **XLK +15% tighten watch:** +11.54% now ($195.74). Tighten threshold $201.82 (~3.1% away). Confirm auto-tighten to 7% trail when HWM hits $201.82?
+
+---
+
+## Day 27 — EOD Snapshot (Jun 01, Monday)
+**Portfolio:** $105,619.37 | **Cash:** $49,012.52 (46.4%) | **Day P&L:** -$409.69 (-0.39%) | **Phase P&L:** +$5,619.37 (+5.62%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $865.36 | -1.20% | -$546.58 (-3.06%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| CVX | 103 | $182.364 | $185.85 | +1.86% | +$359.10 (+1.91%) | 10% trail (HWM $187.94 / stop $169.146) auto-trailed |
+| XLK | 103 | $175.494 | $195.70 | +2.45% | +$2,081.22 (+11.51%) | 10% trail (HWM $196.50 / stop $176.850) auto-trailed |
+
+**Notes:** Day 27, Monday — Week 6 open. AMD 7% trailing stop (96cbc82c) triggered intraday: exit ~$490.30 (+10.58% realized, ~+$1,877). After AMD exit: XLK led +2.45% to $195.70 (+11.51% from entry; HWM auto-trailed to $196.50/stop $176.850); CVX +1.86% to $185.85 (+1.91% from entry; Hess integration + WTI $89.80 thesis intact; HWM $187.94/stop $169.146); CAT -1.20% to $865.36 (-3.06% from entry; stop buffer 3.14% from $838.215; 5-week rule = June 5 NFP day). ISM Manufacturing May 2026: 54.0 beat (53.3 consensus) — CAT thesis confirmed. Deployment 53.6% — below 75% floor; no new buys placed today (deployment ceiling math per market-open). Key resolution: AMD exit freed tech slot 2 → SOXX now eligible (XLK = 1/2 tech, SOXX = 2/2; sector-cap blocker resolved). Week buy count: 0/3.
+
+**Open Orders (EOD 2026-06-01):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $187.94, stop $169.146 (auto-trailed ↑)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $196.50, stop $176.850 (auto-trailed ↑)
+
+**Action questions:**
+1. **4th position — SOXX vs IWM (deployment 53.6%):** AMD exit resolved SOXX sector-cap (XLK = 1/2 tech slots; SOXX eligible as slot 2). Enter SOXX (~31sh @~$560, ~$17.4K, AI semi momentum, RS #1) or IWM (~62sh @~$287, ~$17.8K, small-cap, new sector)? Or hold cash through NFP Friday June 5?
+2. **XLK +15% tighten approaching ($201.82 — 3.1% away):** Close $195.70 (+11.51% from entry). Confirm auto-tighten to 7% trail when HWM hits $201.82?
+3. **CAT 5-week rule (June 5 = NFP Friday):** -3.06% from entry; stop buffer 3.14%. Exit CAT Thursday June 4 pre-NFP to avoid gap risk on a below-entry position, or execute 5-week rule mechanically on June 5?
+4. **Week budget 0/3, 4 days remaining (Tue–Fri, NFP Jun 5 blackout):** Enter 4th position Tue/Wed to restore deployment toward 75%, then hold remaining 2 slots post-NFP?
