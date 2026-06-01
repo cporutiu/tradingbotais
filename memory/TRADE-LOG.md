@@ -1523,3 +1523,86 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **CAT thesis deteriorating (-2.09% from entry, day 4 of weakness, close $874.00):** Stop buffer 4.1% ($838.215 vs $874.00); 5-week rule = June 5 (7 days). Four weeks of underperformance with no recovery catalyst. Exit CAT proactively to redeploy capital, or hold to 5-week rule?
 3. **Deployment 72.2% (<75% floor):** SOXX blocked (2/2 tech cap), FCX blocked (spread anomaly recurring). 5th position candidate for next week — GLD (macro hedge), another Energy name, or other? Or accept 72% until SOXX sector-cap resolution?
 4. **SOXX resolution (carry from May 27):** AMD + XLK = 2/2 tech slots; SOXX = 3rd tech = hard rule violation. Option A: Exit XLK (RS #3) → enter SOXX (RS #1) same ~$20K. Option B: Declare ETFs exempt from sector cap (2 ETFs in same sector ≠ concentrated stock risk). Which?
+
+---
+
+## Market-Open 2026-06-01 (Monday, Week 6, Day 27)
+
+**No trades placed** — deployment ceiling (72.1%; adding 5th position at 17% = ~89% deployed > 85% cap). Week count: 0/3 (fresh).
+
+- **Equity:** $105,391.46 | **Cash:** $29,399.22 | **Deployed:** $75,992.24 (72.1%) | **DT count:** 0 | **Phase P&L:** +$5,391.46 (+5.39%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| AMD | 40 | $443.38 | $497.93 | +$2,182.00 (+12.30%) | -3.52% | 7% trail HWM $527.20 / stop $490.296 (locked — **$7.63 above stop**, NEAR TRIGGER) |
+| CAT | 20 | $892.689 | $861.41 | -$625.58 (-3.50%) | -1.65% | 10% trail HWM $931.35 / stop $838.215 (locked — $23.19 buffer = 2.69%) |
+| CVX | 103 | $182.364 | $184.74 | +$244.77 (+1.30%) | +1.25% | 10% trail HWM $184.90 / stop $166.41 (auto-trailed ↑) |
+| XLK | 103 | $175.494 | $192.30 | +$1,731.02 (+9.58%) | +0.67% | 10% trail HWM $192.43 / stop $173.187 (auto-trailed ↑) |
+
+**Active watch items:**
+- **AMD stop $490.296:** $7.63 gap from $497.93. On trigger → IWM entry (post-fill, 17% ~$17,900, ~62sh @$287.35, 10% trail GTC). Week slot 1/3.
+- **ISM Manufacturing 10:00 ET:** CAT tiebreaker. ≥50 = hold to June 5 rule. <50 = manual CAT exit (thesis break).
+- **AMD +20% tighten ($532.056):** HWM $527.20, trigger $4.84 away — not in play at open. Pre-authorization pending user response.
+- **CVX:** HWM auto-trailed ↑ to $184.90 (from $182.65) on oil strength (Brent +3%); thesis intact.
+- **XLK:** HWM auto-trailed ↑ to $192.43 (from $191.63); tech AI momentum intact.
+- **CAT 5-week rule:** June 5 (4 trading days). If below entry at June 5 close → mechanical exit regardless of stop.
+
+**Open Orders (market-open 2026-06-01):**
+- Sell 40 AMD trailing_stop 7% GTC (96cbc82c): active, HWM $527.20, stop $490.296 (locked — NEAR TRIGGER)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $184.90, stop $166.41 (auto-trailed ↑)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $192.43, stop $173.187 (auto-trailed ↑)
+
+---
+
+## Midday 2026-06-01 (Monday, Week 6, Day 27)
+
+**AMD TRAILING STOP TRIGGERED:**
+
+| Ticker | Shares | Entry | Exit | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| AMD | 40 | $443.38 | ~$490.30 | ~+$1,876.80 (+10.58%) | 7% trail stop 96cbc82c triggered intraday; held May 21–Jun 1 (11 days) |
+
+- Stop (96cbc82c) and AMD position both absent from live Alpaca API — fill confirmed by cash delta (~+$19,612)
+- Entry $443.38 × 40 = $17,735.20 cost basis; exit ~$490.30 × 40 = ~$19,612.00 proceeds
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $862.94 | -$594.98 (-3.33%) | -1.48% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $186.14 | +$388.65 (+2.07%) | +2.02% | 10% trail HWM $187.94 / stop $169.146 (auto-trailed ↑) |
+| XLK | 103 | $175.494 | $195.74 | +$2,085.65 (+11.54%) | +2.47% | 10% trail HWM $195.77 / stop $176.193 (auto-trailed ↑) |
+
+**Losers cut:** None. CAT -3.33% is above -7% cut threshold ($830.20). No action.
+
+**Stop tightening:** None manual required.
+- XLK: +11.54% — below +15% tighten threshold ($201.82). No action.
+- CVX: HWM auto-trailed ↑ from $184.90 → $187.94; stop from $166.41 → $169.146 (Alpaca server-side)
+- XLK: HWM auto-trailed ↑ from $192.43 → $195.77; stop from $173.187 → $176.193 (Alpaca server-side)
+- CAT: stop locked (HWM $931.35, price $862.94 well below HWM)
+
+**Thesis check (STEP 5):**
+- **ISM Manufacturing May 2026: 54.0** (actual vs 53.3 consensus, vs 52.7 prior) — strong expansion beat. CAT thesis confirmed. HOLD to June 5 five-week rule.
+- **CAT:** -3.33% from entry ($862.94 vs $892.689). Stop $838.215 = 2.87% buffer. June 5 rule (4 trading days). No thesis break. HOLD.
+- **CVX:** +2.07%. Oil surging — Brent +3.06% today ($93.91); WTI $89.80. Hess integration thesis intact. HWM auto-trailed ↑. HOLD.
+- **XLK:** +11.54%. New intraday HWM $195.77; stop auto-trailed ↑. RS dropped #3→#7 (20-day) but price action strong; AI/tech momentum intact. HOLD.
+
+**No thesis breaks. No positions cut.**
+
+**Deployment (post-AMD-exit):**
+- Cash: ~$49,011 ($29,399 + ~$19,612 AMD proceeds)
+- Deployed: $56,592 (3 positions: CAT $17,259 + CVX $19,172 + XLK $20,162)
+- Equity: ~$105,603
+- Deployed %: ~53.6% — below 75% floor
+
+**Portfolio:** Equity ~$105,603 | Cash ~$49,011 (46.4%) | Deployed ~$56,592 (53.6%, 3 positions) | Phase P&L: ~+$5,603 (+5.60%) | Week buy count: 0/3
+
+**Open Orders (midday 2026-06-01):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $187.94, stop $169.146 (auto-trailed ↑)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $195.77, stop $176.193 (auto-trailed ↑)
+
+**Action questions:**
+1. **IWM entry (pre-authorized, awaiting confirmation):** AMD stopped out at ~$490.30 (+10.58% realized). Deployment 53.6% → below 75% floor. Pre-market + market-open log planned IWM as replacement (~62sh @~$287, 17% ~$17,900, week slot 1/3, 10% trail GTC immediately). Confirm entry today, or decline given NFP Friday (June 5) small-cap gap risk?
+2. **CAT June 5 exit timing:** ISM 54.0 confirms expansion — hold to 5-week rule (June 5). But June 5 is also NFP Friday. Exit CAT Thursday June 4 close (pre-NFP) to avoid labor-data gap risk on a below-entry position?
+3. **XLK +15% tighten watch:** +11.54% now ($195.74). Tighten threshold $201.82 (~3.1% away). Confirm auto-tighten to 7% trail when HWM hits $201.82?

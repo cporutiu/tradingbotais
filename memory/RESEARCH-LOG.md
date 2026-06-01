@@ -2570,3 +2570,10 @@ Q2 earnings June 3 AMC (AI semis +140% YoY guided). Conflicting signals + tech c
 - **AVGO June 3 AMC** -- watch only; pre-earnings vol
 - **NFP Friday June 5** -- same day as CAT 5-week rule; exit CAT before Friday risk if at/below entry
 - **CAT 5-week rule June 5** -- 4 trading days; mechanical exit if still below entry
+
+### Afternoon Addendum (Midday Scan 2026-06-01)
+- **ISM Manufacturing May 2026: 54.0** (actual vs 53.3 consensus, vs 52.7 prior) — strong expansion beat. Released 10:00 ET. CAT thesis confirmed; hold to June 5 five-week rule per plan.
+- **AMD 7% trailing stop triggered intraday:** Stop at $490.296 filled. Realized P&L ~+$1,876.80 (+10.58%). Position closed; cash +~$19,612. Deployment drops to ~53.6% (3 positions).
+- **CVX HWM auto-trailed:** $184.90 → $187.94 (oil strength — Brent +3.06%, WTI $89.80); stop $166.41 → $169.146.
+- **XLK HWM auto-trailed:** $192.43 → $195.77 (new intraday high, +2.47% today); stop $173.187 → $176.193. +15% tighten threshold $201.82 = 3.1% away.
+- **IWM entry (pre-authorized, pending user confirmation):** AMD stop-out triggers pre-market conditional plan. Deployment 53.6% → below 75% floor. Decision deferred to user.
