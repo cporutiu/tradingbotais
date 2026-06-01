@@ -2467,3 +2467,117 @@ CAT/XLK: HOLD pending user decisions.
 - **CAT June 5 timer** -- 7 trading days. User decision: exit now or hold to rule.
 - **SOXX sector-cap resolution** -- Unanswered since May 27. Tech cap full.
 - **FCX spread** -- Watch for normalization below $62 entry zone.
+
+---
+
+## 2026-06-01 — Pre-Market Research (Monday, Week 6, Day 27)
+*Note: Alpaca API and Perplexity blocked by network policy — account snapshot from EOD May 29; market data via WebSearch fallback.*
+
+### Account Snapshot (EOD May 29 — last confirmed)
+- **Equity:** ~$105,912 | **Cash:** ~$29,399 (27.8%) | **Deployed:** ~$76,513 (72.2%)
+- **Positions:** 4 (AMD, CAT, CVX, XLK) | **DT count:** 0 | **Week trades:** 0/3
+
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| AMD | 40 | $443.38 | $515.08 | +$2,868 (+16.2%) | 7% trail HWM $527.20 / stop $490.30 |
+| CAT | 20 | $892.69 | $874.00 | -$374 (-2.1%) | 10% trail HWM $931.35 / stop $838.22 |
+| CVX | 103 | $182.36 | $182.32 | -$5 (-0.0%) | 10% trail HWM $182.65 / stop $164.39 |
+| XLK | 103 | $175.49 | $190.79 | +$1,575 (+8.7%) | 10% trail HWM $191.63 / stop $172.47 |
+
+### STEP 1B — Pending User Decisions (all unanswered from May 28–29)
+- **AMD tighten ($532.056):** No pre-authorization received → monitor manually; execute cancel/replace on HWM breach
+- **CAT proactive exit:** No decision → DEFAULT hold to 5-week rule June 5 (Thursday, 4 days)
+- **5th position for deployment:** No selection → XOM flagged as candidate (see ideas)
+- **SOXX sector-cap resolution:** No decision → ETFs remain subject to sector cap; tech cap full (AMD + XLK)
+
+### Market Context
+- **S&P 500 Futures:** ~7,608.50 (+0.17%) — essentially flat; AI momentum continues
+- **WTI:** ~$88–90 (week of May 27–31 ranged $86.35–$93.69); Friday close ~$88–89 area
+- **Brent:** ~$91.20 at May 29 close, -2% Friday on Iran ceasefire news
+- **VIX:** ~17.26 (May avg) — moderate; no panic, mild complacency risk
+- **ISM Manufacturing (May, released today 10am):** 52.7% — expansionary ✓; missed consensus 53.0
+- **S&P Global PMI (May):** 55.3 — beat 53.8 est, strongest since May 2022; output fastest in 4+ years ✓
+- **OPEC+:** Raised June output 188K bpd (bearish oil supply); first meeting post-UAE exit
+- **Iran/Hormuz:** US-Iran ceasefire extension + easing of Hormuz restrictions → geopolitical risk premium fading (bearish for oil near-term)
+- **CVX CEO (May 28):** Mike Wirth warned physical price buffers thinning, expects "upward pressure" June/July → bullish near-term signal despite OPEC headwind
+
+### Today's Economic Events
+- **June 1:** ISM Manufacturing PMI May (10am ET, released today) = 52.7% ✓
+- **June 2 (tomorrow):** US Vehicle Sales May; Eurozone CPI
+- **June 3:** ISM Non-Manufacturing/Services PMI May
+- **No FOMC, no NFP this week** — low macro risk environment
+
+### Ticker News
+**AMD ($515–516):**
+- Q1 blowout: $10.3B revenue (+38% YoY), EPS $1.37 beat; Data Center $5.8B (+57%); Q2 guidance $11.2B
+- +130% YTD; multiple PT upgrades (Goldman, Bernstein doubled targets)
+- MI455X + Helios rack-scale platform → Q3 2026 ship; MI450 hyperscaler H2 2026
+- Congress BUY high x3 (Gottheimer x2 + Cisneros)
+- **Thesis: Very intact. AI hardware demand accelerating.**
+- **Watch: HWM $527.20 vs tighten trigger $532.056 — $4.84 gap. AMD needs ~3% intraday rally to new HWM + $4.84 more.**
+
+**CAT ($874):**
+- Q1: $17.4B revenue (+22%), $63B backlog, guidance raised; data center power generation demand emerging
+- Tariff headwind: ~$2.6B flagged for 2026 — known risk, partially priced
+- ISM Manufacturing 52.7% (expansionary) — supports CAT thesis
+- Stock up 32% YTD overall but 4 sessions of weakness; -2.1% from entry
+- **5-week rule: June 5 (Thursday) = mechanical exit if still below entry**
+- **Thesis: Intact structurally (backlog, data center power). Price action weak. Hold to rule.**
+
+**CVX ($182.40):**
+- CEO Wirth (May 28 Bernstein conf): physical buffers thinning, upward oil pressure June/July
+- Hess acquisition deal cleared + Greek block expansion
+- Analyst PT $220, yield 3.8%, Q1 upstream profit +29%
+- OPEC+ 188K bpd June increase + Iran ceasefire = near-term oil ceiling risks
+- **Thesis: Intact. Bullish CEO comment offsets OPEC/Iran headwinds. Stop $164.39 well below.**
+
+**XLK ($190.79+):**
+- Tech/AI momentum continues; NVDA (14.5% weight) + AAPL (11.9%)
+- Earnings: XLK holdings +43% YoY 2026; global semi sales approaching $1T
+- RS #3 in 20-day ranking; +8.7% from entry; HWM $191.63
+- **Thesis: Intact. AI capex supercycle ongoing. HOLD.**
+
+### Trade Ideas
+
+**1. AMD TIGHTEN WATCH (ACTIVE)**
+- Trigger: HWM $527.20 → $532.056 (need +$4.84 above prior HWM)
+- Action: Cancel 96cbc82c → place new sell trailing_stop 5% GTC on 40 AMD
+- No pre-authorization from user → execute as soon as trigger fires in midday scan or market-open
+- Priority: HIGH
+
+**2. XOM — 5th POSITION (CANDIDATE THIS WEEK)**
+- Energy sector 2nd slot permitted by strategy watchlist ("max 1 more energy position")
+- WTI $88-90 + CVX CEO bullish near-term; Energy RS #9 (improving)
+- Sizing: ~17-20% equity (~$18K); entry on pullback to support
+- Gate: WTI ≥ $88 at entry; confirm CAT thesis before adding 2nd energy name
+- Catalyst: Data center power demand (same as CAT); upstream earnings leverage
+- Stop: 10% trail GTC; target: ~$120 (analyst consensus); R:R ~2:1
+- **Status: WATCH ONLY today — confirm CAT resolution first**
+
+**3. FCX — LOW PRIORITY WATCH**
+- Congress BUY high (Gottheimer); Materials sector; entry ~$62 zone
+- RS #11 (weak); only enter if spread normalized and XOM blocked
+
+### Risk Factors
+1. **Oil ceiling:** OPEC+ supply + Iran ceasefire easing = geopolitical premium fading; WTI could break below $88 (CVX stop $164 = $18.36 buffer from entry = ~10%)
+2. **ISM miss:** 52.7% vs 53.0 est — slight disappointment; expansion confirmed but losing speed
+3. **AMD tighten trigger:** Stop management action needed — must not miss $532.056 level
+4. **Tech concentration:** AMD + XLK = 50% of positions in technology; correlated drawdown risk
+5. **CAT 5-week clock:** June 5 = Thursday; must execute mechanical exit regardless of decision
+6. **Flat futures + June seasonality:** S&P historically flat in June; caution on new entries
+
+### Decision
+**HOLD — no new trades today.**
+- Deployed 72.2% (>40% threshold; no forced TRADE default)
+- Week 6 fresh (0/3 slots); patience appropriate; let CAT resolve Thursday
+- XOM candidate for Week 6 entry (post-CAT outcome)
+- AMD: watch intraday for $532.056 tighten trigger
+- No qualifying blockers for HOLD today (no FOMC/NFP/same-day earnings for held names)
+
+### Active Watch Items
+- **AMD $532.056 tighten** → cancel 96cbc82c + place 5% trail GTC; manual execution
+- **CAT June 5 (Thu)** → 4 trading days; mechanical exit if below $892.69 at close
+- **CVX hold** → oil thesis intact; CEO bullish Jun/Jul; stop $164.39 firm
+- **XLK hold** → stop $172.47 auto-trailing ✓; watch HWM for 5% tighten at $201.82
+- **XOM 5th position** → evaluate post-CAT; WTI $88 gate; Energy 2nd slot open
+- **SOXX resolution** → still unanswered; tech cap full until user decides
