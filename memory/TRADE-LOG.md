@@ -1630,3 +1630,44 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **XLK +15% tighten approaching ($201.82 — 3.1% away):** Close $195.70 (+11.51% from entry). Confirm auto-tighten to 7% trail when HWM hits $201.82?
 3. **CAT 5-week rule (June 5 = NFP Friday):** -3.06% from entry; stop buffer 3.14%. Exit CAT Thursday June 4 pre-NFP to avoid gap risk on a below-entry position, or execute 5-week rule mechanically on June 5?
 4. **Week budget 0/3, 4 days remaining (Tue–Fri, NFP Jun 5 blackout):** Enter 4th position Tue/Wed to restore deployment toward 75%, then hold remaining 2 slots post-NFP?
+
+---
+
+## 2026-06-02 — Market-Open Trades
+
+**Week trade count: 1/3**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-06-02 | IWM | BUY | 62 | $290.7698 | 10% trail GTC (order 4c0586cc, HWM $290.91, stop $261.819) | $348.92 (+20%) | 2:1 | JOLTS April 2026: 7.6M (+731K MoM, well above 6.5M gate); Benzinga BUY high; deployment floor (53.6% → 71.0%); new sector (small-cap domestic); no AVGO earnings risk; week slot 1/3 |
+
+**Execution notes:**
+- Order 87f42153: 62sh IWM market day, submitted 2026-06-02 13:41:36 UTC (1:41 PM ET)
+- Fill: 62sh @ $290.7698 avg
+- Stop order 4c0586cc: sell 62sh IWM trailing_stop 10% GTC, HWM $290.91, stop $261.819
+- JOLTS April 2026 confirmed 7.6M (vs 6.5M gate, vs 6.9M prior) — benign labor market ✓
+- Gate cleared at 10 AM ET; order placed post-JOLTS confirmation ✓
+- R:R: entry $290.77, risk 10% = $29.08, target +20% = $58.15 → 2:1 ✓
+- Week slot used: 1/3
+
+**Portfolio (post-trade 2026-06-02):**
+- Equity $106,735.20 | Cash $30,984.78 | Deployed $75,750 (71.0%) | 4 positions | Week count: 1/3 | DT count: 1 (PDT N/A — account >$25K)
+
+**Open Orders (market-open 2026-06-02):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $188.39, stop $169.551 (auto-trailed ↑)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $197.85, stop $178.065 (auto-trailed ↑)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): active, HWM $290.91, stop $261.819 (new)
+
+**Position status (post-trade 2026-06-02):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $902.80 | +$202.22 (+1.13%) | +4.35% | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $187.87 | +$567.16 (+3.02%) | +1.13% | 10% trail HWM $188.39 / stop $169.551 (auto-trailed ↑) |
+| IWM | 62 | $290.7698 | $290.78 | +$0.63 (+0.00%) | — | 10% trail HWM $290.91 / stop $261.819 (new) |
+| XLK | 103 | $175.494 | $196.97 | +$2,212.03 (+12.16%) | +0.55% | 10% trail HWM $197.85 / stop $178.065 (auto-trailed ↑) |
+
+**Key watches:**
+- XLK +12.16% from entry; +15% tighten threshold $201.82 (~2.5% away) — active monitor
+- CAT major reversal: +4.35% intraday to $902.80 (+1.13% from entry) — thesis confirmed (ISM 54.0 + data center demand); stop buffer 7.7% to $838.215
+- CVX +3.02% from entry; WTI holding above $90 thesis floor; auto-trailing
