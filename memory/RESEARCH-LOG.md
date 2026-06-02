@@ -5,6 +5,127 @@ Format each entry:
 
 ---
 
+## 2026-06-02 — Pre-Market Research (Tuesday, Week 6, Day 28)
+
+> **API NOTE:** Alpaca and Perplexity blocked by remote execution network policy ("host_not_allowed"). Account snapshot from TRADE-LOG Jun 01 EOD. Market data via WebSearch fallback.
+
+### STEP 1B — User Decisions Carrying Forward
+
+No `**User decisions**` block found in Jun 01 EOD. All four action questions remain unanswered. Treating prior plan as intent, not confirmed instructions:
+- 4th position: SOXX vs IWM → unresolved; treated as strong intent based on SOXX deployment analysis
+- XLK auto-tighten to 7% at $201.82 → pending confirmation
+- CAT exit timing (Thu Jun 4 vs Fri Jun 5 NFP) → pending confirmation
+- Week 6 budget strategy → pending
+
+### Account Snapshot (Jun 01 EOD — live API unavailable)
+- **Equity:** $105,619.37 | **Cash:** $49,012.52 (46.4%) | **Deployed:** 53.6% (3 positions)
+- **DT count:** 0 | **Phase P&L:** +$5,619.37 (+5.62%)
+- **Week 6 buy count:** 0/3 (fresh — Tue Jun 2 + Wed Jun 3 = open windows; Thu Jun 4 + Fri Jun 5 NFP = blackout)
+
+### Positions (Jun 01 EOD)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $865.36 | -$546.58 (-3.06%) | 10% trail HWM $931.35 / stop $838.215 (locked, 3.1% buffer) |
+| CVX | 103 | $182.364 | $185.85 | +$359.10 (+1.91%) | 10% trail HWM $187.94 / stop $169.146 (auto-trailed) |
+| XLK | 103 | $175.494 | $195.70 | +$2,081.22 (+11.51%) | 10% trail HWM $196.50 / stop $176.850 (auto-trailed) |
+
+### Open Orders (Jun 01 EOD)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $187.94, stop $169.146 (auto-trailed)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $196.50, stop $176.850 (auto-trailed)
+
+### Market Context
+- **WTI (CLN26):** ~$91.51–92.64 today (Jun 2) — surged +5.93% on Jun 1 driven by Iran/Hormuz re-escalation; Brent ~$94.58 (Jun 2, -0.42% pullback from Jun 1 spike). WTI above $90 thesis-break floor.
+- **S&P 500 futures (ESM26):** -0.07% premarket; S&P 500 closed at record 7,599.96 (+0.26%) on Jun 1 driven by NVDA chip announcement + Dell/Marvell/Snowflake earnings beats.
+- **VIX:** 16.05 (Jun 1 close) — LOW risk zone (<18). Complacent.
+- **Iran / Strait of Hormuz:** US and Iran discussing 60-day ceasefire MOU to reopen Strait; no Trump sign-off as of Sunday. Iranian state media reports Tehran may halt communications and move to fully block Hormuz. Risk premium volatile — oil surged Jun 1 on re-escalation fear. CVX/energy bullish, broad macro negative if full closure.
+- **Oil supply tightening:** Global inventories drew -129M barrels (March) + -117M barrels (April). Chevron CEO May 28: "More upward pressure expected into June and July."
+- **Market risk:** Low (VIX 16.05) but geopolitical tail risk elevated.
+
+### Economic Calendar — Week of Jun 2-5
+| Date | Release | Time ET | Blocker? |
+|------|---------|---------|---------|
+| Tue Jun 2 | **JOLTS Job Openings (April)** | 10:00 AM | No |
+| Tue Jun 2 | PANW, DG, ULTA earnings AMC | AMC | No |
+| Wed Jun 3 | **ADP Employment Change** | 8:15 AM | No |
+| Thu Jun 4 | Initial Jobless Claims | 8:30 AM | No |
+| Fri Jun 5 | **NFP May 2026** | 8:30 AM | **YES — named blocker** |
+
+**Entry windows this week: Tue Jun 2 and Wed Jun 3 only.** Thu/Fri = NFP blackout.
+
+### S&P 500 Sector YTD 2026 (leading → lagging)
+- XLK Technology: ~+32–33% (strongest; AI momentum driving)
+- XLE Energy: ~+26–27% (oil thesis)
+- XLI Industrials: ~+25%
+- SOXX Semis: RS #1 on 20-day vs SPY; AI hardware momentum
+
+### Held Ticker News
+
+**CAT (~$871 today, -2.4% from entry $892.689):**
+- Trading range $853–$874 today. Analysts avg PT $920.14 (+7.2% from $871; 28 analysts, Buy consensus).
+- Shareholder meeting Jun 10 (virtual). Q1 fundamentals intact (22% revenue, record backlog, raised guide).
+- ISM 54.0 (Jun 1) confirms expansion — thesis structurally intact. Price action weak 5 weeks.
+- Stop $838.215 = ~3.9% buffer from $871. 5-week rule = **June 5** (NFP Friday).
+- ⚠️ **EXIT TIMING:** Must exit Thursday Jun 4 (pre-NFP) to avoid gap risk on a below-entry position at NFP print. Do NOT wait for June 5.
+
+**CVX (~$184.64 today, +1.25% from entry $182.364):**
+- Tengiz oilfield (Kazakhstan) restored to 900K bbl/day (accident resolved May 31).
+- Analyst median PT $220.00 (+19.1%); 18 Buy / 6 Hold / 1 Sell.
+- WTI surging on Hormuz re-escalation; CEO bullish on June-July oil outlook.
+- Stop HWM $187.94 / stop $169.146 — auto-trails should advance on oil strength.
+- **HOLD. Oil thesis intact and strengthening.**
+
+**XLK (~$195.74 today, +11.51% from entry):**
+- Tech AI momentum intact. NVDA PC chip announcement driving AI spend narrative.
+- HWM $196.50 / stop $176.850 (auto-trailing well).
+- **+15% tighten trigger: $175.494 × 1.15 = $201.82 — 3.1% away.** Confirm auto-tighten to 7% trail.
+- PANW, DG earnings AMC today — not direct XLK catalysts. Dell/Marvell/Snowflake beats already digested.
+- **HOLD.**
+
+### Trade Ideas
+
+**1. SOXX — 4th position (HIGH PRIORITY, enter today or Wed Jun 3)**
+- Catalyst: AMD stop exit Jun 1 freed tech slot 2; SOXX now eligible (XLK = 1/2, SOXX = 2/2); RS #1 on 20-day; AI semiconductor demand confirmed by NVDA chip news + Dell/Marvell beats
+- Deployment: 53.6% → TRADE default (below 75% floor, no named blocker today)
+- Entry zone: ~$575–580 (SOXX ~$569 May 29 close; likely +1-2% today on tech bid)
+- Sizing: ~17% = ~$17,955 → ~31sh @~$578
+- Stop: 10% trailing GTC immediately post-fill
+- Target: +20% = ~$694 | R:R: 10% risk / 20% reward = 2:1 ✓
+- Sector check: Technology (XLK slot 1, SOXX slot 2) ✓; max 2/2 ✓
+- **Enter at open Tue Jun 2 if S&P gap-down is contained (<0.5%); else enter Wed Jun 3**
+
+**2. CAT — EXIT Thursday June 4 (pre-NFP)**
+- 5-week rule triggers June 5 = NFP Friday. Pre-empt by one day to avoid gap risk.
+- Close $865.36, stop $838.215 — position -3.06% from entry; weak trajectory.
+- Action: Place market sell order Thu Jun 4 at/before market open.
+- Capital freed: ~$17,259 → deployment drops ~6.5pp (offset by SOXX entry today)
+
+**3. XLK tighten watch — $201.82 (+15% threshold)**
+- $201.82 is ~3.1% above Jun 1 close $195.70. Could trigger Wed/Thu if tech continues.
+- Action: Auto-tighten to 7% trail GTC when HWM hits $201.82 (same pattern as NVDA/AMD).
+- **Awaiting user confirmation to pre-authorize.**
+
+**4. CVX — HOLD**
+- Oil thesis strengthening (WTI $92, Hormuz re-escalation, Chevron CEO bullish).
+- Stop auto-trailing ↑ on each new HWM. No action needed.
+
+### Risk Factors
+- **Iran/Hormuz full closure (tail risk):** If Trump rejects ceasefire MOU → oil spikes +10-15% → CVX surges, but broad market and tech sell off sharply. VIX complacency (16) = asymmetric downside if geopolitical shock.
+- **NFP Friday June 5:** Named blocker. No entries Thu/Fri. Window closes Wed Jun 3 EOD.
+- **VIX 16.05 (complacent):** Any surprise (macro miss, geopolitical escalation) = sharp VIX spike. SOXX high-beta; set realistic stop.
+- **CAT stop proximity ($838.215, 3.9% buffer):** If macro shocks on JOLTS miss or risk-off, stop could trigger before Thursday's planned exit. Accept — stop does its job.
+- **XLK near-ATH:** +11.51% from entry, approaching +15% tighten. Elevated but momentum intact.
+
+### Decision
+**TRADE: Enter SOXX today (Tue Jun 2) as 4th position. Exit CAT Thursday Jun 4. Hold CVX, XLK.**
+- Deployed 53.6% + SOXX ~$17.9K → deployed ~70.6% (within 75% floor; close enough given CAT exit Thu frees ~$17.3K and creates room for 5th position later)
+- SOXX is the highest-conviction 4th position: RS #1, AI semi momentum, sector-cap resolved, entry window closes Wed
+- CAT exit Thu Jun 4 pre-NFP is the prudent call: 5-week rule + NFP gap risk on below-entry position
+- XLK tighten at $201.82 to 7% trail: recommend pre-authorizing (same pattern as confirmed NVDA auto-tighten)
+- IWM: Defer — NFP week is the worst week for small-cap entries (highest labor-data sensitivity)
+
+---
+
 ## 2026-05-25 — Pre-Market Research (Monday, Memorial Day — MARKET CLOSED)
 
 > **US markets closed today (Memorial Day). No trading. Next session: Tuesday May 27.**
