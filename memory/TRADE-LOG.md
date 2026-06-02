@@ -1633,6 +1633,58 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 
 ---
 
+## Midday 2026-06-02 (Tuesday, Week 6, Day 28)
+
+*Note: Market-open routine ran concurrently at 1:41 PM ET and executed IWM entry (see section below). Midday scan uses actual post-trade data.*
+
+### STEP 2 — Current state (~1:41 PM ET, from market-open execution)
+| Ticker | Shares | Entry | Midday Price | Unrealized | Stop |
+|--------|--------|-------|-------------|------------|------|
+| CAT | 20 | $892.689 | $902.80 (+4.35% day) | +$202.22 (+1.13%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $187.87 (+1.13% day) | +$567.16 (+3.02%) | 10% trail HWM $188.39 / stop $169.551 (auto-trailed ↑) |
+| IWM | 62 | $290.7698 | $290.78 | +$0.63 (+0.00%) | 10% trail HWM $290.91 / stop $261.819 (new) |
+| XLK | 103 | $175.494 | $196.97 (+0.55% day) | +$2,212.03 (+12.16%) | 10% trail HWM $197.85 / stop $178.065 (auto-trailed ↑) |
+
+**Open orders:**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $188.39, stop $169.551 (auto-trailed ↑)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $290.91, stop $261.819 (new)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $197.85, stop $178.065 (auto-trailed ↑)
+
+### STEP 3 — Losers cut
+**None.** No position at ≤-7%:
+- CAT +1.13%, CVX +3.02%, XLK +12.16%, IWM +0.00% — all above -7% threshold.
+
+### STEP 4 — Stop tightening
+**None required.**
+- XLK +12.16% — below +15% tighten threshold ($201.82). HWM $197.85, needs ~$4 more to trigger.
+- CVX +3.02% — below +15% ($209.72). No action.
+- CAT +1.13% — below +15% ($1,026.59). No action.
+- IWM +0.00% — new position. No action.
+
+### STEP 5 — Thesis check
+- **CAT ($902.80, +1.13% from entry, +4.35% day):** **THESIS STRENGTHENING.** FY2026 outlook revised upward (low double-digit growth), order backlog surged, analyst upgrades from UBS/BofA/Argus/Rothschild/Wells Fargo/Daiwa. ISM 54.0 expansion + infrastructure cycle intact. Stop buffer 7.7% ($838.215 vs $902.80). **HOLD. CAT Thursday exit plan under reconsideration — position now +1.13% above entry with fresh catalyst. See action question #1.**
+- **CVX ($187.87, +3.02%):** Oil holding — WTI above $88 entry gate; Iran risk premium active. Hess integration thesis intact. HWM auto-trailed ↑. **HOLD.**
+- **IWM ($290.78, +0.00%):** Just entered. JOLTS April 2026: 7.6M (vs 6.5M gate — massive beat). Small-cap domestic thesis: labor resilience, low AVGO/tech earnings risk. **HOLD.**
+- **XLK ($196.97, +12.16%):** AVGO +4.43% today pre-earnings (AMC Jun 3) — XLK has ~2-3% AVGO exposure, positive read-through. AI/tech momentum intact. +15% tighten ~$4 away. **HOLD.**
+
+### STEP 6 — Intraday research
+**JOLTS April 2026 (confirmed 7.6M):** Gate cleared for IWM — executed. No additional research triggered; no other position moving without obvious cause.
+
+**AVGO context for SOXX Thursday plan:** AVGO +4.43% to $480.33, new 52-week high. Earnings AMC Jun 3, consensus 7 SB / 36 Buy / 0 Sell, AI revenue guide $10.7B (+140% YoY). Market front-running → "sell the news" risk exists but bull case strong.
+
+### Portfolio
+- **Equity:** $106,735.20 | **Cash:** $30,984.78 | **Deployed:** $75,750 (71.0%, 4 positions)
+- **Phase P&L:** ~+$6,735 (+6.74%) | **Week count:** 1/3
+
+### Action questions
+1. **CAT exit reconsideration:** Pre-market plan was Thu Jun 4 proactive exit. But CAT now +1.13% above entry ($902.80 vs $892.689) with FY2026 outlook upgrade + analyst upgrades. 5-week rule fires June 5 ONLY if below entry — if CAT is above entry by then, rule doesn't trigger. (A) Cancel Thu exit; hold to stop and let catalyst run; or (B) Stick to Thu exit — lock small gain, free slot for SOXX post-AVGO, avoid NFP gap risk. Which?
+2. **SOXX Thu Jun 4 (conditional AVGO beat AMC tonight):** AVGO earnings AMC Jun 3 — beat + guide-up → enter SOXX Thu open (~31sh @~$572, ~$17,732, 10% trail GTC, XLK=1/2 tech, SOXX=2/2). If CAT stays (option A above), deployment would be 71% + 17% = ~88% — above 85% cap. Sequence matters: if holding CAT, skip SOXX Thursday. If exiting CAT, SOXX replaces it. Confirm plan?
+3. **XLK +15% tighten ($201.82, ~$4.85 away from HWM $197.85):** Confirm auto-tighten to 7% trail when HWM hits $201.82 (same as prior AMD/NVDA auto-confirms)?
+4. **IWM stop at $261.819:** Confirm 10% trailing GTC is appropriate (vs tighter 7% given NFP Friday Jun 5 risk)?
+
+---
+
 ## 2026-06-02 — Market-Open Trades
 
 **Week trade count: 1/3**
@@ -1671,3 +1723,29 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - XLK +12.16% from entry; +15% tighten threshold $201.82 (~2.5% away) — active monitor
 - CAT major reversal: +4.35% intraday to $902.80 (+1.13% from entry) — thesis confirmed (ISM 54.0 + data center demand); stop buffer 7.7% to $838.215
 - CVX +3.02% from entry; WTI holding above $90 thesis floor; auto-trailing
+
+---
+
+## Day 28 — EOD Snapshot (Jun 02, Tuesday)
+**Portfolio:** $106,978.04 | **Cash:** $30,984.78 (29.0%) | **Day P&L:** +$1,354.56 (+1.28%) | **Phase P&L:** +$6,978.04 (+6.98%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $911.50 | +5.33% | +$376.22 (+2.11%) | 10% trail (HWM $931.35 / stop $838.215) locked |
+| CVX | 103 | $182.364 | $187.73 | +1.02% | +$552.74 (+2.94%) | 10% trail (HWM $188.45 / stop $169.60) auto-trailed ↑ |
+| IWM | 62 | $290.770 | $290.64 | +0.57% | -$8.05 (-0.04%) | 10% trail (HWM $291.70 / stop $262.53) new |
+| XLK | 103 | $175.494 | $198.13 | +1.21% | +$2,331.51 (+12.90%) | 10% trail (HWM $198.29 / stop $178.46) auto-trailed ↑ |
+
+**Notes:** Day 28, Tuesday — IWM entered post-JOLTS beat (62sh @ $290.7698, week count 1/3). Strong day: CAT surged +5.33% to $911.50 (+2.11% from entry) — best single-session in weeks, driven by FY2026 outlook upgrade + multi-analyst upgrades (UBS/BofA/Argus); 5-week rule June 5 only fires if below entry — CAT now above it. XLK +1.21% to $198.13 (+12.90% from entry); HWM $198.29 auto-trailed; +15% tighten threshold $201.82 only $3.53 (1.78%) above HWM — imminent. CVX +1.02% to $187.73 (+2.94% from entry); HWM $188.45/stop $169.60 auto-trailed. IWM opened flat (+$290.64 vs $290.770 entry, -0.04%); new position, 10% trail, stop $262.53. No stops triggered. No losers cut (-7% not breached: all positions above -7% from entry). No stop tightening (XLK +12.90% — threshold $201.82 imminent but not breached). AVGO reports AMC June 3 (tomorrow) — SOXX entry watch for Thu Jun 4 post-reaction. Week count: 1/3.
+
+**Open Orders (EOD 2026-06-02):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): active, HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): active, HWM $188.45, stop $169.60 (auto-trailed ↑)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): active, HWM $291.70, stop $262.53 (new)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): active, HWM $198.29, stop $178.46 (auto-trailed ↑)
+
+**Action questions:**
+1. **XLK +15% tighten imminent ($201.82 — HWM $198.29, only $3.53 / 1.78% away):** Per rules, tighten to 7% trail when HWM hits $201.82. Confirm auto-tighten same as prior AMD/NVDA auto-confirms, or manual check first?
+2. **CAT exit reconsideration — now +2.11% ($911.50):** Prior plan was Thu Jun 4 proactive exit pre-NFP. CAT has reversed above entry with upgraded FY2026 outlook + analyst upgrades. 5-week rule June 5 only fires if below entry — currently above it. (A) Cancel Thu exit; hold to stop ($838.215), let catalyst run; or (B) Still exit Thu Jun 4 to free capital slot for SOXX post-AVGO, avoid NFP gap on a 5-week-old position?
+3. **SOXX Thu Jun 4 (conditional on AVGO beat AMC Jun 3):** AVGO reports tonight Jun 3. If beat → SOXX ~31sh @~$572 (~$17.7K), XLK=1/2 tech, SOXX=2/2. But deployment today 71% + SOXX 16.5% = ~87.5% → above 85% cap. Condition: SOXX only eligible if CAT exits Thu (freeing ~$18.2K). Confirm: enter SOXX Thu only if CAT exits first? Or explicitly expand cap to 87-88% for this scenario?
+4. **Week budget 1/3, 3 days remaining (Wed/Thu/NFP-blackout Fri):** 2 slots available. Plan: (a) SOXX Thu Jun 4 conditional on AVGO beat + CAT exit; (b) hold last slot post-NFP for Week 7. Confirm sequence?
