@@ -2577,3 +2577,70 @@ Q2 earnings June 3 AMC (AI semis +140% YoY guided). Conflicting signals + tech c
 - **CVX HWM auto-trailed:** $184.90 → $187.94 (oil strength — Brent +3.06%, WTI $89.80); stop $166.41 → $169.146.
 - **XLK HWM auto-trailed:** $192.43 → $195.77 (new intraday high, +2.47% today); stop $173.187 → $176.193. +15% tighten threshold $201.82 = 3.1% away.
 - **IWM entry (pre-authorized, pending user confirmation):** AMD stop-out triggers pre-market conditional plan. Deployment 53.6% → below 75% floor. Decision deferred to user.
+
+## 2026-06-03 Pre-Market Research (Wednesday, Week 6, Day 29)
+
+### API Status
+- **Alpaca:** 403 error — live account state unavailable. Using EOD Jun 2 baseline.
+- **Perplexity:** 403 error — fell back to WebSearch (fallback noted per workflow).
+
+### Account Snapshot (EOD Jun 2 baseline — live unverifiable)
+- **Equity:** ~$106,978 | **Cash:** $30,984.78 (29%) | **Deployed:** ~$75,993 (71.0%, 4 positions) | **DT count:** 1 | **Week count:** 1/3
+
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop (GTC) |
+|--------|--------|-------|------------|------------|-----------|
+| CAT | 20 | $892.689 | $911.50 | +$376 (+2.11%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $187.73 | +$553 (+2.94%) | 10% trail HWM $188.45 / stop $169.60 |
+| IWM | 62 | $290.770 | $290.64 | -$8 (-0.04%) | 10% trail HWM $291.70 / stop $262.53 |
+| XLK | 103 | $175.494 | $198.13 | +$2,332 (+12.90%) | 10% trail HWM $198.29 / stop $178.46 |
+
+### Pending User Decisions (EOD Jun 2 — UNANSWERED — blocking Thu plan)
+1. **XLK +15% tighten at $201.82** (HWM $198.29, 1.78% away): auto-confirm as per prior AMD/NVDA pattern?
+2. **CAT Thu Jun 4 exit:** (A) cancel proactive exit, hold to stop — catalyst running; or (B) stick to Thu exit, free slot for SOXX?
+3. **SOXX Thu Jun 4:** Enter ~31sh @~$572 (~$17.7K, 10% trail) IF AVGO beats tonight AND CAT exits Thu — confirm sequence?
+4. **Week budget:** (a) SOXX Thu conditional on 2+3; (b) reserve last slot post-NFP week 7 — confirm?
+
+### Market Context
+- **WTI:** ~$95/bbl (third straight session gain; US-Iran talks uncertainty = geopolitical premium)
+- **Brent:** $96.89 (+0.93%) — tight supply, 129M bbl drawdown March + 117M April
+- **S&P 500:** Closed at record 7,609.78 Jun 2 (first close >7,600); futures slight positive pre-market
+- **VIX:** 15.77 (Jun 2 close) — low risk; S&P up 9 straight weeks
+- **Sector RS (Jun 1):** SOXX(1) > QQQ(2) > IWM(3) > EEM(4) > XLY(5) > XLK(7) — tech fading but not broken; IWM staying strong (#3)
+
+### Today's Key Events
+- **AVGO Q2 FY2026 earnings AMC tonight:** Consensus EPS $2.40, rev $22.12B (+47% YoY); Q1 was $19.3B +29%. AI semi rev $8.4B Q1 +106% YoY. MAJOR catalyst for SOXX, XLK, broader tech.
+- **ADP Employment Change:** Pre-NFP read. Labor trend key for IWM/small-caps.
+- **ISM Services PMI:** Companion to May manufacturing (54.0 beat). >50 = expansion → bullish broad market.
+- **NFP Friday June 5:** Labor-week peak risk event; IWM vulnerable to gap.
+
+### News on Held Tickers
+- **CAT:** +51% YTD. Q1 $5.54 EPS (+20%), $17.4B rev (+22%), FY2026 guidance raised to low-double-digit. Data center power gen demand (AI infrastructure cycle) intact. Shareholder meeting June 10. No negative news. Thu Jun 4 exit pending user decision.
+- **CVX:** CEO Wirth (May 28): "upward oil price pressure expected through June/July." Brent $96.89 — well above $88 entry gate. Hess integration delivering. Analyst median PT $220. Thesis strongly intact.
+- **IWM:** Jun 3 range per search: $288.46–$291.84 (near entry $290.77). Thesis: labor resilience + domestic small-cap rotation. NFP Fri gap risk; 10% stop provides buffer.
+- **XLK:** +12.90% from entry. AVGO reports AMC tonight — AVGO is ~2-3% of XLK; beat = tailwind, miss = headwind. HWM $198.29; +15% tighten threshold $201.82 only 1.78% away — imminent today.
+
+### Trade Ideas
+1. **HOLD all 4 — no new entries:** Deployment 71% (in 75-85% band with round numbers). No forced action.
+2. **SOXX entry Thu Jun 4 (conditional):** IF AVGO beats AMC tonight + user confirms CAT exit Thu → enter SOXX ~31sh @~$572 (~$17.7K, 10% trail GTC). Deployment: replaces CAT slot, stays ~71%. XLK=1/2 tech, SOXX=2/2 tech. **Blocked until user answers action questions 2+3.**
+3. **XLK auto-tighten monitor:** HWM must reach $201.82 to trigger 7% trail tighten. Watch intraday — imminent if AVGO beats and XLK gaps up post-AMC tomorrow morning.
+
+### Risk Factors
+1. **AVGO AMC tonight** — "sell the news" risk if guide disappoints; XLK/SOXX could gap down Thu open; cancels SOXX entry plan
+2. **NFP Friday June 5** — IWM (labor-sensitive) gap risk; consider tightening stop if IWM runs above entry pre-NFP
+3. **Oil reversal** — Brent $96.89 driven by Iran risk premium; if Iran talks succeed, rapid CVX/XLE reversal
+4. **ADP + ISM Services today** — weak prints could soften pre-NFP risk tone
+5. **Alpaca API 403** — ALERT: cannot verify live stops, HWMs, or order fills. Stop levels used are EOD Jun 2 baseline — actual HWMs may have auto-trailed up overnight. Manual verification needed.
+6. **4 action questions pending** — Thu plan (CAT exit, SOXX entry) cannot execute without user decisions
+
+### Decision
+**HOLD all 4 positions. No new entries today.** Deployment 71% — in target band. Wait for:
+- User answers to EOD Jun 2 action questions (critical for Thu plan)
+- AVGO AMC result tonight
+- ADP + ISM Services data intraday
+
+### Active Watch Items
+- **XLK HWM $198.29 → auto-tighten when HWM hits $201.82** (1.78% away, pending user confirm)
+- **AVGO AMC tonight** — SOXX entry Thu contingent on beat + CAT exit
+- **CAT Thu Jun 4** — proactive exit vs hold pending user decision
+- **NFP Fri Jun 5** — IWM gap risk; last slot reserved post-NFP for Week 7
+- **Alpaca API 403** — verify credentials and account status manually
