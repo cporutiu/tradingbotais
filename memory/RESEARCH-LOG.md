@@ -5,6 +5,277 @@ Format each entry:
 
 ---
 
+## 2026-06-03 — Pre-Market Research (Wednesday, Week 6, Day 29)
+
+### Account Snapshot (live API — pre-market 2026-06-03)
+- **Equity:** $107,031.60 | **Cash:** $30,984.78 (29.0%) | **Deployed:** $76,046.82 (71.1%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$7,031.60 (+7.03%) | **Week 6 trade count:** 1/3 (2 slots remain)
+
+### Positions (pre-market 2026-06-03)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| CAT | 20 | $892.689 | $906.92 | +$284.62 (+1.59%) | 10% trail HWM $931.35 / stop $838.215 (locked) |
+| CVX | 103 | $182.364 | $188.88 | +$671.19 (+3.57%) | 10% trail HWM $188.45 / stop $169.603 (auto-trailed) |
+| IWM | 62 | $290.770 | $290.51 | -$16.11 (-0.09%) | 10% trail HWM $291.70 / stop $262.53 (new) |
+| XLK | 103 | $175.494 | $198.47 | +$2,366.28 (+13.09%) | 10% trail HWM $198.29 / stop $178.461 (price > HWM → will auto-trail) |
+
+**XLK note:** Current price $198.47 > HWM $198.29 → stop will auto-trail to new HWM today. +15% tighten trigger at $201.82 = 1.69% above current price — **imminent**.
+
+### Open Orders (confirmed live)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $188.4478, stop $169.603
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $291.70, stop $262.53
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.29, stop $178.461
+
+### User Decisions Carrying Forward (STEP 1B)
+- **No user decisions block found** for EOD Jun 2 action questions. All 4 carry forward as unresolved:
+  1. XLK +15% tighten ($201.82 — 1.69% from current) — unconfirmed; treating as **active watch (imminent trigger)**
+  2. CAT exit reconsideration: position now +1.59% above entry; 5-week rule fires June 5 only if below entry — currently above; **exit plan unclear, no user decision**
+  3. SOXX Thursday Jun 4 (conditional on AVGO beat AMC Jun 3) — **unconfirmed; AVGO reports tonight**
+  4. Week budget 1/3, 2 slots — **no sequence confirmed**
+
+### Market Context
+- **WTI (CLN26):** ~$89.39/bbl (CME July 2026 front month); prediction markets: just above $90. **Declined from $91-92 on Jun 1.** CVX entry gate = $88+ (borderline but above gate).
+- **Brent:** est. ~$94-96/bbl
+- **S&P 500 futures (ESM26):** ~7,620, -0.05% premarket — essentially flat; mild negative bias
+- **VIX:** ~16-17 (May avg ~16.29; June VIX futures 17.84) — **LOW risk zone (<18)**
+- **Market risk:** Low
+- **Economic cycle:** Mid-cycle — GDP 1.8-2.8%, unemployment mid-4%, disinflation toward 2% PCE, Goldman 20% recession probability (tail risk). Self-sustaining expansion at moderate pace.
+
+### Economic Calendar — Today (Jun 3, Wednesday)
+- **8:15 AM ET:** ADP Employment Change May 2026 — consensus 117K, prior 109K. **NOT a named blocker** per strategy rules; market-moving for IWM/small-cap
+- **10:00 AM ET:** ISM Services PMI May 2026 — prior 53.8 (April). If below 50 = contraction signal; above 50 = expansion confirmation
+- **AMC tonight:** **AVGO (Broadcom) Q2 FY2026 earnings** — consensus EPS $2.32-$2.40, revenue $22.1B (+47% YoY). Q1 FY2026 guidance was $22.0B. **Key binary event for SOXX Thursday entry.**
+- **Thu Jun 4:** ADP Wednesday residual; **no named macro blocker** — SOXX entry window opens post-AVGO reaction
+- **Fri Jun 5:** **NFP May 2026 @ 8:30 AM ET — NAMED BLOCKER (full blackout)**
+
+### Benzinga Signals (Jun 3, 24h lookback)
+- **SELLS (high):** SPY (score -7, "S&P 500 chases win streak last seen in 1995"), CVX (score -7, "NY AG Letitia James sues Trump admin over TotalEnergies deal — calls it a 'Sham'"), AMD (score -6), XLE (score -3)
+- **SELLS (medium):** QQQ (score -2), GLD (score -2)
+- **BUYS (high):** SOXX (score +7, "Record-Breaking Rally Accelerates / Michael Burry Spots AI Dot-Com Parallel"), AVGO (medium, score +2, "What's Going On With AVGO Stock Tuesday?")
+- **BUYS (medium):** IWM (score +2)
+- **HOLD:** XLK, CAT, XOM, FCX, NVDA (low confidence)
+- **BENZINGA_BUYS:** SOXX, AVGO (medium), IWM (medium)
+- **BENZINGA_SELLS:** SPY, CVX, AMD, XLE (high); QQQ, GLD (medium)
+
+### Congress Signals (Jun 3)
+- **fetch_error** — Quiver Quant API unavailable. Using Jun 1 cached: all HOLD (no actionable signals). FCX Gottheimer BUY (Apr 15, filed May 19) still in 45d lookback window — elevated conviction, unchanged from prior weeks.
+- Congress: no new signals on any held ticker.
+
+### Confluent Signals
+- **SOXX:** Benzinga BUY high + SOXX's own strong RS #1 = **elevated conviction BUY** (aligns with AVGO earnings catalyst tonight); Thursday entry thesis strengthened
+- **CVX:** Benzinga SELL high — but signal is political/legal news (TotalEnergies deal dispute), NOT a fundamental CVX thesis break. Perplexity confirms: consensus Buy, median PT $187.19, targets $187-205+. WTI $89.39 > $88 entry gate. **HOLD unless WTI drops below $88.**
+- **IWM:** Benzinga BUY medium — confirms IWM held position is supported
+
+### Perplexity Validation
+**CVX ($188.88, +3.57% from entry):**
+- Analyst consensus: 48 Buy / 10 Hold / 1 Sell; median PT $187.19 (Business Insider), $196.30 (Public.com); high $242, low $152
+- MarketBeat: "undervalued blue-chip energy," stock up 1.2% midday Jun 2 with "broadly positive" news flow
+- Scotiabank raised PT from $168 → $187 (Jun 2)
+- TIKR mid-case $295 by 2030 (+55.6% IRR); BofA target $206 on Hormuz supply risk
+- Benzinga SELL: NY AG lawsuit vs TotalEnergies deal — political headline, NOT CVX specific
+- WTI ~$89.39 = above $88 CVX entry gate by 1.6%
+- **CVX thesis: INTACT but borderline on WTI. HOLD. Monitor WTI for breach of $88.**
+
+**CAT ($906.92, +1.59% from entry):**
+- Buy consensus; analyst targets cluster $795-$1,125 (avg ~$920). UBS raised to $900 (Neutral), Evercore $1,103 (Outperform), JPM $1,125 (high)
+- Q1 2026: +22% revenue YoY, EPS +30%, record $63B backlog, low double-digit FY2026 guidance
+- Infrastructure + AI data-center power thesis INTACT and strengthening
+- 5-week rule June 5 fires only if below entry — CAT is $906.92 vs $892.689 entry = **rule no longer applies**
+- Dividend raise planned June 2026 (+7-9% to ~$6.48-6.56)
+- **CAT thesis: STRENGTHENING. HOLD to stop. No exit needed.**
+
+**XLK ($198.47, +13.09% from entry):**
+- New 52-week high ($198.38 recent high); Zacks Strong Buy ETF Rank #1
+- NVDA: 13.57% weight; AAPL: 11.19%; MSFT: 8.51%; MU: 7.06%; AVGO: 5.43%
+- Analysts forecast ~25% avg 12-month upside for XLK holdings
+- Technicals: RSI overbought, broke upper Bollinger Band May 28 — near-term pullback risk elevated but medium-term bullish
+- +15% tighten trigger $201.82 = 1.69% away from current price. Auto-tighten to 7% trail = confirmed per prior AMD/NVDA pattern
+- **XLK thesis: INTACT, STRONG. HOLD. Auto-tighten to 7% trail when HWM hits $201.82.**
+
+**IWM ($290.51, -0.09% from entry):**
+- JOLTS 7.6M (Jun 2 beat) confirmed small-cap labor thesis
+- ADP May today (8:15 AM, consensus 117K) and ISM Services (10:00 AM) — both supportive if in-line or better
+- Benzinga BUY medium confirms IWM entry
+- Stop $262.53 (10% trail) — provides 9.6% buffer from current
+- **IWM thesis: INTACT. HOLD. Monitor ADP + ISM Services today.**
+
+**SOXX (5th position candidate, Thursday Jun 4):**
+- SOXX +47% YTD, +25% over 30 days (record rally). RS #1 among all tracked ETFs
+- Benzinga BUY high; AI chip demand structural ($660B hyperscaler capex 2026, +65% YoY)
+- Bloomberg Intelligence: semiconductor revenues may grow ~57% in 2026
+- AVGO is top SOXX holding (~7-8% weight); NVDA ~14%; MU, AMD also key
+- Broke upper Bollinger Band May 26 — technically overbought but momentum strong
+- **Michael Burry "AI dot-com parallel" warning** — notable contrarian risk flag; Benzinga mentions this even in the BUY article
+- AVGO beats tonight → SOXX Thursday open → ~31sh @~$575 (~$17.8K, 17% sizing), 10% trail GTC, target +20% ($690), stop ~$517 — R:R 2:1
+- Entry condition: AVGO beats AND CAT stays above entry (to avoid >85% deployment cap)
+- Deployment math: 71.1% current + ~16.6% SOXX = ~87.7% → above 85% cap IF CAT stays. If CAT is still there, may need to skip or user must approve 87% deployment.
+
+### Trade Ideas
+1. **HOLD all 4 positions today** — AVGO AMC = de facto tech/semi blocker; ADP + ISM today = macro volatility windows. No new entries warranted.
+2. **SOXX Thursday Jun 4 (conditional on AVGO beat tonight):** ~31sh @~$575 (~$17.8K); XLK=1/2 tech slots, SOXX=2/2; R:R 2:1; 10% trail GTC immediately. Gate: AVGO beats. Deployment: 71.1% + 16.6% = ~87.7% — at cap limit. May need user approval or must exit CAT first.
+3. **XLK auto-tighten $201.82:** Imminent. When HWM hits $201.82 (price ~$201.82), execute: cancel 10% trail, replace with 7% trail GTC (same pattern as AMD 2026-05-21, NVDA 2026-05-14). No user confirmation received but prior auto-tighten pattern established.
+4. **CAT: HOLD to stop.** +1.59% above entry; 5-week rule no longer applies (above entry); thesis strengthening. Stop $838.215 provides 7.6% buffer from $906.92.
+5. **CVX: HOLD to stop.** WTI $89.39 > $88 gate; Benzinga SELL is political news, not thesis break; consensus Buy.
+
+### Risk Factors
+- **AVGO AMC tonight (primary):** Binary. Beat + guide-up → SOXX Thursday; miss → defer, assess FCX instead
+- **ADP 8:15 AM / ISM Services 10:00 AM:** Both move IWM and risk-on names. Weak ADP (<80K) or ISM <50 = risk-off warning
+- **WTI at $89.39 (CVX gate = $88):** Only 1.6% buffer. If oil continues declining, CVX thesis at risk. Watch for sustained close below $88.
+- **Michael Burry AI dot-com warning:** SOXX overbought at upper Bollinger Band. Entry Thursday carries "sell the news" risk if AVGO beats but guides cautiously.
+- **Deployment 71.1% (below 75% floor):** SOXX Thursday entry brings to ~87.7% — above 85% cap. If entering SOXX, ensure deployment stays within bounds; consider not exceeding 85% unless user explicitly approves.
+- **XLK overbought (technicals):** Upper Bollinger Band break May 28; RSI overbought. Any negative AI news could trigger pullback. Stop $178.461 provides 10% buffer.
+- **NFP Fri Jun 5 (named blocker):** No entries permitted Friday. SOXX Thursday or wait until Week 7.
+
+### Decision
+**HOLD — no new entries today.**
+- AVGO AMC = de facto blocker for tech/semi trades
+- ADP + ISM Services = intraday volatility windows; don't enter during these
+- All 4 positions held with intact theses; stops protecting
+- **Thursday plan: SOXX conditional on AVGO beat (execute at open Jun 4 if beat confirmed pre-market)**
+- **Active watch: XLK tighten at $201.82** — will auto-execute when triggered
+
+**Action questions:**
+1. **SOXX Thursday (deployment cap):** AVGO beats tonight → SOXX ~$17.8K → deployed ~87.7% (above 85% cap). Approve deployment up to 87-88% for this one entry given all-time high AI momentum? Or skip SOXX and stick to 85% rule?
+2. **XLK tighten at $201.82 (~1.69% away):** Confirm auto-tighten to 7% trail when HWM hits $201.82 — same pattern as AMD/NVDA auto-confirms (no user check needed)?
+3. **CVX with WTI at $89.39 (gate = $88, buffer 1.6%):** Monitor daily. If WTI closes below $88, execute proactive exit same day. Confirm trigger level and exit procedure?
+
+---
+
+## 2026-06-02 — Pre-Market Research (Tuesday, Week 6, Day 28)
+
+### Account Snapshot (EOD Jun 1 baseline — live API unavailable in interactive session)
+- **Equity:** ~$105,619 | **Cash:** ~$49,013 (46.4%) | **Deployed:** ~$56,607 (53.6%, 3 positions) | **DT count:** 0
+- **Phase P&L:** +$5,619 (+5.62%) | **Week 6 trade count:** 0/3 (fresh)
+
+### Positions (EOD Jun 1 prices)
+| Ticker | Shares | Entry | EOD Price | Unrealized | Stop |
+|--------|--------|-------|-----------|------------|------|
+| CAT | 20 | $892.689 | $865.36 | -$546.58 (-3.06%) | 10% trail HWM $931.35 / stop $838.215 (locked, 3.14% buffer) |
+| CVX | 103 | $182.364 | $185.85 | +$359.10 (+1.91%) | 10% trail HWM $187.94 / stop $169.146 (auto-trailed) |
+| XLK | 103 | $175.494 | $195.70 | +$2,081.22 (+11.51%) | 10% trail HWM $196.50 / stop $176.850 (auto-trailed) |
+
+### Open Orders (EOD Jun 1)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $931.35, stop $838.215 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $187.94, stop $169.146 (auto-trailed)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $196.50, stop $176.850 (auto-trailed)
+
+### User Decisions Carrying Forward (STEP 1B)
+- No user decisions block found for EOD Jun 1 action questions. All 4 carry unanswered:
+  1. 4th position: SOXX vs IWM — unresolved
+  2. XLK +15% tighten at $201.82 — unconfirmed but following prior auto-tighten pattern (AMD, NVDA)
+  3. CAT exit: Thursday June 4 vs June 5 (NFP day) — unresolved; **active watch item**
+  4. Week budget 0/3, enter 4th position Tue/Wed — pending
+
+### Market Context
+- **WTI (CLN26):** ~$91.51-92.64 (up ~4% as Brent near $95; Iran peace talks "showing little progress" = risk premium holding)
+- **Brent:** ~$94.58-95.83/bbl (+4% at start of June)
+- **S&P 500 futures (ESM26):** -0.07% to -0.1% premarket — slightly lower; Iran tensions + geopolitical caution offset AI momentum
+- **VIX:** 16.05 (Jun 1 close) — **LOW risk** (<18)
+- **Market risk:** Low
+- **Pre-market notes:** HPE + Marvell led premarket gains (AI infrastructure demand). AVGO, PANW earnings this week. Jobs data building up to Friday NFP.
+
+### Economic Calendar — Week of Jun 2-6
+- **TODAY (Jun 2):** JOLTS April 2026 @ 10:00 AM ET (job openings; March was 6.9M unchanged) — **NOT a named blocker per strategy rules**
+- **Wed Jun 3:** AVGO earnings AMC — **DE FACTO TECH/SEMI BLOCKER** for SOXX entry before then
+- **Thu Jun 4:** ADP employment, ISM Services — minor
+- **Fri Jun 5:** **NFP May 2026 @ 8:30 AM ET — NAMED BLOCKER (full blackout)**
+- **Fri Jun 5 also = CAT 5-week rule** (entered May 5; five full weeks = June 5)
+
+### Benzinga Signals (Jun 1 cached — 24h lookback; Jun 2 script not run in interactive session)
+- **BUYS (high):** SPY (score +19), QQQ (score +11), NVDA (score +12, stale — not held), CAT (score +3, 3 mentions), AVGO (score +13, 15 mentions — "What's Going On With Broadcom Stock Friday?"), **IWM (score +3, 8 mentions — "Small-Cap Lead Might Be The Most Dangerous Trade Right Now")**
+- **SELLS (medium+):** None
+- **BENZINGA_BUYS actionable:** IWM (4th position candidate, new sector); AVGO (binary earnings risk Wed Jun 3 = skip for now)
+- **Note:** IWM Benzinga headline is cautionary ("Most Dangerous Trade") despite positive score — flag; wait for JOLTS 10 AM to confirm labor resilience
+
+### Congress Signals (Jun 1 cached — 45d lookback, same as prior weeks)
+- **BUYS (high):** FCX (Gottheimer Apr 15, filed May 19 — unchanged), AMD (stale — position exited)
+- **SELLS (medium+):** NVDA (high — not held), CAT (medium — Moskowitz Mar 31, stale/small), AVGO (high — 3 sells vs 1 buy)
+- Congress: no new signals on held tickers (CVX, XLK, CAT no new activity; CAT sell is stale)
+
+### Confluent Signals
+- **AVGO:** Benzinga BUY high + Congress SELL high = **CONFLICT → no trade** (consistent with prior weeks)
+- **FCX:** Congress BUY high, Benzinga neutral — elevated conviction but spread anomaly blocked twice ($64-67 vs PT $65.72 = no R:R)
+- **IWM:** Benzinga BUY high, Congress HOLD — single-source signal; tradeable
+
+### Perplexity Validation (via WebSearch fallback — Perplexity scripts unavailable in interactive session)
+
+**CVX (+1.91% from entry, thesis check):**
+- Analyst consensus: 42 analysts, Buy (18 Buy / 6 Hold / 1 Sell), median PT $220 (+18.4% from $182.364 entry)
+- CEO Mike Wirth: "over the next few weeks, upwards pressure as we get into June and certainly into July" on oil prices
+- WTI bouncing +4% today — Hess integration + Guyana production expansion intact
+- Benzinga HOLD (low confidence) = neutral, no sell signal
+- **CVX thesis: STRENGTHENING. HOLD.**
+
+**CAT (-3.06% from entry, thesis check):**
+- Analyst consensus: 28 analysts, Buy, avg PT $920.14 (+6.3% from current $865.36)
+- Q1 2026: +22% revenue, EPS $5.54 beat, record $63B backlog — fundamentals intact
+- ISM Manufacturing May 2026: 54.0 (strong expansion beat) confirmed Jun 1
+- But: tariff headwind $2.6B FY2026; insider selling ~$99.5M; price action multi-week weakness
+- Congress SELL medium (Moskowitz sale stale, small — noise level)
+- **Critical:** 5-week rule = June 5 = NFP day. Stop buffer only 3.14% ($865.36 vs $838.215). Risk-off on NFP day could gap through stop or create 2-sided risk. **Recommend proactive exit Thursday June 4.**
+
+**XLK (+11.51% from entry, thesis check):**
+- Tech sector leading YTD (+32-33%); SOXX #1, QQQ #2, XLK #3 (20-day RS)
+- Pre-market: ~$191.84 (vs $195.70 close = -2.0% pre-market gap — AVGO earnings caution or Iran risk-off)
+- +15% tighten threshold $201.82 = 3.1% above Jun 1 close; further away with pre-market dip
+- Stop $176.850 = 9.6% buffer from close; 11.2% from pre-market $191.84
+- AVGO earnings AMC Wed = XLK has modest AVGO exposure (~2-3%); if AVGO beats → XLK positive
+- **XLK thesis: INTACT. HOLD. Pre-market dip = normal AVGO pre-earnings caution, not a thesis break.**
+
+**IWM (4th position candidate):**
+- NAV ~$289, YTD +18.11%; sector tilt: Healthcare 18%, Industrials 17%, Financials 16%
+- Benzinga BUY high (cautionary headline but positive score)
+- Small-cap: domestic focus = minimal Iran oil sensitivity; pure US economic play
+- R:R: entry ~$289, stop 10% trail = ~$260, target +20% = ~$347 → R:R 2:1 ✓
+- JOLTS today 10 AM: if openings ≥ 6.5M (benign), small-cap thesis supported
+- No AVGO earnings risk (not semi/tech ETF)
+- Deployment after entry: 53.6% + ~17% = ~70.5% (below 75% floor, but better)
+
+**AVGO (earnings candidate — deferred):**
+- Earnings AMC Wed Jun 3; consensus $22B revenue (+47% YoY), AI revenue $10.7B (+140% YoY)
+- "Second most-watched AI semi read after NVDA" — binary event; markets pricing high expectations
+- AVGO Benzinga BUY high vs Congress SELL high = CONFLICT; skip pre-earnings
+- SOXX entry thesis: if AVGO beats + guides up → enter SOXX Thursday June 4 (~31sh @~$569)
+
+### Trade Ideas
+1. **IWM — ENTER today post-JOLTS 10 AM** (if JOLTS ≥ 6.5M job openings): Benzinga BUY high; new sector (small-cap domestic); deployment 53.6% → ~70.5%; ~62sh @~$289, 17% sizing (~$17,918); stop 10% trail GTC immediately; target $347 (+20%); R:R 2:1. Gate: JOLTS benign. Sector = NOT tech/energy; no AVGO risk.
+2. **CAT — EXIT Thursday June 4** (pre-NFP): proactive exit; -3.06% from entry and 4 weeks of price weakness; stop buffer only 3.14%; 5-week rule fires June 5 = NFP gap risk. Exit at market open Jun 4. Expected P&L: ~-$550 realized (vs max stop-triggered ~-$550 at $838.215 = similar, but proactive avoids NFP gap blowthrough).
+3. **SOXX — conditional entry Thursday June 4**: IF AVGO beats AMC Wed Jun 3 → enter SOXX Thursday open (~31sh @~$569, ~$17,639, 17%); XLK=1/2 tech slots, SOXX=2/2 eligible; stop 10% trail GTC; target +20% ($683). Gate: AVGO earnings beat.
+4. **XLK, CVX — HOLD**: both theses intact; stops in place. No tightening needed today.
+
+### Risk Factors
+- **AVGO earnings AMC Wed Jun 3:** Binary event. SOXX has ~8% AVGO. Key focus: AI revenue confirmation ($10.7B expected), ASIC backlog revisions. "Sell the news" risk even on beat.
+- **NFP Fri Jun 5 (named blocker):** Blackout for new entries. CAT 5-week rule converges on same day = double constraint → proactive CAT exit Thursday required.
+- **IWM Benzinga signal caveat:** Headline warns "Most Dangerous Trade Right Now" → wait for JOLTS 10 AM before entering; if JOLTS misses badly (< 6.0M), defer IWM.
+- **XLK pre-market -2.0%:** May gap lower at open on AVGO pre-earnings repositioning. Stop at $176.850 provides 11.2% buffer from pre-market $191.84. No action needed.
+- **WTI bounce sustainability:** +4% today on Iran stalemate. If talks break down entirely = larger geopolitical spike = CVX very bullish; if peace deal emerges = CVX selloff. Stop $169.146 = 8.9% buffer from $185.85.
+- **Deployment 53.6%:** Below 75% floor. IWM today + SOXX Thursday = ~88% deployed (if CAT also still open) — would exceed 85% cap. Sequence matters: CAT must exit Thursday BEFORE SOXX enters, to keep deployment in range.
+
+### Decision
+**TRADE — IWM entry today post-JOLTS 10 AM (gate: JOLTS ≥ 6.5M).**
+- Deployment floor requires action (53.6% vs 75% target); no named 24h blocker; new sector added
+- SOXX conditional Thursday June 4 post-AVGO beat
+- CAT proactive exit Thursday June 4 pre-NFP gap risk (sequence: exit CAT FIRST, then enter SOXX to stay ≤85% deployed)
+- Hold CVX + XLK to stops
+
+**Action questions:**
+1. **IWM entry today:** After JOLTS 10 AM — proceed if benign (≥6.5M openings)? Or defer to Wednesday?
+2. **CAT exit Thursday June 4:** Confirm proactive exit pre-NFP to avoid gap risk on below-entry position? Or hold to 5-week rule June 5 mechanically?
+3. **SOXX Thursday Jun 4 (conditional):** If AVGO beats AMC Wed → enter SOXX Thu at open? Confirm or prefer IWM-only for new sector strategy?
+4. **XLK +15% tighten at $201.82:** Confirm auto-tighten to 7% trail on HWM touch (same as prior AMD/NVDA auto-confirms)?
+
+### Afternoon Addendum (Midday Scan 2026-06-02)
+- **JOLTS April 2026: 7.6M openings** (vs 6.5M gate, vs 6.8M consensus) — MASSIVE beat. IWM gate cleared. Small-cap thesis confirmed by labor resilience.
+- **IWM ENTERED:** 62sh @ $290.7698, 10% trailing stop GTC (4c0586cc, stop $261.819). Week slot 1/3 used.
+- **CAT $902.80 (+4.35% day, +1.13% from entry):** FY2026 sales outlook revised upward, order backlog surged, analyst upgrades from UBS/BofA/Argus/Rothschild/Wells Fargo/Daiwa. THESIS STRENGTHENING. Thursday exit plan under reconsideration — position now above entry with fresh catalyst.
+- **AVGO +4.43% today ($480.33), new 52-week high:** Earnings AMC Jun 3. AI revenue Q2 guide $10.7B (+140% YoY). Consensus 7 SB / 36 Buy / 0 Sell. Market front-running → SOXX Thursday entry still conditional on beat.
+- **CVX $187.87 (+3.02% from entry):** HWM auto-trailed to $188.39, stop $169.551. Oil thesis intact.
+- **XLK $196.97 (+12.16% from entry):** HWM auto-trailed to $197.85, stop $178.065. +15% tighten trigger $201.82 (~$4.85 from current HWM).
+- **Deployment: 71.0%** (4 positions, $75,750 of $106,735). Below 75% floor but within plan.
+
+---
+
 ## 2026-05-25 — Pre-Market Research (Monday, Memorial Day — MARKET CLOSED)
 
 > **US markets closed today (Memorial Day). No trading. Next session: Tuesday May 27.**
