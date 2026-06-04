@@ -2848,3 +2848,114 @@ Q2 earnings June 3 AMC (AI semis +140% YoY guided). Conflicting signals + tech c
 - **CVX HWM auto-trailed:** $184.90 → $187.94 (oil strength — Brent +3.06%, WTI $89.80); stop $166.41 → $169.146.
 - **XLK HWM auto-trailed:** $192.43 → $195.77 (new intraday high, +2.47% today); stop $173.187 → $176.193. +15% tighten threshold $201.82 = 3.1% away.
 - **IWM entry (pre-authorized, pending user confirmation):** AMD stop-out triggers pre-market conditional plan. Deployment 53.6% → below 75% floor. Decision deferred to user.
+
+
+---
+
+## 2026-06-04 -- Pre-Market Research (Thursday, Week 6, Day 30)
+
+### STEP 2 -- Account Snapshot (pre-open)
+- **Equity:** $106,522.44 | **Cash:** $30,984.78 (29.1%) | **Deployed:** $75,537.66 (70.9%) | **DT count:** 0
+- **Phase P&L:** +$6,522.44 (+6.52%) | **Week count:** 1/3
+
+| Ticker | Shares | Entry | Pre-mkt | Unrealized | Day chg vs close | Stop |
+|--------|--------|-------|---------|------------|-----------------|------|
+| CAT | 20 | $892.689 | $917.00 | +$486.22 (+2.72%) | -0.99% (vs $926.18) | 10% trail HWM $936.71 / stop $843.039 |
+| CVX | 103 | $182.364 | $190.50 | +$838.05 (+4.46%) | +0.42% (vs $190.17) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $287.93 | -$176.07 (-0.98%) | +0.09% (vs $287.67) | 10% trail HWM $291.70 / stop $262.53 |
+| XLK | 103 | $175.494 | $191.50 | +$1,648.62 (+9.12%) | -2.41% (vs $196.23) | 10% trail HWM $198.73 / stop $178.857 |
+
+**Open Orders (confirmed pre-market):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $936.71, stop $843.039
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $291.70, stop $262.53
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857
+
+### STEP 1B -- Pending User Decisions (unanswered from EOD Jun 02 & Jun 03)
+No "User decisions" block found in TRADE-LOG.md. All prior action questions carry forward unanswered:
+1. **CAT proactive exit Thu Jun 4** -- originally planned; position now +2.72% above entry; 5-week rule June 5 no longer applies
+2. **SOXX Thu Jun 4 conditional on AVGO beat** -- AVGO beat NOW CONFIRMED; gate condition met
+3. **XLK auto-tighten to 7% at HWM $201.82** -- pending user confirm
+4. **IWM stop tighten pre-NFP** -- pending user confirm
+
+### STEP 3 -- Market Context
+
+**Macro:**
+- **WTI:** $96.08 (+2.47%) | **Brent:** $98.00 (+2.08%) -- surging; CVX thesis strongly intact
+- **S&P 500 futures:** 7,545.25 (-0.35%) -- slight pre-market softness
+- **VIX:** ~17.0 (futures 17.85; spot ~16-17) -- market_risk: LOW
+- **Economic cycle:** Late-cycle (moderating GDP; AI capex extending expansion; 33-month gradual employment deceleration without recession)
+
+**Today's calendar (Jun 4):**
+- 9:30 AM ET: Challenger Job Cuts (May)
+- 12:30 PM ET: **Initial Jobless Claims** (prior 215K; 4-week avg 209K) -- last labor signal pre-NFP
+- 12:30 PM ET: Nonfarm Productivity QoQ Final (prior 1.6%); Unit Labor Costs QoQ Final (prior 4.6%)
+- Fed speeches: Barkin, Daly
+
+**Tomorrow (Jun 5) = NFP BLACKOUT:**
+- 8:30 AM ET: May Employment Situation -- full blackout; no new entries after today's open
+
+**AVGO Q2 FY2026 (AMC Jun 3 -- confirmed beat):**
+- EPS: $2.44 actual vs $2.32 expected (~5% beat)
+- Q3 guidance: AI revenue ~$16B (step-up from ~$10.8B); blowout guide
+- Market reaction: positive. XLK -2.41% pre-market is pre-earnings-repositioning washout, not thesis break.
+
+### Benzinga Signals (24h lookback)
+- **SOXX:** BUY, high (score +8, 11 mentions; AI semi momentum, record-breaking rally)
+- **CVX:** BUY, medium (score +2, 4 mentions; NY AG lawsuit on TotalEnergies deal -- minor noise for CVX)
+- **IWM:** SELL, medium (score -2, 5 mentions; small-cap gap risk flagged pre-NFP)
+- **AMD:** SELL, high (score -13, 24 mentions) -- not held, irrelevant
+- **NVDA:** SELL, high (score -6, 19 mentions) -- not held, tech cap full, irrelevant
+- **GLD:** SELL, medium (score -2, 2 mentions) -- not held
+
+### Congress Signals
+- **fetch_error** -- no signals today.
+
+### Perplexity Validation
+- **SOXX BUY confirmed:** AVGO Q2 beat (+5% EPS, Q3 AI guide $16B) validates AI/semis capex thesis. MACD positive, Aroon uptrend. BUT: extremely overbought (RSI, Stochastics, Bollinger band break; 44% run Apr-May). Momentum entry, not fresh breakout -- accept extended price risk.
+- **CVX BUY confirmed:** Oil $96 WTI/$98 Brent; lawsuit headline is noise. HOLD.
+- **IWM SELL caution:** NFP tomorrow amplifies small-cap vulnerability. Thesis (JOLTS 7.6M beat) intact. Stop buffer 8.6%. Watch jobless claims today at 12:30 PM.
+- **XLK:** AVGO beat removes pre-earnings headwind; expect partial recovery at open. HWM $198.73, stop $178.857. Tighten to 7% at HWM $201.82.
+- **Sector momentum YTD leaders:** Energy(1), Consumer Staples(2), Industrials(3), Materials(4) -- CAT and CVX in top momentum sectors YTD.
+- **RS Ranking (20-day):** SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) > IWM(10) > SPY(11) > XLF(12) > XLV(13) > XLRE(14) > XLP(15) > HYG(16) > GLD(17) > XLU(18) > SLV(19)
+
+### Trade Ideas
+
+**1. SOXX entry today -- GATE OPEN (AVGO beat confirmed)**
+- Catalyst: AVGO Q2 beat; AI rev guide $16B Q3; Benzinga BUY high; RS #1; MACD positive
+- Entry: ~31sh @~$572 (~$17.7K), 10% trailing stop GTC placed immediately on fill
+- Stop: ~$515 (10% trail from entry)
+- Target: ~$686 (+20%)
+- R:R: 2:1
+- **CONDITION: Only if CAT exits first** (deployment cap: 70.9% + 16.6% = 87.5% > 85% cap)
+- Risk: Overbought; momentum entry; NFP tomorrow (stop placed, risk managed)
+- Week count if entered: 2/3
+
+**2. CAT proactive exit today (original plan)**
+- Action: Market sell at open; lock +$486 (+2.72%)
+- Rationale: Established Jun 02. 30-day hold. NFP tomorrow = gap risk on cyclical. Frees slot for SOXX at ~80% deployed.
+- Alternative: Hold to stop $843.039; thesis intact; no 5-week rule pressure.
+
+**3. HOLD IWM -- watch jobless claims 12:30 PM**
+- If claims >230K (notably above 215K prior): consider tightening IWM stop to 7% trail
+- No preemptive action today; let data decide
+
+### Risk Factors
+1. **NFP Friday (Jun 5)** -- full blackout; IWM most vulnerable; no new entries after today's open
+2. **SOXX overbought** -- 44% Apr-May run; entering extended; trailing stop limits damage
+3. **XLK pre-market -2.41%** -- AVGO positioning noise; watch for HWM auto-trail on open bounce
+4. **Jobless claims 12:30 PM** -- if >230K, IWM thesis softens; tighten stop consideration
+5. **Oil spike risk reversal** -- Brent $98; geopolitical-driven; can reverse on Iran deal news
+
+### Decision
+**PENDING USER CONFIRMATION -- two gated decisions:**
+- **(A) CAT exit today?** YES -> proceed to SOXX entry at open (deployment ~80%, within cap)
+- **(B) SOXX entry today?** Conditional on (A); gate met (AVGO beat confirmed)
+- **Default (no user input by open):** HOLD all 4 positions; defer to post-NFP
+
+**Active watch items:**
+- **CAT exit decision** -- proactive sell at open if confirmed; else hold to stop
+- **SOXX entry** -- conditional on CAT exit; ~31sh @~$572 post-first-candle
+- **XLK tighten** -- 7% trail when HWM $201.82 (currently $198.73; +$3.09 away)
+- **Jobless claims 12:30 PM** -- >230K = IWM stop tighten signal
+- **NFP tomorrow** -- no entries after today; full blackout Fri AM
