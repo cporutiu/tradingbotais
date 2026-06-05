@@ -432,3 +432,77 @@ Template for each entry:
 - **Deployment goal:** ≥75% by Wednesday June 4 via SOXX entry (after sector-cap resolution) or CAT replacement; never below 75% for 7th consecutive week
 
 ### Overall Grade: B+
+
+---
+
+## Week ending 2026-06-05
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $105,912.30 (May 29 EOD / Week 5 end) |
+| Ending portfolio | $104,179.62 |
+| Week return | -$1,732.68 (-1.64%) |
+| S&P 500 week | ~-2.84% (NFP 172K beat → rate-hike fears → tech/semi rout; Nasdaq -4% Fri) |
+| Bot vs S&P | **+1.20%** (outperformed in down week — held less tech than index) |
+| Phase P&L | +$4,179.62 (+4.18% from $100,000 start) |
+| Trades | 1 (W:0 / L:0 / open:4) — 1 new buy (IWM Jun 2); 0 closed |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | CVX +2.92% unrealized (+$547.59) |
+| Worst trade | IWM -3.67% unrealized (-$661.53) |
+| Profit factor | N/A (no closed trades) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CAT | $892.689 | $902.00 | +$186.22 (+1.04%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | $182.364 | $187.68 | +$547.59 (+2.92%) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | $290.770 | $280.10 | -$661.53 (-3.67%) | 10% trail HWM $292.875 / stop $263.588 |
+| XLK | $175.494 | $179.20 | +$381.72 (+2.11%) | 10% trail HWM $198.73 / stop $178.857 ⚠️ $0.34 buffer |
+
+### Sector Watchlist — Week 7 (Jun 8–12)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK/SOXX | SOXX | If XLK stop triggers Mon Jun 8 → enter SOXX same session to maintain tech exposure; confirms 5th position slot; deployment must reach ≥75% |
+| 2 | Energy | XLE | CVX (held) | Hold to stop $172.332; exit proactively if WTI closes below $88 (thesis break); Hess + Guyana intact |
+| 3 | Industrials | XLI | CAT (held) | Hold to stop $852.147; CAT shareholder meeting Jun 10 = next catalyst; thesis strong |
+| 4 | Small-cap | IWM | IWM (held) | Hold to stop $263.588; above $270 = thesis intact; below $270 = soft-watch trigger |
+
+### What Worked
+- Outperformed S&P 500 by +1.20% in a brutal tech selloff week — defensive posture vs index paid off
+- CVX was the portfolio anchor: +2.92% unrealized, held flat vs broad selling; energy/defensives decoupled correctly
+- CAT held above entry (+1.04%) through NFP macro volatility — FY2026 demand upgrades from prior week provided cushion
+- All four trailing stops did their job: no forced exits despite XLK -6.70% intraday Friday; stops contain risk mechanically
+- IWM entry Jun 2 (post-JOLTS 7.6M beat) was fundamentally correct thesis; new sector opened diversification
+
+### What Didn't Work
+- XLK -6.70% Friday (NFP tech rotation): stop at $178.857 nearly triggered; $0.34 buffer entering weekend = high probability of Monday stop trigger
+- IWM -3.67% from entry in just 4 days: small-cap rate sensitivity was the thesis, but NFP 172K beat pushed Fed rate-cut timeline back — undermines IWM entry thesis
+- Deployment 70.3% — **7th consecutive week below 75% floor**; SOXX entry was blocked all week (CAT exit question unanswered; sector cap conflict)
+- Only 1 of 3 weekly buy slots used; SOXX was the obvious 5th position but never cleared the deployment cap constraint in time
+- NFP actual (172K) significantly beat consensus (85K) — opposite of "good miss" read from trade log; caused -2.64% S&P selloff; signals higher-for-longer Fed path (negative for XLK/IWM thesis)
+
+### Key Lessons
+- Bot outperformed S&P by +1.20% in a -2.84% week — this is exactly the "lose less" behavior that compounds alpha over time; holding energy (CVX) as a non-correlated sector worked as macro hedge
+- XLK trailing stop at $178.857 after -6.70% day is the canary: the tighten-to-7% rule at $201.82 was never triggered because price reversed before reaching it; holding a 10% stop on a +2.11% position into a known tech-volatile week (NFP + semiconductor rout) is a structural risk
+- IWM thesis is now doubly undermined: (1) NFP 172K beat pushes Fed rate-cut path further out = negative for small-cap financing, (2) -3.67% in 4 days with no recovery bounce; this may be slow-bleed territory if rate cut narrative doesn't return
+- The SOXX sector-cap deadlock has now blocked entry for 4 consecutive weeks (Weeks 3–6); ETF-vs-single-stock counting is the root cause; needs explicit user rule decision before Week 7
+- **Unanswered action questions from weekly reviews compound into structural inaction**: CAT exit question (asked Jun 2, Jun 3, Jun 4), XLK tighten auto-confirm (asked 3 consecutive weeks), SOXX cap question (asked weekly since Week 3) — all unanswered; SOXX blocked as a direct result
+
+### Adjustments for Next Week
+- **XLK Monday Jun 8:** Stop $178.857 vs close $179.20 = $0.34 buffer. If XLK stop triggers at open (gap-down of >$0.34), capital freed ~$18.5K. Enter SOXX same session (~31sh @~$570, ~$17.7K) to maintain tech exposure; deployment stays ~70% after swap; then add a 5th non-tech position by Wednesday.
+- **IWM thesis re-evaluation:** NFP 172K beat delays rate cuts; IWM thesis (small-cap rate-cut beneficiary) weakened. If IWM closes below $270 any session, consider proactive exit. Stop $263.588 is 5.9% below current — don't let this become a -7% cut.
+- **Deployment priority Week 7:** Must reach ≥75% floor; viable path: XLK→SOXX swap + 5th position (GLD macro hedge, or Materials ETF XLB); CAT slot intact and strengthening.
+- **SOXX sector-cap rule clarification (user decision required before Mon):** Option A — ETFs don't count toward single-sector cap (XLK is passive, SOXX is active = different risk profiles); Option B — XLK exit frees tech slot for SOXX. Choose before Monday open or SOXX remains blocked.
+- **NFP context correction:** Actual 172K vs 85K consensus = strong labor beat; Fed cut expectations push further out; rotate mental model from "soft landing + cuts incoming" to "strong growth but higher for longer"; tech/IWM thesis under pressure; energy (CVX) and industrials (CAT) relatively more resilient.
+
+### Overall Grade: C+
+
+_Rationale: +1.20% relative outperformance vs S&P in a brutal selloff week is genuine alpha (defensive posture worked). Deducted for: 7th consecutive week below 75% deployment floor, only 1/3 slots used, SOXX blocked by structural inaction, XLK entering weekend at critical stop risk, IWM thesis weakening after just 4 days. The bot is not losing — but it continues to fail at deploying capital aggressively enough to capture upside when markets are rising._
+
+---
