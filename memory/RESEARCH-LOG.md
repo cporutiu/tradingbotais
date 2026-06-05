@@ -2959,3 +2959,102 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 - **XLK tighten** -- 7% trail when HWM $201.82 (currently $198.73; +$3.09 away)
 - **Jobless claims 12:30 PM** -- >230K = IWM stop tighten signal
 - **NFP tomorrow** -- no entries after today; full blackout Fri AM
+
+## 2026-06-05 -- Pre-Market Research (Friday, Week 6, Day 31 — NFP BLACKOUT)
+
+### STEP 2 -- Account Snapshot
+**⚠️ ALPACA API ERROR: 403 Forbidden — credentials rejected. Cannot confirm live account state.**
+Using last known state from EOD Jun 03 / pre-market Jun 04 research log.
+
+**Last known (pre-market Jun 04):**
+- **Equity:** ~$106,522 | **Cash:** $30,985 (29.1%) | **Deployed:** ~$75,538 (70.9%) | **DT count:** 0
+- **Phase P&L:** ~+$6,522 (+6.52%) | **Week count:** 1/3
+
+**Last known positions (Jun 04 pre-market):**
+| Ticker | Shares | Entry | Last Known | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $917.00 (Jun 4 pre-mkt) | +$486 (+2.72%) | 10% trail HWM $936.71 / stop $843.039 |
+| CVX | 103 | $182.364 | $190.50 (Jun 4 pre-mkt) | +$838 (+4.46%) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $287.93 (Jun 4 pre-mkt) | -$176 (-0.98%) | 10% trail HWM $291.70 / stop $262.53 |
+| XLK | 103 | $175.494 | $191.50 (Jun 4 pre-mkt) | +$1,649 (+9.12%) | 10% trail HWM $198.73 / stop $178.857 |
+
+**Note:** Jun 4 research log showed "PENDING USER CONFIRMATION" with no trades executed by default. Assumed 4 positions still open unless stops triggered overnight/premarket. Cannot verify without API access.
+
+### STEP 3 -- Market Context (WebSearch fallback — Perplexity API also 403)
+
+**Macro:**
+- **WTI:** ~$92-96 range (futures $91.97-$95.92); **Brent:** ~$95.25 (+0.23%) — Iran/US military clash overnight keeping crude elevated; CVX thesis intact
+- **S&P 500 futures (ESM26):** 7,564.50 (-0.34%) — modest pre-NFP softness; Iran escalation contributing to risk-off tone
+- **VIX:** 16.50 (+2.74% premarket) — up from 16.05 June 1 close; modest risk premium
+
+**NFP (TODAY 8:30 AM ET):**
+- Released today June 5: May 2026 Employment Situation
+- Consensus: ~85K (FactSet) vs prior 115K (April) — slowing labor market expected
+- ADP private payrolls (Wednesday): +122K May (beat 101K prior, consensus ~100K)
+- Unemployment rate forecast: 4.3% (unchanged from prior)
+- Average hourly earnings YoY: 3.4% forecast (prior 3.6%)
+- **Actual: not yet confirmed in pre-market data sources; check post-8:30 AM**
+
+**Economic releases today:**
+- 8:30 AM ET: **NFP / Employment Situation (May)** — FULL BLACKOUT DAY
+- No other material releases
+
+**Geopolitical overlay:**
+- Iran/US military exchange overnight → crude spike → WTI +2% to 1.5-week high
+- Peace deal hopes dashed → sustained crude elevation → CVX benefits, broad market risk-off
+
+### STEP 4 -- Sector & Position-Specific Research
+
+**Sector YTD 2026 (as of late May):**
+- Energy: +34.5% | Technology: +24.6% | Industrials: +12.8%
+- RS Ranking (20-day): SOXX(1) > QQQ(2) > XLK(3) > XLI(6) > XLE(8) > IWM(10)
+
+**CAT (last: ~$929 Jun 4):**
+- FY2026 thesis intact: Q1 revenue +22.2% YoY, backlog record, FY2026 guidance raised
+- Tariff reduction tailwind confirmed
+- Shareholder meeting June 10 (virtual, 8 AM CDT) — minor event, not a catalyst
+- No thesis break. CAT exit decision still unresolved (user never confirmed Jun 2-3 action questions)
+
+**CVX (last: ~$188.33 Jun 5 premarket, -0.72%):**
+- Venezuela: new self-sufficient power regulation → minor operational cost headwind, noise
+- Argentina: $13.8B Vaca Muerta application → positive long-term
+- Analyst fair value ~$216 (median); WTI thesis intact above $88
+- Iran/US crude spike supports thesis. HOLD.
+
+**XLK (last: ~$191.50 Jun 4 pre-mkt, -2.41% vs Jun 3 close):**
+- AVGO beat confirmed: EPS +5% vs consensus, Q3 AI guide $16B (blowout)
+- Pre-earnings repositioning washout expected to partially reverse at open
+- HWM $198.73 / stop $178.857; +15% tighten trigger $201.82 (~$3.09 above HWM)
+- XLK YTD +24.6%; momentum intact
+
+**IWM (last: ~$287.93 Jun 4 pre-mkt):**
+- Entry Jun 2 @ $290.77; currently -0.98% from entry
+- Small-cap most vulnerable to NFP print today (rate expectations, economic sensitivity)
+- Stop $262.53 provides ~8.6% buffer from last known price
+- Thesis (JOLTS beat) still intact but fragile on NFP day
+
+### Trade Ideas
+1. **No entries today — NFP blackout applies.** Hard rule: no new positions on NFP Friday.
+2. **Post-NFP (Week 7, starting Monday Jun 8):** Reassess SOXX entry — gate was met (AVGO beat) but CAT exit + deployment cap unresolved. If CAT still held at Monday open, SOXX entry requires CAT exit first to stay ≤85%.
+3. **CAT exit Week 7:** Still a valid proactive action Monday if deployment needs freeing. Locks ~+2.7% gain; frees slot for SOXX.
+
+### Risk Factors
+1. **Alpaca API 403** — critical; cannot verify live stops or positions; resolve immediately post-session
+2. **NFP print miss** — if <50K, IWM stop most at risk; XLK could also see tech sector pressure
+3. **Iran/US escalation** — crude spike positive for CVX but broad equity risk-off if sustained
+4. **XLK** — if NFP causes tech sector selloff, HWM $198.73 may not be hit; tighten decision deferred
+5. **Unanswered Jun 2-4 action questions** — CAT exit, SOXX entry, XLK 7% tighten, IWM pre-NFP tighten all unresolved; user input needed Monday
+
+### Decision
+**HOLD — NFP BLACKOUT. No trades today.**
+- Full blackout per strategy: no entries on NFP Friday
+- All 4 positions assumed held with active GTC trailing stops
+- Alpaca API 403 must be resolved before any order actions
+
+**Open action items for Monday pre-market (Week 7):**
+1. Resolve Alpaca 403 (verify positions/stops before anything else)
+2. CAT exit decision — hold vs. proactive sell to free SOXX slot
+3. SOXX entry (conditional on CAT exit + deployment check)
+4. XLK 7% tighten at HWM $201.82 (user confirm auto-tighten?)
+5. IWM review post-NFP reaction
+
