@@ -3057,3 +3057,17 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 **HOLD -- NFP day blackout. No new entries.**
 - 4 positions holding with intact theses and adequate stops.
 - Carry to Week 7: SOXX entry (signal reset needed), FCX (energy gate needed).
+
+### Afternoon Addendum 2026-06-05 (Midday Scan — XLK Thesis Check)
+
+**Trigger:** XLK -5.00% intraday (from $193.17 close → $183.51 midday). Stop $178.857 at 2.53% buffer.
+
+**Perplexity finding (XLK sharp move):**
+- **Cause:** Macro rotation (NFP day factor rotation) — tech/duration stocks sold; financials (XLF) +2.6% while XLK -1.6% per Zacks sector scorecard. No ETF-specific catalyst, no tracking anomaly.
+- **Technical context:** XLK broke above upper Bollinger Band May 28 — technically extended before today's flush. Crowded positioning + macro shock = outsized drawdown.
+- **Structural thesis:** INTACT. AI capex cycle unchanged, no index-composition change, no single-name breaking news rising to index-level shock level.
+- **Conclusion:** NOT a thesis break. Macro-driven de-risking. Stop at $178.857 is doing its job.
+
+**Watch items post-midday:**
+- XLK stop $178.857 — ⚠️ 2.53% buffer; stop trigger possible if afternoon selling continues
+- IWM $284.47 — watch for close below $280 (soft thesis-deterioration signal from pre-market)

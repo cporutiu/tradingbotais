@@ -1811,3 +1811,101 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 3. **CAT Thu Jun 4 exit plan (now +4.16% from entry):** Prior plan was proactive exit Thursday pre-NFP. CAT reversed strongly with FY2026 upgrades — 5-week rule no longer fires. (A) Cancel exit, hold to stop $843.04 and let catalyst run; or (B) Still exit Thursday, lock +4.16% gain, free capital slot for SOXX?
 4. **SOXX Thu Jun 4 (conditional on AVGO AMC beat tonight):** SOXX ~31sh @~$572, ~$17.7K adds to 87.5% deployed — above 85% cap. Only eligible if CAT exits first (deployment stays ~70%). Confirm: SOXX Thu ONLY if CAT exits, then deploy SOXX same day?
 5. **IWM -1.23% from entry (day 2), NFP Jun 5 Friday:** Stop buffer 8.6% ($262.53 vs $287.20). Tighten IWM to 7% trail pre-NFP (Friday small-cap gap risk), or hold 10% through NFP?
+
+---
+
+## 2026-06-04 — Market-Open Execution (Thursday, Week 6, Day 30)
+
+**Decision: HOLD — no new entries today.**
+- No user confirmation received for CAT exit or SOXX entry (default per pre-market research)
+- AVGO beat confirmed (gate open); but CAT exit not authorized → SOXX blocked (deployment: 70.8% + 16.6% = 87.4% > 85% cap)
+- NFP Friday Jun 5 = full blackout tomorrow; last entry window was today — deferred to Week 7
+
+**Account (live, Jun 4 market open ~9:31 AM ET):**
+- **Equity:** $105,985.06 | **Cash:** $30,984.78 (29.2%) | **Deployed:** $75,000.28 (70.8%) | **DT count:** 0
+- **Phase P&L:** +$5,985.06 (+5.99%) | **Week count:** 1/3
+
+**Positions (live @ market open):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $905.48 | +$255.82 (+1.43%) | -2.24% | 10% trail HWM $936.71 / stop $843.039 (locked) |
+| CVX | 103 | $182.364 | $188.80 | +$662.95 (+3.53%) | -0.48% | 10% trail HWM $191.48 / stop $172.332 (locked) |
+| IWM | 62 | $290.770 | $286.85 | -$243.03 (-1.35%) | -0.29% | 10% trail HWM $291.70 / stop $262.53 (locked) |
+| XLK | 103 | $175.494 | $191.07 | +$1,604.33 (+8.88%) | -2.63% | 10% trail HWM $198.73 / stop $178.857 (locked) |
+
+**Rule checks (all passed):**
+- All positions above -7% cut threshold ✓ (CAT +1.43%, CVX +3.53%, IWM -1.35%, XLK +8.88%)
+- XLK +15% tighten trigger: HWM $198.73 vs trigger $201.82 — $3.09 away, not triggered ✓
+- Stop buffers: CAT 6.9%, CVX 8.7%, IWM 8.5%, XLK 6.4% — all safe ✓
+- DT count: 0 ✓ | Total positions: 4 ✓ | Week count: 1/3 ✓
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $936.71, stop $843.039 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $291.70, stop $262.53 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked)
+
+**Key watch items:**
+- **XLK tighten:** HWM $198.73; trigger $201.82 ($3.09 away); auto-tighten to 7% trail pending user confirmation
+- **Jobless claims 12:30 PM ET:** >230K = IWM stop tighten signal
+- **NFP Friday Jun 5:** Full blackout; no entries; IWM most vulnerable to gap
+- **SOXX + CAT decision:** Carries to Week 7 post-NFP if not actioned today
+
+**No trades executed. No ClickUp notification. No commit required.**
+
+---
+
+## Market-Open 2026-06-05 (Friday, Week 6, Day 31 — NFP Blackout)
+
+**No trades placed — NFP May 2026 (8:30 AM ET, 85K actual vs 115K forecast) = named blocker; full blackout in effect.**
+
+**Account (live):**
+- **Equity:** $106,225.73 | **Cash:** $30,984.78 (29.2%) | **Deployed:** $75,240.95 (70.8%) | **DT count:** 0
+- **Phase P&L:** +$6,225.73 (+6.23%) | **Week count:** 1/3
+
+**Positions (live @ market open):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $922.48 | +$595.82 (+3.34%) | -1.91% | 10% trail HWM $946.83 / stop $852.147 (locked) |
+| CVX | 103 | $182.364 | $188.85 | +$668.10 (+3.56%) | +0.27% | 10% trail HWM $191.48 / stop $172.332 (locked) |
+| IWM | 62 | $290.770 | $288.53 | -$138.87 (-0.77%) | -1.19% | 10% trail HWM $292.875 / stop $263.588 (locked) |
+| XLK | 103 | $175.494 | $188.48 | +$1,337.56 (+7.40%) | -2.43% | 10% trail HWM $198.73 / stop $178.857 (locked) |
+
+**Rule checks:**
+- All positions above -7% cut threshold ✓ (CAT +3.34%, CVX +3.56%, IWM -0.77%, XLK +7.40%)
+- XLK +15% tighten trigger: HWM $198.73 vs trigger $201.82 — not reached ✓
+- Stop buffers: CAT 7.6%, CVX 8.7%, IWM 8.6%, XLK 5.1% — all safe ✓
+- DT count: 0 ✓ | Total positions: 4 ✓ | Week count: 1/3 ✓
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 ✓
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 ✓
+
+**NFP context:** 85K actual vs 115K forecast — "good miss" (VIX 16 = no recession panic; soft landing narrative intact). Broad NFP selling: XLK -2.43%, IWM -1.19%, CAT -1.91%; CVX +0.27% (oil holding above $88 gate at ~$91-95). No thesis breaks. All stops doing their job.
+
+**Week 7 carry-forward:**
+- SOXX entry: Benzinga SELL signal must reset to BUY/neutral before entry; CAT must exit first for deployment room
+- XLK tighten to 7% trail at HWM $201.82: pending user confirmation
+- CAT: hold to stop; shareholder meeting Jun 10 is next catalyst
+- CVX: oil gate $88 watch; WTI ~$91-95 (comfortable margin)
+- Deployment 70.8% → must add 1 position Week 7 (no named blockers Mon/Tue Jun 8-9)
+
+**No trades executed. No ClickUp notification. No commit required.**
+
+**Midday 2026-06-05:**
+- **CAT midday:** $915.80 (-2.63% today; +2.59% from entry $892.689). Stop locked at HWM $946.83 / stop $852.147 (price well below HWM). NFP macro selloff only — ISM expansion + AI/data-center demand thesis intact. CAT shareholder meeting Jun 10 next catalyst. HOLD.
+- **CVX midday:** $187.34 (-0.54% today; +2.73% from entry $182.364). Stop locked at HWM $191.48 / stop $172.332 (price below HWM — no trail update). WTI ~$91-95 — well above $88 thesis-break gate. Energy thesis intact. HOLD.
+- **IWM midday:** $284.47 (-2.58% today; -2.17% from entry $290.770). Stop locked at HWM $292.875 / stop $263.588 (price below HWM — no trail update). Buffer from current price: 7.3%. Above $280 soft-deterioration-watch level from pre-market. NFP 85K miss = "good miss" per Perplexity (VIX 16, soft landing intact, rate cut pull-forward positive for small-cap financing). Thesis intact. **Watch: if closes below $280 = soft thesis watch.** HOLD.
+- **XLK midday:** $183.51 (-5.00% today; +4.57% from entry $175.494). Stop locked at HWM $198.73 / stop $178.857 (price below HWM — no trail update). **Stop buffer: only 2.53% ($4.65) from current price.** Perplexity confirmed: macro rotation (NFP day factor rotation — tech/duration sold, financials +2.6%), NOT a structural tech thesis break. No ETF-specific catalyst. AI capex cycle intact. XLK was technically extended (Bollinger breakout May 28). **⚠️ High stop-trigger risk today — stop at $178.857 may be hit if selling continues.** HOLD (stop doing its job; no thesis break justifies manual exit).
+- **Losers cut:** None (-7% threshold not breached: CAT +2.59%, CVX +2.73%, IWM -2.17%, XLK +4.57%)
+- **Stop tightening:** None (+15% thresholds not reached: CAT needs $1,026.59; CVX needs $209.72; IWM needs $334.39; XLK needs $201.82 HWM — current HWM $198.73)
+- **Thesis break:** None. All 4 intact per Perplexity validation.
+- **Portfolio:** Equity ~$105,135 | Cash $30,985 (29.5%) | Deployed ~$74,150 (70.5%, 4 positions) | Phase P&L: ~+$5,135 (+5.13%) | Week count: 1/3 | NFP blackout — no new entries today
+
+**Open Orders (midday 2026-06-05):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked) ⚠️ 2.53% buffer
