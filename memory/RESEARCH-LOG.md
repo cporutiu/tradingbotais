@@ -2959,3 +2959,101 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 - **XLK tighten** -- 7% trail when HWM $201.82 (currently $198.73; +$3.09 away)
 - **Jobless claims 12:30 PM** -- >230K = IWM stop tighten signal
 - **NFP tomorrow** -- no entries after today; full blackout Fri AM
+
+---
+
+## 2026-06-05 -- Pre-Market Research (Friday, Week 6, Day 31 -- NFP DAY BLACKOUT)
+
+### Account Snapshot
+- **Equity:** $106,885.94 | **Cash:** $30,984.78 (29.0%) | **Deployed:** $75,901.16 (71.0%)
+- **DT count:** 0 | **Phase P&L:** +$6,885.94 (+6.89%) | **Week count:** 1/3
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop (live) |
+|--------|--------|-------|-------|------------|---------|-------------|
+| CAT | 20 | $892.689 | $938.99 | +$926.02 (+5.19%) | -0.16% | 10% trail HWM $946.83 / stop $852.147 (auto-trailed up Jun 4) |
+| CVX | 103 | $182.364 | $189.00 | +$683.55 (+3.64%) | +0.35% | 10% trail HWM $191.48 / stop $172.332 (locked) |
+| IWM | 62 | $290.770 | $290.62 | -$9.29 (-0.05%) | -0.48% | 10% trail HWM $292.875 / stop $263.588 (auto-trailed up slightly) |
+| XLK | 103 | $175.494 | $190.64 | +$1,560.04 (+8.63%) | -1.31% | 10% trail HWM $198.73 / stop $178.857 (locked) |
+
+**Note:** CAT HWM auto-trailed from $936.71 to $946.83 on Jun 4 (new high made intraday).
+
+### User Decisions (STEP 1B)
+- No User decisions block found in TRADE-LOG.md. All EOD Jun 3 action questions (CAT exit, SOXX entry, XLK tighten, IWM NFP risk) remain open. All deferred to Week 7 post-NFP per prior default.
+
+### Market Context
+- **WTI:** ~$91.51-$94.89/bbl (pulled back from Jun 4 high of ~$96) | **Brent:** ~$94.41-$96.60/bbl
+- **CVX thesis gate ($88 WTI):** INTACT -- oil $3-7 above gate
+- **S&P 500 futures:** 7,545-7,560 (-0.35% to -0.84%) -- negative pre-market tone
+- **VIX:** 16.11 spot (up +2.16%) -- market_risk: LOW (below 18)
+- **Economic cycle:** mid-cycle (GDP +1.6% Q1 2026; 2.2-2.4% FY forecast; gradual labor deceleration)
+- **NFP May 2026 (8:30 AM ET -- RELEASED):** **85K actual vs 115K forecast** -- MISS by 30K. Full blackout confirmed.
+  - Interpretation: "Good miss" -- soft landing narrative intact, VIX at 16 = no recession panic. Rate cut pull-forward likely. Market selling on growth scare, not recession fear.
+- **Today's calendar:** NFP only. No other major releases.
+
+### Benzinga Signals (24h lookback)
+- **BUYS (actionable):** SPY high (+6, 9x), QQQ high (+6, 10x)
+- **SELLS (actionable):** XLU high (-4, 2x), XLP medium (-2, 3x), SOXX high (-6, 9x -- reversal from prior week BUY), NVDA high (-19, 18x; Elizabeth Warren China sales inquiry), AMD high (-6, 11x), AVGO high (-27, 35x; post-earnings repositioning)
+- SOXX flipped from BUY to SELL (high) -- wait for signal reset before entering. Post-AVGO profit-taking.
+
+### Congress Signals (45d lookback, STOCK Act)
+- **BUYS (actionable):**
+  - **FCX** -- Josh Gottheimer PURCHASE 2026-04-15 filed 2026-05-19 $1K-$15K (high, 1 priority)
+  - **AMD** -- Josh Gottheimer PURCHASE x3 Apr-May 2026 + Gilbert Cisneros Apr 2026 (high, 3 priority)
+- **SELLS (actionable):**
+  - **NVDA** -- Sheldon Whitehouse SALE (PARTIAL) $100K-$250K filed Jun 2 + multiple others (high)
+  - **CAT** -- Jared Moskowitz SALE 2026-03-31 filed 2026-04-30 $1K-$15K (medium) -- DISMISSED: tiny, old, no impact
+  - **AVGO** -- David J. Taylor + Shelley Moore Capito SALE (high)
+- **CONFLUENT SELL (elevated conviction):**
+  - **NVDA:** Benzinga high SELL + Congress high SELL (Whitehouse $100K-$250K) -- not held
+  - **AVGO:** Benzinga high SELL + Congress high SELL -- not held
+- **CONFLICTING:** AMD = Benzinga SELL (high) vs Congress BUY (high, Gottheimer x3). Congress narrative stronger: structural AI GPU thesis, 30%+ revenue growth, institutional accumulation. Benzinga signal is intraday volatility noise per Perplexity validation.
+
+### Perplexity Validation
+- **SOXX Benzinga SELL confirmed:** Post-AVGO beat profit-taking + NFP broad selloff. Not a structural semis thesis break. AI capex cycle intact. Wait for signal reset.
+- **CVX thesis intact:** Oil $91-95 WTI above $88 gate. 25/26 technical indicators bullish. Dividend yield ~5% provides valuation support. Short-term range $188-$193.
+- **CAT thesis intact:** No new June 5 news. Price $938.99, HWM $946.83. AI/data-center power demand (1.5 GW ProPetro deal, AI factory partnerships) and record backlog ($63B, +79% YoY). June 10 shareholder meeting = next catalyst. Congress SELL dismissed. Hold.
+- **IWM NFP reaction:** 85K miss likely a "good miss" (soft landing) -- VIX 16 confirms. Rate cut pull-forward positive for small cap financing costs. Stop $263.588 provides 9.3% buffer from current $290.62. Safe through today.
+- **XLK post-AVGO:** AVGO beat removes structural headwind. XLK at $190.64 down -1.31% today in sympathy with broad NFP selling. Stop $178.857 = 6.2% below current price -- tighter than usual due to gap from HWM $198.73. Monitor.
+- **FCX:** Congressional BUY aligns with copper momentum (LME copper ~$13,270/ton). Targets $72-75 (UBS, Deutsche Bank). Late-stage in this leg -- FCX already near targets. Only eligible per strategy if energy thesis weakens (WTI < $88). Oil still $91-95. FCX on watchlist only.
+- **RS Ranking (carry-forward from Jun 4, Perplexity could not recompute):** SOXX > QQQ > XLK > XLY > XLC > XLI > XLB > XLE > EEM > IWM > SPY > XLF > XLV > XLRE > XLP > HYG > GLD > XLU > SLV
+- **Sector momentum YTD:** Energy(1) > Consumer Staples(2) > Industrials(3) > Materials(4). XLK strong 20-day RS but lagging YTD. XLU/XLP getting sold (Benzinga SELL confirmed by YTD laggard status).
+
+### Trade Ideas
+
+**1. HOLD -- NFP blackout (mandatory, no new entries today)**
+
+**2. SOXX entry (Week 7 -- Monday Jun 8 or Tuesday Jun 9)**
+- Catalyst: AVGO beat + AI semi capex cycle intact; but Benzinga SOXX SELL high today
+- Entry condition: Benzinga signal resets to BUY or neutral, AND CAT exits or 5th slot funding keeps deployed below 85%
+- ~31sh @~$565-575, 10% trailing stop GTC immediately on fill
+- Week count if entered: 2/3
+
+**3. FCX (Materials, Week 7 watch)**
+- Congress BUY high + copper momentum. Targets $72-75. But strategy rule: only if energy thesis weakens.
+- Gate: WTI drops below $88 = CVX stop-out signal = FCX eligible as replacement
+- Not actionable today
+
+**4. 5th position slot -- Week 7 priority**
+- Deployed 71%, below 75% floor. Must add 1 position Week 7 if no named blockers.
+- SOXX is top candidate post signal reset. FCX is secondary.
+
+### Active Watch Items (forward to EOD/Week 7)
+- **XLK stop $178.857:** 6.2% buffer from $190.64. If NFP selloff accelerates today, watch for XLK approaching $181 danger zone.
+- **XLK tighten at HWM $201.82:** Pending user confirmation. Auto-tighten to 7% trail when triggered.
+- **CAT shareholder meeting Jun 10:** Hold. Potential guidance/capex disclosure.
+- **SOXX Benzinga signal:** Watch Mon Jun 8 pre-market for reset from SELL to BUY/neutral.
+- **CVX oil gate $88:** Oil $91-95 -- comfortable. Watch for Iran deal or OPEC+ surprise.
+- **IWM:** Stop $263.588. If closes below $280 today = soft thesis-deterioration watch.
+- **Deployment gap:** 71% -- must open 1 position Week 7 (rule: valid only if deployed >= 60% OR named blocker; neither applies next week).
+
+### Risk Factors
+1. **NFP miss cascading:** 30K miss may trigger further selling next week if unemployment rises or revisions are negative
+2. **XLK stop proximity:** 6.2% buffer -- continued selling could trigger stop exit
+3. **Oil pullback:** WTI $91-95 from $96 Jun 4 high -- watch $88 gate for CVX thesis
+4. **SOXX signal reversal:** Post-AVGO Benzinga SELL high = wait for reset before entering
+5. **Deployment gap:** 71% below 75% floor -- Week 7 urgency to add 1 position
+
+### Decision
+**HOLD -- NFP day blackout. No new entries.**
+- 4 positions holding with intact theses and adequate stops.
+- Carry to Week 7: SOXX entry (signal reset needed), FCX (energy gate needed).
