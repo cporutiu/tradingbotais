@@ -1909,3 +1909,35 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
 - Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked) ⚠️ 2.53% buffer
+
+---
+
+## Jun 05 — EOD Snapshot (Day 31, Friday — Week 6 End / NFP Day)
+
+**Portfolio:** $104,391 | **Cash:** $30,984.78 (29.7%) | **Day P&L:** -$2,804.56 (-2.62%) | **Phase P&L:** +$4,391.00 (+4.39%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $904.28 | -3.85% | +$231.82 (+1.30%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $187.40 | -0.50% | +$518.75 (+2.76%) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $281.53 | -3.59% | -$572.87 (-3.18%) | 10% trail HWM $292.875 / stop $263.588 |
+| XLK | 103 | $175.494 | $180.23 | -6.70% | +$487.68 (+2.70%) | 10% trail HWM $198.73 / stop $178.857 ⚠️ |
+
+**Rule checks:**
+- All positions above -7% cut threshold ✓ (CAT +1.30%, CVX +2.76%, IWM -3.18%, XLK +2.70%)
+- XLK +15% tighten trigger: HWM $198.73 vs trigger $201.82 — not reached ✓
+- Stop buffers: CAT 5.8%, CVX 8.0%, IWM 6.4%, XLK 0.76% ⚠️ CRITICAL
+- DT count: 0 ✓ | Total positions: 4 ✓ | Week 6 count: 1/3 ✓
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 ⚠️ 0.76% buffer ($1.37)
+
+**Notes:** NFP day ended with broad tech/small-cap selling. XLK took the hardest hit (-6.70% today) driven by macro factor rotation post-weak payrolls (85K vs 115K forecast), not a structural AI/tech thesis break. XLK closed at $180.23 with its trailing stop at $178.857 — a razor-thin 0.76% buffer heading into the weekend. Any Monday gap-down of ~$1.37 or more triggers the stop. IWM closed $281.53 (above $280 soft-watch level; thesis intact). CAT and CVX held relatively firm. No trades this week beyond Week 6 Day 1 entry; week count ends at 1/3. Deployment 70.3% — below 75% floor; must add 1 position in Week 7. Phase P&L slipped from +$6,225 (midday yesterday) to +$4,391 due to NFP selloff, but all four positions remain above their entry basis or within acceptable drawdown.
+
+**Action questions (EOD Jun 05):**
+1. **XLK — critical stop risk:** Close $180.23, stop $178.857 (0.76% buffer, ~$1.37). NFP rotation thesis intact but any Monday gap triggers exit. Exit proactively before open, or hold to stop and let it work?
+2. **IWM — -3.18% from entry:** Closed $281.53 (above $280 watch level). Small-cap rate-sensitivity continues. Thesis (soft-landing rate cuts) intact per NFP "good miss" read. Hold to stop, or trim to reduce risk given -3.18% drawdown?
+3. **Deployment 70.3% (below 75% floor):** Week 7 Mon/Tue Jun 8-9 are first viable entry windows. SOXX is primary candidate (pending Benzinga BUY signal reset). Any other candidates to evaluate? Confirm SOXX or name alternative.
