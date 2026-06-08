@@ -3071,3 +3071,94 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 **Watch items post-midday:**
 - XLK stop $178.857 — ⚠️ 2.53% buffer; stop trigger possible if afternoon selling continues
 - IWM $284.47 — watch for close below $280 (soft thesis-deterioration signal from pre-market)
+
+---
+
+## Pre-Market Research 2026-06-08 (Monday, Week 7, Day 32)
+
+### Account Snapshot
+- **Equity:** $105,429.36 | **Cash:** $30,984.78 (29.4%) | **Deployed:** $74,444.58 (70.6%) | **DT count:** 0
+- **Phase P&L:** +$5,429.36 (+5.43%) | **Week 7 count:** 0/3
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Last | Unrealized | Day Chg | Stop HWM / Level |
+|--------|--------|-------|------|------------|---------|-----------------|
+| CAT | 20 | $892.689 | $921.94 | +$585.02 (+3.28%) | +1.95% | HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $188.67 | +$649.56 (+3.46%) | +0.73% | HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $285.02 | -$356.49 (-1.98%) | +1.20% | HWM $292.875 / stop $263.588 |
+| XLK | 103 | $175.494 | $183.51 | +$825.65 (+4.57%) | +1.78% | HWM $198.73 / stop $178.857 ⚠️ 2.54% buffer |
+
+**Rule checks:** All positions above -7% cut threshold ✓ | XLK +15% trigger ($201.82 HWM) not reached ✓ | All 4 stops confirmed active ✓ | DT: 0 ✓ | Positions: 4 ✓
+
+### STEP 1B — Pending User Decisions
+- **EOD Jun 05 action questions remain unanswered** (no User decisions block found in TRADE-LOG.md).
+- Carrying forward default assumptions:
+  - XLK: HOLD to stop (thesis intact, stop doing its job; recovered +1.78% at open)
+  - IWM: HOLD (thesis intact, stop buffer 7.4%)
+  - 5th position: SOXX primary candidate — but signal not confirmed reset (Benzinga SSL down)
+
+### Market Context
+- **WTI:** ~$90 (high-$80s to low-$90s range; Iran-deal optimism fading, tight supply) — **CVX $88 gate INTACT**
+- **Brent:** ~$95-106 (EIA projections)
+- **S&P 500 futures:** +0.21% (~7,416) — modest positive pre-market bias
+- **VIX:** ~19.7 — market_risk: **MEDIUM** (up from 16.11 on Fri; elevated post-NFP)
+- **Economic cycle:** mid-cycle (GDP +2-2.5%, contained unemployment, resilient expansion)
+- **Today's calendar (Jun 8):** No major macro releases — clean day
+- **Week ahead:** CPI May (Wed Jun 10, 8:30 ET) → named blocker | PPI May (Thu Jun 11, 8:30 ET) → named blocker
+- **CAT events:** Shareholder meeting Wed Jun 10 (virtual, 8 AM CDT) | Investor update Thu Jun 12
+- **CVX:** Dividend payment Jun 10 (routine; ex-div already passed)
+
+### Benzinga Signals
+- **Benzinga: SSL cert error — all HOLD (graph_error). No actionable signals today.**
+- Prior Jun 5 context (carry-forward): SOXX SELL high, XLU SELL high, XLP SELL medium still assumed active until confirmed reset.
+
+### Congress Signals
+- **Congress: SSL cert error — all HOLD (fetch_error). No actionable signals today.**
+- Prior context: FCX BUY (Gottheimer), AMD BUY (Gottheimer x3) remain on record from 45d lookback.
+
+### Perplexity Research Summary
+- **XLK thesis:** INTACT. Recovering (+1.78% today). AI semis = 47.6% of ETF. "Rebound mode" per MarketBeat. Post-NFP selloff was macro factor rotation, NOT structural tech thesis break. Medium-term bullish; stop at $178.857 (2.54% buffer from $183.51) is the key risk.
+- **CAT thesis:** INTACT. Near all-time highs. Record $63B backlog (+79% YoY). Q1 beat $5.54 EPS vs $4.62 estimate. Shareholder meeting Jun 10 — possible guidance update, AI/power-infrastructure commentary, accelerated buybacks could be a positive catalyst. Investor update Jun 12 adds another window. Upside if 2026 guidance tightens up.
+- **CVX thesis:** INTACT. WTI ~$90, above $88 gate (6-month margin). Q1 strong ($2.8B adj). Some analysts flag "fully valued" at $188; upside depends on WTI sustaining $88+. No thesis break.
+- **IWM thesis:** INTACT. Rate-cut expectations (post-NFP "good miss") constructive for small-cap financing. Projected 17-22% EPS growth 2026. Technical cooling (stochastic left overbought Jun 5) = short-term caution. Stop $263.588 provides 7.4% buffer.
+- **SOXX:** Fundamental thesis INTACT (AVGO beat confirmed AI semis upcycle; up +25% in 30 days). BUT: Jun 5 technical sell signals (stochastic, RSI, MACD) NOT yet clearly reset. Cannot confirm Benzinga signal reset due to SSL error. 20-day RS rank #4. **NOT ready for entry today.**
+- **RS Ranking (20-day):** SPY > QQQ > XLK > SOXX > XLY > XLC > XLI > XLB > XLE > XLF > XLV > XLU > XLRE > XLP > IWM > EEM > HYG > GLD > SLV
+- **Sector leaders:** Energy (XLE) YTD +22-26% | Industrials (XLI) YTD +9-16% | Materials (XLB) in Leading quadrant. XLK, XLC, XLY, XLF = Lagging YTD (but XLK has strong recent 20-day momentum).
+
+### Trade Ideas
+1. **SOXX entry — Week 7 Mon/Tue window (conditional)**
+   - Catalyst: AVGO beat; AI semis upcycle; RS #4 (20-day); post-NFP consolidation
+   - Entry condition: Benzinga signal confirmed reset to BUY/neutral (can't verify today due to SSL) AND technical indicators (stochastic, MACD) show re-entry signal
+   - Sizing: ~$19,000 (~18% equity); ~45 shares at ~$420 est.; 10% trailing stop GTC immediately on fill
+   - Entry window: Monday Jun 8 (today) or Tuesday Jun 9 only — CPI Wed Jun 10 = named blocker closes window
+   - ⚠️ Risk: SOXX up +25% in 30 days (extended); Jun 5 technical sell signal still active per Perplexity; entering extended position adds stop-trigger risk
+   - **Tentative: WAIT — do not enter today; monitor for clear technical re-entry signal**
+
+2. **FCX (Materials) — watchlist only**
+   - Congress BUY (Gottheimer). Copper momentum. But strategy gate: only eligible if energy thesis weakens (WTI < $88). Oil ~$90. NOT actionable.
+
+### Active Watch Items
+- **XLK stop $178.857:** 2.54% buffer from $183.51. CPI Wed Jun 10 is next macro risk — if CPI surprises hot, tech sells. Watch closely.
+- **XLK tighten at HWM $201.82:** Pending user confirmation. Auto-tighten to 7% trail when triggered.
+- **CPI May (Wed Jun 10):** Named blocker. Entry window = Mon/Tue only. No entries Wed or Thu.
+- **CAT shareholder meeting Jun 10 + investor update Jun 12:** Hold. Potential guidance/capital return/AI-power update catalyst.
+- **CVX oil gate $88:** WTI ~$90, comfortable margin. Watch Iran deal developments.
+- **IWM:** Stop $263.588. Thesis intact. Recovering today. Watch if closes below $280 (soft deterioration signal).
+- **SOXX entry decision:** Must decide by Tuesday close if entering Week 7 (before CPI blackout). If Benzinga script SSL fixed, check signal first.
+- **Benzinga/Congress SSL issue:** Recurring. Should fix Python SSL cert trust store for future runs.
+
+### Risk Factors
+1. **CPI Wed Jun 10:** Hot print = rates up = XLK and IWM both vulnerable; cold print = rally extension
+2. **VIX elevated at 19.7:** Higher options implied volatility; tighter risk environment than last week (VIX 16)
+3. **XLK stop thin (2.54%):** Any macro shock before CPI could trigger the stop
+4. **SOXX extension:** +25% in 30 days — entering extended position carries mean-reversion risk
+5. **Deployment floor 70.6%:** Must add 1 position but CPI/PPI compress viable window to Mon/Tue only
+6. **Iran deal risk:** Renewed progress = oil drops toward $85-88 = CVX thesis-break watch
+
+### Decision
+**HOLD — no new entries today. Monitor SOXX for Tuesday entry if technicals improve.**
+- All 4 positions holding with intact theses; stops confirmed; recovering from NFP selloff
+- SOXX is the only candidate for 5th slot but technical sell signal not reset; entering today adds risk
+- CPI Wed = named blocker → Tuesday is the last viable entry window this week
+- Deployment 70.6% is above 60% threshold (HOLD is valid per strategy rule)
+
