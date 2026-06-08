@@ -3071,3 +3071,106 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 **Watch items post-midday:**
 - XLK stop $178.857 — ⚠️ 2.53% buffer; stop trigger possible if afternoon selling continues
 - IWM $284.47 — watch for close below $280 (soft thesis-deterioration signal from pre-market)
+
+---
+
+## 2026-06-08 — Pre-Market Research (Monday, Week 7, Day 32)
+
+### API Status — DEGRADED (WebSearch fallback)
+- **Alpaca, Perplexity, ClickUp:** All returning HTTP 403 `host_not_allowed` from cloud runner IP. External API calls blocked by network policy.
+- **Impact:** Live account data unavailable. Last known = EOD Jun 05 snapshot. No ClickUp notification sent.
+- **User action required:** Verify live positions + order status on Alpaca dashboard directly.
+- **Research fallback:** Native WebSearch used for all market data. Noted per workflow.
+
+### Account Snapshot (last known — EOD Jun 05)
+- **Equity:** ~$104,391 | **Cash:** $30,984.78 (29.7%) | **Deployed:** ~$73,406 (70.3%)
+- **Phase P&L:** +$4,391 (+4.39%) | **DT count:** 0 | **Week 7 trade count:** 0/3
+- **Positions:** CAT, CVX, IWM, XLK (4 open — status as of Jun 05 close)
+- ⚠️ **XLK stop status UNKNOWN:** Jun 05 close $180.23, stop $178.857 (0.76% buffer, ~$1.37 gap). User MUST verify whether stop triggered on Mon open.
+
+### Unanswered EOD Jun 05 Action Questions
+No `**User decisions (2026-06-05):**` block found in TRADE-LOG.md. Three questions remain unresolved:
+1. XLK stop risk — exit proactively or hold to stop?
+2. IWM -3.18% — hold or trim?
+3. Deployment 70.3% — confirm SOXX for Week 7 or name alternative?
+These carry forward as pending user input.
+
+### Market Context (WebSearch — June 8 pre-market)
+- **WTI crude:** ~$93.63-$94.49 (+3.4-4.0% overnight) | **Brent:** ~$97.49-$97.68 (+4-5%)
+- **Catalyst:** Iran-Israel missile exchange Sunday Jun 7. Iran launched missiles at Israel; Israel retaliated with airstrikes on central/western Iran. Breaks the April ceasefire. Strait of Hormuz risk re-elevated. Iran conflict originally started Feb 28, 2026 (US+Israel). Oil had spiked to >$100 at peak, retreated on 60-day ceasefire, now spiking again.
+- **S&P 500 futures:** ~7,419.75 (+0.22%) — slight positive; market not in full risk-off (VIX 15.77)
+- **VIX:** ~15.77 — calm despite geopolitical tension; market pricing "contained conflict" scenario
+- **Sector rotation:** Energy (XLE/XOM/CVX) strong; tech mixed; small-cap (IWM) geopolitical headwind
+
+### Upcoming Catalysts (this week)
+| Date | Event | Impact |
+|------|--------|--------|
+| Jun 8 (Mon) | Campbell's (CPB) earnings BMO | Not held — no impact |
+| Jun 9 (Tue) | SJM/CASY earnings; existing home sales | Not held |
+| **Jun 10 (Wed)** | **CPI May 2026 (8:30 AM ET) — NAMED BLOCKER** | No new entries Jun 10. Forecast: 3.9-4.2% YoY (95% probability >4.0%). Hot print = rate hike risk. |
+| Jun 10 (Wed) | Oracle (ORCL) earnings AMC | Not held |
+| Jun 10 (Wed) | CAT shareholder meeting | Guidance/capex disclosure catalyst |
+| Jun 11-12 (Thu-Fri) | Post-CPI entry windows | First viable SOXX entry post-CPI |
+
+### Current Position Analysis
+
+**CVX (103 shares, entry $182.364, stop HWM $191.48 / stop $172.332)**
+- Jun 7 close: $187.31 | WTI ~$94.49 (well above $88 thesis gate)
+- Iran-Israel conflict = direct CVX/energy tailwind. Chevron CEO warned of rising oil prices through June-July.
+- WTI could test $100+ if Strait of Hormuz disrupted. Oil has been as high as $100+ in this conflict cycle.
+- Likely opens $190+ today → HWM $191.48 may be surpassed → trailing stop ratchets up automatically.
+- **Thesis: VERY STRONG. HOLD.** Oil thesis intact with major geopolitical catalyst adding premium.
+- Watch: HWM update today. Tighten to 7% trail trigger = HWM $220.20 (far off).
+
+**CAT (20 shares, entry $892.689, stop HWM $946.83 / stop $852.147)**
+- Jun 8 range seen: $901.00-$938.99 — still well above stop. Buffer ~5.8%.
+- Shareholder meeting Jun 10 = next catalyst (AI/data-center power demand, $63B backlog).
+- CPI Jun 10 same day as meeting — potential volatility.
+- **Thesis: INTACT. HOLD.**
+
+**IWM (62 shares, entry $290.770, stop HWM $292.875 / stop $263.588)**
+- Jun 7 close: ~$281.65 | Buffer from stop: ~6.4%
+- **Risk:** Hot CPI Jun 10 (4.0-4.2% forecast) = rate hike narrative = headwind for small-cap financing costs. Rate cut thesis under pressure.
+- Geopolitical risk (oil-driven inflation) adds to rate concern.
+- Still above $280 soft-deterioration watch level.
+- **Thesis: UNDER PRESSURE but not broken. HOLD. Reassess post-CPI (Jun 10).**
+- If CPI >4.2%: small-cap rate-cut thesis materially weakens → consider stop tighten or trim.
+
+**XLK (103 shares, entry $175.494, stop HWM $198.73 / stop $178.857)**
+- ⚠️ **CANNOT VERIFY — Alpaca blocked.** Jun 05 close $180.23, stop $178.857 (0.76% buffer).
+- S&P futures +0.22% suggests mild positive open → XLK may have survived stop.
+- If XLK stop at $178.857 triggered on gap-down: position closed, ~+$490 realized P&L (entry $175.49 vs stop fill ~$178.86).
+- If stop held: monitor closely. Iran conflict and hot CPI = dual headwinds for tech.
+- **User must verify immediately.**
+
+### Trade Ideas
+
+**1. SOXX — 5th position (primary candidate, Week 7)**
+- **Catalyst:** AI semis capex cycle intact ($975B global semi revenue 2026; hyperscaler capex >$750B; 75% directed to AI). SOXX dipped -11% from $605 peak to ~$539.77 = dip within structural uptrend.
+- **Signal:** Benzinga NEUTRAL as of Jun 8 (was SELL HIGH last week). Entry condition per carry-forward rule = MET.
+- **Caution flags:** Bollinger Band breach May 26; overbought RSI; 78.86% premium to 200-day SMA; Michael Burry dot-com parallel warning. Stretched valuation (P/E 76x trailing).
+- **Entry:** ~33 shares @ ~$540 | ~$17,820 (~17% of $104k equity) | 10% trailing stop GTC on fill
+- **Target:** ~$605 prior high (+12%) | R:R ~1.2:1 (marginal — watch for better entry post-CPI dip)
+- **Timing recommendation: HOLD until post-CPI (Thu Jun 11).** CPI risk is high (4%+ forecast). Entering pre-CPI = buying into a known headwind. Patience > activity IS VALID (deployed 70% ≥60%). A hot CPI print could give a better $510-525 entry.
+- **Alternative:** Enter Tue Jun 9 if pre-market strong and no CPI fear escalation overnight. Week count would be 1/3.
+
+**2. FCX (Materials — contingency, NOT actionable)**
+- Gate: WTI < $88 (not triggered; WTI ~$94). Energy thesis intact. FCX remains watchlist-only.
+
+### Risk Factors
+1. **XLK stop unknown** — 0.76% buffer at Jun 05 close; may have triggered Mon open. Verify immediately.
+2. **Hot CPI Jun 10** — 95% probability >4.0% YoY. Rate hike repricing could hit IWM and SOXX significantly. Week 7 entry timing critical.
+3. **Iran-Israel escalation** — Strait of Hormuz disruption risk. Oil could spike to $100+. Good for CVX; macro uncertainty for broad market.
+4. **Alpaca API blocked** — Cannot manage orders or verify stops from cloud. User must monitor/manage manually.
+5. **Deployment 70.3% (below 75% floor)** — Pressure to add position. CPI risk argues for post-CPI entry (Thu Jun 11).
+
+### Decision: HOLD (Jun 8 — pending position verification)
+- **Cannot trade safely without knowing XLK status (Alpaca blocked).**
+- Even if XLK held: CPI Jun 10 within 48h = prefer post-CPI entry for SOXX.
+- Patience > activity valid (deployed ≥60%).
+- CVX and CAT thesis strengthening. IWM watch post-CPI.
+- **User action required before any trades:**
+  1. Verify XLK stop status on Alpaca dashboard.
+  2. Answer Jun 05 action questions (TRADE-LOG.md).
+  3. Confirm SOXX entry timing: Tue Jun 9 (pre-CPI risk) vs Thu Jun 11 (post-CPI preferred).
+  4. Fix Alpaca IP allowlist if possible (add cloud runner IP to paper account allowlist).
