@@ -1941,3 +1941,62 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **XLK — critical stop risk:** Close $180.23, stop $178.857 (0.76% buffer, ~$1.37). NFP rotation thesis intact but any Monday gap triggers exit. Exit proactively before open, or hold to stop and let it work?
 2. **IWM — -3.18% from entry:** Closed $281.53 (above $280 watch level). Small-cap rate-sensitivity continues. Thesis (soft-landing rate cuts) intact per NFP "good miss" read. Hold to stop, or trim to reduce risk given -3.18% drawdown?
 3. **Deployment 70.3% (below 75% floor):** Week 7 Mon/Tue Jun 8-9 are first viable entry windows. SOXX is primary candidate (pending Benzinga BUY signal reset). Any other candidates to evaluate? Confirm SOXX or name alternative.
+
+---
+
+## Market-Open 2026-06-08 (Monday, Week 7, Day 32)
+
+**Week trade count: 0/3** — No trades executed.
+
+**Reason:** Pre-market research decision = HOLD. SOXX technical sell signal (Jun 5 stochastic/RSI/MACD) not confirmed reset; Benzinga SSL error blocked signal verification; CPI May (Wed Jun 10) = named blocker closes entry window after Tuesday. Deployment 70.6% > 60% → HOLD valid per strategy rule.
+
+**Account (live, ~9:48 AM ET):**
+- **Equity:** $105,510.29 | **Cash:** $30,984.78 (29.4%) | **Deployed:** $74,525.51 (70.6%) | **DT count:** 0
+- **Phase P&L:** +$5,510.29 (+5.51%)
+
+**Positions (live @ market open):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $912.29 | +$392.02 (+2.20%) | +0.89% | 10% trail HWM $946.83 / stop $852.147 (locked) |
+| CVX | 103 | $182.364 | $190.17 | +$804.06 (+4.28%) | +1.53% | 10% trail HWM $191.48 / stop $172.332 (locked) |
+| IWM | 62 | $290.770 | $284.78 | -$371.37 (-2.06%) | +1.11% | 10% trail HWM $292.875 / stop $263.588 (locked) |
+| XLK | 103 | $175.494 | $184.81 | +$959.55 (+5.31%) | +2.50% | 10% trail HWM $198.73 / stop $178.857 (locked) ⚠️ 3.22% buffer |
+
+**XLK note:** Recovered strongly from NFP lows ($180.23 Friday → $184.81 today, +2.50%). Stop buffer restored to 3.22% — no longer at critical threshold. HWM $198.73 vs +15% tighten trigger $201.82 ($3.09 away, pending user confirmation).
+
+**Rule checks (all pass):**
+- All positions above -7% cut threshold ✓ (CAT +2.20%, CVX +4.28%, IWM -2.06%, XLK +5.31%)
+- XLK +15% tighten: HWM $198.73 vs trigger $201.82 — not reached ✓
+- Stop buffers: CAT 6.6%, CVX 9.4%, IWM 7.4%, XLK 3.2% ✓
+- DT count: 0 ✓ | Positions: 4 ✓ | Week count: 0/3 ✓
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked) ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked) ✓
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked) ✓
+
+**Key watch items:**
+- **SOXX entry (Tuesday Jun 9 = last window before CPI blackout):** Must decide Tuesday morning — Benzinga signal reset check, SOXX technical indicators. If Benzinga SSL still down, use Perplexity for SOXX RSI/MACD status.
+- **XLK tighten at HWM $201.82:** Pending user confirmation. Auto-tighten to 7% trail when HWM touches $201.82.
+- **CPI May Wed Jun 10 (8:30 ET):** Named blocker — no entries Wednesday or Thursday.
+- **CAT shareholder meeting Wed Jun 10 (virtual, 8 AM CDT):** Potential guidance/AI-power capex update.
+- **CVX oil gate:** WTI ~$90, above $88 gate. Monitor Iran deal developments.
+
+**No trades executed. No ClickUp notification. No commit required.**
+
+**Midday 2026-06-08:**
+- **CAT midday:** $905.21 (+0.10% intraday; +1.40% from entry $892.689). Stop locked at HWM $946.83 / stop $852.147 (price well below HWM — no trail update). Shareholder meeting Wed Jun 10 = next potential catalyst. Thesis intact. HOLD.
+- **CVX midday:** $189.28 (+1.05% intraday; +3.79% from entry $182.364). Stop locked at HWM $191.48 / stop $172.332 (price below HWM — no trail update). WTI ~$90, above $88 gate. Thesis intact. HOLD.
+- **IWM midday:** $284.94 (+1.17% intraday; -2.01% from entry $290.770). Stop locked at HWM $292.875 / stop $263.588 (price below HWM — no trail update). Above $280 soft-watch level. Rate-cut tailwind (NFP "good miss") constructive for small-cap. Thesis intact. HOLD.
+- **XLK midday:** $185.30 (+2.77% intraday; +5.59% from entry $175.494). Stop locked at HWM $198.73 / stop $178.857 (price well below HWM — no trail update). Stop buffer restored to 3.48% (vs Friday's critical 0.76%). Post-NFP factor rotation reversing; AI/tech momentum reasserting. XLK +15% tighten trigger ($201.82 HWM) pending user confirmation. Thesis intact. HOLD.
+- **Losers cut:** None (-7% not breached: CAT +1.40%, CVX +3.79%, IWM -2.01%, XLK +5.59%)
+- **Stop tightening:** None (+15% thresholds not reached: XLK needs HWM $201.82 — pending user confirmation; CAT needs $1,026.59; CVX needs $209.72; IWM needs $334.39)
+- **Thesis break:** None. All 4 intact.
+- **Portfolio:** Equity ~$105,337 | Cash $30,985 (29.4%) | Deployed ~$74,352 (70.6%, 4 positions) | Phase P&L: +$5,337 (+5.34%) | Week count: 0/3 | CPI blackout Wed Jun 10 — SOXX entry window closes Tuesday Jun 9
+
+**Open Orders (midday 2026-06-08):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked)
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked)
