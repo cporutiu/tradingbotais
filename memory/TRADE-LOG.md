@@ -2000,3 +2000,36 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
 - Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked)
 - Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked)
+
+---
+
+## Jun 08 — EOD Snapshot (Day 33, Monday — Week 7 Day 1)
+
+**Portfolio:** $105,383.76 | **Cash:** $30,984.78 (29.4%) | **Day P&L:** +$987.25 (+0.95%) | **Phase P&L:** +$5,383.76 (+5.38%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $915.64 | +1.26% | +$459.02 (+2.57%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $189.22 | +1.02% | +$706.21 (+3.76%) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $284.29 | +0.94% | -$401.75 (-2.23%) | 10% trail HWM $292.875 / stop $263.588 |
+| XLK | 103 | $175.494 | $184.18 | +2.15% | +$894.66 (+4.95%) | 10% trail HWM $198.73 / stop $178.857 |
+
+**Rule checks:**
+- All positions above -7% cut threshold ✓ (CAT +2.57%, CVX +3.76%, IWM -2.23%, XLK +4.95%)
+- Stop tightening triggers not reached ✓ (XLK needs HWM $201.82; CAT needs $1,026.59; CVX needs $209.72; IWM needs $334.39)
+- Stop buffers: CAT 6.9%, CVX 8.9%, IWM 7.3%, XLK 2.9% ✓
+- DT count: 0 ✓ | Positions: 4 ✓ | Week 7 count: 0/3 ✓
+
+**Open Orders (EOD Jun 08):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 ✓
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 ✓
+
+**Notes:** Broad recovery day continuing post-NFP selloff. All 4 positions gained. XLK led (+2.15% today, +4.95% from entry), recovering from Friday's near-stop scare. CAT +1.26% — shareholder meeting Wed Jun 10 may offer guidance catalyst. CVX +1.02%, now within $2.26 (1.19%) of its HWM $191.48; stop will auto-trail if price exceeds HWM. IWM +0.94% but still -2.23% from entry, holding above $280 soft-watch level. No trades executed; week count 0/3. Deployment 70.6% remains below 75% floor — Tuesday Jun 9 is the last clean entry window before CPI blackout (Wed Jun 10, 8:30 ET).
+
+**Action questions (EOD Jun 08):**
+1. **Deployment 70.6% < 75% floor — SOXX entry window closes Tuesday:** Benzinga signal reset check + SOXX technical Tuesday AM. Enter SOXX Tuesday, or skip to Week 8?
+2. **XLK +15% tighten (pending from Jun 05):** Confirm auto-tighten to 7% trail when XLK HWM reaches $201.82, or adjust the plan?
+3. **IWM -2.23% from entry:** Thesis (rate-cut soft-landing) intact above $280. If IWM closes below $280 on Tuesday, exit proactively or hold to stop $263.59?
+4. **Week 7 count 0/3 — only Tuesday is pre-CPI clean window:** Confirm SOXX (or name alternative); reserve remaining 2 slots post-CPI or carry to Week 8?
