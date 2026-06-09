@@ -3162,3 +3162,111 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 - CPI Wed = named blocker → Tuesday is the last viable entry window this week
 - Deployment 70.6% is above 60% threshold (HOLD is valid per strategy rule)
 
+---
+
+## 2026-06-09 — Pre-Market Research (Tuesday, Week 7, Day 34)
+
+### Account Snapshot (fallback — Alpaca API 403, network policy blocks paper-api.alpaca.markets in cloud env)
+- **Equity:** ~$105,384 (EOD Jun 8) | **Cash:** $30,985 (29.4%) | **Deployed:** ~$74,399 (70.6%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$5,384 (+5.38%) | **Week 7 trade count:** 0/3 (3 slots remain)
+- ⚠️ Live API unavailable — all figures from EOD Jun 8 TRADE-LOG snapshot
+
+### Positions (last known — EOD Jun 08)
+| Ticker | Shares | Entry | EOD Close | Unrealized | Stop |
+|--------|--------|-------|-----------|------------|------|
+| CAT | 20 | $892.689 | $915.64 | +$459.02 (+2.57%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $189.22 | +$706.21 (+3.76%) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $284.29 | -$401.75 (-2.23%) | 10% trail HWM $292.875 / stop $263.588 |
+| XLK | 103 | $175.494 | $184.18 | +$894.66 (+4.95%) | 10% trail HWM $198.73 / stop $178.857 |
+
+### Open Orders (last confirmed — EOD Jun 08)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857
+
+### Market Context (WebSearch fallback — Perplexity scripts blocked in cloud env)
+- **WTI:** ~$91–93 (day range $91.09–$95.38) | **Brent:** $93.25 (prev close $94.25)
+- **S&P 500 futures (ESM26):** +0.71% premarket; Polymarket 89% probability SPX opens higher
+- **VIX:** 18.92 (Jun 8 close, down from 19.7 Friday); day range 17.94–20.35 — risk environment improving
+- **Iran-Israel ceasefire:** Fragile — Iran halted strikes but warned of resumption if Israel continues Lebanon operations. Oil elevated on lingering geopolitical risk
+- **Chip stocks:** MU +10% premarket (earnings beat); NVDA and AVGO higher — semis leading the tape
+- **Earnings BMO today:** 22 total reports; no major portfolio names
+
+### Economic Calendar (Jun 9–12)
+- **Today Jun 9:** Wholesale inventories, existing home sales, NFIB small business sentiment — no market-moving events
+- **Tomorrow Jun 10 (8:30 ET): CPI May → NAMED BLOCKER** — Wells Fargo: headline +0.5% MoM / +4.2% YoY; core +0.2% MoM / +2.8% YoY (hot print likely if estimates hit)
+- **Thu Jun 11 (8:30 ET): PPI May → NAMED BLOCKER**
+- **CAT shareholder meeting:** Wed Jun 10, 8 AM CDT (virtual) | CAT investor update Thu Jun 12
+- **CVX dividend:** Jun 10 (routine, ex-div already passed)
+
+### Sector Momentum (YTD, early Jun 2026)
+| Sector | ETF | YTD | RRG Quadrant |
+|--------|-----|-----|--------------|
+| Energy | XLE | ~+26–27% | Leading |
+| Industrials | XLI | ~+21% | Leading |
+| Materials | XLB | — | Leading |
+| Consumer Staples | XLP | — | Leading |
+| Technology | XLK | ~+32–33% | Lagging (but strong recent RS) |
+| Communication | XLC | — | Lagging |
+| Financials | XLF | — | Lagging |
+
+### Held Ticker Analysis
+
+**CAT (thesis check):**
+- Jun 8 price: $902.75–$938.99; Q1 2026: +22% revenue, EPS $5.54 beat, record $63B backlog
+- Tariff reduction tailwind confirmed; Dow leader YTD
+- Shareholder meeting TOMORROW Jun 10 (virtual, 8 AM CDT) — potential guidance/capital return/AI-power catalyst
+- Stop buffer: ~6.9% ($915 vs $852.15). Thesis: **INTACT. HOLD.**
+
+**CVX (thesis check):**
+- Jun 9 trading: $187.31–$191.02; Brent $93.25 — above $88 oil gate (margin ~6%)
+- Iran ceasefire = temporary downward pressure on oil, but fragile — expects oscillation around $90
+- Dow leader YTD; thesis reinforced; WTI → CVX correlation intact
+- Stop buffer: ~8.9% ($189 vs $172.33). Thesis: **INTACT. HOLD.**
+
+**IWM (thesis check):**
+- No specific negative news; rate-cut expectations (post-NFP "good miss") constructive for small-cap
+- Price recovering post-NFP; above $280 soft-watch level as of Jun 8
+- Watch: if IWM closes **below $280 today** → proactive exit consideration (thesis deterioration signal)
+- Stop buffer: ~7.3% ($284 vs $263.59). Thesis: **INTACT. HOLD unless closes below $280.**
+
+**XLK (thesis check):**
+- Chip stocks surging premarket: MU +10%, NVDA/AVGO higher — AI semis upcycle reasserting
+- ESM26 +0.71% = broad risk-on; XLK likely opening at ~$185–187
+- Stop $178.857 buffer improving as price moves up; +15% tighten trigger ($201.82 HWM) still ~8% away
+- CPI tomorrow = risk: hot print hits tech first. Stop provides downside protection
+- Thesis: **INTACT AND STRENGTHENING. HOLD.**
+
+### SOXX Entry Evaluation (last clean window before CPI)
+- **Price:** Jun 8 close $539.77; Jun 9 early trading $564–$582 (up ~5% from Friday lows)
+- **RSI (14-day):** 80.569 — **OVERBOUGHT** (>80 = extreme)
+- **MACD:** 12.650 (buy); moving averages: all buy; 12/12 buy signals on technical dashboard
+- **Performance:** +62% last quarter; +174% last 12 months — severely extended
+- **Verdict: DO NOT ENTER.** RSI 80+ = overbought at 52-week high territory. CPI tomorrow with hot print expected (+4.2% YoY) = semis would sell hard. Entering a +62% quarter position at RSI 80 the day before a potentially hot CPI is indefensible risk management. Carry to Week 8 (post-PPI Jun 12+) for reassessment.
+
+### Trade Ideas
+1. **SOXX — SKIP (Week 7).** RSI 80.569 overbought + CPI tomorrow + hot CPI estimate. Next window: Week 8 (post-PPI Jun 12, when both CPI + PPI blackouts clear).
+2. **FCX — NOT actionable.** WTI ~$92, above $88 gate. Energy thesis intact; FCX only eligible if gate breaks.
+
+### Action Question Responses (EOD Jun 08)
+1. **SOXX entry:** **SKIP Week 7.** RSI 80+ + CPI blackout tomorrow. Reassess Week 8 after Jun 12 (post-PPI).
+2. **XLK +15% tighten:** **CONFIRMED** — auto-tighten to 7% trail when XLK HWM reaches $201.82.
+3. **IWM below $280:** **Hold to stop $263.59** unless IWM closes below $280 today → then proactive exit.
+4. **Week 7 slots:** All 3 unused slots carry to Week 8. No entries this week (CPI + PPI blackouts cover Wed–Thu).
+
+### Risk Factors
+1. **CPI May (Wed Jun 10, 8:30 ET):** Wells Fargo: headline +4.2% YoY — hot print = rates spike = XLK and IWM sell hard; cold print = rally extension. Biggest single risk this week.
+2. **Iran ceasefire fragility:** Breakdown = oil spikes above $95 → CVX thesis strengthens; market risk-off = XLK/IWM vulnerable
+3. **XLK stop $178.857:** ~3% buffer. Hot CPI tomorrow could gap through on open.
+4. **SOXX not entered:** Deployment stays at 70.6%. Strategy allows HOLD above 60% deployment — no rule violation, but 5th slot gap persists into Week 8.
+5. **VIX 18.92:** Elevated vs normal baseline (~16). Tighter risk environment persists.
+
+### Decision
+**HOLD — no new entries. Passing the last pre-CPI window on SOXX (RSI 80+ overbought).**
+- Deployment 70.6% > 60% threshold → HOLD is valid per strategy rule
+- SOXX RSI 80.569 = overbought; CPI tomorrow with hot print expected = entering today is indefensible
+- All 4 positions intact; chip stock rebound (MU +10%) strengthens XLK thesis
+- Action questions resolved: SOXX skip confirmed; XLK tighten confirmed; IWM hold to stop
+- Next entry window: Week 8, post-PPI (Jun 12+)
+
