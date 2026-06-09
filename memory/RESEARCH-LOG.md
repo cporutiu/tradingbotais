@@ -3162,3 +3162,129 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 - CPI Wed = named blocker → Tuesday is the last viable entry window this week
 - Deployment 70.6% is above 60% threshold (HOLD is valid per strategy rule)
 
+
+
+---
+
+## Pre-Market 2026-06-09 (Tuesday, Week 7, Day 34 -- Last Pre-CPI Entry Window)
+
+### Account Snapshot
+- **Equity:** $105,836.81 | **Cash:** $30,984.78 (29.3%) | **Deployed:** $74,852.03 (70.7%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$5,836.81 (+5.84%) | **Week count:** 0/3
+
+| Ticker | Shares | Entry | Pre-mkt | Unrealized | Day Chg | Stop |
+|--------|--------|-------|---------|------------|---------|------|
+| CAT | 20 | $892.689 | $923.36 | +$613.43 (+3.44%) | +0.84% | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $188.76 | +$658.83 (+3.51%) | -0.25% | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $286.58 | -$259.77 (-1.44%) | +0.87% | 10% trail HWM $292.875 / stop $263.588 |
+| XLK | 103 | $175.494 | $186.16 | +$1,098.70 (+6.08%) | +1.08% | 10% trail HWM $198.73 / stop $178.857 |
+
+**Open Orders (confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 OK
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 OK
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 OK
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 OK
+
+### STEP 1B -- User Decisions
+- **No User decisions block found** in tail of TRADE-LOG.md. All 4 EOD Jun 08 action questions carry forward unanswered:
+  1. SOXX entry authorization (CAT exit then SOXX, or cap override) -- unanswered
+  2. XLK auto-tighten to 7% trail at HWM $201.82 -- unanswered (pending since Jun 05)
+  3. IWM below $280 exit vs hold to stop -- unanswered
+  4. Week 7 entry confirmation -- unanswered
+- Default per strategy = HOLD (deployed 70.7% >= 60%).
+
+### Market Context
+- **WTI (July 2026):** ~$89-92/bbl -- above $88 CVX thesis gate. Iran risk premium intact but moderating from $96 peak.
+- **Brent:** ~$89-97/bbl -- elevated, consistent with WTI.
+- **S&P 500 futures (ESM26):** ~7,434 (+0.25%) -- slight positive premarket; recovery from NFP week selloff continuing.
+- **VIX:** 18.92 (Jun 8 close) -- **market_risk: MEDIUM** (elevated from 15-16 pre-NFP; Jun 5 spike 21.51; mean-reverting).
+- **Earnings today:** No major BMO S&P 500 reports.
+- **Economic calendar this week:**
+  - Today (Jun 9): No major US releases -- clean entry window
+  - **Wednesday Jun 10, 8:30 ET: CPI May 2026** -- NAMED BLOCKER; no entries Wed/Thu
+  - Thursday Jun 11, 8:30 ET: PPI May + Jobless Claims
+  - FOMC June 16-17 (Warsh first meeting as Chair)
+- **Economic cycle:** mid-cycle. GDP +2.2-2.4% FY2026; unemployment rising gradually; AI capex extending expansion.
+- **Sector YTD leaders:** Energy (+38% through Mar, still leading), Tech (+19-44%), Materials/Industrials. Financials lagging (-9%).
+
+### Benzinga Signals (24h lookback -- SSL error, second consecutive day)
+- SSL certificate error connecting to Microsoft Graph (Outlook 365). Recurring issue.
+- **BENZINGA_BUYS:** none | **BENZINGA_SELLS:** none
+
+### Congress Signals (STOCK Act -- SSL error)
+- SSL certificate error connecting to Quiver Quant API.
+- **CONGRESS_BUYS:** none | **CONGRESS_SELLS:** none
+- Carrying forward last known: FCX BUY high (Gottheimer Apr 15 -- unchanged).
+- Confluent signals: none today.
+
+### Perplexity Validation (holdings)
+
+**CAT ($923.36, +3.44% from entry):**
+- Up 51% YTD; record Q1 backlog $62.7B; Q1 revenue +22%. Street PT avg ~$933.
+- Shareholder meeting Jun 10 (virtual): Routine agenda -- NOT a major catalyst. Watch for AI/data-center power demand color.
+- Dividend increase expected ~7-8%. Thesis intact. Hold to stop $852.147 (buffer 7.7%).
+
+**CVX ($188.76, +3.51% from entry):**
+- WTI $89-92, above $88 gate. Production growth 7-10% in 2026. Cost cuts $3-4B target.
+- Iran deal risk: deal = bearish WTI. No confirmed deal. Thesis intact.
+- Street consensus buy, PT $220. CVX HWM $191.48 -- stop auto-trails if new high set today.
+
+**IWM ($286.58, -1.44% from entry):**
+- Small caps near 52-week highs (~18% YTD). Rate-cut thesis partially priced.
+- Current $286.58 above $280 soft-watch level. Stop buffer 8.0% ($263.59). Thesis intact. HOLD.
+
+**XLK ($186.16, +6.08% from entry):**
+- NAV +19.8% YTD. AI/tech momentum intact; recovering post-NFP.
+- RSI ~58 (neutral-bullish). MACD positive. Structural bull trend intact. Stop buffer 3.9%.
+- HWM $198.73 vs tighten trigger $201.82 -- $3.09 away. Thesis intact.
+
+**SOXX (watch, not held -- RS #1):**
+- Technicals: sell signal partially reset. RSI 58-67, MACD positive, weekly bullish. Daily momentum soft.
+- Net: buy-dip-in-uptrend; structurally intact but not high-conviction BUY.
+- Entry blocked by deployment: adding ~$18K SOXX -> deployed 87.7% > 85% cap.
+- Gate: CAT exit authorization required (if CAT exits, net deployment ~70.4% -- within cap).
+
+### RS Ranking (20-day, carry-forward from Jun 04 -- Perplexity unable to compute fresh)
+SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) > IWM(10) > SPY(11) > XLF(12) > XLV(13) > XLRE(14) > XLP(15) > HYG(16) > GLD(17) > XLU(18) > SLV(19)
+
+### Trade Ideas
+
+**1. HOLD ALL -- default (no user authorization received)**
+- Deployed 70.7% >= 60% -> HOLD strategy-valid.
+- CPI tomorrow blocks Wed/Thu regardless.
+
+**2. SOXX conditional entry -- LAST PRE-CPI WINDOW (today only)**
+- Gate: user authorize CAT exit today.
+- CAT sell at open (lock +3.44%) -> free ~$18.5K deployed.
+- SOXX: ~30sh @~$606 (~$18,180, 17.2% equity), 10% trail GTC on fill.
+- Target: ~$730 (+20%) | Stop: ~$545 | R:R ~2:1.
+- Post-entry deployed: ~70.4% (within all caps). Week count: 1/3.
+
+**3. XLK tighten watch (pending user confirm since Jun 05)**
+- HWM $198.73; trigger $201.82 ($3.09 away). Cancel 4299aece + 7% trail GTC when triggered.
+
+**4. CVX auto-trail watch**
+- CVX $188.76 vs HWM $191.48 -- stop auto-trails on new HWM today (no action needed).
+
+### Risk Factors
+1. **CPI May tomorrow (Jun 10)** -- no entries Wed/Thu. Today is last pre-CPI window.
+2. **VIX 18.92 (MEDIUM)** -- elevated post-NFP; market not fully reset.
+3. **XLK stop buffer 3.9%** -- watch on any tech selloff.
+4. **SOXX entry window closes today** -- next viable window Thu Jun 12 (if CPI benign).
+5. **Iran deal risk** -- deal = WTI bearish = CVX headwind.
+6. **Deployment 70.7% < 75% floor** -- HOLD valid (>60%) but floor unmet.
+
+### Decision
+**HOLD -- no new entries (default, no user authorization received).**
+- All 4 positions above -7% cut threshold OK
+- All stops active OK
+- Deployed 70.7% >= 60% -> HOLD strategy-valid
+- CPI tomorrow blocks Wed/Thu; next entry window is post-CPI Thu Jun 12 if benign
+
+### Active Watch Items
+- **SOXX entry (TODAY ONLY -- last pre-CPI window):** Gate = user authorize CAT exit + SOXX buy. No authorization = skip to Thu Jun 12 post-PPI.
+- **XLK tighten at HWM $201.82:** Pending user confirm since Jun 05. Cancel 4299aece + 7% trail GTC when triggered.
+- **CVX auto-trail:** HWM $191.48 / current $188.76 -- stop auto-trails if new high set today.
+- **IWM $280 watch:** Close below $280 = escalate at EOD.
+- **CPI May Jun 10 8:30 ET:** Named blocker -- no entries Wed/Thu; all positions on alert.
+- **CAT shareholder meeting Jun 10 (virtual):** Watch for AI/data-center power demand commentary.
