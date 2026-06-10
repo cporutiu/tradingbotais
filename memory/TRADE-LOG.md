@@ -2080,6 +2080,48 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 
 ---
 
+## Midday 2026-06-09 (Tuesday, Week 7, Day 34 — Last Pre-CPI Window)
+
+**XLK TRAILING STOP TRIGGERED (intraday):**
+
+| Ticker | Shares | Entry | Exit | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| XLK | 103 | $175.494 | ~$178.82 | +$342.57 (+1.90%) | 10% trail stop 4299aece triggered; entered May 12, exited Jun 9 (28 days) |
+
+- Position and stop order (4299aece) both absent from live Alpaca API; cash delta +$18,418.46 confirms fill
+- Entry cost basis: $18,075.89 | Exit proceeds: $18,418.46 | Realized: +$342.57 (+1.90%)
+- XLK opened $185.97 → declined through $178.857 stop intraday; pre-CPI risk-off tech rotation (VIX 18.92, elevated post-NFP)
+- 10% trailing stop from HWM $198.73 did its job; protected +1.90% gain vs -6.7% risk if held through continuation
+
+**Remaining positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $912.40 | +$394.18 (+2.21%) | -0.35% | 10% trail HWM $946.83 / stop $852.147 (locked) |
+| CVX | 103 | $182.364 | $187.50 | +$529.05 (+2.82%) | -0.92% | 10% trail HWM $191.48 / stop $172.332 (locked) |
+| IWM | 62 | $290.770 | $284.48 | -$389.97 (-2.16%) | +0.13% | 10% trail HWM $292.875 / stop $263.588 (locked) |
+
+**Losers cut:** None. CAT +2.21%, CVX +2.82%, IWM -2.16% — all above -7% threshold. No action.
+
+**Stop tightening:** None. No position at +15% threshold (CAT needs $1,026.59; CVX needs $209.72; IWM needs $334.39). No action.
+
+**Thesis check:**
+- **CAT ($912.40, +2.21%):** ISM 54.0 expansion + AI/data-center power demand + record $63B backlog intact. Shareholder meeting Jun 10 (virtual) = potential catalyst. Stop buffer 6.6% ($852.147 vs $912.40). **HOLD.**
+- **CVX ($187.50, +2.82%):** WTI ~$89-92 — above $88 thesis-break gate. Hess integration on track. Down -0.92% today on mild risk-off; no thesis break. HWM $191.48 locked. **HOLD.**
+- **IWM ($284.48, -2.16%):** Above $280 soft-watch level ($284.48). Rate-cut tailwind (NFP "good miss" soft-landing) intact. Stop buffer 7.4% ($263.588 vs $284.48). **HOLD.** Watch: close below $280 = escalate at EOD.
+- **XLK:** Closed via trailing stop. No active thesis.
+
+**Intraday research:** XLK triggered mechanically; pre-CPI risk-off in tech (VIX 18.92, elevated). No single news catalyst identified — broad macro positioning ahead of CPI May Jun 10 8:30 ET. No other positions moving sharply without cause; Perplexity skipped for remaining 3 (movements consistent with macro pattern).
+
+**Portfolio:** Equity $104,601.46 | Cash $49,403.24 (47.2%) | Deployed $55,198.22 (52.8%, 3 positions) | Phase P&L: +$4,601.46 (+4.60%) | Week buy count: 0/3
+**CPI May Jun 10 8:30 ET = named blocker — no new entries today or tomorrow. Next window: Thu Jun 12 post-CPI.**
+
+**Open Orders (midday 2026-06-09):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked)
+
+---
+
 ## Jun 09 — EOD Snapshot (Day 34, Tuesday — Week 7 Day 2)
 **Portfolio:** $104,601.46 | **Cash:** $49,403.24 (47.2%) | **Day P&L:** -$773.20 (-0.73%) | **Phase P&L:** +$4,601.46 (+4.60%)
 
