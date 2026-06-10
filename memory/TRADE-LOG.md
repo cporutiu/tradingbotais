@@ -2033,3 +2033,75 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **XLK +15% tighten (pending from Jun 05):** Confirm auto-tighten to 7% trail when XLK HWM reaches $201.82, or adjust the plan?
 3. **IWM -2.23% from entry:** Thesis (rate-cut soft-landing) intact above $280. If IWM closes below $280 on Tuesday, exit proactively or hold to stop $263.59?
 4. **Week 7 count 0/3 — only Tuesday is pre-CPI clean window:** Confirm SOXX (or name alternative); reserve remaining 2 slots post-CPI or carry to Week 8?
+
+---
+
+## Market-Open 2026-06-09 (Tuesday, Week 7, Day 34 — Last Pre-CPI Window)
+
+**Week trade count: 0/3** — No trades executed.
+
+**Reason:** No user authorization received for SOXX entry / CAT exit. Deployed 70.8% ≥ 60% → HOLD strategy-valid. CPI May tomorrow Jun 10 8:30 ET = named blocker; next entry window Thu Jun 12 post-CPI (if benign).
+
+**Account (live, ~9:31 AM ET):**
+- **Equity:** $105,954.23 | **Cash:** $30,984.78 (29.2%) | **Deployed:** $74,969.45 (70.8%) | **DT count:** 0
+- **Phase P&L:** +$5,954.23 (+5.95%)
+
+**Positions (live @ market open):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $927.43 | +$694.82 (+3.89%) | +1.29% | 10% trail HWM $946.83 / stop $852.147 (locked) |
+| CVX | 103 | $182.364 | $188.74 | +$656.77 (+3.50%) | -0.26% | 10% trail HWM $191.48 / stop $172.332 (locked) |
+| IWM | 62 | $290.770 | $287.47 | -$204.59 (-1.14%) | +1.18% | 10% trail HWM $292.875 / stop $263.588 (locked) |
+| XLK | 103 | $175.494 | $185.97 | +$1,079.03 (+5.97%) | +0.97% | 10% trail HWM $198.73 / stop $178.857 (locked) |
+
+**Rule checks (all pass):**
+- All positions above -7% cut threshold ✓ (CAT +3.89%, CVX +3.50%, IWM -1.14%, XLK +5.97%)
+- XLK +15% tighten: HWM $198.73 vs trigger $201.82 — not reached ✓
+- Stop buffers: CAT 8.1%, CVX 8.7%, IWM 8.3%, XLK 3.8% ✓
+- IWM above $280 soft-watch ($287.47) ✓
+- CVX WTI gate: ~$89-92 above $88 ✓
+- DT count: 0 ✓ | Positions: 4 ✓ | Week count: 0/3 ✓
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked) ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked) ✓
+- Sell 103 XLK trailing_stop 10% GTC (4299aece): HWM $198.73, stop $178.857 (locked) ✓
+
+**Key watch items:**
+- **CPI May Wed Jun 10 8:30 ET:** Named blocker — no entries Wed/Thu; all stops on alert.
+- **CAT shareholder meeting Wed Jun 10 (virtual):** Watch for AI/data-center power demand commentary.
+- **XLK tighten at HWM $201.82:** Still pending user confirmation. Cancel 4299aece + 7% trail GTC when triggered.
+- **SOXX post-CPI (Thu Jun 12):** Next viable entry window. Will reassess Thursday pre-market.
+- **CVX auto-trail:** Stop auto-trails if CVX sets new HWM above $191.48.
+- **IWM $280 watch:** Close below $280 = escalate at EOD.
+
+**No trades executed. No ClickUp notification. No commit required.**
+
+---
+
+## Jun 09 — EOD Snapshot (Day 34, Tuesday — Week 7 Day 2)
+**Portfolio:** $104,601.46 | **Cash:** $49,403.24 (47.2%) | **Day P&L:** -$773.20 (-0.73%) | **Phase P&L:** +$4,601.46 (+4.60%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $912.40 | -0.35% | +$394.18 (+2.21%) | 10% trail (HWM $946.83 / stop $852.147) locked |
+| CVX | 103 | $182.364 | $187.50 | -0.92% | +$529.05 (+2.82%) | 10% trail (HWM $191.48 / stop $172.332) locked |
+| IWM | 62 | $290.770 | $284.48 | +0.13% | -$389.97 (-2.16%) | 10% trail (HWM $292.875 / stop $263.588) locked |
+
+**XLK EXIT (trailing stop triggered intraday):**
+| Ticker | Shares | Entry | Exit | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| XLK | 103 | $175.494 | ~$178.82 | +$332.58 (+1.84%) | 10% trail stop 4299aece triggered; entered May 12, exited Jun 9 (28 days) |
+
+**Open Orders (EOD Jun 09):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked)
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 (locked)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (locked)
+
+**Notes:** Day 34, Tuesday — Week 7 Day 2. XLK 10% trailing stop (4299aece) triggered intraday: opened $185.97, fell through $178.857 stop, realizing +$332.58 (+1.84% from $175.494 entry). Loss vs prior XLK close: ~-2.91% ($184.18 → ~$178.82). Cash jumped $30,985 → $49,403. Remaining 3 positions: CAT +2.21% ($912.40, locked); CVX +2.82% ($187.50, locked, WTI ~$88-90 above $88 gate); IWM -2.16% ($284.48, locked, above $280 soft-watch). Deployment fell to 52.8% — below 75% floor. XLK exit freed both tech slots (0/2 used); SOXX now fully eligible. CPI May Wed Jun 10 8:30 ET = named blocker — no entries tomorrow. Next window: Thu Jun 12 post-CPI. Week buy count: 0/3. XLK tighten plan at $201.82 is moot — position closed.
+
+**Action questions (EOD Jun 09):**
+1. **IWM thesis check (-2.16% from entry, $284.48 — $4.48 above $280 soft-watch):** Continued small-cap weakness. Thesis (soft-landing rate cuts) intact but drifting toward watch level. Exit IWM proactively, or hold to stop $263.588?
+2. **Deployment 52.8% (<75% floor) + 2 open tech slots:** SOXX (~32sh @~$580, ~$18.6K) post-CPI Thu Jun 12 as primary. Name a 2nd candidate to reach 75%+. Confirm SOXX + second name (FCX/other)?
+3. **Week count 0/3, CPI blackout Wed — windows Thu Jun 12 + Fri Jun 13:** Enter 2 names Thu/Fri (SOXX + 1 other), or stagger and hold 1 slot for Week 8?
