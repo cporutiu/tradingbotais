@@ -2147,3 +2147,57 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 1. **IWM thesis check (-2.16% from entry, $284.48 — $4.48 above $280 soft-watch):** Continued small-cap weakness. Thesis (soft-landing rate cuts) intact but drifting toward watch level. Exit IWM proactively, or hold to stop $263.588?
 2. **Deployment 52.8% (<75% floor) + 2 open tech slots:** SOXX (~32sh @~$580, ~$18.6K) post-CPI Thu Jun 12 as primary. Name a 2nd candidate to reach 75%+. Confirm SOXX + second name (FCX/other)?
 3. **Week count 0/3, CPI blackout Wed — windows Thu Jun 12 + Fri Jun 13:** Enter 2 names Thu/Fri (SOXX + 1 other), or stagger and hold 1 slot for Week 8?
+
+---
+
+## Market-Open 2026-06-10 (Wednesday — CPI Day, Named Blocker)
+
+**No trades executed — CPI May 2026 @ 8:30 ET is a named blocker. Full entry blackout today.**
+
+**Account:** Equity $104,488.49 | Cash $49,403.21 (47.3%) | Deployed $55,085.28 (52.7%) | DT count: 0 | Phase P&L: +$4,488.49 (+4.49%) | Week count: 0/3
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $898.93 | +$124.72 (+0.70%) | -1.72% | 10% trail HWM $946.83 / stop $852.147 (buffer 5.2%) |
+| CVX | 103 | $182.364 | $189.14 | +$697.97 (+3.72%) | +1.27% | 10% trail HWM $191.48 / stop $172.332 (buffer 8.9%) |
+| IWM | 62 | $290.770 | $284.19 | -$407.95 (-2.26%) | -0.29% | 10% trail HWM $292.875 / stop $263.588 (buffer 7.2%) |
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $191.48, stop $172.332 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 ✓
+
+**Hard-check results (all pass):**
+- Losers cut: None. CAT +0.70%, CVX +3.72%, IWM -2.26% — all above -7% threshold ✓
+- Stop tightening: None. CAT needs $1,026.59 (+15%), CVX needs $209.72 (+15%), IWM needs $334.39 (+15%) — none reached ✓
+- CPI named blocker: No new entries ✓
+
+**Watch items:**
+- **IWM $284.19** — $4.19 above $280 soft-watch. -0.29% today. CPI hot print could push below $280; escalate if close below $280.
+- **CVX / WTI $88.05** — AT the $88 thesis-break gate (pre-market reading). CVX up +1.27% today (CVX ex-dividend day, $1.78/sh = $183.34 cash credited). Monitor WTI intraday — close below $88 = thesis review.
+- **CAT stop buffer 5.2%** — narrowing. Any broad market selloff on hot CPI could stress buffer. Stop $852.147 doing its job.
+- **Next entry window: Thu Jun 12** post-CPI reaction. SOXX primary (~32sh ~$580) + 1 secondary (FCX or other) to reach 75% deployment floor.
+
+---
+
+## Jun 10 — EOD Snapshot (Day 35, Wednesday — Week 7 Day 3, CPI Day)
+**Portfolio:** $103,504.16 | **Cash:** $49,403.21 (47.7%) | **Day P&L:** -$1,097.30 (-1.05%) | **Phase P&L:** +$3,504.16 (+3.50%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $855.03 | -6.52% | -$753.18 (-4.22%) | 10% trail HWM $946.83 / stop $852.147 (**buffer 0.34% — CRITICAL**) |
+| CVX | 103 | $182.364 | $189.71 | +1.58% | +$756.46 (+4.03%) | 10% trail HWM $192.685 / stop $173.417 (auto-updated; buffer 8.6%) |
+| IWM | 62 | $290.770 | $281.62 | -1.19% | -$567.29 (-3.15%) | 10% trail HWM $292.875 / stop $263.588 (buffer 6.4%) |
+
+**Open Orders (EOD Jun 10):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 — **0.34% buffer, near-trigger**
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 (auto-trailed from $172.332)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588
+
+**Notes:** Day 35, Wednesday CPI Day — Week 7 Day 3. CPI May 2026 @ 8:30 ET was today's named blocker; no new entries. CAT -6.52% today ($914.70 → $855.03): biggest mover — hot CPI print likely pressured industrials; shareholder meeting virtual today could add commentary. CAT trailing stop (aa646f6e) barely held at close: $855.03 vs stop $852.147 = $2.88 buffer (0.34%). Any overnight or opening weakness would trigger fill at ~$852. CAT is -4.22% from entry ($892.689) — not yet at -7% cut but stop within 1 tick. CVX +1.58% on the day; stop auto-trailed to $173.417 (new HWM $192.685 intraday, may reflect ex-div adjusted or intraday high). IWM -1.19%, $281.62 — only $1.62 above $280 soft-watch; rate-cut thesis under pressure if CPI was hot. Deployment: 52.3% ($54,100.95) — far below 75% floor. Week count 0/3 with Thu Jun 12 and Fri Jun 13 as remaining windows.
+
+**Action questions (EOD Jun 10):**
+1. **CAT CRITICAL — stop $852.147 vs close $855.03 (0.34% buffer):** Down 6.52% today; any gap-down open Thursday triggers exit at ~$852 (-4.57% from entry). -4.22% from entry now. Exit CAT proactively before Thursday open to control fill price, or hold and let stop work at $852.147?
+2. **IWM $281.62 — $1.62 above $280 soft-watch:** -3.15% from entry. Hot CPI = rate-cut timeline pushed out = small-cap headwind. Thesis (soft-landing rate cuts) impaired? Exit IWM proactively, or hold to stop $263.588?
+3. **Post-CPI entry plan (Thu Jun 12):** If CPI was hot/hawkish, does SOXX entry still hold? Deployment at 52.3% — need 2 entries minimum to hit 75% floor. Confirm SOXX + 1 other (FCX or alt) for Thu, or reassess given CPI outcome?
+4. **Week count 0/3, 2 days left (Thu + Fri):** Use all 3 remaining slots this week, or stagger 2 Thu + 1 Fri?
