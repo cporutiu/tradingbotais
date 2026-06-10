@@ -3288,3 +3288,88 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 - **IWM $280 watch:** Close below $280 = escalate at EOD.
 - **CPI May Jun 10 8:30 ET:** Named blocker -- no entries Wed/Thu; all positions on alert.
 - **CAT shareholder meeting Jun 10 (virtual):** Watch for AI/data-center power demand commentary.
+
+---
+
+## 2026-06-10 Pre-Market Research (Day 35, Wednesday — Week 7 Day 3 — CPI Day)
+
+### Account Snapshot
+- **Equity:** $104,195.96 | **Cash:** $49,403.21 (47.4%) | **Deployed:** $54,792.75 (52.6%) | **DT count:** 0
+- **Phase P&L:** +$4,195.96 (+4.20%)
+- **Positions:** 3 (CAT, CVX, IWM) — XLK closed Jun 9 via trailing stop
+
+| Ticker | Shares | Entry | Pre-mkt | Unrealized | Day Chg | Stop |
+|--------|--------|-------|---------|------------|---------|------|
+| CAT | 20 | $892.689 | $894.02 | +$26.62 (+0.15%) | -2.26% | HWM $946.83 / stop $852.147 (4.7% buf) |
+| CVX | 103 | $182.364 | $188.39 | +$620.72 (+3.31%) | +0.87% | HWM $191.48 / stop $172.332 (8.5% buf) |
+| IWM | 62 | $290.770 | $282.39 | -$519.55 (-2.88%) | -0.92% | HWM $292.875 / stop $263.588 (6.7% buf) |
+
+**CVX dividend paid today: $1.78/share × 103 = $183.34 (cash credit)**
+
+### Market Context
+- **WTI (Jul 2026):** ~$88.05/bbl, -3.40% yesterday — **AT the $88 CVX thesis gate** ⚠️
+- **Brent:** ~$100-105/bbl long-term projection
+- **S&P 500 futures (ESM26):** ~7,350-7,370, -0.31% — cautious premarket
+- **VIX:** 19.87 (Jun 9 close) — **market_risk: MEDIUM**
+- **CPI May 2026 (8:30 ET today):** Expected 4.2% YoY headline (up from 3.8% in April), core 2.9% YoY — NAMED BLOCKER. Hot print = higher-for-longer Fed = bearish IWM, XLK, XLRE; mildly positive energy/financials.
+- **CAT shareholder meeting today (virtual, 8 AM CDT):** Routine agenda — director elections, auditor ratification, say-on-pay. NOT a major catalyst.
+- **CVX dividend ex-date today:** $1.78/share quarterly dividend payment confirmed.
+- **FOMC Jun 16-17:** Next major macro event. Warsh first meeting as Chair.
+- **Economic cycle:** mid-cycle — above-trend growth moderating; inflation re-accelerating; Fed cautious on cuts.
+
+### Benzinga Signals (24h lookback)
+- **BENZINGA_BUYS:** AMD high — algorithmic (13 mentions); headline "Tech Stocks' Relief Rally Crumbles: SOXL Craters 15%, AMD Sheds 6% As Recovery Fizzles" is BEARISH for AMD. Signal driven by mention count, not fundamental thesis. **Not actionable.**
+- **BENZINGA_SELLS:** SPY medium, QQQ high, XOM medium, AVGO medium — consistent with CPI-fear tech/energy rotation.
+
+### Congress Signals (STOCK Act)
+- Fetch error today. All HOLD.
+- Carrying forward: **FCX BUY high** (Gottheimer Apr 15 — unchanged for 8 weeks).
+- Confluent signals: None today.
+
+### Perplexity Validation
+- **AMD Benzinga BUY (high):** Fundamentals strong (Data Center +57% YoY Q1, Q2 guidance +46%). BUT RSI ~76 overbought; today's headline confirms -6% intraday weakness in tech. Contradicts Benzinga BUY signal — macro risk-off outweighs fundamental thesis today. DISCARD as entry signal.
+- **SPY/QQQ SELLs (medium/high):** Confirmed by S&P futures -0.31%, VIX elevated, CPI-day risk-off. Valid.
+- **XOM SELL (medium):** Confirmed by WTI -3.40% to $88.05. Iran deal speculation. Valid.
+- **AVGO SELL (medium):** Consistent with SOXX/semi weakness, SOXL -15%. Valid for today; not a structural thesis.
+- **No confluent Benzinga+Congress signals.**
+
+### Position Thesis Checks
+- **CAT ($894.02, +0.15%):** Shareholder meeting today = routine, not a catalyst. ISM expansion + AI/data-center capex intact. Down 2.26% today — broad market weakness. Stop buffer 4.7% ($852.147). No thesis break. **HOLD. Watch stop buffer — if market selloff accelerates, buffer narrows.**
+- **CVX ($188.39, +3.31%):** WTI $88.05 — AT the $88 thesis gate. Oil fell 3.40% yesterday. Hot CPI = less demand expectation + Iran deal risk. If WTI closes below $88 today or tomorrow, thesis break = manual review required. Dividend $183.34 received today. HWM $191.48. **HOLD but on active WTI watch. $88 gate is critical.**
+- **IWM ($282.39, -2.88%):** $2.39 above $280 soft-watch level. Hot CPI (expected) = rate-cut narrative weakened = small-cap headwind. Rate-sensitive: 175bps of prior cuts provide delayed support, but new hot print delays further easing. **Hold to $280 soft-watch; close below $280 = proactive exit evaluation before EOD.**
+
+### Trade Ideas
+1. **HOLD ALL** — CPI named blocker (8:30 ET today). No entries. Deployment 52.6% (<75% floor) but blocker is valid.
+2. **Post-CPI (Thu Jun 12) primary:** SOXX ~32sh @~$580-600 (~$18.6K-19.2K, ~17.9-18.4% equity). RSI 76.6 (overbought now) — wait for post-CPI pullback or confirm break above resistance with volume. R:R 2:1 if entry near MA20.
+3. **Post-CPI (Thu-Fri) secondary:** Need 2nd position to reach 75% deployment floor. Candidates:
+   - NVDA (tech #2 RS, AI thesis, dip-on-CPI potential)
+   - FCX (congressional BUY, Materials #7 RS, commodity cycle)
+   - IWM add if thesis intact post-CPI (requires benign print)
+4. **IWM exit watch:** Close below $280 today = escalate. Consider proactive exit rather than holding to stop $263.59 if rate-cut thesis cracks post-CPI.
+5. **CVX gate watch:** WTI must hold above $88 intraday and on close. Oil down today = risk. Hot CPI = bearish oil demand. If WTI closes below $88 = thesis break = manual exit evaluation.
+
+### RS Ranking (carry-forward Jun 4 — Perplexity unable to compute fresh)
+SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) > IWM(10) > SPY(11) > XLF(12) > XLV(13) > XLRE(14) > XLP(15) > HYG(16) > GLD(17) > XLU(18) > SLV(19)
+
+### Risk Factors
+1. **Hot CPI (4.2% YoY expected)** — if at/above consensus: market selloff, IWM -2%+ intraday, XLE weak, XLRE hit.
+2. **WTI at $88.05** — 1 tick from CVX thesis break. Oil further weakness = manual CVX review.
+3. **IWM at $282.39** — $2.39 above $280 soft-watch. Rate-cut narrative under pressure.
+4. **CAT stop buffer 4.7%** — narrower than ideal on a down-market day. No action but monitor.
+5. **Deployment 52.6%** — well below 75% floor. CPI blocker is valid. Next window Thu Jun 12.
+6. **VIX 19.87 (medium)** — elevated; CPI print could spike toward 22+.
+
+### Decision
+**HOLD — CPI named blocker. No new entries.**
+- CAT: HOLD. Thesis intact; stop buffer adequate.
+- CVX: HOLD. On WTI $88 gate watch — thesis intact only if WTI stays above $88.
+- IWM: HOLD to $280 soft-watch. Close below $280 = evaluate proactive exit at EOD.
+- Deployment 52.6%: valid HOLD (named blocker active).
+- Next window: **Thu Jun 12 post-CPI** (if print benign) — SOXX primary + 1 secondary to reach 75% floor.
+
+### Active Watch Items
+- **WTI $88 gate (CVX thesis):** WTI $88.05 today. Close below $88 = thesis break = review CVX exit.
+- **IWM $280 soft-watch:** Close below $280 = escalate, evaluate proactive exit.
+- **SOXX post-CPI (Thu Jun 12):** RSI 76.6 overbought — wait for reset or confirmed breakout above resistance.
+- **CAT stop buffer:** 4.7% — monitor on large market moves.
+- **Unanswered EOD Jun 09 action questions:** IWM thesis (1), deployment plan (2), week 7 entry plan (3) — user response needed.
