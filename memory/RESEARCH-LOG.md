@@ -3288,3 +3288,127 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 - **IWM $280 watch:** Close below $280 = escalate at EOD.
 - **CPI May Jun 10 8:30 ET:** Named blocker -- no entries Wed/Thu; all positions on alert.
 - **CAT shareholder meeting Jun 10 (virtual):** Watch for AI/data-center power demand commentary.
+
+---
+
+## 2026-06-10 — Pre-Market Research (Day 35, Wednesday — Week 7 Day 3, CPI Day)
+
+**[FALLBACK NOTE: Alpaca API blocked by network policy ("Host not in allowlist") — account snapshot from last known EOD Jun 09. Perplexity blocked (403) — fell back to native WebSearch for all research.]**
+
+### Account Snapshot (last known EOD Jun 09)
+| Metric | Value |
+|--------|-------|
+| Equity | $104,601.46 |
+| Cash | $49,403.24 (47.2%) |
+| Deployed | $55,198.22 (52.8%) — 3 positions |
+| Phase P&L | +$4,601.46 (+4.60%) |
+| DT count | 0 |
+| Week buy count | 0/3 |
+
+**Positions:**
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $912.40 | +$394.18 (+2.21%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $187.50 | +$529.05 (+2.82%) | 10% trail HWM $191.48 / stop $172.332 |
+| IWM | 62 | $290.770 | $284.48 | -$389.97 (-2.16%) | 10% trail HWM $292.875 / stop $263.588 |
+
+**Open Orders (all confirmed EOD Jun 09):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e)
+- Sell 103 CVX trailing_stop 10% GTC (52322270)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc)
+
+### Market Context (WebSearch fallback)
+| Indicator | Level | Notes |
+|-----------|-------|-------|
+| S&P 500 | 7,405.73 (Jun 8 close) | Above 50d MA 7,174.53 and 200d MA 6,863.31; bull trend intact |
+| S&P futures | -0.47% premarket | 22% Polymarket odds of opening higher — bearish |
+| VIX | 20.18 (+6.68% today) | MEDIUM-HIGH; up from 18.92 Jun 8 close; elevated pre-CPI |
+| WTI | ~$86–91.54 range | Volatile; Iran/US escalation; Brent $89.61–94.43 |
+| 10-yr Treasury | ~4.46% | Approaching 2026 high from hot inflation read |
+
+**Geopolitical (URGENT):** US launched "self-defense strikes" against Iran overnight after Tehran shot down a US Army Apache helicopter over the Strait of Hormuz. Iran-Israel ceasefire is now fragile. Oil volatile — WTI swung on peace-then-war headlines.
+
+**CPI May (8:30 ET today — RELEASED):** Expected +0.5% MoM / +4.2% YoY — first reading above 4% since May 2023. Market pricing in hot print; futures already -0.47%. Actual result not yet fully confirmed in search data — monitor closely.
+
+**Earnings today:** CHWY (AMC), ORCL (AMC). No BMO earnings affecting held positions.
+
+**Other catalysts:**
+- SpaceX IPO expected to begin trading Friday — fund-raising selling pressure this week
+- Alphabet $85B equity raise for AI infrastructure (secondary offering headwind on market)
+- NVIDIA Blackwell shipments guidance upgrade (tech tailwind longer term)
+
+### Sector Momentum (June 2026 — WebSearch)
+| Status | Sectors |
+|--------|---------|
+| **Leading** | XLI (Industrials), XLB (Materials +22% YTD), XLE (Energy), XLP (Staples) |
+| **Lagging** | XLK (Tech — cooling), XLC, XLY, XLF |
+
+- Materials dominant leader YTD (+22%), breakout from long consolidation
+- Healthcare emerging as flight-to-safety play
+- Tech cooling after AI run despite structural bull trend
+
+### Holdings Thesis Check
+
+**CAT ($912.40, +2.21% from entry):**
+- Q1 2026: +22% revenue, record $62.7B backlog, guidance raised. CFO Kyle Epley joined May.
+- Shareholder meeting Jun 10 8am CDT (virtual) — routine agenda; watch for AI/data-center power demand color
+- Sector: Industrials = LEADING ✓. ISM expansion thesis intact.
+- Stop buffer: 6.6% ($852.147 vs $912.40). Thesis intact. **HOLD.**
+
+**CVX ($187.50 last, +2.82% from entry):**
+- Down ~1.28% today on Iran/US escalation uncertainty (oil volatile)
+- WTI $86–92 range — above $88 thesis-break gate (barely). Iranian supply disruption risk = bullish but market risk-off
+- IEA projects 420k bpd demand contraction for 2026 — longer-term headwind
+- Stop buffer: 8.0% ($172.332 vs $187.50). US/Iran escalation makes oil thesis double-edged. **HOLD — watch oil direction post-US-strikes.**
+
+**IWM ($284.48 last, -2.16% from entry):**
+- Current ~$284.38 per search — essentially flat from EOD Jun 9
+- Above $280 soft-watch level ✓ ($4.38 buffer)
+- Russell 2000 annual reconstitution in June (~5–7% turnover) → added index noise
+- Rate-cut thesis: hot CPI today could push back rate-cut timeline → bearish for small caps
+- Stop buffer: 7.1% ($263.588 vs $284.38). **HOLD to stop — but CPI hot print = elevated downside risk for small caps. Watch $280 intraday.**
+
+### Trade Ideas (post-CPI context)
+
+**1. HOLD ALL — CPI named blocker (today). Default HOLD confirmed.**
+
+**2. SOXX (post-CPI Thu Jun 12 — primary):**
+- Semis RS #1 in prior ranking; NVDA Blackwell upgrade cycle intact
+- ~30–32 shares @ ~$580–600 (~$18K, ~17.2% equity)
+- Catalyst: benign CPI print → rate-cut timeline intact → tech/semi catch-up
+- Entry: Thu Jun 12 open if CPI ≤3.8% YoY or ≤0.3% MoM
+- Stop: 10% trail GTC on fill | Target: ~$720 (+20%) | R:R ~2:1
+- Gate: CPI benign AND deployment check (post-entry ~70.5% — within 75% floor approach)
+
+**3. FCX (post-CPI Thu/Fri — secondary):**
+- Materials sector leading YTD (+22%); FCX = copper = AI/EV infrastructure demand
+- Congress BUY (Gottheimer Apr 15 — high conviction signal, carry-forward)
+- ~200 shares @ ~$47–50 (~$9.6K, ~9.2% equity); or size to 17-18%: ~360sh @$49 (~$17.6K)
+- Stop: 10% trail GTC | Target: ~$58 (+18%) | R:R ~1.8:1
+- Gate: CPI benign AND SOXX entry confirmed (two-position week, 0/3 used)
+- Note: FCX in XLB (Materials) — 0 positions in sector; eligible ✓
+
+**Both SOXX + FCX Thu/Fri would bring deployment to ~87% — borderline. Prefer SOXX first, assess FCX based on post-CPI market tone and remaining deployment headroom.**
+
+### Risk Factors
+1. **CPI +4.2% YoY shock** — Fed hawkish pivot → rate-cut timeline pushed back → small caps (IWM) hardest hit; broad market selloff
+2. **US/Iran military escalation** — oil spike on Strait of Hormuz risk; global risk-off if broadens; CVX double-edged
+3. **VIX 20.18 (+6.68%)** — MEDIUM-HIGH; positions exposed to gap-downs on hot CPI
+4. **SpaceX IPO selling pressure** — general market supply headwind through Friday
+5. **Russell reconstitution noise** — IWM position; June index reshuffle adds volatility
+6. **Deployment 52.8% < 75% floor** — valid only because CPI is named blocker; must trade Thu/Fri if CPI clears
+
+### Decision
+**HOLD — CPI named blocker (Jun 10). No entries today.**
+- All 3 positions above -7% cut threshold ✓
+- All stops active (last known) ✓
+- Deployed 52.8% — below 75% floor but CPI = named blocker; HOLD is strategy-valid
+- No user decisions received for EOD Jun 09 action questions — carry defaults
+- **Next entry window: Thu Jun 12 post-CPI if print ≤3.8% YoY / ≤0.3% MoM**
+
+### Watch Items Today
+- **CPI May 8:30 ET (RELEASED):** Hot print (+4.2%) = risk-off all day; monitor IWM $280 and CVX $172 stop proximity
+- **Iran/US escalation:** Oil direction determines CVX fate; WTI >$95 = CVX bullish; WTI <$85 on ceasefire = stop watch
+- **CAT shareholder meeting 8am CDT:** Routine but watch for AI/data-center demand color
+- **IWM $280 soft-watch:** Close below $280 = escalate at EOD
+- **EOD Jun 09 action questions:** Still awaiting user answers (IWM hold/exit, SOXX + 2nd name, Thu/Fri stagger)
