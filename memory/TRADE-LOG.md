@@ -2305,3 +2305,27 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **Fri Jun 13 entry candidate (FCX or defer to post-FOMC):** User decision needed.
 3. **SOXX deferral to post-FOMC Jun 18+:** User decision needed.
 4. **AMD Congress BUY (fresh signals):** Watchlist addition decision needed.
+
+---
+
+## Jun 11 — EOD Snapshot (Day 36, Thursday — Week 7 Day 4, PPI Day)
+**Portfolio:** $104,487.47 | **Cash:** $49,403.21 (47.3%) | **Day P&L:** +$924.56 (+0.89%) | **Phase P&L:** +$4,487.47 (+4.49%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $897.63 | +4.84% | +$98.82 (+0.55%) | 10% trail HWM $946.83 / stop $852.147 (buffer 5.06%) |
+| CVX | 103 | $182.364 | $185.80 | -2.11% | +$353.95 (+1.88%) | 10% trail HWM $192.685 / stop $173.417 (buffer 6.67%) |
+| IWM | 62 | $290.770 | $290.23 | +2.90% | -$33.47 (-0.19%) | 10% trail HWM $292.875 / stop $263.588 (buffer 9.18%) |
+
+**Open Orders (EOD Jun 11):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (buffer 5.06%) ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 (buffer 6.67%) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (buffer 9.18%) ✓
+
+**Notes:** Day 36, Thursday PPI Day — Week 7 Day 4. No trades executed; week count 0/3 with one window remaining (Fri Jun 12). Recovery day: CAT +4.84% ($856.16 → $897.63) — stop buffer recovered from near-critical 0.34% → healthy 5.06%; thesis alive (Q1 +22% rev, $63B backlog, AI power demand). CAT now +0.55% from entry — no longer a loser. CVX -2.11% ($189.80 → $185.80) on WTI softness; fell from HWM $192.685, stop unchanged at $173.417 — thesis gate WTI $88 needs monitoring. IWM +2.90% ($282.05 → $290.23) — recovered to within -0.19% of entry; stop buffer 9.18%; rate-cut thesis structurally impaired but no break yet. Deployment 52.7% — still well below 75% floor. FOMC blackout begins Jun 16 (next Monday), leaving Fri Jun 12 as last viable entry window this week.
+
+**Action questions (EOD Jun 11):**
+1. **Deployment (52.7%, cash $49,403):** Only Fri Jun 12 remains before FOMC blackout Jun 16-17. Must deploy to approach 75% floor. Best candidate: FCX (~$62-64, Materials, Congress BUY) or another? Or defer ALL entries to post-FOMC Jun 18+?
+2. **IWM ($290.23, -0.19% from entry, buffer 9.18%):** Recovered today (+2.90%) but rate-cut thesis impaired (CPI 4.2% + PPI 6.4% both hot). Exit proactively before stop ($263.59), or hold? (Carried from Jun 10.)
+3. **CVX (-2.11% today, +1.88% from entry):** HWM $192.685 not extended. Is WTI thesis gate ($88) still intact after today's drop?
+4. **Fri Jun 12 entry slot:** If deploying, use 1 trade (FCX or other) on Fri — or carry all 3 unused slots to post-FOMC week?
