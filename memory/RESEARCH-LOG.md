@@ -3373,3 +3373,95 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 - **SOXX post-CPI (Thu Jun 12):** RSI 76.6 overbought — wait for reset or confirmed breakout above resistance.
 - **CAT stop buffer:** 4.7% — monitor on large market moves.
 - **Unanswered EOD Jun 09 action questions:** IWM thesis (1), deployment plan (2), week 7 entry plan (3) — user response needed.
+
+---
+
+## Pre-Market 2026-06-11 (Thursday — Day 36, Week 7 Day 4)
+
+**⚠️ API STATUS:** Alpaca API + Perplexity API blocked by Anthropic egress gateway ("Host not in allowlist"). Account state carried from TRADE-LOG EOD Jun 10. All market research via WebSearch fallback.
+
+### Account Snapshot (TRADE-LOG EOD Jun 10 — live state unconfirmed)
+- **Equity:** ~$103,504 | **Cash:** $49,403.21 (47.7%) | **Deployed:** ~$54,101 (52.3%) | **DT count:** 0
+- **Phase P&L:** +$3,504 (+3.50%) | **Week count:** 0/3
+
+| Ticker | Shares | Entry | Jun 10 Close | Unrealized | Stop | Buffer |
+|--------|--------|-------|--------------|------------|------|--------|
+| CAT | 20 | $892.689 | $855.03 | -$753.18 (-4.22%) | $852.147 | **0.34% — CRITICAL** |
+| CVX | 103 | $182.364 | $189.71 | +$756.46 (+4.03%) | $173.417 | 8.6% |
+| IWM | 62 | $290.770 | ~$282-285 | ~-$357 to -$567 | $263.588 | 6-8% |
+
+**⚠️ CAT:** Stop $852.147 was within $2.88 of Jun 10 close. If any overnight gap-down, stop may already have triggered. Cannot confirm without Alpaca API — check broker immediately at session open.
+
+### Step 1B — User Decisions
+No user decisions block found in TRADE-LOG for Jun 9 or Jun 10 EOD action questions. Carrying forward as active watch items. No confirmed decisions to execute.
+
+**Wednesday urgency check FIRES:** ≥2 trade slots unused at Wed close (0/3) + deployed 52.3% < 60% → must open ≥1 position today (Thu Jun 11).
+
+### Market Context
+- **WTI:** ~$92/bbl ↑ from $88.05 (Jun 10) — Iran strikes driving oil higher. **CVX thesis STRONGLY intact.** New HWM likely.
+- **Brent:** ~$95/bbl
+- **S&P 500:** Closed -1.62% on Jun 10 (7,267). Futures **+0.78%** Thu pre-market — buying the dip post-Iran-strike-completion.
+- **VIX:** 22.22 (closed Jun 10, up +11.83%) — **HIGH** risk environment.
+- **Iran conflict:** US launched second day of strikes; Iran responded against Bahrain/Kuwait/Jordan. Ceasefire talks stalled but Qatar mediating. Strait of Hormuz still threatened → structural oil supply premium.
+- **PPI May 2026 @ 8:30 ET today:** April PPI was +6.0% YoY (hottest since Dec 2022). May PPI likely elevated given energy spike. NOT a named blocker per strategy rules — but expect market volatility at print.
+- **ECB rate decision today.**
+- **Oracle:** -10% extended hours after $20B equity/debt raise for AI — may pressure semis at open.
+- **ADBE earnings after close tonight.** SpaceX IPO expected Friday.
+- **CPI (Jun 10):** Confirmed headline +4.2% YoY (hot/energy-driven), core +2.9% YoY (benign). Market digested via selloff; recovery underway.
+
+### Position Thesis Checks
+- **CAT ($855.03, -4.22%):** Stop $852.147 (0.34% buf). S&P futures +0.78% reduces gap-down risk but CAT has idiosyncratic overvaluation pressure (119.5% above fair value per one source; analysts "buy" but crowded). Industrials led sector decline Jun 10 (-2.49%). **Let stop work — do not cancel. Verify at open whether stop triggered overnight.**
+- **CVX (~$189.71):** WTI $92 = strong $4/bbl above thesis gate. Iran escalation = sustained oil supply premium. CVX should make new HWM today. Thesis intact — **HOLD, trail stop will auto-advance.**
+- **IWM (~$282-285):** Above $280 soft-watch. CPI core benign = moderate rate-cut support. IWM YTD +18% per search, outperforming S&P (+6%) and Nasdaq (+4%) significantly. Small-cap thesis (soft landing + rate cuts) partially intact. **HOLD — above $280. Watch close.**
+
+### RS Ranking (updated estimate — WebSearch inputs)
+XLE(1, Iran premium) > SOXX(2, AI/semis) > XLK(3) > IWM(4, YTD +18%) > XLC(5) > XLY(6) > XLB(7) > XLI(8) > XLF(9) > SPY(10) > XLV(11) > XLU(12) > XLRE(13) > XLP(14)
+
+### Trade Ideas
+
+1. **SOXX — Primary (Wednesday urgency, TRADE required):**
+   - **Catalyst:** AI/semiconductor demand structural; SOXX premarket ~$584; +150% past year; S&P futures positive; post-CPI relief trade.
+   - **Entry:** Post-PPI print @ 8:30 ET. Wait for 15-min reaction; enter ~10:00 AM if price stable ≥$565. Oracle drag may offer better fill.
+   - **Size:** ~32sh @ ~$575 = ~$18.4K (~17.8% equity). Adjust to keep 17-20%.
+   - **Stop:** 10% trailing GTC immediately on fill (effective ~$517-527).
+   - **Target:** $640+ (2:1 R:R vs ~$52 stop = ~$104 upside from $575).
+   - **Risk:** Oracle -10% drag; PPI hot print; VIX 22.
+
+2. **FCX — Secondary (same day or Fri Jun 13):**
+   - **Catalyst:** Congressional BUY signal (Gottheimer Apr 15, 8 weeks active); copper supercycle; FCX YTD +41.2%; "Strong Buy" consensus (23 analysts); Iran = inflationary = commodity tailwind.
+   - **Entry:** Same session as SOXX or Friday. ~270sh @ ~$65 = ~$17.55K (~17.0% equity). Wait for price ≥$65 to clear 17% minimum.
+   - **Stop:** 10% trailing GTC.
+   - **Target:** $75+ (2:1 R:R vs $5.85 stop = ~$11.70 upside from $65 → $76.70).
+   - **Sector check:** FCX = Materials (#7 RS) — OK to add (0/2 materials positions). SOXX = Tech (#2 RS). Combined: 3+2=5 positions, sectors Tech+Materials+Energy+Industrials+SmallCap = 5 sectors ✓.
+   - **Risk:** Global growth slowdown risk on hot inflation; materials RS lagging.
+
+3. **CAT exit contingency:** If CAT stop triggered at open (gap below $852.147), accept fill, note realized P&L (~-4.5% from entry), cash increases to ~$66K (64% cash). Frees industrial slot. No replacement needed today unless deployment drops below 40% after SOXX + FCX fills.
+
+### Risk Factors
+1. **CAT stop ~0.34% buffer** — may trigger at open; verify immediately.
+2. **PPI May 8:30 ET** — April was +6.0% YoY; May likely hot (energy-driven). Expect volatility; wait for print.
+3. **Iran escalation** — second-day strikes; Hormuz risk premium in oil; broader market uncertainty.
+4. **Oracle -10%** — drags semis early session; may improve SOXX entry point.
+5. **VIX 22.22** — elevated. 2:1 R:R requirements intact; do not chase.
+6. **IWM** — above $280 but rate-cut timeline delayed by hot CPI. Watch close.
+7. **Week count 0/3 — 2 days left.** Wednesday urgency forces ≥1 trade today.
+
+### Decision
+**TRADE — Wednesday urgency check fires. Enter SOXX post-PPI (~10 AM ET). FCX secondary.**
+- **SOXX:** Enter ~10 AM ET post-PPI stabilization. ~32sh @ ~$575. Stop 10% trail GTC.
+- **FCX:** Second entry today (if market stable) or Friday. ~270sh @ ~$65. Stop 10% trail GTC.
+- **CAT:** Let stop manage. Verify open price; do not manually cancel.
+- **CVX:** HOLD. WTI $92 = thesis fully intact. Stop auto-trails up.
+- **IWM:** HOLD. Above $280. Watch close.
+- **Target post-trade:** 5 positions, ~$103.5K equity × 75-85% = $77.6K-$88K deployed.
+  - After SOXX (~$18.4K) + FCX (~$17.55K): deployed ~$90.1K = 87% — at top of range. Size down SOXX to ~30sh (~$17.25K) if needed.
+  - Revised: 30sh SOXX + 270sh FCX = $17.25K + $17.55K = $34.8K new + $54.1K existing = $88.9K deployed = 85.9% — at ceiling. Use 28sh SOXX = $16.1K → $82.75K = 79.9% ✓.
+
+### Active Watch Items
+- **CAT stop $852.147** — verify at open. If triggered, accept fill.
+- **PPI 8:30 ET** — wait for print before any entry.
+- **CVX/WTI $92** — new HWM expected; stop will auto-trail up.
+- **IWM $280 soft-watch** — monitor close.
+- **SOXX entry ~10 AM ET** — 28-30sh @ ≥$565-575 post-PPI.
+- **FCX entry** — 270sh @ ≥$65 (same day or Fri).
+
