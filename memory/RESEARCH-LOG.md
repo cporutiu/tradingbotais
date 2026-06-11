@@ -3373,3 +3373,142 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 - **SOXX post-CPI (Thu Jun 12):** RSI 76.6 overbought — wait for reset or confirmed breakout above resistance.
 - **CAT stop buffer:** 4.7% — monitor on large market moves.
 - **Unanswered EOD Jun 09 action questions:** IWM thesis (1), deployment plan (2), week 7 entry plan (3) — user response needed.
+
+---
+
+## 2026-06-11 — Pre-Market Research (Thursday, Week 7 Day 4)
+
+### Account Snapshot (live API — pre-market 2026-06-11)
+- **Equity:** $104,051.48 | **Cash:** $49,403.21 (47.5%) | **Deployed:** $54,648.27 (52.5%, 3 positions) | **DT count:** 0
+- **Phase P&L:** +$4,051.48 (+4.05%) | **Week 7 trade count:** 0/3 (3 slots remain)
+
+### Positions (pre-market 2026-06-11)
+| Ticker | Shares | Entry | Pre-mkt | Unrealized | Stop |
+|--------|--------|-------|---------|------------|------|
+| CAT | 20 | $892.689 | $866.00 | -$533.78 (-2.99%) | 10% trail HWM $946.83 / stop $852.147 (**1.6% buffer — CRITICAL**) |
+| CVX | 103 | $182.364 | $191.46 | +$936.82 (+4.99%) | 10% trail HWM $192.685 / stop $173.417 (buffer 9.4%) |
+| IWM | 62 | $290.770 | $284.00 | -$419.73 (-2.33%) | 10% trail HWM $292.875 / stop $263.588 (buffer 7.2%) |
+
+### Open Orders (confirmed live)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 — **CRITICAL: 1.6% buffer**
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588
+
+### User Decisions Carrying Forward (STEP 1B)
+- **No user decisions block found** after EOD Jun 10 action questions. All 4 questions unanswered:
+  1. CAT proactive exit vs hold to stop $852.147 — **CRITICAL: stop 1.6% away; hot PPI today likely triggers**
+  2. IWM proactive exit vs hold to stop — **CARRY FORWARD as active watch**
+  3. Post-CPI entry plan (SOXX + 1 other) — **reassessing given PPI hot**
+  4. Week slot usage Thu/Fri — **no action plan confirmed**
+
+### Market Context
+- **WTI (Jul 2026):** ~$90-92/bbl — **ABOVE $88 CVX thesis gate** ✓ (Twelve Data: Jun 11 range $91.85-$94.82)
+- **Brent:** ~mid-$90s (estimated; WTI + typical spread)
+- **S&P 500 futures (ESM26):** ~7,305-7,335 premarket; down from period open 7,632 (-4.97%); pre-PPI bounce +0.36% from yesterday close
+- **VIX:** 20.82 as of midday Jun 11 (Cboe) — **MEDIUM risk zone (18-25)**; down -6.3% today
+- **Market risk:** Medium
+- **Economic cycle:** Late-cycle — LEI negative 6/12-month growth; GDP 1.6% Q1 2026; PCE 3.8%; inflation re-accelerating while growth decelerates
+
+### Economic Calendar — Today (Jun 11, Thursday)
+- **8:30 AM ET — PPI May 2026:** +6.4% YoY vs 6.0% expected and 6.0% prior → **HOT SURPRISE**. Following yesterday's CPI 4.2% (3-year high), this is second consecutive inflation shock. Market reaction: equities sold off. Producer inflation re-accelerating.
+- **8:30 AM ET — Initial Jobless Claims:** Released simultaneously with PPI (no specific result obtained)
+- **AMC tonight — Adobe (ADBE) earnings:** Enterprise software/AI monetization read-through. Not a held name.
+- **FOMC Jun 16-17:** Warsh first meeting as Chair — named blocker kicks in Jun 16.
+
+### Benzinga Signals (Jun 11, 24h lookback)
+- **SELLS (high):** SPY (score -16, "Hottest inflation in over 3 years; is Fed ready to hike?"), QQQ (-14), AMD (-9), AVGO (-9), XLE (-5), IWM (-5), SOXX (-5), XLK (-4), FCX (-3)
+- **SELLS (medium):** XLI (-4), XLY (-4), XOM (-2)
+- **BUYS (medium):** CAT (+2, but headline says "Caterpillar Stock Sinks As Oil Prices Rise Amid Trump Threats" — score/headline conflict; likely unreliable)
+- **HOLDS:** CVX (low), NVDA (low)
+- **BENZINGA_BUYS:** CAT (medium — conflicted/unreliable signal)
+- **BENZINGA_SELLS:** SPY, QQQ, AMD, AVGO, IWM, SOXX, XLE, XLK, FCX (medium-high)
+
+### Congress Signals (Jun 11, 45d lookback)
+- **BUYS (high):** FCX (Gottheimer Apr 15, filed May 19 — unchanged); AMD (Gottheimer May 5 filed Jun 3 + Apr 27 filed May 19; Cisneros May 14/15 filed Jun 8 — **FRESH, 3 new priority entries**)
+- **SELLS (high):** NVDA (Meuser, Fletcher, Cisneros, McGuire, Whitehouse — multiple sells); AVGO (Taylor, Moskowitz, Capito)
+- **SELLS (medium):** CAT (Moskowitz Mar 31 — stale/small, noise)
+- **CONGRESS_BUYS:** FCX (high), AMD (high — fresh buys)
+- **CONGRESS_SELLS:** NVDA (high), AVGO (high)
+
+### Confluent Signals
+- **FCX:** Congress BUY high vs Benzinga SELL high → **CONFLICT** (R:R check still required before entry)
+- **AMD:** Congress BUY high (fresh — 3 priority entries) vs Benzinga SELL high → **CONFLICT**
+- **CAT:** Benzinga BUY medium (headline contradicts score) vs Congress SELL medium (stale) → **NET NEUTRAL to slightly bearish**
+- **IWM:** Benzinga SELL high → confirms thesis deterioration under hot CPI/PPI
+- **SOXX:** Benzinga SELL high → DEFER entry given macro headwinds
+
+### Perplexity Validation
+
+**CAT ($866.00, -2.99% from entry):**
+- Analyst consensus: Buy/Moderate Buy; median PT ~$933-950 (8.9-10.6% upside from current); Public.com PT $795.45 (bears), high $1,165 (bulls)
+- Q1 2026: revenue +22% YoY, record $63B backlog, AI power demand thesis intact
+- Benzinga signal today: BUY medium (score +2) but headline says "sinks as oil prices rise amid Trump threats" — signal unreliable; headline more relevant
+- **STOP AT RISK:** $852.147 stop is only 1.6% below current $866. Hot PPI → broad market selloff → CAT stop trigger HIGH PROBABILITY today. Stop will execute at ~$852 (-4.57% from entry). Let stop work — do not chase manual exit.
+- **CAT thesis: INTACT fundamentally, but stop is executing per rules.**
+
+**CVX ($191.46, +4.99% from entry):**
+- Analyst consensus: Moderate Buy (18B/6H/1S, 25 analysts); avg PT $205.70-$220; TIKR mid-case $210 end-2026
+- WTI $90-92 → ABOVE $88 thesis gate ✓
+- $1.78/share dividend received yesterday ($183.34 cash credit)
+- HWM $192.685; stop $173.417 (9.4% buffer)
+- **CVX thesis: INTACT. HOLD to stop.**
+
+**IWM ($284.00, -2.33% from entry):**
+- Rate-cut thesis **IMPAIRED** by CPI 4.2% + PPI 6.4% → Fed stays restrictive longer = small-cap headwind
+- Benzinga SELL high confirms deterioration
+- Perplexity: "IWM is most attractive when disinflation allows the Fed to cut; less attractive when inflation forces Fed to stay restrictive" — current macro = less attractive
+- Stop $263.588 (7.2% buffer). Max loss to stop: ~-9.4% from entry
+- **Consider proactive exit** to lock -2.33% realized vs risking -9.4% max stop loss given impaired thesis
+- **IWM thesis: IMPAIRED. Proactive exit under consideration.**
+
+**SOXX (5th position candidate — DEFERRED):**
+- Benzinga SELL high ("Tom Lee Calls Tech Sell-Off Healthy" — market acknowledges pullback)
+- RSI 73-78 (overbought); MACD still buy; structurally bullish uptrend
+- Fair opening price estimate ~$551 (StockInvest.us for Jun 11)
+- Post-CPI/PPI: higher-for-longer rates compress tech/semi multiples → near-term headwind
+- SOXX plunged 10% last week before rebounding (Intellectia source) — unstable
+- Seeking Alpha: "SOXX the party may be over" (Strong Sell rating from June 1)
+- Wait for RSI to cool to 50-60 range or FOMC clarity before entry
+- **SOXX thesis: STRUCTURAL BULL intact; ENTRY DEFERRED to post-FOMC (Jun 18+)**
+
+**FCX (potential 5th position):**
+- Analyst consensus: Buy bias; NAGA avg PT $71.77 (+18% upside); Benzinga 24-analyst PT $57.70
+- Congress BUY high (Gottheimer); Benzinga SELL high → CONFLICT
+- Materials sector empty — good diversification
+- Current FCX price unknown (need R:R check at entry); analyst range $57-$81
+- **DEFER entry until R:R confirmed at current price AND Benzinga/Congress conflict resolves**
+
+### RS Ranking (Jun 11 — carry-forward from Jun 9; Perplexity returned empty array)
+SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) > IWM(10) > SPY(11) > XLF(12) > XLV(13) > XLRE(14) > XLP(15) > HYG(16) > GLD(17) > XLU(18) > SLV(19)
+*Note: Post-CPI/PPI inflation shock likely shifted tech/semis lower; XLE/GLD may have risen. Treat as indicative only.*
+
+### Trade Ideas
+1. **CAT: LET STOP WORK** — stop $852.147 has 1.6% buffer. Hot PPI → broad selloff likely. Stop executes at ~$852, loss -4.57% from entry (~-$815). Better than -7% manual cut threshold. Capital freed: ~$17,320.
+2. **IWM: EVALUATE PROACTIVE EXIT** — thesis impaired (rate-cut narrative dead with CPI 4.2% + PPI 6.4%). Benzinga SELL high. Proactive exit at ~$284 = -2.33% realized vs -9.4% max to stop. User decision needed.
+3. **CVX: HOLD** — thesis intact, WTI above $88, stop protecting.
+4. **SOXX: DEFERRED** — Benzinga SELL high, overbought RSI, macro headwinds. Wait for FOMC (Jun 16-17) clarity or RSI reset to 50-60 before entry.
+5. **FCX: MONITOR** — Congress BUY high but Benzinga SELL high conflict. Need R:R check at current price. Could be Thu/Fri entry if CAT/IWM exit and deployed falls below 40%.
+6. **No new entries today** — PPI hot (6.4%), ADBE earnings AMC (not held but creates tech uncertainty), VIX 20.82 (medium), FOMC in 5 days.
+
+### Risk Factors
+1. **Hot PPI 6.4% YoY (primary):** Second consecutive inflation shock after CPI 4.2%. Market selloff expected. CAT stop likely triggers. Fed rate-hike fears intensifying.
+2. **CAT stop trigger imminent (1.6% buffer):** Any broad market selloff post-PPI triggers exit at ~$852. -4.57% from entry. Let it execute — stop doing its job.
+3. **IWM rate-cut thesis dead:** CPI+PPI combo kills soft-landing narrative. IWM headwind structural, not temporary. Proactive exit vs holding to stop is the decision.
+4. **FOMC Jun 16-17 (Warsh first meeting):** Warsh known as hawkish. If he signals rate hike or no-cut through 2026, tech/small-caps will reprice lower. Named blocker kicks in Jun 16.
+5. **SOXX overbought:** RSI 73-78, Seeking Alpha "party may be over." Benzinga SELL. Not entering here.
+6. **Deployment 52.5%:** If CAT stops out → ~35.9% deployed (below 40% TRADE floor). If also IWM exits → ~19% deployed (deep TRADE floor breach). FOMC blocker Jun 16 limits entry window to Thu Jun 12 + Fri Jun 13.
+
+### Decision
+**HOLD existing positions (let stops work). No new entries today.**
+- CAT: let stop $852.147 work. Do not manually exit (stop is 1.6% away, executing mechanically is cleaner).
+- CVX: HOLD. Thesis intact.
+- IWM: USER DECISION NEEDED — proactive exit at ~$284 (-2.33%) vs hold to stop $263.59 (-9.4%).
+- No entries: PPI hot + ADBE AMC + VIX 20.82 + FOMC in 5 days = defer.
+- **Entry window: Thu Jun 12 (if deployed <40% after CAT stop) + Fri Jun 13 as backup.**
+- **Candidates post-stop:** FCX (Materials, R:R check), SOXX (wait for RSI reset), AMD (conflict signals)
+
+### Action Questions
+1. **IWM ($284.00, -2.33% from entry, stop $263.59):** Rate-cut thesis impaired by CPI 4.2% + PPI 6.4%. Benzinga SELL high. Exit proactively at ~$284 to lock -2.33% realized, or hold to stop $263.59 (max -9.4% from entry)?
+2. **Post-CAT-stop deployment (~35.9%):** If CAT stops today, deployed falls to ~36% (below 40% TRADE floor). Enter 1 new position Thu Jun 12 or Fri Jun 13? Best candidates: FCX (~$62-64, Materials, Congress BUY high), SOXX (defer to post-FOMC). Confirm entry or wait for FOMC?
+3. **SOXX entry window:** Benzinga SELL + overbought RSI + FOMC in 5 days. Defer SOXX to post-FOMC Jun 18+ when macro clarity restored? Or enter Thu/Fri at reduced size?
+4. **AMD Congress fresh BUY (Gottheimer + Cisneros, 3 priority entries):** Benzinga SELL high conflicts. High conviction congressional signal. Worth adding to watchlist for post-FOMC entry? Current AMD price and R:R unknown.
