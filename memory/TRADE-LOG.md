@@ -2230,3 +2230,78 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **IWM $281.62 — $1.62 above $280 soft-watch:** -3.15% from entry. Hot CPI = rate-cut timeline pushed out = small-cap headwind. Thesis (soft-landing rate cuts) impaired? Exit IWM proactively, or hold to stop $263.588?
 3. **Post-CPI entry plan (Thu Jun 12):** If CPI was hot/hawkish, does SOXX entry still hold? Deployment at 52.3% — need 2 entries minimum to hit 75% floor. Confirm SOXX + 1 other (FCX or alt) for Thu, or reassess given CPI outcome?
 4. **Week count 0/3, 2 days left (Thu + Fri):** Use all 3 remaining slots this week, or stagger 2 Thu + 1 Fri?
+
+---
+
+## Market-Open 2026-06-11 (Thursday — PPI Day, Week 7 Day 4)
+
+**No trades executed — PPI 6.4% YoY hot print + ADBE earnings AMC + VIX ~20 + FOMC Jun 16-17 (5 days). Research decision: HOLD.**
+
+**Account:** Equity $104,309.34 | Cash $49,403.21 (47.3%) | Deployed $54,906.13 (52.7%) | DT count: 0 | Phase P&L: +$4,309.34 (+4.31%) | Week count: 0/3
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $875.14 | -$351.08 (-1.97%) | +2.22% | 10% trail HWM $946.83 / stop $852.147 (buffer 2.63%) — SURVIVED |
+| CVX | 103 | $182.364 | $192.13 | +$1,005.55 (+5.35%) | +1.23% | 10% trail HWM $192.685 / stop $173.417 (buffer 9.7%) |
+| IWM | 62 | $290.770 | $284.22 | -$406.09 (-2.25%) | +0.77% | 10% trail HWM $292.875 / stop $263.588 (buffer 7.3%) |
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 ✓
+
+**Hard-check results:**
+- Positions: 3 (no new entries = no position count change) ✓
+- Week count: 0/3 ✓
+- Losers cut: None. CAT -1.97%, IWM -2.25% — both above -7% threshold ✓
+- Stop tightening: None. CVX +5.35% needs $209.72 (+15%); CAT -1.97% not eligible; IWM -2.25% not eligible ✓
+- No named blocker firing right now (PPI already released 8:30 AM; FOMC is Jun 16 = next named blocker) — but ADBE AMC creates tech uncertainty; VIX 20 = medium risk; research decision confirmed no entries ✓
+
+**Notable:**
+- **CAT bounced +2.22%** from yesterday close $856.16 → $875.14. Stop buffer recovered from 0.34% to 2.63%. Stop aa646f6e held. Thesis intact fundamentally (Q1 2026 +22% rev, $63B backlog) despite valuation pressure.
+- **CVX +5.35% from entry**: HWM $192.685, current $192.13 (just below HWM — no trail update today yet). Thesis intact; WTI above $88 gate.
+- **IWM -2.25% from entry**: $284.22, above $280 soft-watch. +0.77% today. Rate-cut thesis impaired but stop buffer 7.3% intact.
+- **No user decisions block found** for EOD Jun 10 action questions — all 4 carried forward unresolved.
+- **Entry window: Fri Jun 13** (last slot this week before FOMC blackout Jun 16). Candidates: FCX (Materials, Congress BUY high, need R:R check) or wait for post-FOMC Jun 18+.
+
+**Action questions (market-open Jun 11):**
+1. **IWM ($284.22, -2.25% from entry, stop $263.59):** Rate-cut thesis impaired (CPI 4.2% + PPI 6.4%). Benzinga SELL high. Today slightly green (+0.77%) but structural headwind intact. Exit proactively at ~$284 to lock -2.25% realized, or hold to stop $263.59 (max -9.4% from entry)?
+2. **Fri Jun 13 entry (last window before FOMC blackout):** If IWM exits and deployed falls to ~36%, must deploy. Best candidate: FCX (~$62-64, Materials, Congress BUY high — R:R unconfirmed) or defer ALL entries to post-FOMC Jun 18+?
+3. **SOXX entry window:** Benzinga SELL high, RSI overbought, FOMC in 5 days. Defer SOXX to post-FOMC Jun 18+ for RSI reset? Confirm or override.
+
+---
+
+## Midday 2026-06-11 (Thursday — PPI Day, Week 7 Day 4)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $879.11 | -$271.58 (-1.52%) | +2.68% | 10% trail HWM $946.83 / stop $852.147 (buffer 3.07%) |
+| CVX | 103 | $182.364 | $190.04 | +$790.67 (+4.21%) | +0.13% | 10% trail HWM $192.685 / stop $173.417 (buffer 8.7%) |
+| IWM | 62 | $290.770 | $284.94 | -$361.45 (-2.01%) | +1.03% | 10% trail HWM $292.875 / stop $263.588 (buffer 7.5%) |
+
+**Losers cut:** None. CAT -1.52%, IWM -2.01% — both above -7% threshold. No action.
+
+**Stop tightening:** None. CAT needs $1,026.59 (+15%), CVX needs $209.72 (+15%), IWM needs $334.39 (+15%). Not reached. No action.
+
+**Thesis check:**
+- **CAT ($879.11, -1.52%):** Stop buffer recovered from 1.6% pre-market → 3.07% midday on +2.68% intraday bounce. Thesis intact (Q1 +22% rev, $63B backlog, AI power demand). Stop aa646f6e at $852.147 doing its job. **HOLD — let stop manage.**
+- **CVX ($190.04, +4.21%):** WTI ~$90-92 above $88 thesis gate. New HWM not set today ($190.04 < HWM $192.685) — stop stays at $173.417. Thesis intact. **HOLD.**
+- **IWM ($284.94, -2.01%):** $4.94 above $280 soft-watch. Slightly recovering today (+1.03%). Rate-cut thesis structurally impaired (CPI 4.2% + PPI 6.4%) but no immediate break today. Stop buffer 7.5%. No user decision received → holding per pre-market plan. **HOLD — user decision still outstanding.**
+
+**Intraday research (STEP 6):** No positions moving sharply without cause. CAT bounce attributed to broader market stabilization post-PPI sell-off. No Perplexity needed.
+
+**Portfolio (midday):** Equity ~$104,600 | Cash $49,403 (47.2%) | Deployed ~$55,197 (52.8%, 3 positions) | Phase P&L: ~+$4,600 (+4.60%) | Week count: 0/3
+
+**Open Orders (confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (buffer 3.07%) ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 (buffer 8.7%) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (buffer 7.5%) ✓
+
+**No action taken. No ClickUp notification.**
+
+**Outstanding action questions (unresolved — carried from EOD Jun 10 + market-open Jun 11):**
+1. **IWM proactive exit vs hold to stop:** User decision needed.
+2. **Fri Jun 13 entry candidate (FCX or defer to post-FOMC):** User decision needed.
+3. **SOXX deferral to post-FOMC Jun 18+:** User decision needed.
+4. **AMD Congress BUY (fresh signals):** Watchlist addition decision needed.
