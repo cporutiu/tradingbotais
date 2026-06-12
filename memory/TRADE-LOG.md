@@ -2329,3 +2329,76 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 2. **IWM ($290.23, -0.19% from entry, buffer 9.18%):** Recovered today (+2.90%) but rate-cut thesis impaired (CPI 4.2% + PPI 6.4% both hot). Exit proactively before stop ($263.59), or hold? (Carried from Jun 10.)
 3. **CVX (-2.11% today, +1.88% from entry):** HWM $192.685 not extended. Is WTI thesis gate ($88) still intact after today's drop?
 4. **Fri Jun 12 entry slot:** If deploying, use 1 trade (FCX or other) on Fri — or carry all 3 unused slots to post-FOMC week?
+
+---
+
+## Market-Open 2026-06-12 (Friday — Week 7 Day 5, Last Pre-FOMC Window)
+
+**No trades executed — SOXX deferred to post-FOMC Jun 18+.**
+
+**Reason:** SOXX RSI overbought at open (Tickeron Jun 12: RSI 73.48–78.23, one reading 76.565; at least one source explicitly calls overbought). Pre-market entry condition = RSI ≤ 75. RSI appears to breach threshold → defer per pre-market plan. Additional headwinds: FOMC Jun 17 (5 days, Warsh hawkish), VIX 19.44, Benzinga SPY/QQQ SELL high, Seeking Alpha bearish on SOXX (expected -11.7% through year-end). FCX R:R fails (0.55:1 at $66). AMD target below current price. No valid entry today.
+
+**Account (live, ~9:58 AM ET):**
+- **Equity:** $105,147.62 | **Cash:** $49,403.21 (47.0%) | **Deployed:** $55,744.41 (53.0%) | **DT count:** 0
+- **Phase P&L:** +$5,147.62 (+5.15%) | **Week count:** 0/3
+
+**Positions (live @ market open):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $914.795 | +$442.12 (+2.48%) | +1.91% | 10% trail HWM $946.83 / stop $852.147 (buffer 6.84%) |
+| CVX | 103 | $182.364 | $187.57 | +$536.26 (+2.86%) | +0.94% | 10% trail HWM $192.685 / stop $173.417 (buffer 7.54%) |
+| IWM | 62 | $290.770 | $292.43 | +$102.93 (+0.57%) | +0.69% | 10% trail HWM $292.875 / stop $263.588 (buffer 9.87%) |
+
+**Open Orders (all confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 ✓
+
+**Hard-check results (all pass):**
+- Losers cut: None. CAT +2.48%, CVX +2.86%, IWM +0.57% — all above -7% threshold ✓
+- Stop tightening: None. CAT needs $1,026.59, CVX needs $209.72, IWM needs $334.39 — none reached ✓
+- Positions: 3 ✓ | Week count: 0/3 ✓ | DT count: 0 ✓
+
+**Notes:**
+- IWM HWM $292.875 vs current $292.43 — within $0.45 of setting new HWM; any intraday push above $292.876 auto-trails stop upward
+- CVX WTI watch: pre-market WTI $86.71 (below $88 gate); CVX up +0.94% today — monitor WTI close
+- Deployment 53.0% — below 75% floor but no valid entry today (RSI blocker). Carries to post-FOMC.
+- FOMC Jun 17 (Warsh) = named blocker; full blackout Mon Jun 16 through Wed Jun 18 decision.
+- **Next entry window: Thu Jun 19 post-FOMC.** Fresh 3-slot Week 8 window.
+- Week 7 ends 0/3 (no buys executed this week; XLK exit Jun 9 was stop-triggered, not a buy).
+
+**No trades executed. No ClickUp notification. No commit required.**
+
+---
+
+## Midday 2026-06-12 (Friday — Week 7 Day 5, Last Pre-FOMC Window)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $911.165 | +$369.52 (+2.07%) | +1.51% | 10% trail HWM $946.83 / stop $852.147 (buffer 6.89%) locked |
+| CVX | 103 | $182.364 | $187.425 | +$521.33 (+2.78%) | +0.86% | 10% trail HWM $192.685 / stop $173.417 (buffer 7.49%) locked |
+| IWM | 62 | $290.770 | $294.01 | +$200.89 (+1.11%) | +1.24% | 10% trail HWM **$295.72** / stop **$266.148** (AUTO-TRAILED ↑ from $292.875/$263.588) |
+
+**Losers cut:** None. CAT +2.07%, CVX +2.78%, IWM +1.11% — all above -7% threshold. No action.
+
+**Stop tightening:** None. CAT needs $1,026.59 (+15%), CVX needs $209.72 (+15%), IWM needs $334.39 (+15%). Not reached. No action.
+
+**Thesis check:**
+- **CAT ($911.165, +2.07%):** +1.51% today — investor update day. ISM expansion + $63B backlog + AI power demand. Stop buffer 6.89%. **HOLD.**
+- **CVX ($187.425, +2.78%):** WTI intraday $83-87 (below $88 gate; US-Iran peace talk optimism reducing geopolitical premium). CVX up +0.86% today — market giving credit to Hess integration + LNG upside. Structural break level = WTI < $80 (still 4-9% above). Stop buffer 7.49% doing its job. **HOLD — monitor WTI close.**
+- **IWM ($294.01, +1.11%):** Up +1.24% today. **New HWM $295.72 auto-set** — stop ratcheted from $263.588 → $266.148 (+$2.56 mechanical improvement). Rate-cut thesis impaired (CPI 4.2% + PPI 6.4%) but FOMC Jun 17 creates speculation tailwind today. Stop buffer 9.5%. **HOLD.**
+
+**IWM stop auto-trail note:** IWM set new intraday HWM $295.72 (vs pre-market $292.875); Alpaca auto-trailed stop to $266.148. No manual action required.
+
+**Intraday research (STEP 6):** WTI $83-87 today on US-Iran diplomacy headlines — cited as driver of oil price pressure. CVX fundamentals intact (Q1 EPS, Hess integration, LNG). Not a structural break (action level = WTI < $80). No other positions moving sharply without cause.
+
+**Portfolio:** Equity ~$105,160 | Cash $49,403 (47.0%) | Deployed ~$55,757 (53.0%, 3 positions) | Phase P&L: ~+$5,160 (+5.16%) | Week count: 0/3
+**Week 7 closes 0/3. Next entry window: Thu Jun 19 post-FOMC. FOMC blackout Mon Jun 16 through Wed Jun 18.**
+
+**Open Orders (confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $295.72, stop $266.148 ✓ (auto-trailed)
+
+**No manual action taken. No ClickUp notification.**
