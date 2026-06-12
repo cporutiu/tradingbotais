@@ -3512,3 +3512,94 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 2. **Post-CAT-stop deployment (~35.9%):** If CAT stops today, deployed falls to ~36% (below 40% TRADE floor). Enter 1 new position Thu Jun 12 or Fri Jun 13? Best candidates: FCX (~$62-64, Materials, Congress BUY high), SOXX (defer to post-FOMC). Confirm entry or wait for FOMC?
 3. **SOXX entry window:** Benzinga SELL + overbought RSI + FOMC in 5 days. Defer SOXX to post-FOMC Jun 18+ when macro clarity restored? Or enter Thu/Fri at reduced size?
 4. **AMD Congress fresh BUY (Gottheimer + Cisneros, 3 priority entries):** Benzinga SELL high conflicts. High conviction congressional signal. Worth adding to watchlist for post-FOMC entry? Current AMD price and R:R unknown.
+
+
+---
+
+## Pre-Market 2026-06-12 (Friday -- Week 7 Day 5, Last Entry Window Before FOMC Blackout)
+
+### Account Snapshot
+- **Equity:** $104,545.42 | **Cash:** $49,403.21 (47.3%) | **Deployed:** $55,142.21 (52.7%)
+- **DT count:** 0 | **Phase P&L:** +$4,545.42 (+4.55%) | **Week count:** 0/3
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $902.00 | +$186.22 (+1.04%) | +0.49% | HWM $946.83 / stop $852.147 (buffer 5.52%) |
+| CVX | 103 | $182.364 | $184.87 | +$258.16 (+1.37%) | -0.51% | HWM $192.685 / stop $173.417 (buffer 6.20%) |
+| IWM | 62 | $290.770 | $291.29 | +$32.25 (+0.18%) | +0.30% | HWM $292.875 / stop $263.588 (buffer 9.51%) |
+
+### Open Orders (confirmed active)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (buffer 5.52%) v
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 (buffer 6.20%) v
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $292.875, stop $263.588 (buffer 9.51%) v
+
+### Market Context
+- **WTI:** ~$86.71 (CME Jul 2026, -1.14%) -- **BELOW $88 CVX thesis gate**
+- **S&P 500 futures:** ~$7,397 (+0.02%, flat)
+- **VIX:** 19.44 (Jun 11 close) -- medium risk (18-25 band)
+- **Today data:** ECEC @ 10:00 AM ET (minor); Michigan Consumer Sentiment preliminary @ 10:00 AM (secondary); NY Fed Nowcast @ 12:45 PM
+- **No major catalysts today:** CPI (Wed), PPI (Thu) already released; FOMC Jun 17 (Warsh); blackout starts Mon Jun 16
+- **Sector momentum YTD:** Energy > Consumer Staples > Industrials > Materials leading. Tech/Comm Services lagging.
+- **RS Ranking (20-day vs SPY):** SOXX > QQQ > XLK > XLY > XLC > IWM > XLF > XLI > XLB > XLE > HYG > EEM > XLV > XLRE > XLP > SLV > GLD > XLU > SPY
+- **Economic cycle:** mid-cycle -- continued expansion, payrolls robust, unemployment 4.3-4.6%, inflation gradually cooling.
+
+### Benzinga Signals
+- **SELLS (actionable):** SPY (high, score -7, 16x mentions), QQQ (high, score -4, 10x mentions), FCX (medium, score -2), AMD (medium, score -2)
+- **BUYs:** None
+- **Broad market caution:** SPY SELL high + QQQ SELL high = near-term selling pressure on indices expected
+
+### Congress Signals
+- **Congress: API error (401 Unauthorized)** -- all HOLD. Carry-forward from Jun 11: AMD BUY high (Gottheimer + Cisneros), FCX BUY high (Gottheimer). Informational only.
+
+### Perplexity Validation
+
+**CVX ($184.87, +1.37%):**
+- WTI $86.71 BELOW $88 thesis gate (-1.49% below). Planning deck $70 Brent -- thesis NOT broken fundamentally but threshold triggered.
+- Fundamentals intact: Q1 adj EPS ~$1.41/share, production +500 kbbl/d post-Hess, 2026 guidance unchanged, LNG at full capacity.
+- Consensus target $205-242 (30%+ upside). **HOLD -- monitor WTI daily.**
+
+**CAT ($902.00, +1.04%):**
+- Consensus Moderate Buy, avg target ~$933-950 (3-5% upside). Q1 FY26: EPS $5.54 vs $4.62 est (19% beat), revenue $17.41B. Raised FY2026 to low double-digit growth. Record $63B backlog + AI power demand. **Thesis intact. HOLD.**
+
+**IWM ($291.29, +0.18%):**
+- Essentially breakeven. Rate-cut thesis impaired (CPI 4.2% + PPI 6.4%). FOMC Jun 17 (Warsh hawkish) = IWM risk.
+- Bull case: 40% floating-rate debt, prior 175bp cuts propagating. But current hot inflation delays rate relief timeline.
+- Stop buffer 9.51% ($263.59). **Thesis impaired; FOMC risk next week.**
+
+**FCX ($66.34, +6.86% Jun 11):**
+- Up 25% YTD. Copper $5.78/lb Q1 (+30% YoY). Median target $70 (9.5% up). R:R: entry $66.34, stop $59.70 (risk $6.64), target $70 (reward $3.66) = 0.55:1. **FAILS 2:1 R:R minimum. SKIP.**
+
+**AMD (~$488):**
+- Buy consensus (34 analysts) but consensus target ~$421 = BELOW current price. Benzinga SELL medium. **Negative R:R. SKIP.**
+
+**SOXX:**
+- RS ranking #1. AI/semiconductor momentum. Benzinga HOLD low today (improved from SELL high Jun 11). Last window before FOMC blackout.
+- Deployment rule: 52.7% < 60% -- patience NOT valid per rules.
+- **Conditional entry today if R:R >= 2:1 at open price and RSI not overbought (>75).**
+
+### Trade Ideas
+1. **SOXX -- CONDITIONAL ENTRY (last slot Fri Jun 12):** RS #1, momentum, no SELL signal. Deploy 17-20% (~$17,800-20,900). 10% trailing stop placed at fill. If open RSI > 75 or gaps >2% up -- defer to post-FOMC Jun 18+.
+2. **IWM -- PROACTIVE EXIT CONSIDERATION:** Breakeven lock ($0 P&L) vs hold to stop (-9.5%). User decision needed.
+3. **CVX -- MONITOR WTI:** $86.71 vs $88 gate. Fundamentals intact. Hold to stop unless WTI structural break below $80.
+4. **CAT -- HOLD:** Thesis intact, stop 5.52% buffer. No action.
+5. **FCX, AMD -- SKIP:** R:R fails at current prices.
+
+### Risk Factors
+1. **Pre-FOMC uncertainty:** FOMC Jun 17 (Warsh hawkish expected). Any entry today carries FOMC overhang.
+2. **Benzinga broad SELL signal:** SPY SELL high + QQQ SELL high = index selling pressure headwind.
+3. **WTI below $88 CVX gate:** $86.71. Watch for continuation lower.
+4. **IWM FOMC risk:** Rate-cut timeline delayed further if Warsh signals no cuts.
+5. **VIX 19.44 (medium):** Elevated but manageable with 10% trailing stop.
+
+### Decision
+**CONDITIONAL TRADE -- SOXX 1 position today.**
+- Deploy rules require action (52.7% deployed < 60%, no named blocker today).
+- SOXX only -- FCX and AMD fail R:R. 
+- Entry condition: RSI <= 75 AND R:R >= 2:1 at open. Otherwise defer to post-FOMC Jun 18+.
+- Week 7 closes 0/3 if deferred; post-FOMC Jun 18+ opens fresh 3-slot window.
+
+### Outstanding User Decisions (carry-forward Jun 10-12)
+1. **IWM exit:** $291.29 essentially breakeven (+$32). Exit proactively or hold to stop $263.59 (-9.5%)?
+2. **CVX WTI gate:** $86.71 < $88 threshold. Hold to stop $173.42 or proactive exit while +1.37%?
+3. **SOXX entry today:** Confirm or defer to post-FOMC Jun 18+?
