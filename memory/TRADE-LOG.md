@@ -2402,3 +2402,39 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 - Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $295.72, stop $266.148 ✓ (auto-trailed)
 
 **No manual action taken. No ClickUp notification.**
+
+---
+
+## Jun 12 — EOD Snapshot (Day 37, Friday — Week 7 Day 5, Pre-FOMC Close)
+**Portfolio:** $105,061.17 | **Cash:** $49,403.21 (47.0%) | **Day P&L:** +$560.48 (+0.54%) | **Phase P&L:** +$5,061.17 (+5.06%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $910.57 | +1.44% | +$357.62 (+2.00%) | 10% trail HWM $946.83 / stop $852.147 (buffer 6.42%) |
+| CVX | 103 | $182.364 | $187.22 | +0.76% | +$500.17 (+2.66%) | 10% trail HWM $192.685 / stop $173.417 (buffer 7.37%) |
+| IWM | 62 | $290.770 | $292.95 | +0.94% | +$135.16 (+0.75%) | 10% trail HWM $295.72 / stop $266.148 (buffer 9.15%) |
+
+**Open Orders (EOD Jun 12):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (buffer 6.42%) ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 (buffer 7.37%) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $295.72, stop $266.148 (buffer 9.15%) ✓
+
+**Notes:** Day 37, Friday — Week 7 closes 0/3 (no new positions opened all week). Modest green day across the board: CAT +1.44%, CVX +0.76%, IWM +0.94%. No rule triggers — all positions well above -7% cut levels and far from +15% tighten thresholds ($1,026.59 / $209.72 / $334.39). Deployment 53.0% — still well below 75% floor ($49K idle cash). FOMC blackout begins Mon Jun 16; effective entry window resumes Thu Jun 19 post-FOMC. IWM stop auto-trailed midday to HWM $295.72 / stop $266.148. WTI closed ~$83-87 (below $88 CVX thesis gate for second consecutive day). IWM rate-cut thesis remains structurally impaired (CPI 4.2%, PPI 6.4%). No trades executed today. Week 8 starts fresh with all 3 slots available; primary entry window Jun 19-20.
+
+**Action questions (EOD Jun 12):**
+
+**Q1: IWM — Exit before FOMC risk, or hold to the stop? (Outstanding since Jun 10 — decision still needed)**
+IWM is +0.75% above entry ($292.95 vs $290.77). The original rate-cut thesis is structurally impaired (CPI 4.2% + PPI 6.4% both hot). FOMC Jun 17 (Warsh) is a live hawkish risk. You are effectively holding $18K through a binary event in a position where the thesis no longer fully holds.
+- Exit now: Lock in +$135 gain; free up $18K for a higher-conviction post-FOMC trade; removes FOMC binary risk from the book — you might miss a sharp small-cap rally if Fed signals rate cuts in 2026
+- Hold to stop ($266.148, buffer 9.15%): Let the stop manage downside; FOMC could produce a dovish surprise or relief rally — the stop may get hit in a hawkish gap-down without giving you time to react
+
+**Q2: CVX — WTI below $88 thesis gate. Exit now or hold to stop?**
+CVX is +2.66% from entry ($187.22 vs $182.36). WTI has closed below the $88 thesis gate for 2+ days ($83-87 range; US-Iran diplomacy reducing geopolitical premium). The structural break level is WTI < $80 (still 4-9% above). CVX is profitable, but the original thesis condition is no longer fully met.
+- Exit now: Lock in +$500 gain before WTI potentially breaks lower; avoids FOMC week with a weakening commodity thesis — gives up upside if WTI recovers above $88 post-FOMC
+- Hold to stop ($173.417, buffer 7.37%): Hess integration + LNG upside intact as long as WTI stays above $80; CVX is still generating profit — FOMC could reverse WTI direction; structural case hasn't broken
+
+**Q3: Deployment post-FOMC — Which 2 positions to add on Thu Jun 19?**
+Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positions). FOMC Jun 17 decision sets the landscape. Pre-screened candidates from research log: SOXX (AI/semis, was RSI overbought today — needs cooldown), FCX (Materials/copper, Congress BUY, R:R was failing at $66), AMD (Congress BUY, AI hardware). Which do you want targeted for Jun 19 entry research?
+- SOXX + FCX: Semiconductor momentum + commodities diversification; two distinct sectors — SOXX needs RSI reset first; FCX needs pullback entry below $64
+- SOXX + AMD: AI/chip double-down on sector momentum — concentration risk in one sector; strong conviction play if AI narrative holds post-FOMC
+- Defer decision until post-FOMC Jun 18 EOD: Fresh data (Fed language, rate trajectory) informs which sector to target — delays research window, reducing prep time for Thu Jun 19 open
