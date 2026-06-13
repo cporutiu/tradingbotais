@@ -506,3 +506,89 @@ Template for each entry:
 _Rationale: +1.20% relative outperformance vs S&P in a brutal selloff week is genuine alpha (defensive posture worked). Deducted for: 7th consecutive week below 75% deployment floor, only 1/3 slots used, SOXX blocked by structural inaction, XLK entering weekend at critical stop risk, IWM thesis weakening after just 4 days. The bot is not losing — but it continues to fail at deploying capital aggressively enough to capture upside when markets are rising._
 
 ---
+
+## Week ending 2026-06-12
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $104,179.62 (Jun 5 EOD / Week 6 end) |
+| Ending portfolio | $105,061.17 |
+| Week return | +$881.55 (+0.85%) |
+| S&P 500 week | ~+0.65% (late-week Iran peace-deal rally; Schwab: "Stocks on Track for Positive Week") |
+| Bot vs S&P | +0.20% |
+| Phase P&L | +$5,061.17 (+5.06% from $100,000 start) |
+| Trades | 1 (W:1 / L:0 / open:3) — 1 closed (XLK trailing stop Jun 9); 0 new buys |
+| Win rate | 100% (1/1 closed trades) |
+| Best trade | CVX +2.66% unrealized (+$500) |
+| Worst trade | IWM +0.75% unrealized (+$135) |
+| Profit factor | ∞ (1 winner, 0 losers — insufficient for meaningful ratio) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| XLK | $175.494 (May 12) | ~$178.82 (Jun 9) | +$332.58 (+1.84%) | 10% trailing stop 4299aece triggered; pre-CPI risk-off tech rotation; 28-day hold |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CAT | $892.689 | $910.57 | +$357.62 (+2.00%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | $182.364 | $187.22 | +$500.21 (+2.66%) | 10% trail HWM $192.685 / stop $173.417 |
+| IWM | $290.770 | $292.95 | +$135.17 (+0.75%) | 10% trail HWM $295.72 / stop $266.148 |
+
+### Sector Watchlist — Week 8 (Jun 16–20)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | SOXX | Post-FOMC Jun 17 clarity; RSI must reset ≤75 by Jun 19; enter Thu Jun 19 at open if signal clear; ~32sh @~$580 (~$18.6K) |
+| 2 | Energy | XLE | CVX (held) | Hold to stop $173.417; exit proactively if WTI closes below $80 (structural break); Hess/LNG thesis intact above $80 |
+| 3 | Industrials | XLI | CAT (held) | Hold to stop $852.147; Q2 earnings upcoming (late July); record $63B backlog; ISM expansion intact |
+| 4 | Small-cap | IWM | IWM (held) | FOMC Jun 17 — if dovish, rate-cut tailwind restored; if hawkish, exit proactively; hold above $270 soft-watch level |
+
+### What Worked
+- XLK trailing stop executed cleanly — 10% trail from HWM $198.73 triggered at $178.857 on pre-CPI tech rotation, protecting the +1.84% gain mechanically
+- CAT survived a near-miss: -6.52% CPI day Jun 10 (stop buffer dropped to 0.34%) then recovered +4.84% Thu to restore 5% buffer — stop system worked
+- IWM recovered from -3.18% entry deficit to +0.75% by week end; patient holding above $280 soft-watch paid off; new HWM $295.72 auto-trailed stop higher
+- CVX outperformed oil weakness: WTI dropped to $83-87 (US-Iran peace talks) but CVX held up on Hess integration and LNG book; +2.66% unrealized
+- SOXX correctly deferred: RSI 73-78 (overbought), FOMC in 5 days, Benzinga SELL high — waiting for better entry conditions preserved dry powder
+
+### What Didn't Work
+- Week ended 0/3 new buys — deployment stuck at 53%; will be 9th consecutive week below 75% floor by end of FOMC blackout week
+- FOMC blackout (Mon-Wed Jun 16-18) follows CPI blackout (Jun 10) — 2-week entry desert locked in capital that could have been deployed pre-CPI
+- CVX thesis ambiguity: WTI $83-87 is below BOTH the $88 entry gate AND the $85 manual exit trigger (Week 5 rule); continued holding justified by LNG/Hess but represents rule-bending without explicit user decision
+- CAT -6.52% on CPI day (Jun 10): idiosyncratic valuation reset at 36x PE; stop buffer reached 0.34% — concentrated industrial exposure carries event-day gap risk even when macro thesis is intact
+- 8 consecutive weeks under 75% deployment: SOXX RSI perpetually elevated (overbought on every entry attempt), FCX spread failure (3 consecutive weeks), CPI/NFP/FOMC blackout pairs — candidate pipeline structural gap remains unresolved
+
+### Key Lessons
+- CPI + FOMC pair creates a 2-week entry desert; pre-CPI deployment window is the critical one — must deploy aggressively Mon/Tue Jun 9 window or accept locked deployment through Jun 18
+- Idiosyncratic risk (CAT 36x valuation reset, -6.52% in one session) is portfolio's biggest untamed risk; trailing stops protect against a trend, not a one-day event-driven flush; sector diversification (CVX up same day) is the only effective hedge
+- Trailing stop system is working — XLK exited with +1.84% gain on mechanical trigger, no emotion; trust the stops
+- CVX position represents an evolving thesis: entered on WTI ≥$88 gate; Hess/LNG is now the load-bearing pillar; need explicit user confirmation of the new structural-break level ($80 vs $85) before next session
+- IWM recovery validates patience: -3.18% from entry → +0.75% in one week; stops worked, thesis was messy but intact; the system is designed to hold through noise
+
+### Adjustments for Next Week
+- **FOMC Jun 17 (Warsh):** Full entry blackout Mon Jun 16 through Wed Jun 18. All GTC stops remain active; no new entries; watch all positions for gap risk if FOMC surprises.
+- **CVX thesis decision (MANDATORY before Mon open):** Is the new structural-break level $80 (Hess/LNG standalone) or $85 (Week 5 original rule)? If WTI closes below $85 Mon, bot must act. User must confirm which gate applies.
+- **IWM post-FOMC pivot:** If Warsh hawkish (rates higher-longer) → IWM thesis (rate-cut beneficiary) fully broken → exit IWM proactively Thu Jun 19; free $18K for SOXX. If dovish/neutral → hold to stop $266.148.
+- **SOXX Thu Jun 19 (primary):** Post-FOMC entry window opens; RSI reset check pre-market; enter SOXX ~32sh @~$580 if RSI ≤75 and FOMC outcome is neutral or dovish; this is the must-execute entry.
+- **Second post-FOMC entry (Fri Jun 20 or carry to Week 9):** If IWM exits Thu, replace with 2nd non-tech position Fri. Candidates: XLB (Materials ETF, wide-spread FCX workaround), GLD (macro hedge if Warsh is hawkish). Deployment goal: ≥80% by end of Week 8.
+- **CAT:** Continue holding to stop $852.147; Q2 earnings not until late July; record backlog + AI power demand thesis intact; no action needed.
+
+### Overall Grade: C+
+
+_Rationale: +0.20% relative outperformance vs S&P in a mixed macro week is modest positive alpha. XLK stop worked mechanically (+1.84% realized). CAT survived a critical stop-buffer scare. However, 0/3 new positions deployed for the second consecutive week; deployment at 53% entering a mandatory FOMC blackout week; CVX thesis is drifting from its original entry conditions without explicit confirmation. The system's mechanics are sound — the deployment failure is structural and compounding._
+
+### Next-week Decisions
+
+**Q: CVX entered with WTI $88 gate — now WTI $83-87 (Iran peace talks). Which exit gate applies: $85 (Week 5 rule) or $80 (Jun 12 midday research)?**
+- Keep $80 structural-break gate: Hess/LNG thesis is fundamentally separate from WTI crude; CVX can outperform even in a lower-oil environment; $80 is the true no-thesis level — respects the evolved understanding of the position
+- Enforce $85 original rule: Week 5 established $85 as the manual exit trigger for CVX; WTI is already at $83-87 (borderline); consistency with rules prevents thesis-drift; exit protects +2.66% gain while above stop
+
+**Q: IWM — FOMC Jun 17 (Warsh, likely hawkish). Hold through FOMC outcome or exit before?**
+- Hold through FOMC: stop buffer 9.18% ($266.148 vs $292.95); if Warsh surprises dovish, IWM gaps up significantly; current +0.75% is a thin but real gain; let stop work
+- Exit before FOMC (Mon Jun 16): hot CPI 4.2% + PPI 6.4% = rate-cut thesis structurally impaired; Warsh hawkish base case; lock +0.75% small gain, free $18K for SOXX post-FOMC without IWM drag
+
+**Q: Deployment 53% with FOMC blackout Mon-Wed — enter SOXX alone Thu Jun 19, or SOXX + 1 other in same session?**
+- SOXX + 1 other Thu Jun 19: Restores deployment to ~90% in one session; post-FOMC is the clearest signal day; front-run before weekly close (Fri Jun 20 is first post-FOMC full session)
+- SOXX Thu only, stagger 2nd to Fri Jun 20: Reduces gap-up risk on most volatile post-FOMC day; allows one session to see how FOMC trades before committing second position; avoids chasing
+
+---
