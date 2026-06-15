@@ -3603,3 +3603,59 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 1. **IWM exit:** $291.29 essentially breakeven (+$32). Exit proactively or hold to stop $263.59 (-9.5%)?
 2. **CVX WTI gate:** $86.71 < $88 threshold. Hold to stop $173.42 or proactive exit while +1.37%?
 3. **SOXX entry today:** Confirm or defer to post-FOMC Jun 18+?
+
+---
+
+## Pre-Market 2026-06-15 (Monday — Week 8 Day 1, Last Pre-FOMC Window)
+
+> **API note:** Alpaca and Perplexity APIs returned 403 (cloud network policy blocks outbound curl). Account snapshot carried from EOD Jun 12. Market data sourced via WebSearch fallback.
+
+### Account Snapshot (carry-forward EOD Jun 12 — live data unavailable)
+- **Equity:** ~$105,061 | **Cash:** $49,403 (47.0%) | **Deployed:** ~53.0% | **DT count:** 0
+- **Phase P&L:** +$5,061 (+5.06%) | **Week 8 trade count:** 0/3
+
+### Positions (EOD Jun 12 carry-forward)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $910.57 | +$357.62 (+2.00%) | 10% trail HWM $946.83 / stop $852.147 |
+| CVX | 103 | $182.364 | $187.22 | +$500.17 (+2.66%) | 10% trail HWM $192.685 / stop $173.417 |
+| IWM | 62 | $290.770 | $292.95 | +$135.16 (+0.75%) | 10% trail HWM $295.72 / stop $266.148 |
+
+### Market Context
+- **WTI/Brent:** Brent hitting LOWEST since March, down ~4%+ — US-Iran peace deal announced over weekend triggers supply surge fears. WTI likely approaching $80 structural break level (was $86.71 Friday). CVX thesis under acute pressure.
+- **S&P 500 futures:** Sharply higher premarket. US-Iran deal driving risk-on rally; TSM +4%, TSEM +4.7% premarket. Broad indices advancing.
+- **VIX:** Was 19.44 (Jun 11 close); peace deal sentiment likely compresses toward 15-17 range today.
+- **FOMC:** Meeting June 16-17 (Warsh's first). 89% odds: hold at 3.50-3.75%. Warsh may drop dot plot / forward guidance — hawkish surprise risk. **Blackout starts TOMORROW Jun 16 — today is last entry window before Jun 19.**
+- **Today's economic data (ET):** Empire State Mfg, Industrial Production, Capacity Utilization, NAHB Housing Market Index @ 10:00 AM. Secondary only; no blocking catalysts.
+- **Earnings BMO Jun 15:** Minor names (AIOT, HTT); no held tickers reporting.
+- **Sector momentum YTD:** Industrials, Materials, Consumer Staples, Energy leading. Technology/Comm Services lagging but recovering. Energy leadership at risk on oil collapse.
+
+### Held Ticker Thesis Check
+- **CAT ($910.57):** BofA reiterated Buy, $989 PT (Jun 14). ISM expansion + $63B backlog + AI power demand thesis fully intact. Q1 EPS +19% beat, FY26 raised to low double-digit growth. Range Jun 14: $899-$919. Stop buffer ~6.5%. **HOLD — thesis intact.**
+- **CVX ($187.22, carry-forward) — CRITICAL:** US-Iran peace deal is structural negative for oil geopolitical premium. Brent lowest since March, down ~4%. If WTI breaks below $80 at open → **structural thesis break** (break level = WTI < $80). CVX thesis gate was $88 WTI (already breached for 3+ days). Structural break imminent. **MONITOR AT OPEN — EXIT if WTI/Brent confirms below $80 at open.** Lock in remaining +$500 gain before it erodes.
+- **IWM ($292.95) — EX-DIVIDEND TODAY ($0.58):** Rate-cut thesis structurally impaired (CPI 4.2% + PPI 6.4%). FOMC binary event starts tomorrow. 32% floating-rate debt in RUT creates rate sensitivity. Breakeven position (+$135 gain). **User decision still outstanding.** Leaning EXIT pre-FOMC to free $18K for post-FOMC higher-conviction setup.
+
+### Trade Ideas
+1. **CVX EXIT (URGENT — conditional on WTI open):** If WTI < $80 confirmed at open → exit CVX to lock remaining gain. US-Iran deal is structural (not a spike), removes geopolitical premium that supported the thesis. Target: market order at open. If WTI opens $80-84 range → hold to stop ($173.417) and monitor.
+2. **IWM EXIT (pre-FOMC):** Exit today locks +$135 gain + captures $0.58 dividend. Frees $18K for post-FOMC Thursday deployment into higher-conviction setup. FOMC hawkish surprise (Warsh drops dot plot) could gap IWM below stop. Risk of missing peace-deal small-cap rally if Fed dovish — but IWM thesis is already broken regardless.
+3. **SOXX CONDITIONAL ENTRY (last pre-FOMC window):** SOXX ~$596 (Jun 13). RSI out of overbought since Jun 5; momentum crossed above 0 Jun 11. AI/semi momentum RS #1. Last entry window before Jun 16 blackout. Deploy 17-20% (~$17-20K). **Entry condition:** SPY opens < +1.5% gap (gap-up >1.5% on Iran deal = chasing; defer to Jun 19). RSI at open ≤ 75. If conditions met → enter SOXX, place 10% trailing stop GTC immediately.
+4. **CAT:** No action. Thesis intact. HOLD.
+
+### Risk Factors
+1. **CVX oil structural break:** US-Iran deal removes geopolitical premium permanently. WTI approaching $80 break level — could fall further if supply actually increases.
+2. **Pre-FOMC gap-up trap:** Market rallying hard on Iran deal; buying into euphoria opening = poor R:R. SOXX entry only on modest open.
+3. **Warsh hawkish surprise:** First FOMC meeting may surprise with guidance language change — hawkish shock would hit IWM and growth names hard.
+4. **Deployment floor tension:** 53% deployed vs 75% floor. FOMC blackout starts tomorrow = last chance to deploy today. Strategy requires action today if no blocker (FOMC decision is Jun 17, not today).
+5. **Week 8 fresh:** All 3 trade slots open; urgency to deploy but not at any price.
+
+### Decision
+- **CVX:** CONDITIONAL EXIT — if WTI opens below $80, exit at market. If $80-84 range, hold to stop. Thesis gate long breached; US-Iran deal is structural.
+- **IWM:** LEAN EXIT today. Pre-FOMC risk outweighs +$135 locked gain potential. Captures dividend. Frees cash for post-FOMC setup.
+- **SOXX:** CONDITIONAL ENTRY — enter if SPY gap < +1.5% at open AND RSI ≤ 75. Defer to Jun 19 if market euphoria gap or RSI overbought.
+- **CAT:** HOLD.
+- **Default overall:** TRADE (deployment at 53% < 60%, today is last pre-FOMC window; FOMC decision blocker is tomorrow, not today).
+
+### Outstanding User Decisions (carry-forward + new Jun 15)
+1. **CVX:** WTI structural break on US-Iran deal. Exit at open if WTI < $80, or hold to stop $173.42? (NEW URGENCY — Brent lowest since March)
+2. **IWM:** Exit pre-FOMC today (lock +$135 + dividend) or hold to stop $266.148 through FOMC binary?
+3. **SOXX entry:** Enter today (last pre-FOMC window, conditional on modest open) or defer to Jun 19?
