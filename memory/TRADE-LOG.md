@@ -2438,3 +2438,58 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 - SOXX + FCX: Semiconductor momentum + commodities diversification; two distinct sectors — SOXX needs RSI reset first; FCX needs pullback entry below $64
 - SOXX + AMD: AI/chip double-down on sector momentum — concentration risk in one sector; strong conviction play if AI narrative holds post-FOMC
 - Defer decision until post-FOMC Jun 18 EOD: Fresh data (Fed language, rate trajectory) informs which sector to target — delays research window, reducing prep time for Thu Jun 19 open
+
+**Bot autonomous decision (2026-06-15): [Q1 — IWM exit vs hold (outstanding since Jun 10 EOD)] → HOLD to stop** — US-Iran MOU announcement caused WTI to crash to $80.14 (-5.59%) on Jun 15. This is a RECOVERY catalyst for IWM's rate-cut thesis: lower oil → lower CPI → rate cuts return sooner → small-cap financing improves. IWM closed at $297.51 (+2.32% from entry), well above $270 watch level. Stop $266.148 provides 10.6% buffer. Thesis RESTORED, not deteriorating. Stop order 4c0586cc remains active GTC.
+
+**Bot autonomous decision (2026-06-15): [Q2 — CVX WTI thesis gate breach (outstanding since Jun 10 EOD)] → EXIT at Monday open (Jun 16) — market sell 103sh CVX** — WTI fell to $80.14 on Jun 15, now AT the $80 structural break level defined in Week 8 watchlist. Catalyst is structural (US-Iran MOU signed Jun 14-15, Strait of Hormuz reopening, ~100M barrels stranded oil releasing over coming weeks) — not transient. CVX at ~$182 ≈ entry ($182.364); exiting at ~$0 gain is superior to risking stop at $173.417 (-$888 additional drawdown) as oil likely continues lower. FOMC blackout (Jun 16-18) applies to new entries only; exits permitted. Cancel GTC stop order 52322270 after fill.
+
+**Bot autonomous decision (2026-06-15): [Q3 — post-FOMC deployment candidates for Thu Jun 19 (outstanding from EOD Jun 12)] → SOXX (primary) + FCX (secondary, conditional)** — SOXX: AI/semiconductor demand unaffected by oil thesis; FOMC week RSI reset expected (14-day RSI was 80.569 on Jun 12 → target ≤70 by Jun 19); Iran deal may prevent hawkish Fed shift → bullish for high-PE growth. FCX: copper $6.44/lb all-time high, Congress BUY high carry-forward (Gottheimer), Barclays $77 PT, DB $72 PT; R:R at $67 entry = ($77-$67)/$6.70 = 1.49:1 — enters only if R:R ≥ 1.5:1 at live ask Thu open AND spread < $1.50. Urgency protocol ACTIVE (3+ consecutive weekly closes below 75% deployed); R:R floor 1.5:1. Sizing: 20% each (~$21K) to reach 75% deployment after CVX exit.
+
+---
+
+## Market-Open 2026-06-15 (Monday — FOMC Day 1 Blackout)
+
+**CVX EXIT EXECUTED — Autonomous bot decision (2026-06-15)**
+
+| Action | Detail |
+|--------|--------|
+| Cancelled CVX stop GTC | 52322270 — deleted before sell |
+| Sell order placed | 569b686c — 103sh CVX market day |
+| Fill | 103sh @ ~$178.47/sh ($18,382.41 proceeds) |
+| Entry | $182.364/sh ($18,783.45 cost basis) |
+| Realized P&L | -$401.04 (-2.13%) |
+| Reason | WTI fell to $80.14 on Jun 15 — at $80 structural break floor; US-Iran MOU catalyst is structural (Strait of Hormuz reopening); exits before FOMC binary risk on Jun 17 |
+
+**CVX EXIT CLOSED:**
+
+| Ticker | Shares | Entry | Exit | P&L | Notes |
+|--------|--------|-------|------|-----|-------|
+| CVX | 103 | $182.364 | ~$178.47 | -$401 (-2.13%) | WTI structural break ($80.14 ≤ $80 floor); US-Iran MOU; 17 days held (2-week slow-bleed rule also triggered); beats stop loss at $173.42 |
+
+**Position status (market-open 2026-06-15):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $944.18 | +$1,029.82 (+5.77%) | +3.69% | 10% trail HWM $946.83 / stop $852.147 (locked) |
+| IWM | 62 | $290.770 | $297.58 | +$422.23 (+2.34%) | +1.49% | 10% trail HWM $297.57 / stop $267.813 (auto-trailed) |
+
+**Account (post-CVX-exit):**
+- Equity: $105,101.46 | Cash: $67,785.62 (64.5%) | Deployed: $37,315.84 (35.5%) | 2 positions | DT count: 0
+
+**Phase P&L:** +$5,101.46 (+5.10%)
+
+**Hard-check:**
+- Losers cut: None. CAT +5.77%, IWM +2.34% — both above -7% threshold ✓
+- Stop tightening: None. CAT needs $1,026.59, IWM needs $334.39 — not reached ✓
+- Week count: 0/3 (exits don't use trade slots) ✓
+
+**Thesis checks:**
+- CAT ($944.18, +5.77%): Strong day +3.69%. ISM expansion + $63B backlog + AI power demand thesis intact. HWM $946.83 / stop $852.147 (buffer 9.79%). HOLD.
+- IWM ($297.58, +2.34%): Up +1.49% today. Thesis RESTORED — WTI collapse ($80) → lower CPI → rate cuts sooner → small-cap financing improves. IWM new HWM $297.57+ auto-set. Stop $267.813 (buffer 10.0%). HOLD.
+
+**Open Orders (post-exit):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.57, stop $267.813 ✓
+
+**No new entries — FOMC Jun 17 (Warsh) = Tier-1 blackout. No entries Mon Jun 15 through Wed Jun 18 decision.**
+**Next entry window: Thu Jun 19 post-FOMC — SOXX RSI check + FCX R:R check at open.**
+**Week 8 count: 0/3 (3 slots available post-FOMC).**
