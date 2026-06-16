@@ -2493,3 +2493,15 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 **No new entries — FOMC Jun 17 (Warsh) = Tier-1 blackout. No entries Mon Jun 15 through Wed Jun 18 decision.**
 **Next entry window: Thu Jun 19 post-FOMC — SOXX RSI check + FCX R:R check at open.**
 **Week 8 count: 0/3 (3 slots available post-FOMC).**
+
+**Midday 2026-06-15:**
+- **CAT midday:** $933.79 (+4.60% from entry $892.689; +2.55% today). Stop locked at HWM $946.83 / stop $852.147 (price $933.79 below HWM — no trail update; buffer 8.74%). Broad risk-on rally from US-Iran MOU (lower oil → lower inflation expectations → market confidence). ISM expansion + $63B backlog + AI power infrastructure thesis intact. HOLD.
+- **IWM midday:** $294.14 (+1.16% from entry $290.770; +0.41% today). Stop auto-trailed to HWM $297.90 / stop $268.11 (intraday HWM update from morning $297.57/$267.813). Rate-cut thesis RESTORED — WTI collapse ($80.14) on Iran MOU → lower CPI → rate cuts sooner → small-cap financing improves. Price $294.14 below HWM $297.90 — stop locked. Buffer 8.85%. HOLD.
+- **Losers cut:** None. CAT +4.60%, IWM +1.16% — both well above -7% threshold ✓
+- **Stop tightening:** None. CAT needs $1,026.59 (+15%), IWM needs $334.39 (+15%) — not reached ✓
+- **Thesis break:** None. Both intact. Iran MOU is POSITIVE for IWM rate-cut thesis and neutral-to-positive for CAT (risk-on market).
+- **Portfolio:** Equity ~$105,100 | Cash ~$67,785 (64.5%) | Deployed ~$36,912 (35.2%, 2 positions) | Week 8 count: 0/3 | FOMC blackout Jun 15-18 — no new entries
+- **Open Orders (midday 2026-06-15):**
+  - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked) ✓
+  - Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (auto-trailed) ✓
+- **No action taken. No ClickUp notification sent.**
