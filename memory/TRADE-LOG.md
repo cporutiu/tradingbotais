@@ -2589,3 +2589,29 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 - Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked) ✓
 
 **No action taken. No ClickUp notification.**
+
+---
+
+## Jun 16 — EOD Snapshot (Day 39, Tuesday — Week 8 Day 2, FOMC Tier-1 Blackout)
+**Portfolio:** $104,787.01 | **Cash:** $67,785.59 (64.7%) | **Day P&L:** +$88.91 (+0.085%) | **Phase P&L:** +$4,787.01 (+4.79%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $945.46 | +1.24% | +$1,055.42 (+5.91%) | 10% trail HWM $961.0554 / stop $864.950 (auto-trailed ↑; buffer 8.47%) |
+| IWM | 62 | $290.770 | $291.86 | -0.94% | +$67.59 (+0.37%) | 10% trail HWM $297.90 / stop $268.11 (locked; buffer 8.14%) |
+
+**Open Orders (EOD Jun 16):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $961.0554, stop $864.950 (auto-trailed ↑) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked) ✓
+
+**Notes:** Day 39, Tuesday — Week 8 Day 2, FOMC Tier-1 blackout continuing. No trades. Markets sold off into close on FOMC-eve caution: CAT pulled back from midday HWM $961.06 to $945.46 (-$13.46/share), IWM from $293.69 to $291.86 (-$1.83/share). Portfolio fell from midday ~$105,382 to $104,787 as afternoon risk-off took hold — FOMC decision Wed Jun 18 (Warsh). Despite pullback, Day P&L still mildly positive (+$88.91) vs Jun 15 EOD baseline. CAT thesis (ISM expansion + $63B backlog + AI power demand, JPMorgan PT $1,125) fully intact; stop auto-trailed to HWM $961.0554/stop $864.950 — buffer 8.47%. IWM rate-cut thesis hinges on tomorrow's FOMC language: if Warsh signals hawkish path (no 2026 cuts), IWM thesis breaks. IWM +0.37% from entry, stop at $268.11 gives -8.14% buffer to current. Deployment at 35.3% — critically below 75% floor for 3+ weeks; first entry window Thu Jun 19 post-FOMC (SOXX primary + FCX conditional). Week count 0/3 — 3 slots available. Jun 15 EOD action questions (SOXX+FCX deployment) remain unanswered by user.
+
+**Action questions (EOD Jun 16):**
+
+**Q: IWM — if FOMC Jun 18 signals hawkish hold (no 2026 cuts), exit IWM pre-open Thu Jun 19, or let the $268.11 stop handle it?**
+- Exit pre-open: proactively protects the slim +$67 gain; stops a slow bleed if the rate-cut thesis is confirmed broken; frees $18K cash for SOXX/FCX entries — you give up any FOMC upside surprise that could carry IWM higher
+- Hold to stop: strategy rule says let the stop work; FOMC could be neutral or mildly dovish; stop at $268.11 caps downside loss to ~$1,350 from current — a broken rate-cut thesis rarely recovers cleanly, and $1,350 is real loss to give back
+
+**Q: Post-FOMC deployment — enter SOXX + FCX Thu Jun 19 to restore 75%+ deployment, or wait for Mon Jun 23 (full post-FOMC reaction day)?**
+- Enter Thu Jun 19: restores deployment from 35% → ~75% in one session; captures any post-FOMC relief rally in semis/copper; SOXX + FCX cover distinct sectors (AI power demand + materials); 3 trade slots available — risks walking into a fading bounce if markets gap up then reverse
+- Wait Mon Jun 23: lets market fully digest FOMC language over Thursday and Friday; avoids a potential gap-up entry trap; cleaner setup confirmation — extends below-75% deployment to 3.5 weeks (2-week slow-bleed rule already triggered; urgency protocol active)
