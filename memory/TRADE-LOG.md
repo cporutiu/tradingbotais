@@ -2532,3 +2532,60 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 **Q: Deploy SOXX (~$21K, ~35sh) + FCX (~$21K, ~320sh, conditional) on Thu Jun 19 post-FOMC to restore 75%+ deployment — or different candidates?**
 - Enter SOXX + FCX: restores deployment from 35% → ~75% in one session; AI semiconductors + Materials (copper all-time high); two distinct sectors — SOXX needs RSI ≤70 reset by Thu open; FCX enters only if R:R ≥1.5:1 at live ask and spread < $1.50
 - Different names / defer: post-FOMC Jun 18 EOD will clarify rate trajectory and sector rotation — allows fresher research but extends below-75% deployment another week
+
+---
+
+## Market-Open 2026-06-16 (Tuesday — Week 8 Day 2, FOMC Tier-1 Blackout)
+
+**No trades executed — FOMC Tier-1 blackout in effect (decision Wed Jun 18).**
+
+**Account:** Equity $105,098.58 | Cash $67,785.59 (64.5%) | Deployed $37,312.99 (35.5%) | DT count: 0 | Phase P&L: +$5,098.58 (+5.10%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $947.03 | +$1,086.82 (+6.09%) | +1.40% | 10% trail HWM $948.98 / stop $854.082 (auto-trailed ↑ from $946.83/$852.147) |
+| IWM | 62 | $290.770 | $296.08 | +$329.23 (+1.83%) | +0.49% | 10% trail HWM $297.90 / stop $268.11 (locked) |
+
+**Open Orders (market-open 2026-06-16):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $948.98, stop $854.082 (auto-trailed ↑) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked) ✓
+
+**Hard-check:**
+- FOMC Tier-1 blackout: NO new entries ✓
+- Losers cut: None. CAT +6.09%, IWM +1.83% — both above -7% threshold ✓
+- Stop tightening: None. CAT needs $1,026.59 (+15%), IWM needs $334.39 (+15%) — not reached ✓
+- Week count: 0/3 | Deployment urgency protocol ACTIVE (35.5% deployed, 3+ weeks below 75% floor) ✓
+
+**Thesis checks:**
+- CAT ($947.03): Intraday new HWM $948.98 set; stop auto-trailed from $852.147 → $854.082. ISM expansion + AI power demand thesis intact. Buffer 9.8%. HOLD.
+- IWM ($296.08): Stop locked (price below HWM $297.90). Rate-cut thesis RESTORED (WTI $80.49 → lower CPI path). FOMC hold expected — neutral to positive for IWM. Buffer 9.4%. HOLD.
+
+**No ClickUp notification sent (no trades placed).**
+**Next entry window: Thu Jun 19 post-FOMC — SOXX (primary, RSI ≤70 check at open) + FCX (conditional, R:R ≥1.5:1 at live ask).**
+
+## Midday 2026-06-16 (Tuesday — Week 8 Day 2, FOMC Tier-1 Blackout)
+
+**Positions (midday):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $958.92 | +$1,324.62 (+7.42%) | +2.68% | 10% trail HWM $961.0554 / stop $864.950 (AUTO-TRAILED ↑ from $948.98/$854.082) |
+| IWM | 62 | $290.770 | $293.69 | +$181.05 (+1.00%) | -0.32% | 10% trail HWM $297.90 / stop $268.11 (locked) |
+
+**Losers cut:** None. CAT +7.42%, IWM +1.00% — both above -7% threshold. No action.
+
+**Stop tightening:** None. CAT +15% threshold = $1,026.59 (need +$67.67 / +7.1% more). IWM +15% = $334.39. Neither reached. No action.
+
+**Thesis check:**
+- **CAT ($958.92, +7.42%):** +2.68% today. Stop auto-trailed on new intraday HWM $961.0554 (stop $864.950, buffer 9.8%). ISM expansion + $63B backlog + AI power demand thesis intact. JPMorgan PT $1,125 + Evercore PT $1,103 support. No earnings until late July. **HOLD.**
+- **IWM ($293.69, +1.00%):** -0.32% today — normal drift on FOMC blackout day. Stop locked at HWM $297.90 / stop $268.11 (buffer 8.85%). Rate-cut thesis RESTORED (WTI $80 oil crash on Iran MOU → lower CPI path → rate cuts sooner → small-cap financing improves). BoJ hike risk (yen carry trade) is transient noise. **HOLD.**
+
+**Intraday research:** No positions moving sharply without cause. CAT surge consistent with analyst upgrades + risk-on FOMC sentiment (documented in pre-market research). IWM drift consistent with FOMC uncertainty. No Perplexity needed.
+
+**Portfolio (midday):** Equity ~$105,382 | Cash $67,785.59 (64.3%) | Deployed ~$37,597 (35.7%, 2 positions) | Phase P&L: ~+$5,382 (+5.38%) | Week count: 0/3
+**FOMC Tier-1 blackout — no new entries today. Next entry window: Thu Jun 19 post-FOMC.**
+
+**Open Orders (confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $961.0554, stop $864.950 (auto-trailed ↑) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked) ✓
+
+**No action taken. No ClickUp notification.**
