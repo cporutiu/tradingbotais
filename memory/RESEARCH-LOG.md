@@ -3603,3 +3603,216 @@ SOXX(1) > QQQ(2) > XLK(3) > XLY(4) > XLC(5) > XLI(6) > XLB(7) > XLE(8) > EEM(9) 
 1. **IWM exit:** $291.29 essentially breakeven (+$32). Exit proactively or hold to stop $263.59 (-9.5%)?
 2. **CVX WTI gate:** $86.71 < $88 threshold. Hold to stop $173.42 or proactive exit while +1.37%?
 3. **SOXX entry today:** Confirm or defer to post-FOMC Jun 18+?
+
+---
+
+## 2026-06-15 — Pre-Market Research (Sunday, Week 8 Prep — FOMC Week)
+
+### Account Snapshot
+- **Equity:** $105,174.83 | **Cash:** $49,403.21 (47.0%) | **Deployed:** $55,771.62 (53.1%, 3 positions) | **DT count:** 0
+- **Buying power:** $354k | **Phase P&L:** +$5,174.83 (+5.17%)
+- **Week 8 trade count:** 0/3 (fresh; FOMC blackout Mon-Wed Jun 16-18; first entry window Thu Jun 19)
+
+### Positions (Alpaca live, Jun 15 weekend prices)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| CAT | 20 | $892.689 | $929.00 | +$726.22 (+4.07%) | 10% trail HWM $946.83 / stop $852.147 (buffer 8.3%) |
+| CVX | 103 | $182.364 | $182.00 | -$37.45 (-0.20%) | 10% trail HWM $192.685 / stop $173.417 (buffer 4.7%) |
+| IWM | 62 | $290.770 | $297.51 | +$417.89 (+2.32%) | 10% trail HWM $295.72 / stop $266.148 (buffer 10.6%) |
+
+### Open Orders (confirmed active)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 ✓
+- Sell 103 CVX trailing_stop 10% GTC (52322270): HWM $192.685, stop $173.417 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $295.72, stop $266.148 ✓
+
+### Step 1B — Autonomous Decisions (acting on unanswered EOD Jun 12 questions)
+
+**Q1: IWM — Exit vs Hold (outstanding since Jun 10)**
+- Question: IWM -3.18% from entry thesis impaired (CPI 4.2% + PPI 6.4%); FOMC binary risk.
+- Pre-market data: WTI crashed to $80.14 (Iran deal MOU signed Jun 14-15 = lower energy inflation → CPI will moderate → rate cuts back on table); IWM currently +2.32% from entry ($297.51); stop $266.148 (10.6% buffer).
+- **Bot autonomous decision (2026-06-15): IWM → HOLD to stop** — Iran deal is a RECOVERY CATALYST for the rate-cut thesis. Lower oil = lower inflation = faster path to rate cuts. IWM is now +2.32% above entry, well above $270 soft-watch level. Stop $266.148 provides 10.6% buffer. Thesis RESTORED, not deteriorating.
+
+**Q2: CVX — WTI below $88 thesis gate (outstanding since Jun 10)**
+- Question: WTI below $88 entry gate; Hess/LNG intact above $80 structural break level.
+- Pre-market data: WTI fell to $80.14 on Jun 15 (down 5.59%) on US-Iran MOU announcement (Hormuz reopening, 100M barrels stranded oil releasing). Weekly review defined $80 as structural break level.
+- **Bot autonomous decision (2026-06-15): CVX → EXIT at Monday open (Jun 16)** — WTI at $80.14 = at structural break level. Iran deal is structural, not transient. Oil will likely fall further as stranded barrels flow. CVX at $182 ≈ entry ($182.364); better to exit at breakeven than risk stop at $173.417 (-$888 additional). Note: FOMC Day 1 = blackout for new ENTRIES only; exits are permitted.
+
+**Q3: Post-FOMC deployment candidates for Thu Jun 19 (outstanding from EOD Jun 12)**
+- Pre-market data: SOXX 14-day RSI 80.569 (overbought as of Jun 12); FOMC week may cool RSI toward 65-70; copper $6.44/lb (all-time high); FCX ~$67; urgency protocol ACTIVE (3+ consecutive weekly closes below 75% deployed).
+- **Bot autonomous decision (2026-06-15): SOXX (primary) + FCX (secondary, contingent) for Thu Jun 19** — SOXX enters if RSI ≤ 70 by Jun 19 (FOMC week consolidation expected to reset RSI); FCX enters at urgency protocol R:R floor 1.5:1 (standard 2:1 drops to 1.5:1 per urgency protocol) — at $67 entry, R:R using Barclays $77 PT = ($77-$67)/$6.70 = 1.49:1 ≈ 1.5:1 floor; check R:R at live open price Thursday. Sector diversification: Tech/Semis (SOXX) + Materials (FCX). Note urgency protocol active watch items for pre-market Jun 19.
+
+### Market Context
+- **WTI:** $80.14 (Jun 15, -5.59% on the day) — crashed on US-Iran MOU announcement (Strait of Hormuz reopening deal; 100M barrels stranded oil releasing over coming weeks). **This is the dominant macro event of the week.**
+- **Brent:** ~$84-87 range, declining
+- **S&P 500:** Closed 7,431.46 on Jun 12 (Fri); Iran deal = risk-ON for US equities (lower oil costs = better corporate margins; lower inflation = rate cut expectations return)
+- **VIX:** 19.44 (Jun 12) → likely lower Monday as Iran deal = risk-ON relief. MEDIUM risk zone.
+- **Market risk:** Medium (VIX ~19)
+- **FOMC Jun 16-17 meeting → decision Wed Jun 18 2:00 PM ET:**
+  - No rate change expected (98% probability per Polymarket/Kalshi)
+  - Fed funds rate currently 3.50-3.75%
+  - KEY RISK: Possible bias shift from easing to neutral/tightening (April FOMC was 8-4 divided vote — most divided since 1992)
+  - BUT: Iran deal → oil crash → CPI will fall → may PREVENT a hawkish bias shift
+  - Warsh/Powell framing of Iran deal impact on inflation will be key
+- **Economic calendar Week Jun 16-20:**
+  - Mon Jun 16: FOMC Day 1 — full blackout for new entries
+  - Tue Jun 17: FOMC Day 2 + **Retail Sales May 8:30 ET** (Tier-2) — full blackout
+  - Wed Jun 18: **FOMC Decision 2:00 PM ET** (Tier-1 blackout) + Housing Starts 8:30 ET
+  - Thu Jun 19: **Jobless Claims 8:30 ET** (Tier-2) — FIRST entry window post-FOMC
+  - Fri Jun 20: Clean entry window
+- **Earnings BMO this week:** No major S&P 500 names identified
+- **Sector YTD leaders:** Industrials (#1 YTD), Consumer Staples (#2), Materials (#3); Technology in "Lagging" YTD quadrant but 20-day RS strong; Energy negative YTD and now deteriorating on Iran deal
+
+### Benzinga Signals
+- **Script error (python permission denied) — signals unavailable for Jun 15.** 
+- Carry-forward from Jun 12: SPY SELL high, QQQ SELL high, SOXX improving (HOLD low from SELL high Jun 11).
+- **Benzinga: no confirmed actionable signals today.** Note: Benzinga SELL on broad indices (SPY, QQQ) may reverse Monday given Iran deal risk-ON catalyst.
+
+### Congress Signals
+- **Script error — signals unavailable for Jun 15.**
+- Carry-forward from prior week: AMD BUY high (Gottheimer + Cisneros), FCX BUY high (Gottheimer). These remain valid as long-dated STOCK Act filings.
+- **Congress: no new signals confirmed today.** Carry-forward AMD BUY high + FCX BUY high remain as background conviction support.
+
+### Confluent Signals
+- FCX: Congress BUY high (Gottheimer, carry-forward) = elevated conviction for FCX as post-FOMC candidate.
+- No Benzinga confirmation available today.
+
+### Perplexity Validation (WebSearch fallback — Perplexity scripts unavailable; note: fallback used)
+
+**CAT ($929, +4.07% from entry — Alpaca weekend price):**
+- JPMorgan raised PT to $1,125 (Overweight); Evercore ISI raised PT to $1,103 (Outperform)
+- Analyst consensus: 28 analysts, Buy, avg PT $936.99 (median $932.50, range $575-$1,165)
+- Q1 2026: +22% revenue, EPS $5.54 vs $4.62e beat, record $63B backlog, FY2026 low-double-digit growth guidance
+- Iran deal = neutral to positive for CAT (lower energy costs → industrial expansion more affordable; AI power demand unaffected by oil)
+- Stop buffer 8.3% from $929; June Q2 earnings expected late July
+- **CAT thesis: STRENGTHENING. HOLD.**
+
+**CVX ($182, -0.20% from entry — EXITING Monday per autonomous decision):**
+- WTI $80.14 = at stated $80 structural break level. Iran deal MOU signed = Hormuz reopening, 100M stranded barrels releasing over weeks.
+- CVX "greater oil leverage leaves it more at risk" per Investing.com analysis. CVX fell from $214 high to $187-188 area.
+- Hess/LNG thesis structurally intact above $80, but trajectory is now strongly downward. Proactive exit at ~$182 (breakeven) is better than risking stop at $173.417.
+- **CVX thesis: BROKEN at structural level. EXIT Monday open.**
+
+**IWM ($297.51, +2.32% from entry — Alpaca weekend price):**
+- Iran deal = BULLISH for IWM: lower oil → lower CPI → rate cuts back on table → small-cap rate-sensitive financing improves
+- FOMC: possible hawkish bias shift is the key risk, BUT oil crash may cause Fed to reconsider hawkish pivot
+- Stop HWM $295.72 (IWM crossed above mid-week), stop $266.148 (10.6% buffer)
+- Rate-cut thesis RESTORED by Iran deal catalyst
+- **IWM thesis: IMPROVING. HOLD.**
+
+**SOXX (post-FOMC candidate):**
+- 190% 12-month return, beta 1.78, RSI 80.569 (14-day as of Jun 12) = overbought
+- FOMC week expected to provide RSI cooldown; AI/semiconductor demand unaffected by oil thesis
+- Iran deal = lower inflation = potentially more dovish FOMC = bullish for high-PE growth stocks including semis
+- Entry condition for Thu Jun 19: RSI ≤ 70 confirmed at pre-market open
+- **SOXX: PRIMARY CANDIDATE for Thu Jun 19 post-FOMC**
+
+**FCX (post-FOMC candidate):**
+- Copper $6.44/lb (all-time high) — structural demand from EVs/grid/AI buildout
+- FCX closed ~$67 on Jun 1 (most recent data); analyst PTs $72-$81 (DB $72, Barclays $77, MS $81)
+- Congress BUY high (Gottheimer) = elevated conviction carry-forward
+- R:R at $67: entry $67, risk $6.70 (10% stop), target $77 (Barclays) = $10 reward → R:R 1.49:1 (just under urgency protocol 1.5:1 floor)
+- **Entry only if R:R ≥ 1.5:1 at live ask Thursday Jun 19 (spread must be < $1.50)**
+- **FCX: SECONDARY CANDIDATE for Thu Jun 19, R:R gate applies**
+
+### ETF RS Ranking (20-day vs SPY, estimated Jun 15 — WebSearch fallback)
+["SOXX","QQQ","XLK","XLC","XLY","XLF","XLI","IWM","SPY","XLB","XLP","XLV","GLD","XLU","HYG","EEM","SLV","XLE","XLRE"]
+Note: XLE dropped significantly (WTI -5.59% Iran deal); IWM moved up (oil crash = rate-cut catalyst); GLD in declining trend.
+
+### Economic Cycle
+**Late-cycle.** CPI 4.2% YoY (energy-driven) + PPI 6.4% + unemployment at 33-month high + 3.50-3.75% restrictive Fed funds rate signals late-cycle. Iran deal = potential inflation relief catalyst ahead, but Fed still in "hold" mode until inflation data convincingly falls.
+
+### Deployment Analysis
+- **Current deployed:** 53.1% ($55,772 of $105,175)
+- **After CVX exit (autonomous decision):** ~$37,026 (35.2%) — well below 75% floor
+- **Urgency protocol:** ACTIVE — 3+ consecutive weekly closes below 75% (Week 5: 54.2%, Week 6: 70.3%, Week 7: 53.0%)
+  - R:R floor drops to 1.5:1
+  - Tier-2 blockers do NOT block (Tier-1 still blocks — FOMC is Tier-1)
+  - Wednesday urgency check: deployed < 70% at Wed close → enter Thu if Tier-1 clear ✓
+- **Post-FOMC target (Thu Jun 19):** SOXX + FCX = +2 positions ≈ $37K added → deployed ~$74K (70.3%)
+  - To reach 75% floor: need full 20% sizing: SOXX ($21K) + FCX ($21K) → ~$79K (75.2%) ✓
+
+### Trade Ideas
+1. **AUTONOMOUS: EXIT CVX Monday Jun 16 open** — WTI at $80 structural break; Iran deal structural; lock in ~$0 vs risk -$888 further. Market sell 103sh CVX.
+2. **HOLD IWM** — Iran deal = rate-cut thesis RESTORED; stop $266.148 provides 10.6% buffer; IWM +2.32%.
+3. **HOLD CAT** — Thesis strengthening (analyst upgrades, record backlog, AI power demand); +4.07%; stop $852.147 (8.3% buffer).
+4. **Thu Jun 19: SOXX entry (primary)** — IF RSI ≤ 70 confirmed; full position 20% sizing (~$21K, ~36sh @~$578); 10% trail GTC stop; R:R 2:1 min.
+5. **Thu Jun 19: FCX entry (secondary, conditional)** — IF R:R ≥ 1.5:1 at live ask and bid/ask spread < $1.50; full position 20% sizing (~$21K, ~310sh @~$67); 10% trail GTC stop.
+
+### Risk Factors
+1. **FOMC Jun 18 hawkish bias shift:** If Warsh signals end of easing bias → tech/small-cap headwind. SOXX and IWM both at risk. Key watch: Fed statement language.
+2. **Iran deal fragility:** MOU ≠ final deal. If deal breaks down → WTI spikes back → CVX thesis restores (but we'll be out). Accept this cost for eliminating downside.
+3. **SOXX RSI still overbought:** 80.5 on Jun 12. If FOMC week doesn't cool it, defer to Week 9.
+4. **FCX spread pattern:** Has shown anomalous $7+ spreads at open twice before. Only enter if spread < $1.50 at Thursday open.
+5. **Deployment urgency vs quality:** Urgency protocol active, but don't lower R:R below 1.5:1. Discipline holds even with 3+ weeks under-deployed.
+6. **Post-CVX exit:** Deployed falls to ~35% — most under-deployed since launch. Two entries (SOXX + FCX) at 20% sizing needed to reach 75% floor.
+
+### Decision
+**TRADE (limited) — CVX EXIT Monday (autonomous); SOXX + FCX entries targeted Thu Jun 19 post-FOMC.**
+- Monday Jun 16: EXIT CVX at market open (autonomous decision — WTI structural break). FOMC blackout for new entries.
+- Thu-Fri Jun 19-20: Enter SOXX + FCX per conditions above (RSI ≤ 70 for SOXX; R:R ≥ 1.5:1 for FCX; both at 20% sizing).
+- **HOLD:** CAT + IWM to stops; both theses intact or improving.
+
+---
+
+## 2026-06-16 Pre-Market Research (Day 39 — Week 8 Day 2, FOMC Blackout)
+
+**Account snapshot:**
+- Equity: $104,774.95 | Cash: $67,785.59 (64.7%) | Deployed: $36,989 (35.3%)
+- Positions: CAT (20sh, +4.74%), IWM (62sh, +1.45%)
+- Stops: CAT 10% trail GTC (HWM $946.83 / stop $852.147, buffer 8.74%); IWM 10% trail GTC (HWM $297.90 / stop $268.11, buffer 8.85%)
+- Day trades used: 0 | Week 8 buy count: 0/3
+- **Deployment urgency protocol ACTIVE** (3+ consecutive weekly closes below 75%: ~51% Jun 5, ~53% Jun 12, ~35% Jun 16)
+- R:R floor: 1.5:1 (urgency); Tier-2 blockers do NOT apply
+
+**Market context:**
+- WTI: ~$80.49/bbl (-0.32%) — 3-month low; US-Iran MOU (Strait of Hormuz reopening) driving continued oil decline
+- Brent: ~$82-84 (est.; few dollars above WTI per typical spread)
+- S&P 500 futures: slightly positive premarket (+0.02% to +1.68% depending on source/timestamp)
+- VIX: 16.19 (LOW risk environment, <18)
+- **FOMC: Tier-1 blocker active today** — FOMC decision imminent this week (EOD Jun 15 log: Wed Jun 18 decision; Perplexity calendar suggests possible Jun 16 6 PM — exact date ambiguous but blackout in effect regardless). Hold at 3.75% expected. BoJ rate hike confirmed today (yen carry trade unwind risk — watch for global equity volatility spike).
+- Economic releases today: Import/Export Price Indexes (8:30 AM ET), Retail Sales (12:30 PM ET)
+- Earnings BMO Jun 16: Wiley (WLY), High Tide (HITI) — no held names
+- Economic cycle: **mid-cycle** — GDP growth 2-2.4%, unemployment drifting to mid-4%, inflation easing but above target; consistent with ongoing expansion
+- Sector momentum YTD: LEADING — Energy (+21-22%), Industrials (+16%), Consumer Staples (+13%), Materials (strong RS); LAGGING — Technology, Communication Services, Consumer Discretionary, Financials
+- RS ranking (20-day approx): XLB > XLI > XLP > SOXX > IWM > GLD > XLU > XLRE > SPY > SLV > EEM > HYG > XLV > QQQ > XLK > XLE > XLF > XLC > XLY
+
+**Benzinga signals:** SSL error — graph_error on Microsoft 365 auth. All tickers returned HOLD. Proceed with no Benzinga context.
+
+**Congress signals:** SSL error — fetch_error on Quiver Quant API. All tickers returned HOLD. Proceed with no Congress context.
+
+**Perplexity validation:** N/A (no actionable Benzinga or Congress signals to validate).
+
+**Position thesis review:**
+
+*CAT ($935.03, +4.74% from entry $892.69):*
+- Thesis: STRONG and INTACT. Q1 2026: revenue +22% YoY ($17.4B), EPS $5.54, backlog driven by AI data center power generation + oil & gas. Management raised 2026 guidance to "low double-digit growth" with margin improvement. 6-9% CAGR through 2030 announced.
+- Valuation risk: P/E ~45.6x vs peers ~27-31x; analyst consensus target ~$795 (below current); DCF fair value $551. Momentum-driven premium. Watch: ISM manufacturing roll-over = earnings risk.
+- Stop: HWM $946.83, stop $852.147 (buffer 8.74%). Tighten trigger at +15% = $1,026.59 (still 9.8% away).
+- Action: HOLD. Thesis intact; stop manages downside.
+
+*IWM ($294.98, +1.45% from entry $290.77):*
+- Thesis: RESTORED. WTI crash to $80.14 on Jun 15 (US-Iran MOU) → lower oil → lower CPI path → rate cuts sooner → small-cap financing improves. FOMC hold today = neutral to mildly positive. BoJ hike risk = transient volatility but thesis unchanged. Zacks ETF Rank 2 (Buy). 42% 1-yr return but still elevated rate-cut pricing.
+- Watch: FOMC language post-decision. If hawkish surprise → IWM at risk. Stop $268.11 (buffer 8.85%) provides 2-sigma cushion.
+- Action: HOLD. Stop active.
+
+**STEP 1B.C — Active watch items (forward triggers, not yet fired):**
+- **Thu Jun 19 SOXX entry** (~$21K, ~35sh): Primary candidate post-FOMC. SOXX closed at 3-month high on AI/semi demand (+98% 1-yr NAV). But MACD histogram turned negative Jun 5 — need RSI ≤70 reset by Thu open. Expected volatility ±9-11% near-term. Entry condition: RSI ≤70 at Thu open AND R:R ≥1.5:1 at live ask.
+- **Thu Jun 19 FCX entry (conditional)** (~$21K, ~320sh): Materials sector, copper all-time high (~$6.44/lb). Thesis: electrification + AI data center copper demand + grid buildout. BUT: costs raised to $1.95/lb (from $1.75), better entry on pullback not chase. Condition: R:R ≥1.5:1 at live ask AND spread <$1.50. If R:R fails, skip FCX and consider alternative (AMD, XLI proxy).
+- Urgency protocol requires deploying ~$28K+ by Jun 19 to restore deployment above 75%.
+
+**Actionable trade ideas (for Thu Jun 19 execution — not today):**
+1. **SOXX** (~35sh at ~$600/sh = $21K): AI semiconductor ETF. Catalyst: AI infrastructure capex cycle, NVDA/AVGO/MU backlog. Entry: buy at open Thu Jun 19 if RSI ≤70. Stop: 10% trailing GTC immediately. Target: $660 (10% above entry) = 1:1 minimum. Full 20% position sizing.
+2. **FCX** (~320sh at ~$66/sh = $21K): Copper/materials. Catalyst: copper all-time high + electrification demand. Entry: conditional — only if R:R ≥1.5:1 AND spread <$1.50 at Thu open. Stop: 10% trailing. Alternative if R:R fails: pass and evaluate AMD or sector ETF.
+
+**Risk factors:**
+- BoJ rate hike confirmed today → yen strengthens → carry trade unwind → global risk-off episode (similar to Aug 2024 -5% spike). Monitor yen move and VIX spike.
+- FOMC language could be hawkish if inflation stickiness cited → IWM stop risk and delays rate-cut thesis
+- SOXX MACD negative since Jun 5 — momentum cooling after 98% 1-yr run; concentration risk (57%+ in top 10 names)
+- Oil continues lower → good for IWM (rate cut path) but confirms Energy sector exit was correct; watch $78 WTI (next support)
+- SpaceX SPCX IPO secondary trading this week — weak SPCX = warning signal for high-valuation tech/AI names → SOXX risk
+
+**Decision: HOLD all positions | NO new trades today (FOMC Tier-1 blackout)**
+- CAT: HOLD, stop active
+- IWM: HOLD, stop active  
+- No new entries: FOMC blackout in effect (decision this week); entry window Thu Jun 19
+- Urgency: Urgency protocol active — MUST enter SOXX (+ conditional FCX) Thu Jun 19 regardless of Tier-2 noise
