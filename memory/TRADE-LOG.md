@@ -2505,3 +2505,30 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
   - Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked) ✓
   - Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (auto-trailed) ✓
 - **No action taken. No ClickUp notification sent.**
+
+---
+
+## Jun 15 — EOD Snapshot (Day 38, Monday — Week 8 Day 1, FOMC Blackout)
+**Portfolio:** $104,698.10 | **Cash:** $67,785.62 (64.7%) | **Day P&L:** -$363.07 (-0.35%) | **Phase P&L:** +$4,698.10 (+4.70%)**
+
+**CVX EXIT (market-open):**
+| Ticker | Shares | Entry | Exit | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| CVX | 103 | $182.364 | ~$178.47 | -$401.04 (-2.13%) | Autonomous bot exit: WTI $80.14 ≤ $80 structural break floor; US-Iran MOU signed Jun 14-15 (Strait of Hormuz reopening); beats stop $173.42 (-$888 additional loss avoided) |
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $933.79 | +2.55% | +$822.02 (+4.60%) | 10% trail HWM $946.83 / stop $852.147 (locked; buffer 8.74%) |
+| IWM | 62 | $290.770 | $294.14 | +0.41% | +$208.95 (+1.16%) | 10% trail HWM $297.90 / stop $268.11 (auto-trailed ↑; buffer 8.85%) |
+
+**Open Orders (EOD Jun 15):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $946.83, stop $852.147 (locked) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (auto-trailed ↑) ✓
+
+**Notes:** Day 38, Monday — Week 8 Day 1, FOMC blackout (Mon Jun 15 through Wed Jun 18 decision; no new entries). CVX exited at market-open per autonomous bot decision (EOD Jun 12 block): WTI fell to $80.14 on US-Iran MOU (Strait of Hormuz reopening announced Jun 14-15) — structural break of $80 floor; realized -$401.04 (-2.13%), beats stop at $173.417 (-$888 avoided). Deployment dropped to 35.3% — critically below 75% floor. Two remaining positions both green: CAT surged +2.55% to $933.79 (+4.60% from entry), approaching prior HWM $946.83 ($13.04 gap); ISM expansion + AI power demand thesis strong; stop locked at $852.147 (buffer 8.74%). IWM +0.41% to $294.14 (+1.16% from entry); rate-cut thesis RESTORED (WTI/oil collapse → lower CPI path → rate cuts sooner → small-cap financing improves); stop auto-trailed to HWM $297.90/stop $268.11 (buffer 8.85%). Day P&L -$363.07 breakdown: CVX realized loss -$901.25 (cost basis delta vs Jun 12 close) + CAT +$464.40 intraday + IWM +$73.78 intraday = -$363.07. Week 8 buy count: 0/3. Next entry window: Thu Jun 19 post-FOMC (SOXX primary + FCX conditional).
+
+**Action questions (EOD Jun 15):**
+
+**Q: Deploy SOXX (~$21K, ~35sh) + FCX (~$21K, ~320sh, conditional) on Thu Jun 19 post-FOMC to restore 75%+ deployment — or different candidates?**
+- Enter SOXX + FCX: restores deployment from 35% → ~75% in one session; AI semiconductors + Materials (copper all-time high); two distinct sectors — SOXX needs RSI ≤70 reset by Thu open; FCX enters only if R:R ≥1.5:1 at live ask and spread < $1.50
+- Different names / defer: post-FOMC Jun 18 EOD will clarify rate trajectory and sector rotation — allows fresher research but extends below-75% deployment another week
