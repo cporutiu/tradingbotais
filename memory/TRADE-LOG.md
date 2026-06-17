@@ -2615,3 +2615,29 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 **Q: Post-FOMC deployment — enter SOXX + FCX Thu Jun 19 to restore 75%+ deployment, or wait for Mon Jun 23 (full post-FOMC reaction day)?**
 - Enter Thu Jun 19: restores deployment from 35% → ~75% in one session; captures any post-FOMC relief rally in semis/copper; SOXX + FCX cover distinct sectors (AI power demand + materials); 3 trade slots available — risks walking into a fading bounce if markets gap up then reverse
 - Wait Mon Jun 23: lets market fully digest FOMC language over Thursday and Friday; avoids a potential gap-up entry trap; cleaner setup confirmation — extends below-75% deployment to 3.5 weeks (2-week slow-bleed rule already triggered; urgency protocol active)
+
+---
+
+## Jun 17 — EOD Snapshot (Day 40, Wednesday — Week 8 Day 3, FOMC Decision Day)
+**Portfolio:** $104,985.67 | **Cash:** $67,785.59 (64.6%) | **Day P&L:** +$198.66 (+0.19%) | **Phase P&L:** +$4,985.67 (+4.99%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $955.92 | +1.11% | +$1,264.62 (+7.08%) | 10% trail HWM $975.64 / stop $878.076 (auto-trailed ↑) |
+| IWM | 62 | $290.770 | $291.64 | -0.15% | +$53.95 (+0.30%) | 10% trail HWM $297.90 / stop $268.11 (locked) |
+
+**Open Orders (EOD Jun 17):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $975.64, stop $878.076 (auto-trailed ↑)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked)
+
+**Notes:** Day 40, Wednesday — FOMC decision day (Warsh, 2 PM ET). No trades — Tier-1 blackout in effect. CAT standout: intraday HWM $975.64 auto-trailed stop from $864.950 → $878.076 (+$13.13 mechanical improvement); +7.08% from entry, closing in on +15% tighten threshold ($1,026.59 = $70.67 / 7.4% above close). IWM drifted slightly lower (-0.15%) to $291.64 — FOMC outcome (hawkish vs neutral) will determine if rate-cut thesis holds. Deployment 35.4% — critically below 75% floor, urgency protocol active 3+ consecutive weeks. Week count 0/3 with Thu Jun 19 + Fri Jun 20 remaining post-FOMC.
+
+**Action questions:**
+
+**Q: IWM — FOMC outcome determines if rate-cut thesis holds. Exit pre-open Thu Jun 19 if FOMC hawkish (no 2026 cuts), or hold to stop $268.11?**
+- Exit if hawkish: Locks small +$54 gain; frees $18K for SOXX/FCX; stops slow bleed if rate-cut thesis confirmed broken — miss any dovish surprise that sends small-caps higher
+- Hold to stop ($268.11, buffer 8.1%): Strategy rule says let stop work; caps max additional loss ~$1,460 from current; FOMC may surprise neutral/dovish — but broken rate-cut thesis rarely recovers cleanly
+
+**Q: Deployment 35.4% (<75% floor, urgency ACTIVE) — enter SOXX (~35sh @~$590) + FCX (~320sh @~$65, conditional R:R ≥1.5:1) Thu Jun 19 post-FOMC, or wait Mon Jun 23 for full FOMC reaction?**
+- Enter Thu Jun 19: Urgency protocol active (3+ weeks below 75%); captures post-FOMC momentum; SOXX RSI expected to reset ≤70 by Thu; R:R floor 1.5:1 (urgency active); restores deployment to ~75% — risks entering a fading bounce if markets gap up then reverse
+- Wait Mon Jun 23: Full FOMC reaction visible over Thu + Fri; cleaner setup confirmation; avoids gap-up entry trap — extends below-75% deployment to Week 9 (urgency deepens further)
