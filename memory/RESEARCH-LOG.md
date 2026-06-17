@@ -3816,3 +3816,87 @@ Note: XLE dropped significantly (WTI -5.59% Iran deal); IWM moved up (oil crash 
 - IWM: HOLD, stop active  
 - No new entries: FOMC blackout in effect (decision this week); entry window Thu Jun 19
 - Urgency: Urgency protocol active — MUST enter SOXX (+ conditional FCX) Thu Jun 19 regardless of Tier-2 noise
+
+---
+
+## 2026-06-17 Pre-Market Research (Day 40 — Week 8 Day 3, FOMC Decision Day)
+
+**⚠️ CORRECTION: FOMC decision is TODAY June 17 at 2:00 PM ET (not Jun 18 as previously logged). Blackout lifts post-press conference ~3:30 PM ET. Thu Jun 19 remains first clean entry day.**
+
+**Account snapshot (Alpaca API unavailable — 403 network block in cloud runner; using EOD Jun 16 baseline):**
+- Equity: ~$104,787 | Cash: $67,785.59 (64.7%) | Deployed: ~$37,001 (35.3%)
+- Positions: CAT (20sh, entry $892.689, last $945.46, +5.91%), IWM (62sh, entry $290.770, last $291.86, +0.37%)
+- Stops: CAT 10% trail GTC (HWM $961.0554 / stop $864.950, buffer ~8.5%); IWM 10% trail GTC (HWM $297.90 / stop $268.11, buffer ~8.3%)
+- DT count: 0 | Week 8 buy count: 0/3 | Phase P&L: +$4,787 (+4.79%)
+- Deployment urgency protocol: ACTIVE (3+ consecutive weekly closes below 75%)
+
+**⚠️ NOTE — Perplexity API also 403 (cloud network policy). All market data via WebSearch fallback.**
+
+**STEP 1B — Pending user decisions:** None found. EOD Jun 15 and EOD Jun 16 action questions (SOXX+FCX Thu Jun 19 deployment; IWM exit if FOMC hawkish) remain unanswered by user. Carrying forward confirmed plan from pre-market research: SOXX primary + FCX conditional Thu Jun 19; let IWM stop handle downside unless FOMC explicitly breaks thesis.
+
+**Market context:**
+- WTI: ~$78/bbl (continued decline; US-Iran MOU, Strait of Hormuz reopening structural)
+- Brent: ~$80/bbl
+- S&P 500: closed 7,511.35 (-0.57% Jun 16); futures +0.28% premarket (modest positive)
+- VIX: ~15.77 (low — below 18; risk-on environment)
+- **FOMC: Decision TODAY Jun 17 at 2:00 PM ET; press conference 2:30 PM ET**
+  - Hold at 3.50–3.75% widely expected (97% probability CME FedWatch)
+  - Warsh's first meeting as Chair (sworn in May 22)
+  - Dot plot: expected to REMOVE 2026 cut projection; median = on-hold all year
+  - HAWKISH RISK: 3+ voting members may project rate hikes in 2026 (BofA warning)
+  - Warsh may withhold his own dot (skeptic of forward guidance)
+  - Statement: likely drops easing bias language
+  - This is a HAWKISH lean vs prior meeting — adverse for IWM rate-cut thesis
+- Housing starts (May): -15.4% to 1.177M annualized (weakest since May 2020) — economic softening
+- Earnings BMO Jun 17: No major held-ticker names
+- CPI May 2026: released Jun 10 | PPI May 2026: released Jun 11 — no new data today beyond FOMC
+
+**Sector momentum (YTD 2026):**
+- LEADING: Industrials (XLI), Materials (XLB), Consumer Staples (XLP), Energy (XLE)
+- LAGGING: Technology (XLK), Communications (XLC), Consumer Discretionary (XLY), Financials (XLF)
+- Note: Technology lagging YTD despite SOXX +89% YTD (semiconductor sub-sector diverges from broad XLK)
+
+**Position thesis review:**
+
+*CAT (last $945.46, +5.91% from entry $892.689):*
+- Thesis: INTACT and strengthening. Power & Energy segment (AI data center generators) robust. Dividend raised 8% to $1.63/sh (32 consecutive years of increases). UBS raised PT to $900 (Neutral) — below current; Evercore $1,103, JPMorgan $1,125 remain supports.
+- Valuation risk: Identified as 119.5% above estimated fair value by GF analysis. Jun 10 dropped -5.60% (tariff scare); recovered fully by Jun 11-15.
+- Stop: HWM $961.0554 / stop $864.950 (buffer ~8.5% from $945.46). Tighten trigger at +15% = $1,026.59 (still ~$81 away).
+- Action: HOLD. ISM expansion + AI power demand thesis intact. Stop active.
+
+*IWM (last $291.86, +0.37% from entry $290.770):*
+- Thesis: AT RISK today. Rate-cut thesis depends on Fed maintaining dovish lean. FOMC Jun 17 expected to DROP easing bias and remove 2026 cut from dot plot. If Warsh signals hawkish hold or hike bias → thesis BREAKS.
+- Whale indicator: IWM bear put spread through June FOMC spotted (institutional downside hedge).
+- 52-week range: $206.81–$297.91 (IWM near 52-week high at $291.86 — limited upside, asymmetric downside risk).
+- Stop: HWM $297.90 / stop $268.11 (buffer 8.3% from $291.86). If thesis breaks and stop hits, loss = ~$1,350.
+- **Watch trigger: If post-FOMC press conference signals hawkish hold (no 2026 cuts + hike risk) → IWM thesis CONFIRMED BROKEN → consider manual exit pre-open Thu Jun 19 vs. let stop work.**
+- Action: HOLD through FOMC. Reassess at 2:30 PM ET press conference.
+
+**Active watch items (STEP 1B forward triggers):**
+- ⚡ **TODAY 2:00 PM ET:** FOMC rate decision — hold expected, language critical
+- ⚡ **TODAY 2:30 PM ET:** Warsh first press conference — tone determines IWM thesis outcome
+- **Thu Jun 19 open:** SOXX entry if RSI ≤70 (RSI exited overbought Jun 5 ✓; price $628, near ATH $629.72); R:R ≥1.5:1 required
+- **Thu Jun 19 open:** FCX conditional entry if R:R ≥1.5:1 AND spread <$1.50
+- **Thu Jun 19:** IWM decision — if FOMC hawkish today, exit IWM pre-open vs. hold to $268.11 stop
+
+**Actionable trade ideas (Thu Jun 19 execution):**
+1. **SOXX** (~33sh at ~$628 = ~$20,700; 19.7% of ~$105K equity): AI semiconductor ETF. RSI reset ✓ (+89% YTD, out of overbought). Catalyst: AI infrastructure capex cycle, Nvidia/AVGO earnings beats. Entry: buy at open Thu Jun 19 if RSI confirmed ≤70. Stop: 10% trailing GTC immediately. Target: ~$690 (+10%); R:R 2:1 minimum against $56 stop. Sector: Technology (LAGGING YTD but SOXX diverges — AI cycle driver).
+2. **FCX** (~310sh at ~$67 = ~$20,770; ~19.8%): Copper/materials. Catalyst: copper electrification demand + AI data center infrastructure. Entry: conditional — R:R ≥1.5:1 AND spread <$1.50 at Thu open. Stop: 10% trailing. Alternative if R:R fails: skip and hold deployment urgency to next week.
+3. **IWM exit consideration (conditional):** If FOMC hawkish today (easing bias dropped + no 2026 cuts in dots) → manual exit IWM pre-open Thu Jun 19 (~$291) to free $18K for SOXX/FCX and lock +$67 gain rather than risk bleed toward $268 stop.
+
+**Risk factors:**
+1. **FOMC hawkish surprise today:** Warsh drops easing bias + 3+ members project hikes → tech/small-cap headwind; IWM thesis breaks; SOXX faces rate headwind but AI cycle insulates partially
+2. **Warsh ambiguity:** Withholding his own dot creates uncertainty → Dollar volatility → EM/gold spikes → broad equity chop
+3. **SOXX near ATH:** Price $628 vs ATH $629.72 — entering at ATH is elevated risk; RSI reset is necessary condition
+4. **FCX spread risk:** Historical anomalous $7+ spreads at open; strict <$1.50 filter enforced
+5. **Alpaca API 403:** Cannot confirm live position prices, stop levels, or order status today. Must verify manually if IWM stop is properly set before Thu entry
+6. **Deployment urgency:** 35.3% deployed — below 75% floor for 3+ consecutive weeks. Urgency protocol requires entries Thu Jun 19; R:R floor remains 1.5:1 (not 2:1 — urgency exception)
+7. **Housing starts -15.4%:** Weakest since May 2020 — signals economic softening; potentially positive for Fed cutting (but FOMC still expected hawkish)
+
+**Decision: HOLD all positions | NO new trades today (FOMC Tier-1 blackout until 2 PM ET decision)**
+- CAT: HOLD, stop active — thesis intact
+- IWM: HOLD through FOMC — reassess post-2:30 PM press conference; FOMC hawkish → thesis at risk
+- No new entries today: Blackout until 2 PM ET decision; first clean window Thu Jun 19
+- Thu Jun 19: Enter SOXX (primary, if RSI ≤70) + FCX (conditional, if R:R ≥1.5:1, spread <$1.50)
+- Thu Jun 19: IWM decision pending FOMC language today
+- Urgency: Deployment urgency protocol ACTIVE — MUST deploy Thu Jun 19 (3 slots available)
