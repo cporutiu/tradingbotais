@@ -3816,3 +3816,79 @@ Note: XLE dropped significantly (WTI -5.59% Iran deal); IWM moved up (oil crash 
 - IWM: HOLD, stop active  
 - No new entries: FOMC blackout in effect (decision this week); entry window Thu Jun 19
 - Urgency: Urgency protocol active — MUST enter SOXX (+ conditional FCX) Thu Jun 19 regardless of Tier-2 noise
+
+---
+
+## 2026-06-18 — Pre-Market Research (Thursday, Week 8 Day 4 — Post-FOMC)
+
+### Account Snapshot
+- **Equity:** $105,458.87 | **Cash:** $67,785.59 (64.3%) | **Deployed:** $37,673.28 (35.7%, 2 positions) | **DT count:** 0
+- **Buying power:** $376,627.54 | **Phase P&L:** +$5,458.87 (+5.46%)
+- **Week trade count:** 0/3 (Thu + Fri remaining — Jun 19 = triple witching)
+- **Urgency protocol ACTIVE:** Deployed below 75% for 3+ consecutive weeks; R:R floor 1.5:1; Tier-2 blockers do not apply
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| CAT | 20 | $892.689 | $974.00 | +$1,626.22 (+9.11%) | 10% trail HWM $975.64 / stop $878.076 (buffer 9.8%) |
+| IWM | 62 | $290.770 | $293.40 | +$163.07 (+0.91%) | 10% trail HWM $297.90 / stop $268.11 (buffer 8.6%) |
+
+### Open Orders
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $975.64, stop $878.076
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11
+
+### STEP 1B — Autonomous Decisions
+No user decisions block found for EOD Jun 17. Two action questions unanswered. Acting autonomously per Rule 14 (see TRADE-LOG.md for logged decisions).
+
+### Market Context
+- **FOMC (Jun 17):** HOLD at 3.50-3.75%, unanimous 12-0 (Warsh first meeting). Dot plot HAWKISH flip: median 2026 projection implies hike > cut. Warsh: "has some work to do on the price-stability front." Vanguard removed all 2026 cut expectations; rates unchanged through 2027 now base case.
+- **S&P 500 futures (pre-market):** ~7,523 (+0.06%). Nasdaq 100 futures +0.50%. S&P -1.21% yesterday on FOMC; modest recovery today.
+- **VIX:** ~17.10 (down from 18.44 yesterday, -7.3%). **LOW** risk (<18).
+- **WTI crude:** ~$80.31 (down -5.38% today). Middle East peace talks / Hormuz reopening. Major structural shift: energy sector headwind.
+- **Earnings BMO today:** ACN, KR, PGR. No held-name earnings. Not a Tier-1 blocker.
+- **Jun 19 = triple witching** (3rd Friday quarterly options expiration). Enter positions TODAY (Thu) not Fri.
+- **Economic cycle:** mid-cycle. GDP ~2.4%, AI-led investment, stable labor, inflation above target but easing.
+- **RS ranking (20-day est):** SOXX > QQQ > XLK > XLC > XLI > SPY > IWM > XLY > XLF > XLB > XLV > EEM > XLE > HYG > XLP > GLD > SLV > XLU > XLRE
+
+### Benzinga Signals
+- **BUY (high):** SPY, QQQ, XLE, XLK, IWM, SOXX
+- **BUY (medium):** NVDA, XLI
+- **SELL (high):** AMD (score -4, 13 mentions)
+- **SELL (medium):** SLV
+- **HOLD / no mention:** GLD, XLF, CAT, XOM, FCX, CVX, AVGO
+
+### Congress Signals (45-day lookback)
+- **BUY (high):** FCX (Gottheimer, Apr 15, filed May 19); AMD (Gottheimer + Cisneros, May)
+- **SELL (high):** NVDA (Van Epps Jun 16 + Whitehouse May 8, $100K-$250K); AVGO (Moore Capito, Taylor, Apr 27)
+- **SELL (medium):** XOM (Van Epps, Jun 16)
+- **Confluent:** AMD CONFLICT (Benz SELL high / Congress BUY high) = no trade. NVDA CONFLICT (Benz BUY medium / Congress SELL high) = no trade.
+
+### Perplexity Validation
+- **FOMC impact on IWM:** Dot plot hawkish (hike > cut; no 2026 cuts). Rate-cut thesis structurally impaired. BUT: Russell 2000 ~43% EPS growth consensus 2026; mid-cycle expansion supports small-cap earnings independently. IWM up pre-market +0.60%. Benzinga BUY high. Tactical recovery present; HOLD to stop.
+- **CAT (+9.11% from entry):** Thesis STRENGTHENING. Jun 10 dividend increase; Zacks Bull of the Day Jun 15; JPMorgan PT $1,125; record Q1 backlog raised guidance; AI data center power demand + infrastructure. Pre-market $974, near HWM $975.64. +15% tighten trigger $1,026.59 = 5.4% away.
+- **SOXX (~$618-$621):** Benzinga BUY high; AI semi TAM $975B 2026 (gen-AI chips ~$500B); 12-month NAV return ~96.6%; quarterly dividend payable Jun 18 (ex-div Jun 15). Primary trend up. R:R 2:1 at ~$620 entry (stop $558, target $744).
+- **QQQ (~$723):** Benzinga BUY high; Nasdaq +0.50% pre-market; AI/tech momentum; ETF (ETF exception applies, no sector-cap conflict with SOXX). R:R 2:1 at ~$723 entry (stop $650.70, target $867.60).
+- **FCX (~$70):** Congress BUY high. BUT median analyst PT $70.50 = zero reward; Scotiabank PT $77 = R:R 1:1 = fails urgency 1.5:1 floor. **SKIP.**
+- **XLE:** Benzinga BUY high BUT WTI -5.38% to $80 today. Energy thesis broken. **SKIP.**
+
+### Trade Ideas
+1. **SOXX — ENTER TODAY** (~33sh @~$620 = $20,460 = 19.4%): AI semi demand; VIX low; post-FOMC stabilization; week slot 1/3; tech slot 1. Stop 10% trail GTC. Target $744 (+20%). R:R 2:1.
+2. **QQQ — ENTER TODAY** (~29sh @~$723 = $20,967 = 19.9%): Nasdaq recovery; ETF exception; week slot 2/3; tech slot 2. Stop 10% trail GTC. Target $867.60 (+20%). R:R 2:1. Jun 19 triple witching = enter Thu.
+3. **CAT — HOLD:** +9.11%; pre-market near HWM; thesis strengthening; stop 9.8% buffer; watch +15% tighten at $1,026.59.
+4. **IWM — HOLD to stop:** Rate-cut thesis impaired but mid-cycle fundamentals + Benzinga BUY high + pre-market recovery. Stop $268.11 manages downside.
+5. **FCX — SKIP:** R:R fails urgency 1.5:1 floor.
+6. **XLE — SKIP:** WTI broken.
+
+### Risk Factors
+- **FOMC hawkish:** No 2026 cuts (Vanguard) = rate-sensitive names (IWM, XLRE) under pressure
+- **WTI $80 (-5.4%):** Energy sector confirmed bearish; watch $78 next support
+- **Post-FOMC entry timing:** Recovery bounce risk ("fading bounce"); mitigation: trailing stops
+- **CAT HWM watch:** Pre-market $974 vs HWM $975.64 (0.17% away); stop auto-trails up if new HWM set today
+- **Jun 19 triple witching:** Unusual volume Friday; enter positions today
+
+### Decision
+**TRADE — SOXX + QQQ at market open today.**
+- Urgency protocol active 3+ weeks; no Tier-1 blocker; VIX declining; Benzinga BUY high on both; triple witching Fri = enter Thu.
+- FCX skipped (R:R fails). XLE skipped (oil thesis broken).
+- CAT + IWM: HOLD per autonomous decisions.
+- **Post-entry deployment:** ~75.0% (4 positions: CAT + IWM + SOXX + QQQ). Week count: 2/3.

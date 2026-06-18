@@ -2641,3 +2641,43 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 **Q: Deployment 35.4% (<75% floor, urgency ACTIVE) — enter SOXX (~35sh @~$590) + FCX (~320sh @~$65, conditional R:R ≥1.5:1) Thu Jun 19 post-FOMC, or wait Mon Jun 23 for full FOMC reaction?**
 - Enter Thu Jun 19: Urgency protocol active (3+ weeks below 75%); captures post-FOMC momentum; SOXX RSI expected to reset ≤70 by Thu; R:R floor 1.5:1 (urgency active); restores deployment to ~75% — risks entering a fading bounce if markets gap up then reverse
 - Wait Mon Jun 23: Full FOMC reaction visible over Thu + Fri; cleaner setup confirmation; avoids gap-up entry trap — extends below-75% deployment to Week 9 (urgency deepens further)
+
+---
+
+## 2026-06-18 — Market-Open Execution (Thursday, Week 8 Day 4 — Post-FOMC)
+
+**Bot autonomous decision (2026-06-18):** IWM exit if FOMC hawkish? → HOLD to stop → FOMC was hawkish (dot plot hike > cut; Vanguard removed all 2026 cut expectations) BUT IWM up pre-market +0.60% ($293.40 vs $291.64 close), Benzinga BUY high, VIX declining to 17.1, mid-cycle expansion with ~43% Russell 2000 EPS growth provides alternative fundamental support independent of rate-cut thesis; stop $268.11 (8.6% buffer) manages max downside.
+
+**Bot autonomous decision (2026-06-18):** Post-FOMC deployment SOXX + FCX today? → Enter SOXX + QQQ; skip FCX → FCX R:R fails urgency 1.5:1 floor (median analyst PT $70.50 = zero reward from ~$70 ask; Scotiabank PT $77 = 1:1 R:R insufficient); substitute QQQ (Benzinga BUY high, Nasdaq +0.50% pre-market, ETF exception applies); Jun 19 = triple witching Friday = enter today not Friday; urgency protocol active 3+ weeks requires immediate deployment action.
+
+**Week trade count: 0/3** (2 entries planned below)
+
+**SOXX BUY ORDER SUBMITTED (pre-market 7:15 AM ET):**
+
+| Field | Value |
+|-------|-------|
+| Order ID | 3640f2db-745d-473b-aecc-b49018195dae |
+| Symbol | SOXX |
+| Side | BUY |
+| Qty | 33 shares |
+| Type | market day |
+| Status | pending fill at 9:30 AM open |
+| Rationale | Benzinga BUY high; AI semi demand structural; urgency protocol active; week slot 1/3; tech slot 1 (ETF exception); Jun 19 triple witching = enter today |
+| Stop needed | 10% trailing GTC — place immediately after fill confirmation |
+| Target | +20% from fill price |
+
+**QQQ BUY ORDER SUBMITTED (pre-market 7:15 AM ET):**
+
+| Field | Value |
+|-------|-------|
+| Order ID | a58b818a-c366-4992-bd6b-3123b3b225b0 |
+| Symbol | QQQ |
+| Side | BUY |
+| Qty | 29 shares |
+| Type | market day |
+| Status | pending fill at 9:30 AM open |
+| Rationale | Benzinga BUY high; Nasdaq post-FOMC recovery; ETF exception (no sector cap conflict with SOXX); week slot 2/3; tech slot 2; triple witching = enter today |
+| Stop needed | 10% trailing GTC — place immediately after fill confirmation |
+| Target | +20% from fill price |
+
+**⚠️ ACTION REQUIRED AT 9:30 AM OPEN:** Confirm fills on 3640f2db (SOXX) and a58b818a (QQQ), then place 10% trailing stop GTC on each immediately. Without stops, positions are unprotected.
