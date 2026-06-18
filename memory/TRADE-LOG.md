@@ -2300,6 +2300,8 @@ No positions yet. Bot launches tomorrow. Account: PA3GVPXBYBRB (AIS paper).
 
 **No action taken. No ClickUp notification.**
 
+
+
 **Outstanding action questions (unresolved — carried from EOD Jun 10 + market-open Jun 11):**
 1. **IWM proactive exit vs hold to stop:** User decision needed.
 2. **Fri Jun 13 entry candidate (FCX or defer to post-FOMC):** User decision needed.
@@ -2590,7 +2592,7 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 
 **No action taken. No ClickUp notification.**
 
----
+
 
 ## Jun 16 — EOD Snapshot (Day 39, Tuesday — Week 8 Day 2, FOMC Tier-1 Blackout)
 **Portfolio:** $104,787.01 | **Cash:** $67,785.59 (64.7%) | **Day P&L:** +$88.91 (+0.085%) | **Phase P&L:** +$4,787.01 (+4.79%)**
@@ -2724,3 +2726,38 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 - Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $639.80, stop $575.82 (auto-trailed ↑) ✓
 
 **No action taken. No ClickUp notification.**
+
+---
+
+## Jun 18 — EOD Snapshot (Day 41, Thursday — Week 8 Day 4, Post-FOMC)
+**Portfolio:** $106,279.22 | **Cash:** $25,711.67 (24.2%) | **Day P&L:** +$1,293.55 (+1.23%) | **Phase P&L:** +$6,279.22 (+6.28%)**
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $985.82 | +3.13% | +$1,862.62 (+10.43%) | 10% trail HWM $994.49 / stop $895.041 (auto-trailed ↑) |
+| IWM | 62 | $290.770 | $295.50 | +1.94% | +$293.27 (+1.63%) | 10% trail HWM $297.90 / stop $268.11 (locked) |
+| QQQ | 29 | $736.683 | $739.84 | +0.43% | +$91.54 (+0.43%) | 10% trail HWM $740.62 / stop $666.558 (new) |
+| SOXX | 33 | $627.579 | $638.63 | +1.76% | +$364.69 (+1.76%) | 10% trail HWM $641.75 / stop $577.575 (new) |
+
+**Notes:** Day 41, Thursday — post-FOMC (Warsh confirmed hawkish hold: dot plot shifted to hike > cut; no 2026 rate cuts expected). Entered SOXX (33sh @ $627.579) + QQQ (29sh @ $736.683) at market-open per autonomous bot decision: urgency protocol active 3+ weeks; triple witching Friday Jun 19 = better to enter Thursday. Both new positions green at close. CAT surged +3.13% today to $985.82 (+10.43% from entry); stop auto-trailed to HWM $994.49/stop $895.041; +15% tighten threshold ($1,026.59) is $40.77/4.1% above close — not imminent but active watch. IWM +1.94% today to $295.50 (+1.63% from entry); stop locked HWM $297.90/stop $268.11; FOMC was hawkish but market held — bot cited mid-cycle EPS growth as alternative fundamental support. QQQ +0.43% from entry ($739.84); SOXX +1.76% from entry ($638.63); all 4 trailing stops active. Deployment 75.7% — above 75% floor, urgency protocol resolved. Week count: 2/3; 1 slot remains but a 5th position would push deployment to ~92% exceeding 85% cap — carry slot to Week 9 unless a position exits.
+
+**Open Orders (EOD Jun 18):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $994.49, stop $895.041 (auto-trailed ↑) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked) ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $740.62, stop $666.558 (new) ✓
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $641.75, stop $577.575 (new) ✓
+
+**Action questions:**
+
+**Q1: Pre-authorize CAT stop tighten to 7% trail when HWM hits $1,026.59 (+15% = $892.689 × 1.15)?**
+- Auto-tighten: locks in gain when trigger reached; consistent with prior NVDA/AMD/XLK pattern; no manual intervention — normal volatility could shake out the tighter trail prematurely
+- Manual check first: allows market condition review at trigger day; more control — avoids stop getting hit during a sharp intraday reversal right at the threshold
+
+**Q2: IWM — FOMC confirmed hawkish (no 2026 rate cuts). Original rate-cut thesis impaired. Exit now or hold to stop $268.11?**
+- Exit now: frees $18K for higher-conviction tech/AI name in Week 9; stops slow bleed if rate-cut thesis remains broken; locks in small +$293 gain — FOMC surprised to the upside (market held); mid-cycle EPS growth provides alternative support; stop captures max additional downside
+- Hold to stop ($268.11, 9.3% buffer): let stop work; FOMC hawkish was expected; market's resilience post-FOMC validates alternative IWM thesis — broken rate-cut thesis is real; $268.11 stop is 9.3% below close = meaningful downside if macro deteriorates
+
+**Q3: Last trade slot (2/3 used, Week 8) — deployment 75.7% means 5th position exceeds 85% cap. Rotate IWM out to free capacity, or carry slot to Week 9?**
+- Rotate IWM → new name: frees slot; deployment stays ~75-76% after exit; Week 9 open slot available immediately — accepts +$293 IWM realized gain (small) to redeploy into higher-conviction name
+- Carry to Week 9: a GTC stop may trigger naturally; avoids forced rotation; deployment floor holds at 75.7% — delays 3rd slot; urgency partially resolved at 75.7%
+
