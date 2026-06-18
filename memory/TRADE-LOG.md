@@ -2681,3 +2681,28 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 | Target | +20% from fill price |
 
 **⚠️ ACTION REQUIRED AT 9:30 AM OPEN:** Confirm fills on 3640f2db (SOXX) and a58b818a (QQQ), then place 10% trailing stop GTC on each immediately. Without stops, positions are unprotected.
+
+**FILLS CONFIRMED (9:31 AM ET):**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-06-18 | SOXX | BUY | 33 | $627.579 | 10% trail GTC (c3ca7db2, HWM $631.17, stop $568.053) | $753.09 (+20%) | 2:1 | AI semi demand structural; Benzinga BUY high; post-FOMC Nasdaq recovery; urgency protocol active; ETF exception (no sector cap); week slot 1/3 |
+| 2026-06-18 | QQQ | BUY | 29 | $736.683 | 10% trail GTC (ce15a8ec, HWM $735.79, stop $662.211) | $884.02 (+20%) | 2:1 | Nasdaq post-FOMC recovery; Benzinga BUY high; ETF exception (no sector cap conflict with SOXX); week slot 2/3; triple witching Jun 19 = enter today |
+
+**Week trade count: 2/3**
+
+**Open Orders (market-open 2026-06-18):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $988.33, stop $889.497 (auto-trailed ↑)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked)
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $631.17, stop $568.053 (new)
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $735.79, stop $662.211 (new)
+
+**Position status (market-open 2026-06-18):**
+| Ticker | Shares | Entry | Price | Unrealized | Day Chg | Stop |
+|--------|--------|-------|-------|------------|---------|------|
+| CAT | 20 | $892.689 | $986.07 | +$1,867.62 (+10.46%) | +3.15% | 10% trail HWM $988.33 / stop $889.497 (auto-trailed ↑) |
+| IWM | 62 | $290.770 | $294.27 | +$217.01 (+1.20%) | +1.51% | 10% trail HWM $297.90 / stop $268.11 (locked) |
+| SOXX | 33 | $627.579 | $631.81 | +$139.63 (+0.67%) | +5.35% | 10% trail HWM $631.17 / stop $568.053 (new) |
+| QQQ | 29 | $736.683 | $736.26 | -$12.28 (-0.06%) | +1.90% | 10% trail HWM $735.79 / stop $662.211 (new) |
+
+**Account (post-trade 2026-06-18):** Equity $105,880 | Cash $25,712 (24.3%) | Deployed $80,168 (75.7%) | 4 positions | Week count: 2/3 | DT count: 0 | Phase P&L: +$5,880 (+5.88%)
