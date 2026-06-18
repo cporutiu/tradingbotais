@@ -2706,3 +2706,21 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 | QQQ | 29 | $736.683 | $736.26 | -$12.28 (-0.06%) | +1.90% | 10% trail HWM $735.79 / stop $662.211 (new) |
 
 **Account (post-trade 2026-06-18):** Equity $105,880 | Cash $25,712 (24.3%) | Deployed $80,168 (75.7%) | 4 positions | Week count: 2/3 | DT count: 0 | Phase P&L: +$5,880 (+5.88%)
+
+**Midday 2026-06-18:**
+- **CAT midday:** $986.68 (+10.53% from entry $892.689; +3.22% today). Stop auto-trailed to HWM $994.49 / stop $895.041 (↑ from $988.33/$889.50 at open). ISM expansion + record $63B backlog + AI power demand thesis intact. +15% tighten trigger $1,026.59 = 4.0% away — not imminent. HOLD.
+- **IWM midday:** $293.86 (+1.06% from entry $290.770; +1.37% today). Stop locked at HWM $297.90 / stop $268.11 (price below HWM). Mid-cycle EPS growth supports small-cap thesis independently of rate-cut path; Benzinga BUY high. HOLD.
+- **QQQ midday:** $738.87 (+0.30% from entry $736.683; +2.26% today). Stop auto-trailed to HWM $739.85 / stop $665.87 (↑ from $735.79/$662.21 at open). Nasdaq post-FOMC recovery intact. HOLD.
+- **SOXX midday:** $637.69 (+1.61% from entry $627.579; +6.33% today). Stop auto-trailed to HWM $639.80 / stop $575.82 (↑ from $631.17/$568.05 at open). Perplexity research confirmed: AI semiconductor momentum (NVDA/AMD/AVGO leading chip-led tape) + post-FOMC risk-on. No SOXX-specific catalyst — sector-wide move within options-implied expected range. Thesis intact and strengthening. HOLD.
+- **Losers cut:** None (-7% threshold not breached: CAT +10.53%, IWM +1.06%, QQQ +0.30%, SOXX +1.61%)
+- **Stop tightening:** None (+15% thresholds not reached: CAT $1,026.59 / IWM $334.39 / QQQ $847.19 / SOXX $721.72 — all unreached)
+- **Thesis break:** None. All 4 intact.
+- **Portfolio:** Equity ~$106,136 | Cash ~$25,712 (24.2%) | Deployed ~$80,424 (75.8%, 4 positions) | Phase P&L: ~+$6,136 (+6.14%) | Week count: 2/3 | 1 slot remaining
+
+**Open Orders (midday 2026-06-18):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $994.49, stop $895.041 (auto-trailed ↑) ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked) ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $739.85, stop $665.87 (auto-trailed ↑) ✓
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $639.80, stop $575.82 (auto-trailed ↑) ✓
+
+**No action taken. No ClickUp notification.**
