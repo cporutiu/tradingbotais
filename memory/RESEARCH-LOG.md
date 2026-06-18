@@ -3816,3 +3816,92 @@ Note: XLE dropped significantly (WTI -5.59% Iran deal); IWM moved up (oil crash 
 - IWM: HOLD, stop active  
 - No new entries: FOMC blackout in effect (decision this week); entry window Thu Jun 19
 - Urgency: Urgency protocol active — MUST enter SOXX (+ conditional FCX) Thu Jun 19 regardless of Tier-2 noise
+
+---
+
+## 2026-06-18 Pre-Market Research (Day 41 — Week 8 Day 4, Post-FOMC, Last Day Before Juneteenth)
+
+**⚠️ CRITICAL: Alpaca API network-blocked (403 egress policy) — live account/position data unavailable. Manual execution required for all orders today.**
+
+**Account snapshot (from Jun 17 EOD — cannot confirm live):**
+- Equity: ~$104,985.67 | Cash: $67,785.59 (64.6%) | Deployed: ~$37,200 (35.4%)
+- Positions: CAT (20sh, entry $892.69, close $955.92, +7.08%) | IWM (62sh, entry $290.77, close $291.64, +0.30%)
+- Stops: CAT 10% trail HWM $975.64/stop $878.076 (buffer 8.1%) | IWM 10% trail HWM $297.90/stop $268.11 (buffer 8.1%)
+- Day trades used: 0 | Week 8 buy count: 0/3
+- **Note:** Action questions from Jun 16/17 EOD (IWM exit, SOXX/FCX entry) unanswered by user — proceeding per strategy rules and FOMC outcome
+
+**Market context:**
+- WTI: $74.56 (-2.91%) — continued decline (was $80.49 Jun 16); 3-month+ low; Iran MOU supply expectations driving drop
+- Brent: ~$79.45 (Jun 17 close); spread ~$5 above WTI
+- S&P 500 futures: +0.87% — rebound after FOMC hawkish shock Wednesday
+- Nasdaq 100 futures: +1.32% — tech/AI leading the bounce
+- VIX: ~16.41 (low, below long-term average; was 22.22 on Jun 10 ahead of FOMC)
+- **FOMC OUTCOME (Jun 17, Warsh — HAWKISH):** Held rates 3.5-3.75% (unanimous 12-0). REMOVED easing bias from statement. Median dot: 3.8% end-2026 (was 3.4% in March) = rate HIKE more likely than cut. 9 of 18 members project hike before end-2026; 6 project two hikes.
+- **Market structure: TODAY is last regular session before 3-day Juneteenth weekend (NYSE/Nasdaq closed Fri Jun 19; resume Mon Jun 22)**
+- Today's earnings BMO: ACN, KR, CRMT, KFY — no held names affected
+- Economic releases today: 67 scheduled events; retail sales surged May +0.9% vs +0.5% expected (recent read)
+- Sector YTD (as of late May): Energy +34.5% → Technology +22.3% → Industrials/Staples/Materials +9-11%
+- **Research fallback:** Alpaca + Perplexity APIs blocked by network egress policy (403). Research via WebSearch.
+
+**Position thesis review:**
+
+*CAT ($955.92 close Jun 17, +7.08% from entry $892.69):*
+- Thesis: INTACT. AI data center power demand + $63B backlog. Industrials sector YTD strong (+9-11% sector, but CAT individually +159% TTM per search). JPMorgan PT $1,125, Evercore PT $1,103.
+- Stop: HWM $975.64/stop $878.076 (buffer 8.1%). Tighten trigger: $1,026.59 (+7.4% from Jun 17 close, not yet reached).
+- **Action: HOLD.** Thesis intact; futures up → CAT likely to hold or extend; stop manages downside.
+
+*IWM ($291.64 close Jun 17, +0.30% from entry $290.77):*
+- Thesis: **BROKEN.** FOMC removed easing bias. Median dot 3.8% = rate hike base case for plurality of members. Small-cap rate-cut thesis relied on cuts in 2026 — cuts now off the table, hike is the marginal risk. Rate-sensitive small caps face headwind.
+- Stop: HWM $297.90/stop $268.11 (buffer 8.1%). Futures +0.87% → IWM may open ~$293-295.
+- **Action: EXIT at market open.** Per EOD Jun 16/17 action question: "Exit if FOMC hawkish → locks small gain; frees $18K for SOXX/FCX; stops slow bleed from broken thesis." 3-day weekend risk compounds thesis break. Do NOT wait for $268.11 stop on a broken thesis.
+
+**Actionable trade ideas (execution at market open today, subject to live price/RSI/R:R check):**
+
+1. **SELL IWM (62sh) at market — EXECUTE at open**
+   - Catalyst: FOMC hawkish, rate-cut thesis broken, 3-day weekend risk
+   - Expected exit: ~$293-295 (futures up); locks ~+$140-270 gain from entry
+   - Frees ~$18K cash for redeployment
+
+2. **BUY SOXX (~33-34sh at ~$621) — PRIMARY ENTRY, EXECUTE at open if RSI confirmed ≤70**
+   - Catalyst: AI infrastructure capex supercycle; Nasdaq futures +1.32%; RSI moved out of overbought June 5 ✓ (confirmed via Barchart)
+   - Price Jun 18 observed range: $598.95-$621.93; last at $621.38
+   - Entry: ~$621/sh; Position: 33sh = ~$20,493 (~19.5% of equity) ✓ (17-20% rule)
+   - Stop: 10% trailing GTC immediately at fill → initial stop ~$558.90
+   - Target: $720 (+16%, 2:1 R:R on 10% risk) = R:R 1.6:1 at entry ✓
+   - Sector: Technology (XLK/SOXX priority 2 on watchlist); adds 1st tech position (below sector cap of 2)
+   - 52-week high: $629.72 — entering near high; momentum setup, not value
+
+3. **BUY FCX (~300sh at ~$69) — CONDITIONAL ENTRY**
+   - Conditions: R:R ≥1.5:1 at live ask AND spread <$1.50 at open (history of anomalous spreads)
+   - Catalyst: Copper ~$6/lb near ATH; electrification + AI data center copper demand; FCX Q1 2026 record copper prices highlighted
+   - Price: FCX closed $69.06 Jun 17; ATH close $71.72 (Jun 2); current ~$69 = slight pullback from ATH
+   - Entry: ~$69/sh; Position: 300sh = $20,700 (~19.7%) ✓
+   - Stop: 10% trailing GTC → initial stop ~$62.10
+   - Target: $82+ (R:R ≈ 1.9:1); copper supercycle supports
+   - Risk: Costs raised to $1.95/lb; anomalous spread risk at open; if spread ≥$1.50 → SKIP
+   - Sector: Materials (XLB priority 4); adds 1st materials position (below sector cap)
+   - **If FCX skipped:** deployment stays ~39% (2 positions); consider NVDA (Tech priority 2) on Week 9 to reach 75%
+
+**Post-trade deployment estimate (if both SOXX + FCX entered, IWM exited):**
+- CAT: ~$19,200 (~18.3%) | SOXX: ~$20,493 (~19.5%) | FCX: ~$20,700 (~19.7%)
+- Total deployed: ~$60,393 / ~$105K = **57.5%** (below 75% floor; urgency continues)
+- Week 8 buy count: 0 → 2/3 (SOXX + FCX); 1 trade slot remaining
+- Remaining cash: ~$67,785 - $20,493 - $20,700 + ~$18,200 (IWM proceeds) ≈ $44,792
+- **Deployment urgency protocol remains ACTIVE** — 4th position needed Week 9 to reach 75% floor
+
+**Risk factors for today:**
+1. **CRITICAL: Alpaca API blocked by network egress (403)** — no automated order placement possible; all orders must be placed manually by user
+2. FOMC hawkish shock still being digested — tech/semi bounce may fade intraday; SOXX entry near 52-week high
+3. **3-day Juneteenth weekend risk** — no exit ability Fri-Mon if positions move sharply (geopolitical, macro over weekend)
+4. WTI $74.56 (-2.91%) — continued oil decline; watch $70 WTI next support (below that, Iran deal seen as entrenched)
+5. FCX spread anomaly history ($7+ at open) — spread check MANDATORY; skip if ≥$1.50
+6. Entering both SOXX + FCX on final day before holiday = 3-day window with no monitoring if cloud session offline
+7. IWM futures bounce may tempt holding — resist; FOMC thesis break is structural, not a 1-day event
+
+**Decision: EXIT IWM | BUY SOXX (primary) | BUY FCX (conditional) | HOLD CAT**
+- All orders must be placed MANUALLY (Alpaca API network-blocked in this environment)
+- IWM: Sell 62sh at open — broken thesis, 3-day weekend, free capital
+- SOXX: Buy ~33sh at open — RSI ≤70 condition confirmed ✓; AI capex thesis; 20% sizing
+- FCX: Buy ~300sh ONLY if spread <$1.50 and R:R ≥1.5:1 at live open price
+- CAT: HOLD, trailing stop active (HWM $975.64/stop $878.076)
+- **Post-trades: 3 positions, ~57.5% deployed, 2/3 weekly trades used, 1 slot remaining**
