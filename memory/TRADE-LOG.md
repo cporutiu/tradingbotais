@@ -2761,3 +2761,9 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 - Rotate IWM → new name: frees slot; deployment stays ~75-76% after exit; Week 9 open slot available immediately — accepts +$293 IWM realized gain (small) to redeploy into higher-conviction name
 - Carry to Week 9: a GTC stop may trigger naturally; avoids forced rotation; deployment floor holds at 75.7% — delays 3rd slot; urgency partially resolved at 75.7%
 
+**Bot autonomous decision (2026-06-19): [Q1 — CAT auto-tighten to 7% trail when HWM hits $1,026.59] → CONFIRMED AUTO-TIGHTEN** — Consistent with every prior pattern (NVDA, AMD, XLK); no manual intervention needed. CAT at $985.82 (+10.43% from entry); trigger $1,026.59 = 4.1% above close. When HWM first touches $1,026.59: cancel aa646f6e, place 7% trailing stop GTC immediately. Active watch item.
+
+**Bot autonomous decision (2026-06-19): [Q2 — IWM exit vs hold to stop (FOMC hawkish, no 2026 cuts)] → HOLD TO STOP** — Pre-market data: Benzinga BUY high; RS #6 of 19 ETFs (strong relative momentum); IWM +1.94% on FOMC day = market validated thesis; Russell 2000 Q1 2026 EPS growth ~45% YoY provides fundamental support independent of rate-cut thesis; Tickeron target $300-$330; stop $268.11 (9.3% buffer from $295.59) manages max downside. GTC order 4c0586cc remains active.
+
+**Bot autonomous decision (2026-06-19): [Q3 — 5th position / IWM rotation, last Week 8 slot] → CARRY TO WEEK 9** — Market closed (Juneteenth holiday — no trading possible). Deployment 75.8% above 75% floor; urgency protocol resolved. 5th position at current prices would reach ~93% deployed (above 85% cap). AMD is the highest-conviction Week 9 candidate (confluent: Benzinga BUY medium + Congress BUY high, Gottheimer priority; Mizuho PT $615 at ~$500 entry = R:R 2.3:1 ✓) but only as IWM replacement to maintain ≤85% deployment cap.
+

@@ -3892,3 +3892,136 @@ No user decisions block found for EOD Jun 17. Two action questions unanswered. A
 - FCX skipped (R:R fails). XLE skipped (oil thesis broken).
 - CAT + IWM: HOLD per autonomous decisions.
 - **Post-entry deployment:** ~75.0% (4 positions: CAT + IWM + SOXX + QQQ). Week count: 2/3.
+
+---
+
+## 2026-06-19 — Pre-Market Research (Friday, Juneteenth Holiday — NO TRADING)
+
+### Account Snapshot (live API — pre-market 2026-06-19)
+- **Equity:** $106,334.47 | **Cash:** $25,711.66 (24.2%) | **Deployed:** $80,622.81 (75.8%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$6,334.47 (+6.33%) | **Week 8 trade count:** 2/3 (1 slot remaining)
+- **Market status: CLOSED — Juneteenth National Independence Day**
+
+### Positions (frozen at Jun 18 close — no intraday change today)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| CAT | 20 | $892.689 | $985.82 | +$1,862.62 (+10.43%) | 10% trail HWM $994.49 / stop $895.041 (auto-trailed ↑) |
+| IWM | 62 | $290.770 | $295.59 | +$298.85 (+1.66%) | 10% trail HWM $297.90 / stop $268.11 (locked) |
+| QQQ | 29 | $736.683 | $740.62 | +$114.16 (+0.53%) | 10% trail HWM $740.62 / stop $666.558 (new) |
+| SOXX | 33 | $627.579 | $639.45 | +$391.75 (+1.89%) | 10% trail HWM $641.75 / stop $577.575 (new) |
+
+### Open Orders (confirmed live)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $994.49, stop $895.041 (auto-trailed ↑)
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 (locked)
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $740.62, stop $666.558 (new)
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $641.75, stop $577.575 (new)
+
+### STEP 1B — Autonomous Decisions (EOD Jun 18 action questions — no user response)
+
+**Q1: CAT auto-tighten to 7% trail when HWM hits $1,026.59?**
+→ **BOT AUTONOMOUS DECISION: AUTO-TIGHTEN CONFIRMED.** Consistent with prior NVDA/AMD/XLK pattern; no manual intervention needed. CAT at $985.82 (+10.43% from entry); trigger $1,026.59 = 4.1% above close. Log as active watch item below. Execute: cancel aa646f6e, place 7% trailing stop GTC when HWM first touches $1,026.59.
+
+**Q2: IWM — FOMC hawkish (no 2026 cuts), exit now or hold to stop $268.11?**
+→ **BOT AUTONOMOUS DECISION: HOLD TO STOP.** Rationale: (1) IWM +1.94% on FOMC day — market validated despite hawkish outcome; (2) Benzinga BUY high today; (3) RS ranking: IWM #6 of 19 ETFs (strong relative momentum); (4) Russell 2000 Q1 2026 EPS growth ~45% YoY — structural earnings support independent of rate-cut thesis; (5) 175bps of prior cuts now flowing through small-cap balance sheets with 12-18mo lag; (6) Tickeron Jun 2026 roadmap targets IWM $300-$330; (7) stop $268.11 provides 9.3% buffer. HOLD.
+
+**Q3: Last slot (2/3 used Week 8) — rotate IWM or carry to Week 9?**
+→ **BOT AUTONOMOUS DECISION: CARRY TO WEEK 9.** Market closed today (no trading possible). Deployment 75.8% — above 75% floor; urgency protocol RESOLVED. 5th position would push to ~93% deployed (above 85% cap). AMD is the highest-conviction Week 9 candidate if IWM exits first (Benzinga BUY medium + Congress BUY high = confluent; Mizuho PT $615 → R:R 2.3:1 at ~$500 entry). AMD only enters as IWM replacement to keep deployment ≤85%.
+
+### Market Context
+- **WTI:** ~$77.07/bbl (Jun 19 per Trading Economics, +0.61% from $76.60 Jun 18 close; well below CVX $88 gate and XOM $95-96 gate; structural decline on Iran MOU/Hormuz normalization persisting)
+- **S&P 500 futures:** Not trading (Juneteenth holiday; Jun 18 Thursday was effective last session of week)
+- **VIX:** ~16.9 (FRED: Jun 16 = 16.41, Jun 15 = 16.20; declining from Jun 11 peak 19.44) — **LOW risk zone (<18)**
+- **Market risk:** Low
+- **Economic cycle:** mid-cycle — OECD CLI consistent with continued but moderating expansion; Conference Board, RSM, Deloitte projecting positive but modest GDP growth, stable unemployment, easing inflation
+
+### Economic Calendar — Week of June 22-26, 2026
+- **Mon Jun 22:** No major releases; post-Juneteenth reopen; watch Fed speakers (post-FOMC commentary period)
+- **Potential Tier-2 events Jun 23-26:** PMI/ISM data, housing data, Fed speakers — check live calendar Mon AM
+- **No confirmed Tier-1 blockers (CPI/NFP/FOMC) this week** — first clean entry window since Jun 9
+- **Week 9:** Fresh 3 trade slots (0/3); deployment 75.8% above floor; urgency protocol resolved
+
+### Benzinga Signals (Jun 19 — 24h lookback from Friday close)
+- **BUY (high):** SPY (score +6, 14x), IWM (score +3, 4x)
+- **BUY (medium):** QQQ (score +2, 8x), XLE (score +2, 2x), AMD (score +2, 13x), AVGO (score +2, 7x)
+- **SELL (high):** SOXX (score -4, 9x) ⚠️ — conflicts with new position entered Jun 18
+- **HOLD/low confidence:** GLD, SLV, XLF, XLK, XLV, XLU, XLI, XLB, XLP, XLY, XLC, XLRE, HYG, EEM, NVDA, CAT, XOM, FCX, CVX
+- **Note:** SOXX Benzinga SELL high is notable (entered $627.579 Jun 18; current $639.45). Monitoring closely but: RS #1, AI structural thesis intact ($975B semiconductor market 2026), stop $577.575 (9.7% buffer). Signal may reflect short-term technical concern after large run.
+
+### Congress Signals (Jun 18 filing — 45-day lookback)
+- **BUY (high):** AMD — Gottheimer [PRIORITY] May 5 filed Jun 3 + Apr 27 filed May 19; Cisneros May 14+15 filed Jun 8; 6 buys / 0 sells
+- **BUY (high):** FCX — Gottheimer [PRIORITY] Apr 15 filed May 19; 1 buy / 0 sells
+- **SELL (high):** NVDA — Van Epps Jun 16 filed Jun 17; Whitehouse May 8 (partial, $100K-$250K) filed Jun 2; McGuire Apr 15; 5 congress SELL total
+- **SELL (medium):** XOM — Van Epps Jun 16 filed Jun 17
+- **SELL (high):** AVGO — Moore Capito, Taylor Apr 27 filed May 7
+- Congress: no signals on CAT, IWM, QQQ, SOXX, CVX
+
+### Confluent Signals
+- **AMD: Benzinga BUY medium + Congress BUY high → CONFLUENT BUY (elevated conviction)** — AMD best Week 9 candidate. Mizuho PT $615 at $500 entry = R:R 2.3:1 ✓. Enter ONLY if IWM exits first (keeps deployment ≤85%). Active Week 9 watch.
+- **IWM: Benzinga BUY high → supports HOLD decision** (Q2 autonomous)
+- **SOXX: Benzinga SELL high vs new long → CONFLICT.** Hold to stop; AI structural thesis > short-term news signal.
+- **FCX: Congress BUY high** — persistent signal (Gottheimer priority). R:R still failing at ~$70. Monitor for pullback below $66 where R:R ≥1.5:1.
+
+### Perplexity Position Validation
+
+**CAT ($985.82, +10.43%) — HOLD:**
+- Analyst avg 12-month PT: $935.09 (MarketBeat 26 analysts) — below current; most Street targets priced in
+- JPMorgan PT $1,125 + Evercore PT $1,103 (bull case); LongForecast June end $1,013
+- Raised 2026 revenue outlook (low double-digit growth); record $63B backlog; AI data center "picks and shovels"
+- Stop HWM $994.49 / stop $895.041 (9.2% buffer from $985.82)
+- +15% tighten trigger: $1,026.59 = 4.1% above close — ACTIVE WATCH (Q1 autonomous confirmed auto-tighten)
+- Risk: valuation stretched (P/E ~32-38x forward); most analysts imply "upside already priced in"
+- **HOLD. Let trailing stop auto-tighten at $1,026.59 HWM.**
+
+**IWM ($295.59, +1.66%) — HOLD:**
+- IWM near 52-week highs; RS #6 of 19 ETFs (strong momentum)
+- Russell 2000 Q1 2026 EPS growth ~45% YoY; 175bps prior cuts now flowing through balance sheets
+- Tickeron June 2026 roadmap: IWM trend UP, target $300-$330
+- FOMC hawkish (no 2026 cuts) is headwind; alternative fundamental support intact (domestic EPS growth)
+- Stop HWM $297.90 / stop $268.11 (9.3% buffer)
+- Benzinga BUY high today — confirming hold
+- **HOLD to stop.**
+
+**QQQ ($740.62, +0.53%) — HOLD:**
+- RS #2 of 19 ETFs; Nasdaq-100 in strong trend
+- Options-implied expected move Jun 22 exp: ±$8.46 (1.14%), range $731-$748 — tight range expected
+- StockInvest fair value Jun 22: $738.32 (~flat from here)
+- Post-FOMC outlook: range-trading to mildly constructive; mega-cap AI/tech sensitivity to yields
+- Benzinga BUY medium today (held from BUY high Jun 18)
+- Stop HWM $740.62 / stop $666.558 (10.0% buffer)
+- **HOLD. Watch for new HWM Monday to auto-trail stop.**
+
+**SOXX ($639.45, +1.89%) — HOLD (with Benzinga conflict noted):**
+- RS #1 of 19 ETFs — strongest 20-day momentum in universe
+- AI chip TAM: $975B global semiconductor sales 2026 (gen-AI chips $500B); structural demand intact
+- BlackRock: ~99% 1-year NAV return as of Jun 17 — exceptional run
+- Seeking Alpha "Strong Sell" (valuation stretched); Tickeron flags Bollinger Band break in May
+- Options-implied expected move for Jun 22-26 week: ±$51.05 (8.14%), range $575-$678 — stop $577.575 at bottom of range
+- Benzinga SELL high (today): short-term technical concern vs structural AI thesis
+- Entry $627.579 Jun 18; stop $577.575 (9.7% buffer from $639.45)
+- **HOLD to stop. AI thesis structural; RS momentum #1; Benzinga signal = short-term noise on holiday weekend.**
+
+### Trade Ideas
+1. **ALL POSITIONS — HOLD.** Market closed today (Juneteenth). No action possible.
+2. **AMD — Week 9 candidate (Mon Jun 22 or later, IF IWM exits first):** Confluent signal (Benzinga BUY medium + Congress BUY high, Gottheimer priority). Entry ~$500, Mizuho PT $615, R:R 2.3:1 ✓. 17-20% sizing (~38-40sh @$500 = $19K-$20K). Only enter if IWM exits first (5th position = deployment ~93% > 85% cap).
+3. **FCX — Watchlist:** Congress BUY high (Gottheimer priority). Copper structural thesis. Needs pullback below $66 for R:R ≥1.5:1. Not actionable at ~$70.
+
+### Active Watch Items (carrying into Week 9)
+- **CAT +15% tighten:** When HWM hits $1,026.59 — cancel aa646f6e, place 7% trailing GTC. Bot autonomous decision confirmed. Currently $994.49 HWM, need +$32.10 more.
+- **SOXX Benzinga conflict:** Watch Monday open. If SOXX gaps down below $620 (breaks June entry range), re-evaluate thesis vs Benzinga signal. Stop $577.575 intact.
+- **IWM:** Monitor for stop trigger or proactive exit opportunity if thesis deteriorates further.
+- **AMD (Week 9):** Confluent BUY candidate; enter only after IWM slot frees up.
+
+### Risk Factors
+- **SOXX Benzinga SELL high:** Valuation risk after ~99% 1-year run; options imply ±8% weekly move
+- **CAT near all-time high:** Most Street targets ($935-$957) imply flat-to-down from $985; overvaluation concern if macro slows
+- **WTI $77 (-21.6% in 1 month):** Oil structural decline; energy sector drag continuing
+- **IWM hawkish Fed overhang:** No rate cuts expected 2026; thesis impaired but alternative support intact
+- **Week 9 deployment:** 75.8% — above floor; no urgency. 3 fresh slots. AMD is best candidate but only as IWM replacement.
+
+### Decision
+**HOLD — no trading today (Juneteenth market holiday).**
+All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 18 action questions. Monitor Monday Jun 22 open for:
+1. SOXX Monday gap/price action (Benzinga SELL high conflict)
+2. CAT approach to +15% tighten threshold ($1,026.59)
+3. AMD entry opportunity if IWM exits
+4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
