@@ -592,3 +592,90 @@ _Rationale: +0.20% relative outperformance vs S&P in a mixed macro week is modes
 - SOXX Thu only, stagger 2nd to Fri Jun 20: Reduces gap-up risk on most volatile post-FOMC day; allows one session to see how FOMC trades before committing second position; avoids chasing
 
 ---
+
+## Week ending 2026-06-19
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $105,061.17 (Jun 12 EOD / Week 7 end) |
+| Ending portfolio | $106,334.47 |
+| Week return | +$1,273.30 (+1.21%) |
+| S&P 500 week | ~+0.70% (4-day week; Jun 15–18; Juneteenth holiday Jun 19) |
+| Bot vs S&P | +0.51% |
+| Phase P&L | +$6,334.47 (+6.33% from $100,000 start) |
+| Trades | 3 (W:0 / L:1 / open:4) — 1 closed (CVX), 2 new buys (SOXX + QQQ) |
+| Win rate | 0% (0/1 closed trades — CVX was only close) |
+| Best trade | CAT +10.43% unrealized (+$1,862 — surged all week on AI power demand) |
+| Worst trade | CVX -2.13% ($-401 realized — WTI structural break exit) |
+| Profit factor | N/A (0 winners, 1 loser) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| CVX | $182.364 (May 29) | ~$178.47 (Jun 15) | -$401.04 (-2.13%) | Autonomous bot exit: WTI $80.14 ≤ $80 structural break floor; US-Iran MOU signed Jun 14-15; 17-day hold; stopped slow-bleed |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CAT | $892.689 | $985.82 | +$1,862.62 (+10.43%) | 10% trail HWM $994.49 / stop $895.041 (aa646f6e) |
+| IWM | $290.770 | $295.59 | +$298.85 (+1.66%) | 10% trail HWM $297.90 / stop $268.11 (4c0586cc) |
+| QQQ | $736.683 | $740.62 | +$114.16 (+0.53%) | 10% trail HWM $740.62 / stop $666.558 (ce15a8ec) |
+| SOXX | $627.579 | $639.45 | +$391.75 (+1.89%) | 10% trail HWM $641.75 / stop $577.575 (c3ca7db2) |
+
+### Sector Watchlist — Week 9 (Jun 23–27)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | AMD | If IWM exits Mon Jun 23 → enter AMD same session (~40sh @~$500, ~$20K); Mizuho PT $615, R:R 2.3:1; Congress BUY high (Gottheimer); only as IWM replacement to stay ≤85% cap |
+| 2 | Industrials | XLI | CAT (held) | Hold to stop $895.041; auto-tighten to 7% trail when HWM first hits $1,026.59 (+15%) — active watch; Q2 earnings late July |
+| 3 | Technology | SOXX/QQQ | SOXX (held) | Hold to stop $577.575; AI structural thesis overrides Benzinga SELL high; watch RSI divergence |
+| 4 | Materials | XLB | GLD/XLB | FCX abandoned (5th consecutive R:R failure, same underlying problem); GLD or XLB as macro hedge if slot opens |
+
+### What Worked
+- Urgency protocol drove deployment: SOXX+QQQ entered Thu Jun 18, pushing portfolio from 35% → 75.8% — first time above 75% floor in several weeks
+- Autonomous bot decisions all correct (5-for-5): CVX structural exit at WTI $80, IWM HOLD (mid-cycle EPS growth), SOXX+QQQ timing (enter Thu not Fri due to Juneteenth), CAT auto-tighten confirm
+- Triple witching + Juneteenth awareness: correctly chose to enter Thu Jun 18 not Fri Jun 19 (closed holiday), capturing post-FOMC recovery in a single session
+- CAT alpha engine firing: +10.43% unrealized; surged from +5.77% (Jun 12 EOD) through FOMC week on ISM expansion + AI power demand; approaching +15% auto-tighten trigger
+- Post-FOMC deployment captured: SOXX +1.89% and QQQ +0.53% in 1 session; structural AI demand thesis holding despite hawkish FOMC
+
+### What Didn't Work
+- CVX crystallized a -$401 loss — correct thesis-break exit, but position never generated meaningful profit; 17-day hold returned -2.13%
+- IWM 17-day slow-bleed: only +1.66% over 17 days; FOMC hawkish (no 2026 rate cuts) structurally impairs rate-cut thesis; 2-week slow-bleed rule triggered; weakest link in portfolio
+- FOMC blackout (Mon–Wed) + Juneteenth (Fri) compressed 5-day week to 1 deployable session (Thu Jun 18); structural calendar constraint
+- FCX blocked for 5th consecutive attempt: median PT $70.50 ≈ $70 ask = zero reward; Materials sector empty all phase
+- 2/3 slots used — cannot add 5th position without breaching 85% deployment cap
+
+### Key Lessons
+- Autonomous decisions work: 5 unanswered action questions, bot made correct calls on all 5; clear threshold rules + pre-screened candidates support reliable independent execution
+- FOMC + holiday calendar pairs compress entry windows to single sessions; deploy aggressively on the first available day rather than waiting for a "better price" the following session
+- CVX thesis break exit validated: -2.13% taken vs -4.9% at stop; Iran MOU was structural; stopping bleed early was correct even at a loss
+- CAT is the portfolio's alpha engine: entered May 5 at $892.689, now +10.43%; ISM expansion + $63B backlog + AI power grid = durable multi-month thesis; +15% tighten imminent
+- 85% deployment cap creates a natural 4-position ceiling at ~19% each; IWM is the natural recycling candidate (weak thesis → stronger AMD slot)
+
+### Adjustments for Next Week
+- **IWM exit Mon Jun 23:** 2-week slow-bleed rule triggered; rate-cut thesis broken (FOMC hawkish); exit at market open Mon Jun 23; lock in +$299 gain; free $18.3K for AMD
+- **AMD entry if IWM exits (Mon Jun 23):** ~40sh @~$500 (~$20K, 18.8% of equity); Mizuho PT $615, R:R 2.3:1; Congress BUY high (Gottheimer); 10% trailing stop at fill immediately
+- **CAT auto-tighten (active watch):** When HWM first touches $1,026.59 → cancel aa646f6e, place 7% trailing stop GTC immediately; CAT at $985.82 = 4.1% away; pre-authorized Jun 19
+- **SOXX Benzinga SELL conflict:** AI structural thesis overrides; stop $577.575 (9.7% buffer) manages downside; no action needed — monitor RSI and any news catalyst
+- **FCX: permanently abandoned** per strategy rule (2+ consecutive failures on same underlying problem); pivot to GLD or XLB if Materials slot available
+- **Deployment:** After IWM exit + AMD entry → 4 positions ~75-77%; do NOT add 5th unless a position exits; 85% cap holds
+
+### Overall Grade: B+
+
+_Rationale: +0.51% outperformance vs S&P; deployment restored to 75.8% after chronic under-deployment; CAT at +10.43% driving unrealized gains; autonomous bot decisions 5-for-5; post-FOMC execution correct. Deducted for: CVX closed at a loss (0% win rate on closed trades), IWM slow-bleed entering Week 9, FOMC+Juneteenth compressed entry to 1 session, FCX blocked for 5th time._
+
+### Next-week Decisions
+
+**Q: IWM — 2-week slow-bleed rule triggered (17 days, +1.66%). FOMC hawkish (no 2026 cuts). Exit Monday Jun 23 or hold to stop $268.11?**
+- Exit Monday: slow-bleed rule exists to prevent capital from rotting in low-conviction slots; rate-cut thesis broken; frees $18.3K for AMD (R:R 2.3:1); locks in +$299 gain now — forfeits mechanical stop protection; risk of selling before a mid-cycle EPS catalyst rallies small-caps
+- Hold to stop ($268.11, 9.3% buffer): bot already chose HOLD (Russell 2000 ~45% EPS growth, Benzinga BUY high, market resilience post-FOMC); stop manages max downside — broken rate-cut thesis rarely recovers cleanly; 17 days of +1.66% is below any reasonable alpha bar
+
+**Q: AMD entry if IWM exits — enter Monday at market, or wait for limit at $498-502?**
+- Enter Monday at market: fills slot immediately; Congress BUY Gottheimer priority is time-sensitive; avoids missing the move if AMD opens strong — gap-up risk on Monday open; paying up into momentum
+- Wait for limit $498-502: better entry improves R:R margin (Mizuho $615 PT; every dollar lower adds to upside); avoids chasing — AMD could run Monday without pulling back; slot goes unused
+
+**Q: CAT +15% auto-tighten — confirm cancel aa646f6e and place 7% trail GTC when HWM hits $1,026.59?**
+- Auto-tighten (bot pre-authorized): consistent with NVDA/AMD/XLK pattern; no manual intervention needed; mechanically locks floor gain — normal volatility could shake out 7% trail prematurely if trigger is hit on an intraday spike
+- Manual check first: review market conditions the day trigger approaches; more control — adds delay risk if trigger is hit and reversed intraday before bot can execute replacement
+
+---
