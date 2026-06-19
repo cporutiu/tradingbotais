@@ -2814,3 +2814,33 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 - **Portfolio:** Equity $106,334.47 | Cash $25,711.67 (24.2%) | Deployed $80,622.81 (75.8%, 4 positions) | Phase P&L: +$6,334.47 (+6.33%) | Week 8 count: 2/3
 - **No action taken. No ClickUp notification.**
 
+---
+
+## Jun 19 — EOD Snapshot (Day 42, Friday — Week 8 Day 5, Juneteenth Holiday — Market Closed)
+**Portfolio:** $106,334.47 | **Cash:** $25,711.66 (24.2%) | **Day P&L:** +$55.25 (0.00% — market closed, pricing artifact) | **Phase P&L:** +$6,334.47 (+6.33%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CAT | 20 | $892.689 | $985.82 | 0% | +$1,862.62 (+10.43%) | 10% trail HWM $994.49 / stop $895.041 (aa646f6e) |
+| IWM | 62 | $290.770 | $295.59 | 0% | +$298.85 (+1.66%) | 10% trail HWM $297.90 / stop $268.11 (4c0586cc) |
+| QQQ | 29 | $736.683 | $740.62 | 0% | +$114.16 (+0.53%) | 10% trail HWM $740.62 / stop $666.558 (ce15a8ec) |
+| SOXX | 33 | $627.579 | $639.45 | 0% | +$391.75 (+1.89%) | 10% trail HWM $641.75 / stop $577.575 (c3ca7db2) |
+
+**Notes:** Day 42, Friday — Juneteenth National Independence Day. Markets closed all session. Zero trading activity; all 4 positions frozen at Jun 18 close. Tiny equity delta (+$55.25) is a pricing artifact — no real P&L. Entering Week 9 (Jun 23–27) with 4 positions (75.8% deployed), 3/3 fresh trade slots. Key watch items: (1) IWM slow-bleed rule triggered — 17 days at only +1.66%, FOMC confirmed hawkish (no 2026 rate cuts), rate-cut thesis impaired; (2) CAT auto-tighten: cancel aa646f6e → 7% trail GTC when HWM first hits $1,026.59 (currently 4.1% away at $985.82); AMD remains primary Week 9 candidate if IWM exits (Mizuho PT $615, R:R 2.3:1, ~$500 entry).
+
+**Open Orders (all 4 trailing stops confirmed active):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $994.49, stop $895.041 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $740.62, stop $666.558 ✓
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $641.75, stop $577.575 ✓
+
+**Action questions:**
+
+**Q1: IWM — 2-week slow-bleed rule triggered (17 days, +1.66%). FOMC confirmed hawkish (no 2026 rate cuts). Exit IWM at Monday open, or hold to stop $268.11?**
+- Exit Monday: stops a slow-bleed before it deepens; rate-cut thesis broken; frees $18.3K for AMD (R:R 2.3:1, stronger catalyst stack); locks in small +$299 gain → you forfeit the stop's downside protection and might miss a recovery if market re-prices rate expectations
+- Hold to stop ($268.11): GTC order manages max downside (9.3% buffer); market held post-FOMC (resilience signal); mid-cycle EPS growth provides alternative fundamental support → broken rate-cut thesis rarely recovers; 17 days of stagnation is a warning sign
+
+**Q2: If IWM exits — enter AMD at Week 9 open (Mon/Tue), or wait for a pullback entry?**
+- Enter Mon/Tue at market: fills deployment gap immediately; AMD thesis intact (Mizuho PT $615, R:R 2.3:1; Congress BUY high, Gottheimer priority); avoids missing the move → paying up into any Monday gap; market-open price risk
+- Wait for limit at $498–502: better entry improves R:R margin; avoids chasing → AMD could run Monday without a clean pullback; Week 9 slot goes unused while waiting
+
