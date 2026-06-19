@@ -3892,3 +3892,77 @@ No user decisions block found for EOD Jun 17. Two action questions unanswered. A
 - FCX skipped (R:R fails). XLE skipped (oil thesis broken).
 - CAT + IWM: HOLD per autonomous decisions.
 - **Post-entry deployment:** ~75.0% (4 positions: CAT + IWM + SOXX + QQQ). Week count: 2/3.
+
+---
+
+## 2026-06-19 — Pre-Market Research (Friday, Week 8 Day 5 — Juneteenth, MARKET CLOSED)
+
+### ⚠️ Infrastructure Alert
+- **Alpaca API (paper-api.alpaca.markets): BLOCKED** — network egress policy does not allow this host. Cannot pull live account, positions, or orders. GTC stops placed Jun 18 remain active on Alpaca servers independently; no bot action possible until egress policy is updated.
+- **Perplexity API (api.perplexity.ai): BLOCKED** — same network egress restriction. Falling back to WebSearch for all market research.
+- **ClickUp API (api.clickup.com): BLOCKED** — cannot post notification. Using PushNotification tool instead.
+- Account state below is last known from TRADE-LOG.md EOD Jun 18.
+
+### Account Snapshot (last known — EOD Jun 18)
+- **Equity:** $106,279.22 | **Cash:** $25,711.67 (24.2%) | **Deployed:** ~$80,567 (75.8%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$6,279.22 (+6.28%) | **Week count:** 2/3 | **Deployment:** above 75% floor; urgency resolved
+
+### Positions (last known — close Jun 18)
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop (HWM / Level) |
+|--------|--------|-------|-----------|------------|---------------------|
+| CAT | 20 | $892.689 | $985.82 | +$1,862.62 (+10.43%) | HWM $994.49 / stop $895.041 |
+| IWM | 62 | $290.770 | $295.50 | +$293.27 (+1.63%) | HWM $297.90 / stop $268.11 |
+| QQQ | 29 | $736.683 | $739.84 | +$91.54 (+0.43%) | HWM $740.62 / stop $666.558 |
+| SOXX | 33 | $627.579 | $638.63 | +$364.69 (+1.76%) | HWM $641.75 / stop $577.575 |
+
+### Open Orders (last known — EOD Jun 18)
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $994.49, stop $895.041
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $740.62, stop $666.558
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $641.75, stop $577.575
+
+### Market Context (WebSearch fallback — Perplexity blocked)
+- **MARKET STATUS:** CLOSED — Juneteenth national holiday (June 19). No trading. Reopens Monday June 22.
+- **Triple witching:** Quarterly expiration moved to Thursday June 18 per holiday. Bot correctly entered SOXX + QQQ on Thursday. ✓
+- **Oil:** Brent ~$79.95 (+0.12% from Thu). WTI ~$74.60-$79.93 range. US-Iran deal signed today in Switzerland (60-day agreement to reopen Strait of Hormuz). Oil decline continues; energy sector headwind confirmed. XLE remains SKIP.
+- **VIX:** ~15.77-16.41 (as of Jun 16 close; trending down from 22.22 on Jun 10 peak). LOW risk environment.
+- **S&P 500 / Nasdaq:** Market closed today. Thu close: S&P recovering post-FOMC; Nasdaq +AI momentum; SOXX near 52-week high $629.72.
+- **FOMC:** Hawkish hold confirmed (Warsh). No 2026 rate cuts. IWM rate-cut thesis structurally impaired.
+- **Intel / chips:** Trump announced Intel to design+build chips domestically with Apple. SOXX-adjacent positive catalyst.
+- **CAT June performance:** +11.5% month-to-date. BofA and Bernstein bullish on E&T segment (AI data center power + oil/gas pipelines + infrastructure). Dividend +8% ($1.63/qtr) Jun 10. BUT trailing P/E stretched to 42x — valuation risk.
+- **SOXX (Jun 16 close $628.10):** Near 52-week high $629.72. AI semiconductor TAM $975B 2026 (26% growth). Strong buy signal. Valuation concern: forward P/E ~42x, trailing P/E 76x. Entry $627.579 is essentially at recent high.
+- **IWM:** Hawkish Fed + $368B debt maturity wall at 6.5% rates + 40% unprofitable Russell 2000. Rate-cut thesis broken. Earnings growth (43% consensus) provides partial offset. IWM gained +11.7% in April — seasonal tailwind. PCE Thursday June 25 = headline risk.
+
+### Week Ahead (June 22-26) — Key Events
+| Date | Event | Risk |
+|------|-------|------|
+| Tue Jun 23 | Flash PMI (US, Eurozone, Germany, UK) | Moderate |
+| Thu Jun 25 | **US PCE Price Index** (consensus 3.4%) + Final GDP | **HIGH — IWM / rate-sensitive** |
+| Thu Jun 25 | Final US Q1 GDP estimate | Low |
+
+**PCE June 25** is the critical event. If PCE comes in at/above 3.4%, further hawkish pressure compounds IWM's already-impaired rate thesis. This is the key decision point for IWM exit vs. hold-to-stop.
+
+### Position Analysis
+- **CAT:** Thesis intact and strengthening. AI data center power demand + BofA/Bernstein bullish + dividend hike. Stop auto-trailing up. Watch +15% tighten trigger at $1,026.59 (4.1% above Jun 18 close). HOLD.
+- **IWM:** Rate-cut thesis broken (hawkish FOMC). Partial offset: mid-cycle EPS growth + April seasonal strength. PCE Jun 25 = directional signal. Stop at $268.11 (9.3% buffer from Jun 18 close) manages downside. HOLD to stop pending PCE read.
+- **QQQ:** Post-FOMC recovery; AI/tech momentum; US-Iran deal reduces geopolitical anxiety. Stop auto-trailing. HOLD.
+- **SOXX:** Entry near 52-week high; AI semiconductor demand structural; Intel/Trump domestic chip news positive. Stop auto-trailing. HOLD.
+- **3rd slot (Week 8):** Deployment 75.8% — adding 5th position would push to ~93%, exceeding 85% cap. Carry slot to Week 9. No trade this week.
+
+### Risk Factors
+- **Alpaca API blocked:** Cannot verify stop levels at Monday open. Manual check required from user or environment fix needed.
+- **PCE June 25:** Hot print (>3.4%) → hawkish pressure → IWM further impaired; potential IWM exit signal.
+- **CAT P/E 42x:** Stretched valuation — any backlog slowdown or guidance cut = severe multiple compression. CAT stop at $895.041 provides 9.3% protection.
+- **SOXX entry at 52-week high:** Limited upside buffer before valuation drag; stop $577.575 provides 9.5% floor.
+- **US-Iran deal (positive):** 60-day ceasefire → oil price declining → relieves energy-driven inflation → mildly positive for growth/tech (SOXX/QQQ) but reduces oil/energy names.
+- **Network egress policy:** All external API calls (Alpaca, Perplexity, ClickUp) blocked in this execution environment. Routine cannot monitor or trade until policy is updated.
+
+### Decision
+**HOLD — markets closed today (Juneteenth). No trades possible. All 4 trailing stops active on Alpaca servers.**
+- Deployed 75.8% (above floor). Urgency protocol resolved. Week 2/3 used.
+- Carry 3rd slot to Week 9 (deployment cap constraint).
+- Monitor PCE Jun 25 for IWM exit decision.
+- Watch CAT for +15% tighten at $1,026.59.
+- **ACTION REQUIRED (Monday Jun 22):** Resolve EOD Jun 18 action questions (Q1 CAT tighten pre-auth, Q2 IWM exit/hold, Q3 slot rotation). Answers in TRADE-LOG.md block below EOD Jun 18 questions.
+- **INFRASTRUCTURE REQUIRED:** Fix network egress policy to allow paper-api.alpaca.markets, api.perplexity.ai, api.clickup.com before next routine run.
+
