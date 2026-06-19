@@ -2767,3 +2767,50 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 
 **Bot autonomous decision (2026-06-19): [Q3 — 5th position / IWM rotation, last Week 8 slot] → CARRY TO WEEK 9** — Market closed (Juneteenth holiday — no trading possible). Deployment 75.8% above 75% floor; urgency protocol resolved. 5th position at current prices would reach ~93% deployed (above 85% cap). AMD is the highest-conviction Week 9 candidate (confluent: Benzinga BUY medium + Congress BUY high, Gottheimer priority; Mizuho PT $615 at ~$500 entry = R:R 2.3:1 ✓) but only as IWM replacement to maintain ≤85% deployment cap.
 
+## 2026-06-19 — Market-Open Execution (Friday, Juneteenth Holiday — NO TRADING)
+
+**Market closed — Juneteenth National Independence Day. No orders possible.**
+
+**Account (live API, holiday freeze):** Equity $106,334.47 | Cash $25,711.66 (24.2%) | Deployed $80,622.81 (75.8%) | DT count: 0 | Phase P&L: +$6,334.47 (+6.33%) | Week 8 count: 2/3
+
+**Positions (frozen at Jun 18 close):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| CAT | 20 | $892.689 | $985.82 | +$1,862.62 (+10.43%) | 10% trail HWM $994.49 / stop $895.041 (aa646f6e) |
+| IWM | 62 | $290.770 | $295.59 | +$298.85 (+1.66%) | 10% trail HWM $297.90 / stop $268.11 (4c0586cc, locked) |
+| QQQ | 29 | $736.683 | $740.62 | +$114.16 (+0.53%) | 10% trail HWM $740.62 / stop $666.558 (ce15a8ec) |
+| SOXX | 33 | $627.579 | $639.45 | +$391.75 (+1.89%) | 10% trail HWM $641.75 / stop $577.575 (c3ca7db2) |
+
+**Open Orders (confirmed active — all 4 trailing stops intact):**
+- Sell 20 CAT trailing_stop 10% GTC (aa646f6e): HWM $994.49, stop $895.041 ✓
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $297.90, stop $268.11 ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $740.62, stop $666.558 ✓
+- Sell 33 SOXX trailing_stop 10% GTC (c3ca7db2): HWM $641.75, stop $577.575 ✓
+
+**Hard checks:**
+- No trades executed (market closed) ✓
+- Positions: 4 (≤6) ✓
+- Deployment: 75.8% (75-85% floor met) ✓
+- Week count: 2/3 | DT count: 0/3 ✓
+- CAT auto-tighten watch: $985.82 vs $1,026.59 trigger (4.1% away) — active ✓
+- Losers cut: None. All 4 positions above -7% threshold ✓
+
+**Watch items for Week 9 (opens Mon Jun 23, fresh 3/3 slot cap):**
+- AMD: primary candidate if IWM exits (Mizuho PT $615, ~$500 entry = R:R 2.3:1; Benzinga BUY medium + Congress BUY high, Gottheimer). Only enters as IWM replacement — 5th position at current prices exceeds 85% cap.
+- CAT stop tighten: cancel aa646f6e → new 7% trail GTC when CAT HWM first hits $1,026.59.
+- No new entries possible at current deployment without an exit.
+
+**No ClickUp notification sent (no trades placed).**
+
+**Midday 2026-06-19 (Juneteenth — market closed):**
+- **Market closed.** No intraday price movement (all change_today = 0). Positions frozen at Jun 18 close.
+- **CAT:** $985.82 (+10.43% from entry $892.689). Stop aa646f6e HWM $994.49 / stop $895.041 (10% trail). +15% tighten trigger $1,026.59 = 4.1% above close — ACTIVE WATCH. Thesis intact.
+- **IWM:** $295.59 (+1.66% from entry $290.770). Stop 4c0586cc HWM $297.90 / stop $268.11 (10% trail, locked). Thesis intact.
+- **QQQ:** $740.62 (+0.53% from entry $736.683). Stop ce15a8ec HWM $740.62 / stop $666.558 (10% trail). Thesis intact.
+- **SOXX:** $639.45 (+1.89% from entry $627.579). Stop c3ca7db2 HWM $641.75 / stop $577.575 (10% trail). Benzinga SELL high conflict noted — AI structural thesis overrides short-term signal; stop intact.
+- **Losers cut:** None (-7% threshold not breached: all positions positive)
+- **Stop tightening:** None (+15% thresholds not reached: CAT $1,026.59 / IWM $334.39 / QQQ $847.19 / SOXX $721.72 — all unreached)
+- **Thesis break:** None. All 4 intact.
+- **Portfolio:** Equity $106,334.47 | Cash $25,711.67 (24.2%) | Deployed $80,622.81 (75.8%, 4 positions) | Phase P&L: +$6,334.47 (+6.33%) | Week 8 count: 2/3
+- **No action taken. No ClickUp notification.**
+
