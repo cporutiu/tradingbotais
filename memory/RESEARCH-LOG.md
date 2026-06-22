@@ -4025,3 +4025,131 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+---
+
+## 2026-06-22 Pre-Market Research (Week 9 Day 1, Monday)
+
+**⚠️ API NOTE:** Alpaca + Perplexity blocked by cloud egress policy. Account state = last known (Jun 19). Market data via WebSearch fallback.
+
+### Account Snapshot (last known — Jun 19, Juneteenth close)
+- **Equity:** $106,334.47 | **Cash:** $25,711.66 (24.2%) | **Deployed:** $80,622.81 (75.8%, 4 positions)
+- **Phase P&L:** +$6,334.47 (+6.33%) | **DT count:** 0/3 | **Week 9 slots:** 3/3 fresh
+
+| Ticker | Shares | Entry | Last Close | Unrealized | Stop |
+|--------|--------|-------|------------|------------|------|
+| CAT | 20 | $892.689 | $985.82 | +$1,862.62 (+10.43%) | 10% trail HWM $994.49 / stop $895.041 (aa646f6e) |
+| IWM | 62 | $290.770 | $295.59 | +$298.85 (+1.66%) | 10% trail HWM $297.90 / stop $268.11 (4c0586cc) |
+| QQQ | 29 | $736.683 | $740.62 | +$114.16 (+0.53%) | 10% trail HWM $740.62 / stop $666.558 (ce15a8ec) |
+| SOXX | 33 | $627.579 | $639.45 | +$391.75 (+1.89%) | 10% trail HWM $641.75 / stop $577.575 (c3ca7db2) |
+
+### STEP 1B — Pending User Decisions Review
+- **Jun 19 EOD Q1 (IWM exit vs hold):** No user decision block found. No autonomous bot decision logged either. UNRESOLVED → addressed below.
+- **Jun 19 EOD Q2 (AMD entry timing):** No user decision. Conditional on Q1. Addressed below.
+- **Jun 18 confirmed autos carried forward:**
+  - CAT auto-tighten at HWM $1,026.59 → 7% trail GTC (ACTIVE WATCH — HWM $994.49, need +$32.10)
+
+### Market Context (WebSearch fallback — noted)
+
+**Oil:**
+- WTI: $74.92–$78.08 trading range (premarket Jun 22); US-Iran peace talks progressing → supply concerns easing → oil -1.6% intraday
+- Brent: ~$80.05–$81.11 open range
+- Energy sector drag continues; oil -21.6% over past month
+
+**Equity Futures:**
+- ES (Jun '26): +0.98% premarket → sharply higher open expected
+- Catalyst: US-Iran peace talks reducing geopolitical risk premium; lower energy prices = margin tailwind
+
+**VIX:**
+- ~16.41 as of Jun 16 close; was 22.22 on Jun 10 (post-FOMC fear spike)
+- Trending lower — mildly constructive risk environment entering Week 9
+- Long-term avg ~20; current below-avg = calm
+
+**This Week's Economic Calendar (key dates):**
+- Mon Jun 22: No major releases
+- Wed Jun 24: **Micron (MU) earnings AMC** — Q3 FY2026 EPS est. $19.95; massive HBM/AI demand thesis; MU +70% YTD at ~$1,145; elevated expectations = high vol risk for entire chip complex (SOXX, QQQ, AMD)
+- Thu Jun 26: **May PCE + Core PCE** (Fed's preferred inflation measure; expected elevated given Middle East energy prices) — named blocking catalyst for new entries this week
+
+**Sector Momentum YTD:**
+- Leading: Energy (XLE), Industrials (XLI), Materials (XLB) — CAT thesis intact ✓
+- Lagging: Technology (XLK), Consumer Discretionary, Communications
+- Materials YTD +22%; Tech cooling after massive AI run
+- Momentum factor outperforming; Industrials structural tailwind (CAT thesis confirmed)
+
+**No earnings BMO today (Jun 22). FDX reports Tue AMC.**
+
+### Position Validation
+
+**CAT ($985.82, +10.43%) — HOLD:**
+- Trading above analyst avg target ($946); 52-week HWM $994.49 matches our stop HWM
+- Up 60%+ YTD. Power/Energy/AI data center thesis intact; record $63B backlog; 32nd consecutive dividend increase (+8%)
+- Industrials = Leading sector ✓
+- Auto-tighten watch: HWM $994.49 → need +$32.10 to hit $1,026.59 trigger. With ES +0.98% today, CAT may push toward trigger.
+- Risk: valuation stretched (P/E ~32-38x); tariff headwind $2.2-2.4B FY2026. Most Street targets already exceeded.
+- **HOLD. Cancel aa646f6e + place 7% trail GTC the moment HWM hits $1,026.59.**
+
+**IWM ($295.59, +1.66%) — AUTONOMOUS EXIT RECOMMENDATION:**
+- Slow-bleed rule triggered: 22+ days, only +1.66% (+$299 on $18K position)
+- FOMC hawkish confirmed (Warsh): no 2026 rate cuts → structural headwind to rate-sensitive small caps
+- Rate-cut thesis: impaired. Alternative (mid-cycle EPS growth) weakening relative to hawkish macro
+- Jun 21 intraday dip to $291.42 — momentum fragmenting
+- PCE Thursday = additional hawkish risk to small caps
+- Stop $268.11 = 9.2% more downside exposure vs +1.66% current gain → negative R:R to hold
+- **Autonomous bot decision (Jun 22): EXIT IWM at market open.** Small gain locked (+$299), $18.3K freed.
+- Note: AMD at $537 = R:R degraded (see below). IWM exit doesn't trigger AMD entry automatically.
+
+**QQQ ($740.62, +0.53%) — HOLD:**
+- RS #2 of 19 ETFs; Nasdaq-100 in strong trend
+- Micron earnings Wed AMC = risk event; chip-complex volatility expected Wed-Thu
+- ES +0.98% today → QQQ likely gaps up; new HWM may auto-trail stop higher
+- Stop ce15a8ec HWM $740.62 / stop $666.558 (10% buffer); intact
+- **HOLD. Monitor Micron Wed — no action needed through close.**
+
+**SOXX ($639.45, +1.89%) — HOLD (Benzinga SELL high conflict remains):**
+- RS #1 of 19 ETFs; SK Hynix +350% YTD confirming AI/HBM structural demand
+- Micron earnings Wed AMC = major catalyst (positive outcome = SOXX pop; miss = SOXX -8% implied)
+- Benzinga SELL high still active; options imply ±8% weekly move; stop $577.575 at bottom of implied range
+- Memory chip sector surging today (MU +3%, WDC +5.2% premarket) → SOXX positive open expected
+- **HOLD. AI structural thesis + RS #1 + chip surge override short-term Benzinga signal. Stop intact.**
+
+### Trade Ideas
+
+**1. IWM EXIT — Actionable today (autonomous recommendation):**
+- Market open sell 62 IWM
+- Locks in +$299; removes 9.2% tail risk on broken thesis
+- Cancel 4c0586cc GTC order simultaneously (trailing stop becomes moot on market sell)
+- Frees $18.3K cash → deployment drops to ~58% (below 75% floor — urgency protocol activates)
+
+**2. AMD — NOT actionable at current price ($537):**
+- Original thesis: entry ~$500, target $615 (Mizuho), R:R 2.3:1 ✓
+- Current price $537: R:R = ($615-$537)/($537×0.10) = $78/$53.70 = **1.45:1 — BELOW 2:1 minimum**
+- Needs pullback to ~$500-505 for acceptable R:R (gain: $110-115 / risk: $50 = 2.2:1)
+- PCE Thursday + Micron Wed = chip volatility → potential pullback entry post-Wednesday
+- **WATCH. No entry at $537. Wait for pullback to $500-505 zone.**
+
+**3. SOXX/QQQ — HOLD, no additions:**
+- Chip complex momentum strong but Micron Wed is event risk
+- Adding to existing position with earnings overhang = bad sizing discipline
+
+### Risk Factors
+- **Micron earnings Wed Jun 24 AMC:** Elevated expectations (MU +70% YTD). Miss = SOXX -8% implied; beats = SOXX pop. High volatility risk for both SOXX and QQQ this week.
+- **PCE Thursday:** May PCE likely elevated (energy prices). Hawkish surprise = small-cap headwind (IWM), rate-sensitive names down. Named blocker: no new entries until PCE passes.
+- **CAT valuation:** Trading above all Street targets ($946 avg). Any macro slowdown signal = violent mean-reversion risk. $895 stop is only protection.
+- **AMD entry gap:** Ran to $537 while bot planned $500 entry. R:R now borderline. May chase if deployment urgency rises after IWM exit.
+- **IWM exit → deployment floor breach:** After IWM exit, deployed drops to ~58%. Urgency protocol activates BUT named blockers (Micron Wed + PCE Thu) prevent new entry until at least Friday Jun 27 (Week 9 last day).
+- **US-Iran talks:** Oil decline positive for equity futures today, but geopolitical tail risk remains.
+
+### Active Watch Items (Week 9)
+- **IWM exit:** Cancel 4c0586cc + sell 62 IWM at market open (autonomous recommendation)
+- **CAT +15% tighten:** Cancel aa646f6e → 7% trail GTC when HWM $1,026.59 first touched (4.1% from last close; ES +0.98% today = may approach)
+- **AMD pullback:** Target entry $500-505; R:R 2.2:1+; only after PCE Thursday passes; check R:R at live ask before entry
+- **Micron Wed:** Monitor SOXX + QQQ volatility; no action unless stop triggers
+- **PCE Thursday:** Named blocker for all new entries; re-evaluate Friday
+
+### Decision
+**HOLD all positions at open; EXIT IWM (autonomous recommendation — slow-bleed rule + hawkish FOMC + negative R:R).** Cancel 4c0586cc GTC simultaneously.
+
+No new entries this week until: (1) PCE Thursday passes, AND (2) AMD pulls back to $500-505. If AMD does not pull back by Friday, re-evaluate Week 9 slot usage.
+
+S&P futures +0.98% → constructive environment. CAT/SOXX/QQQ all likely gap up. IWM exit at open captures best execution before intraday volatility.
+
