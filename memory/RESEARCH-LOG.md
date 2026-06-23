@@ -2959,3 +2959,92 @@ No "User decisions" block found in TRADE-LOG.md. All prior action questions carr
 - **XLK tighten** -- 7% trail when HWM $201.82 (currently $198.73; +$3.09 away)
 - **Jobless claims 12:30 PM** -- >230K = IWM stop tighten signal
 - **NFP tomorrow** -- no entries after today; full blackout Fri AM
+
+---
+
+## 2026-06-23 -- Pre-Market Research (Tuesday, Week 9, Day 42)
+
+> **⚠ NETWORK BLOCK:** Alpaca API and Perplexity are both unreachable in this cloud environment (HTTP 403 egress deny). Alpaca data replaced with WebSearch-sourced price estimates (Jun 22 closes). Perplexity queries replaced with WebSearch fallback — noted per protocol.
+
+> **⚠ 19-DAY LOG GAP:** Last committed log entry was Jun 4 (Day 30). Unknown whether any trailing stops triggered, whether SOXX was entered, or whether CAT was sold on Jun 4 per the pending plan. Current position state is ESTIMATED — verify via Alpaca dashboard immediately.
+
+### STEP 1B -- Pending User Decisions
+- No "**User decisions**" block found in TRADE-LOG.md tail.
+- Jun 3 EOD action questions (CAT exit, SOXX entry, XLK auto-tighten, IWM tighten) remain unanswered in the log.
+- Carrying forward as unconfirmed: XLK auto-tighten to 7% at HWM $201.82 (still pending); no proactive actions taken on CAT/SOXX/IWM without user confirmation.
+
+### STEP 2 -- Account Snapshot (estimated, Alpaca blocked)
+- **Last known equity (Jun 3 EOD):** $106,873.61 | **Cash:** $30,984.78
+- **Current equity:** UNKNOWN — Alpaca API blocked; estimated ~$107,000-$108,000 based on position price changes below
+- **DT count:** Unknown
+
+| Ticker | Shares | Entry | Est. Price (Jun 22) | Est. Unrealized | Stop (last logged) | Status |
+|--------|--------|-------|---------------------|-----------------|-------------------|--------|
+| CAT | 20 | $892.689 | ~$1,015.82 | ~+$2,462 (+13.8%) | 10% trail HWM ~$994+ / stop ~$895+ (auto-trailed ↑) | ✅ Estimated active |
+| CVX | 103 | $182.364 | ~$173.73 | ~-$888 (-4.7%) | 10% trail HWM $191.48 / stop $172.332 | ⚠️ $1.40 from stop — may be stopped out |
+| IWM | 62 | $290.770 | ~$297.66 | ~+$427 (+2.4%) | 10% trail HWM $291.70+ / stop ~$268+ (auto-trailed ↑) | ✅ Estimated active |
+| XLK | 103 | $175.494 | ~$191.60 | ~+$1,659 (+9.2%) | 10% trail HWM $198.73 / stop $178.857 (locked) | ✅ Estimated active |
+
+**⚠ CVX CRITICAL:** WTI $73.67 (down from $96 on Jun 4). CVX at ~$173.73, stop $172.33 = $1.40 buffer. High probability stop triggered at some point during oil selloff. Verify immediately.
+**Note:** SOXX entry (conditional Jun 4) and CAT exit status unknown — verify in Alpaca dashboard.
+
+### STEP 3 -- Market Context (WebSearch fallback)
+
+**Macro:**
+- **WTI:** $73.67 (-0.26%) | **Brent:** $76.68 — Iran deal (60-day license to sell); Strait of Hormuz traffic recovering; supply surge. Down ~$22 from Jun 4 high. CVX thesis broken at these levels.
+- **S&P 500 futures:** -1.43% premarket — significant bearish open driven by tech selloff
+- **VIX:** ~17.28 (+2.98%) — risk elevated; not panic but heightened caution warranted
+- **Fed:** New Chair Kevin Warsh kept rates unchanged at June FOMC; PCE Thursday Jun 25 = next key data
+
+**Today's catalysts (Jun 23):**
+- Tech selloff: Alphabet (GOOGL) -5-6.5% — top AI researchers (Noam Shazeer → OpenAI, John Jumper/DeepMind → Anthropic); $264B market cap erased. Contagion to Amazon, Meta, Microsoft.
+- Micron earnings next Wednesday = semiconductor catalyst (next week)
+- June 23 econ calendar: light (4 minor events)
+- **Thursday Jun 25: PCE inflation data (Fed preferred measure)** — key event this week; no new entries pre-PCE
+
+**Sector momentum (WebSearch, late May data):**
+- **Leading:** Industrials (XLI), Energy (XLE), Consumer Staples, Materials — CAT remains in best sector
+- **Lagging:** Technology (XLK), Communications, Consumer Discretionary — XLK cooling after AI run; GOOGL drag today
+- **Energy note:** YTD energy still top performer (+22%) but WTI at $73 breaks the oil-above-$88 thesis for CVX
+
+**Held ticker news (WebSearch):**
+- **CAT:** $985.82 Jun 18 close (all-time high $994.49); up 60% YTD on AI data-center power/generator demand; analyst avg target ~$946 (stock now above consensus). Jun 22: +3.05%. Thesis intact and strengthened.
+- **CVX:** $173.73 Jun 22. All-time high was $209.23 (Mar 27). Microsoft data-center power deal announced Jun 22. Oil thesis: WTI $73 vs $88 gate = thesis BROKEN. Stop risk: $172.33.
+- **IWM:** $297.66 Jun 22 (52-wk high $299.49). Small caps recovered strongly — above entry.
+- **XLK:** $191.60 Jun 22. 52-wk high $198.73 (matches logged HWM). Tech under pressure today (GOOGL -5%); likely opens lower. Stop $178.857 provides $12.75 (6.6%) buffer.
+
+### Trade Ideas
+
+**1. HOLD CAT — thesis accelerated**
+- AI data center power demand thesis fully confirmed. +13.8% from entry. Stop auto-trailed to ~$895+ (estimated, verify).
+- No action needed. Let stop run. Target +20% (~$1,071); tighten to 7% at +15% (~$1,027).
+
+**2. CVX — MONITOR; likely stopped or near-stopped**
+- Oil at $73.67 vs $88 gate → thesis BROKEN. Stop $172.33 with CVX at $173.73 = 1 bad tick.
+- If stop not yet triggered: do NOT chase or add; let trailing stop do its job or manually cut at -7% ($169.60).
+- If stopped out: capital freed; do not re-enter energy until oil recovers above $85.
+
+**3. NO NEW ENTRIES today**
+- Tech selloff + VIX elevated + PCE Thursday = 3 concurrent blockers
+- Deployment unknown (Alpaca blocked); can't size responsibly
+- Week count: unknown (19-day gap)
+
+### Risk Factors
+1. **Alpaca API blocked** — cannot verify live positions, stop order state, or account equity. Manual check required before any trade action.
+2. **CVX stop breach imminent** — WTI $73.67; CVX $173.73 vs stop $172.33; high risk of position stoppage or already stopped.
+3. **Tech selloff today** — GOOGL -5%, S&P futures -1.43%; XLK likely opens below $190; stop $178.857 provides buffer but watch closely.
+4. **PCE Thursday Jun 25** — Fed preferred inflation measure; no new entries this week until post-PCE confirmed benign.
+5. **19-day log gap** — portfolio state uncertain; SOXX entry and CAT exit from Jun 4 plan unverified.
+
+### Decision
+**HOLD — no new entries.**
+- Blocking catalysts: tech selloff, elevated VIX, PCE Thursday, Alpaca API unavailable.
+- Priority action for user: **verify current positions in Alpaca dashboard immediately** (especially CVX stop status and whether SOXX was ever entered on Jun 4).
+- XLK auto-tighten to 7% at HWM $201.82: still pending user confirmation; price not reached ($191.60 current).
+
+**Active watch items:**
+- **CVX stop** — $172.33; verify in Alpaca if triggered; do not re-enter energy at $73 WTI
+- **XLK GOOGL contagion** — tech ETF likely opens lower; monitor stop $178.857
+- **CAT stop trail** — verify auto-trail in Alpaca; estimated HWM ~$994-$1,016; stop ~$895-$914
+- **PCE Thursday Jun 25** — no new entries pre-data
+- **Alpaca API egress block** — user should check cloud routine network policy settings
