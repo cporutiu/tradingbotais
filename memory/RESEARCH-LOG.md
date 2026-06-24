@@ -4025,3 +4025,121 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+---
+
+## 2026-06-24 — Pre-Market Research (Wednesday, Week 9 Day 2)
+
+### ⚠️ API STATUS — CRITICAL BLOCKER
+- **Alpaca, Perplexity, ClickUp: ALL blocked (proxy 403 — network policy)**
+- No live account data accessible; no trade orders possible via this session
+- Market research via WebSearch fallback (noted per procedure)
+- **USER ACTION REQUIRED: Execute IWM exit + AMD entry manually today**
+
+### Account Snapshot (last known — Jun 19 close, API blocked today)
+| Field | Value |
+|-------|-------|
+| Equity | ~$106,334 (Jun 19; estimated lower ~$104,800-105,500 after Jun 23 drawdown) |
+| Cash | ~$25,712 (Jun 19) |
+| Deployed | ~75.8% (Jun 19; 4 positions) |
+| DT count | 0/3 |
+| Week 9 trade count | 0/3 (fresh week) |
+| Phase P&L | +$6,334 (+6.33%) at Jun 19; reduced after Jun 23 selloff |
+
+### Market Context (WebSearch fallback — Perplexity blocked)
+
+**Macro:**
+- **BoFA 3 rate hikes in 2026** — Sep, Oct, Dec; Fed funds → 4.25-4.5%. New Chair Warsh hawkish; inflation "unambiguously worse." Major shift from prior "no cuts" baseline. NAMED MACRO HEADWIND.
+- **PCE release Thursday Jun 25** — Fed's preferred inflation gauge. Named blocker for Thursday.
+- **VIX:** Closed Jun 23 at 20.44 (+33% in single session). Elevated risk environment.
+- **S&P futures Jun 24:** Pointing higher (+71% probability up open). Premarket recovery.
+
+**Oil:**
+- WTI ~$72.50-74/bbl | Brent ~$76.68/bbl
+- Declining on US-Iran peace talk progress. Energy thesis weakening.
+
+**Jun 23 Selloff — Key Events:**
+- KOSPI crashed -9.99% (circuit breaker triggered). Samsung -12.3%, SK Hynix -12.5%. MSCI Developed Markets exclusion + BoFA rate note + overnight US tech weakness.
+- Nasdaq -3.94% | S&P 500 -2.52% | SOXX -7.88%
+- Global AI chip rout: ~$1.4T market cap wiped in semis
+
+**Jun 24 Premarket (today):**
+- S&P futures higher. MU +4.5% premarket, SNDK +3.4%. Semiconductor bounce expected.
+- **MU reports Q3 FY2026 AMC tonight (4:30 PM EDT)**: Revenue guidance ~$33.5B±750M; Street consensus ~$34.7-35B; EPS ~$19.95-20.57. Key: HBM acceleration; crossed $1B HBM revenue in Q2. **NAMED BLOCKER for SOXX today — hold to stop.**
+- PCE Thursday = named blocker; avoid new trades Thursday.
+
+### Position Updates (WebSearch — no live API)
+
+| Ticker | Entry | Jun 23 Close | Vs Entry | Stop (last known) | Status |
+|--------|-------|--------------|----------|-------------------|--------|
+| CAT | $892.69 | ~$986.39 | +10.43% | ~$920.05 (HWM updated) | ✓ HOLD |
+| IWM | $290.77 | $295.32 | +1.57% | $268.11 (HWM $297.90) | ⚠️ EXIT |
+| QQQ | $736.68 | $713.65 | -3.13% | ~$666.56 | ✓ HOLD |
+| SOXX | $627.58 | ~$607-614 | ~-2.2% | $577.58 (HWM $641.75) | ⚠️ WATCH |
+
+**CAT:**
+- Jun 22: Closed $1,022.28 (ALL-TIME HIGH) — intraday high $1,023.29. Auto-tighten trigger $1,026.59 NOT triggered (missed by $3.30).
+- Jun 23: -3.61% pullback to ~$986.39. Alpaca trailing stop HWM now ~$1,022-1,023; stop ~$920.05.
+- CAT YTD +78%; Industrials sector YTD +21%. AI data center / infrastructure thesis intact.
+- **HOLD. Auto-tighten trigger still active at $1,026.59 HWM.**
+
+**IWM:**
+- Jun 23 close: $295.32 (range $292.40-$297.75). Stop $268.11 intact.
+- BoFA 3 rate HIKE forecast = THESIS BREAK. Rate-cut thesis was already impaired (FOMC Jun); 3 active hikes in 2026 means higher borrowing costs + multiple compression for small-cap. This is a new material headwind since Jun 19.
+- Slow-bleed: 17 days at only +1.57% from entry. Now thesis fundamentally broken.
+- **DECISION: EXIT IWM at open today.** Lock in ~+$282 gain. Free $18.3K for AMD.
+- ⚠️ API BLOCKED — cannot submit close order. USER must execute: close 62 IWM.
+
+**QQQ:**
+- Jun 23 close $713.65 (-3.29% from $737.95). Entry $736.68.
+- Below entry but well above stop $666.56. Nasdaq thesis (Mag-7, AI) intact.
+- Tech YTD -3.1% but QQQ mega-cap concentration mitigates broad tech drag.
+- **HOLD. Stop provides 6.6% additional buffer from Jun 23 close.**
+
+**SOXX:**
+- Jun 23: -7.88% to ~$607-614 (range $598.19-$629.10). BELOW entry $627.58.
+- Stop $577.58; Jun 23 low $598.19 — stop NOT triggered. Current buffer: ~5.0% from $607 close.
+- MU earnings AMC tonight = NAMED BLOCKER. MU +4.5% premarket = strong beat expected.
+- Premarket recovery in semis suggests today's price may bounce.
+- Structural AI thesis (HBM, $975B semiconductor TAM 2026) still intact.
+- **HOLD to stop. Named blocker (MU AMC) prevents action. Let stop work. If MU beats → SOXX likely recovers; if miss → stop manages downside.**
+
+### Trade Ideas
+
+1. **EXIT IWM (urgent, today):**
+   - 62 shares at market open (~$295). Locks ~+$282. Frees $18.3K + 1 trade slot.
+   - Thesis: broken by BoFA 3-hike forecast. Rate-sensitive small-cap headwind is structural, not temporary.
+   - Risk: IWM could recover if BoFA walks back hike forecast. Accepting $282 gain.
+   - ⚠️ MANUAL EXECUTION REQUIRED (API blocked)
+
+2. **ENTER AMD (after IWM fills):**
+   - ~34 shares at market (~$520-527). Sizing: ~$17.7K-$17.9K (~16.7-16.9% equity).
+   - Stop: 10% trailing GTC immediately on fill.
+   - Catalyst: Confluent signal (Benzinga BUY medium + Congress BUY high, Gottheimer priority). Mizuho PT $615 at ~$520 entry = R:R 2.85:1 ✓. HBM/MI400 cycle.
+   - Jun 23 selloff improved entry: AMD fell from 52-week high $562.99 (Jun 22) to ~$519-527 on Jun 23 = ~-6.4% from peak. Better entry than planned $500.
+   - **Only after IWM exit confirmed** (keeps deployment ≤85%).
+   - ⚠️ MANUAL EXECUTION REQUIRED (API blocked)
+
+3. **SOXX: HOLD to stop — no action.** Review post-MU earnings tomorrow.
+
+### Risk Factors
+- **API blocked**: Cannot execute trades, check real positions, or validate stops. USER MUST ACT.
+- **BoFA 3-hike forecast**: Broad market headwind; IWM most exposed (exiting). QQQ/SOXX partially exposed (growth/tech). CAT/AMD relatively insulated (industrials infrastructure / AI capex).
+- **SOXX below entry**: -2.2% from entry, 5% above stop. MU earnings binary event. Stop $577.58 is the line.
+- **PCE Thursday**: Named blocker — do not open new positions Thursday.
+- **VIX 20.44**: Elevated; wider intraday swings expected. Stops are the risk management.
+- **CAT auto-tighten trigger not hit yet**: $1,026.59 is 4.1% above Jun 23 close $986.39. Still watching.
+
+### Decision
+**IWM EXIT + AMD ENTRY (Week 9 slot 1/3) — PENDING USER MANUAL EXECUTION**
+
+Cannot execute autonomously — Alpaca API blocked by session network policy.
+
+**User must do today:**
+1. `bash scripts/alpaca.sh close IWM` (or manual Alpaca dashboard: close 62 IWM at market)
+2. After fill: `bash scripts/alpaca.sh order '{"symbol":"AMD","qty":"34","side":"buy","type":"market","time_in_force":"day"}'`
+3. After AMD fills: place 10% trailing stop GTC on AMD
+4. Verify SOXX stop $577.58 is active heading into MU earnings tonight (4:30 PM EDT)
+5. Verify CAT stop HWM updated after Jun 22 ATH ($1,022.28); auto-tighten trigger $1,026.59 still active
+
+**Bot autonomous judgment:** SOXX HOLD (named blocker: MU AMC tonight). CAT HOLD. QQQ HOLD.
