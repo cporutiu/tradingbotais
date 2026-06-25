@@ -4025,3 +4025,96 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+---
+
+## 2026-06-25 — Pre-Market Research (Thursday, Week 9, Day 4)
+
+### CRITICAL ALERTS
+- **Alpaca API BLOCKED** — egress proxy policy denies `paper-api.alpaca.markets`. No live account, positions, or orders data available. All values below are ESTIMATED from last confirmed (June 18/19) + web research.
+- **ClickUp API BLOCKED** — same proxy policy. Notification could not be sent via script.
+
+### Account Snapshot (ESTIMATED — last confirmed June 18)
+- **Equity:** ~$106,334 | **Cash:** ~$25,712 (24.2%) | **Deployed:** ~$80,623 (75.8%, 4 positions)
+- **DT count:** 0 (as of Jun 18) | **Week 9 trade count:** unknown (Week 8 closed 2/3; fresh 3/3 for Week 9)
+- **Phase P&L:** ~+$6,334 (+6.33%) — approximate, unverified
+
+### Positions (estimated — web data Jun 24-25)
+| Ticker | Shares | Entry | Est. Price | Est. Unrealized | Stop (last known) |
+|--------|--------|-------|------------|-----------------|-------------------|
+| CAT | 20 | $892.689 | $987.00 | +$1,886 (+10.6%) | 10% trail HWM ~$1,022 / stop ~$920 (aa646f6e — tighten trigger $1,026.59 likely NOT hit) |
+| IWM | 62 | $290.770 | $298.33 | +$470 (+2.6%) | 10% trail HWM $297.90 / stop $268.11 (4c0586cc) |
+| QQQ | 29 | $736.683 | $726.18* | -$308 (-1.4%) | 10% trail HWM $740.62 / stop $666.558 (ce15a8ec) |
+| SOXX | 33 | $627.579 | $632.16 | +$152 (+0.7%) | 10% trail HWM $641.75 / stop $577.575 (c3ca7db2) |
+
+*QQQ $726.18 is premarket Jun 25 price; Jun 24 close was $710.62 (below entry)
+
+### Market Context (2026-06-25 pre-market)
+- **S&P 500:** Jun 24 close 7,358.22 (-0.10%). Futures ~+0.1% overnight.
+- **Nasdaq/QQQ:** Premarket +2.19% ($726.18 from $710.62 close). Catalyst: Intel-Apple chipmaking deal announced.
+- **VIX:** ~18.44 (-5.38%) — moderate, slightly elevated from recent lows
+- **WTI crude:** ~$70/bbl (multi-month low). **Brent:** ~$75 (below $74 intraday Wed).
+- **Oil driver:** US-Iran interim peace deal signed; Strait of Hormuz reopening → supply easing. WTI -21.6% in 1 month.
+- **Fed:** Chair Warsh hawkish — rate HIKES possible; no 2026 cuts. Inflation focus overrides employment mandate.
+- **Economic data today (HEAVY):** Q2 GDP 3rd estimate, Durable Goods Orders, Initial Claims, PCE Prices, Personal Income, Personal Spending, EIA Natural Gas. Major volatility risk.
+- **Sector YTD (approx Jun 19):** Industrials +21.0% | Energy +22.3% | Materials +17.7% | Tech (strong May rebound after Q1 -6.3%). Financials/Healthcare lagging.
+
+### Position Analysis
+
+**CAT ($987.00 today, -3.45% from $1,022.25 Jun 24 close):**
+- ATH CLOSE: $1,022.28 on Jun 22 (+3.7% on day). Now retreating.
+- Auto-tighten trigger ($1,026.59): CAT peaked ~$1,022 in CLOSES — trigger likely NOT reached. Intraday unknown. Stop status unverifiable (API blocked).
+  - If trigger NOT hit: 10% trail, HWM ~$1,022, stop ~$920 — current $987 is $67 above stop ✓
+  - If trigger WAS hit intraday: 7% trail, HWM ~$1,027, stop ~$955 — current $987 is $32 above stop ✓
+- P/E ~49-51x (stretched). Tariff cost $2.2-2.4B 2026 headwind. AI data center "picks and shovels" thesis intact ($63B backlog, Project Kilby).
+- Next catalyst: Q2 earnings Aug 4. YTD +10.6% from our entry.
+- **HOLD. Auto-tighten: manually verify stop order when API restored. If trigger NOT yet hit, remains active watch at $1,026.59.**
+
+**IWM ($298.33 Jun 24 close):**
+- Rebounding. YTD +12.11%. "Small-cap rally more sustainable vs semiconductor rally." Alternative EPS thesis intact.
+- Stop $268.11 well below current price (9.9% buffer). HWM ~$297.90.
+- Commentary: "Two catalysts could trigger massive IWM gains before year-end." Hawkish Fed is headwind but priced in.
+- **HOLD — stop managing downside; alternative thesis strengthening.**
+
+**QQQ ($726.18 premarket Jun 25, from $710.62 Jun 24 close):**
+- Below entry $736.683 at Jun 24 close (-3.5%). Premarket recovery +2.19% on Intel-Apple deal.
+- Stop $666.558 (HWM $740.62) — $726 is $59 above stop ✓
+- If premarket holds → gap up above $736.683 = recovery to breakeven entry.
+- AI/tech momentum driven by Nasdaq strength and chip deals.
+- **HOLD — premarket surge promising; monitor for new HWM above $740.62 to auto-trail stop up.**
+
+**SOXX ($632.16 Jun 24):**
+- YTD +108%. AI semiconductor thesis strongest: $975B semiconductor market 2026, hyperscaler CapEx $750B+.
+- Stop $577.575 (9.7% buffer from $632). Benzinga SELL conflict from Jun 18 — AI structural thesis overrides.
+- Intel-Apple deal positive for semiconductor sector broadly.
+- **HOLD — RS #1; AI structural thesis strongest in portfolio.**
+
+### Trade Ideas
+1. **HOLD all 4 — no new entries today.** Heavy econ data (GDP, PCE) = high volatility. Not an entry day.
+2. **AMD (~$517 Jun 24):** UBS PT $670; BofA PT $560; Congress BUY high (Gottheimer). YTD +132.6%. Entry thesis intact but price moved above ideal $498-502 range. Only enter if IWM exits first (5th position would push deployment ~93%). Reassess entry range: $510-520 acceptable if conviction high.
+3. **FCX (~$70):** Congress BUY high persistent. R:R still insufficient. Watchlist.
+
+### Active Watch Items
+- **Alpaca API:** Restore connectivity ASAP — stop orders (aa646f6e, 4c0586cc, ce15a8ec, c3ca7db2) cannot be monitored.
+- **CAT auto-tighten:** Verify whether $1,026.59 HWM trigger was hit Jun 22 intraday. If NOT hit, trigger remains active. If hit, confirm 7% trail GTC was placed.
+- **QQQ:** Monitor whether premarket +2.19% holds at open — recovery above entry ($736.683) important.
+- **IWM:** Slow-bleed concern still active but latest price ($298.33) shows momentum. Watch FOMC hawkish repricing.
+- **AMD:** Best Week 9 candidate; only on IWM exit. Current $517 — if IWM exits, accept up to $520 entry.
+
+### Risk Factors
+- **Alpaca API blocked:** Stop orders unverifiable — critical operational risk
+- **Heavy econ data (Jun 25):** GDP + PCE + Claims → intraday swings likely; avoid new entries
+- **CAT pullback:** $987 vs $1,022 ATH — could deepen if macro data disappoints; stop ~$920 cushion
+- **QQQ below entry:** $710.62 Jun 24 close = unrealized loss; premarket bounce helps but not secured
+- **Oil at $70:** Structural weakness continues; no energy positions currently (XOM exit was correct)
+- **Fed hawkish overhang:** No 2026 rate cuts; rate hike possibility weighs on growth stocks and IWM
+
+### Decision
+**HOLD — no new positions today.**
+- Deployment ~75.8% (above 75% floor) — no urgency
+- GDP/PCE data today = high volatility → NOT an entry day
+- API blocked → cannot execute orders safely even if opportunity arose
+- Restore Alpaca API connectivity as priority action
+- Revisit AMD entry next session if data day passes cleanly
+
+**[Note: Perplexity API also blocked by proxy — all market data via WebSearch fallback. ClickUp notification script also blocked; user notified via push notification.]**
