@@ -135,6 +135,86 @@ Format each entry:
 - **Thursday plan: SOXX conditional on AVGO beat (execute at open Jun 4 if beat confirmed pre-market)**
 - **Active watch: XLK tighten at $201.82** — will auto-execute when triggered
 
+---
+
+## 2026-06-26 — Pre-Market Research (Friday, Week 9, Day 5)
+
+### Account Snapshot (ALPACA API UNAVAILABLE — 403 ERROR)
+- **API STATUS:** All Alpaca endpoints (account/positions/orders) returning HTTP 403. Cannot confirm live equity, positions, or stop orders.
+- **Last known state (Jun 19 EOD):** Equity $106,334.47 | Cash $25,711.66 (24.2%) | Deployed $80,622.81 (75.8%) | 4 positions
+- **Phase P&L (estimated):** ~+$6,800 to +$7,500 based on price moves this week (CAT up sharply, QQQ down)
+- **Week 9 trade count:** 0 known new buys; deployment cap blocks additional positions
+- **CRITICAL: Cannot verify or place any orders until Alpaca 403 is resolved.**
+
+### Positions (estimated from web data — last confirmed Jun 19 EOD)
+| Ticker | Shares | Entry | ~Price Jun 26 | ~Unrealized | Stop (last known) | Notes |
+|--------|--------|-------|---------------|-------------|-------------------|-------|
+| CAT | 20 | $892.689 | ~$1,057 | +$3,286 (+18.4%) | 7% trail (should be placed) / HWM ~$1,057 | 5% trigger at $1,071.23 IMMINENT |
+| IWM | 62 | $290.770 | ~$297 | +$384 (+2.15%) | 10% trail HWM ~$297.90 / stop ~$268 | 52-wk high Jun 25 |
+| QQQ | 29 | $736.683 | ~$710 | -$775 (-3.5%) | 10% trail HWM $740.62 / stop $666.56 | BELOW entry — watch |
+| SOXX | 33 | $627.579 | ~$624 | -$118 (-0.43%) | 10% trail HWM $641.75 / stop $577.58 | Volatile week |
+
+### Open Orders (UNVERIFIED — Alpaca API down)
+- CAT: 7% trailing GTC should have been placed this week (trigger $1,026.59 passed). Order aa646f6e (10% trail) should have been cancelled. **Cannot confirm.**
+- IWM: 10% trail GTC 4c0586cc — HWM ~$297.90 / stop ~$268.11
+- QQQ: 10% trail GTC ce15a8ec — HWM $740.62 / stop $666.558
+- SOXX: 10% trail GTC c3ca7db2 — HWM $641.75 / stop $577.575
+
+### Week 9 Decisions Carrying Forward (from Jun 19 EOD)
+1. **IWM exit decision (Jun 19):** Bot leaned HOLD to stop. IWM reached 52-week high Jun 25 ($297.47) — slow-bleed concern RESOLVED. HOLD confirmed.
+2. **CAT 7% tighten:** Auto-tighten should have fired Mon-Thu (trigger $1,026.59). Cannot confirm execution via API. **If interactive session: verify aa646f6e cancelled and 7% trail in place.**
+3. **AMD entry (if IWM exited):** IWM NOT exited → AMD entry deferred. Still on watchlist.
+4. **CAT 5% tighten:** At $1,057, trigger of $1,071.23 is only 1.35% away. **Next level imminent.**
+
+### Market Context
+- **WTI:** $71.56/bbl (-0.50%) | **Brent:** $74.43/bbl (-1.11%) — Hormuz traffic improving, supply concerns easing; oil trending down. Oil thesis broken (already exited XLE/XOM/CVX correctly).
+- **S&P 500 futures (ESM26):** -0.41% pre-market | **Nasdaq 100 (NQM26):** -0.30% → lower open expected
+- **VIX:** ~19.00 (elevated; mid-to-upper risk zone — above 18 threshold)
+- **Market risk:** ELEVATED (VIX ~19, rate hike bets rising)
+
+### Economic Calendar — Today (Jun 26, Friday)
+- **No named blockers today.** PCE released yesterday (Jun 25). NFP is Jul 3 (next week).
+- **PCE May 2026 (released Jun 25):** 4.10% YoY (vs 3.80% Apr) | Core PCE 3.40% (vs 3.30%) — hottest since Oct 2023. Markets digested; futures held mildly positive after print.
+- **FOMC (Jun 17, prior):** Hawkish. Indicated rate hike likely; removed 2026 cut language. "Deliver price stability" mandate activated.
+- **Rate hike odds:** Money markets pricing ~25bp hike by Oct 2026, second hike by Mar 2027. NO 2026 cuts.
+- **QQQ/tech headwind:** Hawkish FOMC + rising PCE = structural headwind for growth/tech. QQQ -4% from Jun 18 close.
+
+### Sector Assessment
+- **Technology (XLK/QQQ/SOXX):** Under pressure. PCE hot → rate hike pricing → growth multiple compression. QQQ -4% this week, SOXX volatile ($598-$638 range). Thesis weakening in near-term; structural AI demand intact.
+- **Industrials (CAT):** OUTPERFORMING. CAT +7% this week to ~$1,057. AI data center + power infrastructure demand driving record $63B backlog. Wells Fargo/UBS upgrades. CAT +184% in 12 months. Dividend $1.63, ex-date Jul 20, 2026. Next earnings Aug 4.
+- **Small Cap (IWM):** Resilient but hawkish rates are structural headwind. 52-week high Jun 25. FOMC hawkish = headwind for rate-sensitive small caps; but momentum strong and stop provides buffer.
+- **Oil/Energy:** Oil declining (WTI $71.56) — Hormuz normalization. No energy exposure (correct positioning).
+
+### Signal Summary (inferred from market data — Perplexity API also 403)
+- **CAT:** Strongly bullish. Thesis intact and accelerating. 5% trail trigger imminent. HOLD.
+- **IWM:** Resilient at 52-week high. Hawkish Fed = headwind. Stop $268 provides 9.8% buffer from current ~$297. HOLD.
+- **QQQ:** CAUTION. -3.5% from entry, below entry. Hawkish macro = continued pressure. Manual cut at -7% ($685.11) not triggered. Watch closely.
+- **SOXX:** Volatile. Range $598.83-$638.47 today. -0.43% from entry (borderline). AI structural thesis intact but near-term pressure from rate hike expectations. Stop $577.58 provides 7.5% buffer.
+
+### Trade Ideas
+1. **NO NEW BUYS** — Deployment ~75.8%; adding 5th position at 17-20% sizing pushes to ~93%, above 85% cap. Hard no.
+2. **CAT: Watch 5% tighten trigger $1,071.23** — only 1.35% away. When CAT HWM hits $1,071.23: cancel 7% trail, place 5% trail GTC immediately. **Blocked until Alpaca API restored.**
+3. **QQQ: Monitor -7% cut level $685.11** — currently -3.5% at ~$710; not at cut threshold but trending down. If QQQ closes below $685, consider manual exit per strategy rule.
+4. **IWM: HOLD to stop.** 52-week high Jun 25 resolves slow-bleed concern. No action needed.
+5. **SOXX: HOLD to stop.** Volatile but above stop $577.58. No action unless approaches -7% ($584) or stop triggers.
+
+### Risk Factors
+- **Alpaca API 403 (CRITICAL):** Cannot verify or modify any stop orders. CAT 7% trail unverified. CAT 5% trigger imminent but unactionable. All position management blocked.
+- **QQQ downtrend:** -3.5% from entry and weakening. Rate hike environment structurally bad for Nasdaq. If -7% cut fires ($685.11), must sell manually — currently blocked by API.
+- **SOXX volatility:** $598-$638 range today. Near-term price action uncertain. Stop $577.58 is real protection.
+- **CAT stretched valuation:** P/E 48-51x post-surge. $2.2-2.4B tariff headwind for FY2026. Momentum still strong but late-stage risk.
+- **Fed rate hike (Sep/Oct 2026):** PCE 4.1% confirms hike. Bearish for QQQ, SOXX, IWM; neutral to bullish for CAT (infrastructure thesis unaffected).
+- **Week 9 ends today:** 3/3 trade slots unused. Deployment cap prevented any new buys all week. No regret — rules were correct.
+
+### Decision
+**HOLD all positions — NO new entries — API blocked.**
+- CAT: HOLD; 5% trail trigger imminent; cannot execute until Alpaca restored
+- IWM: HOLD; slow-bleed concern resolved by 52-week high Jun 25
+- QQQ: HOLD but watch $685.11 cut level; -3.5% from entry
+- SOXX: HOLD; volatile but above stop; thesis intact
+- **Deployment cap enforcement:** 75.8% deployed = no room for new positions at 17-20% sizing (would exceed 85% cap)
+- **Alpaca 403 alert sent to ClickUp. Immediate attention required to verify CAT 7% trail and enable future order management.**
+
 **Action questions:**
 1. **SOXX Thursday (deployment cap):** AVGO beats tonight → SOXX ~$17.8K → deployed ~87.7% (above 85% cap). Approve deployment up to 87-88% for this one entry given all-time high AI momentum? Or skip SOXX and stick to 85% rule?
 2. **XLK tighten at $201.82 (~1.69% away):** Confirm auto-tighten to 7% trail when HWM hits $201.82 — same pattern as AMD/NVDA auto-confirms (no user check needed)?
