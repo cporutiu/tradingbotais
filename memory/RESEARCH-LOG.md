@@ -4025,3 +4025,99 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+---
+
+## 2026-06-29 — Pre-Market Research (Monday, Week 10 Day 1)
+
+### ⚠️ CRITICAL ALERT: Alpaca API Blocked + Two Positions Near -7% Cut Threshold
+
+**Alpaca API status:** BLOCKED — proxy returns 403 (network policy denial for paper-api.alpaca.markets). All account, position, and order data below is estimated from WebSearch. Cannot verify stop order status or execute any trades this session.
+
+**Perplexity status:** BLOCKED (same proxy policy). All market data sourced from WebSearch — noted as fallback.
+
+**Week 9 gap:** Last committed log entries are from June 19 (Juneteenth). Week 9 (Jun 23–27) data is not in this committed clone — either routines didn't run or commits were lost. Picking up from Jun 19 baseline.
+
+### Account Snapshot (Estimated — WebSearch prices, no live API)
+| Field | Value |
+|-------|-------|
+| Last known equity (Jun 19) | $106,334 |
+| Positions | 4 (CAT, IWM, QQQ, SOXX) |
+| Last known deployed | 75.8% |
+| Week 10 trade slot cap | 3/3 fresh |
+| DT count | Unknown (no live API) |
+
+**Estimated position prices (WebSearch, latest available):**
+| Ticker | Shares | Entry | Est. Price | Est. P&L | Stop (last known) | Status |
+|--------|--------|-------|------------|----------|-------------------|--------|
+| CAT | 20 | $892.689 | ~$997 (Jun 26 close $997.47) | +$11.7% | 10% trail; HWM $994.49→ (unknown if auto-tighten fired) | HOLD |
+| IWM | 62 | $290.770 | ~$300 (Jun 28 close $299.83) | +$3.1% | 10% trail; HWM ~$299+ | HOLD |
+| QQQ | 29 | $736.683 | ~$706 (Jun 26 close $706.52) | **-4.1%** ⚠️ | 10% trail; HWM $740.62 / stop $666.56 | WATCH |
+| SOXX | 33 | $627.579 | ~$595 (Jun 28 range $585–606) | **~-5.2%** ⚠️ | 10% trail; HWM $641.75 / stop $577.58 | WATCH |
+
+### Market Context (WebSearch fallback — all data approximate)
+- **WTI:** ~$69.23/bbl | **Brent:** ~$72.01/bbl — sliding toward multi-month lows; US-Iran peace deal progress accelerating Hormuz transits; lowest since Feb 27
+- **S&P 500 futures:** +0.53% premarket; 86% prediction-market probability of up open; Dow futures +0.27%, Nasdaq +0.49%
+- **VIX:** ~18.41 (Jun 26 close) — moderately elevated, not fearful
+- **PCE (May 2026):** 4.1% YoY (up from 3.8% in April) — elevated but in-line with expectations; confirms no 2026 Fed cuts
+- **Economic calendar today:** Relatively light; no major data releases BMO
+- **BMO earnings:** None of significance today; Nike/STZ tomorrow (Jun 30), GIS July 1
+- **Special event:** Alphabet replaces Verizon in DJIA effective today (Jun 29) — positive for Nasdaq composition
+- **Sector momentum YTD:** Energy (+22%, Leading) | Industrials, Materials (Leading) | Technology, Communications (Lagging) | Utilities, REITS (Improving)
+- **Tech malaise catalyst:** KOSPI dropped 10% earlier in Week 9 (memory chip giants SK Hynix, Samsung hit by AI capex concerns) — structural headwind for SOXX, QQQ
+
+### Position Assessment
+
+**CAT ($892.689 entry → est. $997, +11.7%):**
+- Jun 22 close: $1,022.28 (close to $1,026.59 auto-tighten trigger); Jun 26: $997.47 (-5.63% on Jun 26)
+- Wells Fargo raised PT to $1,155 (Overweight); 28-analyst avg: BUY
+- Auto-tighten trigger ($1,026.59): UNCERTAIN — CAT may have touched $1,026.59 intraday Jun 22-25. Cannot verify without live Alpaca. Stop order aa646f6e may or may not have been updated.
+- CAT at ~$997 = 11.7% above entry; thesis (record $63B backlog, AI infrastructure, battery-electric trucks) intact
+- **USER MUST VERIFY: Was auto-tighten order placed? If not, and if HWM touched $1,026.59 during Week 9, cancel aa646f6e and place 7% trailing stop GTC immediately.**
+- **HOLD — thesis intact, stop protecting gains**
+
+**IWM ($290.770 entry → est. $300, +3.1%):**
+- Jun 28 close: $299.83 — slow-bleed resolved; small-caps rallying (money rotating from tech into healthcare/banks/small-caps)
+- 52-week high: $301.50; currently near highs — bullish
+- Hawkish Fed (PCE 4.1%, no 2026 cuts) remains overhang; but IWM momentum recovering
+- Action question from Jun 19 EOD (Q1: exit or hold) → IWM has since rallied, validating HOLD
+- **HOLD — stop trailing naturally; reassess if drops below $290**
+
+**QQQ ($736.683 entry → est. $706, -4.1%) ⚠️:**
+- Jun 26 close: $706.52 — down from $740.62 HWM; tech sector lagging YTD
+- KOSPI semiconductor sell-off + AI capex uncertainty driving tech weakness
+- Manual cut rule: -7% = $685.12; stop: $666.56 (10% trail from $740.62 HWM)
+- At $706, QQQ is 4.1% below entry — approaching -7% manual cut zone
+- Nasdaq +0.49% premarket today — small bounce possible
+- **WATCH: If QQQ fails to recover above $720 this week, consider proactive exit before -7% trigger ($685). Tech sector in structural lag.**
+
+**SOXX ($627.579 entry → est. $595, ~-5.2%) ⚠️:**
+- Jun 26 close: ~$589.94; Jun 28 range: $585–606 (est. ~$595)
+- Benzinga SELL high (Jun 19) was CORRECT — SOXX has fallen ~5-6% since entry
+- KOSPI -10% is direct catalyst: SK Hynix/Samsung memory chip concerns = AI capex pullback thesis bleeding into SOXX constituents
+- Stop: $577.58 (10% trail from HWM $641.75) — current price ~$595 is only $17 above stop (~2.9% buffer)
+- Manual cut rule: -7% from entry = $583.35 — SOXX trading within $10-15 of this threshold
+- **CRITICAL: SOXX approaching -7% manual cut. Thesis (AI structural demand) now challenged by real supply/capex concerns. Proactive exit consideration warranted. If SOXX opens below $588, execute market exit to prevent deeper loss.**
+
+### Trade Ideas
+1. **SOXX — Consider proactive exit at open:** Entry $627.579; est. price ~$595; -5.2% loss. Manual cut at -7% = $583.35. Only ~$12 of buffer. Benzinga SELL signal validated. KOSPI chip weakness = structural, not noise. Proactive exit at ~$595 locks in -$1,070 vs waiting for -7% stop at ~$583 (-$1,455). Risk-adjusted: exit now, free slot, redeploy into AMD or wait.
+2. **QQQ — Watch with tighter mental stop:** If QQQ can't hold $700 this week, move toward proactive exit. Premarket +0.49% may give a relief bounce — use it to assess.
+3. **AMD — Week 10 candidate (if SOXX exits):** BofA PT $560, Citi PT $575, Bernstein PT $600; avg consensus "Strong Buy." If SOXX exits (~$19.6K freed), AMD entry restores deployment. Entry ~$470-500, targets $560-600, R:R ≥2:1 ✓. Only after SOXX slot confirmed closed.
+4. **CAT — verify auto-tighten:** User or bot must check Alpaca order aa646f6e status when API accessible.
+
+### Risk Factors
+- **Alpaca API blocked:** Cannot verify stops or execute orders — USER must monitor directly
+- **SOXX -5.2%:** Approaching -7% cut threshold; KOSPI catalyst is real and structural
+- **QQQ -4.1%:** Tech sector in confirmed lag; approaching manual cut territory
+- **PCE elevated (4.1%):** No Fed cuts; hawkish macro persists
+- **CAT auto-tighten uncertainty:** May need manual verification; June 26 drop (5.63%) suggests volatility
+- **Week 9 data gap:** No committed log for Week 9 — unknown if any trades or stop tightens occurred
+
+### Decision
+**TRADE ALERT — USER ACTION NEEDED AT OPEN (Alpaca API blocked for bot)**
+
+Bot cannot execute orders this session. Recommended user actions at 9:30am ET:
+1. **SOXX:** Check live price. If ≤$588 (-6.3% from entry), SELL MARKET immediately (prevents -7% cut breach). If $588-600, assess and decide.
+2. **QQQ:** Check live price. Hold if above $710; tighten mental stop to $700 (4.9% below entry still above stop).
+3. **CAT:** Check order aa646f6e — verify if 7% trail was auto-placed during Week 9 (HWM should be ≥$1,022 now). If still 10% trail, tighten to 7% (cancel aa646f6e, new 7% trail GTC).
+4. **AMD:** If SOXX exits, enter AMD 38-40sh at market Mon/Tue for immediate deployment.
