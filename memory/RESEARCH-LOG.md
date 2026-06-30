@@ -4025,3 +4025,131 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+---
+
+## 2026-06-30 — Pre-Market Research (Monday, Week 10, Day 49)
+
+### ⚠️ CRITICAL — API ACCESS BLOCKED
+- **Alpaca API:** BLOCKED — proxy returns 403 CONNECT denied for `paper-api.alpaca.markets:443`. Cannot confirm live positions, stops, or order status.
+- **Perplexity API:** BLOCKED — proxy returns 403. Falling back to WebSearch (noted per fallback protocol).
+- **Action required:** User must verify positions, stop orders, and CAT tighten status directly on Alpaca dashboard.
+
+### Account Snapshot (last known — June 19 close; live API unavailable)
+- **Equity:** $106,334.47 (last known) | **Cash:** $25,711.66 (24.2%) | **Deployed:** ~$80,622 (75.8%, 4 positions)
+- **DT count:** 0 | **Phase P&L:** +$6,334 (+6.33%) | **Week 10 trade count:** 0/3 (fresh week)
+- **NOTE:** Week 9 (Jun 23–27) log gap — no committed entries found in repo. Any trades or stop changes during Week 9 are unconfirmed.
+
+### Positions — Last Known (June 19 close)
+| Ticker | Shares | Entry | Jun 19 Close | Today ~Price | Inferred Stop | Status |
+|--------|--------|-------|-------------|--------------|---------------|--------|
+| CAT | 20 | $892.689 | $985.82 | ~$1,034* | ~$951–$983** | ⚠️ TIGHTEN TRIGGERED |
+| IWM | 62 | $290.770 | $295.59 | ~$299 | ~$268–$271 | Hold |
+| QQQ | 29 | $736.683 | $740.62 | ~$714 | ~$667 | Hold |
+| SOXX | 33 | $627.579 | $639.45 | ~$614 | ~$578 | ⚠️ Below Jun 18 close |
+
+*Jun 29 close ~$1,034; intraday range Jun 30: $992–$1,039
+**If 7% tighten executed (bot decision Jun 19): stop ~$983. If still 10% trail: stop ~$951.
+
+### Inferred Changes — Week 9 Log Gap (Jun 20–27)
+- **CAT +15% TIGHTEN TRIGGERED:** CAT reached $1,057 on Jun 25, clearing the $1,026.59 HWM trigger (confirmed via WebSearch: Tikr, CNBC sources). Bot autonomous decision (Jun 19) called for cancel aa646f6e → 7% trail GTC when HWM hits $1,026.59. **Cannot confirm if executed — Alpaca API blocked. USER MUST VERIFY.**
+- **CAT current:** ~$1,034 (Jun 29–30 range). If 7% trail active: stop ~$1,057×0.93=$983. If 10% trail still: stop ~$1,057×0.90=$951. Entry $892.689 → +15.8% unrealized.
+- **IWM:** $294.68–$299.16 today, ~$299. Barely up from Jun 19 ($295.59). Slow-bleed continues (now ~25 trading days, +2.83%). 52-wk high $301.50 tested. Rate-cut thesis still impaired.
+- **QQQ:** ~$714 today vs $740.62 Jun 18 close. QQQ fell ~3.6% since Jun 18. Still above stop (~$667). HWM likely unchanged at $740.62 (no new high made).
+- **SOXX:** ~$614 today vs $639.45 Jun 18 close. -3.9% since entry week. Benzinga SELL high signal validated by price action. 52-wk range $232–$655. Stop ~$578 (HWM $641.75). Still 6% above stop.
+- **IWM exit question (EOD Jun 19 Q1):** Unknown if actioned. IWM still appears held (price has not crashed through stop).
+- **AMD entry (EOD Jun 19 Q2):** Unknown. AMD now ~$540 (range $495–$542 today), up from ~$500 thesis entry.
+
+### Market Context (WebSearch fallback — June 30, 2026)
+- **WTI:** ~$70/bbl | **Brent:** ~$73/bbl — both falling on US-Iran peace talks in Doha resuming; mixed signals from both sides
+- **S&P 500 futures:** +0.2% premarket; S&P 500 closed 7,440.43 on Monday (+1.18%); Dow futures +48 pts (+0.1%); Nasdaq flat
+- **VIX:** ~16.41 — LOW risk zone; complacent market
+- **Market note:** Holiday-shortened week (July 4 Saturday; July 3 half day / NFP); lighter volume expected
+- **Macro backdrop:** RBC raised year-end S&P target to 8,150 (stronger earnings); US-Iran truce easing geopolitical risk; Fed hawkish (no 2026 cuts)
+
+### Economic Calendar — Today (Jun 30, Monday)
+- **Dallas Fed Manufacturing Activity** — regional gauge; not a named blocker
+- **Conference Board Consumer Confidence** — market-moving for discretionary/retail
+- **MNI Chicago PMI** — manufacturing health check
+- **Thu Jul 3 (8:30 AM ET): NFP June 2026 — NAMED BLOCKER** — no new entries Wed–Thu per strategy rules; effective blackout starts Wednesday
+- **Major PCE / GDP data:** Released earlier in week (Jun 25). NFP is the key remaining catalyst.
+
+### Earnings — Today (Jun 30)
+- **BMO:** No significant earnings for held names BMO
+- **AMC tonight:** Nike (NKE), Constellation Brands (STZ) — not held; watch for consumer/retail read-through
+- **Notable:** AVAV +19% premarket (defense demand "unprecedented" per CEO); Micron (MU) +400% YTD, now top-10 S&P 500 constituent
+
+### Sector Momentum (June 30, 2026)
+| Priority | Sector | Status | Notes |
+|----------|--------|--------|-------|
+| 1 | Energy | Leading | +22% YTD but oil now $70 (Iran talks headwind); XOM/CVX mixed |
+| 2 | Technology | Mixed / Lagging | QQQ -3.6% from Jun 18 high; Micron +400% outlier; AI spending debate |
+| 3 | Industrials | Leading | CAT +15.8% from entry; AI infra "picks and shovels" thesis intact |
+| 4 | Materials | Improving | Commodity cycle; FCX ~$70 (no clear R:R entry) |
+| 5 | Semiconductors | Weakening | SOXX -3.9% from Jun 18; Benzinga SELL confirmed; AI capex debate |
+
+### Position Validation
+
+**CAT (~$1,034, +15.8% from entry $892.689) — HOLD:**
+- Wells Fargo PT raised to $1,155; Evercore $1,103; Trefis long-term path to $2,000
+- AI infra: Solar Turbines contract for Chevron-Microsoft power facility
+- Record $63B backlog; raised revenue outlook
+- **CRITICAL: +15% tighten triggered (HWM $1,026.59 cleared). Cannot verify if 7% stop is in place.**
+- Dividend ex-date Jul 20 ($1.63/qtr, +8% increase) — ex-date within 3 weeks
+- Hold: strong thesis, AI infrastructure evolution, analyst upgrades
+
+**IWM (~$299, +2.83% from entry $290.770) — CONSIDER EXIT:**
+- 25+ trading days at +2.83% — slow-bleed rule triggered
+- Rate-cut thesis: FOMC hawkish, no 2026 cuts confirmed
+- 52-wk high $301.50 tested briefly — limited upside evident
+- Alternative fundamental support (EPS growth): intact but not driving price
+- Stop ~$268-$271 (9%+ buffer) — stop managing downside
+- Week 10 action: monitor closely; exit proactively or let stop work
+
+**QQQ (~$714, -3.6% from Jun 18 close of $740.62) — HOLD:**
+- Stop ~$667 — still 6.6% buffer from current price
+- Nasdaq-100 structurally strong; mega-cap AI/tech; Fed hawkish headwind to yields
+- QQQ fell from $740 to $714 — not a thesis break, normal vol
+- No new HWM made — stop likely unchanged
+- Hold to stop
+
+**SOXX (~$614, -2.1% from entry, -4.3% from HWM $641.75) — HOLD (re-evaluate):**
+- Benzinga SELL high from Jun 18 validated by subsequent -3.9% drop
+- 52-wk range $232–$655 — still well within range
+- AI chip structural thesis intact ($975B global semi TAM)
+- Stop ~$578 (6% buffer from $614) — thesis still alive
+- Risk: valuation stretched after ~99% 1-year run; AI capex payoff debate intensifying
+- Hold to stop; if SOXX breaks $600 intraday, flag for thesis review
+
+**AMD (~$540, +8% above thesis entry ~$500) — WATCH (conditional):**
+- Cantor Fitzgerald PT $700 (raised from $500); UBS raised to street-high Jun 25
+- Data Center GPU: $5.8B Q1 revenue (+57% YoY); 260% YTD gain
+- R:R at $540 entry: ($700–$540) / ($540×0.10) = $160/$54 = **2.96:1 ✓** with Cantor PT
+- Sizing: 17-20% of ~$106K = $18K–$21K = 33-39sh @ $540
+- **Entry conditional on IWM exit** — 5th position otherwise exceeds 85% cap
+- NFP blackout starts Wednesday — any AMD entry must be today or Tuesday
+
+### Trade Ideas
+1. **CAT — HOLD (stop tighten verification URGENT):** Cannot place or verify orders via API. User must confirm 7% trail order is active on Alpaca dashboard.
+2. **IWM — proactive exit consideration:** 25+ days, +2.83%, broken rate-cut thesis, hawkish Fed. If user decides to exit, AMD entry possible today or tomorrow.
+3. **AMD — conditional entry (today/Tue only):** If IWM exits → AMD entry at ~$540, 33-35 shares. R:R 2.96:1 (Cantor $700). Set 10% trailing stop GTC immediately. NFP blackout starts Wed.
+4. **SOXX — watch $600:** Hold to stop but flag if price breaks $600 intraday (8% buffer compressed from $614).
+5. **QQQ — hold to stop:** No action needed. Stop at $667.
+
+### Risk Factors
+- **🚨 Alpaca API blocked (403):** Cannot verify position stops, CAT tighten status, or place orders. USER ACTION REQUIRED.
+- **CAT stop unknown:** If 7% tighten was NOT executed during Week 9, need to place it manually (HWM ~$1,057 → 7% trail target = ~$983).
+- **NFP blackout (Thu Jul 3):** Named blocker; no new entries Wednesday or Thursday.
+- **SOXX weakening:** -4.3% from HWM, below Jun 18 close; Benzinga SELL signal validated.
+- **IWM slow bleed:** 25+ days at +2.83%, hawkish FOMC; deployment 76% so patience rule applies but thesis impaired.
+- **Oil decline ($70 WTI):** US-Iran peace talks; energy headwind (no direct exposure — no XOM/CVX held).
+- **Holiday volume:** Light week (July 4); wider spreads, less reliable moves.
+- **Week 9 log gap:** Entire week of trades/decisions unconfirmed in repo. Unknown if AMD was entered or IWM exited.
+
+### Decision
+**HOLD** — Deployment ~76% (above 60% floor; patience valid). 4 positions unless Week 9 changed roster (unconfirmed). No capacity for new entry without IWM exit. NFP blackout effective Wednesday.
+
+**Priority actions (user-facing):**
+1. **VERIFY on Alpaca dashboard:** Is 7% trail on CAT active? What are current stop prices for all 4 positions?
+2. **Decide IWM:** Exit today or hold to stop. If exit → AMD entry today or Tuesday.
+3. **AMD timing:** Must act by Tuesday if IWM exits (NFP blackout starts Wed).
