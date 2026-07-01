@@ -4025,3 +4025,39 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+## 2026-07-01 — Pre-Market Research — ROUTINE BLOCKED (no data, no trades)
+
+**Environment failure — could not execute any step of the workflow.**
+
+- All three external API hosts required by this routine are rejected at the
+  session's network egress layer with `403` on the HTTPS CONNECT tunnel
+  (confirmed via proxy status endpoint, `recentRelayFailures`):
+  - `paper-api.alpaca.markets:443` — account/positions/orders unreachable
+  - `api.perplexity.ai:443` — market research unreachable
+  - `api.clickup.com:443` — notification channel unreachable
+- This is a policy-level denial at the proxy, not a credential or code issue.
+  All required env vars (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`
+  = `https://paper-api.alpaca.markets/v2` (paper, correct per AIS setup),
+  `ALPACA_DATA_ENDPOINT`, `PERPLEXITY_API_KEY`, `PERPLEXITY_MODEL`,
+  `CLICKUP_API_KEY`, `CLICKUP_WORKSPACE_ID`, `CLICKUP_CHANNEL_ID`) were present
+  and set. Per proxy README, 403/407 policy denials must be reported, not
+  retried or routed around — no workaround was attempted.
+- No account snapshot, no positions/orders check, no Perplexity research, and
+  no ClickUp alert were possible this run. WebSearch fallback was not used
+  because the blocker is infrastructure-level (network egress), not a missing
+  Perplexity key, so a fallback would not restore trading-account visibility
+  or the ability to place/verify orders — reporting the outage takes priority
+  over guessing at trade ideas with no account state.
+- **No trades placed. No stop changes. No orders touched.**
+- Last known state carried forward unchanged from 2026-06-19 EOD (see above):
+  4 positions (CAT, IWM, QQQ, SOXX), 75.8% deployed, all GTC trailing stops
+  reported active as of that entry. This run could not confirm they are still
+  live — needs verification once connectivity is restored.
+
+### Decision
+**HOLD — forced by infrastructure outage, not a market judgment.** No trade
+data available to evaluate the CLAUDE.md deployment-floor default-to-TRADE
+rule. Next successful run must re-verify account/positions/stops before
+taking any action, since several session(s) of price movement occurred
+between 2026-06-19 and today with no bot visibility.
