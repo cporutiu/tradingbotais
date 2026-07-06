@@ -4025,3 +4025,28 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
+
+---
+
+## 2026-07-06 — Pre-Market Research — RUN BLOCKED (infra outage)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set).
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (56) CONNECT tunnel failed, response 403`.
+- Confirmed via the session's egress-proxy status endpoint: this is a policy-level denial, not a credentials or transient-network issue — the proxy rejected the CONNECT to all three hosts before any Alpaca/Perplexity/ClickUp auth was attempted:
+  - `paper-api.alpaca.markets:443` — denied
+  - `api.perplexity.ai:443` — denied
+  - `api.clickup.com:443` — denied
+- WebSearch/native fallback was not substituted for the missing account snapshot, since position and equity data can only come from the Alpaca API, and fabricating it would be unsafe for a trading log.
+- Per this session's proxy runbook: "Do not retry or route around it — report the blocked host." No retries were attempted beyond the initial confirmation.
+
+### Impact
+- No account/position snapshot pulled — last known state remains the Jun 19 EOD snapshot (4 positions: CAT, IWM, QQQ, SOXX; 75.8% deployed). Real state as of 2026-07-06 is unknown — ~2.5 weeks of routine runs appear to be missing from this log/repo entirely (last entry before this one is Jun 19), so live positions/stops may have changed materially since then (fills, stop triggers, manual trades) and are not reflected here.
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- ClickUp alert could not be sent (channel unreachable) — flagging here instead; user notified out-of-band.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; the last confirmed positions/stops are 17 days stale.
