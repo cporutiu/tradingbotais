@@ -4050,3 +4050,31 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 ### Action needed (not autonomous — requires the user)
 1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
 2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; the last confirmed positions/stops are 17 days stale.
+
+---
+
+## 2026-07-07 — Pre-Market Research — RUN BLOCKED (infra outage, 2nd consecutive occurrence)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets/v2, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set).
+- `scripts/alpaca.sh account`, `scripts/perplexity.sh`, and `scripts/clickup.sh` all failed identically to Jul 6: `curl: (22) The requested URL returned error: 403`.
+- Confirmed via the proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`) this is a policy-level denial, not credentials/transient network — same three hosts rejected at CONNECT, before any app-layer auth:
+  - `paper-api.alpaca.markets:443` — denied
+  - `api.perplexity.ai:443` — denied
+  - `api.clickup.com:443` — denied
+- No WebSearch fallback substituted for account/position data (can only come from Alpaca API; fabricating equity/positions would be unsafe for a trading log).
+
+### Note on this run's task prompt
+- The routine invocation text for this run described the account as "a LIVE ~$10,000 Alpaca account." This conflicts with every memory file (`PROJECT-CONTEXT.md`, `TRADING-STRATEGY.md`, `CLAUDE.md`): this bot (AIS) runs on a **paper** account (PA3GVPXBYBRB) with **$100,000** starting capital, confirmed again by `ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2` in the actual environment. Flagging per the Account Isolation rule ("if credentials look wrong... STOP and alert the user") — no trades were at risk this run since the API was unreachable regardless, but this mismatch should be corrected in whatever generates the routine prompt before a future run where the API *is* reachable.
+
+### Impact
+- Second consecutive blocked pre-market run (Jul 6, Jul 7). No account/position snapshot pulled — last confirmed state is still the Jun 19 EOD snapshot (4 positions: CAT, IWM, QQQ, SOXX; 75.8% deployed). ~2.5+ weeks of routine runs are unaccounted for in this log.
+- No trade ideas generated, no HOLD/TRADE decision made.
+- ClickUp alert could not be sent (channel unreachable) — flagging here instead; user notified out-of-band via push notification.
+
+### Action needed (not autonomous — requires the user)
+1. Allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy — this has now failed identically two runs in a row, so it is not a transient blip. Alternatively, move this routine to the local Windows Task Scheduler path (per `routines/README.md`) where these hosts are reachable.
+2. Clarify/fix the discrepancy between this run's prompt ("LIVE ~$10,000") and the documented paper account ($100,000) so a future run doesn't act on the wrong assumption.
+3. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; positions/stops are now materially stale (18+ days).
