@@ -4024,6 +4024,85 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 1. SOXX Monday gap/price action (Benzinga SELL high conflict)
 2. CAT approach to +15% tighten threshold ($1,026.59)
 3. AMD entry opportunity if IWM exits
+
+---
+
+## 2026-07-08 — Pre-Market Research (Tuesday, Week 11 Day 2, Day 52)
+*Note: Post-reconnect after 3-week 401 blackout (Jun 20 – Jul 8). SOXX and CAT exited via GTC stops during outage. First live session since Jun 19.*
+
+### Account Snapshot (live API — Jul 8 close)
+- **Equity:** $103,268.80 | **Cash:** $64,507.31 (62.5%) | **Deployed:** $38,761.75 (37.5%, 2 positions) | **DT count:** 0
+- **Phase P&L:** +$3,268.80 (+3.27%) | **Week 11 trade count:** 0/3
+- **URGENCY PROTOCOL ACTIVE** — deployed <75% for 3+ consecutive weeks. R:R floor = 1.5:1. Tier-2 blockers do not apply. Wednesday urgency check threshold = <70%.
+
+### Positions (Jul 8 close)
+| Ticker | Shares | Entry | Close | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.770 | $292.85 | +$129 (+0.7%) | 10% trail HWM $302.72 / stop $272.45 (4c0586cc) |
+| QQQ | 29 | $736.683 | $710.52 | -$759 (-3.6%) | 10% trail HWM $745.42 / stop $670.88 (ce15a8ec) |
+
+**QQQ -7% manual cut threshold:** $684.92 (current $710.52 = 3.7% above cut — monitor)
+**IWM:** Hit 52-week high $302.72 during blackout; pulled back to $292.85. Thesis intact (IWM +22% YTD).
+
+### Market Context
+- **WTI:** ~$72–74/bbl — surged +5–7% on Jul 7 (Iran shock); WTI was at $68.78 on Jul 3. Iran war driving oil risk premium.
+- **Brent:** est. ~$80–85/bbl (down from May peak ~$117, EIA baseline $85/June)
+- **S&P 500 futures (Sep '26):** ~7,515–7,525, -0.15% to -0.35% pre-market — Iran shock weighing
+- **VIX:** 17.78 (Cboe spot), intraday high 18.91 — up +10% today. Moderate fear, not panic.
+- **Key catalyst: Iran conflict** — IMF expects inflation "scar" through 2027. Hawkish Fed (Chair Warsh). Hitting airlines, homebuilders, rate-sensitive cyclicals; supporting energy and defense.
+- **Tech/AI:** Nasdaq +21.4% in Q2 2026 (best quarter since 2020). But: QQQ 10-day MA crossed below 50-day MA (Jul 7) — near-term bearish. Sharp semi selloff at H2 2026 start.
+- **Small cap (IWM):** Russell 2000 +21.5% in Q2 2026; IWM +22% YTD. EPS growth ~43% YoY (small cap). Rate-cut thesis intact for Sep 2026 expected cut. Iran hawkish = headwind near-term.
+
+### Economic Calendar
+- **TODAY (Wed Jul 9 — tomorrow):** No Tier-1 blockers. Tier-2: possible Fed speakers.
+- **Mon Jul 14:** **CPI June 2026 at 8:30 AM ET — TIER-1 BLOCKER.** No new entries on Jul 14. Last CPI print: May +4.2% YoY (core elevated above 3.0%). Jun CPI likely reflects tariff/Iran impact.
+- **Today completed:** Wholesale inventories (10 AM), FOMC minutes (2 PM) — Tier-2 events; no trade impact under urgency protocol.
+- **Macro pre-check note:** CPI core >3.0% (last print 4.2%) — NEW ENTRIES with rate-cut-dependent thesis (small-cap, homebuilders, REITs) BLOCKED. XOM (energy) and NVDA (AI earnings thesis) clear this check.
+
+### Blackout Summary (Jun 20 – Jul 8)
+- **SOXX:** Stopped Jun 24 at $590.33. HWM $655.94. P&L: -$1,229 (-5.93%)
+- **CAT:** Stopped Jul 2 at $965.74. HWM $1,073.46. P&L: +$1,461 (+8.19%). CAT hit auto-tighten trigger ($1,026.59) and exceeded it to $1,073.46 but 7% tighten never executed (routine failure). Cost ~$640 vs optimal.
+- **Net blackout exit P&L:** +$232
+
+### Trade Ideas
+
+**Idea 1: XOM (Exxon Mobil) — ENTER TOMORROW (Jul 9) — PRIMARY**
+- **Catalyst:** Iran oil shock; WTI +5–7% Jul 7; sustained geopolitical risk premium. P1 Energy sector on watchlist. Prior XOM position (May 13–26) at $150.77 → $153.27; now at $142–143 = discount to prior exit.
+- **Analyst targets:** UBS $174 (Buy), Bernstein $182 (Buy), TD Cowen $155 (Buy, cut from $172)
+- **Entry:** ~$143 market open Jul 9 | **Stop:** 10% trail GTC immediately on fill
+- **R:R:** ($174 – $143) / ($143 × 0.10) = $31 / $14.30 = **2.2:1 ✓** (exceeds 1.5:1 urgency floor)
+- **Size:** 130 shares × $143 = $18,590 (18% of equity)
+- **Macro pre-check:** Energy, not rate-sensitive ✓
+- **Sector cap:** P1 single stock, no cap conflict ✓
+- **After entry:** Deployed = $38,762 + $18,590 = $57,352 (55.5%) — still below 75%, urgency continues
+
+**Idea 2: NVDA (Nvidia) — ENTER Thu Jul 10 or Fri Jul 11 — if tech stabilizes**
+- **Catalyst:** AI infrastructure spending theme intact; Nasdaq Q2 +21.4%; BofA tracking record tech inflows. NVDA sold from prior position at $219.93 (May 18); now ~$202–210 = potential re-entry below prior exit.
+- **Entry:** ~$205–210 if QQQ/tech holds support Thu/Fri
+- **R:R:** Entry $207, target $280+ (analyst consensus) = ($73) / ($20.7) = **3.5:1 ✓**
+- **Size:** 95 shares × $207 = $19,665 (19% of equity)
+- **Risk:** Semi-selloff narrative could persist if Iran/hawkish-Fed headwind continues. QQQ 10-day < 50-day = near-term bearish signal. WAIT for Thursday to see if tech stabilizes before entering.
+- **After XOM+NVDA entries:** Deployed = $57,352 + $19,665 = $77,017 (74.6%) ≈ 75% floor ✓
+
+**Idea 3 (watchlist only):** AMD — Mizuho PT $615, Gottheimer Congress BUY high, R:R 2.3:1. NOT entering until QQQ/semi sentiment recovers. Carry to Week 12.
+
+### Position Monitoring
+- **QQQ:** -3.6% from entry. Monitor daily vs -7% cut ($684.92). Stop HWM $745.42 / stop $670.88 still 5.7% below current price — stop is managing downside. No action unless $684.92 breached.
+- **IWM:** +0.7%, 36 calendar days held (entry Jun 2). IWM thesis intact (52W high hit, EPS 43% growth, Sep rate cut expected). 2-week slow-bleed rule: IWM is ABOVE entry, rule does not trigger. Hold.
+- **CAT auto-tighten:** Already executed by market (stopped at $965.74 from HWM $1,073.46 on 10% trail). Closed. No further action needed.
+
+### Risk Factors
+- **Iran escalation:** Unexpected cease-fire could reverse oil spike and hurt XOM quickly; position-size at 18% contains exposure
+- **CPI Jul 14 (Tier-1 blocker):** If Jun CPI comes in hot (>4.5%), tech/growth could sell off further → risk to NVDA entry
+- **QQQ -7% cut:** At $684.92; current $710 leaves 3.7% buffer. Semi-selloff narrative is the risk.
+- **Deployment urgency vs market risk:** Iran + VIX spike = elevated near-term volatility; urgency protocol requires entries, but size discipline (17-20% per position) contains single-name risk.
+
+### Decision
+**TRADE — Enter XOM tomorrow morning (Jul 9) at market. NVDA contingent on Thu/Fri tech stabilization.**
+- XOM: 130 shares at market open (~$143 target) — GTC 10% trailing stop immediately on fill
+- NVDA: 95 shares Thu Jul 10 OR Fri Jul 11 — only if QQQ closes flat or positive Wed Jul 9; skip if QQQ breaks below $700
+- Week 11 slots after: 1/3 used (XOM), 2/3 used (NVDA), 1 slot remaining
+- Urgency target: Get to ≥75% deployed by Fri Jul 11 close before CPI blackout
 4. Week 9 research: confirm AMD R:R at live ask, FCX pullback check
 
 ---

@@ -2844,3 +2844,44 @@ Cash is $49,403 (47%). To reach 75% deployment floor need ~$28K more (~2 positio
 - Enter Mon/Tue at market: fills deployment gap immediately; AMD thesis intact (Mizuho PT $615, R:R 2.3:1; Congress BUY high, Gottheimer priority); avoids missing the move → paying up into any Monday gap; market-open price risk
 - Wait for limit at $498–502: better entry improves R:R margin; avoids chasing → AMD could run Monday without a clean pullback; Week 9 slot goes unused while waiting
 
+**Bot autonomous decision (2026-06-23 — retroactive, logged 2026-07-08): [Q1 — IWM exit vs hold (slow-bleed 17 days, FOMC hawkish)] → HOLD TO STOP — CONFIRMED CORRECT**
+IWM rallied from $295.59 (Jun 19 close) to HWM $302.72 (+2.4%), matching the 52-week high, vindicating the thesis. Stop 4c0586cc remains active. Note: routine 401 failures (Jun 22 – Jul 8) prevented real-time logging; retroactively confirmed.
+
+**Bot autonomous decision (2026-06-23 — retroactive, logged 2026-07-08): [Q2 — AMD entry timing if IWM exits] → MOOT**
+IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for Week 11+.
+
+---
+
+## Blackout Period Exits (Jun 20 – Jul 8, 2026 — Unlogged due to API 401 failures)
+
+**SOXX stopped out — Jun 24, 2026**
+- Entry Jun 18: $627.579 (33 shares) → Exit Jun 24: $590.33 (trailing stop c3ca7db2 filled)
+- HWM at exit: $655.94 / stop triggered at $590.346
+- Realized P&L: **-$1,229.22 (-5.93%)**
+- SOXX rallied from entry to $655.94 (+4.5%) then pulled back sharply; semi/AI sector rotation reversed.
+
+**CAT stopped out — Jul 2, 2026**
+- Entry May 5: $892.689 (20 shares) → Exit Jul 2: $965.74 (trailing stop aa646f6e filled)
+- HWM at exit: $1,073.46 / stop triggered at $966.11
+- Realized P&L: **+$1,461.02 (+8.19%)**
+- CAT HIT the $1,026.59 auto-tighten trigger (reached $1,073.46 HWM) — but routine failures prevented the 7% tighten from executing. 10% trail remained; exit at $966 vs optimal ~$998 under 7% trail. Failure cost ~$640 vs optimal execution.
+
+**Net blackout P&L on exits: -$1,229 + +$1,461 = +$232**
+
+---
+
+## 2026-07-08 — Account State (Post-Blackout Reconnect, Day 52, Week 11 Day 2)
+
+**Account (live API):** Equity $103,268.80 | Cash $64,507.31 (62.5%) | Deployed $38,761.75 (37.5%) | Phase P&L: +$3,268.80 (+3.27%)
+**URGENCY PROTOCOL ACTIVE** — deployed below 75% for 3+ consecutive weeks.
+
+**Positions:**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.770 | $292.85 | +$129 (+0.7%) | 10% trail HWM $302.72 / stop $272.45 (4c0586cc) |
+| QQQ | 29 | $736.683 | $710.52 | -$759 (-3.6%) | 10% trail HWM $745.42 / stop $670.88 (ce15a8ec) |
+
+**QQQ watch:** -7% manual cut threshold = $684.92 (current $710.52 = 3.7% above cut level). Monitor.
+**IWM:** Thesis intact — IWM hit 52-week high $302.72 during blackout; now $292.85 pullback from Iran shock today (-1.13%). Hold.
+**Week 11 slots:** 0/3 used. 3 fresh slots available.
+
