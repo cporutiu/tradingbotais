@@ -4050,3 +4050,24 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 ### Action needed (not autonomous — requires the user)
 1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
 2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; the last confirmed positions/stops are 17 days stale.
+
+## 2026-07-08 — Pre-Market Research — RUN BLOCKED (infra outage, 2nd consecutive)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets, ALPACA_DATA_ENDPOINT, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set).
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (22) The requested URL returned error: 403`.
+- Confirmed via the session's egress-proxy status endpoint: same policy-level denial as the 2026-07-06 blocked run — `connect_rejected`, "gateway answered 403 to CONNECT (policy denial or upstream failure)" on `paper-api.alpaca.markets:443`.
+- This is now the **second consecutive** pre-market run blocked by this outage (first: 2026-07-06, commit 03a868c). The egress policy has not been fixed in the 2 days since.
+- No ClickUp alert could be sent (channel unreachable) — flagging via out-of-band notification instead, per this session's runbook of "do not retry or route around it — report the blocked host."
+
+### Impact
+- No account/position snapshot pulled. Last known confirmed state remains the **2026-06-19 EOD snapshot** (4 positions: CAT, IWM, QQQ, SOXX; 75.8% deployed) — now **19 days stale**.
+- Real state as of 2026-07-08 is unknown. GTC trailing stops may have triggered, positions may have changed, and the CAT auto-tighten watch item (trigger $1,026.59 HWM) has not been actioned by any run since Jun 19.
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+
+### Action needed (not autonomous — requires the user)
+1. Fix egress allowlisting for `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` on this cloud session's network policy — the 2026-07-06 flag did not resolve it.
+2. Alternatively, confirm the Windows Task Scheduler / local `.env` execution path (routines/README.md) is running instead, since these hosts are reachable there.
+3. Once connectivity is restored, pull a fresh Alpaca account/positions snapshot before relying on this log — the last confirmed state is 19 days old and CAT's stop-tighten watch item has been unmonitored since Jun 19.
