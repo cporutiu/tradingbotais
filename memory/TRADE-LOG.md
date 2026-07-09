@@ -2926,3 +2926,28 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 
 **No action taken. No ClickUp notification.**
 
+---
+
+## Jul 09 — EOD Snapshot (Day 53, Thursday — Week 11 Day 3)
+**Portfolio:** $103,763.34 | **Cash:** $46,512.63 (44.8%) | **Day P&L:** +$494.54 (+0.48%) | **Phase P&L:** +$3,763.34 (+3.76%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.770 | $297.08 | +1.23% | +$391.23 (+2.17%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| QQQ | 29 | $736.683 | $722.94 | +1.62% | -$398.56 (-1.87%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $137.4345 | -2.62% | -$128.19 (-0.71%) | 10% trail HWM $138.545 / stop $124.6905 (fff198e9) |
+
+**Trades today:** XOM BUY 130 @ $138.4206 (market open, Iran oil shock thesis). Week 11 count: 1/3.
+
+**Notes:** Day 53, Thursday. XOM entered at open per Jul 8 research (Iran oil shock, WTI +5-7%, R:R 2.2:1); day-1 position essentially flat (-0.71%). IWM +2.17% but conviction downgraded — today's research flagged RS rank collapse (#6→#16 of 19 in 3 weeks) plus a fresh bearish-divergence technical piece; fundamentals still intact so held, but now the highest-risk position in the book. QQQ -1.87% but thesis reconfirmed (10/50-day MA crossed back bullish, resolving Jul 8's bearish flag) — this also cleared the contingency condition for an NVDA entry. Deployment 55.2%, still below the 75% floor (urgency protocol active, 3rd+ week). NVDA already queued via today's pre-market research for Friday's open (~100 sh @ ~$197, 10% trail GTC, R:R ~5.2:1) to close the gap toward 75%. No stop-tighten or -7% cut thresholds approached; no trade-slot pressure (1/3 used).
+
+**Action questions:**
+
+**Q1: IWM — RS rank collapsed #6→#16 (of 19) in 3 weeks, plus a fresh bearish-divergence article today. Thesis still fundamentally intact (no exit trigger cleared) — exit now, or hold to stop $272.45?**
+- Exit now: locks in +2.17% gain before a real momentum breakdown — but the fundamental thesis (EPS growth, YTD +19-21%) hasn't broken, so this could be an early, unnecessary exit
+- Hold to stop: keeps the position while fundamentals hold and the 10% trail manages downside — but a continued RS slide could turn this into a slow bleed if not revisited soon
+
+**Q2: Deployed 55.2% (< 75% floor, 3rd+ week — urgency protocol active). NVDA is already queued for Friday's open (~$197, R:R ~5.2:1) per today's pre-market research — proceed with that plan, or hold off and stay patient?**
+- Proceed with NVDA Friday: closes most of the deployment gap (→ ~74% deployed) on a well-supported setup (Strong Buy consensus, R:R 5.2:1) — adds a 4th position into a late-cycle regime call flagged today
+- Hold off: preserves flexibility if late-cycle risk grows — extends the deployment shortfall into a 4th+ week, the single biggest alpha drag per past review
+
