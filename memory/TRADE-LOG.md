@@ -2885,3 +2885,28 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 **IWM:** Thesis intact — IWM hit 52-week high $302.72 during blackout; now $292.85 pullback from Iran shock today (-1.13%). Hold.
 **Week 11 slots:** 0/3 used. 3 fresh slots available.
 
+---
+
+## 2026-07-09 — Market-Open Execution (Thursday, Week 11 Day 3)
+
+**Pre-market plan (from Jul 8 research):** Enter XOM at open — Iran oil shock, WTI +5-7%, P1 Energy watchlist, R:R 2.2:1.
+
+**Hard checks:** Positions after trade 3 (≤6) ✓ | Week count 0/3 → 1/3 ✓ | Cost $17,994.68 = 17.3% of equity (17-20% band) ✓ | Catalyst documented (Jul 8 RESEARCH-LOG, Idea 1) ✓ | DT count 0/3, no PDT conflict ✓ | Sector: Energy, 1/2 slots, no cap conflict ✓ | Macro pre-check: not rate-sensitive, N/A ✓
+
+**XOM BUY ORDER FILLED (9:46 AM ET):**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-07-09 | XOM | BUY | 130 | $138.4206 | 10% trail GTC (fff198e9, HWM $138.40, stop $124.56) | $174 (analyst PT, +25.7%) | 2.2:1 | Iran oil shock; WTI +5-7% Jul 7; UBS PT $174 / Bernstein PT $182 / TD Cowen $155; P1 Energy watchlist; entry $138.42 = discount to $143 pre-market estimate |
+
+**Week 11 trade count: 1/3**
+
+**Open Orders (market-open 2026-07-09):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.45 ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.88 ✓
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $138.40, stop $124.56 ✓ (new)
+
+**Account (post-trade 2026-07-09):** Equity $103,796.86 | Cash $46,512.63 (44.8%) | Deployed $57,284.23 (55.2%, 3 positions) | Week 11 count: 1/3 | Phase P&L: +$3,796.86 (+3.80%)
+
+**Urgency protocol still active** — deployed 55.2% < 75%. NVDA contingent entry (95 sh, ~$205-210) remains on watch for Thu/Fri if QQQ/tech stabilizes, per Jul 8 research Idea 2.
+
