@@ -2910,3 +2910,19 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 
 **Urgency protocol still active** — deployed 55.2% < 75%. NVDA contingent entry (95 sh, ~$205-210) remains on watch for Thu/Fri if QQQ/tech stabilizes, per Jul 8 research Idea 2.
 
+**Midday 2026-07-09:**
+- **IWM midday:** $297.08 (+2.17% from entry $290.770; +1.23% today). Stop locked at HWM $302.72 / stop $272.448 (price below HWM — no trail update). Conviction downgraded per Jul 9 pre-market research (RS rank fallen #6→#16, bearish-divergence article) but no exit trigger cleared (position positive, no slow-bleed, no weekend-carry). Active watch, not exit. HOLD.
+- **QQQ midday:** $722.94 (-1.87% from entry $736.683; +1.62% today). Stop locked at HWM $745.42 / stop $670.878 (price below HWM — no trail update). 10/50-day MA crossover resolved bullish per pre-market research; AI capex catalyst intact; today's +1.62% consistent with thesis. HOLD.
+- **XOM midday:** $137.4345 (-0.71% from entry $138.4206; -2.62% today). Stop locked at HWM $138.545 / stop $124.6905 (price below HWM — no trail update). Pullback is normal give-back of the Jul 7 Iran-shock spike (WTI/Brent still elevated per pre-market research); not a thesis break. HOLD.
+- **Losers cut:** None (-7% threshold not breached: IWM +2.17%, QQQ -1.87%, XOM -0.71%)
+- **Stop tightening:** None (+15% thresholds not reached: IWM needs $334.39, QQQ needs $847.19, XOM needs $159.18)
+- **Thesis break check:** None. All 3 intact — no changes since this morning's pre-market research.
+- **Portfolio:** Equity $103,763.34 | Cash $46,512.63 (44.8%) | Deployed $57,250.71 (55.2%, 3 positions) | Week 11 count: 1/3 | Phase P&L: +$3,763.34 (+3.76%)
+
+**Open Orders (midday 2026-07-09, unchanged):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448 ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.878 ✓
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $138.545, stop $124.6905 ✓
+
+**No action taken. No ClickUp notification.**
+
