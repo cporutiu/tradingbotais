@@ -2951,3 +2951,7 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 - Proceed with NVDA Friday: closes most of the deployment gap (→ ~74% deployed) on a well-supported setup (Strong Buy consensus, R:R 5.2:1) — adds a 4th position into a late-cycle regime call flagged today
 - Hold off: preserves flexibility if late-cycle risk grows — extends the deployment shortfall into a 4th+ week, the single biggest alpha drag per past review
 
+**User decisions (2026-07-09):**
+- Q1 (IWM — hold vs exit): **HOLD to stop $272.45.** Fundamental thesis intact; 10% trail manages downside.
+- Q2 (NVDA Friday entry): **PROCEED.** Enter NVDA at Friday open (~100 shares @ ~$197), 10% trail GTC immediately on fill. QQQ +1.62% today clears the contingency condition.
+
