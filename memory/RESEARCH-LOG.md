@@ -4129,3 +4129,84 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 ### Action needed (not autonomous — requires the user)
 1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
 2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; the last confirmed positions/stops are 17 days stale.
+
+---
+
+## 2026-07-09 — Pre-Market Research (Thursday, Week 11 Day 3, Day 53)
+*Note: Run mid-session (interactive), after today's scheduled market-open already executed the Jul 8 XOM plan (commit `market-open trades 2026-07-09`, 130 sh @ $138.4206, filled 9:46 AM ET). This entry refreshes research and sets up the next actionable decision (NVDA) rather than re-deciding today's already-executed trade. `scripts/perplexity.sh` had the same `python`-Store-alias failure already patched in `clickup.sh` — applied the identical `PYCMD` fallback fix so research could run.*
+
+### Account Snapshot (live API, intraday)
+- **Equity:** $103,799.11 | **Cash:** $46,512.63 (44.8%) | **Deployed:** $57,286.48 (55.2%, 3 positions) | **DT count:** 0
+- **Phase P&L:** +$3,799.11 (+3.80%) | **Week 11 trade count:** 1/3 (XOM)
+- **URGENCY PROTOCOL ACTIVE** — deployed <75% for 3+ consecutive weekly closes. R:R floor = 1.5:1. Tier-2 blockers do not apply. Wednesday urgency check threshold <70% (moot, already Thursday).
+
+### Positions (intraday)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.770 | $297.30 | +$404.87 (+2.25%) | 10% trail HWM $302.72 / stop $272.45 (4c0586cc) |
+| QQQ | 29 | $736.683 | $719.31 | -$503.83 (-2.36%) | 10% trail HWM $745.42 / stop $670.88 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $138.38 | -$5.28 (-0.03%) | 10% trail HWM $138.545 / stop $124.6905 (fff198e9, new today) |
+
+**QQQ -7% manual cut threshold:** $684.92 (current $719.31 = 5.0% above cut — monitor, buffer widened vs. Jul 8).
+
+### Market Context
+- **WTI:** ~$73–74/bbl. **Brent:** ~$78–79/bbl. Elevated on sustained Iran-conflict risk premium; consistent with Jul 7 shock levels.
+- **S&P 500:** cash ~7,480–7,500; futures implied low-7,500s. Record territory.
+- **VIX:** ~16.9–17.1 — **LOW risk (<18)**.
+- **Economic cycle: LATE-CYCLE** (Perplexity explicit re-classification — **shift from "mid-cycle" called in the Jun 19 entry**). Rationale: flattening/inverted curve signals, still-elevated but moderating inflation, tighter policy, softening labor market (June NFP +57K vs ~113K consensus, unemployment 4.2%), rising downside risks characteristic of a mature/fragile expansion rather than acceleration. **Flag: watch for this to justify tighter risk management (smaller size, higher R:R bar) if it persists next week.**
+- **Catalysts today:** initial jobless claims, NY Fed's Williams speaking (rate-path signal), AI capex still the dominant earnings driver (IT/comm services leading S&P earnings growth), one of the largest options expirations in memory + quarter-end pension rebalancing flows (technical vol risk).
+- **Earnings BMO today:** PepsiCo (PEP), Simply Good Foods (SMPL). None of our holdings/candidates report today.
+- **Econ calendar:** No CPI/PPI/FOMC/NFP today. June NFP already out (Jul 2, weak). Next PPI **Jul 15**; CPI (June print) **Jul 14 — Tier-1 blocker, still 5 days out, not a blocker today.**
+- **Sector momentum (YTD):** Energy +23.3%, Materials +17.4%, Staples +15.6%, Industrials +14.1% lead; Comm Svcs -1.2%, Tech -3.3%, Discretionary -3.8%, Financials -6.9% lag.
+- **Sector momentum (20-day RS, fresh vs. YTD):** Tech/semis/comms are re-accelerating short-term — RS ranking (strongest→weakest): SPY, QQQ, SOXX, XLK, XLC, XLY, XLE, XLF, XLI, XLB, XLP, XLV, XLU, XLRE, HYG, **IWM (16th)**, EEM, GLD, SLV. **XLK/QQQ/SOXX rotation back into tech is the headline change vs. Jun 19** (QQQ was RS #2 then too, but XLK/SOXX have moved up).
+
+### Benzinga Signals (24h lookback)
+- **BUY (high):** SPY (score +6), QQQ (score +8, 8x — "Millions of ETF Investors Now Own SpaceX" theme), IWM (score +6, 4x — despite the bearish technical note below)
+- **BUY (medium):** GLD, XLE, XLK, XLB, XLY, EEM (all score +2)
+- **SELL:** none
+- **HOLD/low confidence (not actionable):** SOXX, NVDA, XOM, CVX, AMD, AVGO
+- Note: QQQ and IWM (both held) carry Benzinga BUY high — supportive, but see IWM conflict under Perplexity validation.
+
+### Congress Signals
+- **Congress: no actionable signals today.** `fetch_congress.py` failed — Quiver Quantitative endpoint returned `401 Unauthorized` (public/free endpoint appears to require auth now, or key has lapsed). All tickers defaulted to HOLD/fetch_error. **This is a recurring dependency risk (same endpoint also used in the pre-blackout period) — no confluence check possible today.**
+
+### Perplexity Validation
+
+**IWM ($297.30, +2.25%) — HOLD, but conviction downgraded:**
+- Benzinga BUY high supports holding.
+- **Conflicting fresh signal:** MarketWatch technical piece published today — "bearish divergence after recent highs" in Russell 2000/IWM. RS ranking has **fallen from #6 of 19 (Jun 19) to #16 of 19 today** — a real deterioration in relative momentum, not noise.
+- Fundamentals (YTD +19-21%, EPS growth) still intact per prior research; no thesis-break trigger (position is +2.25%, stop 8.3% below current price, no 2-week slow-bleed or weekend-carry condition active).
+- **Action: HOLD, active watch item — do not exit today, but this is now the highest-risk position in the book.**
+
+**QQQ ($719.31, -2.36%) — HOLD, thesis re-confirmed:**
+- **10-day MA is back ABOVE the 50-day MA** (was below as of Jul 7/8) — the near-term bearish technical flagged Jul 8 has resolved. This is the condition Jul 8's research set for entering NVDA.
+- RS #2 of 19, Benzinga BUY high, AI capex catalyst intact.
+- Stop 5.0% below current price ($684.92 cut level, $719.31 current) — comfortable buffer, widened since Jul 8.
+
+**XOM ($138.38, ~flat) — HOLD, thesis intact, day-1 position:**
+- Oil catalyst confirmed live: WTI/Brent both still elevated on Iran risk premium; XOM's own Q2 trading update flagged higher commodity prices as an earnings tailwind; UBS reiterated Buy.
+- Mixed note: a separate macro/flow cross-check shows XLE as a relative laggard vs. SPY on a multi-week window (-1.95σ) — likely reflects the pre-Jul-7 period before the Iran spike and is stale relative to the fresh oil-specific data above. Not treated as a thesis concern yet; watch next 1-2 sessions for confirmation either way.
+- Stop 9.9% below current (10% trail, essentially at breakeven HWM).
+
+**NVDA (candidate, ~$196.9-197) — contingency condition MET:**
+- Consensus firmly Strong Buy (49-76 analysts across sources, ~0 Sell ratings). Average PT ~$300-309 (range $215-500) vs. current ~$197.
+- AI infrastructure/data-center capex thesis intact — data-center revenue +75% YoY, Blackwell adoption accelerating, GPU supply commitments up 3x YoY.
+- R:R at $197 entry, 10% trail stop, $300 target: (300-197)/19.7 = **~5.2:1** — well above both the 1.5:1 urgency floor and standard 2:1.
+- Jul 8's stated condition ("enter if QQQ closes flat or positive") is satisfied — QQQ +1.1% today, MA crossover resolved bullish.
+
+### Trade Ideas
+
+1. **NVDA — primary candidate for next market-open (Fri Jul 10).** Contingency condition from Jul 8 research is now met (QQQ stabilized, MA crossover bullish). Entry ~$197, 10% trail GTC stop immediately on fill, target ~$300 (Street consensus), R:R ~5.2:1. Size ~19% of equity (~100 sh @ ~$197 ≈ $19,700). Week 11 slot 2/3. Deployment after entry: ~$57,286 + $19,700 = $76,986 ≈ 74.1% — lands right at the 75% floor, resolving the urgency protocol if filled near this level. No Tier-1 blocker in the way (CPI is Jul 14, 5 days out). Macro pre-check N/A (AI earnings thesis, not rate-sensitive).
+2. **IWM — no new entry (already held); downgrade to active watch, not exit.** Bearish divergence + RS collapse (#6→#16) is a real deterioration signal but does not clear any exit trigger today (position positive, no slow-bleed, no weekend-carry). Re-evaluate at next session if RS keeps falling or price approaches HWM-tighten levels.
+3. **No third idea today** — with NVDA queued and IWM under watch, this fills the deployment gap toward the 75% floor without forcing a marginal new name into a late-cycle, options-expiration-heavy session.
+
+### Risk Factors
+- **Late-cycle regime call (new today):** if this holds next week, favors tighter risk management (higher R:R bar, smaller adds) even though urgency protocol currently pushes toward deploying capital.
+- **IWM technical deterioration:** RS rank #6→#16 in three weeks alongside a same-day bearish-divergence article — highest-risk existing position.
+- **Congress signal source down (401):** no confluence cross-check available; flag for the user if this persists past a few sessions (possible key/subscription lapse).
+- **Options expiration + quarter-end rebalancing flows today:** technical volatility risk independent of fundamentals.
+- **CPI Jul 14 (Tier-1 blocker, 5 days out):** no new entries that day; NVDA entry should land before this window if possible.
+- **Iran de-escalation risk:** would reverse the oil premium quickly and pressure the same-day XOM entry.
+
+### Decision
+**TRADE — queue NVDA for next market-open (Fri Jul 10), ~100 shares at market, 10% trail GTC stop immediately on fill.** Today's own market-open trade (XOM) already executed via the scheduled routine before this session started; this entry does not re-decide it. IWM held with downgraded conviction (active watch, not exit). QQQ and XOM both reconfirmed. Week 11 slots after NVDA: 2/3 used, 1 remaining.

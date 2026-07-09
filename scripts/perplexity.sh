@@ -28,7 +28,10 @@ fi
 
 MODEL="${PERPLEXITY_MODEL:-sonar}"
 
-payload="$(python -c "
+PYCMD="python"
+command -v python >/dev/null 2>&1 && python --version >/dev/null 2>&1 || PYCMD="py"
+
+payload="$("$PYCMD" -c "
 import json, sys
 print(json.dumps({
   'model': sys.argv[1],
