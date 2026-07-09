@@ -4050,3 +4050,24 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 ### Action needed (not autonomous — requires the user)
 1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
 2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; the last confirmed positions/stops are 17 days stale.
+
+## 2026-07-09 — Pre-Market Research — RUN BLOCKED (infra outage, repeat)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set; verified before any wrapper call).
+- Every outbound call from `scripts/alpaca.sh account`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (22) The requested URL returned error: 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not credentials/transient — `recentRelayFailures` shows `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for `paper-api.alpaca.markets:443`. Perplexity and ClickUp calls failed identically (403 before auth).
+- WebSearch/native fallback was not substituted for the missing account snapshot — position and equity data can only come from the Alpaca API, and fabricating it would be unsafe for a trading log.
+- Per runbook: do not retry or route around a policy-level 403. No repeated retries beyond the initial confirmation + proxy status check.
+
+### Impact
+- This is the **second consecutive blocked pre-market run** (also blocked 2026-07-06, same three hosts, same 403 signature). The cloud session's network policy has not been fixed in the 3 days since the last report.
+- No account/position snapshot pulled — last known confirmed state is still the **Jun 19 EOD snapshot** (4 positions: CAT, IWM, QQQ, SOXX; 75.8% deployed, equity $106,334.47). Real state as of 2026-07-09 is unknown — **20 days** of routine runs are unaccounted for in this log/repo. Positions, stops, and equity may have changed materially (fills, stop triggers, manual trades, or accumulated drift) and none of that is reflected here.
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- ClickUp alert could not be sent (channel unreachable) — user notified out-of-band via push notification instead.
+
+### Action needed (not autonomous — requires the user)
+1. Fix egress for this cloud environment's network policy (allowlist `paper-api.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com`), or run this routine via the local Windows Task Scheduler path (`scripts/run_routine.ps1`) per `routines/README.md`, where these hosts are reachable.
+2. Once connectivity is restored, pull a fresh account/positions/orders snapshot before relying on this log — do not assume HOLD; the last confirmed positions/stops are 20 days stale and may no longer reflect reality (stops may have triggered, positions may have closed).
