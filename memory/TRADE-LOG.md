@@ -2981,3 +2981,21 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 **Account (post-trade 2026-07-10):** Equity $103,742.24 | Cash $26,740.14 (25.8%) | Deployed $77,002.10 (74.2%, 4 positions) | Week 11 count: 2/3 | Phase P&L: +$3,742.24 (+3.74%)
 
 **Urgency protocol near-resolved** — deployed jumped 55.2%→74.2%, just under the 75% floor. 1 trade slot remains this week (3/3 cap).
+
+**Midday 2026-07-10:**
+- **IWM midday:** $296.03 (+1.81% from entry $290.770; -0.41% today). Stop locked at HWM $302.72 / stop $272.448 (price below HWM — no trail update). No new RS/technical data since Jul 9-10 pre-market flag (#6→#16); no exit trigger cleared. HOLD per Jul 9 user decision.
+- **NVDA midday:** $210.36 (+3.20% from entry $203.84; +3.74% today). Broker-side trailing stop auto-trailed to HWM $211.00 / stop $189.90. Dividend hike + $80B buyback thesis playing out on day 1. HOLD.
+- **QQQ midday:** $725.96 (-1.46% from entry $736.683; +0.37% today). Stop locked at HWM $745.42 / stop $670.878 (price below HWM — no trail update). AI capex/tech re-acceleration thesis intact (chip strength continuing). HOLD.
+- **XOM midday:** $138.70 (+0.20% from entry $138.4206; +0.90% today). Stop locked at HWM $138.965 / stop $125.0685 (price below HWM — no trail update). Citi PT cut to $155 + fading oil premium (Brent -16% from Jul 7 peak) flagged this morning as first cracks in thesis, but today's move is a modest gain — not a trigger. HOLD, watch closely next week.
+- **Losers cut:** None (-7% threshold not breached: IWM +1.81%, NVDA +3.20%, QQQ -1.46%, XOM +0.20%)
+- **Stop tightening:** None (+15% thresholds not reached: IWM needs $334.39, NVDA needs $234.42, XOM needs $159.18; QQQ negative)
+- **Thesis break check:** None. All 4 intact — no changes since this morning's pre-market research.
+- **Portfolio:** Equity $104,583.73 | Cash $26,740.14 (25.6%) | Deployed $77,843.59 (74.4%, 4 positions) | Week 11 count: 2/3 | Phase P&L: +$4,583.73 (+4.58%)
+
+**Open Orders (midday 2026-07-10, unchanged):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.878
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $138.965, stop $125.0685
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $211.00, stop $189.90
+
+**No action taken. No ClickUp notification.**
