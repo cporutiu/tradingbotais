@@ -679,3 +679,89 @@ _Rationale: +0.51% outperformance vs S&P; deployment restored to 75.8% after chr
 - Manual check first: review market conditions the day trigger approaches; more control — adds delay risk if trigger is hit and reversed intraday before bot can execute replacement
 
 ---
+
+## Week ending 2026-07-10
+
+*Note: Covers the combined 3-week span since the last weekly review (Jun 18/19 EOD). A Jun 20 – Jul 8 infra egress outage (all three API hosts blocked, `CONNECT tunnel failed 403`) prevented any routine runs for ~15 trading sessions — no separate Week 9/10 reviews exist because no daily logs were produced during the gap. Positions were unattended but GTC trailing stops remained live at the broker throughout.*
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $106,334.47 (Jun 18 EOD / Week 8 end — last pre-blackout close) |
+| Ending portfolio | $104,584.89 |
+| Week return | -$1,749.58 (-1.65%) |
+| S&P 500 week | -0.24% (SPX 7,500.58 Jun 18 → 7,482.71 Jul 9) |
+| Bot vs S&P | -1.41% |
+| Phase P&L | +$4,584.89 (+4.58% from $100,000 start) |
+| Trades | 4 (W:1 / L:1 / open:4) — 2 blackout auto-exits (SOXX loss, CAT win) + 2 new buys (XOM, NVDA) |
+| Win rate | 50% (1/2 closed trades) |
+| Best trade | CAT +8.19% ($+1,461.02 realized) |
+| Worst trade | SOXX -5.93% ($-1,229.22 realized) |
+| Profit factor | 1.19 (1,461.02 / 1,229.22) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| SOXX | $627.579 (Jun 18) | $590.33 (Jun 24) | -$1,229.22 (-5.93%) | Blackout auto-exit via 10% trail; rallied to HWM $655.94 (+4.5%) then semi/AI rotation reversed |
+| CAT | $892.689 (May 5) | $965.74 (Jul 2) | +$1,461.02 (+8.19%) | Blackout auto-exit via 10% trail; HWM hit $1,073.46, exceeding the $1,026.59 +15% tighten trigger — but the 7% tighten was never placed (routine outage); cost ~$640 vs. optimal execution |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.770 | $296.03 | +$326.13 (+1.81%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| QQQ | $736.683 | $726.00 | -$309.82 (-1.45%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | $138.4206 | $138.70 | +$36.32 (+0.20%) | 10% trail HWM $138.965 / stop $125.0685 (fff198e9) |
+| NVDA | $203.84 | $210.37 | +$633.41 (+3.20%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+
+### Sector Watchlist — Week 12 (Jul 13–17)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | — | AMD | Mizuho PT $615, R:R 2.3:1, Congress BUY high; Tech has 1/2 single-stock slots open (NVDA held, QQQ ETF doesn't count); enter after CPI Jul 14 clears if a slot is available |
+| 2 | Energy | XLE | XOM (held) | Hold to stop $125.0685; Citi PT cut to $155 + fading oil premium are first thesis cracks — re-verify before Wed close |
+| 3 | Small-cap | IWM | IWM (held) | Hold to stop $272.448; RS rank fallen #6→#16 of 19 over 2 sessions — re-evaluate if it slides further |
+| 4 | Materials/Macro | GLD | GLD | FCX permanently abandoned (5+ consecutive R:R failures); GLD as macro hedge if a Materials/macro slot opens |
+
+### What Worked
+- Urgency protocol drove deployment from 37.5% → 74.4% in two sessions post-reconnect (XOM Thu, NVDA Fri) — both entries fully checklist-validated (R:R, sector cap, macro pre-check) despite a compressed research window
+- Trailing-stop GTC orders functioned correctly through 3 unattended weeks with zero bot intervention: CAT locked +8.19%, SOXX contained a loss to -5.93% — mechanical risk management held even with no bot present
+- Autonomous decision framework validated: bot correctly held IWM through the blackout (it rallied to a 52-week high, $302.72) and made an accurate contingency call on NVDA entry timing
+- Jul 6 run correctly refused to fabricate a HOLD decision when all three APIs were blocked, and flagged the outage instead of silently reporting a false "no activity" day
+
+### What Didn't Work
+- The Jun 20–Jul 8 infra egress blackout broke live monitoring entirely — zero pre-market/EOD sessions ran for ~15 trading days; deployment was stuck at 37.5% the whole time with no visibility
+- CAT's +15% auto-tighten trigger was hit and exceeded during the blackout, but the 7% tighten was never executed — a quantifiable ~$640 cost vs. optimal exit, purely due to the routine being down
+- Bot underperformed the S&P by -1.41% over the combined 3-week window, driven mostly by the SOXX loss and by sitting on elevated cash through the outage
+- Congress signal source (Quiver Quantitative) returned 401 again on Jul 9 — a recurring dependency risk with no confluence check available for 2 consecutive live sessions
+
+### Key Lessons
+- GTC trailing stops are the right fail-safe for exactly this scenario: a total 3-week loss of bot connectivity did not produce catastrophic losses because every position had a live stop order at the broker, independent of the bot's presence
+- A reconnect/gap-detection protocol was missing: nothing instructed the bot to check "did I miss any threshold triggers while I was gone?" on reconnect — CAT's tighten miss is the direct, avoidable cost of that gap (addressed below — see Rule 15)
+- Post-reconnect research quality held up despite friction: both XOM and NVDA passed full checklists, though the operator had to patch a `python`-alias failure in `perplexity.sh`/`clickup.sh` before research could run again
+- The combined 3-week window masks weekly granularity — there's no way to tell whether the blackout weeks individually beat or lagged the S&P; an EOD snapshot should be captured even in degraded mode going forward rather than a complete blank
+
+### Adjustments for Next Week
+- **CPI Jun print Mon Jul 14, 8:30 AM ET** — Tier-1 blocker; no new entries that day
+- **AMD** is the queued Week 12 candidate (Mizuho PT $615, R:R 2.3:1); enter after CPI clears if a slot is open (1 slot carries from Week 11, resets to 3/3 Monday)
+- **XOM watch:** Citi PT cut to $155 + Brent down ~16% from the Jul 7 peak are the first real thesis cracks — re-verify before Wednesday close; treat as a thesis-break candidate if oil keeps sliding
+- **IWM watch:** RS rank #6→#16 unresolved for 2 sessions — re-evaluate if it falls further or a third bearish signal confirms
+- **Rule 15 added to TRADING-STRATEGY.md** (see below) — reconnect protocol to prevent a repeat of the CAT tighten-miss
+
+### Overall Grade: C+
+
+_Rationale: Mechanically sound (stops worked through a 3-week blackout, autonomous decisions were accurate, urgency protocol closed the deployment gap in 2 sessions) but this period cost real, avoidable money — the CAT tighten-miss (~$640) — and left the bot blind to markets for 15 sessions. Net alpha over the combined window is negative (-1.41% vs. S&P)._
+
+### Next-week Decisions
+
+**Q: XOM — Citi cut PT to $155 (from $175) and the oil risk premium is fading (Brent -16% from the Jul 7 Iran-shock peak). Hold into the weekend, or exit Monday open?**
+- Hold: position is still +0.20%, stop is 9.9% below current price, and no explicit thesis-break trigger (WTI/Brent level) has been breached yet — avoids selling into a possible bounce
+- Exit Monday: the two catalysts that justified size (Iran shock premium, UBS/Bernstein targets) are both eroding simultaneously; cutting early avoids a slow bleed if oil keeps normalizing
+
+**Q: IWM — RS rank fallen #6→#16 of 19 with a bearish-divergence article, but fundamentals (EPS +43% YoY, 52-week high hit) still intact. Continue holding into the weekend, or exit Monday?**
+- Hold: no exit trigger has cleared (position +1.81%, no slow-bleed, no weekend thesis-break signal per Rule 13); the RS slide could be short-term noise ahead of Sep rate-cut catalyst
+- Exit Monday: two consecutive research sessions have now flagged the same RS deterioration without improvement — treating it as a confirmed trend rather than noise locks in the gain before a real breakdown
+
+**Q: Deployment ended at 74.4% (just under the 75% floor), 1 of 3 Week 11 slots unused. Use it on AMD early next week, or wait for CPI (Jul 14) to clear first?**
+- Enter AMD early (after CPI Tue/Wed): thesis is strong (Mizuho PT $615, R:R 2.3:1) and this closes the last piece of the deployment gap — but Tier-1 CPI blackout Monday means the earliest entry is Tuesday regardless
+- Wait for post-CPI confirmation: if June CPI comes in hot, tech-sensitive names (AMD) are the first to reprice — waiting one extra session avoids buying into a CPI-driven selloff
+
+---
