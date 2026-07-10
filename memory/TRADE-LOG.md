@@ -2999,3 +2999,29 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 - Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $211.00, stop $189.90
 
 **No action taken. No ClickUp notification.**
+
+---
+
+## Jul 10 — EOD Snapshot (Day 54, Friday — Week 11 Day 4)
+**Portfolio:** $104,582.76 | **Cash:** $26,740.14 (25.6%) | **Day P&L:** +$819.42 (+0.79%) | **Phase P&L:** +$4,582.76 (+4.58%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.770 | $296.03 | -0.41% | +$326.13 (+1.81%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $210.36 | +3.74% | +$632.44 (+3.20%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+| QQQ | 29 | $736.683 | $725.96 | +0.37% | -$310.98 (-1.46%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $138.70 | +0.90% | +$36.32 (+0.20%) | 10% trail HWM $138.965 / stop $125.0685 (fff198e9) |
+
+**Trades today:** NVDA BUY 97 @ $203.84 (market open, dividend hike + $80B buyback + AI/semis re-acceleration thesis). Week 11 count: 2/3.
+
+**Notes:** Day 54, Friday, Week 11 Day 4. NVDA filled at open per Jul 9 user decision — 97sh @ $203.84, stop placed immediately (1f35b3d1, 10% trail). Deployment jumped 55.2%→74.4%, just under the 75% floor, effectively resolving the urgency protocol that had been active for 3+ weeks. NVDA led the day +3.74% ($210.36), reflecting continued chip-stock strength. IWM +1.81% from entry but flat on the day (-0.41%) — RS rank deterioration (#6→#16) flagged Jul 9/10 remains the top watch item, held per user's Jul 9 decision. QQQ -1.46% from entry, +0.37% today — AI capex thesis reconfirmed, stop 7.6% below current price. XOM roughly flat (+0.20% from entry, +0.90% today) but today's pre-market research flagged the first real cracks in the thesis: Citi cut PT to $155 (from $175) and Brent has fallen ~16% from the Jul 7 Iran-shock peak on de-escalation headlines — not yet a trigger but the position to watch most closely next week. No stops triggered, no losers cut (-7% threshold not breached on any position), no stop tightening (all positions well below +15% trigger levels). Week 11 count: 2/3, 1 slot unused as the week closes (resets fresh 3/3 Monday per weekly cap). No 3-day-weekend thesis-break rule trigger (Monday Jul 13 is a normal trading day).
+
+**Action questions:**
+
+**Q1: XOM thesis showing first cracks — Citi cut PT to $155 (from $175) and Brent down ~16% from the Jul 7 Iran-shock peak on de-escalation headlines. Position is flat (+0.20% from entry, well above -7% cut and the $125.07 stop). Exit XOM now, or hold to the stop?**
+- Exit now: gets ahead of a fading catalyst before it turns into a slow bleed — but the position hasn't actually broken (still positive, no confirmed trigger), so this risks an early, unnecessary exit
+- Hold to stop: lets the 10% trail do its job while the position is still flat/positive — but if oil keeps giving back the Iran-shock spike, this could turn into a multi-week drift toward the stop
+
+**Q2: Deployed 74.4% — just under the 75% floor (urgency protocol effectively resolved after today's NVDA fill). Push for a 5th position early next week to land inside the 75-85% target band, or hold at 4 positions and let this week's entries season?**
+- Add a 5th position: closes the last gap to the target deployment band if next week's research turns up a clean 2:1+ setup — adds another slot to manage and modest concentration risk with XOM/IWM already flagged as watch items
+- Hold at 4 positions: lets NVDA/XOM season before adding more risk, keeps the book simpler while two positions (IWM, XOM) are under active watch — extends the sub-75% deployment shortfall by another few percentage points, though not enough to re-trigger the urgency protocol
