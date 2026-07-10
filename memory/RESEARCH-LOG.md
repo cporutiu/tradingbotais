@@ -4210,3 +4210,36 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 
 ### Decision
 **TRADE — queue NVDA for next market-open (Fri Jul 10), ~100 shares at market, 10% trail GTC stop immediately on fill.** Today's own market-open trade (XOM) already executed via the scheduled routine before this session started; this entry does not re-decide it. IWM held with downgraded conviction (active watch, not exit). QQQ and XOM both reconfirmed. Week 11 slots after NVDA: 2/3 used, 1 remaining.
+
+---
+
+## 2026-07-10 — Pre-Market Research (Friday, Week 11 Day 4, Day 54)
+
+### CONNECTIVITY FAILURE — no account/position data, no trade decision
+
+- Env vars all present and correct (verified before any wrapper call).
+- Every outbound call failed: `scripts/alpaca.sh account/positions/orders`, `scripts/perplexity.sh`, `scripts/clickup.sh` — all returned `curl: (56) CONNECT tunnel failed, response 403` / HTTP 403.
+- Confirmed via proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`) this is a **policy-level denial at the egress gateway**, not a credentials or transient-network issue — `recentRelayFailures` shows repeated `connect_rejected` ("gateway answered 403 to CONNECT — policy denial or upstream failure") for:
+  - `paper-api.alpaca.markets:443`
+  - `api.perplexity.ai:443`
+  - `api.clickup.com:443`
+- **This is a recurring failure** — identical block pattern already logged in this file for a prior run (all three hosts, same 403 CONNECT signature). The issue has not been resolved between runs.
+- Per runbook: did not retry beyond confirmation, did not fabricate account/position data.
+
+### What was still gathered (native WebSearch fallback, market context only — NOT a substitute for account state)
+- **S&P 500 futures:** slipped ~0.22% premarket Friday; Polymarket implied only ~20% odds of a higher open, after a semis-led Thursday rally.
+- **VIX:** ~16-17 (low-vol regime, unchanged from Jul 9).
+- **Oil:** WTI ~$72-74, Brent ~$76-79 — still elevated on Iran risk premium, though Trump comments on possible Iran negotiations cooled prices slightly Friday; oil still on track for a weekly gain.
+- **Catalysts:** DAL earnings today (not held/candidate); AI/semiconductor strength still the dominant bull-market driver; CPI (June print) is **Tuesday Jul 14** — Tier-1 blocker, not today.
+- No held/candidate-ticker-specific news pulled (Perplexity blocked; did not expand WebSearch scope given no account data to act on anyway).
+
+### Why no trade decision today
+- **Cannot verify current positions, stops, deployment %, or cash** — last confirmed state is the Jul 9 EOD snapshot (IWM, QQQ, XOM; 55.2% deployed; Week 11 count 1/3). Real state may have changed (fills, stop triggers) and is not safely assumable.
+- Jul 9 research queued a contingent **NVDA entry for today's open** (~100 sh @ ~$197, R:R ~5.2:1) — that plan **cannot be executed or re-validated today** without live account/deployment confirmation and without Perplexity for a final catalyst check. Do NOT auto-fire this trade blind.
+- Jul 9 EOD action questions (Q1: IWM exit vs hold; Q2: proceed with NVDA) were never answered in an interactive session — no `**User decisions**` block exists in TRADE-LOG.md to carry forward.
+- **Decision: HOLD / NO ACTION** — connectivity blocker, not a strategy call. Default patience applies; do not enter NVDA or touch existing positions until account access is restored and re-verified.
+
+### Action needed (not autonomous — requires the user)
+1. Allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per `routines/README.md`) where these hosts are reachable.
+2. Once restored, re-run pre-market research (or at minimum pull account/positions) before market-open executes — do not let a scheduled market-open routine fire the queued NVDA trade on stale Jul-9 data.
+3. ClickUp alert could not be sent (same block) — user notified out-of-band via push notification instead.
