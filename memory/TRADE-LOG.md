@@ -2955,3 +2955,29 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 - Q1 (IWM — hold vs exit): **HOLD to stop $272.45.** Fundamental thesis intact; 10% trail manages downside.
 - Q2 (NVDA Friday entry): **PROCEED.** Enter NVDA at Friday open (~100 shares @ ~$197), 10% trail GTC immediately on fill. QQQ +1.62% today clears the contingency condition.
 
+
+---
+
+## 2026-07-10 — Market-Open Execution (Friday, Week 11 Day 4)
+
+**Pre-market plan (from Jul 10 research):** Enter NVDA at open per Jul 9 user decision — dividend hike + $80B buyback, AI/semis re-acceleration, R:R ~4.4:1 est.
+
+**Hard checks:** Positions after trade 4 (≤6) ✓ | Week count 1/3 → 2/3 ✓ | Cost $19,772.48 = 19.0% of equity (17-20% band) ✓ | Catalyst documented (Jul 10 RESEARCH-LOG, Idea 1) ✓ | DT count 0, no PDT conflict ✓ | Sector: Technology, 1/2 slots, no cap conflict ✓ | Macro pre-check: not rate-sensitive, N/A ✓
+
+**NVDA BUY ORDER FILLED (9:33 AM ET):**
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-07-10 | NVDA | BUY | 97 | $203.84 | 10% trail GTC (1f35b3d1, HWM $203.91, stop $183.519) | $300 (Street consensus PT) | ~4.7:1 | AI/semis re-acceleration despite YTD laggard status; dividend hiked $0.01→$0.25, new $80B buyback (+$39B remaining); Very Bullish consensus (~94% Buy); forward P/E compressed to 2019-era lows; resolves urgency protocol (deployed 55.2%→74.2%) |
+
+**Week 11 trade count: 2/3**
+
+**Open Orders (market-open 2026-07-10):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448 ✓
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.878 ✓
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $138.545, stop $124.6905 ✓
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $203.91, stop $183.519 ✓ (new)
+
+**Account (post-trade 2026-07-10):** Equity $103,742.24 | Cash $26,740.14 (25.8%) | Deployed $77,002.10 (74.2%, 4 positions) | Week 11 count: 2/3 | Phase P&L: +$3,742.24 (+3.74%)
+
+**Urgency protocol near-resolved** — deployed jumped 55.2%→74.2%, just under the 75% floor. 1 trade slot remains this week (3/3 cap).
