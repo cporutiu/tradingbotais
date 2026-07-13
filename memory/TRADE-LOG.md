@@ -3080,3 +3080,21 @@ No user response to the Jul 10 EOD action questions was found in this log by thi
 - Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $144.41, stop $129.969
 
 **No action taken. No ClickUp notification.**
+
+---
+
+## Jul 13 — EOD Snapshot (Day 55, Monday — Week 12 Day 1)
+**Portfolio:** $104,126.12 | **Cash:** $26,740.13 (25.68%) | **Day P&L:** -$456.64 (-0.44%) | **Phase P&L:** +$4,126.12 (+4.13%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.770 | $293.35 | -0.89% | +$159.97 (+0.89%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $203.771 | -3.41% | -$6.69 (-0.03%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+| QQQ | 29 | $736.683 | $711.73 | -1.90% | -$723.65 (-3.39%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $144.5564 | +4.09% | +$797.65 (+4.43%) | 10% trail HWM $145.23 / stop $130.707 (fff198e9, broker auto-trailed today) |
+
+**Trades today:** None. Week 12 count: 0/3.
+
+**Notes:** Day 55, Monday, Week 12 Day 1. Quiet, no-trade day — both Jul 10 EOD action questions were resolved autonomously this morning per strategy rule 14 (no user response found): XOM held to stop (oil premium reversed on renewed Iran conflict, Citi/BofA/S&P support intact), and the 5th-position question carried (no validated 2:1+ R:R candidate, patience rule governs at 74%+ deployed). No new trade fired at market open; CPI (Jul 14, Tier-1 blocker) sits 1 day out and rules out any new entry tomorrow morning regardless of setup quality. XOM was the day's standout, +4.09% on renewed Middle East oil-risk premium, broker auto-trailed its stop up to HWM $145.23/stop $130.707. QQQ was the weakest, -1.90% on SpaceX-inclusion index-mechanics noise (not fundamental). IWM and NVDA both roughly flat/slightly negative. No stops triggered, no losers cut (-7% threshold not close on any position), no stop tightening (no position near +15%). IWM's short-term technical deterioration (MACD/momentum/stochastic bearish since Jul 6-10, despite strong longer-term trend) remains the top watch item heading into the week. Week 12 count: 0/3, deployed 74.32% (just under the 75% floor, no urgency protocol — deployed has been ≥60% throughout).
+
+**Action questions:** None. All 4 theses reconfirmed intact today, no position near a tighten/cut threshold, no validated deployment candidate to name, and the trade-slot count (0/3) isn't near the weekly cap.
