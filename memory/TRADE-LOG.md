@@ -3025,3 +3025,58 @@ IWM never exited; stop not triggered. AMD not entered. AMD remains on watch for 
 **Q2: Deployed 74.4% — just under the 75% floor (urgency protocol effectively resolved after today's NVDA fill). Push for a 5th position early next week to land inside the 75-85% target band, or hold at 4 positions and let this week's entries season?**
 - Add a 5th position: closes the last gap to the target deployment band if next week's research turns up a clean 2:1+ setup — adds another slot to manage and modest concentration risk with XOM/IWM already flagged as watch items
 - Hold at 4 positions: lets NVDA/XOM season before adding more risk, keeps the book simpler while two positions (IWM, XOM) are under active watch — extends the sub-75% deployment shortfall by another few percentage points, though not enough to re-trigger the urgency protocol
+
+---
+
+## 2026-07-13 — Bot Autonomous Decisions (Monday, Week 12 Day 1)
+
+No user response to the Jul 10 EOD action questions was found in this log by this morning's pre-market run. Per strategy rule 14, resolving both autonomously using today's pre-market research — not carrying either a second day.
+
+**Bot autonomous decision (2026-07-13):** Q1 (XOM — Citi PT cut to $155 + fading oil premium, exit vs hold to stop) → **HOLD to stop $125.0685** → Oil premium reversed since Friday: renewed US-Iran strikes this week lifted Brent back above $77 (+7% w/w) and WTI above $72 (+6% w/w), directly countering Friday's de-escalation read; BofA reiterated Buy ($154 PT), S&P revised outlook to positive (AA-), Q1 earnings beat ($4.2B) plus record Guyana production and first Golden Pass LNG train (+5% US LNG exports) add fundamental support. No exit trigger cleared (position +1.66% from entry, stop 11.1% below current price).
+
+---
+
+## 2026-07-13 — Market-Open Execution (Monday, Week 12 Day 1)
+
+**Pre-market plan:** HOLD, no new trades today (no validated 2:1+ candidate; CPI Jul 14 is a Tier-1 blocker 1 day out).
+
+**Live re-validation:**
+| Ticker | Entry | Live Price | Chg from entry | Stop | Threshold check |
+|--------|-------|------------|-----------------|------|-----------------|
+| IWM | $290.770 | $295.48 | +1.62% | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) | No tighten (+15%), no cut (-7%) |
+| NVDA | $203.84 | $208.665 | +2.37% | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) | No tighten (+15%), no cut (-7%) |
+| QQQ | $736.683 | $716.955 | -2.68% | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) | No cut (-7% = $684.92) |
+| XOM | $138.4206 | $140.485 | +1.49% | 10% trail GTC HWM $138.965 / stop $125.0685 (fff198e9) | No tighten (+15%), no cut (-7%) |
+
+**Account:** Equity $104,361.86 | Cash $26,740.13 (25.6%) | Deployed $77,621.73 (74.4%, 4 positions) | Week 12 count: 0/3
+
+**No trade executed. No stop changes. No ClickUp notification (no trade fired).**
+
+*(Housekeeping: fixed unquoted `ALERT_SMTP_PASS` value with spaces in `.env` line 25 that was breaking `alpaca.sh` sourcing — quoted the value, no credential change, `.env` not committed.)*
+
+**Bot autonomous decision (2026-07-13):** Q2 (Deployed 74.4%, push for 5th position vs hold at 4) → **CARRY — hold at 4 positions, no forced entry** → No researched 2:1+ R:R candidate identified in today's pre-market pass (CAT/FCX watchlist unchanged, no fresh ISM/commodity catalyst surfaced); deployed 74.4% is ≥60% and urgency protocol is not active, so strategy rule 11 ("patience > activity") governs. Will revisit if a validated setup surfaces in a later session this week.
+
+---
+
+## 2026-07-13 — Midday Scan (Monday, Week 12 Day 1)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.769839 | $293.65 | +$178.57 (+0.99%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $204.65 | +$78.57 (+0.40%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+| QQQ | $736.683448 | $713.322 | -$677.48 (-3.17%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | $138.420615 | $144.19 | +$750.02 (+4.17%) | 10% trail HWM $144.41 / stop $129.969 (fff198e9, broker auto-trailed since Fri) |
+
+- **Losers cut:** None. Worst position QQQ -3.17%, well above -7% manual cut threshold.
+- **Stop tightening:** None. No position near +15% (best is XOM +4.17%).
+- **Thesis check:** No breaks. All 4 theses reconfirmed this morning (pre-market 2026-07-13) — IWM short-term technicals still the top watch item (RS/MACD bearish since Jul 6-10) but no new trigger; QQQ dip is index-mechanics noise (SPCX inclusion), not fundamental; XOM thesis reconfirmed via renewed Iran conflict oil-premium rebound; NVDA no new catalyst, routine board appointment only.
+- **Portfolio:** Equity $104,238.19 | Cash $26,740.13 (25.65%) | Deployed $77,498.06 (74.35%, 4 positions) | Week 12 count: 0/3 | Phase P&L: +$4,238.19 (+4.24%)
+
+**Open Orders (midday 2026-07-13, unchanged):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $211.00, stop $189.90
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.878
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $144.41, stop $129.969
+
+**No action taken. No ClickUp notification.**
