@@ -4210,3 +4210,209 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 
 ### Decision
 **TRADE — queue NVDA for next market-open (Fri Jul 10), ~100 shares at market, 10% trail GTC stop immediately on fill.** Today's own market-open trade (XOM) already executed via the scheduled routine before this session started; this entry does not re-decide it. IWM held with downgraded conviction (active watch, not exit). QQQ and XOM both reconfirmed. Week 11 slots after NVDA: 2/3 used, 1 remaining.
+
+---
+
+## 2026-07-10 — Pre-Market Research (Friday, Week 11 Day 4, Day 54)
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $103,745.82 | **Cash:** $46,512.62 (44.8%) | **Deployed:** $57,233.20 (55.2%, 3 positions) | **DT count:** 0
+- **Phase P&L:** +$3,745.82 (+3.75%) | **Week 11 trade count:** 1/3 (XOM)
+- **URGENCY PROTOCOL ACTIVE** — deployed <75% for 3+ consecutive weekly closes. R:R floor = 1.5:1. Tier-2 blockers do not apply.
+
+### STEP 1B — User decisions carried forward (from Jul 9 EOD)
+- **Q1 (IWM hold vs exit):** User decided **HOLD to stop $272.45**. Fundamental thesis intact; 10% trail manages downside. No new exit trigger today — carried as-is.
+- **Q2 (NVDA Friday entry):** User decided **PROCEED**. Enter NVDA at today's open (~100 sh @ ~$197 estimate), 10% trail GTC immediately on fill. Confirmed below — thesis has strengthened further overnight.
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.770 | $297.27 | +$403.01 (+2.24%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| QQQ | 29 | $736.683 | $720.74 | -$462.36 (-2.16%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $137.70 | -$93.68 (-0.52%) | 10% trail HWM $138.545 / stop $124.6905 (fff198e9) |
+
+**QQQ -7% manual cut threshold:** $684.92 (current $720.74 = 5.2% above cut — monitor).
+
+### Market Context
+- **WTI:** ~$73.5/bbl. **Brent:** ~$76/bbl (one feed shows Brent slipping to $75.69, -0.80% d/d, -16.26% over the past month from the Jul 7 Iran-shock spike). **Oil premium is fading** — consistent with reports of a U.S.-Iran resolution "in sight." Watch XOM for thesis erosion if this continues.
+- **S&P 500 futures:** flat to slightly lower, ~7,575-7,585 (-0.1-0.2%). Near record territory.
+- **VIX:** ~16.9 — **LOW risk (<18)**.
+- **Catalysts today:** Inflation/Fed-hike repricing (Fed funds futures now pricing a possible hike as soon as September per new Chair Kevin Warsh — hawkish shift vs. prior cut expectations), continued AI/semiconductor momentum (chip stocks led a broad rally Jul 9), lighter macro calendar (S&P services PMI final, ISM services, a Fed governor speech), Iran de-escalation headlines.
+- **Earnings BMO today:** Delta Air Lines (DAL) and small-caps only. None of our holdings/candidates report today.
+- **Econ calendar:** No CPI/PPI/FOMC/NFP today. Next CPI (June print) **Jul 14** — Tier-1 blocker, still 4 days out, not a blocker today. PPI Jul 15. FOMC meeting later in July (~Jul 27-28).
+- **Sector momentum (YTD):** Staples, Energy, Materials, Industrials leading; Tech, Comm Svcs, Discretionary, Financials lagging; Real Estate/Utilities improving. Consistent with Jul 9's read — no change in the broad YTD picture.
+- **Short-term rotation (unchanged thesis driver):** Semis/tech re-accelerating on a 20-day basis despite YTD laggard status — the setup underpinning today's NVDA entry.
+
+### Perplexity Validation
+
+**IWM ($297.27, +2.24%) — HOLD per user decision, still elevated risk:**
+- Same RS/technical deterioration flagged Jul 9 (RS #6→#16 of 19) with no new confirming or contradicting data overnight. No exit trigger cleared (position positive, no slow-bleed, no weekend-carry). Carrying the user's HOLD decision unchanged.
+
+**QQQ ($720.74, -2.16%) — HOLD, thesis intact:**
+- Chip-stock rally Jul 9 (SOX +1.8% despite Iran headlines) confirms the AI capex/tech re-acceleration thesis. Stop 5.2% below current price — comfortable buffer.
+
+**XOM ($137.70, -0.52%) — HOLD, thesis intact but weakening:**
+- Citi cut PT to $155 from $175 (Neutral) — a real negative data point, though Exxon itself pre-announced stronger Q2 earnings from favorable commodity pricing. Combined with the fading oil premium noted above, this is the position to watch most closely next week if Iran de-escalation headlines continue. Not a thesis-break today (position -0.52%, stop 9.4% below current, no trigger cleared).
+
+**NVDA ($197 estimate; live quote pending at open) — entry confirmed, thesis strengthened overnight:**
+- Consensus price target ~$301.62, "Very Bullish" analyst consensus (~94% Buy, no downgrades all year), forward P/E compressed to 2019-era lows (~18-22x) despite record revenue — a valuation reset, not a fundamentals problem.
+- New catalysts since Jul 9: dividend hiked from $0.01 to $0.25/share, new $80B buyback authorization (+ $39B remaining from prior program), management targeting ~50% of cash flow returned to shareholders in 2026.
+- Stock rallied Jul 9 alongside broader chip strength despite Iran conflict headlines — resilience supports the entry.
+- R:R at ~$197-206 entry, 10% trail stop, $300 target: **~3.9-4.4:1** (using live quote instead of the $197 estimate; still well above the 1.5:1 urgency floor and standard 2:1). Re-confirm exact R:R against the live open quote before sizing.
+
+### Trade Ideas
+
+1. **NVDA — execute at today's open per user's confirmed Jul 9 decision.** Entry at market, 10% trail GTC stop immediately on fill, target ~$300 (Street consensus). Size ~19% of equity (~100 sh, re-check against live open price). Week 11 slot 2/3. Deployment after entry: ~74% — resolves the urgency protocol if filled near estimate. No Tier-1 blocker in the way (CPI is Jul 14, 4 days out).
+2. **IWM — no new entry (already held); continue active watch, not exit** per user decision. Re-evaluate if RS keeps falling or price approaches HWM-tighten levels ($334.39 for +15% tighten trigger).
+3. **XOM — no new entry; monitor thesis.** Citi PT cut + fading oil premium (Iran de-escalation) are the first real cracks in the Jul 8 shock thesis. Not yet a trigger, but flag for next week's research if oil keeps giving back the spike.
+
+### Risk Factors
+- **Fed hawkish repricing (new today):** rate-hike-as-soon-as-September pricing under new Chair Kevin Warsh is a shift from the prior cut narrative — negative for duration-sensitive names, worth watching for QQQ/NVDA if it persists.
+- **Fading oil premium:** Brent down ~16% from the Jul 7 peak on Iran de-escalation headlines — the core XOM catalyst is eroding; not a trigger yet but the clearest emerging risk in the book.
+- **IWM technical deterioration:** RS rank #6→#16 unchanged from Jul 9 — still the highest-risk existing position.
+- **CPI Jul 14 (Tier-1 blocker, 4 days out):** no new entries that day; NVDA entry today clears this window with room to spare.
+- **Congress signal source (401 error, Jul 9):** not re-checked today (not in this workflow's scope); still an open dependency risk to flag if it persists.
+
+### Decision
+**TRADE — execute NVDA at today's open per the user's Jul 9 confirmed decision** (~100 sh at market, 10% trail GTC stop immediately on fill, re-check size against live open price). IWM held per user decision (active watch, not exit). QQQ and XOM both reconfirmed, though XOM's thesis shows its first signs of erosion (Citi PT cut, fading oil premium) — watch closely next week. Week 11 slots after NVDA: 2/3 used, 1 remaining. Execution happens in the separate market-open workflow.
+
+---
+
+## 2026-07-13 — Pre-Market Research (Monday, Week 12 Day 1, Day 55)
+
+### STEP 1B — No user decisions found; autonomous resolution
+No "User decisions" block was found below the Jul 10 EOD action questions. Per strategy rule 14, both questions were resolved autonomously and logged to TRADE-LOG.md as Bot Autonomous Decisions (2026-07-13):
+- **Q1 (XOM exit vs hold):** HOLD to stop $125.0685 — oil premium reversed (see Market Context), thesis reconfirmed.
+- **Q2 (5th position vs hold at 4):** CARRY — no validated 2:1+ R:R candidate found today; deployed 74.4% ≥60% so patience rule governs.
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $104,332.23 | **Cash:** $26,740.13 (25.6%) | **Deployed:** $77,592.10 (74.4%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$4,332.23 (+4.33%) | **Week 12 trade count:** 0/3 (fresh week)
+
+### Positions (pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.770 | $294.83 | +$251.73 (+1.40%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $208.19 | +$421.95 (+2.13%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+| QQQ | 29 | $736.683 | $718.09 | -$539.21 (-2.52%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $140.72 | +$298.92 (+1.66%) | 10% trail HWM $138.965 / stop $125.0685 (fff198e9) |
+
+**QQQ -7% manual cut threshold:** $684.92 (current $718.09 = 4.8% above cut — monitor).
+
+### Market Context
+- **WTI:** ~$73-75/bbl. **Brent:** ~$76-79/bbl. **Oil premium has reversed course from Friday's "fading" read** — renewed U.S.-Iran strikes this week revived the Middle East risk premium: Brent +7% w/w to above $77, WTI +6% w/w to above $72, Strait of Hormuz traffic slowing. Directly counters the Jul 10 de-escalation narrative that triggered Friday's XOM action question.
+- **S&P 500 futures:** slightly negative premarket, ~7,585-7,600 (-0.3 to -0.4%). Near record territory.
+- **VIX:** ~15.0 — **LOW risk (<18)**, down from 15.84 Friday close.
+- **Catalysts today:** Renewed U.S.-Iran conflict/Strait of Hormuz risk (oil-positive), Q2 earnings season kickoff — big banks (JPM, WFC, C, GS) and ASML/TSMC report this week (none today), stablecoin/crypto strength (CRCL +13% on Circle National Trust approval), AI/chip headlines (Meta AI chip plans, SK Hynix debut), small-cap/cyclical vs defensive sector rotation ("7 of 11 S&P sectors rose" recently).
+- **Earnings BMO today:** None for held names or candidates. Big bank earnings begin tomorrow (JPM, WFC, C before CPI).
+- **Econ calendar:** **CPI (June print) — Tuesday Jul 14, 8:30 AM ET — Tier-1 blocker, 1 day out.** No CPI/PPI/FOMC/jobs data today. PPI expected Wednesday. Fed Chair Kevin Warsh testifies before Congress Tue/Wed.
+- **Sector momentum:** Mixed read across sources — Friday's YTD ranking still shows Energy/Materials/Staples/Industrials leading, Tech/Comm Svcs/Discretionary/Financials lagging YTD, while today's general query and catalyst scan flag a shorter-term rotation back into small-caps/cyclicals and tech/AI names. Treating as noisy; no change to sector watchlist.
+
+### Perplexity Validation — Held Positions
+
+**XOM ($140.72, +1.66%) — HOLD, thesis reconfirmed (reverses Friday's crack):**
+- Oil risk premium is back up, not fading — renewed Iran conflict this week lifted both WTI and Brent materially (see Market Context). This directly reverses the Jul 10 rationale for flagging XOM risk.
+- BofA reiterated **Buy, $154 PT**; S&P Global revised outlook to **positive** (AA- rating). Q1 2026 earnings beat ($4.2B, $1.00/sh), record Guyana production, first LNG at Golden Pass Train 1 (+5% US LNG exports) — fundamentals intact and improving.
+- Texas redomiciliation (effective Jul 1) is administrative, not a thesis factor.
+- No exit trigger cleared (position +1.66%, stop 11.1% below current price). **Autonomous decision: HOLD to stop.**
+
+**IWM ($294.83, +1.40%) — HOLD, active watch continues, mixed signals:**
+- Longer-term trend/relative-strength vs S&P still strong (YTD NAV total return +21.2%, best Russell 2000 first half since 1991), and BTIG flags a "relative breakout" as capital rotates from stretched semis into small caps.
+- But short-term technicals have turned bearish since Jul 9's RS-rank flag: MACD histogram negative (Jul 6), momentum indicator below zero (Jul 10), stochastic exited overbought — pattern-based signals lean toward further near-term weakness. A $20M December strangle position implies the market itself expects a big move either direction.
+- No new exit trigger (position positive, no slow-bleed, no weekend-carry rule applicable — today is a normal trading day). Continue prior HOLD; still the highest-risk position in the book.
+
+**QQQ ($718.09, -2.52%) — HOLD, thesis intact:**
+- No thesis-negative company-specific news; the dominant QQQ story is the mechanical SpaceX (SPCX) inclusion (forced ~$4.3B buy, funded by trimming all other constituents slightly) — index-mechanics noise, not a fundamental signal either way.
+- AI-capex/tech theme still the dominant catalyst per today's broader catalyst scan. Stop 6.6% below current price — reasonable buffer.
+
+**NVDA ($208.19, +2.13%) — HOLD, thesis intact, no new catalyst:**
+- Only near-term news is a routine board appointment (Suzanne Nora Johnson, effective today) — non-events. Next earnings not until late August.
+- Stock trading $200-205 range after May pullback from $236 high; China H200 shipment approval remains an unresolved potential upside catalyst, not yet confirmed.
+- No thesis-break signal. Stop 8.8% below current price.
+
+### Trade Ideas
+1. **No new entries today.** Autonomous Q2 decision (see above) carries the deployment question — 74.4% deployed, no validated 2:1+ R:R candidate surfaced in this session (CAT/FCX watchlist unchanged; ISM data not checked today). Revisit later this week if a fresh catalyst appears.
+2. **XOM — no action, thesis reconfirmed.** Oil premium reversal (renewed Iran conflict) resolves Friday's crack; hold to stop per autonomous Q1 decision.
+3. **IWM — no action, continue active watch.** Long-term RS/trend still strong but short-term technicals (MACD, momentum, stochastic) have turned bearish since Jul 6-10; still the position most likely to generate the next action question.
+
+### Risk Factors
+- **CPI Jul 14 (Tier-1 blocker, 1 day out):** no new entries tomorrow morning regardless of setup quality.
+- **IWM short-term technical deterioration:** MACD/momentum/stochastic all bearish since Jul 6-10 despite strong longer-term trend — the position to watch most closely this week.
+- **Oil-premium whipsaw:** Brent/WTI have swung on Iran headlines twice in a week (de-escalation Jul 8-10, re-escalation since) — XOM thesis is now headline-driven and could reverse again quickly.
+- **Fed testimony Tue/Wed (Kevin Warsh):** could move rate expectations ahead of Wednesday's PPI, affecting QQQ/NVDA (duration-sensitive tech).
+- **Q2 bank earnings begin tomorrow (JPM/WFC/C):** a cross-asset read-through for credit/growth sentiment, landing the same day as CPI.
+
+### Decision
+**HOLD — no new trades today.** All 4 positions reconfirmed or held per autonomous decisions logged to TRADE-LOG.md. Deployment stays at 74.4% (Week 12, 0/3 trade slots used) pending a validated setup. CPI tomorrow (Tier-1 blocker) rules out any new entry before Wednesday regardless.
+
+---
+
+## 2026-07-14 — Pre-Market Research (Tuesday, Week 12 Day 2, Day 56)
+
+### STEP 1B — No pending decisions
+No "User decisions" block below the Jul 10 EOD (already resolved autonomously Jul 13). Jul 13 EOD logged **no action questions**, so nothing carries forward today.
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $104,557.88 | **Cash:** $26,740.13 (25.6%) | **Deployed:** $77,817.75 (74.4%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$4,557.88 (+4.56%) | **Week 12 trade count:** 0/3
+
+### Positions (pre-market, live)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.7698 | $293.55 | +$172.15 (+0.96%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $205.60 | +$170.72 (+0.86%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+| QQQ | 29 | $736.6834 | $716.03 | -$598.95 (-2.80%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $145.46 | +$915.12 (+5.09%) | 10% trail HWM $145.23 / stop $130.707 (fff198e9, price > HWM → will auto-trail today) |
+
+No position near a tighten trigger (+15%/+20%) or the -7% manual cut. No stop-related action needed pre-open.
+
+**Note (tooling housekeeping):** `scripts/fetch_benzinga.py` / `fetch_congress.py` cache-detection logic breaks when the `.tmp/*_signals_$DATE.json` output file already exists but is empty (e.g. from a shell redirect race) — it tries to `json.load()` an empty file and crashes instead of re-fetching. Worked around today by writing to a temp file and moving it into place. Not fixed in the script itself this session.
+
+### Market Context
+- **WTI:** ~$79/bbl (range $76.91-$79.26 across feeds). **Brent:** ~$81.82-$83.30/bbl. Oil continues climbing on renewed U.S.-Iran escalation — third straight session of gains, extending the Jul 6 breakout.
+- **S&P 500 futures:** negative premarket, roughly **-0.6% to -0.8%** (~7,566-7,577).
+- **VIX:** last close **15.03** (spot print briefly 16.39 intraday) — still **LOW risk (<18)**.
+- **Market risk:** Low.
+- **Economic cycle:** Mid-cycle (Conference Board LEI up 2 straight months but 6/12-month growth rates still negative; recession odds ~20-30%).
+- **Catalysts today:** **CPI (June print) 8:30 AM ET — NAMED TIER-1 BLOCKER, full blackout on new entries.** Also **Q2 bank earnings BMO: JPM, BAC, C, GS, WFC** (none are held names or watchlist candidates — no held-name earnings blocker). Continued U.S.-Iran oil-risk premium.
+- **Econ calendar:** CPI today 8:30 AM ET (Tier-1). PPI tomorrow (Jul 15, Tier-2). No FOMC today; next FOMC Jul 28-29. Fed Chair Kevin Warsh testimony continues.
+- **Sector momentum (YTD):** Energy (+23.3%), Materials (+17.4%), Staples (+15.6%), Industrials (+14.1%) lead. Financials (-6.9%), Discretionary (-3.8%), Tech (-3.3%), Comm Svcs (-1.2%) lag on a YTD price basis.
+- **20-day RS ranking (strongest→weakest):** SOXX, QQQ, IWM, XLE, XLK, XLV, XLI, XLB, XLU, XLRE, XLF, XLY, XLC, XLP, HYG, EEM, GLD, SLV, SPY. Notable: short-term relative strength has rotated into semis/tech/small-caps (SOXX/QQQ/IWM top 3) even though YTD price leadership still sits with Energy/Materials/Staples — a near-term momentum shift, not yet reflected in YTD totals.
+
+### Benzinga Signals
+- **BUY (high):** AMD — score +10, 4 mentions (Cathie Wood/ARKW buying, hedge funds accumulating). Not held, not on current sector watchlist (XOM/NVDA/CAT/FCX); CPI blackout rules out any new entry today regardless. Flag for weekly review consideration.
+- **SELL (medium/high):** SOXX (score -2), **NVDA (score -2, held position)**, AVGO (score -4).
+- Benzinga: 11 emails scanned, BUY=1 SELL=3 HOLD=22.
+
+### Congress Signals
+Congress: no actionable signals today — Quiver Quant API returned 401 Unauthorized (same recurring auth failure first flagged Jul 9, still unresolved). Proceeded without congress context per protocol.
+
+### Perplexity Validation — Benzinga Signals & Held Positions
+
+**NVDA ($205.60, +0.86%) — HOLD, Benzinga SELL only partially corroborated:**
+- Perplexity's bearish-case research finds the SELL thesis is **valuation/macro-sentiment driven, not fundamentals-driven**: consensus remains Strong Buy (~38-60+ analysts, effectively no Sell ratings), multiple brokers have **raised** targets (BofA $275-300, Goldman $250, Baird $275-300, Stifel $212→$250) rather than cut them, and forward estimates are still being raised. Bear arguments center on "priced for perfection" sentiment, AI-capex-sustainability debate, and Fed-rate-path fears — not deteriorating demand data.
+- **This contradicts, not confirms, the Benzinga SELL signal.** No exit trigger cleared (position +0.86%, stop 7.6% below current price). Thesis intact — HOLD.
+
+**SOXX / AVGO (not held) — Benzinga SELL, Perplexity finds similar pattern:** bearish case in both is technical/valuation/rotation-driven (Korean semis outperforming, Meta-excess-compute headline, rate-hike jitters), not evidence of AI-demand collapse or fund outflows — SOXX itself is seeing net inflows. No action since neither is held or on the sector watchlist.
+
+**XOM ($145.46, +5.09%) — HOLD, thesis reconfirmed and strengthening:**
+- Jefferies reiterated Buy, $184 PT. Mizuho cut its PT on commodity-weakness concerns (the lone bearish note) but Exxon is separately signaling a Q2 profit windfall from higher oil prices. Stock continuing to rally on the renewed Iran-driven oil premium (see Market Context). Stop will auto-trail today (price > HWM).
+
+**QQQ ($716.03, -2.80%) — HOLD, thesis intact:**
+- No fundamental negative news; SpaceX Nasdaq-100 inclusion remains the dominant story (index-mechanics, not fundamental). Broader tape framed as still in a bull run at record highs before today's pullback. Stop 6.3% below current price.
+
+**IWM ($293.55, +0.96%) — HOLD, technical picture now improving (watch item may be resolving):**
+- Contrasts with the Jul 6-13 bearish MACD/momentum/stochastic flag: latest coverage cites a small-cap rally, BTIG flagging a "potential breakout," Jefferies naming "catalysts for small caps to regain momentum," and Morgan Stanley noting Fed policy shifts as a small-cap tailwind. 20-day RS ranking also has IWM at #3 of 19, up from the #16 low flagged Jul 9. Continuing HOLD; downgrading from "top watch item" but not yet calling the technical concern fully resolved — want one more session of confirmation.
+
+### Trade Ideas
+No new entries today — **CPI is a named Tier-1 blocker (full blackout)** regardless of setup quality. AMD's Benzinga BUY signal is worth carrying into Friday's weekly review as a watchlist candidate (not currently on the 4-sector watchlist).
+
+### Risk Factors
+- **CPI 8:30 AM ET today — Tier-1 blocker, full blackout on new entries.**
+- **Bank earnings BMO (JPM/BAC/C/GS/WFC)** land same morning as CPI — cross-asset read-through for credit/growth sentiment, no direct exposure in the book.
+- **Oil premium continuing to build** (3rd straight up session) — supportive for XOM but a broader inflation/CPI wildcard given today's release.
+- **NVDA Benzinga SELL vs. Perplexity fundamentals mismatch** — logged as a data-quality flag; treating Perplexity's deeper read as more decision-relevant than the raw Benzinga score alone.
+- **Congress signal source still down (401, since Jul 9)** — 6th session unresolved; escalate to user if not restored before next weekly review.
+
+### Decision
+**HOLD — no new trades today.** CPI (Tier-1 blocker) and same-day bank earnings rule out any entry regardless of setup quality. All 4 positions reconfirmed: NVDA thesis intact despite a Benzinga SELL flag (Perplexity finds it macro/valuation-driven, not fundamental); XOM strengthening on oil; QQQ unchanged; IWM's technical watch item shows early signs of improving (RS #16→#3) but not yet declared resolved. Deployed 74.4%, Week 12 count 0/3.
