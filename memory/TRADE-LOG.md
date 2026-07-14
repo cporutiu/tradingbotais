@@ -3098,3 +3098,46 @@ No user response to the Jul 10 EOD action questions was found in this log by thi
 **Notes:** Day 55, Monday, Week 12 Day 1. Quiet, no-trade day — both Jul 10 EOD action questions were resolved autonomously this morning per strategy rule 14 (no user response found): XOM held to stop (oil premium reversed on renewed Iran conflict, Citi/BofA/S&P support intact), and the 5th-position question carried (no validated 2:1+ R:R candidate, patience rule governs at 74%+ deployed). No new trade fired at market open; CPI (Jul 14, Tier-1 blocker) sits 1 day out and rules out any new entry tomorrow morning regardless of setup quality. XOM was the day's standout, +4.09% on renewed Middle East oil-risk premium, broker auto-trailed its stop up to HWM $145.23/stop $130.707. QQQ was the weakest, -1.90% on SpaceX-inclusion index-mechanics noise (not fundamental). IWM and NVDA both roughly flat/slightly negative. No stops triggered, no losers cut (-7% threshold not close on any position), no stop tightening (no position near +15%). IWM's short-term technical deterioration (MACD/momentum/stochastic bearish since Jul 6-10, despite strong longer-term trend) remains the top watch item heading into the week. Week 12 count: 0/3, deployed 74.32% (just under the 75% floor, no urgency protocol — deployed has been ≥60% throughout).
 
 **Action questions:** None. All 4 theses reconfirmed intact today, no position near a tighten/cut threshold, no validated deployment candidate to name, and the trade-slot count (0/3) isn't near the weekly cap.
+
+---
+
+## 2026-07-14 — Market-Open Execution (Tuesday, Week 12 Day 2)
+
+**Pre-market plan:** HOLD, no new trades today — CPI (June print) is a named Tier-1 blocker, full blackout on new entries.
+
+**Live re-validation:**
+| Ticker | Entry | Live Price | Chg from entry | Stop | Threshold check |
+|--------|-------|------------|-----------------|------|-----------------|
+| IWM | $290.770 | $295.53 | +1.64% | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) | No tighten (+15%), no cut (-7%) |
+| NVDA | $203.84 | $206.78 | +1.44% | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) | No tighten (+15%), no cut (-7%) |
+| QQQ | $736.683 | $718.92 | -2.41% | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) | No cut (-7% = $684.92) |
+| XOM | $138.4206 | $145.86 | +5.37% | 10% trail GTC HWM $145.86 / stop $131.274 (fff198e9, broker auto-trailed today) | No tighten (+15%), no cut (-7%) |
+
+**Account:** Equity $104,919.32 | Cash $26,740.13 (25.5%) | Deployed $78,179.19 (74.5%, 4 positions) | Week 12 count: 0/3
+
+---
+
+## 2026-07-14 — Midday Scan (Tuesday, Week 12 Day 2)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.769839 | $294.51 | +$231.89 (+1.29%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $210.87 | +$681.91 (+3.45%) | 10% trail HWM $211.00 / stop $189.90 (1f35b3d1) |
+| QQQ | $736.683448 | $720.61 | -$466.13 (-2.18%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | $138.420615 | $144.51 | +$791.62 (+4.40%) | 10% trail HWM $146.00 / stop $131.40 (fff198e9, broker auto-trailed intraday from HWM $145.86) |
+
+- **Losers cut:** None. Worst position QQQ -2.18%, well above -7% manual cut threshold.
+- **Stop tightening:** None. No position near +15% (best is XOM +4.40%).
+- **Thesis check:** No breaks. All 4 theses reconfirmed this morning (pre-market 2026-07-14): NVDA HOLD despite Benzinga SELL flag (Perplexity finds it macro/valuation-driven, not fundamental — consensus still Strong Buy, PTs being raised); XOM strengthening on renewed Iran oil-risk premium (Jefferies reiterated Buy $184 PT); QQQ dip attributed to SpaceX index-inclusion mechanics, not fundamental; IWM technical watch item improving (RS #16→#3). CPI (Tier-1 blocker) released 8:30 AM ET — no sharp unexplained moves in any held name this midday, so no ad-hoc Perplexity check triggered.
+- **Portfolio:** Equity $105,169.21 | Cash $26,740.13 (25.4%) | Deployed $78,429.08 (74.6%, 4 positions) | Week 12 count: 0/3 | Phase P&L: +$5,169.21 (+5.17%)
+
+**Open Orders (midday 2026-07-14, unchanged):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $211.00, stop $189.90
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.878
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $146.00, stop $131.40
+
+**No action taken. No ClickUp notification.**
+
+**No trade executed** — CPI Tier-1 blocker rules out any new entry regardless of setup quality, per pre-market decision. All 4 theses unchanged since this morning. No stop changes needed (no position near +15% tighten or -7% cut). No ClickUp notification (no trade fired).
