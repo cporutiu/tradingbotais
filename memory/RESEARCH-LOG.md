@@ -4210,3 +4210,29 @@ All 4 positions held with active stops. Autonomous decisions logged for EOD Jun 
 
 ### Decision
 **TRADE — queue NVDA for next market-open (Fri Jul 10), ~100 shares at market, 10% trail GTC stop immediately on fill.** Today's own market-open trade (XOM) already executed via the scheduled routine before this session started; this entry does not re-decide it. IWM held with downgraded conviction (active watch, not exit). QQQ and XOM both reconfirmed. Week 11 slots after NVDA: 2/3 used, 1 remaining.
+
+---
+
+## 2026-07-14 — Pre-Market Research (Tuesday) — RUN BLOCKED, egress denied
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set).
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (22) ... 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not a credentials or transient-network issue. `recentRelayFailures` shows repeated `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for `paper-api.alpaca.markets:443`. Perplexity (`api.perplexity.ai`) and ClickUp (`api.clickup.com`) calls failed the same way.
+- **This is the same failure mode as the 2026-07-06 blocked run** (see that entry above) — recurring, not one-off.
+- Per the established runbook for this failure: do not retry or route around it; report the blocked host. No account data was fabricated. WebSearch fallback was not substituted for the account/position snapshot (that can only come from the Alpaca API).
+
+### Bigger issue found while investigating: 3-trading-day gap in the repo
+- Last commit to this repo (any routine) is `EOD snapshot 2026-07-09` (Thursday). No commits exist for Fri Jul 10, Mon Jul 13, or today (Tue Jul 14) — **no pre-market, market-open, midday, or EOD routine appears to have run or been committed for 3 consecutive trading days.**
+- Per Jul 9's EOD entry, NVDA was queued to enter at Friday Jul 10's open (~100 sh @ ~$197, 10% trail GTC). **There is no market-open commit or log entry confirming this trade executed, was skipped, or was filled at a different price.**
+- Last confirmed positions/stops (Jul 9 EOD, now 3 trading days stale): IWM 62sh (stop $272.448), QQQ 29sh (stop $670.878), XOM 130sh (stop $124.6905). Real current state — including whether NVDA was ever bought, whether any GTC trailing stops have triggered, and current equity/P&L — is **unknown**.
+- Per CLAUDE.md, Local/Windows Task Scheduler is the "active" execution path and this cloud routine is meant to be "archived/restorable." If local runs happened Jul 10/13/14 but failed to push, or didn't run at all, that would explain the gap — but this cannot be confirmed from within this session.
+
+### Impact
+- No account/position snapshot pulled. No trade ideas generated. No HOLD/TRADE decision made this run.
+- ClickUp alert could not be sent (channel unreachable) — user notified out-of-band instead.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy — this has now failed twice (Jul 6, Jul 14).
+2. **Check whether the local Windows Task Scheduler path actually ran Jul 10 / Jul 13 / Jul 14** — if it ran but didn't push, there may be uncommitted local trade history to reconcile. If it didn't run at all, positions/stops have been unmonitored for 3 trading days.
+3. Pull a fresh Alpaca account/positions snapshot (any working channel) before trusting anything in this log — the last confirmed state is 5 calendar days / 3 trading days stale, and a queued NVDA entry's fate is unconfirmed.
