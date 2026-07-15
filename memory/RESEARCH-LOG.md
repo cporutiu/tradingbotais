@@ -4416,3 +4416,37 @@ No new entries today — **CPI is a named Tier-1 blocker (full blackout)** regar
 
 ### Decision
 **HOLD — no new trades today.** CPI (Tier-1 blocker) and same-day bank earnings rule out any entry regardless of setup quality. All 4 positions reconfirmed: NVDA thesis intact despite a Benzinga SELL flag (Perplexity finds it macro/valuation-driven, not fundamental); XOM strengthening on oil; QQQ unchanged; IWM's technical watch item shows early signs of improving (RS #16→#3) but not yet declared resolved. Deployed 74.4%, Week 12 count 0/3.
+
+---
+
+## 2026-07-15 — Pre-Market Research (Wednesday, Week 12 Day 3, Day 57) — CONNECTIVITY OUTAGE, NO DATA PULLED
+
+### STEP 1B — No pending decisions
+Most recent "User decisions" block in TRADE-LOG.md is 2026-07-09 (already resolved). Jul 14 EOD logged no action questions. Nothing carries forward today.
+
+### Outage — all three external APIs blocked at the network/proxy layer
+Every wrapper call failed identically before reaching the target API:
+- `scripts/alpaca.sh account` → `curl: (56) CONNECT tunnel failed, response 403` (paper-api.alpaca.markets:443)
+- `scripts/perplexity.sh` → same CONNECT-tunnel 403 (api.perplexity.ai:443)
+- `scripts/clickup.sh` → same CONNECT-tunnel 403
+
+Confirmed via the agent-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`) — `recentRelayFailures` shows `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for all three hosts. This is an **egress policy denial at the session's network layer**, not a credentials problem (env vars ALPACA_API_KEY/ALPACA_SECRET_KEY/PERPLEXITY_API_KEY/CLICKUP_API_KEY were all confirmed set beforehand) and not an Alpaca/Perplexity/ClickUp-side outage. Per proxy guidance: policy denials (403/407) are not to be retried or routed around — reporting instead.
+
+**Consequence: no live account snapshot, no live positions/orders pull, no Perplexity market research, and no ClickUp notification were possible this session.** Nothing in this entry's "Account Snapshot" or "Market Context" below is live-verified — both are omitted rather than fabricated or carried forward stale.
+
+### Account Snapshot
+Not available — Alpaca API unreachable (see outage note above). Last known state: Jul 14 EOD, Equity $105,251.83, 4 positions (IWM/NVDA/QQQ/XOM), Week 12 count 0/3.
+
+### Market Context
+Not available — Perplexity unreachable and this session's WebSearch/WebFetch tools were not usable as a substitute for the blocked-API research plan (same egress path). No fallback research performed.
+
+### Trade Ideas
+None generated — no live account or market data to validate any setup against.
+
+### Risk Factors
+- **Full external-API connectivity outage this session** — Alpaca, Perplexity, and ClickUp all blocked at the proxy/policy layer. Highest-priority open item.
+- Per Strategy Rule 15 (Reconnect protocol): if this outage persists into the next session, that session must reconcile live positions/orders against this stale log before any new-entry action, and check every position against tighten/cut/thesis thresholds that may have been missed during the gap — do not trust this log as current.
+- Congress signal source (401, since Jul 9) remains separately unresolved — unrelated to today's outage, still open.
+
+### Decision
+**HOLD — no trade possible.** No live account data, no market research, and no notification channel this session. Escalating to the user directly since the normal ClickUp alert path is itself down.
