@@ -4416,3 +4416,96 @@ No new entries today — **CPI is a named Tier-1 blocker (full blackout)** regar
 
 ### Decision
 **HOLD — no new trades today.** CPI (Tier-1 blocker) and same-day bank earnings rule out any entry regardless of setup quality. All 4 positions reconfirmed: NVDA thesis intact despite a Benzinga SELL flag (Perplexity finds it macro/valuation-driven, not fundamental); XOM strengthening on oil; QQQ unchanged; IWM's technical watch item shows early signs of improving (RS #16→#3) but not yet declared resolved. Deployed 74.4%, Week 12 count 0/3.
+
+## 2026-07-16 — Pre-Market Research (Thursday, Week 12 Day 4, Day 58)
+
+### STEP 1B — Q1 resolved autonomously
+No "User decisions" block found below the Jul 16 EOD entry's action question. Per strategy rule 14, Q1 (validate AMD candidate now vs wait for Friday) was resolved autonomously and logged to TRADE-LOG.md as a Bot Autonomous Decision (2026-07-16): validated AMD (and sector-watchlist CAT/FCX) against the 2:1 R:R floor — none clear it (AMD best-case ~1.72:1, CAT ~1.83:1, FCX ~1.79:1). No urgency protocol active (sub-75% deployment hasn't hit 2 consecutive weekly closes yet), so the 2:1 floor stands. **CARRY to Friday's weekly review** — no forced entry.
+
+*(Note: today's "Jul 16 EOD Snapshot" in TRADE-LOG.md was itself a catch-up run posted this morning covering a Jul 15/Jul 16 logging gap — flagged there for the user to check Task Scheduler. This pre-market run is the actual Thursday Jul 16 pre-market pass.)*
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $104,645.59 | **Cash:** $26,740.13 (25.6%) | **Deployed:** $77,905.46 (74.5%, 4 positions) | **DT count:** 0
+- **Phase P&L:** +$4,645.59 (+4.65%) | **Week 12 trade count:** 0/3
+
+### Positions (pre-market, live — all stops confirmed live and correctly tracking, no breaches during logging gap)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.7698 | $294.50 | +$231.27 (+1.28%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $208.79 | +$480.15 (+2.43%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| QQQ | 29 | $736.6834 | $710.60 | -$756.29 (-3.54%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $144.51 | +$791.62 (+4.40%) | 10% trail HWM $146.00 / stop $131.40 (fff198e9) |
+
+No position near a tighten trigger (+15%/+20%) or the -7% manual cut (worst is QQQ -3.54%).
+
+**Note (tooling housekeeping, recurring):** fetch_benzinga.py/fetch_congress.py still crash on a pre-created empty output file (shell redirect race) — worked around again today via temp-file-then-move. Not fixed in the scripts this session.
+
+### Market Context
+- **WTI:** ~$80/bbl. **Brent:** ~$85-86/bbl. Oil continues climbing — third+ straight session of gains on sustained U.S.-Iran Strait of Hormuz tension.
+- **S&P 500 futures:** modestly positive premarket, ~7,589-7,607 (+0.2 to +0.3%).
+- **VIX:** ~15.8 (Cboe spot close), range 16.15-17.56 intraday on other feeds — **LOW risk (<18)**.
+- **Market risk:** Low.
+- **Economic cycle:** Late-cycle — below-trend but positive GDP growth (~1.8-2.2%), inflation sticky above 2%, labor softness; Fed shifted from tightening to cautious easing bias.
+- **Catalysts today:** Heavy Q2 earnings slate (TSMC, NFLX, UNH, GE Aerospace, ABT, ISRG, AA, PLD, regional banks STT/USB/CFG) — none held or on sector watchlist. Weekly claims, Philly Fed, business inventories, pending home sales, NAHB housing, EIA nat-gas inventories. Fed June minutes due this week (next real Fed catalyst). AI supercycle / TSMC guidance a key read-through for NVDA-adjacent sentiment.
+- **Earnings BMO today:** None for held names or watchlist candidates (AMD, CAT, FCX all clear).
+- **Econ calendar:** No CPI/PPI/FOMC/NFP today — June CPI (Jul 14, -0.4% MoM/+3.5% YoY) and June PPI (Jul 15, -0.3% MoM/+5.5% YoY) already released and priced in. Next NFP not until first Friday of August. No Tier-1 blocker today.
+- **Sector momentum (YTD):** Energy, Materials, Staples, Industrials still the "leading quadrant." Utilities/Real Estate "improving." Health Care "weakening." Tech, Comm Svcs, Discretionary, Financials "lagging."
+- **20-day RS ranking (strongest to weakest, deduplicated):** SOXX, QQQ, XLE, XLK, IWM, EEM, XLI, XLY, HYG, XLF, XLB, XLV, XLC, XLRE, SPY, GLD, XLP, SLV, XLU.
+
+### Benzinga Signals
+- **SELL (high):** SPY (score -10, 9 mentions — Fed missed 2% inflation target 64 straight months narrative), QQQ (score -6, 4 mentions, held position).
+- **SELL (medium):** XLE, XLF, XLK, XLI, XLB, XLY, XLC, IWM (held), SOXX — all score -2, 1 mention each.
+- **BUY:** none. 16 emails scanned, BUY=0 SELL=11 HOLD=15.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (unresolved since Jul 9, now 6+ trading sessions). Proceeded without congress context per protocol. **Escalate at tomorrow's weekly review if still down.**
+
+### Perplexity Validation — Held Positions & Benzinga Signals
+
+**QQQ ($710.60, -3.54%) — HOLD, Benzinga high-confidence SELL not corroborated by fundamentals:**
+- Perplexity finds QQQ's recent softness driven by cooler June CPI relief fading and SpaceX Nasdaq-100 inclusion mechanics (index-flow noise), not a fundamental break. Bullish call-option flow ($24-30M structure targeting new ATHs) and continued AI/mega-cap strength (NVDA, MSFT, GOOGL) argue against the Benzinga SELL. Stop 5.6% below current price.
+
+**IWM ($294.50, +1.28%) — HOLD, technical caution re-emerging:**
+- Mixed signal today: YTD total return +20% and small-cap rate-cut-hope tailwind intact, but MarketWatch/Mott Capital flagged IWM broke below its recent uptrend after touching an all-time intraday high — first such break since August. This tempers the "resolved" call from Jul 14 (RS #16 to #3). Reclassifying back to **active watch** — not yet a thesis break (no stop threshold near), but the technical improvement claimed Jul 14 did not hold cleanly. Benzinga SELL (medium) aligns directionally with this technical caution.
+
+**XOM ($144.51, +4.40%) — HOLD, thesis intact:**
+- No Benzinga signal (no mention). Oil continues its Iran-driven rally (WTI ~$80, Brent ~$85-86), a further extension of the premium supporting the thesis. No new headline risk.
+
+**NVDA ($208.79, +2.43%) — HOLD, thesis intact:**
+- No Benzinga signal (low confidence, no action). Vera Rubin delay rumors denied directly by Jensen Huang (in production, "giant" volumes expected). H200 China shipments continuing but "trivial" volume — limited near-term revenue impact either way. KeyBanc raised PT to $330 (from $310), Overweight. No thesis-break signal.
+
+**Sector ETF Benzinga SELLs (SPY, XLE, XLF, XLK, XLI, XLB, XLY, XLC, SOXX) — bearish cases checked, mostly not strongly macro-confirmed:**
+- **SPY:** Bearish case only partially supported — 1-day ETF outflow ($640M) offset by 5-day net inflow (+$1.2B); trend/support intact; macro two-sided (oil/Fed risk vs. soft CPI/AI earnings resilience). Not a strong sell signal.
+- **XLE:** Bearish case is mostly technical (MACD sell signal, overbought), not macro or outflow-driven — no evidence of energy outflows; oil rally argues the other way. Aligns with continued XOM conviction.
+- **XLF:** Bearish case driven by a documented ~$4B/90-day AUM outflow and a "death cross" — real but macro (GDP, employment, capex) still supportive, no recession confirmation.
+- **XLK:** Bearish case is valuation/crowding (P/E ~42-45x vs ~25x 10Y median) and mixed flow reports, not an earnings breakdown — Mag-7 earnings growth still double-digit.
+- **XLI:** Bearish case is momentum/MACD turning negative plus Michael Burry's disclosed CAT short (valuation) — no confirmed outflows; ISM Manufacturing still expansionary (~54.0).
+- **XLB:** Bearish case is macro/cyclical (weak developed-market construction, China deflation risk) not outflow-confirmed; analyst ratings still Buy/Strong Buy.
+- **XLY:** Bearish case best supported of the group — weakening Michigan consumer sentiment, back-to-school sales at 15-year seasonal low, income-tier divergence (lower-income pulling back). Real macro deterioration, not just technicals.
+- **XLC:** Bearish case is valuation/momentum digestion after a ~99% 3-year run, not outflow-confirmed; Meta ad fundamentals still strong (Q1 beat, though "sell the news" on capex guidance).
+- **SOXX:** Bearish case is tactical (bubble-signal flags, extreme volatility, Korea/Asia semis outperforming U.S.) — no confirmed U.S. demand collapse; CHIPS Act and AI capex still supportive. RS ranking still #1 (strongest 20-day).
+- **Net read:** None of these SELL flags represent a confirmed fundamental/macro breakdown strong enough to override existing theses (QQQ, IWM held). XLY is the one ETF where the bearish case has the most real macro teeth, worth a watch item if it deteriorates further, though not held.
+
+### Candidate Validation (Q1 resolution — see STEP 1B)
+- **AMD:** $529.14 vs. consensus target $529.66 (~0% upside); best-case BofA $620 (+17.2%) still only ~1.72:1 R:R against a 10% stop. **Fails 2:1 floor.**
+- **CAT:** $933.81 vs. consensus $970.37 (+3.9%); best-case Oppenheimer $1,105 (+18.3%) ~1.83:1 R:R. ISM Manufacturing reading (~54.0) supports the "expansion confirmed" entry condition, but R:R still **fails 2:1 floor**. Also note: Michael Burry disclosed a short on CAT (valuation concern) — an added caution flag even if R:R had cleared.
+- **FCX:** $61.29 vs. consensus $70.79 (+17.9%) ~1.79:1 R:R. **Fails 2:1 floor.**
+- No urgency protocol active (sub-75% deployment stretch has not yet reached 2 consecutive weekly closes — tomorrow would be the first). 2:1 floor stands. No validated candidate today.
+
+### Trade Ideas
+1. **No new entries today.** All three checked candidates (AMD, CAT, FCX) fail the 2:1 R:R floor at current prices/targets. No Tier-1 blocker today, but setup quality is the limiting factor, not the calendar.
+2. **XOM — no action, thesis reconfirmed and strengthening** on continued Iran-driven oil rally.
+3. **IWM — reclassify to active watch (from "resolving").** Uptrend break flagged today by MarketWatch/Mott Capital tempers the Jul 14 RS-improvement read. Watch for further deterioration; no stop-threshold action yet.
+4. **QQQ/NVDA — no action.** Benzinga SELL flags on both remain unconfirmed by fundamentals research.
+
+### Risk Factors
+- **IWM technical re-deterioration:** broke below its recent uptrend per today's research — the position most likely to generate the next action question if this continues.
+- **XLY consumer-discretionary weakening:** the one Benzinga SELL flag with genuine macro teeth (sentiment, income-tier divergence, weak back-to-school sales) — not held, but a read on broader consumer health.
+- **Congress signal source down 6+ sessions (401, since Jul 9):** escalate at tomorrow's weekly review if not restored.
+- **Fed June minutes due this week:** next real policy catalyst; could reprice rate-cut/hike odds and hit QQQ/NVDA (duration-sensitive tech).
+- **First weekly close below 75% deployment tomorrow (Friday):** if deployed remains <75% at Friday close, this starts the clock toward the urgency protocol (triggers at 2 consecutive weekly closes <75%).
+
+### Decision
+**HOLD — no new trades today.** AMD, CAT, and FCX all fail the 2:1 R:R floor (Q1 resolved — see STEP 1B/TRADE-LOG.md). All 4 positions reconfirmed except IWM, reclassified back to active watch on a fresh technical caution flag (uptrend break). Deployed 74.5%, Week 12 count 0/3. Patience rule (11) governs — deployed >=60%, no forced entry.
+
+---
