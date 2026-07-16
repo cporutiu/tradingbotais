@@ -3187,3 +3187,45 @@ No user response to the Jul 10 EOD action questions was found in this log by thi
 **Bot autonomous decision (2026-07-16):** Q1 (validate AMD candidate now vs wait for Friday refresh) → **VALIDATED NOW, FAILS R:R — CARRY to Friday** → Checked AMD against the 2:1 R:R floor this morning: price $529.14 vs consensus analyst target $529.66 (~0% upside) and even the more bullish BofA target $620 (+17.2%) both fall short of the 2:1 minimum against a 10% stop (best case ~1.72:1). Also spot-checked sector-watchlist names CAT ($933.81 vs consensus $970.37, +3.9%; best-case Oppenheimer $1,105, +18.3% = ~1.83:1) and FCX ($61.29 vs consensus $70.79, +17.9% = ~1.79:1) — neither clears 2:1 either. No urgency protocol active (deployed has been <75% for less than one weekly close, not 2+), so the 2:1 floor stands. No validated candidate exists; patience rule (11) governs at 74.5% deployed. Carrying to Friday's full weekly-review watchlist refresh.
 
 ---
+
+## 2026-07-16 — Market-Open Execution (Thursday, Week 12 Day 4)
+
+**Pre-market plan:** HOLD, no new trades — AMD, CAT, FCX all failed the 2:1 R:R floor (see RESEARCH-LOG.md Candidate Validation, Q1 resolution).
+
+**Live re-validation:**
+| Ticker | Entry | Live Price | Chg from entry | Stop | Threshold check |
+|--------|-------|------------|-----------------|------|-----------------|
+| IWM | $290.7698 | $294.96 | +1.44% | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) | No tighten (+15%), no cut (-7%) |
+| NVDA | $203.84 | $209.96 | +3.00% | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) | No tighten (+15%), no cut (-7%) |
+| QQQ | $736.6834 | $713.16 | -3.19% | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) | No cut (-7% = $684.92) |
+| XOM | $138.4206 | $144.828 | +4.63% | 10% trail HWM $146.00 / stop $131.40 (fff198e9) | No tighten (+15%), no cut (-7%) |
+
+**Account:** Equity $104,907.23 | Cash $26,740.13 (25.5%) | Deployed $78,167.10 (74.5%, 4 positions) | Week 12 count: 0/3
+
+**No trade executed** — no candidate cleared the 2:1 R:R floor in pre-market (AMD ~1.72:1, CAT ~1.83:1, FCX ~1.79:1), no Tier-1 blocker today but setup quality is the limiting factor. No position near a tighten (+15%) or cut (-7%) threshold. No stop changes needed. No ClickUp notification (no trade fired).
+
+---
+
+## 2026-07-16 — Midday Scan (Thursday, Week 12 Day 4)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.769839 | $296.08 | +$329.23 (+1.83%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $207.12 | +$318.16 (+1.61%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| QQQ | $736.683448 | $708.58 | -$815.00 (-3.81%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | $138.420615 | $145.72 | +$948.92 (+5.27%) | 10% trail HWM $146.87 / stop $132.183 (fff198e9, broker auto-trailed intraday) |
+
+- **Losers cut:** None. Worst position QQQ -3.81%, well above -7% manual cut threshold.
+- **Stop tightening:** None. No position near +15% (best is XOM +5.27%).
+- **Thesis check:** No breaks. Consistent with this morning's pre-market read — QQQ Benzinga SELL remains unconfirmed by fundamentals (index-mechanics/AI-strength offset); IWM technical caution (uptrend break, flagged pre-market) still active-watch only, no new deterioration since this morning; XOM thesis strengthening further on Iran oil-risk premium (broker auto-trailed stop up again intraday, HWM $146.00→$146.87); NVDA intraday -2.53% is normal volatility (no held-name catalyst, no news flag) — thesis intact.
+- **Intraday research:** None triggered — no position moved sharply enough with an unexplained cause to warrant an ad-hoc Perplexity check.
+- **Portfolio:** Equity $104,655.84 | Cash $26,740.13 (25.55%) | Deployed $77,915.71 (74.45%, 4 positions) | Week 12 count: 0/3 | Phase P&L: +$4,655.84 (+4.66%)
+
+**Open Orders (midday 2026-07-16, unchanged):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $213.81, stop $192.429
+- Sell 29 QQQ trailing_stop 10% GTC (ce15a8ec): HWM $745.42, stop $670.878
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $146.87, stop $132.183
+
+**No action taken. No ClickUp notification.**
