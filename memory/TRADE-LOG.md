@@ -3229,3 +3229,21 @@ No user response to the Jul 10 EOD action questions was found in this log by thi
 - Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $146.87, stop $132.183
 
 **No action taken. No ClickUp notification.**
+
+---
+
+## Jul 16 — EOD Snapshot (Day 58, Thursday — Week 12 Day 4) [final close — supersedes the earlier same-day catch-up entry above, which used stale Jul 15 data]
+**Portfolio:** $104,633.96 | **Cash:** $26,740.13 (25.56%) | **Day P&L:** -$657.17 (-0.62%) | **Phase P&L:** +$4,633.96 (+4.63%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.7698 | $295.52 | -0.09% | +$294.51 (+1.63%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $207.39 | -2.41% | +$344.35 (+1.74%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| QQQ | 29 | $736.6834 | $705.96 | -1.64% | -$890.98 (-4.17%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $145.97 | +1.01% | +$981.42 (+5.45%) | 10% trail HWM $146.87 / stop $132.183 (fff198e9, broker auto-trailed intraday) |
+
+**Trades today:** None. Week 12 count: 0/3.
+
+**Notes:** Day 58, Thursday, Week 12 Day 4. Day P&L computed against Alpaca's `last_equity` ($105,291.13, confirmed Jul 15 close) since Jul 15 was never logged as its own EOD. No trades filled — pre-market and midday both held (AMD/CAT/FCX all failed the 2:1 R:R floor per today's research). All 4 theses reconfirmed intact: NVDA holds despite a low-confidence Benzinga flag (Vera Rubin delay rumors denied by Jensen Huang, KeyBanc raised PT to $330); XOM strengthening further on the Iran oil-risk premium, broker auto-trailed its stop up again intraday (HWM $146.87/stop $132.183); QQQ's Benzinga SELL remains unconfirmed by fundamentals (index-mechanics, not a break); IWM reclassified to active technical watch (uptrend break flagged by MarketWatch/Mott Capital) — not yet a thesis break, no stop action warranted. No losers cut (worst QQQ -4.17%, nowhere near -7%), no stop tightening (best XOM +5.45%, nowhere near +15%). Cash 25.56% (fractionally above the 25% deployment floor) but no validated 2:1+ R:R candidate exists today — this was already resolved this morning (Q1, see above) as carry-to-Friday; tomorrow's weekly review is the first weekly close under 75% deployed, starting the clock toward the urgency protocol if it repeats. Week 12 count holds at 0/3, three trading days gone with no urgency toward using a slot.
+
+**Action questions:** None new. Deployment scenario (cash >25%) already resolved this morning — validated AMD/CAT/FCX, all failed R:R, carrying to Friday's full watchlist refresh. No thesis breaks, no rule-trigger proximity, no trade-slot pressure.
