@@ -3159,3 +3159,27 @@ No user response to the Jul 10 EOD action questions was found in this log by thi
 **Notes:** Day 56, Tuesday, Week 12 Day 2. CPI (June print) was a named Tier-1 blocker at 8:30 AM ET, ruling out any new entry regardless of setup quality — no trade fired at market open or midday. NVDA led the day (+3.95%, $211.58), extending its post-earnings-preview strength; broker auto-trailed its stop up to HWM $212.55/stop $191.295. XOM continued grinding higher on the renewed U.S.-Iran oil-risk premium (3rd straight up session for crude), +4.82% from entry though only +0.40% today as the move has been building over several sessions; Jefferies reiterated Buy ($184 PT). IWM's short-term technical watch item (bearish MACD/momentum since Jul 6) continued improving — 20-day RS rank now #3 of 19 (from #16 low), BTIG/Jefferies/Morgan Stanley all flagging small-cap tailwinds — downgraded from top watch item but one more session of confirmation wanted before calling it resolved. QQQ remains the laggard (-2.32% from entry) on SpaceX Nasdaq-100 index-inclusion mechanics, not a fundamental break. No stops triggered, no losers cut (-7% threshold not close on any position: worst is QQQ -2.32%), no stop tightening (no position near +15%: best is XOM +4.82%). Deployed 74.6% (just under the 75% floor) — no validated 2:1+ R:R candidate surfaced today (CPI blackout made it moot); AMD flagged via Benzinga BUY as a watchlist candidate for Friday's weekly review, not yet validated. Week 12 count remains 0/3, no urgency toward using a slot.
 
 **Action questions:** None. All 4 theses reconfirmed intact (NVDA Benzinga SELL flag remains contradicted by Perplexity fundamentals read; QQQ dip is index-mechanics, not fundamental), no position within range of a tighten/cut threshold, no validated deployment candidate to name (patience rule governs, deployed ≥60%), and the trade-slot count (0/3) isn't near the weekly cap.
+
+---
+
+## Jul 16 — EOD Snapshot (Day 58, Thursday — Week 12 Day 4)
+**Portfolio:** $104,659.17 | **Cash:** $26,740.13 (25.55%) | **Day P&L:** -$631.96 (-0.60%) | **Phase P&L:** +$4,659.17 (+4.66%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.770 | $294.56 | -0.41% | +$234.99 (+1.30%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $208.89 | -1.70% | +$489.85 (+2.48%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1, broker auto-trailed 2026-07-15) |
+| QQQ | 29 | $736.683 | $710.61 | -0.99% | -$756.13 (-3.54%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $144.51 | 0.00% | +$791.62 (+4.40%) | 10% trail HWM $146.00 / stop $131.40 (fff198e9) |
+
+**Trades today:** None. Week 12 count: 0/3 (confirmed via Alpaca closed-order history — no fills since NVDA buy Jul 10).
+
+**Notes:** Day 58, Thursday, Week 12 Day 4. **Process gap: no pre-market, market-open, or midday entries were logged for Jul 15 (Wednesday) or Jul 16 (today) in RESEARCH-LOG.md/TRADE-LOG.md** — this EOD run is the first activity since Jul 14 EOD. Likely a Windows Task Scheduler miss, not a credentials/API issue (account pulled clean: PA3GVPXBYBRB, all env vars set). Reconciled directly against live Alpaca data per the reconnect-protocol spirit (rule 15) even though the gap is under 3 days: all 4 GTC trailing stops are confirmed live and correctly tracking (NVDA's broker auto-trailed to HWM $213.81/stop $192.429 on 2026-07-15 on its own, unaffected by the logging gap). No stop breaches, no -7% cuts, no +15%/+20% tighten triggers missed — worst position QQQ -3.54%, best XOM +4.40%, both well inside normal range. No trades filled Jul 15-16. Day P&L computed against Alpaca's `last_equity` ($105,291.13, true Jul 15 close) rather than the Jul 14 logged EOD figure, since Jul 15's close was never logged. **Action for user: check Windows Task Scheduler / `.tmp/` logs to confirm pre-market, market-open, and midday tasks are still firing correctly** — recommend running `scripts/setup_tasks.ps1` verification or a manual `scripts/watchdog.ps1` check (new script present but unreviewed) before tomorrow's pre-market run.
+
+**Action questions:**
+
+**Q1: Cash is 25.55% (deployed 74.45%, just under the 75% floor) with no validated 2:1+ R:R candidate on hand today — pre-market research didn't run to refresh the watchlist. Push to validate a candidate (e.g. AMD, flagged Jul 14 via Benzinga BUY but not yet checked against R:R rules) before Friday's weekly review, or wait for the regular Friday refresh?**
+- Validate now: closes the deployment gap sooner if AMD (or another name) clears the 2:1 bar — risk of a rushed entry without the usual pre-market macro/thesis workup
+- Wait for Friday: keeps the process disciplined (full watchlist refresh, ranked by sector) — extends the sub-75% deployment stretch by one more day, though not enough to trigger the urgency protocol
+
+---
