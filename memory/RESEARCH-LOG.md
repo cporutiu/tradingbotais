@@ -4581,3 +4581,25 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **EXIT QQQ (rule 12, 2-week slow-bleed) — no new entries today.** Deployment drops to 54.98% (3 positions: IWM, NVDA, XOM). No validated 2:1+ R:R replacement candidate today, and today's acute tech-sector selloff argues against a rushed entry regardless. Redeployment gap flagged for today's weekly review. No stop tightening or additional cuts needed on remaining 3 positions (XOM +7.09%, IWM +1.39%, NVDA +0.07% — none near +15% tighten or -7% cut).
 
 ---
+
+## 2026-07-17 — Pre-Market Research Re-run (Friday, Week 12 Day 5) — duplicate trigger, addendum only
+
+**Context:** This pre-market routine fired a second time today after market-open had already run pre-market STEPS 1-3 inline and executed the QQQ rule-12 exit (see entry above, logged ~14:54 UTC). Likely a Task Scheduler double-fire or manual re-invocation — flag alongside the Jul 15/16 logging-gap issue as a scheduling reliability item for the user to check.
+
+**Reconciliation note:** The first live Alpaca pull this session returned stale data (QQQ still showing as an open position with its original trailing stop `ce15a8ec` still active) — momentarily looked like the logged QQQ exit had never executed. A second pull ~10 minutes later returned the correct, consistent state. Confirmed via direct order lookup: order `bb7d5bc2` (sell 29 QQQ market, sell_to_close) shows `status: filled`, `filled_avg_price: 695.12`, filled 2026-07-17T14:54:35Z. This was an Alpaca read-lag artifact, not a broken execution or a credential mix-up — account number PA3GVPXBYBRB confirmed correct throughout.
+
+**Fresh research (Benzinga, Congress, Perplexity x20 queries) re-run independently this session — no material differences from the market-open entry above:**
+- VIX ~18.3 (medium risk, unchanged). WTI ~$80, Brent ~$85 (unchanged, Iran premium continues). SPX futures still negative pre-market.
+- Sector momentum unchanged: Energy/Materials/Staples/Industrials leading; Tech/Comm Svcs/Discretionary/Financials lagging.
+- Benzinga: same signals as this morning's run (SPY/QQQ/GLD/XLK/XLP/IWM SELL medium, XLV BUY medium — XLV not on ranked sector watchlist, no action).
+- Congress: still 401 Unauthorized (Quiver Quant), now 9+ consecutive sessions down since Jul 9 — **escalate at today's weekly review.**
+- Perplexity validation of held names unchanged: NVDA thesis intact (sector-wide pressure, not NVDA-specific), XOM thesis strengthening (stop auto-trailed to HWM $150/stop $135), IWM no new deterioration.
+
+**Current account (live, post QQQ exit):** Equity $104,164.35 | Cash $46,898.61 (45.02%) | Deployed $57,265.74 (54.98%, 3 positions: IWM, NVDA, XOM) | Week 12 count: 0/3.
+
+**No new action taken this pass.** Nothing changed since the market-open entry — no new trade candidate validated, no threshold breaches on IWM/NVDA/XOM. Deployment gap (54.98%, below the 60% patience floor) already flagged for today's weekly review. No duplicate ClickUp notification sent (no new trade fired this pass).
+
+### Decision
+**HOLD — no action.** Confirms this morning's market-open decision. No new information changes the picture. Today's weekly review should address: (1) deployment gap post-QQQ-exit, (2) Congress API 9+ sessions down, (3) scheduler double-fire investigation.
+
+---
