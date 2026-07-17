@@ -3277,4 +3277,30 @@ QQQ entered 2026-06-18 (order 736.683448/share, 29 shares). Held 29 days — wel
 
 **Notes:** Day 58, Thursday, Week 12 Day 4. Day P&L computed against Alpaca's `last_equity` ($105,291.13, confirmed Jul 15 close) since Jul 15 was never logged as its own EOD. No trades filled — pre-market and midday both held (AMD/CAT/FCX all failed the 2:1 R:R floor per today's research). All 4 theses reconfirmed intact: NVDA holds despite a low-confidence Benzinga flag (Vera Rubin delay rumors denied by Jensen Huang, KeyBanc raised PT to $330); XOM strengthening further on the Iran oil-risk premium, broker auto-trailed its stop up again intraday (HWM $146.87/stop $132.183); QQQ's Benzinga SELL remains unconfirmed by fundamentals (index-mechanics, not a break); IWM reclassified to active technical watch (uptrend break flagged by MarketWatch/Mott Capital) — not yet a thesis break, no stop action warranted. No losers cut (worst QQQ -4.17%, nowhere near -7%), no stop tightening (best XOM +5.45%, nowhere near +15%). Cash 25.56% (fractionally above the 25% deployment floor) but no validated 2:1+ R:R candidate exists today — this was already resolved this morning (Q1, see above) as carry-to-Friday; tomorrow's weekly review is the first weekly close under 75% deployed, starting the clock toward the urgency protocol if it repeats. Week 12 count holds at 0/3, three trading days gone with no urgency toward using a slot.
 
+---
+
+## 2026-07-17 — Midday Scan (Friday, Week 12 Day 5)
+
+**Positions checked (live Alpaca pull, post-QQQ-exit):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.769839 | $294.92 | +$257.31 (+1.43%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $205.835 | +$193.52 (+0.98%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | $138.420615 | $148.145 | +$1,264.17 (+7.03%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+- **Losers cut:** None. All 3 remaining positions positive; worst is NVDA +0.98%.
+- **Stop tightening:** None. No position near +15% (best is XOM +7.03%).
+- **Thesis check:** No breaks. Consistent with this morning's pre-market/market-open read (QQQ already exited under rule 12 — see market-open entry above). XOM continuing its Iran-driven oil rally, intraday +1.50%, stop unchanged since this morning's overnight auto-trail. IWM (-0.23% intraday) and NVDA (-0.76% intraday) both giving back a little of this morning's gains, consistent with the ongoing chip/AI-sector unwind already documented in today's pre-market research — not a new development, no fresh catalyst, no thesis break.
+- **Intraday research:** None triggered — no position moved sharply enough with an unexplained cause to warrant an ad-hoc Perplexity check.
+- **Portfolio:** Equity $104,418.55 | Cash $46,898.61 (44.92%) | Deployed $57,519.94 (55.08%, 3 positions) | Week 12 count: 0/3 | Phase P&L: +$4,418.55 (+4.42%)
+
+**Open Orders (midday 2026-07-17, unchanged):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $213.81, stop $192.429
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $150.00, stop $135.00
+
+**No action taken. No ClickUp notification.**
+
+Deployment gap (55.08%, below the 60% patience floor) persists post-QQQ-exit — already flagged for today's weekly review to refresh the sector watchlist and find a genuine 2:1+ candidate.
+
 **Action questions:** None new. Deployment scenario (cash >25%) already resolved this morning — validated AMD/CAT/FCX, all failed R:R, carrying to Friday's full watchlist refresh. No thesis breaks, no rule-trigger proximity, no trade-slot pressure.
