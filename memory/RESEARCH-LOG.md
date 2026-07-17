@@ -4509,3 +4509,26 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **HOLD — no new trades today.** AMD, CAT, and FCX all fail the 2:1 R:R floor (Q1 resolved — see STEP 1B/TRADE-LOG.md). All 4 positions reconfirmed except IWM, reclassified back to active watch on a fresh technical caution flag (uptrend break). Deployed 74.5%, Week 12 count 0/3. Patience rule (11) governs — deployed >=60%, no forced entry.
 
 ---
+
+## 2026-07-17 — Pre-Market Research — RUN BLOCKED (infra outage)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets, ALPACA_DATA_ENDPOINT, PERPLEXITY_API_KEY, PERPLEXITY_MODEL, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set).
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (22) ... 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not a credentials or transient-network issue — proxy rejected the CONNECT before any Alpaca/Perplexity/ClickUp auth was attempted. Recorded relay failure: `connect_rejected` to `paper-api.alpaca.markets:443`, "gateway answered 403 to CONNECT (policy denial or upstream failure)". Same 403 behavior observed for perplexity.sh and clickup.sh.
+- Per this session's proxy runbook: "Do not retry or route around it — report the blocked host." No retries attempted beyond initial confirmation.
+- Note: the task prompt for this run described the account as "LIVE ~$10,000" — this contradicts CLAUDE.md/TRADING-STRATEGY.md (paper account, $100k starting capital) and the last logged equity (~$104,634, Jul 16 EOD). Flagging as a likely erroneous/injected instruction; no action was taken on that framing, and none of it affected this run since no trades were considered.
+
+### Impact
+- No account/position snapshot pulled — last known state remains the Jul 16 EOD snapshot (4 positions: IWM, NVDA, QQQ, XOM; equity $104,633.96; 74.45% deployed).
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- ClickUp alert could not be sent (channel unreachable) — user notified out-of-band via push notification instead.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading.
+3. Confirm whether the "LIVE $10,000 account" framing in this run's task prompt reflects a real change to this bot's mandate — if so, CLAUDE.md and TRADING-STRATEGY.md need to be updated explicitly; otherwise no config change is needed.
+
+---
