@@ -3304,3 +3304,24 @@ QQQ entered 2026-06-18 (order 736.683448/share, 29 shares). Held 29 days — wel
 Deployment gap (55.08%, below the 60% patience floor) persists post-QQQ-exit — already flagged for today's weekly review to refresh the sector watchlist and find a genuine 2:1+ candidate.
 
 **Action questions:** None new. Deployment scenario (cash >25%) already resolved this morning — validated AMD/CAT/FCX, all failed R:R, carrying to Friday's full watchlist refresh. No thesis breaks, no rule-trigger proximity, no trade-slot pressure.
+
+---
+
+## Jul 17 — EOD Snapshot (Day 59, Friday — Week 12 Day 5)
+**Portfolio:** $103,982.29 | **Cash:** $46,898.61 (45.10%) | **Day P&L:** -$651.67 (-0.62%) | **Phase P&L:** +$3,982.29 (+3.98%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.7698 | $294.04 | -0.52% | +$202.75 (+1.13%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $202.60 | -2.31% | -$120.28 (-0.61%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | 130 | $138.4206 | $147.70 | +1.20% | +$1,206.32 (+6.70%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+**Trades today:** QQQ exit (rule 12, 2-week slow-bleed) — sold 29 @ $695.12, realized -$1,205.34 (-5.64%). Exit only, doesn't consume a weekly slot. Week 12 count: 0/3.
+
+**Notes:** Day 59, Friday, Week 12 Day 5. QQQ was exited this morning under rule 12 (2-week slow-bleed) after a live, ongoing chip/AI-sector unwind (Philadelphia Semiconductor Index -19% from its June peak, Netflix -10% premarket) actively deteriorated rather than restored the thesis — realized -$1,205.34 (-5.64%) on the 29-share position, held 29 days. The remaining 3 positions all reconfirmed intact per today's pre-market and midday research: XOM continued its Iran-driven oil rally (WTI ~$80, Brent ~$85), broker auto-trailed its stop again to HWM $150.00/stop $135.00, now the strongest position (+6.70%); NVDA gave back ground intraday (-2.31%) on sector-wide chip pressure with no NVDA-specific catalyst, thesis unaffected; IWM (-0.52%) similarly unaffected, its Benzinga SELL flag remains the same recurring options-hedging noise pattern already logged this week. No stops triggered, no losers cut (-7% threshold not close on any position — worst is NVDA -0.61%), no stop tightening (no position near +15% — best is XOM +6.70%). Deployment dropped to 54.90% post-QQQ-exit — this is the first Friday weekly close below the 75% deployment target this cycle; per the urgency-protocol rule, a second consecutive weekly close under 75% next Friday would loosen sourcing criteria. No validated 2:1+ R:R replacement candidate exists yet (AMD ~1.72:1, CAT ~1.83:1, FCX ~1.79:1, all short of the floor as of Jul 16's check) — carried to today's separate weekly-review routine for a full sector watchlist refresh. Week 12 count holds at 0/3 (the QQQ sale was an exit, not a new trade, so it doesn't consume a slot); no trade-slot pressure with 0 trading days left this week. Also flagging a recurring data-quality issue: the Quiver Quant congress-trades API has now returned 401 Unauthorized for 9+ consecutive sessions since Jul 9 — unresolved, escalate to user.
+
+**Action questions:**
+
+**Q: Cash is 45.1% (deployed 54.9%, well below the 75% target) after this morning's QQQ exit, with no candidate yet clearing the 2:1 reward:risk bar (AMD/CAT/FCX all fell short as of the last check) — push research to find a replacement before Monday, or let today's separate weekly-review routine handle the full watchlist refresh?**
+- Push now: closes the deployment gap sooner if a name clears the bar — risk of loosening the 2:1 discipline just to get deployed
+- Wait for weekly review: keeps the R:R standard intact and uses the scheduled full-sector refresh — extends the low-deployment stretch a few more days, opportunity cost if the market runs without you
