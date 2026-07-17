@@ -3162,6 +3162,37 @@ No user response to the Jul 10 EOD action questions was found in this log by thi
 
 ---
 
+## 2026-07-17 — Market-Open Execution (Friday, Week 12 Day 5)
+
+**Pre-market plan:** Ran pre-market STEPS 1-3 inline (no separate pre-market pass had fired today) — see RESEARCH-LOG.md 2026-07-17 entry.
+
+**Live re-validation (pre-exit):**
+| Ticker | Entry | Live Price | Chg from entry | Stop | Threshold check |
+|--------|-------|------------|-----------------|------|-----------------|
+| IWM | $290.7698 | $294.81 | +1.39% | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) | No tighten (+15%), no cut (-7%) |
+| NVDA | $203.84 | $203.99 | +0.07% | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) | No tighten (+15%), no cut (-7%) |
+| QQQ | $736.6834 | $696.42 | -5.47% | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) | Not at -7% cut yet, but triggers rule 12 (see below) |
+| XOM | $138.4206 | $148.23 | +7.09% | 10% trail HWM $150.00 / stop $135.00 (fff198e9, broker auto-trailed further overnight) | No tighten (+15%), no cut (-7%) |
+
+**Account (pre-exit):** Equity $104,276.31 | Cash $26,740.13 (25.65%) | Deployed $77,536.18 (74.35%, 4 positions) | Week 12 count: 0/3
+
+**Rule 12 exit — QQQ (2-week slow-bleed rule):**
+QQQ entered 2026-06-18 (order 736.683448/share, 29 shares). Held 29 days — well past the 2-week threshold. Currently -5.47% from entry. Today's dominant catalyst is a live, ongoing global chip/AI-trade selloff (Philadelphia Semiconductor Index -19% from June peak, Netflix -10% premarket, hedge funds rotating out of chip names for a 4th+ consecutive week) directly hitting QQQ's core Nasdaq-100/semis weighting — this actively deteriorates the thesis rather than restoring it, failing rule 12's recovery-catalyst exception. **Executed manual exit ahead of both the -7% cut and the trailing stop.**
+
+- Cancelled trailing-stop order ce15a8ec (HWM $745.42/stop $670.878).
+- Sold 29 QQQ market/day. Filled 29 @ $695.12 (order bb7d5bc2-7995-47b7-8248-4a912037d36c).
+- Realized P&L: -$1,205.34 (-5.64%) on cost basis $21,363.82.
+
+**Account (post-exit):** Equity $104,170.85 | Cash $46,898.61 (45.02%) | Deployed $57,272.24 (54.98%, 3 positions: IWM, NVDA, XOM) | Week 12 count: 0/3 (exit, not a new trade — doesn't consume a trade slot)
+
+**No new entries today.** AMD/CAT/FCX all failed the 2:1 R:R floor as of the Jul 16 check (not re-validated today — session research budget went to the QQQ rule-12 analysis); today's acute tech/semis selloff and VIX crossing into medium-risk territory (18.3 vs. 16.7 prior close) argue against a rushed replacement entry regardless. Deployment gap (54.98%, below the 60% patience floor) flagged for today's weekly review to refresh the sector watchlist.
+
+**No stop changes on remaining 3 positions** — none near +15% tighten or -7% cut (XOM +7.09%, IWM +1.39%, NVDA +0.07%).
+
+**ClickUp notification sent** (trade fired — QQQ exit).
+
+---
+
 ## Jul 16 — EOD Snapshot (Day 58, Thursday — Week 12 Day 4)
 **Portfolio:** $104,659.17 | **Cash:** $26,740.13 (25.55%) | **Day P&L:** -$631.96 (-0.60%) | **Phase P&L:** +$4,659.17 (+4.66%)
 

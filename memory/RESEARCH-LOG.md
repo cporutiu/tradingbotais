@@ -4509,3 +4509,75 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **HOLD — no new trades today.** AMD, CAT, and FCX all fail the 2:1 R:R floor (Q1 resolved — see STEP 1B/TRADE-LOG.md). All 4 positions reconfirmed except IWM, reclassified back to active watch on a fresh technical caution flag (uptrend break). Deployed 74.5%, Week 12 count 0/3. Patience rule (11) governs — deployed >=60%, no forced entry.
 
 ---
+
+## 2026-07-17 — Pre-Market Research (Friday, Week 12 Day 5, Day 59) [run inline from market-open — no separate pre-market pass fired today]
+
+### STEP 1B — No pending decisions
+No "User decisions" block found below the Jul 16 final EOD entry, and that entry carried no action questions (Q1 was already resolved autonomously same-day). Nothing to carry forward.
+
+### Account Snapshot (live API, market-open)
+- **Equity:** $104,276.31 | **Cash:** $26,740.13 (25.65%) | **Deployed:** $77,536.18 (74.35%, 4 positions) | **DT count:** 0 (pre-exit snapshot)
+- Account number confirmed PA3GVPXBYBRB — matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-exit)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.7698 | $294.81 | +$250.49 (+1.39%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $203.99 | +$14.55 (+0.07%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| QQQ | 29 | $736.6834 | $696.42 | -$1,167.64 (-5.47%) | 10% trail HWM $745.42 / stop $670.878 (ce15a8ec) |
+| XOM | 130 | $138.4206 | $148.23 | +$1,275.22 (+7.09%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9, broker auto-trailed further overnight) |
+
+No tighten trigger (+15%/+20%) or -7% manual cut hit on any position at this snapshot.
+
+**Tooling housekeeping (recurring, still unfixed):** `fetch_benzinga.py`/`fetch_congress.py` crash on cache-read because the shell redirect (`> out_path`) creates an empty file at that exact path before the script runs, so the script's own `os.path.exists(out_path)` check always sees a (empty) file and tries to load it as JSON. Confirmed today that redirecting to a *different* temp filename and then `mv`-ing into place avoids the race — this is the durable fix, not just today's workaround. Consider hardcoding this two-step pattern into the routine scripts.
+
+### Market Context
+- **WTI:** ~$79.5-80/bbl. **Brent:** ~$84.8-85/bbl. Oil continues climbing on sustained U.S.-Iran Strait of Hormuz conflict.
+- **S&P 500 futures:** negative premarket, ~7,509-7,519 (-0.8% to -0.9%). **Nasdaq 100 futures -1.66%**, notably worse than SPX — tech-led selloff.
+- **VIX:** ~18.0-18.3 (Cboe spot), up sharply from Thursday's close of 16.73 (+9.6%). **Crosses from LOW (<18) into MEDIUM (18-25) risk territory** — first medium-risk reading in recent sessions.
+- **Market risk:** Medium (elevated from Low).
+- **Catalysts today:** **Global tech/semiconductor sell-off** — Philadelphia Semiconductor Index down ~19% from its June peak; driven by AI-capex-sustainability skepticism (TSMC raised full-year capex guidance despite beating estimates, spooking the market on ROI-timing concerns), hedge funds rotating out of chip names for a 4th+ week, Meta signaling excess GPU capacity easing scarcity narrative. **Netflix -10% premarket** on weak Q3 revenue guidance, amplifying the tech-sentiment hit. Framed broadly as valuation/positioning unwind, not a confirmed AI-demand collapse — TSMC itself beat estimates. Continued U.S.-Iran oil-risk premium supporting energy.
+- **Earnings BMO today:** None for held names or sector-watchlist candidates.
+- **Econ calendar:** Only Import/Export Price Indexes (June) at 8:30 AM ET — **not a Tier-1 blocker**. No CPI/PPI/FOMC/NFP today (June CPI/PPI already released Jul 14/15). **No Tier-1 blocker today.**
+- **Sector momentum:** Chip/AI-linked sectors (SOXX, XLK, QQQ) under acute pressure this week amid the capex-sustainability rotation. Energy/financials holding up better per weekly catalyst grid.
+
+### Benzinga Signals
+- **SELL (medium):** SPY (score -2, 5 mentions — US debt/fiscal-squeeze narrative), **QQQ (score -2, 9 mentions, held)**, GLD (score -2), XLK (score -2), XLP (score -2), **IWM (score -2, held)**.
+- **BUY (medium):** XLV (score +2, 2 mentions) — not held, not on sector watchlist (healthcare not a ranked sector).
+- NVDA: low-confidence only, no action. 18 emails scanned, BUY=1 SELL=6 HOLD=19.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (unresolved since Jul 9, now 9th consecutive trading session). Proceeded without congress context per protocol. **Escalate today at weekly review — this has now spanned nearly 2 full weeks unresolved.**
+
+### Perplexity Validation — Held Positions & Benzinga Signals
+
+**QQQ ($696.42, -5.47%) — Benzinga SELL corroborated by today's specific, active catalyst (not the usual noise pattern):**
+- Unlike prior QQQ SELL flags this cycle (index-mechanics, valuation-crowding — all deemed non-fundamental), today's driver is a live, ongoing chip/AI-trade unwind directly hitting QQQ's core Nasdaq-100/semis weighting (SOXX/XLK/QQQ all under acute pressure this week per catalyst scan). Netflix -10% is compounding broad tech sentiment. This is the first QQQ SELL signal this month with a concrete, QQQ-specific negative catalyst rather than a macro/technical footnote.
+- **Rule 12 (2-week slow-bleed exit) check:** QQQ entered 2026-06-18 — held 29 days, well past the 2-week threshold — and has been below entry essentially throughout the past two+ weeks of logged sessions (Jul 9 through today, -2.5% to -5.5% range, no sustained recovery). Today's catalyst is actively deteriorating the thesis, not restoring it — fails the rule's "thesis catalyst restoring momentum" exception.
+- **ACTION: Manual exit executed at market open** — see TRADE-LOG.md. Not a stop-triggered exit; a rule-mandated cut ahead of the -7% stop and ahead of the trailing-stop level, per rule 12.
+
+**NVDA ($203.99, +0.07%) — HOLD, thesis intact despite sector-wide pressure:**
+- NVDA itself is not the proximate cause of today's selloff (TSMC's raised capex guidance and Netflix are the specific triggers); Perplexity's broader read frames the move as valuation/positioning unwind across the AI trade, not evidence of an NVDA-specific demand break. Live position is flat (+0.07%), well inside normal noise — no threshold action.
+
+**XOM ($148.23, +7.09%) — HOLD, thesis strengthening, stop auto-trailed further:**
+- Oil continues its Iran-driven rally (WTI ~$80, Brent ~$85). Broker auto-trailed the stop again overnight (HWM $146.87→$150.00, stop $132.183→$135.00). No Benzinga signal, no negative news. Strongest position in the book.
+
+**IWM ($294.81, +1.39%) — HOLD, no new deterioration:**
+- Benzinga SELL (medium, 1 mention) consistent with the recurring options-hedging/technical-caution pattern already logged (heavy put positioning, large strangle bets on volatility) — not a new fundamental flag. YTD trend (+20%+) and long-term RS still strong. No threshold action.
+
+### Trade Ideas
+1. **No new entries today.** Even setting aside that AMD/CAT/FCX all failed the 2:1 R:R floor as of Jul 16 (no fresher validation run today given the QQQ exit consumed the session's research budget), today's market is acutely risk-off in exactly the kind of names our watchlist would target (Tech/XLK sector candidate NVDA already held; no new tech entry makes sense into a live chip selloff). VIX crossing to medium-risk territory reinforces caution.
+2. **QQQ — exited per rule 12 (2-week slow-bleed), not carried as a trade idea.**
+3. **XOM — no action, thesis strengthening further** on continued Iran-driven oil rally; stop auto-trailed again.
+
+### Risk Factors
+- **Deployment now 54.98%** post-QQQ-exit (3 positions) — well below the 60% patience-rule floor and the 75% target. This is a legitimate redeployment gap, not a "patience" situation, but today's acute tech-sector volatility argues against chasing a replacement position immediately. Flag for weekly review (today) to refresh the sector watchlist and find a genuine 2:1+ candidate, ideally outside the currently-stressed tech/semis complex.
+- **VIX crossed into medium-risk territory (18.3 vs. 16.7 prior close)** — first such reading in recent sessions; watch for further deterioration.
+- **Global chip/AI-trade unwind** — not confirmed as demand-driven yet (TSMC beat, Meta capacity-easing is a supply-side signal not a demand collapse), but a 4th+ week of hedge-fund selling in chips is a real, sustained trend. NVDA (held) is adjacent exposure even without a direct catalyst.
+- **Congress signal source down 9 consecutive sessions (401, since Jul 9)** — approaching 2 full weeks unresolved; escalate today.
+- **Week 12 trade count 0/3** — unaffected by the QQQ exit (not a new trade); still 3 slots available if a validated setup surfaces.
+
+### Decision
+**EXIT QQQ (rule 12, 2-week slow-bleed) — no new entries today.** Deployment drops to 54.98% (3 positions: IWM, NVDA, XOM). No validated 2:1+ R:R replacement candidate today, and today's acute tech-sector selloff argues against a rushed entry regardless. Redeployment gap flagged for today's weekly review. No stop tightening or additional cuts needed on remaining 3 positions (XOM +7.09%, IWM +1.39%, NVDA +0.07% — none near +15% tighten or -7% cut).
+
+---
