@@ -765,3 +765,89 @@ _Rationale: Mechanically sound (stops worked through a 3-week blackout, autonomo
 - Wait for post-CPI confirmation: if June CPI comes in hot, tech-sensitive names (AMD) are the first to reprice — waiting one extra session avoids buying into a CPI-driven selloff
 
 ---
+
+## Week ending 2026-07-17
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $104,584.89 (Jul 10 EOD / Week 11 end) |
+| Ending portfolio | $103,982.29 |
+| Week return | -$602.60 (-0.58%) |
+| S&P 500 week | ~-1.6% (SPX 7,593.39 Jul 10 → 7,475.69 Jul 17; first losing week in 3, tech/semis-led) |
+| Bot vs S&P | +1.02% |
+| Phase P&L | +$3,982.29 (+3.98% from $100,000 start) |
+| Trades | 1 (W:0 / L:1 / open:3) — 1 closed (QQQ rule-12 exit); 0 new buys |
+| Win rate | 0% (0/1 closed trades) |
+| Best trade | XOM +6.70% unrealized (+$1,206.32) |
+| Worst trade | QQQ -5.64% ($-1,205.34 realized) |
+| Profit factor | N/A (0 winners, 1 loser) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| QQQ | $736.6834 (Jun 18) | $695.12 (Jul 17) | -$1,205.34 (-5.64%) | Rule 12 (2-week slow-bleed) manual exit ahead of stop/-7% cut; 29-day hold; live chip/AI-capex-sustainability rotation (SOXX -19% from June peak, TSMC capex guidance, NFLX -10%) actively deteriorating the thesis rather than restoring it |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.7698 | $294.04 | +$202.75 (+1.13%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $202.60 | -$120.28 (-0.61%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | $138.4206 | $147.70 | +$1,206.32 (+6.70%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+### Sector Watchlist — Week 13 (Jul 20–24)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | AMD | R:R ~1.72:1 clears the new 1.5:1 urgency floor (BofA PT $620); NVDA holds tech's other single-stock slot (1/2); enter early week if no Tier-1 blocker |
+| 2 | Industrials | XLI | CAT | R:R ~1.83:1 clears urgency floor (Oppenheimer PT $1,105); ISM Manufacturing ~54.0 supports; Michael Burry's disclosed short is a valuation caution flag, not a blocker |
+| 3 | Energy | XLE | XOM (held) | Hold to stop $135.00; Iran/Hormuz oil-risk premium intact (WTI ~$80, Brent ~$85); no add needed |
+| 4 | Materials/Macro | GLD/XLB | GLD | FCX permanently abandoned (5+ consecutive R:R failures, same spread/PT problem) — do not re-add even under the relaxed 1.5:1 floor; GLD/XLB as macro-hedge alternative if a slot is wanted |
+
+### What Worked
+- Rule 12 (2-week slow-bleed exit) executed cleanly on QQQ — cut ahead of the stop and the -7% manual threshold the same morning a live, QQQ-specific catalyst (chip/AI-capex rotation) confirmed the thesis break rather than a bounce
+- XOM remained the portfolio's standout all week: +6.70% unrealized, broker auto-trailed the stop multiple sessions running (HWM $138.965 → $150.00) on sustained Iran/Hormuz oil-risk premium
+- Autonomous decision framework resolved 2 unattended questions correctly with no user input needed (XOM hold Jul 13, deployment-carry Jul 13) — rule 14 continues to work as designed
+- No stop breaches and no missed tighten triggers all week despite a VIX regime shift (crossed from Low to Medium risk on Friday) — mechanical risk management held
+- Correctly avoided chasing a rushed 5th/replacement position on the same day VIX crossed to medium-risk territory, even with deployment well below floor
+
+### What Didn't Work
+- Deployment fell to 54.98% by week end (3 positions) — second consecutive weekly close under the 75% floor (Jul 10: 74.4%, Jul 17: 54.98%), which per Rule "Deployment urgency protocol" now activates for Week 13
+- 0/3 new-trade slots used all week; the only action was the QQQ exit — AMD/CAT/FCX all failed the (then-standing) 2:1 R:R floor as validated Jul 16
+- QQQ closed at a realized loss (-$1,205.34, -5.64%) after a 29-day hold — never recovered from its post-entry drawdown; the AI-capex-sustainability rotation confirmed the break instead of reversing it
+- The week's S&P-relative outperformance (+1.02%) came mainly from being under-deployed during a broad selloff, not from active winners — a "lose less" week, not an alpha-generating one
+- Recurring process/tooling gaps: Jul 15/16 logging gap (Task Scheduler miss, unresolved), a Jul 17 pre-market double-fire, Congress/Quiver Quant API down 9+ consecutive sessions (since Jul 9), and the fetch_benzinga/fetch_congress cache-race bug still unfixed
+
+### Key Lessons
+- Rule 12 keeps proving its value: proactive exits ahead of the stop protected capital in both the CVX (May) and QQQ (Jul) cases, even when the exit itself locks in a loss — cutting the position beats "hoping the stop holds"
+- Two consecutive weekly closes below 75% deployed triggers the Urgency Protocol (R:R floor drops to 1.5:1, Wednesday check at <70%, Tier-2 blockers waived) — AMD (1.72:1) and CAT (1.83:1) both already clear this relaxed floor and are the natural first entries for Week 13
+- FCX remains permanently abandoned (5+ consecutive R:R failures on the same spread/PT-misalignment problem) — the relaxed 1.5:1 urgency floor does not resurrect a candidate abandoned under the "candidate freshness" rule; look to GLD/XLB for Materials instead
+- Recurring infra/process issues (Task Scheduler misses, Congress API 9+ sessions down, script cache-race bug) are individually minor but collectively degrade research completeness — worth a dedicated cleanup pass soon
+- IWM's technical picture has oscillated without resolving (bearish Jul 6-13 → improving Jul 14 → deteriorating again Jul 16) — the position most likely to force a real decision next
+
+### Adjustments for Next Week
+- **Urgency Protocol ACTIVE for Week 13** (2nd consecutive week <75% deployed): R:R floor 1.5:1, Tier-2 blockers waived (Tier-1 still blocks), Wednesday check triggers at <70% instead of <60%. Document "urgency protocol active" in each RESEARCH-LOG entry until deployment clears 75% for a full weekly close.
+- **Enter AMD (Technology, ~1.72:1 R:R) and/or CAT (Industrials, ~1.83:1 R:R)** early Week 13 — both clear the relaxed floor; re-check for any Tier-1 blocker before executing (see user decision below on sequencing).
+- **Materials slot:** do not re-attempt FCX (permanently abandoned); evaluate GLD or XLB if a 3rd position slot is wanted.
+- **IWM:** continue active watch on the unresolved technical-caution flag (uptrend break, first flagged Jul 16); treat a confirmed break-and-hold below support as an exit trigger.
+- **Escalate Congress/Quiver Quant API outage** (9+ consecutive sessions down since Jul 9) to the user — RESEARCH-LOG can't resolve this autonomously.
+- **Investigate the Jul 15/16 Task Scheduler miss and Jul 17 double-fire** — confirm scheduled tasks via `scripts/setup_tasks.ps1` or the new (untracked) `scripts/watchdog.ps1`.
+
+### Overall Grade: C+
+
+_Rationale: +1.02% relative outperformance vs. S&P is genuine, and Rule 12's proactive QQQ exit was correctly executed. But deployment dropped to 54.98% — the second consecutive weekly close under the 75% floor — which now formally triggers the Urgency Protocol heading into Week 13; the only closed trade this week was a realized loss; and process reliability (scheduler gaps, a stale API dependency) needs attention. Mechanically sound, structurally under-deployed._
+
+### Next-week Decisions
+
+**Q: IWM — technical-caution flag (uptrend break) has oscillated all week without confirming a clean break (bearish Jul 6-13, improving Jul 14, deteriorating again Jul 16). Hold into the weekend, or exit Monday open?**
+- Hold: fundamentals/YTD trend still strong (+20%+), the technical flag hasn't confirmed two sessions running in the same direction — could still resolve upward; risk: another leg down before any clear reversal, and IWM shares chip/AI-rotation sensitivity with NVDA
+- Exit Monday: locks in a modest +1.13% gain ahead of a technical picture that has failed to confirm strength twice now, freeing ~$18.2K toward AMD/CAT under the newly active Urgency Protocol; risk: selling right before a rebound if small-caps catch a bid
+
+**Q: Deployment 54.98%, Urgency Protocol now active (R:R floor 1.5:1) — enter AMD and CAT both Monday, or stagger one Monday and confirm the other mid-week?**
+- Enter both Monday: fastest path back to the 75-85% deployment band (~90%+ in one session), makes the Wednesday <70% check moot; risk: two new positions in one session with no fresh same-day R:R re-validation, opening into a market that closed Friday on a risk-off tech selloff
+- Stagger (AMD Monday, CAT mid-week after re-validation): reduces one-day execution risk, lets Monday's open show whether Friday's selloff continues or reverses before committing the 2nd slot; risk: slower deployment recovery, and CAT's R:R edge could erode if price rises before entry
+
+**Q: Congress/Quiver Quant signal source down 9+ consecutive sessions (since Jul 9) with no autonomous fix available. Continue operating without it, or flag for a manual credential/API check now?**
+- Continue without it: Perplexity + Benzinga covered every decision fine this week with no evident gap; the bot already has a documented protocol for operating without congress context; risk: missing a genuine insider-buying signal on a new candidate (AMD/CAT)
+- Flag for manual check now: 9+ sessions (nearly 2 weeks) is long enough to be a real credential/API issue, not transient — worth a few minutes of user attention before it becomes a multi-week blind spot like the Jun connectivity outage
+
+---
