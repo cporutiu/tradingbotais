@@ -4603,3 +4603,81 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **HOLD — no action.** Confirms this morning's market-open decision. No new information changes the picture. Today's weekly review should address: (1) deployment gap post-QQQ-exit, (2) Congress API 9+ sessions down, (3) scheduler double-fire investigation.
 
 ---
+
+## 2026-07-20 — Pre-Market Research (Monday, Week 13 Day 1, Day 62)
+
+### STEP 1B — Autonomous resolution of 3 carried questions (no user-decisions block found)
+See TRADE-LOG.md "2026-07-20 — Bot Autonomous Decisions" for full detail. Summary:
+- **IWM:** HOLD — small-cap breakout narrative intact today (YTD +20.49%), no confirmed second-session breakdown; Benzinga SELL flag silent today.
+- **AMD/CAT sequencing:** STAGGER — enter AMD at market open (clears even the standard 2:1 R:R floor at ~3.68:1), carry CAT to mid-week (clears at ~2.52:1 but entering both today would breach the 85% deployment ceiling at minimum 17% position sizing).
+- **Congress API outage:** Escalate via ClickUp (8th consecutive trading session down since Jul 9), continue operating without it.
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $104,241.05 | **Cash:** $46,898.59 (45.0%) | **Deployed:** $57,342.46 (55.0%, 3 positions) | Week 13 count: 0/3
+- Account number confirmed PA3GVPXBYBRB — matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.7698 | $295.67 | +$303.81 (+1.69%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $205.76 | +$186.24 (+0.94%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | 130 | $138.4206 | $146.5554 | +$1,057.52 (+5.88%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+No tighten trigger (+15%/+20%) or -7% manual cut hit on any position.
+
+### Market Context
+- **WTI:** ~$82-84/bbl. **Brent:** ~$88-90/bbl. Both continue climbing week-over-week (WTI was ~$80, Brent ~$85 last Thu) — sustained Iran/Strait-of-Hormuz risk premium.
+- **S&P 500 futures:** roughly flat to slightly positive premarket (~7,497-7,504, +0.0-0.1%). Nasdaq-100 futures also modestly positive (+0.13%) — no repeat of last Friday's acute risk-off gap.
+- **VIX:** ~18.3-18.5, essentially unchanged from Friday's 18.77 close. **Remains in medium risk (18-25) territory**, same regime as last week.
+- **Market risk:** Medium (unchanged).
+- **Catalysts today:** Fed policy expectations (June FOMC minutes context, no FOMC decision today), Q2 earnings season underway (bank earnings/PepsiCo/Delta already reported last week), an active **AI-theme rotation** — Chinese internet names (Alibaba/Tencent) rallying on China's approval of Apple Intelligence, Japan AI-hardware names sliding on valuation reset, TSMC's raised 2026 capex guidance ($60-64B) still anchoring the semis bull case. Continued oil/Iran headlines supporting energy. Small-cap rotation narrative (IWM) continuing per today's research.
+- **Earnings BMO today:** None for held names or sector-watchlist candidates (AMD, CAT).
+- **Econ calendar:** No CPI/PPI/FOMC/NFP today — latest prints already released (June core CPI 2.6% YoY, NFP +57K). **No Tier-1 blocker today.**
+- **Sector momentum YTD:** Energy, Materials, Consumer Staples, Industrials leading; Technology, Financials, Consumer Discretionary, Communication Services lagging on a YTD basis — though 20-day RS (below) shows a sharp near-term reversal with SOXX/QQQ/IWM at the top, consistent with a post-selloff chip bounce.
+- **Economic cycle stage:** Late-cycle — moderating GDP growth, gradually disinflating but still-elevated inflation, Fed shifting toward easing, cooling labor market (NFP +57K). Not a recession signal yet.
+- **20-day RS ranking (strongest→weakest):** SOXX, QQQ, IWM, XLE, XLF, XLK, XLV, XLI, HYG, EEM, XLB, XLY, XLP, XLRE, XLC, XLU, SLV, GLD, SPY. (Note: SOXX topping the list despite its ~22% recent drawdown likely reflects a sharp bounce day — treat as noisy/short-term, not a reversal of the YTD sector-momentum picture above.)
+
+### Benzinga Signals
+- **BUY (high):** SOXX (score +4, 5 mentions — "Chip Stocks Are Having Their Worst Month Since 2008: This Analyst Says Buy the Reset").
+- **BUY (medium):** NVDA (score +2, 2 mentions, held), AVGO (score +2, 1 mention).
+- **No SELLs today** — a clean reversal from Friday's SPY/QQQ/GLD/XLK/XLP/IWM SELL cluster. 21 emails scanned, BUY=3 SELL=0 HOLD=23.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (unresolved since Jul 9, now 8th consecutive trading session / 12th calendar day). Proceeded without congress context per protocol. **Escalated via ClickUp today** (STEP 5) per the weekly review's own recommendation.
+
+### Perplexity Validation — Held Positions & Benzinga Signals
+
+**IWM ($295.67, +1.69%) — HOLD, small-cap breakout narrative reasserting:**
+- YTD total return +20.49% (BlackRock, as of Jul 16). Multiple sources today frame the recent pause as consolidation, not reversal ("Russell 2000 hits record high... does the small-cap rally have more legs?", "spring in their step, Wall Street takes notice"). No confirmed follow-through on last week's uptrend-break flag. Benzinga silent on IWM today (no mention, vs. medium SELL last week).
+
+**NVDA ($205.76, +0.94%) — HOLD, thesis intact, fresh positive catalyst:**
+- Benzinga medium BUY today. NVIDIA/Noetra Corp announced a national AI-infrastructure deal in Japan (Vera Rubin AI factory, 13,750 Vera CPUs + 27,500 Rubin GPUs) — incremental positive, not a thesis-changing event on its own, but reinforces continued AI-capex demand after last week's chip-sector unwind.
+
+**XOM ($146.5554, +5.88%) — HOLD, thesis strengthening further:**
+- Oil continues its rally (WTI ~$82-84, Brent ~$88-90, up from ~$80/$85 last week) on sustained Iran/Strait-of-Hormuz tension. Analysts note higher crude could add ~$5B to XOM's Q2 profit. Goldman Sachs Hold, $157 PT. No new negative headlines.
+
+**AMD ($492-496) — Candidate validated, R:R ~3.68:1, ENTERING at market open:**
+- See STEP 1B/TRADE-LOG.md. Price pulled back from last week's $529 check; best-case bull cluster (BofA/KeyBanc/TD Cowen avg $673.33) held/rose. Confluent bullish signal with today's SOXX (high) and AVGO (medium) Benzinga BUYs — sector-wide "buy the chip reset" thesis. Macro pre-check passes (core CPI 2.6%, NFP 57K, both under thresholds).
+
+**CAT (~$881) — Candidate validated, R:R ~2.52:1, CARRIED to mid-week:**
+- Best-case Evercore ISI target raised to $1,103 (Outperform, from $878). ISM Manufacturing still expansionary (~54.0). Clears both the standard 2:1 and relaxed 1.5:1 floors, but no deployment room left today after AMD's minimum 17% allocation without breaching the 85% ceiling.
+
+**AVGO (not held, not on sector watchlist) — no action, informational only:**
+- Benzinga medium BUY. Broadly bullish analyst backdrop (Strong Buy consensus, ~$493-524 target cluster from Morgan Stanley/JPMorgan/Oppenheimer). Not pursued — Technology sector slot is filled by NVDA (held) + AMD (entering today), which reaches the 2-single-stock sector cap.
+
+### Trade Ideas
+1. **Enter AMD at market open** — 18% of equity, 10% trailing stop GTC on fill. R:R ~3.68:1, clears standard floor. Catalyst: sector-wide chip-selloff "buy the reset" signal (SOXX/NVDA/AVGO Benzinga BUY confluence), ISM/macro pre-check clean, no Tier-1 blocker.
+2. **CAT — carry to mid-week re-validation.** R:R ~2.52:1 already clears the floor; re-check Wednesday before entering to avoid breaching the 85% deployment ceiling today.
+3. **IWM/NVDA/XOM — no action**, all theses reconfirmed or strengthening.
+
+### Risk Factors
+- **Deployment will land ~72-73% after AMD entry** — still just under the 75% floor, but this is the first new-trade slot used in 3 weeks (Week 13 count will be 1/3) and directly addresses the Urgency Protocol driver (2 consecutive weekly closes <75%).
+- **SOXX's 20-day RS #1 ranking despite a 22% recent drawdown** is likely a technical bounce artifact — don't over-read today's RS ranking as a durable reversal of the YTD sector-momentum picture (Energy/Materials/Staples/Industrials still leading YTD).
+- **Congress/Quiver Quant API down 8 consecutive trading sessions (since Jul 9)** — escalated via ClickUp today; a real credential/API issue at this point, not transient.
+- **XLY (consumer discretionary) weakening** — carried forward as a watch item (not held), genuine macro deterioration (soft sentiment, weak back-to-school sales) per last week's research, no update today.
+- **Late-cycle economic stage** — supports continued equity exposure but argues against over-extending duration-sensitive/rate-cut-dependent names without the macro pre-check (which AMD/CAT both pass today).
+
+### Decision
+**TRADE — enter AMD at market open (Week 13's first new position).** IWM held (small-cap thesis reasserting), CAT validated but carried to mid-week to respect the deployment ceiling, Congress API outage escalated via ClickUp. No Tier-1 blocker today.
+
+---

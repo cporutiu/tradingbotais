@@ -3325,3 +3325,27 @@ Deployment gap (55.08%, below the 60% patience floor) persists post-QQQ-exit —
 **Q: Cash is 45.1% (deployed 54.9%, well below the 75% target) after this morning's QQQ exit, with no candidate yet clearing the 2:1 reward:risk bar (AMD/CAT/FCX all fell short as of the last check) — push research to find a replacement before Monday, or let today's separate weekly-review routine handle the full watchlist refresh?**
 - Push now: closes the deployment gap sooner if a name clears the bar — risk of loosening the 2:1 discipline just to get deployed
 - Wait for weekly review: keeps the R:R standard intact and uses the scheduled full-sector refresh — extends the low-deployment stretch a few more days, opportunity cost if the market runs without you
+
+---
+
+## 2026-07-20 — Bot Autonomous Decisions (Monday, Week 13 Day 1)
+
+No "User decisions" block was found below the Jul 17 weekly-review entry, so per rule 14 the bot resolves all three carried questions autonomously using today's pre-market data.
+
+**Q1 (from Jul 17 EOD, TRADE-LOG.md): Push research now vs. wait for weekly review?**
+→ **Moot — already resolved.** The Friday weekly-review routine ran the same day and delivered a full watchlist refresh (WEEKLY-REVIEW.md, Week 13 sector table). Nothing to carry forward.
+
+**Q2 (from weekly review, Jul 17): IWM — technical-caution flag (uptrend break) oscillated all week without confirming. Hold into the weekend, or exit Monday open?**
+→ **HOLD.** Today's research shows no confirmed second-session breakdown — the opposite: IWM YTD total return +20.49%, described across multiple sources today as an active "small-cap breakout"/"comeback" with the pullback framed as a pause, not a reversal. Benzinga's IWM SELL flag (medium, recurring options-hedging noise last week) is silent today — no mention at all, neither BUY nor SELL. Position is +1.71% (entry $290.7698, live $295.67), nowhere near the 10% trailing stop ($272.448) or the -7% cut. Rule 12 (2-week slow-bleed) does not apply — IWM is profitable, not below entry. Default posture (thesis deteriorating + pre-market shows recovery → HOLD to stop) applies cleanly since the "deterioration" itself did not reconfirm today.
+
+**Q3 (from weekly review, Jul 17): Deployment 54.98%→now 55.0%, Urgency Protocol active (R:R floor 1.5:1) — enter AMD and CAT both Monday, or stagger?**
+→ **STAGGER — enter AMD at market open today; carry CAT to mid-week re-validation.** Fresh R:R check this morning:
+- **AMD:** ~$492-496 current vs. best-case bullish bank cluster (BofA/KeyBanc/TD Cowen avg $673.33 per Benzinga) = ~36.8% upside → **~3.68:1 R:R**, clears even the standard 2:1 floor (not just the relaxed 1.5:1). Price pulled back ~6-7% from last week's $529 check while bull targets held/rose — directly supported by today's confluent Benzinga signal cluster: SOXX high-confidence BUY ("chip stocks having worst month since 2008 — analyst says buy the reset"), NVDA and AVGO medium-confidence BUY. Macro pre-check passes (core CPI 2.6% ≤3.0%, NFP +57K ≤150K). No Tier-1 blocker today (no CPI/PPI/FOMC/NFP, no held/watchlist BMO earnings).
+- **CAT:** ~$881 current vs. best-case Evercore ISI target $1,103 (Outperform, raised from $878) = ~25.2% upside → **~2.52:1 R:R**, also clears the standard 2:1 floor. ISM Manufacturing still expansionary (~54.0).
+- Both names now individually clear even the strict 2:1 bar — this is a real signal, not a reach enabled only by the relaxed urgency floor. However, entering both today at the required 17% minimum position size each (rule 3) would push deployment to ~89% (57.34% + 2×17% ≈ 89%), breaching the 75-85% hard deployment ceiling. Entering only AMD today lands deployment at ~72-73%, still short of the 75% floor but avoids breaching the 85% ceiling, and preserves a slot to confirm CAT mid-week without a rushed same-day double-entry into a market that's still digesting an acute chip-sector selloff. AMD gets priority over CAT for today's single slot: higher R:R (3.68:1 vs 2.52:1) and direct alignment with today's fresh, confluent Benzinga BUY cluster (SOXX/NVDA/AVGO) in the same sector.
+- **Action:** Enter AMD at market open, sized 18% of equity, 10% trailing stop GTC placed immediately on fill. CAT carried as an active-watch candidate for Wednesday re-validation (Wednesday urgency check applies at <70% deployed if still unused).
+
+**Q4 (from weekly review, Jul 17): Congress/Quiver Quant API down 9+ sessions — continue without it, or flag for manual check?**
+→ **Both — escalate via ClickUp now, continue operating without it in the interim.** Confirmed still returning 401 Unauthorized this morning (now 12th calendar day / 8th consecutive trading session since Jul 9). Per the weekly review's own "What Didn't Work" note, this is long enough to be a credential/API issue rather than transient. Perplexity + Benzinga have covered every decision with no evident gap this cycle, so there's no reason to pause trading over it — but the user should check credentials. ClickUp notification sent (STEP 5).
+
+**Deployment note:** Confirmed live via Alpaca — equity $104,241.05, cash $46,898.59 (45.0%), deployed $57,342.46 (55.0%, 3 positions: IWM, NVDA, XOM). Matches AIS baseline (PA3GVPXBYBRB), no credential mix-up.
