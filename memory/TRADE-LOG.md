@@ -3348,4 +3348,28 @@ No "User decisions" block was found below the Jul 17 weekly-review entry, so per
 **Q4 (from weekly review, Jul 17): Congress/Quiver Quant API down 9+ sessions — continue without it, or flag for manual check?**
 → **Both — escalate via ClickUp now, continue operating without it in the interim.** Confirmed still returning 401 Unauthorized this morning (now 12th calendar day / 8th consecutive trading session since Jul 9). Per the weekly review's own "What Didn't Work" note, this is long enough to be a credential/API issue rather than transient. Perplexity + Benzinga have covered every decision with no evident gap this cycle, so there's no reason to pause trading over it — but the user should check credentials. ClickUp notification sent (STEP 5).
 
+---
+
+## 2026-07-20 — Market-Open Execution (Monday, Week 13 Day 1)
+
+**Pre-market plan:** Enter AMD at market open (Week 13's first new position), 18% of equity, 10% trailing stop GTC on fill. CAT carried to mid-week. See RESEARCH-LOG.md 2026-07-20 entry and TRADE-LOG.md "Bot Autonomous Decisions" (Q3) above.
+
+**Rule checks (STEP 3):** Positions after trade 3→4 (≤6 ✓) | Week 13 trades 0→1/3 (✓) | Catalyst documented in today's RESEARCH-LOG (SOXX/NVDA/AVGO Benzinga BUY confluence, macro pre-check clean) ✓ | Sizing target 18% (≤20% cap) ✓ | No PDT/daytrade concern (new entry, not a round trip).
+
+**Live re-validation:** Account confirmed PA3GVPXBYBRB, equity $104,255.30 — matches AIS baseline. AMD quote at 9:30 ET showed an abnormally wide, non-firm spread (bid $490.39→$510 / ask stuck at $542.54, condition code "R" = non-firm) — a recurring free-tier IEX-feed artifact at the open, same pattern logged 2026-05-06 (FCX). Recomputed R:R conservatively at the worse-case ask ($542.54 vs. bull PT $673.33 → ~2.41:1) — still clears the 2:1 floor, so proceeded rather than skipping.
+
+**Order:** Market buy 34 AMD, day TIF (order `2a01b470`). Filled in two tranches as liquidity trickled in: 13 @ $514.58, then +14 @ higher prices (running avg $516.503704 on 27 filled). **Partially filled — 27/34, 7 shares remained open/working as of this log entry**, consistent with the thin/non-firm quote observed pre-trade. Stop placed immediately on each tranche rather than waiting on the full 34 (rule 4 takes priority over waiting for a stalled remainder):
+- Trailing stop 10% GTC, 13 sh (`b1d475a6`): HWM $517.56 / stop $465.804
+- Trailing stop 10% GTC, 14 sh (`444d3fcd`): HWM $517.0001 / stop $465.30009
+
+**Position so far:** 27 sh AMD @ avg $516.503704, cost basis $13,945.60 (13.4% of equity). If the remaining 7 sh fill later today, a third trailing stop must be placed on the newly-filled qty — check at midday/EOD and reconcile order `2a01b470`'s final status.
+
+**Thesis / R:R (at avg fill $516.50):** vs. bull-case bank cluster PT $673.33 → reward $156.83, risk $51.65 (10%) → **R:R ~3.04:1**, clears the 2:1 floor. Catalyst: sector-wide "buy the chip reset" signal (SOXX high-confidence BUY, NVDA/AVGO medium BUY per Benzinga), macro pre-check clean (core CPI 2.6%, NFP +57K), no Tier-1 blocker.
+
+**Other positions (live, pre-AMD-fill baseline):** IWM +1.66% ($295.60), NVDA +0.87% ($205.61), XOM +6.05% ($146.79) — none near a tighten (+15%) or cut (-7%) threshold, no action taken.
+
+**ClickUp notification:** sent (STEP 7 — AMD entry, partial fill noted).
+
+**Next step:** CAT re-validation carried to mid-week per plan; recheck AMD's remaining 7-share balance at midday scan.
+
 **Deployment note:** Confirmed live via Alpaca — equity $104,241.05, cash $46,898.59 (45.0%), deployed $57,342.46 (55.0%, 3 positions: IWM, NVDA, XOM). Matches AIS baseline (PA3GVPXBYBRB), no credential mix-up.
