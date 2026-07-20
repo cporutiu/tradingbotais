@@ -4603,3 +4603,34 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **HOLD — no action.** Confirms this morning's market-open decision. No new information changes the picture. Today's weekly review should address: (1) deployment gap post-QQQ-exit, (2) Congress API 9+ sessions down, (3) scheduler double-fire investigation.
 
 ---
+
+## 2026-07-20 — Pre-Market Research (Monday, Week 13 Day 1) — INFRA OUTAGE, no account access
+
+### STEP 1B — Pending decisions (unresolved, cannot execute this session)
+No "User decisions" block found below the Jul 17 EOD entry (last one logged Jul 9) — three questions from the Jul 17 weekly review (IWM hold/exit, AMD/CAT sequencing, Congress API escalation) and one Jul 17 EOD action question remain unanswered by the user. Per Rule 14 this run would normally resolve them autonomously, but **this session cannot reach Alpaca at all (see below), so no autonomous entry/exit can be executed regardless of the decision.** Carrying all four forward again — not a second "unanswered day" in the rule-14 sense, this is a hard infra blocker.
+
+### Full API outage — all three wrapper scripts blocked at the network layer
+- `bash scripts/alpaca.sh account` → `curl: (22) The requested URL returned error: 403`
+- `bash scripts/perplexity.sh "..."` → `curl: (22) The requested URL returned error: 403`
+- `bash scripts/clickup.sh "..."` → `curl: (22) The requested URL returned error: 403`
+- Diagnosed via the session's egress-proxy status endpoint: all three are **policy-level CONNECT rejections** (`gateway answered 403 to CONNECT (policy denial or upstream failure)`) against `paper-api.alpaca.markets:443` and `api.perplexity.ai:443` — this is the sandboxed session's network policy blocking these hosts outright, **not a credentials problem**. Confirmed env vars are correctly set and point at the paper endpoint (`ALPACA_ENDPOINT=https://paper-api.alpaca.markets/...`), consistent with the AIS paper account (PA3GVPXBYBRB) — no s4s5/live-account mix-up.
+- Net effect: **cannot pull live equity/cash/positions/orders, cannot validate any candidate via Perplexity, cannot send the ClickUp notification.** This is functionally identical in kind to the Jun 20–Jul 8 blackout and the Jul 6 all-three-blocked incident logged previously — following that precedent, **not fabricating a HOLD decision from stale data; flagging the outage instead.**
+- Native WebSearch (a separate, non-blocked channel) remains available and was used below for general market color only — it cannot substitute for live account/position data, so no threshold checks (tighten/cut/stop) could be performed on IWM/NVDA/XOM this session.
+
+### Market Context (WebSearch fallback only — general color, not account-specific)
+- **Oil:** Brent spiked to ~$90.70 (+3.0% vs. Friday's ~$88 close) on an intensifying US-Iran military confrontation and near-halted Strait of Hormuz transit; WTI was ~$78 as of Jul 14 (pre-escalation), no confirmed Monday print found. If accurate, this is a meaningful extension of the Iran-risk premium already supporting the XOM thesis — unconfirmed via Perplexity, treat as directional only.
+- **S&P/Nasdaq futures:** Modestly positive premarket (SPX +0.13-0.24%, NDX +0.37-0.43%), with sentiment improving intraday on hints of an Iran diplomatic de-escalation (Iranian FM spokesman comments) offsetting the oil-driven risk-off open.
+- **Econ calendar:** No CPI/PPI/FOMC/NFP this week — next CPI not until Aug 12. **No Tier-1 blocker from the econ calendar today.** Note: Section 122 blanket-tariff authority scheduled to expire Jul 24 (this week) — a macro item to watch, not itself a blocker.
+- **Earnings:** Heavy earnings week broadly (GM, 3M, Northrop, Danaher, Alphabet Wed — AI-capex-relevant), but none of these are held names or Week 13 watchlist candidates (AMD, CAT, XOM, GLD); no confirmed AMD/CAT earnings date found this session (unconfirmed — normally a Perplexity check, unavailable today).
+- **XOM/NVDA/IWM:** No IWM-specific news surfaced. NVDA: prior-week Rubin-GPU/Japan partnership coverage, no new catalyst found. XOM: named directly in Iran-strike coverage (shares reported +3.6% on a US strike on Iranian targets, dated within the past week) — directionally supportive of the held thesis, not independently verified today.
+
+### Risk Factors
+- **Cannot verify current equity, positions, or open-order/stop status.** Last confirmed state (Jul 17 EOD): Equity $103,982.29, 3 positions (IWM +1.13%, NVDA -0.61%, XOM +6.70%), all GTC trailing stops active, none near a +15%/+20% tighten or -7% cut threshold as of that close. Weekend/Monday gap risk is unverified — if the Iran escalation is real and large, XOM's stop may have auto-trailed further (favorable) but this is unconfirmed.
+- **No new-entry action possible this session** even though Urgency Protocol is active (2nd consecutive week <75% deployed, R:R floor 1.5:1, AMD/CAT both flagged to enter) — Alpaca is unreachable, so no order can be placed regardless of research conclusions.
+- **Cannot send the normal ClickUp escalation** — this outage itself is the kind of event that rule "STOP and alert the user" (CLAUDE.md) calls for, but the notification channel is also down. Escalating via the harness's direct notification channel instead this session.
+- **Congress/Quiver Quant API status unchecked today** (was already 9+ sessions down as of Jul 17) — moot given the broader outage.
+
+### Decision
+**HOLD — not by choice, by necessity.** No trade can be placed or verified this session: Alpaca, Perplexity, and ClickUp are all blocked at the network-policy layer (403 CONNECT rejections), not a credentials issue. No account/position data was pulled and none is fabricated here. All four pending user-decision items (IWM hold/exit, AMD/CAT entry sequencing, Congress API escalation, Jul 17 deployment-gap question) carry forward unresolved. **Recommend the user check this session's network egress policy for `paper-api.alpaca.markets`, `api.perplexity.ai`, and the ClickUp API host** — if this persists into market-open/midday/EOD runs today, apply the reconnect protocol (Rule 15) in full on the first run that regains access: pull live positions directly and check every threshold that should have applied during the gap before taking any new-entry action.
+
+---
