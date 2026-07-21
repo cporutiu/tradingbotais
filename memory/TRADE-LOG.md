@@ -3372,4 +3372,33 @@ No "User decisions" block was found below the Jul 17 weekly-review entry, so per
 
 **Next step:** CAT re-validation carried to mid-week per plan; recheck AMD's remaining 7-share balance at midday scan.
 
+---
+
+## 2026-07-20 — Midday Scan (Monday, Week 13 Day 1)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $516.645588 | $506.31 | -$351.41 (-2.00%) | 10% trail — 27 sh covered (13 sh HWM $522.44/stop $470.196 `b1d475a6`; 14 sh HWM $522.44/stop $470.196 `444d3fcd`); **7 sh had no stop** |
+| IWM | $290.769839 | $292.39 | +$100.45 (+0.56%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $203.25 | -$57.23 (-0.29%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | $138.420615 | $148.63 | +$1,327.22 (+7.38%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+- **Gap found:** AMD's full 34-share position had filled (market-open log showed 27/34 filled with 7 working) but only 27 shares had a trailing stop attached — 7 shares were unprotected. **Fixed:** placed a third trailing stop, 7 sh, 10% GTC (`28de0c69`): HWM $505.44 / stop $454.896. AMD is now fully protected across all 34 shares (13+14+7).
+- **Losers cut:** None. Worst position AMD -2.00%, nowhere near -7%.
+- **Stop tightening:** None. No position near +15% (best is XOM +7.38%).
+- **Thesis check:** No breaks. AMD's -2.00% since blended entry is normal chip-sector chop (intraday actually +2.13% today per Alpaca), consistent with the ongoing sector unwind already documented pre-market — not a new development. IWM, NVDA, XOM all steady, no fresh catalysts.
+- **Intraday research:** None triggered — no position moved sharply enough with an unexplained cause to warrant an ad-hoc Perplexity check.
+- **Portfolio:** Equity $103,712.51 | Cash $29,332.64 (28.28%) | Deployed $74,379.87 (71.72%, 4 positions) | Week 13 count: 1/3
+
+**Open Orders (midday 2026-07-20, post-fix):**
+- Sell 13 AMD trailing_stop 10% GTC (b1d475a6): HWM $522.44, stop $470.196
+- Sell 14 AMD trailing_stop 10% GTC (444d3fcd): HWM $522.44, stop $470.196
+- Sell 7 AMD trailing_stop 10% GTC (28de0c69): HWM $505.44, stop $454.896
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $213.81, stop $192.429
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $150.00, stop $135.00
+
+**Action taken — ClickUp notification sent** (missing AMD stop on 7 shares found and fixed).
+
 **Deployment note:** Confirmed live via Alpaca — equity $104,241.05, cash $46,898.59 (45.0%), deployed $57,342.46 (55.0%, 3 positions: IWM, NVDA, XOM). Matches AIS baseline (PA3GVPXBYBRB), no credential mix-up.
