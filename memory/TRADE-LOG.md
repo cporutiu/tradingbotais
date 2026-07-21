@@ -3435,3 +3435,33 @@ No "User decisions" block was found below the Jul 20 EOD entry, so per rule 14 t
 → **NO ENTRY — CAT fails fresh R:R re-validation, below even the relaxed 1.5:1 urgency floor.** Today's broad-consensus check (MarketBeat, Investing.com, TradingView, StockAnalysis) clusters CAT's average 12-month price target at **$965-980**, only **~10-13% upside** from current levels (~$864-880 across sources) — against a 10% trailing-stop downside, that's **R:R ~1.1-1.3:1**. Last Monday's ~2.52:1 read leaned on a single Evercore ISI outlier target ($1,103); the broader analyst consensus was already materially lower. This is a candidate-freshness/PT-misalignment problem (rule 74), not a new deterioration — CAT is pulled from active-entry status until either price pulls back or consensus targets move up meaningfully. No replacement candidate identified today (Tech sector slot already filled by NVDA+AMD; today's premarket AI-infra strength is in NVDA/AVGO/Broadcom, not on the ranked sector watchlist as an open slot). **Action: HOLD, no new entry today.** Deployment remains ~71.9% (live), within the 60-85% acceptable band, no urgency-protocol breach.
 
 Rule-14 note: this question is now resolved and will not carry to a third day.
+
+---
+
+## 2026-07-21 — Midday Scan (Tuesday, Week 13 Day 2)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $516.645588 | $542.00 | +$862.05 (+4.91%) | 10% trail, 3 tranches synced HWM $543/stop $488.70 (13sh `b1d475a6`, 14sh `444d3fcd`, 7sh `28de0c69`) |
+| IWM | $290.769839 | $296.16 | +$334.19 (+1.85%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $205.52 | +$162.96 (+0.82%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | $138.420615 | $150.66 | +$1,591.12 (+8.84%) | 10% trail HWM $151.49 / stop $136.341 (fff198e9) |
+
+- **Losers cut:** None. All 4 positions positive; worst is NVDA +0.82%.
+- **Stop tightening:** None. No position near +15% (best is XOM +8.84%, then AMD +4.91%).
+- **Thesis check:** No breaks. AMD intraday +7.63% continues yesterday's Microsoft Azure/Helios partnership catalyst (already logged in this morning's pre-market research) with tomorrow's "Advancing AI" event (Jul 22) as a near-term follow-through driver — not a new, unexplained move, so no ad-hoc Perplexity check triggered. IWM, NVDA, XOM all steady, no fresh catalysts or deterioration.
+- **Intraday research:** None triggered — AMD's move has a documented cause; no other position moved sharply enough to warrant an ad-hoc Perplexity check.
+- **Portfolio:** Equity $105,646.08 | Cash $29,332.63 (27.77%) | Deployed $76,313.45 (72.23%, 4 positions) | Week 13 count: 1/3
+
+**Open Orders (midday 2026-07-21, unchanged):**
+- Sell 13 AMD trailing_stop 10% GTC (b1d475a6): HWM $543.00, stop $488.70
+- Sell 14 AMD trailing_stop 10% GTC (444d3fcd): HWM $543.00, stop $488.70
+- Sell 7 AMD trailing_stop 10% GTC (28de0c69): HWM $543.00, stop $488.70
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $213.81, stop $192.429
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $151.49, stop $136.341
+
+**No action taken. No ClickUp notification.**
+
+**Deployment note:** Confirmed live via Alpaca — equity $105,646.08, cash $29,332.63 (27.77%), deployed $76,313.45 (72.23%, 4 positions: AMD, IWM, NVDA, XOM). Matches AIS baseline (PA3GVPXBYBRB), no credential mix-up.
