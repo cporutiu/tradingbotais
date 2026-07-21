@@ -4681,3 +4681,26 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **TRADE — enter AMD at market open (Week 13's first new position).** IWM held (small-cap thesis reasserting), CAT validated but carried to mid-week to respect the deployment ceiling, Congress API outage escalated via ClickUp. No Tier-1 blocker today.
 
 ---
+
+## 2026-07-21 — Pre-Market Research — RUN BLOCKED (infra outage, recurrence)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set).
+- Every outbound call from `scripts/alpaca.sh account`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed with `curl: (22) ... 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not credentials/transient — `recentRelayFailures` shows `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for `paper-api.alpaca.markets:443`. Perplexity and ClickUp hosts denied the same way.
+- Per the proxy runbook: 403s are organization policy denials — "do not retry or route around it, report the blocked host." No retries beyond initial confirmation.
+- This is a recurrence of the 2026-07-06 incident (see that entry) — same three hosts, same failure mode. That entry's recommended fix (allowlist the hosts for this cloud session's network policy, or run locally via Windows Task Scheduler) does not appear to have been applied, or this session's environment reverted.
+- No WebSearch/native fallback was substituted for account snapshot or trade decisions — equity/position data can only come from the Alpaca API, and fabricating it would be unsafe for a trading log.
+- Separately: the task prompt driving this run described the account as "LIVE ~$10,000." That does not match this repo — `ALPACA_ENDPOINT` resolves to `paper-api.alpaca.markets` and `memory/PROJECT-CONTEXT.md` confirms this is the AIS **paper** account (PA3GVPXBYBRB, $100,000 starting capital). No live-account or real-money action was taken; flagging the mismatch for the user to check the scheduler config.
+
+### Impact
+- No account/position snapshot pulled — last known state remains the 2026-07-20 EOD entry above (AMD entry, IWM/CAT/NVDA/XOM context). Real state as of 2026-07-21 is unknown (fills, stop triggers, manual trades since yesterday are not reflected here).
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- ClickUp alert could not be sent (channel unreachable) — user notified out-of-band instead.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy (this was already requested on 2026-07-06 and appears unresolved), or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Check the scheduled-task prompt config for this routine — it describes a "LIVE ~$10,000 Alpaca account," which does not match this repo's AIS paper account. Verify it's pointed at the correct routine/repo.
+3. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD.
