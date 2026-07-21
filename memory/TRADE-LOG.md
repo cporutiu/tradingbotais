@@ -3465,3 +3465,21 @@ Rule-14 note: this question is now resolved and will not carry to a third day.
 **No action taken. No ClickUp notification.**
 
 **Deployment note:** Confirmed live via Alpaca — equity $105,646.08, cash $29,332.63 (27.77%), deployed $76,313.45 (72.23%, 4 positions: AMD, IWM, NVDA, XOM). Matches AIS baseline (PA3GVPXBYBRB), no credential mix-up.
+
+---
+
+## Jul 21 — EOD Snapshot (Day 61, Tuesday — Week 13 Day 2)
+**Portfolio:** $106,053.28 | **Cash:** $29,332.63 (27.66%) | **Day P&L:** +$2,340.77 (+2.26%) | **Phase P&L:** +$6,053.28 (+6.05%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 34 | $516.645588 | $544.43 | +8.11% | +$944.67 (+5.38%) | 10% trail: 3 tranches synced HWM $546.97/stop $492.273 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.7698 | $296.44 | +1.41% | +$351.55 (+1.95%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $207.2775 | +1.97% | +$333.44 (+1.69%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $151.73 | +2.27% | +$1,730.22 (+9.62%) | 10% trail HWM $151.76 / stop $136.584 (fff198e9) |
+
+**Trades today:** None. Week 13 count: 1/3.
+
+**Notes:** Day 61, Tuesday, Week 13 Day 2. No new trades — this morning's autonomous decision (see "2026-07-21 — Bot Autonomous Decision" above) declined CAT re-entry after fresh R:R re-validation fell to ~1.1-1.3:1 on broad analyst consensus, below even the relaxed 1.5:1 urgency floor; no replacement candidate was identified. All 4 positions gained today. XOM led on both counts (+2.27% today, +9.62% unrealized) as oil held near multi-week highs on the sustained Iran/Strait-of-Hormuz risk premium — broker auto-trailed its stop further (HWM $150.00→$151.76, stop $135.00→$136.584). AMD was the day's strongest mover (+8.11% today, +5.38% unrealized since Monday's entry), continuing on the Microsoft Azure/Helios partnership catalyst logged this morning; its three stop tranches (13+14+7 sh) auto-synced to a single HWM $546.97/stop $492.273. IWM (+1.41% today, +1.95% unrealized) and NVDA (+1.97% today, +1.69% unrealized) both posted steady gains with no fresh catalysts. No losers cut — all four positions are positive, nowhere near the -7% threshold. No stop tightening triggered — closest position to the +15% tighten level is XOM at +9.62%, still more than 3% away. Deployment 72.34% (cash 27.66%), within the acceptable 60-85% band. Week 13 count holds at 1/3, 3 trading days remaining this week (Wed-Fri).
+
+**Action questions:** None triggered. Cash (27.66%) is technically above the 25% deployment-question threshold, but today's pre-market research already established no candidate clears the R:R floor (CAT rejected, no replacement identified) — re-raising an "enter X" question with no valid X would be hollow, so it's not repeated here. No position is within 3% of a tighten threshold or within 2% of the -7% cut. Week 13 trade count (1/3) with 3 days left doesn't trigger the trade-slot question.
