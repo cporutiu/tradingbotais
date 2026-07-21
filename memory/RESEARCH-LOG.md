@@ -4681,3 +4681,64 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 **TRADE — enter AMD at market open (Week 13's first new position).** IWM held (small-cap thesis reasserting), CAT validated but carried to mid-week to respect the deployment ceiling, Congress API outage escalated via ClickUp. No Tier-1 blocker today.
 
 ---
+
+## 2026-07-21 — Pre-Market Research (Tuesday, Week 13 Day 2)
+
+### STEP 1B — Autonomous resolution of carried question (no user-decisions block found)
+See TRADE-LOG.md "2026-07-21 — Bot Autonomous Decision" for full detail. Summary: CAT's fresh R:R re-validation today (broad analyst consensus, not a single-bank outlier) shows only ~10-13% upside vs a 10% stop → ~1.1-1.3:1, below even the relaxed 1.5:1 urgency floor. **No CAT entry today.** No replacement candidate identified.
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $104,512.95 | **Cash:** $29,332.63 (28.07%) | **Deployed:** $75,180.32 (71.93%, 4 positions) | Week 13 count: 1/3
+- Account number confirmed PA3GVPXBYBRB — matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 34 | $516.645588 | $525.10 | +$287.35 (+1.64%) | 10% trail: 13sh HWM $522.44/stop $470.196 (b1d475a6), 14sh HWM $522.44/stop $470.196 (444d3fcd), 7sh HWM $505.44/stop $454.896 (28de0c69) |
+| IWM | 62 | $290.7698 | $294.21 | +$213.43 (+1.18%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $205.47 | +$157.88 (+0.80%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $147.35 | +$1,160.82 (+6.45%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+All 6 stop orders confirmed live and correctly attached (AMD's 3-tranche split from Monday's partial fill all present). No tighten trigger (+15%/+20%) or -7% manual cut hit on any position.
+
+### Market Context
+- **WTI:** ~$82-83/bbl. **Brent:** ~$88-89/bbl. Both holding near recent highs, still supported by the Iran/Strait-of-Hormuz risk premium — Brent at a five-week high per TradingEconomics.
+- **S&P 500 futures:** +0.56-0.6% premarket (~7,526). **Nasdaq 100 futures +1.3-1.4%**, outpacing SPX — a reversal from last week's tech-led selloff. Reuters attributes the gain to improved Iran ceasefire-mediation sentiment plus earnings-season focus on AI names.
+- **VIX:** ~17.6 (Cboe spot), down from Friday's 18.65/18.77 close. **Back below 18 — crosses from MEDIUM into LOW risk territory.**
+- **Market risk:** Low (down from Medium last week).
+- **Catalysts today:** Broad AI-capex optimism resurging — Nvidia and Broadcom both jumped premarket on strong data-center demand signals from cloud providers (not held/watchlist names directly, but confirms the sector-wide chip-reset thesis that drove Monday's AMD entry). Fed policy focus building ahead of the **July 29 FOMC meeting** (not today). Earnings season underway.
+- **Earnings BMO today:** GM, MMM (3M), NOC (Northrop Grumman), GPC — none held or on the sector watchlist.
+- **Econ calendar:** No CPI/PPI/FOMC/NFP today (June prints already released; only a state-level employment report at 10am ET, not a national NFP). **No Tier-1 blocker today.**
+- **Sector momentum YTD:** Unchanged from last check — Energy, Materials, Consumer Staples, Industrials leading; Technology, Consumer Discretionary, Financials, Communication Services lagging on a YTD basis.
+
+### Perplexity Validation — Held Positions
+
+**AMD ($525.10, +1.64% since entry, intraday +4.28%) — HOLD, thesis strengthening on fresh catalyst:**
+- AMD announced an **expanded Microsoft Azure partnership** — Microsoft will deploy AMD's Helios rack-scale AI systems at scale, a major hyperscaler win validating AMD's Instinct/EPYC stack as a full alternative to Nvidia. Stock up ~1.6-5% on the news. KeyBanc reiterated Overweight citing AI demand strength. Upcoming "Advancing AI" event July 22 adds a near-term catalyst. Directly reinforces Monday's entry thesis.
+
+**IWM ($294.21, +1.18%) — HOLD, no new deterioration:**
+- Small-cap breakout narrative continues (YTD +19-20%), ETF inflows ($2.1B weekly per ETF Channel) confirm continued investor interest. Some technical commentary notes a cooling/consolidation phase after the recent record highs, but no confirmed breakdown. No action.
+
+**NVDA ($205.47, +0.80%) — HOLD, thesis intact:**
+- No NVDA-specific negative catalyst. Broader sector optimism (Nvidia/Broadcom AI-infra strength cited in today's catalyst scan) is a tailwind. Analyst consensus target ~$302 average, well above current price. No action.
+
+**XOM ($147.35, +6.45%) — HOLD, thesis strengthening further:**
+- Oil continues holding near multi-week highs (Brent ~5-week high) on the sustained Iran risk premium. Mixed analyst stance (Goldman Hold $157 PT; some Buy/Neutral splits) but no negative catalyst. Stop remains auto-trailed at HWM $150/stop $135. No action.
+
+**CAT (not held, was carried candidate) — R:R re-validation FAILS today, see STEP 1B above.**
+
+### Trade Ideas
+1. **No new entries today.** CAT (the only carried candidate) fails fresh R:R re-validation against broad analyst consensus (~1.1-1.3:1, below the 1.5:1 urgency floor). No replacement candidate identified — today's premarket AI-infra strength (Nvidia/Broadcom) doesn't open a new sector slot (Tech already capped at NVDA+AMD).
+2. **AMD — no action, thesis strengthening** on the Microsoft/Helios partnership news; well within normal stop distance.
+3. **XOM — no action, thesis strengthening further** on sustained oil rally; stop remains auto-trailed.
+
+### Risk Factors
+- **CAT candidate now flagged for candidate-freshness tracking (rule 74)** — if it fails R:R again next week on the same spread/PT-misalignment problem, abandon and pivot to the next sector-watchlist alternative (see WEEKLY-REVIEW.md Week 13 table).
+- **Deployment 71.93%** — within the acceptable 60-85% band, no urgency-protocol action needed; not chasing a marginal CAT entry just to close the gap.
+- **VIX back to Low risk (17.6)** — no elevated-volatility concern today, opposite of last week's medium-risk reading.
+- **Congress/Quiver Quant API status not re-checked this run** (not in today's routine scope) — last known status was 8+ consecutive sessions of 401 Unauthorized as of Jul 20; still worth a manual credential check if not already resolved.
+
+### Decision
+**HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact or strengthening, no tighten/cut triggers hit. CAT re-validation fails the R:R floor on broad consensus data — no entry. Week 13 count holds at 1/3.
+
+---
