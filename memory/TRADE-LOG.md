@@ -3402,3 +3402,25 @@ No "User decisions" block was found below the Jul 17 weekly-review entry, so per
 **Action taken — ClickUp notification sent** (missing AMD stop on 7 shares found and fixed).
 
 **Deployment note:** Confirmed live via Alpaca — equity $104,241.05, cash $46,898.59 (45.0%), deployed $57,342.46 (55.0%, 3 positions: IWM, NVDA, XOM). Matches AIS baseline (PA3GVPXBYBRB), no credential mix-up.
+
+---
+
+## Jul 20 — EOD Snapshot (Day 60, Monday — Week 13 Day 1)
+**Portfolio:** $103,712.51 | **Cash:** $29,332.64 (28.29%) | **Day P&L:** -$269.78 (-0.26%) | **Phase P&L:** +$3,712.51 (+3.71%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 34 | $516.645588 | $506.31 | +2.13% | -$351.41 (-2.00%) | 10% trail: 27sh HWM $522.44/stop $470.196 (b1d475a6, 444d3fcd) + 7sh HWM $505.44/stop $454.896 (28de0c69) |
+| IWM | 62 | $290.7698 | $292.39 | -0.56% | +$100.45 (+0.56%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $203.25 | +0.22% | -$57.23 (-0.29%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | 130 | $138.4206 | $148.63 | +0.86% | +$1,327.22 (+7.38%) | 10% trail HWM $150.00 / stop $135.00 (fff198e9) |
+
+**Trades today:** AMD entry, 34 sh @ avg $516.645588 (market-open, partial→full fill). Week 13 count: 1/3.
+
+**Notes:** Day 60, Monday, Week 13 Day 1. Bot resolved 3 carried questions autonomously this morning (rule 14 — no user-decisions block found): held IWM (breakout thesis reasserting), entered AMD (R:R ~3.68:1 at avg fill $516.50), escalated the Congress/Quiver Quant API outage via ClickUp (8th consecutive session down). Midday's scan (logged above) caught and fixed a rule-4 gap: 7 of AMD's 34 filled shares had no trailing stop attached (only the 13+14 sh tranches were covered); midday placed the missing 10% trail GTC (order `28de0c69`, HWM $505.44/stop $454.896) and sent a ClickUp alert. This EOD run independently attempted the same fix before seeing midday's entry (file had already been updated) — the attempt raced against midday's already-placed order and errored out rather than creating a duplicate; confirmed via orders lookup that only one 7-share stop exists. All 34 AMD shares are protected. Theses on IWM/NVDA/XOM unchanged from this morning, no new deterioration signals (day moves all immaterial: IWM -0.56%, NVDA +0.22%, XOM +0.86%). AMD -2.00% since this morning's entry is normal post-entry noise, not a thesis flag. No losers cut (-7% threshold not close on any position), no stop tightening triggered (best is XOM +7.38%, nowhere near +15%). Cash 28.29% (above the 25% floor) — CAT remains the validated next candidate (~2.52:1 R:R as of this morning) but was deliberately carried to Wednesday re-validation to avoid breaching the 85% deployment ceiling on the same day as AMD's entry; see action question below.
+
+**Action questions:**
+
+**Q: Cash is 28.29% (deployed 71.72%) after this morning's AMD entry, with CAT already validated (~2.52:1 R:R this morning) but deliberately carried to Wednesday for re-validation and deployment-ceiling reasons — enter CAT now to close the gap faster, or hold to the Wednesday plan?**
+- Enter now: closes the deployment gap sooner if CAT still clears R:R — skips the deliberate staggering rationale from this morning (avoiding an ~89% deployment breach) and uses stale (this-morning's) numbers instead of a fresh re-validation
+- Wait for Wednesday: keeps to the disciplined staggered plan with fresh re-validated numbers — extends the sub-75% deployment stretch two more days, minor opportunity cost if CAT runs without you
