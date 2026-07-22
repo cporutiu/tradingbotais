@@ -3483,3 +3483,51 @@ Rule-14 note: this question is now resolved and will not carry to a third day.
 **Notes:** Day 61, Tuesday, Week 13 Day 2. No new trades — this morning's autonomous decision (see "2026-07-21 — Bot Autonomous Decision" above) declined CAT re-entry after fresh R:R re-validation fell to ~1.1-1.3:1 on broad analyst consensus, below even the relaxed 1.5:1 urgency floor; no replacement candidate was identified. All 4 positions gained today. XOM led on both counts (+2.27% today, +9.62% unrealized) as oil held near multi-week highs on the sustained Iran/Strait-of-Hormuz risk premium — broker auto-trailed its stop further (HWM $150.00→$151.76, stop $135.00→$136.584). AMD was the day's strongest mover (+8.11% today, +5.38% unrealized since Monday's entry), continuing on the Microsoft Azure/Helios partnership catalyst logged this morning; its three stop tranches (13+14+7 sh) auto-synced to a single HWM $546.97/stop $492.273. IWM (+1.41% today, +1.95% unrealized) and NVDA (+1.97% today, +1.69% unrealized) both posted steady gains with no fresh catalysts. No losers cut — all four positions are positive, nowhere near the -7% threshold. No stop tightening triggered — closest position to the +15% tighten level is XOM at +9.62%, still more than 3% away. Deployment 72.34% (cash 27.66%), within the acceptable 60-85% band. Week 13 count holds at 1/3, 3 trading days remaining this week (Wed-Fri).
 
 **Action questions:** None triggered. Cash (27.66%) is technically above the 25% deployment-question threshold, but today's pre-market research already established no candidate clears the R:R floor (CAT rejected, no replacement identified) — re-raising an "enter X" question with no valid X would be hollow, so it's not repeated here. No position is within 3% of a tighten threshold or within 2% of the -7% cut. Week 13 trade count (1/3) with 3 days left doesn't trigger the trade-slot question.
+
+---
+
+## 2026-07-22 — Market-Open Execution (Wednesday, Week 13 Day 3)
+
+**Pre-market plan:** HOLD — no new entries. Tech sector capped (AMD + NVDA), GLD lacked computable R:R, CAT remains abandoned on candidate-freshness. See RESEARCH-LOG.md 2026-07-22 entry.
+
+**Live re-validation:** Account confirmed PA3GVPXBYBRB, equity $105,844.59 — matches AIS baseline, no credential mix-up. Positions unchanged from pre-market: AMD 34 sh (+4.17%), IWM 62 sh (+1.73%), NVDA 97 sh (+0.84%), XOM 130 sh (+10.86%). All 6 stop orders remain live and correctly attached (per pre-market check). No tighten trigger (+15%/+20%) or -7% cut hit on any position — XOM closest at +10.86%, still ~4.1pts from +15%.
+
+**Rule checks (STEP 3):** No new candidates cleared pre-market's R:R floor, so no order attempted — rule checks are moot this run.
+
+**Action:** No trades executed. No stop changes needed. Week 13 count holds at 1/3.
+
+**Notification:** None sent (no trade placed, per STEP 7).
+
+**Commit:** Skipped — no trades executed (per STEP 8).
+
+---
+
+## 2026-07-22 — Midday Scan (Wednesday, Week 13 Day 3)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $516.645588 | $555.79 | +$1,330.91 (+7.58%) | 10% trail, 3 tranches synced HWM $558.42/stop $502.578 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | $290.769839 | $294.59 | +$236.85 (+1.31%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $214.14 | +$999.10 (+5.05%) | 10% trail HWM $214.32 / stop $192.888 (1f35b3d1) |
+| XOM | $138.420615 | $154.445 | +$2,083.17 (+11.58%) | 10% trail HWM $154.80 / stop $139.32 (fff198e9) |
+
+- **Losers cut:** None. All 4 positions positive; worst is IWM +1.31%.
+- **Stop tightening:** None. XOM closest to +15% tighten trigger at +11.58% (~3.4pts away), watch item continues from pre-market. No position within 3% of a threshold crossing.
+- **Thesis check:** No breaks. Intraday moves are all modest and consistent with existing theses (AMD +2.09%, NVDA +3.31% on continued chip-rebound momentum, XOM +1.80% on oil strength, IWM -0.66% flat/normal chop) — nothing sharp or unexplained. No new deterioration signals since this morning's pre-market research.
+- **Intraday research:** None triggered — no position moved sharply enough with an unexplained cause to warrant an ad-hoc Perplexity check.
+- **Portfolio:** Equity $107,359.06 | Cash $29,332.63 (27.32%) | Deployed $78,026.43 (72.68%, 4 positions) | Week 13 count: 1/3
+
+**Open Orders (midday 2026-07-22, unchanged):**
+- Sell 13 AMD trailing_stop 10% GTC (b1d475a6): HWM $558.42, stop $502.578
+- Sell 14 AMD trailing_stop 10% GTC (444d3fcd): HWM $558.42, stop $502.578
+- Sell 7 AMD trailing_stop 10% GTC (28de0c69): HWM $558.42, stop $502.578
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $214.32, stop $192.888
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $154.80, stop $139.32
+
+**No action taken. No ClickUp notification (per STEP 7 — action-only rule).**
+
+**Deployment note:** Confirmed live via Alpaca — account PA3GVPXBYBRB, equity $107,359.06, matches AIS baseline, no credential mix-up.
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
