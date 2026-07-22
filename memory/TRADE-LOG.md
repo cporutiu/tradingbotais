@@ -3531,3 +3531,23 @@ Rule-14 note: this question is now resolved and will not carry to a third day.
 **Deployment note:** Confirmed live via Alpaca — account PA3GVPXBYBRB, equity $107,359.06, matches AIS baseline, no credential mix-up.
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Jul 22 — EOD Snapshot (Day 62, Wednesday — Week 13 Day 3)
+**Portfolio:** $106,997.34 | **Cash:** $29,332.63 (27.41%) | **Day P&L:** +$944.06 (+0.89%) | **Phase P&L:** +$6,997.34 (+7.00%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 34 | $516.645588 | $552.34 | +1.45% | +$1,213.61 (+6.91%) | 10% trail, 3 tranches synced HWM $561.46/stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.7698 | $293.99 | -0.86% | +$199.65 (+1.11%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $212.00 | +2.27% | +$791.52 (+4.00%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $154.48 | +1.83% | +$2,087.72 (+11.60%) | 10% trail HWM $154.80 / stop $139.32 (fff198e9) |
+
+**Trades today:** None. Week 13 count: 1/3.
+
+**Notes:** Day 62, Wednesday, Week 13 Day 3. No new trades — pre-market held (Tech sector capped at AMD+NVDA, GLD lacks a computable R:R, CAT still abandoned on candidate-freshness), and no fresh catalyst emerged intraday to change that. All 4 positions gained on the day except IWM (-0.86%, normal chop, thesis intact per pre-market's small-cap breakout read). NVDA led (+2.27% today, +4.00% unrealized) continuing the chip-rebound/Benzinga-BUY momentum flagged this morning; AMD (+1.45% today, +6.91% unrealized) kept climbing on the Azure/Helios AI-infra narrative, though pre-market flagged its analyst-target dispersion ($469 MarketBeat vs. $542 Investing.com) as a widening two-sided valuation debate worth tracking (no thesis break yet). XOM remains the standout (+11.60% unrealized) on the sustained Iran/Strait-of-Hormuz oil risk premium — now ~3.4pts from the +15% tighten trigger, still outside the 3%-proximity question threshold but the closest watch item heading into tomorrow. No losers cut (worst position is IWM at -0.86%, nowhere near -7%). No stop tightening triggered (XOM closest at +11.60%, still >3pts from +15%). Deployment 72.59% (cash 27.41%), within the 60-85% band. Week 13 count holds at 1/3, 2 trading days remaining (Thu-Fri).
+
+**Action questions:** None triggered. Cash (27.41%) is technically above the 25% deployment-question threshold, but pre-market already established no candidate clears the R:R floor today (Tech capped, GLD not computable, CAT abandoned) — re-raising an "enter X" question with no valid X would be hollow, so it's not repeated here (same reasoning as Jul 21 EOD). No position is within 3% of a tighten threshold (XOM closest, +11.60%, ~3.4pts from +15%) or within 2% of the -7% cut. Week 13 trade count (1/3) with 2 days left doesn't trigger the trade-slot question.
+
+---
