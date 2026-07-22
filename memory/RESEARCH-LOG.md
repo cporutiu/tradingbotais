@@ -4742,3 +4742,83 @@ All 6 stop orders confirmed live and correctly attached (AMD's 3-tranche split f
 **HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact or strengthening, no tighten/cut triggers hit. CAT re-validation fails the R:R floor on broad consensus data — no entry. Week 13 count holds at 1/3.
 
 ---
+
+## 2026-07-22 — Pre-Market Research (Wednesday, Week 13 Day 3)
+
+### STEP 1B — No pending decisions
+No "User decisions" block found below the Jul 21 EOD entry, and that entry's action-questions section explicitly stated "None triggered." Nothing carried forward.
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $105,732.57 | **Cash:** $29,332.63 (27.75%) | **Deployed:** $76,399.94 (72.25%, 4 positions) | Week 13 count: 1/3
+- Account number confirmed PA3GVPXBYBRB — matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 34 | $516.645588 | $535.53 | +$642.07 (+3.66%) | 10% trail, 3 tranches synced HWM $546.97/stop $492.273 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.769839 | $295.62 | +$300.71 (+1.67%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $205.85 | +$194.97 (+0.99%) | 10% trail HWM $213.81 / stop $192.429 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $153.121 | +$1,911.05 (+10.62%) | 10% trail HWM $151.76 / stop $136.584 (fff198e9) |
+
+All 6 stop orders confirmed live and correctly attached. No tighten trigger (+15%/+20%) or -7% manual cut hit on any position. XOM is closest to the +15% tighten trigger (currently +10.62%, ~4.4pts away) — flagged as an active watch item for midday/EOD.
+
+### Market Context
+- **WTI:** ~$84.5-85.3/bbl. **Brent:** ~$91-92.2/bbl, five-week+ high. Both continuing to climb on an intensifying Iran/Strait-of-Hormuz supply-route risk premium (multiple sources cite renewed blockade concerns) — sustains XOM's thesis.
+- **S&P 500 futures:** mixed/slightly negative across vendors (-0.19% to -0.34% on live feeds), though Tuesday's cash close was strong (+0.89% at 7,509.20) on a semiconductor-led rebound. Nasdaq 100 futures also mixed. Net: flat-to-slightly-soft open expected after a strong prior session.
+- **VIX:** 17.05, down from 18.65 Tuesday close. Crosses further into LOW risk territory (<18).
+- **Market risk:** Low.
+- **Catalysts today:** Big Tech earnings ramp (Tesla today, plus ServiceNow/IBM/Texas Instruments/Alphabet/AT&T this week) — AI-capex read-throughs in focus. Continued semiconductor rebound (SOXX +4.5% premarket per one source, chips +5.45% Tuesday) on AI-infrastructure optimism (Nebius, data-center demand). Oil/Iran geopolitical risk elevated. No Tier-1 blocker today.
+- **Earnings BMO today:** GM, GD, DHR, EFX, ALLY, DHI, GPC, COOP, AUB, CCBG, FOR — none held or on the sector watchlist.
+- **Econ calendar:** No CPI/PPI/FOMC/NFP today (June prints already released: core CPI 2.6% YoY, NFP +57K, unemployment 4.2%). Next FOMC late July/early August (not today). No Tier-1 blocker.
+- **Sector momentum YTD:** Energy, Materials, Consumer Staples, Industrials still leading; Technology, Financials, Consumer Discretionary, Communication Services still lagging YTD. However, 20-day RS ranking is now tech/semi-led (QQQ, SOXX, XLK top 3) — a short-term reversal/bounce, not yet a durable change to the YTD picture.
+- **Economic cycle stage:** Late-cycle — declining Conference Board LEI signals an approaching slowdown, softening labor market (NFP +57K, unemployment ticking up), but GDP still modestly positive. Not recessionary.
+- **20-day RS ranking (strongest to weakest):** QQQ, SOXX, XLK, XLV, XLF, XLI, XLE, SPY, XLRE, XLB, XLY, XLP, XLU, IWM, HYG, EEM, GLD, SLV, XLC.
+
+### Benzinga Signals
+- **BUY (high):** SPY (score +3, 7 mentions), QQQ (score +11, 8 mentions — SOXX/SOXL semiconductor ETF inflow story), GLD (score +6, 2 mentions), SOXX (score +14, 4 mentions), NVDA (score +7, 7 mentions — "Nvidia Stock Hasn't Been This Cheap In 10 Years").
+- **BUY (medium):** XLK (score +2, 2 mentions), IWM (score +2, 2 mentions).
+- No SELLs today. 16 emails scanned, BUY=7, HOLD=19.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, previously escalated via ClickUp). Not re-escalating today (no new information since last escalation). Proceeded without congress context per protocol.
+
+### Perplexity Validation — Held Positions & Benzinga Signals
+
+**AMD ($535.53, +3.66%) — HOLD, thesis intact but valuation stretched:**
+Microsoft Azure/Helios partnership and ZT Systems acquisition ($4.9B) continue to drive the AI-infrastructure narrative. Analyst picture is split: Investing.com aggregate shows Strong Buy with ~$542 avg 12-mo target (essentially at current price), while MarketBeat's consensus (~$469) implies ~14% downside. P/E >160 — priced for perfection. No thesis break, but upside from here is more contested than at Monday's entry. No action; below all thresholds.
+
+**IWM ($295.62, +1.67%) — HOLD, thesis strengthening:**
+Confluent signal: Benzinga medium BUY today plus continued small-cap breakout narrative (YTD +19%, ~$2.1B weekly inflows). No confirmed technical breakdown. No action.
+
+**NVDA ($205.85, +0.99%) — HOLD, thesis intact:**
+Benzinga high BUY today ("hasn't been this cheap in 10 years"). Consensus target ~$302-305 (~46% upside), Rubin chips already shipping to customers. No action.
+
+**XOM ($153.121, +10.62%) — HOLD, thesis intact, watch tighten trigger:**
+Oil rally continuing (Brent 5-week+ high on Iran/Strait risk). Consensus target ~$167-169 (still ~10-23% upside depending on source), though several banks (Piper Sandler $141, TD Cowen $155, Morgan Stanley $168) trimmed targets while keeping Buy/Overweight ratings — a mild caution flag, not a thesis break. Position now within ~4.4pts of the +15% tighten trigger; flagged as an active watch item for the next check.
+
+**SPY/QQQ/XLK/SOXX (Benzinga BUY confluence, not new-entry candidates):**
+All four are broad-market/sector ETFs reinforcing the same AI-led, chip-rebound thesis already expressed via AMD/NVDA. SPY and QQQ are not sector-watchlist candidates (broad-market beta, not a differentiated single-sector bet). XLK and SOXX confirm the Tech/semis rotation already captured through AMD (held) and NVDA (held) — Tech sector is at its 2-single-stock cap (AMD + NVDA), so no incremental single-stock room; ETF exception exists but no specific catalyst argues for adding sector-ETF beta on top of an already-Tech-heavy book (2 of 4 positions).
+
+**GLD (Benzinga high BUY, Materials/Macro watchlist candidate, not held) — no action, R:R not computable cleanly:**
+Current price ~$374.7. Catalyst case is real (Iran/Strait risk premium, softening jobs data raising Fed rate-cut odds, central-bank buying/de-dollarization), but GLD has no standard analyst price target (it's a physical-gold tracker, not an earnings-based equity) — can't cleanly compute R:R per the entry checklist. Fund-flow picture is also mixed: institutional outflows of ~$14-15B YTD from GLD specifically, even as spot gold rallies. Noted as a watch item, not an actionable entry today.
+
+**CAT (not held, candidate-freshness tracking per rule 74) — no update today:**
+Not re-checked this run (Tech sector already capped, no new catalyst pulling it back into consideration). Remains abandoned until price pulls back or consensus targets move up meaningfully.
+
+### Trade Ideas
+1. No new entries today. Tech sector already at its 2-single-stock cap (AMD + NVDA); today's Benzinga BUY cluster (SPY/QQQ/XLK/SOXX) reinforces a thesis already expressed through held positions rather than opening a new slot.
+2. GLD — watch, not actionable. Benzinga high-conviction BUY and a real macro catalyst (Iran risk, rate-cut odds), but no computable analyst price target and continued institutional ETF outflows argue against forcing an entry today.
+3. XOM — watch for +15% tighten. Currently +10.62%, oil thesis intact; no action needed yet but flagged for the next check (midday/EOD).
+
+### Risk Factors
+- XOM approaching the +15% tighten trigger (currently +10.62%) — watch item for midday/EOD, tighten trail to 7% if/when crossed.
+- AMD's analyst-target dispersion widening ($469 MarketBeat vs. $542 Investing.com average, current price $535.53) — valuation is now a genuine two-sided debate, not a one-way bull case. No action required (no thesis break, no threshold hit), but worth tracking if upside commentary fades.
+- Tech sector at 2-single-stock cap (AMD + NVDA) — any fresh Tech candidate (including today's SOXX/XLK Benzinga BUYs) cannot be added as a new single-stock position without an exit elsewhere; ETF-exception route remains open but wasn't used today given lack of a differentiated catalyst.
+- GLD fund-flow divergence (price rallying on macro/geopolitical catalysts while institutional AUM continues to bleed) — a reminder that Benzinga BUY signals don't always reflect durable positioning; kept as watch-only.
+- Congress/Quiver Quant API still down (401, ongoing since Jul 9) — no new escalation needed, already flagged previously.
+- Low VIX (17.05) / low market_risk — no elevated-volatility concern today.
+
+### Decision
+**HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact, no tighten/cut triggers hit (XOM closest, watch for +15%). Tech sector capped, GLD lacks computable R:R despite a real catalyst. Week 13 count holds at 1/3.
+
+---
