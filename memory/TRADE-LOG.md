@@ -3599,3 +3599,25 @@ Rule-14 note: this question is now resolved and will not carry to a third day.
 **Commit:** memory/TRADE-LOG.md and memory/RESEARCH-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Jul 23 — EOD Snapshot (Day 63, Thursday — Week 13 Day 4)
+**Portfolio:** $106,490.70 | **Cash:** $29,332.63 (27.55%) | **Day P&L:** -$506.64 (-0.47%) | **Phase P&L:** +$6,490.70 (+6.49%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 34 | $516.645588 | $541.20 | -2.02% | +$834.85 (+4.75%) | 10% trail, 3 tranches synced HWM $561.46/stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.769839 | $292.10 | -0.58% | +$82.47 (+0.46%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $208.83 | -1.52% | +$484.03 (+2.45%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $156.86 | +1.56% | +$2,397.12 (+13.32%) | 10% trail HWM $158.57 / stop $142.713 (fff198e9) |
+
+**Trades today:** None. Week 13 count: 1/3.
+
+**Notes:** Day 63, Thursday, Week 13 Day 4. No new trades — pre-market held (Tech capped at AMD+NVDA, no replacement candidate cleared R:R), and midday's ad-hoc AMD check (sell-the-news/sector chip-valuation pullback, HSBC ~33x 2027 earnings flag, no company-specific negative) held through the close. All four positions cooled off the sector-wide chip pullback that hit AMD (-2.02%), NVDA (-1.52%) and, to a lesser extent, IWM (-0.58%) today; none of it reflects a thesis break — AMD's Anthropic/Helios catalysts and NVDA's Vera Rubin production ramp both stand unchanged from this morning. XOM was the exception, +1.56% on the day as the Red Sea/Iran oil risk premium continued, closing at +13.32% unrealized and now within the 3%-proximity zone of the +15% tighten trigger for the first time (HWM-based gain touched 14.56% intraday) — see action question below. No losers cut (worst is NVDA -1.52% today but still +2.45% unrealized, nowhere near -7%). Deployment 72.45% (cash 27.55%) stays within the 60-85% band; not re-raising the deployment question since pre-market already established no candidate clears the R:R floor today (same reasoning as Jul 21/22). Week 13 count holds at 1/3 with only Friday left this week — doesn't meet the trade-slot question's 2-day-remaining threshold.
+
+**Action questions:**
+
+**Q: Tighten XOM stop to 7% now, or wait for the trigger price (+15%)?**
+- Tighten early: locks in more gain, guards against a sharp reversal — normal daily volatility could stop you out prematurely
+- Wait for trigger: lets the trade breathe, avoids being shaken out — risks giving back profit if it gaps down
+
+---
