@@ -4822,3 +4822,80 @@ Not re-checked this run (Tech sector already capped, no new catalyst pulling it 
 **HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact, no tighten/cut triggers hit (XOM closest, watch for +15%). Tech sector capped, GLD lacks computable R:R despite a real catalyst. Week 13 count holds at 1/3.
 
 ---
+
+## 2026-07-23 — Pre-Market Research (Thursday, Week 13 Day 4)
+
+### STEP 1B — No pending decisions
+No "User decisions" block found below the Jul 22 EOD entry, and that entry's action-questions section explicitly stated "None triggered." Nothing carried forward.
+
+### Note — script invocation bug found and worked around
+Both `fetch_benzinga.py` and `fetch_congress.py` crashed on first invocation this run: the routine's documented command (`python scripts/X.py > .tmp/X_signals_$DATE.json`) has the shell's `>` redirect truncate/create the destination file *before* Python starts, and both scripts treat "file already exists" as "valid same-day cache" — so they immediately tried to `json.load()` an empty file and crashed. Fixed by deleting the empty files and re-running each script without redirecting stdout onto its own output path (the scripts already write their own output file internally). No data was lost — the files were empty from this run's own redirect, not a prior day's cache. Worth fixing in the scripts themselves (guard against empty/invalid cache) if this recurs.
+
+### Account Snapshot (live API, pre-market)
+- **Equity:** $107,260.20 | **Cash:** $29,332.63 (27.35%) | **Deployed:** $77,927.57 (72.65%, 4 positions) | Week 13 count: 1/3
+- Account number confirmed PA3GVPXBYBRB — matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 34 | $516.645588 | $556.44 | +$1,353.01 (+7.70%) | 10% trail, 3 tranches synced HWM $561.46/stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.769839 | $293.96 | +$197.79 (+1.10%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $210.97 | +$691.61 (+3.50%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $156.30 | +$2,324.32 (+12.92%) | 10% trail HWM $154.80 / stop $139.32 (fff198e9) |
+
+All 6 stop orders confirmed live and correctly attached. No -7% cut hit on any position. **XOM is now the closest position to the +15% tighten trigger (+12.92%, ~2.1pts away)** — active watch item for midday/EOD; tighten trail to 7% immediately if/when crossed.
+
+### Market Context
+- **WTI:** ~$88-90/bbl. **Brent:** ~$93-98/bbl (wide dispersion across feeds, but multiple live quotes cluster near $95-98). Both continuing to climb; today's catalyst scan attributes the move to a fresh **Red Sea tanker-attack risk premium** — a renewed escalation, not the Hormuz-reopening de-escalation some older (stale-dated) sources referenced. One source explicitly notes "oil tops $96" today.
+- **S&P 500 futures:** slightly negative premarket (~7,510-7,512, -0.37% to -0.40%). **Nasdaq 100 futures -0.46%.** Modest soft open expected after a strong AI-led session Wednesday.
+- **VIX:** ~17.4-17.6 (Cboe spot 17.44, +4.81% vs. prior close 16.64). Still **crosses below 18 (LOW risk)** but ticking up from Wednesday's 17.05 — first uptick in several sessions, worth watching if it continues.
+- **Market risk:** Low (VIX <18), but rising.
+- **Catalysts today:** **AMD's "Advancing AI 2026" event** (today, San Francisco) is the standout single-name catalyst — see Perplexity validation below. **Alphabet's raised 2026 AI-capex guidance** is resetting the broader AI trade, lifting chipmakers globally (SK Hynix, Samsung rallied in Asia). **Intel earnings** (AMC today) flagged as a make-or-break semis event — not held. Oil's rally reviving inflation-risk chatter. European PMIs and US durable goods also in focus.
+- **Earnings BMO today:** TMO, TMUS, CMCSA, BX, UNP, TTE, HON, RTX, DOW, NDAQ, LMT, CLF, GD, DHR, EFX, ALLY, DHI, GPC — none held or on the sector watchlist. Intel reports AMC (not held).
+- **Econ calendar:** Weekly jobless claims (208K, in line) and June PPI (-0.3% MoM, core +0.2% MoM/4.7% YoY) — **PPI is a Tier-2 blocker only** (watchful, new entries allowed on strong setups), not Tier-1. No CPI, FOMC, or NFP today. **No Tier-1 blocker today.**
+- **Sector momentum YTD:** Unchanged — Energy, Materials, Consumer Staples, Industrials leading; Technology, Consumer Discretionary, Financials, Communication Services lagging on a YTD basis.
+- **Economic cycle stage:** Late-cycle — unemployment has risen for 33 months (longest on record without a recession) while GDP stays positive; persistent ~3.5% inflation, Fed on hold, yields >4.5%. Consistent with prior reads.
+- **20-day RS ranking (strongest to weakest):** SPY, QQQ, XLK, XLE, XLI, XLF, XLV, XLB, XLP, XLU, XLRE, XLY, XLC, IWM, EEM, HYG, GLD, SLV, SOXX. **Notable: SOXX has fallen to dead last**, confirming yesterday's suspicion that its brief #1 ranking was a technical bounce artifact rather than a durable reversal — despite very strong AMD/NVDA single-name news today, the semis ETF as a whole has cooled.
+
+### Benzinga Signals
+- **BUY (high):** SPY (score +5, 14 mentions — broad market/tariff-related commentary).
+- No other actionable signals; QQQ, GLD, SOXX, NVDA, AVGO all HOLD/low-confidence. 16 emails scanned, BUY=1, HOLD=25.
+- SPY is not a sector-watchlist candidate (broad-market beta) — see Perplexity validation below for why it's not actionable as a new entry.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 10+ consecutive sessions). Not re-escalating today (no new information since the last escalation). Proceeded without congress context per protocol.
+
+### Perplexity Validation — Held Positions & Benzinga Signal
+
+**AMD ($556.44, +7.70%) — HOLD, thesis strengthening sharply, major new catalyst:**
+Today is AMD's "Advancing AI 2026" event. Confirmed news: (1) **Anthropic partnership** — Anthropic to deploy up to 2GW of AMD's next-gen Instinct MI450 GPUs starting 2027, with AMD investing up to $5B in Anthropic; (2) **Helios rack-scale systems** priced $5-5.5M/rack, Microsoft Azure confirmed as anchor customer with shipments starting H2 2026; (3) **Zen 6 EPYC "Venice"** on TSMC 2nm launched commercially. Analyst targets have jumped materially: KeyBanc $725, Benchmark $685, UBS $700, Rosenblatt $655, Stifel $635, Goldman $640 (from $450), BofA $620. This is a genuine, concrete demand-and-customer catalyst, not hype — thesis reinforced well beyond Monday's entry rationale. No action (well within all thresholds).
+
+**IWM ($293.96, +1.10%) — HOLD, thesis intact, healthy consolidation:**
+Breakout above the multi-year range remains structurally valid (record weekly close, measured-move target ~$322); current price is a pause/consolidation (~-1% over 30 days) after Q2's +20.4% run, not a breakdown. Russell 2000 earnings growth still projected ~19% YoY for 2026. No deterioration signal.
+
+**NVDA ($210.97, +3.50%) — HOLD, thesis intact, new catalyst:**
+**Vera Rubin AI platform entered full production**, first shipments rolling out to hyperscalers — cited as the primary driver of NVDA's rebound off the $200 test level. BofA reiterated Buy with a $350 target on the new Vera CPU launch (expanding beyond GPUs into full AI-infrastructure share). Consensus average target ~$300-305. Some caution flagged (valuation, China chip-export uncertainty, HBM supply risk from SK Hynix), but no thesis break.
+
+**XOM ($156.30, +12.92%) — HOLD, thesis intact, tighten-trigger watch:**
+Today's freshest source (MarketBeat, dated 2026-07-23) confirms shares moving higher on crude rising toward ~$95/bbl amid **renewed** (not de-escalating) U.S.-Iran tension, directly supporting Exxon's upstream earnings ($3.5-3.9B guided benefit to Q2 upstream earnings from elevated crude). Some older/stale-dated search results referenced a prior Hormuz-reopening de-escalation episode — that appears to be a past, since-reversed event, not today's state; today's catalyst-scan and market-context queries both independently confirm oil is currently rallying on fresh Red Sea/Iran risk, consistent with the live position being at a fresh high. Analyst targets cluster $147-186 (avg ~$169), still support at these levels. **Position is +12.92%, ~2.1pts from the +15% tighten trigger — flagged as the top watch item for midday/EOD.**
+
+**SPY (Benzinga high BUY, not held/not a candidate):**
+Bullish case is technical/momentum-driven (96% Buy Barchart opinion, above 50-day MA, ~24% 2026 EPS growth expectations) but only partially macro-supported — inflation still ~3.5%, Fed on hold, yields >4.5% (restrictive, not accommodative). Fund flows show sector rotation (into Financials/Industrials/Materials) rather than confirmed new net inflows; large sidelined money-market balances are a *potential* future tailwind, not a present one. Not actionable as a new entry regardless — SPY is broad-market beta, not a differentiated sector bet, and doesn't open a new watchlist slot.
+
+### Trade Ideas
+1. **No new entries today.** Tech sector remains capped at its 2-single-stock limit (AMD + NVDA); today's only Benzinga BUY (SPY) is broad-market beta, not a differentiated candidate. No replacement candidate identified for the deployment gap.
+2. **AMD — no action, thesis materially strengthened** by the Anthropic deal and Helios/Azure commercial confirmation; still well within all stop/tighten thresholds.
+3. **XOM — watch closely for +15% tighten.** Currently +12.92%, only ~2.1pts from the trigger; oil thesis intact on renewed (not fading) Iran/Red Sea risk. Tighten to 7% trail immediately if crossed at midday or EOD.
+
+### Risk Factors
+- **XOM within striking distance of the +15% tighten trigger (+12.92%)** — highest-priority watch item today; check again at midday.
+- **VIX ticked up from 17.05 to ~17.5** (first uptick in several sessions) — still low-risk, but a signal worth tracking if the trend continues alongside rising oil.
+- **AMD analyst-target dispersion has resolved bullish** (targets moved from a $469-542 split up to a $620-725 cluster) — removes yesterday's two-sided valuation-debate flag, but valuation is still rich (P/E >160) and priced for continued flawless execution.
+- **SOXX's RS ranking collapse to last place** confirms the sector ETF is not confirming the AI-driven single-name strength in AMD/NVDA — a reminder that today's stock-specific catalysts (Anthropic, Vera Rubin) haven't yet translated into broad semis-sector breadth.
+- **Congress/Quiver Quant API still down** (401, ongoing since Jul 9, 10+ sessions) — no new escalation needed, already flagged previously.
+- **Script bug (see note above):** `fetch_benzinga.py`/`fetch_congress.py` will crash if re-run mid-day after the day's cache file already exists and is invoked with the same `> out_path` redirect pattern documented in the routine — avoid redirecting onto the exact output path on subsequent same-day runs (midday/EOD scans don't call these scripts, so this is pre-market-only risk).
+
+### Decision
+**HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact or strengthening; no cut triggers hit. XOM is the key watch item (+12.92%, ~2.1pts from +15% tighten). Tech sector capped, no replacement candidate identified. Week 13 count holds at 1/3, 2 trading days remaining (Thu-Fri).
+
+---
