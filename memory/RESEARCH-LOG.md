@@ -4899,3 +4899,11 @@ Bullish case is technical/momentum-driven (96% Buy Barchart opinion, above 50-da
 **HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact or strengthening; no cut triggers hit. XOM is the key watch item (+12.92%, ~2.1pts from +15% tighten). Tech sector capped, no replacement candidate identified. Week 13 count holds at 1/3, 2 trading days remaining (Thu-Fri).
 
 ---
+
+### Afternoon Addendum — Midday Scan (2026-07-23)
+
+**Ad-hoc Perplexity check triggered:** AMD fell -4.93% intraday ($552.33→$525.11) despite this morning's bullish "Advancing AI 2026" catalysts (Anthropic MI450 deal, Helios/Azure, Zen 6 EPYC) — sharp move with no obvious cause from the pre-market thesis, so STEP 6 fired.
+
+**Finding:** Sell-the-news / broad semiconductor valuation pullback, not an AMD-specific negative. Multiple sources (Yahoo Finance, QuiverQuant, TradingKey, 247WallSt) confirm a sector-wide chip selloff driven by AI-valuation concerns — HSBC noted AMD trading near 33x 2027 earnings with much of the upside already priced in, and event-preview coverage flagged the stock as vulnerable to profit-taking if the event merely confirmed expectations rather than beating them. No guidance miss, no competitor shock, no operating-update negative identified. The Anthropic/Helios news appears to have been treated as "already anticipated" rather than a positive surprise.
+
+**Conclusion:** Thesis intact — no action. AMD remains +1.64% unrealized, well above the -7% cut threshold. Continue holding per existing stop (10% trail, HWM $561.46/stop $505.314).
