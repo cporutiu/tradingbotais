@@ -3675,3 +3675,21 @@ No new trades. Week 13 count holds at 1/3. See RESEARCH-LOG.md 2026-07-24 entry 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Jul 24 — EOD Snapshot (Day 64, Friday — Week 13 Day 5)
+**Portfolio:** $105,628.43 | **Cash:** $29,332.63 (27.77%) | **Day P&L:** -$862.27 (-0.81%) | **Phase P&L:** +$5,628.43 (+5.63%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 34 | $516.645588 | $522.98 | -3.10% | +$215.37 (+1.23%) | 10% trail, 3 tranches synced HWM $561.46/stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.769839 | $291.15 | -0.32% | +$23.57 (+0.13%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $206.8276 | -0.93% | +$289.80 (+1.47%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $156.93 | +0.03% | +$2,406.22 (+13.37%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+**Trades today:** None. Week 13 count: 1/3 (final).
+
+**Notes:** Day 64, Friday, Week 13 Day 5. No new trades — pre-market held (Tech capped at AMD+NVDA, no replacement candidate cleared R:R), and nothing changed intraday or by the close. AMD gave back a chunk of the week's chip-sector gains (-3.10% today) continuing the sell-the-news/semiconductor-valuation pullback flagged in yesterday's midday check — still +1.23% unrealized, thesis intact (Anthropic MI450, Helios/Azure, Zen 6 EPYC), nowhere near the -7% cut. NVDA (-0.93%) and IWM (-0.32%) cooled modestly, normal chop, no thesis breaks. XOM was flat on the day (+0.03%) but remains the standout at +13.37% unrealized; broker's stop stayed at HWM $158.71/stop $142.839 through Friday's close — HWM-based gain is 14.66%, still short of the +15% tighten trigger. This morning's pre-market autonomous decision (wait for the +15% trigger rather than tighten early) stands unchanged since XOM never crossed it today; not re-raising the same question a second time today. No losers cut (worst is AMD -3.10% today but still +1.23% unrealized). Deployment 72.23% (cash 27.77%) stays within the 60-85% band; not re-raising the deployment question — pre-market already established no candidate clears the R:R floor this week (Tech capped, GLD not computable, CAT abandoned), same reasoning as every prior day this week. Week 13 closes at 1/3 trades used — the week is over, so the trade-slot question doesn't apply (0 days remaining, not ≥2).
+
+**Action questions:** None triggered. XOM sits 0.34pts from the +15% tighten trigger but this morning's autonomous WAIT decision already resolved it for today and nothing changed intraday, so it's not re-asked. Deployment (27.77% cash) is above the 25% threshold but no candidate clears the R:R floor (consistent all week). No position near -7% or a sector cap issue. Week 13 is closed at 1/3 — no slot question.
+
+---
