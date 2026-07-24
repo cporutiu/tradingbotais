@@ -4907,3 +4907,41 @@ Bullish case is technical/momentum-driven (96% Buy Barchart opinion, above 50-da
 **Finding:** Sell-the-news / broad semiconductor valuation pullback, not an AMD-specific negative. Multiple sources (Yahoo Finance, QuiverQuant, TradingKey, 247WallSt) confirm a sector-wide chip selloff driven by AI-valuation concerns — HSBC noted AMD trading near 33x 2027 earnings with much of the upside already priced in, and event-preview coverage flagged the stock as vulnerable to profit-taking if the event merely confirmed expectations rather than beating them. No guidance miss, no competitor shock, no operating-update negative identified. The Anthropic/Helios news appears to have been treated as "already anticipated" rather than a positive surprise.
 
 **Conclusion:** Thesis intact — no action. AMD remains +1.64% unrealized, well above the -7% cut threshold. Continue holding per existing stop (10% trail, HWM $561.46/stop $505.314).
+
+---
+
+## 2026-07-24 — Pre-Market Research (Friday, Week 13 Day 5)
+
+### BLOCKED — network egress denied for all trading APIs
+
+Session's outbound network policy (agent proxy, `/root/.ccr/__agentproxy/status`) returned 403
+"policy denial" on CONNECT for all three required hosts this run:
+- `paper-api.alpaca.markets:443` (account/positions/orders — `scripts/alpaca.sh`)
+- `api.perplexity.ai:443` (research — `scripts/perplexity.sh`)
+- ClickUp API (notification — `scripts/clickup.sh`)
+
+Per proxy guidance (`/root/.ccr/README.md`): 403 is an organization egress-policy denial, not a
+transient failure — not retried, not worked around. GitHub connectivity (this commit/push) is
+unaffected — it routes through a separate local git proxy, confirmed working via `git fetch`.
+
+**No account snapshot, no market research, and no trade decision were possible this run.**
+Not fabricating any of STEP 2–4's normal content. This is a pure infrastructure blocker, not a
+credentials or account-identity issue — env vars were all confirmed set before any wrapper call.
+
+**Pending item carried forward, unresolved:** Jul 23 EOD action question ("Tighten XOM stop to
+7% now, or wait for +15% trigger?") has no user decision logged. Per Rule 14 (unanswered
+action question default), today's pre-market run should have made an autonomous call — but
+that requires a live price/position pull that is unavailable this run. **Deferred, not
+defaulted-away** — the next run with working API access must treat this as still open and
+resolve it immediately (using whatever price data is available at that time) before any other
+action, since it's now overdue per Rule 14.
+
+**Reconnect-protocol note:** If this blocker persists beyond today, the next successful run
+must follow Rule 15 (reconnect protocol) — reconcile live positions/orders against this stale
+log and check every threshold (tighten/cut/thesis-break) that should have applied during the
+gap before taking any new-entry action.
+
+### Decision
+**HOLD — forced, not evaluated.** No data pulled to support any other decision. Alerting user
+directly (ClickUp unreachable) since this blocks the full daily workflow chain (pre-market →
+market-open → midday → EOD) until network access is restored.
