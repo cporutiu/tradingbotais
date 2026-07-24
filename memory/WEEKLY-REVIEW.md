@@ -851,3 +851,92 @@ _Rationale: +1.02% relative outperformance vs. S&P is genuine, and Rule 12's pro
 - Flag for manual check now: 9+ sessions (nearly 2 weeks) is long enough to be a real credential/API issue, not transient — worth a few minutes of user attention before it becomes a multi-week blind spot like the Jun connectivity outage
 
 ---
+
+## Week ending 2026-07-24
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $104,241.05 (Jul 20 AM pre-market / Week 12 end) |
+| Ending portfolio | $105,699.04 |
+| Week return | +$1,457.99 (+1.40%) |
+| S&P 500 week | ~-0.6% (SPX 7,475.69 Jul 17 → worst session in a month Thu Jul 23 on Brent >$100 + megacap-tech earnings misses, partial Fri recovery; live sources conflicted on the exact Friday print, see note below) |
+| Bot vs S&P | ~+2.00% |
+| Phase P&L | +$5,699.04 (+5.70% from $100,000 start) |
+| Trades | 1 (W:0 / L:0 / open:4) — 1 new buy (AMD Mon Jul 20); 0 closed |
+| Win rate | N/A (no closed trades) |
+| Best trade | XOM +13.62% unrealized (+$2,450.42) |
+| Worst trade | IWM +0.23% unrealized (+$40.93) — all 4 positions finished positive |
+| Profit factor | N/A (no closed trades) |
+
+*Note: Perplexity returned three conflicting same-day Friday SPX levels (7,365.46 / 7,408.30 / 7,417.10) with no single source labeled as the official close; the -0.6% estimate is derived from Investopedia's dated "entered Friday down 0.7% on the week" read plus a modest positive Friday futures/close adjustment, not a single clean data point.*
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $516.645588 | $522.469 | +$197.996 (+1.13%) | 10% trail, 3 tranches synced HWM $561.46 / stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | $290.769839 | $291.43 | +$40.93 (+0.23%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $207.10 | +$316.22 (+1.60%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | $138.420615 | $157.27 | +$2,450.42 (+13.62%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+### Sector Watchlist — Week 14 (Jul 27–31)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | AMD/NVDA (held) | Sector at 2-single-stock cap; no new tech buys until one exits |
+| 2 | Energy | XLE | XOM (held) | Hold to stop $142.839; XOM earnings Thu Jul 31 = Tier-1 blackout that day; Iran/Hormuz + Red Sea oil-risk premium intact |
+| 3 | Industrials | XLI | CAT | Abandoned per candidate-freshness rule (2 consecutive R:R failures, same broad-consensus-vs-outlier-target problem); do not re-attempt unless price pulls back or consensus targets move up meaningfully |
+| 4 | Materials/Macro | GLD/XLB | GLD | Real catalyst (Iran risk, rate-cut odds) but no computable analyst price target — R:R not cleanly assessable under current rules; needs an explicit call before it can fill the 5th slot |
+
+### What Worked
+- AMD entry (Mon Jul 20) was excellent: R:R ~3.68:1 at avg fill $516.50 on a confluent Benzinga BUY cluster (SOXX/NVDA/AVGO "buy the chip reset"), closed the week +1.13% after touching +7.7% mid-week on the Advancing AI 2026 event (Anthropic MI450 deal, Helios/Azure, Zen 6 EPYC)
+- XOM remained the portfolio's alpha engine: +13.62% unrealized, broker auto-trailed the stop upward all week (HWM $150.00 → $158.71) on a sustained, twice-reconfirmed Iran/Strait-of-Hormuz + Red Sea oil-risk premium
+- Discipline held on CAT: fresh Tuesday re-validation caught that Monday's ~2.52:1 read leaned on a single Evercore ISI outlier target, while broad consensus was only ~1.1-1.3:1 — correctly declined rather than chasing a stale number
+- Midday scan caught and fixed a real rule-4 gap same-day: 7 of AMD's 34 filled shares had no trailing stop attached after a partial/staggered fill; fixed within the same session, all 34 shares protected by EOD
+- Ad-hoc research discipline worked: Thursday's unexplained AMD -4.93% intraday drop triggered a Perplexity check that correctly identified sell-the-news sector-wide chip valuation concerns (not an AMD-specific break) — no unnecessary action taken
+
+### What Didn't Work
+- Deployment closed the week at 72.44% — third consecutive weekly close under the 75% floor (Jul 10: 74.4%, Jul 17: 54.98%, Jul 24: 72.44%); Urgency Protocol remains active but only 1/3 trade slots were used
+- Tech sector permanently capped at AMD+NVDA and CAT now failed R:R twice — the two most-researched candidates this week were both dead ends, leaving no clear path to the 5th position
+- GLD, the standing Materials/Macro fallback, still lacks a cleanly computable price target under the entry checklist — flagged as a watch item three days running (Jul 20, 22, 24) without a resolution
+- Process gap: RESEARCH-LOG entries did not consistently include the required "urgency protocol active" documentation line while the protocol was in effect
+- XOM ended the week 0.34pts (HWM-based 14.66%) short of the +15% tighten trigger, heading into a weekend and a week with an earnings-day Tier-1 blackout (Jul 31) — an unresolved edge case, not a failure, but worth a clean decision rather than defaulting to "wait" a third time
+
+### Key Lessons
+- Candidate-freshness (rule 74) is doing its job: CAT's two-week pattern (single-outlier-target read vs. broad-consensus reality) is exactly the failure mode the rule exists to catch — treat it as abandoned like FCX rather than re-checking weekly
+- A confluent multi-name Benzinga BUY signal (SOXX+NVDA+AVGO around AMD) was a stronger entry trigger than a single-bank price target — worth weighting sector-wide signal confluence over one outlier analyst in future candidate screens
+- GLD's lack of a standard price target is a structural, not a temporary, problem — the entry checklist's R:R math doesn't apply cleanly to physical-commodity ETFs; needs either an alternate valuation method (e.g., macro-catalyst scoring) or an explicit exception before it can be used to fill a deployment gap
+- Trailing-stop tranche management works but needs a same-day reconciliation step: partial/staggered fills (like AMD's 13+14+7) can leave a temporary protection gap that only a same-day midday check will catch
+- +2.0% alpha this week came from a genuine winner (XOM) and a well-timed new entry (AMD), not just "losing less" in a down market — the first clearly offense-driven alpha week in several
+
+### Adjustments for Next Week
+- **FOMC Jul 30-31** is a Tier-1 blackout window next week — no new entries either day regardless of any candidate's R:R
+- **XOM earnings Thu Jul 31** — Tier-1 blackout that day; also review whether the underlying oil-risk-premium thesis is still separate from the EPS print itself
+- **XOM tighten decision (see Next-week Decisions below)** — resolve explicitly rather than defaulting to "wait" for a third consecutive day if the +15% trigger is crossed early next week
+- **GLD R:R exception (see Next-week Decisions below)** — get an explicit call on whether GLD can fill the Materials/Macro slot without a standard price target, or whether XLB (which does have computable targets) becomes the default fallback instead
+- **CAT: leave abandoned** per candidate-freshness rule; do not re-check until a real price pullback or meaningful consensus-target revision
+- **Document "urgency protocol active"** in every RESEARCH-LOG entry while deployment remains below 75% — process compliance gap from this week
+
+### Overall Grade: B+
+
+_Rationale: +2.0% relative outperformance vs. S&P (bot +1.40% in a week the index fell) is genuine, offense-driven alpha — AMD's entry and XOM's continued run did the work, not just under-deployment. CAT's rejection was correctly disciplined twice. Deducted for: third consecutive week under the 75% deployment floor, no viable 5th-position candidate identified all week (Tech capped, CAT dead, GLD not computable), and a "urgency protocol active" documentation gap in the daily logs._
+
+### Next-week Decisions
+
+**Q: XOM sits 0.34pts (HWM-based 14.66%) from the +15% tighten trigger heading into the weekend, with an earnings-day Tier-1 blackout (Jul 31) coming up next week. Tighten to 7% now, or keep waiting for the mechanical +15% trigger?**
+- Tighten now: locks in a wider cushion on the portfolio's best-performing position ahead of a weekend and an earnings blackout day where the bot can't act on new information; risk: ordinary chop could shake out a strong trend before the oil thesis has run its course
+- Wait for the mechanical trigger: consistent with the rule as applied every day this week ("tighten at +15%, not before"); risk: a Monday gap (in either direction on oil/Iran headlines) could cross the trigger discontinuously, or reverse hard before the trigger is ever hit
+
+**Q: Deployment closed the week at 72.44% — third consecutive week under the 75% floor, with Tech capped and CAT permanently abandoned. Pivot the 5th-slot search to GLD/XLB early next week despite GLD's non-computable R:R, or hold the current 4-position book until a fresh single-stock idea clears the standard checklist?**
+- Pivot to GLD/XLB: closes the deployment gap using the standing Materials/Macro alternative — GLD requires treating the entry checklist's R:R step as inapplicable (physical-commodity ETF, no earnings-based target) rather than genuinely met
+- Hold at 4 positions: keeps R:R discipline fully intact, no rule bent to force a fill — but locks in a fourth consecutive sub-75% week if nothing new clears by next Friday
+
+**Q: CAT has now failed R:R twice on the same broad-consensus-vs-outlier-target problem. Formally abandon it like FCX (do not re-check until a real price pullback or target revision), or leave it on the weekly watchlist for another look?**
+- Abandon: frees research bandwidth for a genuinely new Industrials/other-sector idea instead of re-running the same failed check; consistent with how FCX was handled after repeat failures
+- Leave on watchlist: the underlying thesis (ISM expansion, record backlog) hasn't broken, only the price ran ahead of targets — a pullback could requalify it fast without sourcing a whole new candidate
+
+---

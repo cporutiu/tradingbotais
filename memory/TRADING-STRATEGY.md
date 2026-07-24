@@ -54,13 +54,13 @@ Default is **TRADE** when all of the following are true:
 - Each weekly review assigns a ranked sector watchlist + 1 candidate ticker per sector for the upcoming week; Monday pre-market must arrive with 2-3 live setups, not 1 idea and vague "watch X"
 
 ## Sector Watchlist (update each Friday in WEEKLY-REVIEW.md)
-See WEEKLY-REVIEW.md for the current week's live-researched watchlist (refreshed every Friday). As of Week 13 (Jul 20-24):
+See WEEKLY-REVIEW.md for the current week's live-researched watchlist (refreshed every Friday). As of Week 14 (Jul 27-31):
 | Priority | Sector | ETF | Candidate | Condition to Enter |
 |----------|--------|-----|-----------|-------------------|
-| 1 | Technology | XLK | AMD | R:R ~1.72:1 clears the 1.5:1 urgency floor; enter early week if no Tier-1 blocker |
-| 2 | Industrials | XLI | CAT | R:R ~1.83:1 clears urgency floor; ISM expansion supports |
-| 3 | Energy | XLE | XOM (held) | Hold to stop; oil-risk premium intact |
-| 4 | Materials/Macro | GLD/XLB | GLD | FCX permanently abandoned (5+ R:R failures) — do not re-add |
+| 1 | Technology | XLK | AMD/NVDA (held) | Sector at 2-single-stock cap; no new tech buys until one exits |
+| 2 | Energy | XLE | XOM (held) | Hold to stop $142.839; earnings Thu Jul 31 = Tier-1 blackout that day |
+| 3 | Industrials | XLI | CAT | Abandoned per candidate-freshness rule (2 consecutive R:R failures) — do not re-add unless price pulls back or targets move up meaningfully |
+| 4 | Materials/Macro | GLD/XLB | GLD | FCX permanently abandoned (5+ R:R failures) — do not re-add; GLD has no computable price target, R:R exception still unresolved |
 
 ## Entry Checklist
 - Specific catalyst?
