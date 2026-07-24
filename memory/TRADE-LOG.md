@@ -3629,3 +3629,49 @@ Rule-14 note: this question is now resolved and will not carry to a third day.
 No new trades. Week 13 count holds at 1/3. See RESEARCH-LOG.md 2026-07-24 entry for full pre-market research.
 
 ---
+
+## 2026-07-24 — Market-Open Execution (Friday, Week 13 Day 5)
+
+**Pre-market plan:** HOLD — no new entries. Tech sector capped (AMD + NVDA), no replacement candidate identified. See RESEARCH-LOG.md 2026-07-24 entry.
+
+**Live re-validation:** Account confirmed PA3GVPXBYBRB, equity $106,319.08 — matches AIS baseline, no credential mix-up. Positions unchanged from pre-market: AMD 34sh (+4.93%), IWM 62sh (+0.84%), NVDA 97sh (+1.64%), XOM 130sh (+12.70%). All 6 stop orders confirmed live via `orders` pull (3 AMD tranches HWM $561.46/stop $505.314, IWM HWM $302.72/stop $272.448, NVDA HWM $214.39/stop $192.951, XOM HWM $158.57/stop $142.713 — unchanged from pre-market, HWM-based gain still 14.56%, short of +15% tighten trigger per this morning's STEP 1B resolution). No -7% cut or +15%/+20% tighten trigger hit on any position.
+
+**Rule checks (STEP 3):** No candidates cleared pre-market's R:R floor, so no order attempted — rule checks are moot this run.
+
+**Action:** No trades executed. No stop changes needed. Week 13 count holds at 1/3.
+
+**Notification:** None sent (no trade placed, per STEP 7).
+
+**Commit:** Skipped — no trades executed (per STEP 8).
+
+---
+
+## 2026-07-24 — Midday Scan (Friday, Week 13 Day 5)
+
+**Positions checked (live Alpaca pull):**
+| Ticker | Entry | Price | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $516.645588 | $535.65 | +$646.15 (+3.68%) | 10% trail, 3 tranches synced HWM $561.46/stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | $290.769839 | $292.78 | +$124.63 (+0.69%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | $203.84 | $210.265 | +$623.23 (+3.15%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | $138.420615 | $156.7703 | +$2,385.46 (+13.26%) | 10% trail HWM $158.71/stop $142.839 (fff198e9) |
+
+- **Losers cut:** None. All 4 positions positive; worst is IWM +0.69%.
+- **Stop tightening:** None. Broker auto-trailed XOM's stop up intraday (new intraday high pushed HWM to $158.71, stop to $142.839), but HWM-based gain is 14.66% ((158.71-138.420615)/138.420615) — still short of the +15% trigger. Per this morning's STEP 1B autonomous decision (WAIT for trigger, not early), no manual tighten. Remains the top watch item.
+- **Thesis check:** No sharp unexplained moves today — AMD -0.75%, IWM +0.24%, NVDA +0.72%, XOM -0.08% intraday, all normal chop. No thesis breaks; AMD's Meta/OpenAI 6GW deals and NVDA's Vera Rubin ramp both stand per this morning's pre-market research. No ad-hoc Perplexity check warranted (STEP 6 n/a).
+- **Portfolio:** Equity $106,417.04 | Cash $29,332.63 (27.56%) | Deployed $77,084.41 (72.44%, 4 positions) | Week 13 count: 1/3
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+**Open Orders (midday 2026-07-24, unchanged except XOM auto-trail):**
+- Sell 13 AMD trailing_stop 10% GTC (b1d475a6): HWM $561.46, stop $505.314
+- Sell 14 AMD trailing_stop 10% GTC (444d3fcd): HWM $561.46, stop $505.314
+- Sell 7 AMD trailing_stop 10% GTC (28de0c69): HWM $561.46, stop $505.314
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $214.39, stop $192.951
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $158.71, stop $142.839
+
+**No action taken. No ClickUp notification (per STEP 7 — action-only rule).**
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
