@@ -3621,3 +3621,11 @@ Rule-14 note: this question is now resolved and will not carry to a third day.
 - Wait for trigger: lets the trade breathe, avoids being shaken out — risks giving back profit if it gaps down
 
 ---
+
+## 2026-07-24 — Pre-Market: Autonomous Decision (Friday, Week 13 Day 5)
+
+**Bot autonomous decision (2026-07-24):** Tighten XOM stop to 7% now, or wait for the +15% trigger price? -> WAIT. XOM's HWM is $158.57 (14.56% gain from entry), still short of the +15% trigger (~$159.18 HWM); live price this morning is $156.17 (+12.82%), down slightly from yesterday. The strategy rule already specifies tightening AT +15%, not before, so this is a direct application of the existing rule rather than a judgment call. No stop change made. Continue monitoring; tighten to 7% trail immediately if/when the +15% HWM trigger is crossed at midday or EOD.
+
+No new trades. Week 13 count holds at 1/3. See RESEARCH-LOG.md 2026-07-24 entry for full pre-market research.
+
+---
