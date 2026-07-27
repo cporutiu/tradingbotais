@@ -4983,3 +4983,15 @@ Bull case is earnings/AI-momentum-driven (strategists raising S&P targets to 8,2
 
 ### Decision
 HOLD, no new entries today. All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact or strengthening; no cut/tighten triggers hit (XOM's +15% HWM trigger still not reached, resolved yesterday's unanswered action question as WAIT, per STEP 1B). Tech sector capped, no replacement candidate identified. Week 13 count holds at 1/3, last trading day of the week (Friday).
+
+## 2026-07-27 — Pre-Market Research (Monday, Week 14 Day 1) — RUN FAILED, INFRASTRUCTURE OUTAGE
+
+### Infrastructure Failure
+- Env vars all confirmed set (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) — not a missing-var case.
+- ALPACA_ENDPOINT correctly points to paper-api.alpaca.markets (paper account, consistent with AIS baseline; no live/paper credential mix-up).
+- Every outbound API call this run was rejected at the session's network proxy layer with "CONNECT tunnel failed, response 403" — confirmed via proxy status endpoint as `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for paper-api.alpaca.markets. Same failure mode hit Alpaca trading API, Alpaca data API, Perplexity API, and ClickUp API — a blanket network-policy block, not a per-service credential issue.
+- Could not pull account snapshot, positions, or open orders. Could not run any Perplexity research query. Could not send the ClickUp alert (channel itself unreachable).
+- No account data, market context, or trade ideas fabricated. No trades considered or placed.
+
+### Decision
+HOLD (forced — no data available). This session's outbound network policy needs to allow api access to alpaca.markets, perplexity.ai, and clickup.com domains before this routine can run. User notified out-of-band via push notification since ClickUp was unreachable. Next scheduled run should retry; if the same block recurs, environment network policy needs reconfiguration (see /root/.ccr/README.md).
