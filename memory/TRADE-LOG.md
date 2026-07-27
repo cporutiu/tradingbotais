@@ -3707,3 +3707,57 @@ Jul 24 WEEKLY-REVIEW.md left 3 "Next-week Decisions" unanswered by user. Per Rul
 No new trades. Week 14 count holds at 0/3. See RESEARCH-LOG.md 2026-07-27 entry for full pre-market research.
 
 ---
+
+## 2026-07-27 — Market-Open Execution (Monday, Week 14 Day 1)
+
+**Pre-market plan:** HOLD — no new entries. Materials/Macro 5th slot closed for the week (GLD non-computable, XLB fails R:R), Tech capped at AMD+NVDA, CAT formally abandoned. See RESEARCH-LOG.md 2026-07-27 entry.
+
+**Live re-validation:** Account confirmed PA3GVPXBYBRB, equity $105,392.88 — matches AIS baseline, no credential mix-up. Positions: AMD 34sh (+1.07%), IWM 62sh (+1.02%), NVDA 97sh (+1.73%), XOM 130sh (+11.01%). All 6 stop orders confirmed live via `orders` pull (3 AMD tranches HWM $561.46/stop $505.314, IWM HWM $302.72/stop $272.448, NVDA HWM $214.39/stop $192.951, XOM HWM $158.71/stop $142.839 — all unchanged from Friday). XOM continued pulling back on the Iran de-escalation/oil selloff (live +11.01%, down further from pre-market's +9.83% reading last week's high but up slightly intraday); HWM never re-touched today so the tighten trigger stays at 14.66% HWM-based gain, still short of +15%. No -7% cut or +15%/+20% tighten trigger hit on any position.
+
+**Rule checks (STEP 3):** No candidates cleared pre-market's R:R floor, so no order attempted — rule checks are moot this run.
+
+**Action:** No trades executed. No stop changes needed. Week 14 count holds at 0/3.
+
+**Notification:** None sent (no trade placed, per STEP 7).
+
+**Commit:** Skipped — no trades executed (per STEP 8).
+
+---
+
+## 2026-07-27 — Midday Scan (Monday, Week 14 Day 1)
+
+**AMD TRAILING STOP TRIGGERED (auto-filled):**
+
+| Ticker | Shares | Entry | Exit (avg) | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| AMD | 34 | $516.645588 | $505.290 | -$386.08 (-2.20%) | 10% trailing stop, 3 tranches (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) filled 13:50 UTC; HWM $561.46 → stop $505.314 breached |
+
+- AMD ran up to HWM $561.46 (+8.7% at high) then gave back the gain on the ongoing sector-wide semiconductor rotation (same pullback pattern flagged Jul 23, and again in today's NVDA check below); trailing stop worked as designed, locking a small loss instead of a larger one. Not a manual -7% cut — automatic 10% trail from HWM.
+- Sells don't count toward the 3-trade weekly cap; Week 14 count holds at 0/3.
+
+**Remaining positions (live Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $291.86 | +$67.59 (+0.37%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| NVDA | 97 | $203.84 | $196.21 | -$740.11 (-3.74%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1, unchanged) |
+| XOM | 130 | $138.420615 | $154.45 | +$2,083.82 (+11.58%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9, unchanged) |
+
+- **Losers cut:** None. NVDA worst at -3.74%, well above the -7% threshold (~$189.57).
+- **Stop tightening:** None. XOM's HWM ($158.71) unchanged today (price $154.45 below HWM) — HWM-based gain still 14.66%, short of the +15% trigger.
+- **Thesis check — NVDA (-5.14% intraday, $206.84→$196.21):** Sharp unexplained move triggered a Perplexity check (STEP 6). Finding: **sector-wide semiconductor/AI risk-off rotation** — valuation compression, AI-capex/monetization skepticism, higher long-term yields pressuring growth multiples, and a technical support break triggering algo selling. No NVDA-specific downgrade, guidance cut, or new China/export-control announcement dated today. Same rotation family that hit AMD/NVDA/chips broadly on Jul 23. **Not a thesis break** — Vera Rubin ramp and China H200 re-entry reports (this morning's pre-market research) stand unchanged. No action.
+- **IWM/XOM:** No sharp unexplained moves; no ad-hoc research needed.
+- **Portfolio:** Equity $103,723.87 | Cash $46,512.50 (44.85%) | Deployed $57,211.37 (55.15%, 3 positions) | Week 14 count: 0/3
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+**Open Orders (midday 2026-07-27):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 97 NVDA trailing_stop 10% GTC (1f35b3d1): HWM $214.39, stop $192.951
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $158.71, stop $142.839
+
+**Deployment note:** AMD's stop-out dropped deployed capital from pre-market's 72.28% to 55.15% — below the 60-85% target band, and Tech's 2-slot sector cap is no longer binding (only NVDA held now). Urgency protocol already active (deployed <75% for 3 consecutive weekly closes: Jul10, Jul17, Jul24). Midday scan doesn't evaluate new entries per routine scope — flag for tomorrow's pre-market: a tech re-entry/replacement candidate is now open, subject to the 1.5:1 urgency R:R floor and Wednesday's FOMC Tier-1 blackout (Jul 30-31).
+
+**Action taken:** AMD position closed via automatic trailing stop (broker-executed, not a manual decision this session). ClickUp notification sent per STEP 7.
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
