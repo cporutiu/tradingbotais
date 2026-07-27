@@ -4983,3 +4983,85 @@ Bull case is earnings/AI-momentum-driven (strategists raising S&P targets to 8,2
 
 ### Decision
 HOLD, no new entries today. All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact or strengthening; no cut/tighten triggers hit (XOM's +15% HWM trigger still not reached, resolved yesterday's unanswered action question as WAIT, per STEP 1B). Tech sector capped, no replacement candidate identified. Week 13 count holds at 1/3, last trading day of the week (Friday).
+
+---
+
+## 2026-07-27 — Pre-Market Research (Monday, Week 14 Day 1)
+
+**Urgency protocol active:** Deployment closed below 75% for a 3rd consecutive weekly close (Jul10 74.4%, Jul17 54.98%, Jul24 72.44%) — R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed.
+
+### STEP 1B — Pending decisions resolved
+
+No TRADE-LOG "User decisions" block and no unanswered EOD action question from Jul 24 (EOD explicitly logged "None triggered"). However, Friday's WEEKLY-REVIEW.md left 3 "Next-week Decisions" unresolved — treating these the same as Rule 14 (don't carry a question a second period) and resolving now with live Monday data:
+
+1. **XOM tighten (7% now vs. wait for +15%)** → **Moot/WAIT confirmed.** Overnight/premarket oil dropped ~5% on 48h US-Iran de-escalation headlines; XOM's live unrealized gain fell from Friday's +13.37% to +9.83% this morning — moving away from the +15% trigger, not toward it. No tighten needed; this also isn't a thesis break (still comfortably above the -7% cut), but the core oil-risk-premium catalyst is now fading, not strengthening — elevated watch item, see Risk Factors.
+2. **Materials/Macro 5th slot (pivot to GLD/XLB despite non-computable R:R, or hold at 4)** → **HOLD at 4 positions, explicit call made.** GLD live at ~$372 still has no computable analyst 12-month price target (only a short-term "expected range" $373-383, not a forward target) — 4th consecutive week this has failed the entry checklist's R:R step, formally not usable until that changes. XLB (Benzinga BUY, medium confidence, live $53.15) was evaluated as the fallback: sector momentum is genuinely "Leading" (+17.4% YTD) and rate-cut-sensitive, but valuation is stretched (P/E ~19x, analyst-rated Hold after a 20% run) and its own technical upside target (cup-and-handle measured move, "mid-50s") is already met/exceeded at the current price — fails a 1.5:1 R:R on a forward basis. Decision: do not force either into the 5th slot this week; continue at 4 positions until a fresh single-name or ETF candidate clears the checklist on its own terms.
+3. **CAT (formally abandon vs. leave on watchlist)** → **ABANDON, confirmed.** Two consecutive R:R failures on the same broad-consensus-vs-outlier-target problem triggers Rule C (candidate-freshness) mechanically — same treatment as FCX. Already reflected in TRADING-STRATEGY.md's sector watchlist; formally closing the open review question. Do not re-check unless price pulls back or consensus targets move up meaningfully.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $105,803.71 | Cash: $29,332.63 (27.72%) | Deployed: $76,471.08 (72.28%, 4 positions) | Week 14 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 34 | $516.645588 | $535.17 | +$629.83 (+3.59%) | 10% trail, 3 tranches synced HWM $561.46/stop $505.314 (13sh b1d475a6, 14sh 444d3fcd, 7sh 28de0c69) |
+| IWM | 62 | $290.769839 | $294.95 | +$259.17 (+1.44%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $208.50 | +$452.02 (+2.29%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $152.03 | +$1,769.22 (+9.83%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+All 6 stop orders confirmed live and correctly attached. No -7% cut hit on any position. No +15%/+20% tighten trigger hit (XOM pulled back from +13.37% to +9.83%, moving further from the trigger, see STEP 1B).
+
+### Market Context
+- **Oil:** Sharply lower — 48-hour US-Iran de-escalation headlines drove a ~5% crude selloff overnight/premarket (Sensex +500pts, Indian markets up on the same news). Perplexity's raw price feeds are again badly dispersed (WTI quotes from $67 to $90 depending on source/date), but the directional signal is unambiguous and corroborated independently by XOM's own live price action (-3.13% intraday) and multiple news sources citing "oil slides 5% after 48-hour US-Iran calm."
+- **S&P 500 futures:** Roughly flat to modestly mixed (~7,570-7,580, essentially flat), no large gap expected.
+- **VIX:** ~18-19 (dispersed feeds, most recent live reads cluster 18.6-19.3), crossing further above the 18 low/medium boundary. **Market risk flag: medium** in market-intel.json (unchanged from Thursday/Friday).
+- **Catalysts this week:** Big week — **FOMC meeting Jul 30-31** (Tier-1 blackout those two days), **mega-cap earnings Wed/Thu** (Microsoft, Meta, Amazon reporting; Apple also this week) after Alphabet/Tesla's disappointing prints sank the market Friday (S&P's worst day in a month). US-Iran de-escalation is today's dominant single catalyst, reversing last week's oil-risk premium. Durable goods released today 8:30am (not Tier-1).
+- **Earnings BMO today:** AstraZeneca (AZN), Welltower (WELL), Nucor (NUE) — none held or on the sector watchlist. **No Tier-1 blocker today** (Monday). XOM's own earnings (Jul 31, Thursday) will be a Tier-1 blackout day this week; AMD's is Aug 4 (next week).
+- **Econ calendar:** No CPI/PPI/FOMC/NFP release today; latest prints already known (May CPI 4.2% headline/2.9% core, June jobs +57K/4.2% unemployment). Durable goods today is not a blocker.
+- **Sector momentum YTD:** Energy (+23.3%), Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%) leading; Communication Services (-1.2%), Technology (-3.3%), Consumer Discretionary (-3.8%), Financials (-6.9%) lagging. Momentum-map framing: **Leading** = Staples/Industrials/Materials/Energy; **Improving** = Real Estate/Utilities; **Weakening** = Health Care; **Lagging** = Tech/Comm Services/Discretionary/Financials.
+- **Economic cycle stage:** Late-cycle, unchanged — unemployment up 33 consecutive months (longest on record without recession) alongside still-positive GDP; consensus recession probability ~20-30%, not itself a recession call.
+- **20-day RS ranking (strongest to weakest):** QQQ, XLK, XLI, XLF, XLE, XLB, XLV, XLP, XLY, XLC, XLU, XLRE, SOXX, IWM, EEM, HYG, GLD, SLV, SPY. Notable: QQQ/XLK jumped back to the top despite Tech's negative YTD read — likely reflects this week's setup ahead of mega-cap earnings rather than a durable trend reversal; treat with caution given the binary earnings-week risk.
+
+### Benzinga Signals
+- **BUY (high):** AMD (score +27, 4 mentions, held), IWM (score +8, 4 mentions, held — "S&P 500 Rises As Oil Sinks On Iran Talk Hopes"), FCX (score +16, 3 mentions — **permanently abandoned, not actionable regardless of signal strength**), XLRE (score +4, 2 mentions — not a watchlist sector, not actionable).
+- **BUY (medium):** SPY (+2, 5 mentions), QQQ (+4, 5 mentions), XLK (+2, 1 mention), XLB (+2, 2 mentions), XLC (+3, 1 mention).
+- No SELL signals. 21 emails scanned (72h lookback, Monday), BUY=9, HOLD=17.
+- Only XLB required a follow-up Perplexity check (Materials/Macro slot candidate) — see STEP 1B resolution above. SPY/QQQ/XLK/XLC/XLRE/FCX are all either broad-market beta, off-watchlist, sector-capped, or permanently abandoned — not researched individually to conserve budget, consistent with why SPY/QQQ Benzinga BUYs have never been actionable on prior days.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 13+ consecutive sessions). Already escalated to the user previously; not re-escalating today (no new information).
+
+### Perplexity Validation — Held Positions & Benzinga Signal
+
+**AMD ($535.17, +3.59%) — HOLD, thesis intact and reinforced:**
+Fresh analyst target hikes continue (Citi $575 Buy upgrade, BofA $560 naming AMD top CPU pick on "agentic AI" server demand). Advancing AI 2026 catalysts (Anthropic MI450, Meta/OpenAI 6GW deals, Helios/Azure) remain the operative thesis; Q2 earnings confirmed for Aug 4 (next Tier-1 blackout date, not this week). No new negative signal. Benzinga's high-confidence BUY (score +27) independently confirms.
+
+**IWM ($294.95, +1.44%) — HOLD, thesis intact:**
+Small-cap rally narrative continues (Russell 2000 +22% YTD, rate-cut-expectation-driven per ETF.com). Benzinga's high-confidence BUY (score +8) ties directly to today's oil-sinks/de-escalation risk-on tone. Macro alignment pre-check (rate-sensitive name): last core CPI 2.9% (≤3.0% ✓) and last NFP +57K (≤150K ✓) — both pass, no thesis invalidation per Rule E. No deterioration signal.
+
+**NVDA ($208.50, +2.29%) — HOLD, thesis intact:**
+China H200 chip re-entry reports (Reuters: China may allow AI firms to buy H200 under strict limits) and the GB300 September ramp are the live catalysts; Vera Rubin production ramp (flagged prior sessions) continues. Note: several search results returned stale/mismatched price data (~$112) from unrelated historical snippets — live Alpaca price ($208.50) and today's intraday move (+0.80%) are the reliable read. No thesis break.
+
+**XOM ($152.03, +9.83%) — HOLD, thesis intact but core catalyst fading — top watch item:**
+Today's move is a clean, well-corroborated de-escalation pullback (48h US-Iran calm → oil down ~5% → XOM -3.13% intraday), not a company-specific negative — multiple sources (MarketBeat, Yahoo Finance, Public.com) confirm the mechanism (lower crude → lower upstream earnings expectations → sector rotation out of energy). This is the mirror image of the escalation that built the position's +13%+ gain. Position remains well within all thresholds (+9.83%, nowhere near -7%), but the geopolitical risk-premium pillar of the original thesis is now working against it rather than for it. Not a break — oil remains volatile and could re-escalate — but flagged as the top risk item for midday/EOD re-validation. XOM earnings Jul 31 (Thursday) is this week's held-name Tier-1 blackout day.
+
+**XLB (Benzinga medium BUY, Materials/Macro candidate — not held):**
+See STEP 1B resolution — bullish on macro/momentum (rate-cut tailwind, Leading sector) but valuation-stretched (P/E ~19x, Hold-rated) and technical upside target already reached; fails R:R, not entered.
+
+### Trade Ideas
+1. **No new entries today.** Materials/Macro 5th slot explicitly closed this week (neither GLD nor XLB clears the checklist, see STEP 1B). Tech remains capped at AMD+NVDA. CAT formally abandoned.
+2. **AMD/IWM/NVDA — no action**, all three theses intact or reinforcing; Benzinga high-confidence BUYs on AMD and IWM independently confirm.
+3. **XOM — no action, but elevated watch item.** The oil-risk-premium catalyst reversed today on Iran de-escalation; still +9.83% unrealized with a wide buffer to any threshold, but re-validate closely at midday given oil's volatility and the Thursday earnings blackout ahead.
+
+### Risk Factors
+- **FOMC Jul 30-31** — Tier-1 blackout both days this week; no new entries regardless of any candidate's R:R.
+- **XOM earnings Jul 31 (Thursday)** — held-name Tier-1 blackout that day; also the position's next real fundamental catalyst independent of the oil-price swings.
+- **Mega-cap earnings Wed/Thu (MSFT, META, AMZN, AAPL)** — not held, but a major volatility driver for the whole market this week after Alphabet/Tesla's misses sank stocks Friday.
+- **XOM's core catalyst (Iran/oil risk premium) reversed today** — de-escalation, not escalation, is now the dominant oil narrative; watch for further pullback at midday/EOD (see Perplexity Validation above).
+- **VIX ~18-19, medium risk** — elevated but not alarming; a wide-swinging week (FOMC + mega-cap earnings + geopolitical whipsaw) could push it further.
+- **Congress/Quiver Quant API still down** (401, since Jul 9, 13+ sessions) — already escalated, no new action needed.
+- **Materials/Macro slot has now failed the entry checklist for 4 consecutive weeks** (GLD non-computable, XLB overvalued/target-met) — deployment stays structurally capped at ~72-73% until a genuinely new candidate emerges; Urgency Protocol remains active.
+
+### Decision
+**HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact; no cut/tighten triggers hit. XOM is the key watch item given today's oil-de-escalation reversal (+9.83%, down from Friday's +13.37%, moving away from all thresholds — not urgent, but re-check at midday). Materials/Macro 5th-slot question explicitly closed (neither GLD nor XLB clears R:R). CAT formally abandoned. Week 14 count: 0/3, urgency protocol active (R:R floor 1.5:1, Wednesday check at <70% deployed).

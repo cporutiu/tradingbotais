@@ -3693,3 +3693,17 @@ No new trades. Week 13 count holds at 1/3. See RESEARCH-LOG.md 2026-07-24 entry 
 **Action questions:** None triggered. XOM sits 0.34pts from the +15% tighten trigger but this morning's autonomous WAIT decision already resolved it for today and nothing changed intraday, so it's not re-asked. Deployment (27.77% cash) is above the 25% threshold but no candidate clears the R:R floor (consistent all week). No position near -7% or a sector cap issue. Week 13 is closed at 1/3 — no slot question.
 
 ---
+
+## 2026-07-27 — Pre-Market: Autonomous Decisions on Weekly Review Questions (Monday, Week 14 Day 1)
+
+Jul 24 WEEKLY-REVIEW.md left 3 "Next-week Decisions" unanswered by user. Per Rule 14's intent (don't carry a question a second period), resolved autonomously using Monday's live pre-market data:
+
+**Bot autonomous decision (2026-07-27):** XOM — tighten stop to 7% now, or wait for the +15% trigger? → WAIT (moot). Oil dropped ~5% overnight on 48h US-Iran de-escalation; XOM's unrealized gain fell from Friday's +13.37% to +9.83%, moving away from the trigger, not toward it. No stop change made.
+
+**Bot autonomous decision (2026-07-27):** Materials/Macro 5th slot — pivot to GLD/XLB despite non-computable R:R, or hold at 4 positions? → HOLD at 4 positions. GLD (~$372) still has no computable analyst price target (4th consecutive week). XLB (Benzinga BUY, $53.15) evaluated as fallback: valuation stretched (P/E ~19x, Hold-rated) and its own technical upside target already met — fails 1.5:1 R:R. Neither cleared the checklist; no forced entry.
+
+**Bot autonomous decision (2026-07-27):** CAT — formally abandon, or leave on watchlist? → ABANDON. Two consecutive R:R failures on the same broad-consensus-vs-outlier-target problem triggers the candidate-freshness rule mechanically, same treatment as FCX. Do not re-check unless price pulls back or targets move up meaningfully.
+
+No new trades. Week 14 count holds at 0/3. See RESEARCH-LOG.md 2026-07-27 entry for full pre-market research.
+
+---
