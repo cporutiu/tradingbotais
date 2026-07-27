@@ -3761,3 +3761,20 @@ No new trades. Week 14 count holds at 0/3. See RESEARCH-LOG.md 2026-07-27 entry 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Jul 27 — EOD Snapshot (Day 65, Monday — Week 14 Day 1)
+**Portfolio:** $103,880.02 | **Cash:** $46,512.50 (44.78%) | **Day P&L:** -$1,748.41 (-1.66%) | **Phase P&L:** +$3,880.02 (+3.88%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $293.16 | +0.68% | +$148.19 (+0.82%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $196.60 | -4.95% | -$702.28 (-3.55%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $154.78 | -1.38% | +$2,126.72 (+11.82%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+**Trades today:** AMD 34sh closed via automatic 10% trailing stop (midday, HWM $561.46 breached), realized -$386.08 (-2.20%). No new entries. Week 14 count: 0/3 (sells don't count toward the cap).
+
+**Notes:** Day 65, Monday, Week 14 Day 1. Account confirmed PA3GVPXBYBRB, matches AIS baseline. AMD's midday stop-out was the day's only trade; the day's P&L swing was driven by NVDA's continued sector-rotation pullback (-4.95% today, -3.55% unrealized — well short of the -7% cut, and already validated at midday as a broad semiconductor/AI risk-off rotation, not a company-specific break; thesis intact). XOM pulled back further on the fading Iran de-escalation/oil-selloff catalyst (-1.38% today) but remains the portfolio's biggest winner at +11.82% unrealized; HWM stayed at $158.71 (price below HWM all day) so the HWM-based gain holds at 14.66%, still short of the +15% tighten trigger — same read as this morning's pre-market autonomous WAIT call, not re-raised again today since nothing changed. IWM was flat/modestly positive (+0.68%), no thesis concerns. No losers cut. Deployment fell further to 55.22% (cash 44.78%) after AMD's stop-out — below the 60-85% band and the Tech sector cap is no longer binding (NVDA only). No replacement candidate has cleared the 1.5:1 urgency R:R floor yet; this was already flagged in the midday entry for tomorrow's pre-market research rather than forced here without a vetted candidate.
+
+**Action questions:** None triggered today. Thesis checks: all three positions intact (NVDA's drop reconfirmed as sector-wide rotation, not a break). Rule triggers: XOM sits at 14.66% HWM-gain, 0.34pts from the +15% tighten trigger, but this is unchanged from this morning's autonomous WAIT decision — not re-asked. No position within 2% of the -7% cut. Deployment is above 25% cash (44.78%), but no vetted candidate exists yet to fill the open slot — pre-market will source one tomorrow rather than raising an unanswerable question tonight. Week 14 is at 0/3 — no trade-slot question.
+
+---
