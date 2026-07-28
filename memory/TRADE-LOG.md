@@ -3778,3 +3778,50 @@ No new trades. Week 14 count holds at 0/3. See RESEARCH-LOG.md 2026-07-27 entry 
 **Action questions:** None triggered today. Thesis checks: all three positions intact (NVDA's drop reconfirmed as sector-wide rotation, not a break). Rule triggers: XOM sits at 14.66% HWM-gain, 0.34pts from the +15% tighten trigger, but this is unchanged from this morning's autonomous WAIT decision — not re-asked. No position within 2% of the -7% cut. Deployment is above 25% cash (44.78%), but no vetted candidate exists yet to fill the open slot — pre-market will source one tomorrow rather than raising an unanswerable question tonight. Week 14 is at 0/3 — no trade-slot question.
 
 ---
+
+**Market-open 2026-07-28 (Tuesday, Week 14 Day 2):** No trades — FOMC Tier-1 blackout both meeting days (Jul 28-29, decision Wed 2pm ET), per pre-market decision. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Equity $103,575.16 | Cash $46,512.48 (44.91%) | Deployed $57,062.68 (55.09%, 3 positions) | Week 14 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $292.78 | +$124.63 (+0.69%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| NVDA | 97 | $203.84 | $194.29 | -$926.35 (-4.69%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1, unchanged) |
+| XOM | 130 | $138.420615 | $154.325 | +$2,067.57 (+11.49%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9, unchanged) |
+
+No losers cut (NVDA -4.69%, well above -7% cut ~$189.57). No tighten trigger hit (XOM HWM-gain 14.66%, unchanged — price below HWM). No new entries possible regardless of deployment gap (AMD slot open since Jul 27) — FOMC blackout overrides. No ClickUp notification (no trade placed). No commit (no trades executed).
+
+---
+
+## 2026-07-28 — Midday Scan (Tuesday, Week 14 Day 2)
+
+**NVDA TRAILING STOP TRIGGERED (auto-filled):**
+
+| Ticker | Shares | Entry | Exit (avg) | Realized P&L | Notes |
+|--------|--------|-------|------|--------------|-------|
+| NVDA | 97 | $203.84 | $192.92 | -$1,059.24 (-5.36%) | 10% trailing stop (1f35b3d1) filled 13:47 UTC; HWM $214.39 → stop $192.951 breached |
+
+- Broker-executed automatic 10% trail, not a manual -7% cut. Pre-market (this morning) reconfirmed NVDA's thesis intact — sector-wide semiconductor/AI risk-off rotation (also now shadowed by Burry's disclosed short across NVDA/AMD/SOXX/Micron), no company-specific downgrade or guidance cut. Trailing stop worked as designed, same pattern as AMD's Jul 27 stop-out.
+- Sells don't count toward the 3-trade weekly cap; Week 14 count holds at 0/3.
+
+**Remaining positions (live Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $293.72 | +$182.91 (+1.02%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $152.84 | +$1,874.52 (+10.42%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9, unchanged) |
+
+- **Losers cut:** None. Both remaining positions positive.
+- **Stop tightening:** None. XOM's HWM ($158.71) unchanged today (price $152.84 below HWM) — HWM-based gain still 14.66%, short of the +15% trigger.
+- **Thesis check:** IWM flat/no sharp move. XOM down -1.25% intraday, continuing the oil-de-escalation pullback already flagged this morning (DOJ gas-pricing probe, Citi PT cut to $155) — not a new or sharp unexplained move, no ad-hoc Perplexity check warranted (STEP 6 n/a). No thesis breaks.
+- **Portfolio:** Equity $103,308.16 | Cash $65,225.72 (63.14%) | Deployed $38,082.44 (36.86%, 2 positions) | Week 14 count: 0/3
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+**Open Orders (midday 2026-07-28):**
+- Sell 62 IWM trailing_stop 10% GTC (4c0586cc): HWM $302.72, stop $272.448
+- Sell 130 XOM trailing_stop 10% GTC (fff198e9): HWM $158.71, stop $142.839
+
+**Deployment note:** NVDA's stop-out dropped deployed capital from pre-market's 55.04% to 36.86% — well below the 60-85% band and below the 40% deployment-floor trigger. Two open slots now (AMD since Jul 27, NVDA as of today). FOMC Tier-1 blackout is in effect both today and tomorrow (decision Wed Jul 29, 2pm ET) — no new entries possible regardless of deployment gap. Flag for Thursday pre-market (first non-blackout day, also XOM's own earnings blackout — check calendar) to source replacement candidates for both open slots, subject to the 1.5:1 urgency R:R floor.
+
+**Action taken:** NVDA position closed via automatic trailing stop (broker-executed, not a manual decision this session). ClickUp notification sent per STEP 7.
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---

@@ -5065,3 +5065,60 @@ See STEP 1B resolution — bullish on macro/momentum (rate-cut tailwind, Leading
 
 ### Decision
 **HOLD — no new entries today.** All 4 positions (AMD, IWM, NVDA, XOM) reconfirmed intact; no cut/tighten triggers hit. XOM is the key watch item given today's oil-de-escalation reversal (+9.83%, down from Friday's +13.37%, moving away from all thresholds — not urgent, but re-check at midday). Materials/Macro 5th-slot question explicitly closed (neither GLD nor XLB clears R:R). CAT formally abandoned. Week 14 count: 0/3, urgency protocol active (R:R floor 1.5:1, Wednesday check at <70% deployed).
+
+---
+
+## 2026-07-28 — Pre-Market Research (Tuesday, Week 14 Day 2)
+
+**Urgency protocol active:** Deployed closed below 75% for 3 consecutive weekly closes (Jul10 74.4%, Jul17 54.98%, Jul24 72.44%) — R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed. Moot today regardless — see FOMC blackout below.
+
+### STEP 1B — Pending decisions resolved
+No TRADE-LOG "User decisions" block and no unanswered EOD action question from Jul 27 (EOD explicitly logged "None triggered today"). Nothing to resolve. AMD's midday stop-out (Jul 27) already flagged a re-entry/replacement candidate as open for today's research, subject to the FOMC blackout below.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,461.21 | Cash: $46,512.48 (44.96%) | Deployed: $56,948.73 (55.04%, 3 positions) | Buying power: $345,506.36 | Week 14 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $292.83 | +$127.73 (+0.71%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| NVDA | 97 | $203.84 | $194.41 | -$914.71 (-4.63%) | 10% trail HWM $214.39 / stop $192.951 (1f35b3d1) |
+| XOM | 130 | $138.420615 | $153.35 | +$1,940.82 (+10.79%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+All 3 stop orders confirmed live and correctly attached. No -7% cut hit (NVDA worst at -4.63%, cut level ~$189.57). No +15%/+20% tighten trigger hit (XOM's HWM-based gain still 14.66%, unchanged — price below HWM).
+
+### Market Context
+- **Oil:** WTI ~$71-72, Brent ~$74-75 (feeds still dispersed across sources, but consistently low-70s/mid-70s, continuing last week's Iran-de-escalation selloff — no reversal).
+- **S&P 500 futures:** Flat to modestly mixed, no large gap expected.
+- **VIX:** ~19-20. **Market risk flag: medium** (unchanged from Monday).
+- **FOMC — Tier-1 blackout today AND tomorrow:** Fed meeting Tuesday-Wednesday, July 28-29; rate decision Wednesday 2:00pm ET. Today is meeting day 1 — treating both meeting days as blackout (same precedent as Monday's log), not just the decision day. **No new entries today regardless of deployment or candidate quality.**
+- **Earnings BMO today:** None among held names or on the sector watchlist; broader calendars show no notable BMO releases today.
+- **Econ calendar:** No CPI/PPI/NFP today. Consumer confidence and Case-Shiller home-price data release today — not Tier-1 blockers on their own.
+- **Sector momentum YTD:** Energy (+24.2%), Technology (+16.2%), Industrials (+14.0%), Real Estate (+13.4%) leading; Consumer Discretionary (+0.7%) lagging. Momentum-map: **Leading** = Staples/Industrials/Materials/Energy; **Weakening** = Health Care; **Lagging** = Tech/Comm Services/Discretionary/Financials — consistent with Monday's read.
+- **Mega-cap earnings this week:** Microsoft, Meta, Amazon, Apple report Wed/Thu — a major volatility driver market-wide.
+
+### Perplexity Validation — Held Positions
+**IWM ($292.83, +0.71%) — HOLD, thesis intact:** Small-cap rally continues (Russell 2000 +22% YTD), near 52-week highs, technicals bullish above key moving averages. No negative catalysts.
+
+**NVDA ($194.41, -4.63%) — HOLD, thesis intact, sector-wide rotation continues:** Mixed but broadly constructive news — BofA reiterated bullish AI-infrastructure view, China may allow limited H200 sales easing export-control fears, $2B CoreWeave AI-factory investment. Offsetting: competition concerns (Meta reportedly building in-house AI chips), a director-trust sale of ~$186M in NVDA stock, and Michael Burry disclosed a short across NVDA/AMD/SOXX/Micron. No NVDA-specific downgrade or guidance cut — same broad semiconductor/AI risk-off rotation flagged Jul 27, not a thesis break. Well above the -7% cut (~$189.57).
+
+**XOM ($153.35, +10.79%) — HOLD, thesis intact, mixed catalysts:** Q2 outlook strengthening (upstream earnings guided $3.5-3.9B higher on elevated crude), Piper Sandler/Jefferies reiterated Buy. Offsetting: Citi cut its price target to $155 (Neutral) from $175, and Trump ordered a DOJ probe into big oil gasoline pricing ("customers are being gouged") — a new political overhang, not yet material to price action. XOM earnings Thursday Jul 31 is this week's held-name Tier-1 blackout day. HWM-based gain 14.66%, still short of the +15% tighten trigger — active watch item.
+
+### Trade Ideas
+1. **No new entries today or tomorrow.** FOMC Tier-1 blackout both meeting days (Jul 28-29); moot regardless of the AMD-slot deployment gap (55.04% deployed, urgency protocol active).
+2. **NVDA/IWM — no action.** Theses intact; NVDA's drop is broad sector rotation (also now shadowed by Burry's disclosed short), not company-specific.
+3. **XOM — no action, elevated watch item.** Tighten trigger not yet reached (14.66% HWM-gain); new DOJ-probe political overhang and Citi PT cut are incremental negatives to monitor, not thesis breaks. Earnings Thu Jul 31 is a blackout day.
+
+### Risk Factors
+- **FOMC Jul 28-29, decision Wed 2pm ET** — Tier-1 blackout both days, no new entries regardless of R:R.
+- **XOM earnings Jul 31 (Thursday)** — held-name Tier-1 blackout day, also the position's next real fundamental catalyst.
+- **Mega-cap earnings Wed/Thu (MSFT, META, AMZN, AAPL)** — market-wide volatility driver this week.
+- **New: Trump DOJ probe into oil-company gas pricing** — political overhang on XOM, not yet priced meaningfully.
+- **New: Michael Burry disclosed short on NVDA, AMD, SOXX, Micron** — sentiment risk for the chip trade, not a fundamental break.
+- **VIX ~19-20, medium risk** — elevated but not alarming.
+- **Deployment 55.04%**, below the 60-85% band; urgency protocol active (3rd consecutive week <75%) but structurally overridden by today's Tier-1 FOMC blackout — no action possible regardless.
+- **AMD replacement-candidate research deferred** — blackout makes it moot until Thursday at earliest (Wed is also FOMC decision day).
+
+### Decision
+**HOLD — no new entries today (FOMC Tier-1 blackout, both meeting days).** All 3 positions (IWM, NVDA, XOM) intact, no cut/tighten triggers hit. NVDA's -4.63% is sector-wide rotation, not a break, still far from the -7% cut. XOM's tighten trigger not yet reached (14.66%); new DOJ-probe/Citi-downgrade watch items added, not thesis breaks. Week 14 count holds at 0/3. Next real entry opportunity is Thursday at earliest (Wed is FOMC decision day; Thu is XOM's own earnings blackout).
