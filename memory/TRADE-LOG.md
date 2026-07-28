@@ -3825,3 +3825,27 @@ No losers cut (NVDA -4.69%, well above -7% cut ~$189.57). No tighten trigger hit
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Jul 28 — EOD Snapshot (Day 66, Tuesday — Week 14 Day 2)
+**Portfolio:** $103,329.30 | **Cash:** $65,225.72 (63.14%) | **Day P&L:** -$550.72 (-0.53%) | **Phase P&L:** +$3,329.30 (+3.33%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $293.41 | +0.17% | +$163.69 (+0.91%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| XOM | 130 | $138.420615 | $153.18 | -1.03% | +$1,918.72 (+10.66%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+**Trades today:** NVDA 97sh closed via automatic 10% trailing stop (midday, HWM $214.39 breached), realized -$1,059.24 (-5.36%). No new entries. Week 14 count: 0/3 (sells do not count toward the cap).
+
+**Notes:** Day 66, Tuesday, Week 14 Day 2. Account confirmed PA3GVPXBYBRB, matches AIS baseline. FOMC Tier-1 blackout in effect today and tomorrow (decision Wed Jul 29, 2pm ET) — no new entries were possible at market-open regardless of deployment gap. NVDA's midday stop-out was the day's only trade; it closed out the sector-rotation position and dropped deployed capital to 36.87% (cash 63.14%), well below the 60-85% target band, leaving two open slots (AMD since Jul 27, NVDA since Jul 28). No vetted replacement candidate has cleared the 1.5:1 urgency R:R floor yet — sourcing flagged for Thursday pre-market (first non-blackout day). IWM closed flat/slightly positive (+0.17% today, +0.91% unrealized), no thesis concerns. XOM pulled back further (-1.03% today) on the ongoing oil-de-escalation/gas-pricing-probe pullback but remains the portfolio's biggest winner at +10.66% unrealized; HWM held at $158.71 (price stayed below HWM all day), so the HWM-based gain holds at 14.66% — 0.34pts short of the +15% tighten trigger, unchanged for the third straight session. No losers cut (no position near the -7% cut). No new tightens placed.
+
+**Action questions:**
+
+**Q: Tighten XOM stop to 7%, or wait for the +15% trigger price?**
+- Tighten early: locks in more of XOM's +10.66% gain, guards against a sharp reversal — normal volatility could stop you out before the real trigger ever fires
+- Wait for trigger: lets the trade breathe until HWM-gain actually crosses +15% (currently 14.66%, just $0.53 of HWM movement away) — risks giving back profit if XOM gaps down before the trigger hits
+
+Deployment note (not asked as a question): cash is 63.14% (deployed 36.87%, above the 25% cash / below 75% deployed threshold), but FOMC Tier-1 blackout blocks any new entry today and tomorrow regardless of preference, and no candidate has cleared the R:R floor yet — both open slots carry to Thursday pre-market.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
