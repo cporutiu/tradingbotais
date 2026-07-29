@@ -5122,3 +5122,19 @@ All 3 stop orders confirmed live and correctly attached. No -7% cut hit (NVDA wo
 
 ### Decision
 **HOLD — no new entries today (FOMC Tier-1 blackout, both meeting days).** All 3 positions (IWM, NVDA, XOM) intact, no cut/tighten triggers hit. NVDA's -4.63% is sector-wide rotation, not a break, still far from the -7% cut. XOM's tighten trigger not yet reached (14.66%); new DOJ-probe/Citi-downgrade watch items added, not thesis breaks. Week 14 count holds at 0/3. Next real entry opportunity is Thursday at earliest (Wed is FOMC decision day; Thu is XOM's own earnings blackout).
+
+## 2026-07-29 — Pre-Market Research (Wednesday, Week 14 Day 3) — RUN BLOCKED, NO DATA
+
+**BLOCKED — network egress policy denial on all three trading APIs. No account pull, no research, no notification sent.**
+
+- `scripts/alpaca.sh account/positions/orders` → curl exit 22, HTTP 403 (host `paper-api.alpaca.markets`)
+- `scripts/perplexity.sh` → curl exit 22, HTTP 403 (host `api.perplexity.ai`)
+- `scripts/clickup.sh` → curl exit 22, HTTP 403 (host `api.clickup.com`)
+- Proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`) confirms all three as `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for this session — not a credential or key issue (all required env vars were confirmed present before any call). Per proxy README: do not retry, report the blocked host.
+- All calls were single-attempt (no retry loop) per proxy guidance.
+- Last known state (Jul 28 EOD): IWM + XOM open (NVDA and AMD both stopped out this week), Week 14 trade count 0/3, urgency protocol active. Unanswered EOD action question (XOM tighten to 7% vs. wait for +15% trigger) had no "User decisions" block — per Rule 14 this should default to autonomous resolution, but that requires live price/HWM data this run could not fetch, so it is NOT resolved today and carries forward again.
+- Today (Wed Jul 29) was already flagged in prior logs as the FOMC rate-decision day (Tier-1 blackout) — no new entries would have been placed regardless.
+- **No trades placed. No stops touched. No fabricated data above — this entry intentionally omits an account snapshot, market context, and trade ideas because none could be sourced.**
+- **Decision: HOLD (forced — cannot verify positions/stops or research catalysts).**
+- **Action needed:** infra/network egress for this session needs to allow `paper-api.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com`. Escalating to user directly since the normal ClickUp channel is itself one of the blocked hosts.
+
