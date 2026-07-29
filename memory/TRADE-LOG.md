@@ -3853,3 +3853,34 @@ Deployment note (not asked as a question): cash is 63.14% (deployed 36.87%, abov
 **Bot autonomous decision (2026-07-29):** Tighten XOM stop to 7%, or wait for the +15% trigger price? → WAIT for the +15% trigger. No user decision was logged by this morning's run, so resolving per Rule 14 (don't carry a question a second day). Live pre-market: XOM $156.20 (+12.84% unrealized), oil rebounding on fresh US-Iran tension today (reversing last week's de-escalation, Brent quoted up ~4% overnight) — the HWM-gain trigger (currently 14.66%, needs $159.18) is being approached from a strengthening catalyst, not a fading one, and there's no thesis break to justify deviating from the strategy's trigger-based tighten rule. FOMC decision at 2pm ET could add volatility either direction, but the position has a wide buffer to every threshold. Continuing the same WAIT call made the last 3 sessions; will tighten immediately and automatically if/when the live +15% trigger fires.
 
 ---
+
+**Market-open 2026-07-29 (Wednesday, Week 14 Day 3, FOMC Decision Day):** No trades — FOMC Tier-1 blackout today (decision 2pm ET), per pre-market decision. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Equity $103,944.17 | Cash $65,225.69 (62.75%) | Deployed $38,718.48 (37.25%, 2 positions) | Week 14 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $292.74 | +$122.15 (+0.68%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $158.22 | +$2,573.92 (+14.30%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9, unchanged) |
+
+No losers cut (both positions positive). No tighten trigger hit — XOM HWM unchanged at $158.71 (current price $158.22 still below HWM; +15% trigger needs $159.18), consistent with this morning's autonomous WAIT decision. No new entries possible regardless of deployment gap (AMD slot since Jul 27, NVDA slot since Jul 28) — FOMC blackout overrides; Thursday's Wednesday-urgency mandate (≥1 new position, per pre-market) carries forward. No ClickUp notification (no trade placed). No commit (no trades executed).
+
+---
+
+## 2026-07-29 — Midday Scan (Wednesday, Week 14 Day 3, FOMC Decision Day)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $289.305 | -$90.82 (-0.50%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $157.665 | +$2,501.77 (+13.90%) | 10% trail HWM $159.0722 / stop $143.16498 (fff198e9, HWM ticked up from $158.71) |
+
+- **Losers cut:** None. IWM -0.50%, well above the -7% cut.
+- **Stop tightening:** None. XOM's HWM rose intraday to $159.0722 (new high), pushing HWM-based gain to 14.92% (entry $138.420615 → $159.0722) — still just short of the +15% trigger ($159.18 needed). Broker auto-updated the trail stop to $143.16498 (unchanged 10%); no manual tighten warranted yet, consistent with the WAIT call carried from this morning's pre-market/autonomous decision.
+- **Thesis check:** XOM +3.02% intraday — continuation of this morning's flagged catalyst (fresh Iran-tension oil rally), not a new/unexplained move; no ad-hoc Perplexity check needed (STEP 6 n/a). IWM -1.39% intraday, modest, no thesis concern (FOMC decision at 2pm ET is today's known swing factor, already flagged pre-market).
+- **Portfolio:** Equity ~$103,895 (IWM $17,936.91 + XOM $20,496.45 + cash) | Week 14 count: 0/3
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. FOMC decision at 2pm ET is today's live risk event — no new entries possible regardless (Tier-1 blackout), per pre-market. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
