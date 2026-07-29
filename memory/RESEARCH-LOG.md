@@ -5122,3 +5122,79 @@ All 3 stop orders confirmed live and correctly attached. No -7% cut hit (NVDA wo
 
 ### Decision
 **HOLD — no new entries today (FOMC Tier-1 blackout, both meeting days).** All 3 positions (IWM, NVDA, XOM) intact, no cut/tighten triggers hit. NVDA's -4.63% is sector-wide rotation, not a break, still far from the -7% cut. XOM's tighten trigger not yet reached (14.66%); new DOJ-probe/Citi-downgrade watch items added, not thesis breaks. Week 14 count holds at 0/3. Next real entry opportunity is Thursday at earliest (Wed is FOMC decision day; Thu is XOM's own earnings blackout).
+
+---
+
+## 2026-07-29 — Pre-Market Research (Wednesday, Week 14 Day 3, FOMC Decision Day)
+
+**Urgency protocol active:** Deployed closed below 75% for 3 consecutive weekly closes (Jul10 74.4%, Jul17 54.98%, Jul24 72.44%) — R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed. Moot today regardless — FOMC decision day is a hard Tier-1 blackout.
+
+### STEP 1B — Pending decisions resolved
+No TRADE-LOG "User decisions" block. Most recent EOD (Jul 28) left one unanswered action question: **"Tighten XOM stop to 7%, or wait for the +15% trigger price?"** Per Rule 14, resolving autonomously now using live pre-market data — logged in TRADE-LOG.md as a Bot autonomous decision:
+
+**→ WAIT for the +15% trigger.** XOM live pre-market $156.20 (+12.84% unrealized), HWM still $158.71 (14.66% HWM-gain, trigger price $159.18 not yet reached). Oil is rebounding on **fresh** US-Iran tension overnight (Brent quoted up ~4%, reversing last week's de-escalation selloff) — the catalyst pushing toward the trigger is strengthening, not fading, and no thesis break exists. This is the same trigger-based WAIT call made the last 3 sessions; nothing about today's data argues for early manual tightening. Will act immediately and automatically if the live +15%/+20% trigger fires intraday.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,746.67 | Cash: $65,225.69 (62.87%) | Deployed: $38,520.98 (37.13%, 2 positions) | Buying power: $368,761.50 | Week 14 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $293.79 | +$187.25 (+1.04%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| XOM | 130 | $138.420615 | $156.20 | +$2,311.32 (+12.84%) | 10% trail HWM $158.71 / stop $142.839 (fff198e9) |
+
+Both stop orders confirmed live and correctly attached. No -7% cut hit. No +15%/+20% tighten trigger hit (XOM HWM-gain 14.66%, unchanged — see STEP 1B).
+
+### Market Context
+- **Oil:** WTI ~$71-72, Brent ~$74-75 on lagged/aggregated feeds, but today's live catalyst is **fresh overnight US-Iran tension** pushing crude back up (~4% Brent move cited), reversing last week's de-escalation pullback. XOM's own pre-market price (+2.07% today) confirms the directional move independent of noisy feed data.
+- **S&P 500 futures:** ~7,570-7,600, modestly positive (+0.5-0.6%), no large gap expected.
+- **VIX:** ~20-21, crossed further above the 18 low/medium boundary. **Market risk flag: medium** (elevated vs. last week's 18-19, still below the 25 high threshold).
+- **FOMC — Tier-1 blackout today:** Rate decision 2:00pm ET. Consensus expects a hold at 3.50-3.75%, but non-trivial priced-in hike odds (~26% per Polymarket) make this a high-stakes, genuinely two-sided event. **No new entries today regardless of deployment gap or candidate quality.**
+- **Mega-cap earnings AMC today:** Microsoft and Meta report after the close — not held, not on the sector watchlist, but a major market-wide volatility driver (combined >$300B AI/cloud capex under scrutiny). Apple and Amazon report Thursday.
+- **Earnings BMO today:** None among held names or the sector watchlist.
+- **Econ calendar:** No new CPI/PPI/NFP releases today; latest prints unchanged (May CPI 4.2% headline/2.9% core, June jobs +57K/4.2% unemployment) — Fed decision is today's only Tier-1 item.
+- **Sector momentum YTD:** Energy still clearly leading (+23-24%), Materials/Industrials/Consumer Staples next; Financials/Consumer Discretionary/Tech lagging — consistent with prior sessions, no rotation change.
+- **XOM earnings correction:** Prior log entries mislabeled XOM's Jul 31 earnings as "Thursday" — Jul 31, 2026 is actually **Friday**. Confirmed today via Perplexity: XOM reports Q2 results BMO Friday Jul 31 (press release 5:30am CT, call 9:30am ET). **Thursday Jul 30 is NOT a blackout day** — no held-name earnings or other Tier-1 event identified for tomorrow.
+
+### Benzinga Signals
+24h lookback (Wednesday), 26 emails scanned, BUY=8, HOLD=16, SELL=2.
+- **SELL (high):** **AMD** (score -13, 8 mentions — "Micron, Nvidia, AMD on Watch as Asia's Chip Selloff Sends Warning to Wall Street"), **SOXX** (score -3, 8 mentions — Jim Cramer flags US-Korea chip-market linkage as a "slump" risk). Both reinforce staying out of the semiconductor trade for now.
+- **BUY (high):** QQQ (score +4, 5 mentions) — broad beta, not actionable.
+- **BUY (medium):** XOM (+2, 1 mention, held), IWM (+2, 2 mentions, held), NVDA (+2, 14 mentions), **CVX** (+2, 1 mention — new, not held), **XLI** (+2, 1 mention — new, not held), SPY (+2, 4 mentions, broad beta), SLV (+2, 1 mention, off-watchlist).
+- CVX and XLI are new candidates (not previously researched); both followed up via Perplexity below.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 14+ consecutive sessions). Already escalated to the user previously; not re-escalating today (no new information).
+
+### Perplexity Validation — Held Positions & New Benzinga Candidates
+**IWM ($293.79, +1.04%) — HOLD, thesis intact:** Small-cap rally (Russell 2000) continues on Fed rate-cut expectations; no negative catalysts. Today's FOMC outcome is the swing factor either direction, not a thesis concern by itself. Benzinga's medium BUY independently confirms.
+
+**XOM ($156.20, +12.84%) — HOLD, thesis intact and re-strengthening:** Fresh Iran-tension oil rebound is reversing last week's de-escalation pullback, pushing XOM back toward the +15% tighten trigger (resolved in STEP 1B — WAIT). Q2 earnings Friday Jul 31 (BMO) expected to show a large sequential beat (management guided $3.5-3.9B higher upstream earnings on elevated crude); analysts model ~$15.7B adjusted Q2 earnings, roughly double Q1. Offsetting: Citi PT cut to $155 (Neutral), Goldman Hold $157, and the Trump DOJ price-gouging probe remains an unresolved political overhang — neither is new information nor a thesis break. Benzinga's medium BUY independently confirms.
+
+**CVX ($~205, Benzinga medium BUY, Energy candidate — not held):** Strongly macro-driven bull case (Street consensus Moderate Buy/Buy, 21-26 analysts, PT range $205-$242) built on the same tight-oil/geopolitical-risk-premium/refining-margin thesis as XOM — Mizuho, Barclays, Piper Sandler ($242 PT) all cite Middle East tension and shrinking spare capacity. Wolfe Research just upgraded to Outperform. Same DOJ price-gouging headline risk as XOM. **Concentration flag:** adding CVX alongside XOM would put both Energy slots on the identical oil-price/geopolitical catalyst — sector cap technically allows 2 single stocks, but this is a correlated bet, not diversification, worth weighing against a Tech or Industrials alternative for Thursday.
+
+**XLI ($~150, Benzinga medium BUY, Industrials candidate — not held):** Bullish case is macro-supported (May ISM Manufacturing 54.0, fifth straight expansion month, strongest since 2022) and technically strong (above all key moving averages, RSI 66.76), Moderate Buy consensus (559 ratings). No fresh single-day catalyst identified — this is a steady sector-strength signal, not an event-driven trigger. Reasonable diversification candidate (different sector than Energy/held names) but needs an entry/stop/target computed before Thursday.
+
+**NVDA ($194ish, Benzinga medium BUY, re-entry candidate — stopped out Jul 28):** Street remains Strong Buy consensus (38-61 analysts, 91-97% Buy/Strong Buy), no negative fundamental news found — Blackwell/Hopper demand and hyperscaler AI capex cited as ongoing catalysts. No Sell-side downgrade or thesis break identified. Today's Benzinga signal (unlike AMD/SOXX) is BUY, not SELL — the sector-rotation/Burry-short overhang that triggered the Jul 28 stop-out doesn't currently have a matching negative signal today. Plausible Thursday re-entry candidate if rotation has stabilized by then.
+
+**AMD (Benzinga high-confidence SELL, score -13, 8 mentions) — AVOID for Thursday re-entry:** Fundamentally the Street is still Buy/Strong Buy (0 Sell ratings across major banks, PT ~$496), and the "bearish" analyst commentary found is about stretched valuation/execution risk, not a macro or outflow story. But Benzinga's SELL signal is tied to today's live news flow ("Asia's chip selloff," Korea-market linkage) — a fresh, same-day negative catalyst distinct from the fundamentals debate. Combined with SOXX's own high-confidence SELL, this confirms the semiconductor-sector rotation that stopped AMD out on Jul 27 has **not** yet stabilized. Do not re-enter AMD Thursday without a clear reversal signal.
+
+### Trade Ideas
+No new entries possible today (FOMC Tier-1 blackout) — the following are Thursday-forward watch items for the Wednesday-urgency mandate (see Risk Factors), not today's actions:
+1. **XOM — hold, no action.** Elevated watch item: re-strengthening oil catalyst is pushing toward the +15% tighten trigger; expect this to resolve (fire or fade) within the next 1-2 sessions given today's FOMC volatility and Friday's earnings. Re-check at midday.
+2. **IWM — hold, no action.** Thesis intact; today's FOMC outcome is the swing factor.
+3. **Thursday candidates (unranked, need full entry/stop/target + R:R vetting):** NVDA re-entry (Buy signal today, thesis intact, no active negative catalyst) and XLI (Industrials, macro-supported, sector diversification) are the strongest leads. CVX is bullish but correlated with existing XOM oil exposure — lower diversification value. AMD and broad chip exposure (SOXX) are flagged **avoid** — active high-confidence SELL signals today on top of the still-unresolved Jul 27 rotation.
+
+### Risk Factors
+- **FOMC decision 2pm ET today** — Tier-1 blackout, no new entries regardless of R:R; two-sided risk given non-trivial priced-in hike odds.
+- **MSFT/META earnings AMC today** — not held, but a major market-wide volatility driver ahead of Thursday's open.
+- **XOM earnings Friday Jul 31 (BMO)** — correcting prior mislabeling as Thursday; this is a held-name Tier-1 blackout day, also the position's next real fundamental catalyst.
+- **Oil re-escalation on fresh Iran tension** — reversing last week's de-escalation; watch for a sharp reversal either direction given how headline-driven this catalyst has been (round-tripped once already this month).
+- **VIX ~20-21, medium risk** — elevated versus last week, still below the 25 high threshold.
+- **Deployment 37.13%**, well below the 60-85% band and the 40% deployment-floor threshold — would trigger a TRADE default on any normal day, but structurally overridden today by the FOMC blackout.
+- **Wednesday urgency check ACTIVE for Thursday:** 2 trade slots unused (AMD since Jul 27, NVDA since Jul 28) at Wednesday close, deployed 37.13% (<60%) — per the strategy's Wednesday urgency rule, **Thursday pre-market must open at least 1 position**, Tier-1 blocker caveat only. No Tier-1 blocker currently identified for Thursday (XOM's earnings blackout is Friday, not Thursday — see correction above). Thursday's pre-market must arrive with vetted, R:R-cleared candidates (1.5:1 floor, urgency protocol active) — this is now a mandate, not a preference.
+- **Semiconductor sector rotation not yet stabilized:** Benzinga flags fresh high-confidence SELL signals today on both AMD (score -13) and SOXX (score -3), tied to an Asia chip-market selloff headline — the same rotation family that stopped out AMD (Jul 27) and NVDA (Jul 28). NVDA itself carries a medium BUY today (no matching negative signal), but AMD specifically should be avoided for Thursday re-entry pending a clearer reversal.
+
+### Decision
+**HOLD — no new entries today (FOMC Tier-1 blackout).** Both positions (IWM, XOM) intact; no cut/tighten triggers hit. XOM's tighten-trigger question resolved autonomously as WAIT (see STEP 1B) — 14.66% HWM-gain, re-strengthening toward the +15% trigger on fresh oil-escalation. Week 14 count holds at 0/3. **Thursday's Wednesday-urgency mandate is now active: at least 1 new position must open Thursday pre-market**, subject to the 1.5:1 urgency R:R floor. Leading candidates from today's Benzinga/Perplexity sourcing: **NVDA re-entry** (thesis intact, active BUY signal, no negative catalyst today) and **XLI** (Industrials, macro-supported, better diversification than a second Energy name). CVX is bullish but correlated with existing XOM oil exposure. **AMD is flagged avoid** — fresh high-confidence SELL signal alongside SOXX confirms the chip-sector rotation hasn't stabilized. Full entry/stop/target computation is tomorrow's primary pre-market task.

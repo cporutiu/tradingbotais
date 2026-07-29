@@ -3849,3 +3849,7 @@ Deployment note (not asked as a question): cash is 63.14% (deployed 36.87%, abov
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+**Bot autonomous decision (2026-07-29):** Tighten XOM stop to 7%, or wait for the +15% trigger price? → WAIT for the +15% trigger. No user decision was logged by this morning's run, so resolving per Rule 14 (don't carry a question a second day). Live pre-market: XOM $156.20 (+12.84% unrealized), oil rebounding on fresh US-Iran tension today (reversing last week's de-escalation, Brent quoted up ~4% overnight) — the HWM-gain trigger (currently 14.66%, needs $159.18) is being approached from a strengthening catalyst, not a fading one, and there's no thesis break to justify deviating from the strategy's trigger-based tighten rule. FOMC decision at 2pm ET could add volatility either direction, but the position has a wide buffer to every threshold. Continuing the same WAIT call made the last 3 sessions; will tighten immediately and automatically if/when the live +15% trigger fires.
+
+---
