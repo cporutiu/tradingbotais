@@ -3914,3 +3914,27 @@ No losers cut (both positions positive, well above -7%). No tighten trigger hit 
 **Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification (no action taken, per STEP 7). No commit needed (no memory file changes beyond this log entry — committing this update only).
 
 ---
+
+## Jul 30 — EOD Snapshot (Day 68, Thursday — Week 14 Day 4)
+**Portfolio:** $103,784.13 | **Cash:** $65,225.69 (62.85%) | **Day P&L:** +$454.83 (+0.44%) | **Phase P&L:** +$3,784.13 (+3.78%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $292.57 | +1.39% | +$111.61 (+0.62%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $157.07 | +0.20% | +$2,424.42 (+13.47%) | 10% trail HWM $159.0722 / stop $143.16498 (fff198e9, unchanged) |
+
+**Trades today:** None. GDP Advance release (Tier-1 blackout) blocked any new entries all day; no cuts or tightens triggered. Week 14 count: 0/3.
+
+**Notes:** Day 68, Thursday, Week 14 Day 4. Account confirmed PA3GVPXBYBRB, matches AIS baseline. GDP Advance Q2 release was today's Tier-1 blackout (per pre-market correction to Wednesday's log, which had missed it); XOM's own earnings BMO tomorrow (Fri Jul 31) is a second consecutive Tier-1 blackout day, so no new entry is possible until Monday Aug 3 regardless of the still-open Wednesday-urgency mandate. Both positions closed higher on the day — IWM +1.39% (small-cap rally continuing, thesis intact, no concern) and XOM +0.20% (oil staying elevated on US-Iran tension, thesis intact and strengthening into tomorrow's earnings per Wells Fargo/Morgan Stanley PT raises). No losers cut (both well above -7%). XOM's HWM held at $159.0722 (price $157.07 stayed below HWM), so the HWM-based gain is unchanged at 14.92% — 0.08pts short of the +15% tighten trigger for the fifth straight session. No new tightens placed. Cash sits at 62.85% (deployed 37.15%), below the 75% deployment floor, but both today and tomorrow are Tier-1 blackout days so no entry decision is actually live until Monday.
+
+**Action questions:**
+
+**Q: Tighten XOM stop to 7%, or wait for the +15% trigger price?**
+- Tighten early: locks in more of XOM's +13.47% gain, guards against a sharp reversal ahead of tomorrow's earnings — normal volatility could stop you out before the real trigger ever fires
+- Wait for trigger: lets the trade breathe until HWM-gain actually crosses +15% (currently 14.92%, just ~$0.11 of HWM movement away) — risks giving back profit if XOM gaps down on tomorrow's earnings before the trigger hits
+
+Deployment note (not asked as a question): cash 62.85% / deployed 37.15%, below the 75% target band, but GDP Advance (today) and XOM earnings BMO (tomorrow) are both Tier-1 blackout days — no new entry is possible until Monday Aug 3 regardless of preference. Wednesday-urgency mandate (≥1 new position) remains deferred to Monday.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
