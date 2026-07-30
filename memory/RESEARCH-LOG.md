@@ -5198,3 +5198,35 @@ No new entries possible today (FOMC Tier-1 blackout) — the following are Thurs
 
 ### Decision
 **HOLD — no new entries today (FOMC Tier-1 blackout).** Both positions (IWM, XOM) intact; no cut/tighten triggers hit. XOM's tighten-trigger question resolved autonomously as WAIT (see STEP 1B) — 14.66% HWM-gain, re-strengthening toward the +15% trigger on fresh oil-escalation. Week 14 count holds at 0/3. **Thursday's Wednesday-urgency mandate is now active: at least 1 new position must open Thursday pre-market**, subject to the 1.5:1 urgency R:R floor. Leading candidates from today's Benzinga/Perplexity sourcing: **NVDA re-entry** (thesis intact, active BUY signal, no negative catalyst today) and **XLI** (Industrials, macro-supported, better diversification than a second Energy name). CVX is bullish but correlated with existing XOM oil exposure. **AMD is flagged avoid** — fresh high-confidence SELL signal alongside SOXX confirms the chip-sector rotation hasn't stabilized. Full entry/stop/target computation is tomorrow's primary pre-market task.
+
+---
+
+## 2026-07-30 — Pre-Market Research (Thursday, Week 14 Day 4) — INFRASTRUCTURE OUTAGE, NO TRADE ACTION TAKEN
+
+**STEP 1B:** No "User decisions" block found in TRADE-LOG.md tail. Carried-forward mandate from Jul 29 pre-market: Wednesday-urgency rule requires Thursday pre-market to open ≥1 new position (2 slots open since Jul 27/28, deployed 37% at Wed close, no Tier-1 blocker identified for today). **This mandate could NOT be executed — see outage below.**
+
+### CRITICAL: Total outbound API blockage
+All three trading-infrastructure hosts rejected at the network proxy's CONNECT stage with `403 Forbidden` ("gateway answered 403 to CONNECT — policy denial") — not a credentials or API-side error:
+- `paper-api.alpaca.markets` (account/positions/orders) — blocked
+- `api.clickup.com` (notification) — blocked
+- `api.perplexity.ai` (research) — blocked
+
+Confirmed via `$HTTPS_PROXY/__agentproxy/status`: `recentRelayFailures` shows repeated `connect_rejected` entries for `paper-api.alpaca.markets:443` this morning. This is a session/environment network-policy issue, not an Alpaca/ClickUp/Perplexity account problem. Git/GitHub push is unaffected (tested, works).
+
+**Consequence — no account state pulled.** Cannot confirm current equity, positions, or whether the GTC trailing stops on IWM/XOM are still intact. Last known state (Jul 29 midday): IWM $289.305 (-0.50%), XOM $157.665 (+13.90%, HWM $159.0722, 14.92% HWM-gain — $0.11 short of the +15% tighten trigger).
+
+**Consequence — overnight move likely relevant but unverified.** WebSearch (native tool, not proxy-blocked) shows: FOMC held rates Jul 29 with a hawkish tilt (3 dissents favoring a hike); Dow fell ~1,100pts on the decision; oil (WTI) surged ~6.7% to $84.58 overnight on renewed US-Iran strikes; S&P futures modestly positive this morning (+0.18%) as Big Tech earnings (MSFT +9%, META -6%) offset the oil/yield pressure; VIX closed 20.66 (+13.45%) Jul 29, futures ~20. **A 6-7% oil spike very plausibly pushed XOM through the +15% HWM tighten trigger overnight/pre-market** — this cannot be confirmed or acted on (tighten to 7% trail) without Alpaca access. IWM (small-caps, rate-sensitive) may also have moved on the hawkish-hold/yield-spike combination. **No -7% cut or thesis-break risk identified for either position from available info**, but this is not a substitute for a live pull.
+
+**XOM earnings correction stands:** confirmed via WebSearch — Q2 report is Friday Jul 31, BMO (not today). Today (Thu Jul 30) carries no held-name earnings blackout.
+
+### Trade ideas / candidates from Jul 29 sourcing (unchanged, not re-vetted today)
+Not re-researched given the outage; carrying forward Jul 29's leads for tomorrow's run once connectivity is restored: NVDA re-entry (thesis intact, active BUY signal) and XLI (Industrials diversification) as leading Thursday-mandate candidates; CVX correlated with existing XOM exposure; AMD/SOXX flagged avoid (unresolved chip-sector rotation).
+
+### Decision
+**HOLD — forced, not discretionary.** No trade action is possible or safe without live account/position confirmation (CLAUDE.md account-isolation rule: stop and alert if anything looks off before placing any order — here, nothing can even be checked). The Wednesday-urgency mandate to open ≥1 position today is **not fulfilled** and carries forward to the next working session, blocked by infrastructure rather than by choice or a Tier-1 event. **No orders placed. No stop tightening applied (XOM's +15% trigger may have already fired overnight and gone unactioned — needs immediate manual verification once Alpaca access is restored).**
+
+### Notification
+ClickUp alert could not be sent (same outage). User notified directly via the session's push-notification channel instead, flagging: (1) full API blackout across Alpaca/ClickUp/Perplexity, (2) possible unactioned XOM tighten trigger given the overnight oil spike, (3) unresolved Wednesday-urgency mandate.
+
+### Separate item — scheduled-task description mismatch (flagging, not resolved)
+Today's routine prompt described the target as a "LIVE ~$10,000 Alpaca account." The configured `ALPACA_ENDPOINT` is `paper-api.alpaca.markets` and CLAUDE.md / all prior memory entries confirm this bot operates the AIS **paper** account PA3GVPXBYBRB (~$103k equity), not a live $10k account. No data was pulled from Alpaca today (blocked), so this could not be cross-checked against a live equity figure — flagging the description mismatch itself as worth the user's review, per the account-isolation rule's instruction to stop and alert on anything that looks off.
