@@ -5198,3 +5198,63 @@ No new entries possible today (FOMC Tier-1 blackout) — the following are Thurs
 
 ### Decision
 **HOLD — no new entries today (FOMC Tier-1 blackout).** Both positions (IWM, XOM) intact; no cut/tighten triggers hit. XOM's tighten-trigger question resolved autonomously as WAIT (see STEP 1B) — 14.66% HWM-gain, re-strengthening toward the +15% trigger on fresh oil-escalation. Week 14 count holds at 0/3. **Thursday's Wednesday-urgency mandate is now active: at least 1 new position must open Thursday pre-market**, subject to the 1.5:1 urgency R:R floor. Leading candidates from today's Benzinga/Perplexity sourcing: **NVDA re-entry** (thesis intact, active BUY signal, no negative catalyst today) and **XLI** (Industrials, macro-supported, better diversification than a second Energy name). CVX is bullish but correlated with existing XOM oil exposure. **AMD is flagged avoid** — fresh high-confidence SELL signal alongside SOXX confirms the chip-sector rotation hasn't stabilized. Full entry/stop/target computation is tomorrow's primary pre-market task.
+
+---
+
+## 2026-07-30 — Pre-Market Research (Thursday, Week 14 Day 4)
+
+**Urgency protocol active:** Deployed closed below 75% for 4 consecutive weekly closes (Jul10 74.4%, Jul17 54.98%, Jul24 72.44%, Jul31 pending — currently 37.0%). R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed.
+
+### STEP 1B — Pending decisions resolved
+No TRADE-LOG "User decisions" block. Jul 29 EOD snapshot never ran (last committed entry was the Jul 29 midday scan) — no new unanswered action question exists. The one open question (XOM tighten to 7% vs. wait) was already resolved autonomously on Jul 29 pre-market (→ WAIT for +15% trigger) and executed; not re-raised. Nothing new to resolve today.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,520.79 | Cash: $65,225.69 (63.00%) | Deployed: $38,295.10 (37.00%, 2 positions) | Buying power: $368,129.04 | Week 14 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $290.00 | -$47.73 (-0.27%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $156.27 | +$2,320.42 (+12.90%) | 10% trail HWM $159.0722 / stop $143.16498 (fff198e9, unchanged) |
+
+Both stop orders confirmed live and correctly attached. No -7% cut hit. XOM HWM-based gain 14.92% (HWM $159.0722 vs entry $138.420615) — still short of the +15% trigger ($159.18 needed); WAIT decision from Jul 29 stands, unchanged.
+
+### Market Context
+- **Oil:** WTI ~$71-72, Brent ~$75-76, still elevated after Wednesday's sharp rally (Aug WTI closed Wed +4.37%) on the fresh US-Iran tension — Exxon itself has warned oil inventories could hit "dangerously low levels" due to the conflict.
+- **S&P 500 futures:** ~7,460-7,470, roughly flat to modestly positive, no large gap expected.
+- **VIX:** ~18-20 (sources noisy/inconsistent, converging in this band). **Market risk flag: medium.**
+- **FOMC:** Decision was **yesterday** (Wed Jul 29, held 3.50-3.75%, some dissent for a hike). Not a factor today.
+- **CORRECTION — today IS a Tier-1 blocker:** Advance Q2 2026 GDP releases today (Thu Jul 30, 8:30am ET), alongside June Core PCE and weekly jobless claims. Per TRADING-STRATEGY.md, "GDP Advance release day" is an explicit Tier-1 full-blackout item — **no new entries today**, regardless of Wednesday's urgency mandate or candidate quality. Wednesday's pre-market log incorrectly cleared today as blocker-free (it only checked held-name earnings and FOMC, not the econ calendar) — flagging and correcting now.
+- **Tomorrow (Fri Jul 31) is also blocked:** XOM reports Q2 earnings BMO — held-name Tier-1 blackout day. So both today and tomorrow are full blackout days; the Wednesday-urgency mandate (open ≥1 position) cannot be executed until Monday Aug 3 at the earliest.
+- **Earnings BMO today (not held):** Mastercard, Altria, Bristol-Myers Squibb, AB InBev, Southern Co, BTI, Exelon. None held or on the sector watchlist.
+- **Sector momentum YTD:** Energy +24.2% (strongest leader), Technology +16.2%, Industrials +14.0%, Real Estate +13.4%, Consumer Staples +10.1%, Materials +9.1%; Consumer Discretionary +0.7% (clear laggard). **Momentum-quadrant shift from last week:** Leading = Staples/Industrials/Materials/Energy; Improving = Real Estate/Utilities; Weakening = Health Care; **Lagging = Tech/Comm Services/Discretionary/Financials** — Tech has now rotated into the Lagging quadrant on short-term momentum despite a strong YTD return, consistent with the ongoing chip-sector rotation risk-off that stopped out AMD (Jul 27) and NVDA (Jul 28).
+- **Economic cycle stage:** Late-cycle — expansion intact but growth moderating, labor market softening, stagflation-lite risk (sub-trend growth, still-elevated inflation), ~20-30% consensus recession odds over 12 months.
+
+### Benzinga Signals
+24h lookback, 17 emails scanned: **BUY=0, SELL=0, HOLD=26.** No actionable signals today — all tickers HOLD (mostly low-confidence or no-mention). Benzinga: no actionable signals today.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 15+ consecutive sessions). Already escalated previously; not re-escalating (no new information).
+
+### Perplexity Validation — Held Positions
+**IWM ($290.00, -0.27%) — HOLD, thesis intact:** Small-cap rally continues, trading near 52-week highs (NAV YTD total return ~22%), no negative catalysts. Commentary continues to frame IWM as a key vehicle for a Fed-driven small-cap rotation. No thesis concern.
+
+**XOM ($156.27, +12.90%) — HOLD, thesis intact and strengthening into tomorrow's earnings:** Q2 report Friday Jul 31 (BMO). Management's own 8-K trading update points to upstream earnings up $3.5-3.9B sequentially on elevated crude; Wells Fargo raised PT to $158, Morgan Stanley raised to $137, Goldman reaffirmed Hold $157. Citi remains the outlier at $155 Neutral (cut from $175). Texas redomiciliation and continued Iran-driven oil risk premium are incremental positives. HWM-gain at 14.92%, still short of the +15% trigger — WAIT stands. Friday's earnings are the position's next real catalyst and also tomorrow's Tier-1 blackout day.
+
+### Trade Ideas
+No new entries possible today (Tier-1 GDP Advance blackout) or tomorrow (XOM earnings blackout). Watch items only:
+1. **XOM — hold, no action.** 14.92% HWM-gain, 0.08pts from the +15% tighten trigger — could fire intraday today or tomorrow on any further oil-driven high. Re-check at midday; if it fires, tighten automatically per rule (not a discretionary call).
+2. **IWM — hold, no action.** Thesis intact, no catalyst change.
+3. **Monday Aug 3 candidates (carried from Wednesday's sourcing, still valid, need refreshed price/entry/stop/target):** NVDA re-entry (thesis intact, no negative catalyst as of Wednesday) and XLI (Industrials, macro-supported, better diversification than a second Energy name). CVX remains a correlated-with-XOM alternative, lower priority. AMD/SOXX still flagged avoid pending clearer reversal of the chip-sector rotation — Tech's move into the Lagging momentum quadrant today reinforces staying out for now.
+
+### Risk Factors
+- **Today: Advance Q2 GDP + Core PCE + jobless claims (8:30am ET)** — Tier-1 blackout (GDP Advance explicitly named in strategy rules); two-sided risk for the whole market.
+- **Tomorrow: XOM earnings BMO (Fri Jul 31)** — held-name Tier-1 blackout, also XOM's next real fundamental catalyst; upside case is well-supported but not guaranteed.
+- **Both Tier-1 blackout days back-to-back** — the Wednesday-urgency mandate (≥1 new position) is now structurally deferred to Monday Aug 3. This is the second time an urgency mandate has slipped past its target day (see AMD/NVDA slots open since Jul 27/28) — no rule violation since Tier-1 always overrides, but deployment stays capped near 37% for at least 3 more sessions.
+- **VIX ~18-20, medium risk** — elevated but not alarming.
+- **Semiconductor/Tech rotation not resolved** — Tech dropped into the Lagging momentum quadrant this week; no fresh Benzinga SELL today (all HOLD), but no confirmation of stabilization either. NVDA re-entry candidate should be re-validated Monday, not assumed still-clear.
+- **Congress/Quiver Quant API still down** (401, since Jul 9, 15+ sessions) — already escalated, no new action needed.
+
+### Decision
+**HOLD — no new entries today or tomorrow (back-to-back Tier-1 blackouts: GDP Advance today, XOM earnings tomorrow).** Both positions (IWM, XOM) intact, no cut/tighten triggers hit. XOM sits at 14.92% HWM-gain, just 0.08pts from the +15% tighten trigger — watch closely at midday/EOD, tighten automatically and immediately if it fires (broker-executed, not discretionary). Wednesday's urgency mandate (open ≥1 position) is deferred to Monday Aug 3 — this is a correction to Wednesday's pre-market log, which missed today's GDP Advance release as a Tier-1 blocker. Week 14 count holds at 0/3. Monday's leading candidates remain NVDA re-entry and XLI, subject to re-validation and the 1.5:1 urgency R:R floor.
