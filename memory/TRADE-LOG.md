@@ -3952,3 +3952,35 @@ Deployment note (not asked as a question): cash 62.85% / deployed 37.15%, below 
 | Authorized by | Bot autonomous decision (Rule 14), this entry |
 
 ---
+
+**Market-open 2026-07-31 (Friday, Week 14 Day 5, XOM Earnings BMO):** No trades — XOM earnings BMO Tier-1 blackout today, per pre-market decision. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Equity $103,510.91 | Cash $65,225.69 (63.01%) | Deployed $38,285.22 (36.99%, 2 positions) | Week 14 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $293.51 | +$169.89 (+0.94%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $154.52 | +$2,092.92 (+11.63%) | 7% trail HWM $155.198 / stop $144.33414 (ffe9d7c4, tightened this morning per pre-market STEP 1B, unchanged since) |
+
+No losers cut (both positions well above -7%). No tighten trigger hit beyond this morning's autonomous XOM tighten (already executed pre-market, logged above). XOM trading -1.57% intraday post-earnings but stop not threatened. No new entries possible — Tier-1 blackout overrides deployment gap; Monday Aug 3 Wednesday-urgency mandate (≥1 new position) remains active. No ClickUp notification (no trade placed). No commit needed beyond this log update.
+
+---
+
+## 2026-07-31 — Midday Scan (Friday, Week 14 Day 5, XOM Earnings BMO)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $291.06 | +$17.99 (+0.10%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $154.03 | +$2,029.22 (+11.28%) | 7% trail HWM $155.37 / stop $144.4941 (ffe9d7c4, HWM ticked up from $154.22 placement, no manual change) |
+
+- **Losers cut:** None. IWM +0.10%, XOM +11.28% — both well above the -7% cut.
+- **Stop tightening:** None. XOM's HWM-based gain is 12.25% ($155.37 vs entry $138.420615) — well short of the +20% trigger for the next tighten (7%→5%); already tightened to 7% this morning ahead of earnings. Broker auto-updated HWM to $155.37 (new intraday high post-print) before the pullback to $154.03.
+- **Thesis check:** XOM reported Q2 earnings BMO — revenue beat big ($116.02B vs ~$109.94B consensus, +6-7%) but adjusted EPS missed slightly ($3.52 actual vs ~$3.54-3.65 consensus), a classic "beat but sell the news" reaction on expectations already priced in via prior 8-K guidance. Stock down ~1.9% intraday to $154.03. Fundamentals remain intact: net income $14.5B (more than doubled YoY), record Permian production, Q3 dividend raised to $1.03/share, $9.4B returned to shareholders in Q2. **Not a thesis break** — this is exactly the scenario the 7% tighten this morning was designed for; no further action needed. IWM flat intraday (+0.10%), no thesis concern.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4), Sell 62 IWM trailing_stop 10% GTC (4c0586cc) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- **Deployment:** ~37% deployed (2 positions), unchanged — Tier-1 blackout (XOM earnings) overrides any new-entry action today regardless of the open Wednesday-urgency mandate (deferred to Monday Aug 3).
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
