@@ -3984,3 +3984,25 @@ No losers cut (both positions well above -7%). No tighten trigger hit beyond thi
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Jul 31 — EOD Snapshot (Day 69, Friday — Week 14 Day 5)
+**Portfolio:** $103,491.93 | **Cash:** $65,225.69 (63.03%) | **Day P&L:** -$292.20 (-0.28%) | **Phase P&L:** +$3,491.93 (+3.49%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $291.17 | -0.49% | +$24.81 (+0.14%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $155.49 | -0.94% | +$2,219.02 (+12.33%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, HWM ticked up from $154.22 placement) |
+
+**Trades today:** None. XOM earnings BMO Tier-1 blackout blocked any new entries; no cuts, tightens, or thesis breaks triggered. Week 14 count: 0/3.
+
+**Notes:** Day 69, Friday, Week 14 Day 5. Account confirmed PA3GVPXBYBRB, matches AIS baseline. XOM reported Q2 earnings BMO — revenue beat big (~$116.02B vs ~$109.94B consensus) but adjusted EPS missed slightly ($3.52 vs ~$3.54-3.65 consensus), a "beat but sell the news" reaction; midday review confirmed fundamentals intact (net income more than doubled YoY, record Permian production, Q3 dividend raised to $1.03/share) — not a thesis break. Stock closed $155.49, -0.94% today, still +12.33% unrealized; the pre-market tighten to 7% (ahead of the print) is doing its job. XOM's HWM-based gain sits at 12.82% (HWM $156.16 vs entry $138.420615), down from 14.92% before the earnings-day pullback and well short of the next +20%→5% trigger. IWM closed -0.49%, thesis intact (small-cap rally story unchanged), no concern. No losers cut (both well above -7%). No new tightens placed. Cash 63.03% / deployed 36.97%, still below the 75% deployment floor and the 40% urgency threshold — Wednesday-urgency mandate (≥1 new position) carries forward to Monday Aug 3; NVDA re-entry and XLI remain the leading candidates from Wednesday's sourcing, both requiring re-validation (especially chip-sector rotation stabilization) before entry.
+
+**Action questions:**
+
+**Q: Enter NVDA re-entry or XLI Monday, or stay patient?**
+- Enter: puts idle cash to work — deployment has sat near 37% since Jul 28, and both candidates are pre-vetted from Wednesday's sourcing — adds risk if the chip-sector rotation hasn't fully stabilized (NVDA) or broader momentum fades (XLI)
+- Wait: dry powder stays available for a cleaner signal — Monday's pre-market re-validation may still say "not yet" — risks extending the sub-40% deployment stretch and missing the move if it runs without you
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
