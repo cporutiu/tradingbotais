@@ -587,6 +587,92 @@ _Rationale: +0.20% relative outperformance vs S&P in a mixed macro week is modes
 - Hold through FOMC: stop buffer 9.18% ($266.148 vs $292.95); if Warsh surprises dovish, IWM gaps up significantly; current +0.75% is a thin but real gain; let stop work
 - Exit before FOMC (Mon Jun 16): hot CPI 4.2% + PPI 6.4% = rate-cut thesis structurally impaired; Warsh hawkish base case; lock +0.75% small gain, free $18K for SOXX post-FOMC without IWM drag
 
+---
+
+## Week ending 2026-07-31
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $105,803.71 (Jul 27 AM pre-market / Week 13 end) |
+| Ending portfolio | $103,621.27 |
+| Week return | -$2,182.44 (-2.06%) |
+| S&P 500 week | +1.0% (SPX 7,411.98 Jul 24 → 7,489.72 Jul 31) |
+| Bot vs S&P | -3.06% |
+| Phase P&L | +$3,621.27 (+3.62% from $100,000 start) |
+| Trades | 2 (W:0 / L:2 / open:2) — 2 closed (AMD stop-out, NVDA stop-out); 0 new buys |
+| Win rate | 0% (0/2 closed trades) |
+| Best trade | XOM +13.42% unrealized (+$2,415.32) |
+| Worst trade | NVDA -5.36% (-$1,059.24 realized) |
+| Profit factor | N/A (0 winners, 2 losers) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| AMD | $516.645588 (Jul 20) | $505.290 (Jul 27) | -$386.08 (-2.20%) | 10% trailing stop, 3 tranches; HWM $561.46 breached; sector-wide semiconductor rotation, not company-specific; 7-day hold |
+| NVDA | $203.84 (Jul 9) | $192.92 (Jul 28) | -$1,059.24 (-5.36%) | 10% trailing stop breached; HWM $214.39; same Tech rotation family plus Burry disclosed short across NVDA/AMD/SOXX/Micron; thesis reconfirmed intact both days, stop triggered mechanically |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.769839 | $290.09 | -$42.15 (-0.23%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc) |
+| XOM | $138.420615 | $157.00 | +$2,415.32 (+13.42%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, tightened pre-earnings Jul 31 per Rule 14 autonomous decision) |
+
+### Sector Watchlist — Week 15 (Aug 3–7)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | — | NVDA (re-entry) | Thesis intact (Blackwell/Hopper demand, Vera Rubin ramp, China H200 re-entry reports); Fri SOXX rebound is an early stabilization signal — re-validate rotation has settled before entering; see Rule 10 question below |
+| 2 | Industrials | XLI | XLI | Macro-supported (ISM Manufacturing 54.0, 5th straight expansion month), technically strong (above all key MAs, RSI 66.76); no single-day catalyst, steady sector-strength signal; needs entry/stop/target computed |
+| 3 | Energy | XLE | XOM (held) | Hold to stop $145.2288; earnings beat on revenue/missed slightly on EPS, fundamentals intact (net income 2x YoY, record Permian output, dividend raised); no add, single Energy slot already large |
+| 4 | Materials/Macro | GLD/XLB | GLD | Non-computable analyst price target for 5th consecutive week; XLB fails R:R (valuation stretched, technical target already met); do not force |
+
+### What Worked
+- Both trailing stops did their job mechanically: AMD (-2.20%) and NVDA (-5.36%) stopped out cleanly on a sector-wide semiconductor rotation, containing losses without any emotional intervention
+- XOM remained the portfolio's alpha engine all week: +13.42% unrealized; the autonomous pre-earnings tighten to 7% (Rule 14, Friday morning) executed ahead of the BMO print and protected gains through a "beat revenue, miss EPS" sell-the-news reaction
+- Rule 14 (autonomous decision, don't carry a question a second day) resolved 5 separate calls correctly this week with zero user input: 3 weekly-review carryovers Monday, XOM WAIT calls Tue/Wed, XOM TIGHTEN call Friday
+- Correctly avoided any forced entry through a brutal 5-day blackout gauntlet (FOMC Tue-Wed, GDP Advance Thu, XOM earnings Fri) — zero rule violations despite constant pressure from the open Wednesday-urgency mandate
+- IWM held steady all week, thesis intact (small-cap rally, rate-cut-driven), no concerns
+
+### What Didn't Work
+- Deployment collapsed to 37% after both AMD and NVDA stopped out in the first two sessions and stayed there all week — 5th consecutive weekly close under the 75% floor (Jul10 74.4%, Jul17 54.98%, Jul24 72.44%, Jul31 37.0%)
+- The Wednesday-urgency mandate (≥1 new position by Thursday) was never executable — GDP Advance (Thu) and XOM earnings (Fri) hit back-to-back as Tier-1 blackouts, deferring it to Monday Aug 3 for the second time this month
+- Week 14 closed 0/3 trade slots used — the only activity all week was two stop-outs; zero new capital deployed
+- Bot underperformed the S&P by -3.06%, its worst relative week since the Jul 10 blackout-recovery week — driven by two same-week Tech stop-outs plus heavy blackout-driven idle cash
+- Materials/Macro slot failed the entry checklist for a 5th consecutive week (GLD still non-computable, XLB overvalued/target already met)
+- **AMD and NVDA both stopped out this week — 2 consecutive failed trades in the same sector (Technology).** Strategy rule 10 ("exit a sector after 2 consecutive failed trades") was not explicitly checked against this outcome before Friday's pre-market log queued NVDA re-entry as the #1 Monday candidate — flagged now, see Next-week Decisions
+
+### Key Lessons
+- A correlated sector-rotation event can claim multiple positions within 48 hours (AMD Jul 27, NVDA Jul 28) even when each stop works exactly as designed — 2 slots concentrated in one sector amplifies single-catalyst risk; worth weighing sector concentration, not just the 2-per-sector cap, when sizing Tech going forward
+- Tightening ahead of a scheduled, discrete catalyst (XOM's Friday earnings) rather than waiting for the mechanical trigger to fire mid-event is a pattern worth keeping — third time this has paid off (AMD 2026-05-25, NVDA 2026-05-14, XOM 2026-07-31)
+- A blackout-heavy week (3 Tier-1 days: FOMC, GDP Advance, held-name earnings) can strand deployment near 37% with zero legal path to fix it — this is a structural calendar constraint, not a discipline failure; the strategy correctly refused to force an entry, but the resulting under-deployment shouldn't be graded identically to under-deployment from inaction
+- Rule 10 (2 consecutive failed trades → exit the sector) has an unresolved literal-vs-spirit question: does a mechanical trailing-stop exit on macro sector rotation count the same as a fundamentally broken thesis? The rule's intent (candidate-freshness, applied to CAT/FCX) has always been about repeated R:R/thesis failures, not stop-outs on a still-intact thesis — but this is the first time actual trade losses (not candidate screens) have hit the 2-in-a-row threshold, and it wasn't explicitly reconciled before queuing NVDA as Monday's top candidate
+- XOM's pre-earnings 7% tighten validated itself within hours: the stock gapped down slightly post-print and the tighter stop preserved materially more gain than the stale 10% trail would have
+
+### Adjustments for Next Week
+- **Resolve the Rule 10 question before Monday's open** (see Next-week Decisions) — do not enter NVDA without an explicit call on whether 2 same-week Tech stop-outs trigger a sector cooldown
+- **XLI entry:** compute entry/stop/target and R:R this weekend so it's ready to execute Monday regardless of the Tech decision — Industrials diversifies away from the correlated rotation risk that hit both Tech positions this week
+- **Deployment priority:** 5 consecutive weeks under the 75% floor; Monday must make real progress — target ≥60% by Wednesday close via NVDA (if cleared) and/or XLI
+- **XOM:** hold to stop $145.2288; no add (already the portfolio's largest single position); watch for continued post-earnings drift before the next tighten decision
+- **Materials/Macro:** GLD remains non-computable for a 5th week; do not force a 3rd position into this slot without a genuinely new candidate
+
+### Overall Grade: C
+
+_Rationale: Mechanically sound — both stops executed correctly, Rule 14 autonomous decisions went 5-for-5, and no rule was bent to force an entry through an unusually blackout-heavy week. But real underperformance (-3.06% relative, the worst since the Jun/Jul outage), zero new capital deployed, deployment stuck at 37% for a 5th straight week, and an unresolved Rule 10 question (2 same-sector stop-outs) that should have been surfaced before queuing a same-sector re-entry. Discipline held; results and process completeness did not._
+
+### Next-week Decisions
+
+**Q: AMD and NVDA both stopped out this week — 2 consecutive failed trades in Technology. Does Rule 10 ("exit a sector after 2 consecutive failed trades") apply, or does it only cover candidate-screening failures (like CAT/FCX), not mechanical stop-outs on an intact thesis?**
+- Apply Rule 10, cooldown Tech: two stop-outs in the same sector in one week is exactly the pattern the rule exists to catch, regardless of whether each individual thesis was "intact" — pivot the open Tech slot to XLI (Industrials) instead; risk: missing a real NVDA rebound if the rotation has genuinely stabilized (Friday's SOXX rebound is an early signal)
+- Treat as inapplicable, re-enter NVDA: both exits were broker-mechanical trailing stops on a macro-wide rotation, not thesis breaks or failed R:R screens — Rule 10's intent (per its CAT/FCX precedent) targets repeated candidate/thesis failures, not correlated stop-outs; re-entering the same still-valid thesis isn't a "new failed trade" — risk: if the rotation resumes, this becomes a 3rd Tech loss in two weeks
+
+**Q: Deployment 37%, 5th consecutive week under the 75% floor, twice-deferred Wednesday-urgency mandate. Enter both NVDA (if cleared) and XLI Monday, or stagger one Monday and confirm the other mid-week?**
+- Enter both Monday: fastest path back toward the 75-85% band in one session, finally clears the twice-deferred mandate — risk: two new same-day entries right after a week with two stop-outs, no intervening re-validation session
+- Stagger (one Monday, confirm second mid-week): reduces one-day execution risk, lets Monday's open show whether last week's rotation/blackout volatility has settled — risk: extends the deployment gap another 2-3 sessions
+
+**Q: XOM is now the portfolio's largest position (+13.42%, ~20% of equity) and its only Energy exposure. Continue holding at full size, or take partial profits to reduce concentration?**
+- Hold full size: thesis intact (beat-but-sell-the-news, fundamentals strengthening), 7% stop already protects the gain, no reason to trim a working position — risk: single-name/sector concentration if oil reverses sharply
+- Take partial profits: locks in some of the +13.42% gain, reduces concentration in a thin 2-position book — risk: cutting a still-working thesis short, added execution complexity for a partial exit
+
 **Q: Deployment 53% with FOMC blackout Mon-Wed — enter SOXX alone Thu Jun 19, or SOXX + 1 other in same session?**
 - SOXX + 1 other Thu Jun 19: Restores deployment to ~90% in one session; post-FOMC is the clearest signal day; front-run before weekly close (Fri Jun 20 is first post-FOMC full session)
 - SOXX Thu only, stagger 2nd to Fri Jun 20: Reduces gap-up risk on most volatile post-FOMC day; allows one session to see how FOMC trades before committing second position; avoids chasing

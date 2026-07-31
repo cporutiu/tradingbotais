@@ -54,13 +54,13 @@ Default is **TRADE** when all of the following are true:
 - Each weekly review assigns a ranked sector watchlist + 1 candidate ticker per sector for the upcoming week; Monday pre-market must arrive with 2-3 live setups, not 1 idea and vague "watch X"
 
 ## Sector Watchlist (update each Friday in WEEKLY-REVIEW.md)
-See WEEKLY-REVIEW.md for the current week's live-researched watchlist (refreshed every Friday). As of Week 14 (Jul 27-31):
+See WEEKLY-REVIEW.md for the current week's live-researched watchlist (refreshed every Friday). As of Week 15 (Aug 3-7):
 | Priority | Sector | ETF | Candidate | Condition to Enter |
 |----------|--------|-----|-----------|-------------------|
-| 1 | Technology | XLK | AMD/NVDA (held) | Sector at 2-single-stock cap; no new tech buys until one exits |
-| 2 | Energy | XLE | XOM (held) | Hold to stop $142.839; earnings Thu Jul 31 = Tier-1 blackout that day |
-| 3 | Industrials | XLI | CAT | Abandoned per candidate-freshness rule (2 consecutive R:R failures) — do not re-add unless price pulls back or targets move up meaningfully |
-| 4 | Materials/Macro | GLD/XLB | GLD | FCX permanently abandoned (5+ R:R failures) — do not re-add; GLD has no computable price target, R:R exception still unresolved |
+| 1 | Technology | — | NVDA (re-entry) | AMD+NVDA both stopped out Jul 27/28 on sector rotation — Rule 10 (2 consecutive failed trades) question unresolved; do not enter until explicitly resolved (see WEEKLY-REVIEW.md Next-week Decisions) |
+| 2 | Industrials | XLI | XLI | Macro-supported (ISM Manufacturing 54.0), technically strong; needs entry/stop/target computed before entry |
+| 3 | Energy | XLE | XOM (held) | Hold to stop $145.2288; largest single position (~20% equity), no add |
+| 4 | Materials/Macro | GLD/XLB | GLD | FCX permanently abandoned (5+ R:R failures) — do not re-add; GLD has no computable price target for 5th consecutive week, R:R exception still unresolved |
 
 ## Entry Checklist
 - Specific catalyst?
