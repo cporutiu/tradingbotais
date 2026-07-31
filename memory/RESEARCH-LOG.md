@@ -5258,3 +5258,17 @@ No new entries possible today (Tier-1 GDP Advance blackout) or tomorrow (XOM ear
 
 ### Decision
 **HOLD — no new entries today or tomorrow (back-to-back Tier-1 blackouts: GDP Advance today, XOM earnings tomorrow).** Both positions (IWM, XOM) intact, no cut/tighten triggers hit. XOM sits at 14.92% HWM-gain, just 0.08pts from the +15% tighten trigger — watch closely at midday/EOD, tighten automatically and immediately if it fires (broker-executed, not discretionary). Wednesday's urgency mandate (open ≥1 position) is deferred to Monday Aug 3 — this is a correction to Wednesday's pre-market log, which missed today's GDP Advance release as a Tier-1 blocker. Week 14 count holds at 0/3. Monday's leading candidates remain NVDA re-entry and XLI, subject to re-validation and the 1.5:1 urgency R:R floor.
+
+## 2026-07-31 — Pre-Market Research (Friday, Week 14 Day 5, XOM earnings BMO)
+
+### Run BLOCKED — network egress outage
+- All three required external hosts rejected at the network gateway with 403 (policy denial, not a credentials issue): `paper-api.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com`.
+- Confirmed via agent-proxy status endpoint (`recentRelayFailures`): repeated `connect_rejected` / "gateway answered 403 to CONNECT" for all three hosts, ~10:02-10:03 UTC.
+- STEP 2 (live account/positions/orders pull) not possible — no account snapshot below, no equity/position confirmation against the AIS baseline (PA3GVPXBYBRB).
+- STEP 3 (Perplexity research) not possible; native WebSearch fallback not attempted since the blocking research is moot without a live account/position pull to act on.
+- STEP 5 (ClickUp notification) not possible — same 403 block. Escalated directly to the user via push notification instead.
+- **No trades placed, no memory data fabricated.** Per Reconnect Protocol (Rule 15) and CLAUDE.md account-isolation guardrails, no account/market data is invented when the API is unreachable.
+- **Decision: HOLD (forced, not evaluated)** — no new-entry decision was made either way; today is also XOM's own earnings Tier-1 blackout regardless, so no entry was possible today even with a working connection. Existing positions (IWM, XOM) carry their broker-side GTC trailing stops unchanged; those remain live at the broker independent of this outage.
+- **Next run:** if the midday/EOD routine also hits this block, apply Rule 15 (Reconnect Protocol) on the first run that regains connectivity — pull live positions/orders directly (don't trust the stale Jul 30 EOD log) and check every threshold (XOM +15%/+20% tighten, -7% cuts, thesis breaks) that should have applied during the gap before taking any new-entry action.
+
+---
