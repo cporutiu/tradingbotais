@@ -3938,3 +3938,17 @@ Deployment note (not asked as a question): cash 62.85% / deployed 37.15%, below 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+**Bot autonomous decision (2026-07-31):** Tighten XOM stop to 7%, or wait for the +15% trigger price? → TIGHTEN to 7% now, ahead of today's earnings. No user decision was logged by this morning's run, so resolving per Rule 14 (don't carry a question a second day). Today is XOM's Q2 earnings BMO (Tier-1 blackout day) — a discrete, hours-away catalyst, not another day of gradual drift like the prior 3 WAIT calls were based on. Pre-market XOM pulled back to $154.50 (-1.57%), HWM-gain still 14.92% (0.08pts short of the +15% trigger). Street consensus models a large beat (EPS ~$3.6-3.9 vs $1.64 y/y, upstream guidance raised twice) — largely priced in via guidance already, creating classic "beat but sell the news" gap risk on the actual print. Tightening now (matching the AMD 2026-05-25 / NVDA 2026-05-14 tighten pattern — cancel and replace with a fresh 7% trailing order) means if XOM pops on the print and sets a new high, the 7% trail locks in meaningfully more profit than the stale 10% trail would at the same high; if it drifts flat/down instead, the new stop is still marginally above the old one, never moved down.
+
+**XOM STOP TIGHTENED (10% → 7%):**
+
+| Action | Detail |
+|--------|--------|
+| Cancelled 10% stop | fff198e9-61ae-4c35-9a19-fdc7b852f097 — HWM $159.0722, stop $143.16498 — deleted |
+| New 7% stop placed | ffe9d7c4-16aa-4c10-85bc-36691cc9926e — sell 130sh XOM trailing_stop 7% GTC |
+| HWM (at placement) | $154.22 |
+| New stop | $143.4246 (locks in +3.62% from entry $138.420615, vs +3.43% under the old 10% stop) |
+| Authorized by | Bot autonomous decision (Rule 14), this entry |
+
+---
