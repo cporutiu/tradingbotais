@@ -4076,3 +4076,25 @@ No losers cut (both well above -7%). No new tighten triggers (IWM HWM-gain 4.11%
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Aug 3 — EOD Snapshot (Day 70, Monday — Week 15 Day 1)
+**Portfolio:** $103,741.69 | **Cash:** $65,225.69 (62.87%) | **Day P&L:** +$249.76 (+0.24%) | **Phase P&L:** +$3,741.69 (+3.74%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $296.10 | +1.68% | +$330.47 (+1.83%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $155.06 | -0.24% | +$2,163.12 (+12.02%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged) |
+
+**Trades today:** None. XLI entry skipped at market open — live re-validation found the pre-market reference price was wrong ($174.46 vs actual $179.84 Jul 31 close), and the correct R:R came in at 1.09:1, below the 1.5:1 urgency floor. Week 15 count: 0/3.
+
+**Notes:** Day 70, Monday, Week 15 Day 1. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Pre-market resolved three carried decisions autonomously: Rule 10 (Tech cooldown) applied — NVDA re-entry blocked, AMD still carries a live SELL signal and SOXX rotation isn't confirmed stable; XLI chosen as the sole Wednesday-urgency candidate; XOM held at full size (thesis intact, 7% stop already doing the work). XLI's planned entry then failed its own hard-check at market open due to the pre-market pricing error, so no trade fired today — Week 15 count stays 0/3. Both held positions had a quiet day: IWM +1.68% (small-cap rally continuing, near 52-week highs, thesis intact), XOM -0.24% (normal post-earnings drift, 7% trail still doing its job, HWM-gain 12.82%, ~7.2pts from the next +20% tighten trigger). No losers cut, no thesis breaks, no rule-trigger tightens. Deployment sits at 37.13% (62.87% cash), the 6th consecutive week under the 75% floor — the Wednesday-urgency mandate (≥1 new position) carries forward with no valid candidate in hand tonight (XLI failed R:R, NVDA excluded by Rule 10); tomorrow's pre-market needs to re-source XLI or the next-ranked sector pick with freshly verified live pricing before attempting entry again.
+
+**Action questions:**
+
+**Q: Re-attempt XLI (with freshly verified pricing) or source a new sector candidate at tomorrow's pre-market, or stay patient another day?**
+- Enter: puts idle cash to work — deployment has sat in the 36-37% range for 6+ weeks, and Industrials remain in the "Leading" relative-momentum quadrant — adds risk if tomorrow's re-verified R:R still falls short or the leading-sector read has shifted
+- Wait: avoids forcing a trade into a name that already failed one hard-check today — risks extending the sub-40% deployment stretch further if a clean setup doesn't emerge soon
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
