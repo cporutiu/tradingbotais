@@ -4031,3 +4031,48 @@ No "User decisions" block was found below the Jul 31 EOD entry. Three carried-ov
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-03 — Market-Open (Monday, Week 15 Day 1)
+
+**No trade — XLI entry skipped. Reason: pre-market reference price was wrong, and the correct live price fails the R:R hard-check.**
+
+- Pre-market plan priced XLI off a "$174.46 Jul 31 close" reference. Live re-validation (Alpaca quote + Perplexity/WSJ cross-check) confirms the **actual Jul 31 close was $179.84**, not $174.46 — the $174.46 figure appears to have been confused with the "$174-175 deeper support" level cited in the same research, not the close. Today's live ask is **$180.39** (WSJ/Investing.com corroborate ~$180-186 range) — a normal ~0.3% move from the true prior close, not the ~3.4% gap the wrong reference implied.
+- Recomputed at the correct entry price: stop (10% trail) = $162.35, risk = $18.04/share; target $200 (unchanged, based on the $197 Fibonacci-extension resistance from pre-market research), reward = $19.61/share → **R:R = 1.09:1**. Active urgency-protocol floor requires **≥1.5:1**. Fails by a wide margin — not a rounding-edge case.
+- No alternate target is supported by today's research (next resistance levels were $185.9 then the $197 extension; $200 already sits above both). Inventing a higher target to force the ratio would violate the entry checklist rather than satisfy it.
+- Per STEP 3 hard-check discipline and TRADING-STRATEGY.md's entry checklist (min R:R), **this trade is skipped today.** No position opened, no stop placed. Week 15 count remains 0/3.
+- **Flag for tomorrow's pre-market:** re-source a fresh Industrials entry (or next-ranked sector candidate) using verified live pricing before re-attempting XLI; do not reuse the $174.46/$200 pair. Wednesday-urgency mandate (≥1 new position, deployed <70% under urgency protocol) still applies and is now one day closer to the Wednesday deadline.
+
+**Live re-validation (Alpaca, market open):**
+- Equity $103,376.43 | Cash $65,225.69 (63.09%) | Deployed $38,150.74 (36.89%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $292.62 | +$114.71 (+0.64%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, confirmed live, unchanged) |
+| XOM | 130 | $138.420615 | $153.91 | +$2,013.62 (+11.19%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, confirmed live, unchanged) |
+
+No losers cut (both well above -7%). No new tighten triggers (IWM HWM-gain 4.11%, XOM HWM-gain 12.82% — both below the +15%/+20% thresholds). No thesis breaks. No new entries executed today.
+
+**Action taken:** None. No ClickUp notification (no trade placed, per STEP 7). No commit — no trades fired, per STEP 8.
+
+---
+
+## 2026-08-03 — Midday Scan (Monday, Week 15 Day 1)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $295.15 | +$271.57 (+1.51%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged — no new high today) |
+| XOM | 130 | $138.420615 | $155.31 | +$2,195.62 (+12.20%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged — no new high today) |
+
+- **Losers cut:** None. IWM +1.51%, XOM +12.20% — both well above the -7% cut.
+- **Stop tightening:** None. Neither position set a new intraday high (IWM current $295.15 < HWM $302.72; XOM current $155.31 < HWM $156.16), so both HWM-gains are unchanged from pre-market — IWM 4.11% (well below +15%), XOM 12.82% (below +15%, was already tightened to 7% ahead of Jul 31 earnings).
+- **Thesis check:** No thesis-break signals. XLI entry was skipped at market-open (bad R:R at correct live price — see market-open log) so no third position exists; deployment remains 2 positions. No sharp unexplained moves in either holding — IWM +1.36% intraday (small-cap rally continuing), XOM -0.08% intraday (flat, normal post-earnings drift). STEP 6 Perplexity check not warranted.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4), Sell 62 IWM trailing_stop 10% GTC (4c0586cc) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up. Equity $103,706.50 | Cash $65,225.69 (62.89%) | Deployed $38,480.81 (37.11%, 2 positions).
+- **Deployment:** ~37% deployed, unchanged from pre-market/market-open — today's Wednesday-urgency mandate entry (XLI) failed its R:R hard-check at market open and was not re-attempted intraday; per the market-open log, a fresh Industrials (or next-ranked sector) candidate should be re-sourced at tomorrow's pre-market rather than reused stale pricing.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks, no new entries. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
