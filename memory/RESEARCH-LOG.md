@@ -5320,3 +5320,21 @@ No new entries possible today — XOM earnings BMO Tier-1 blackout overrides dep
 
 ### Decision
 **HOLD — no new entries today (XOM earnings BMO Tier-1 blackout).** Both positions (IWM, XOM) intact. XOM's carried tighten-vs-wait question resolved autonomously as TIGHTEN (see STEP 1B) — 10% trail replaced with 7% trail ahead of today's earnings print to capture more upside-linked protection on a two-sided catalyst. IWM unchanged, thesis intact. Week 14 count holds at 0/3. Monday Aug 3's Wednesday-urgency mandate (open ≥1 position) remains active with NVDA re-entry and XLI as leading candidates, subject to re-validation and the 1.5:1 urgency R:R floor.
+
+---
+
+## 2026-08-03 — Pre-Market Research (Monday, Week 15 Day 1) — RUN FAILED, INFRA BLOCKER
+
+**STEP 1/1B (memory read):** Completed. No "User decisions" block found below the Jul 31 EOD entry — per Rule 14 the open question ("Enter NVDA re-entry or XLI Monday, or stay patient?") would normally resolve autonomously today using fresh pre-market data. **Not resolved — see below.**
+
+**STEP 2 (Alpaca account/positions/orders pull):** FAILED. All calls to `paper-api.alpaca.markets` returned 403 at the egress proxy layer (`connect_rejected`, "gateway answered 403 to CONNECT (policy denial or upstream failure)"), confirmed via the proxy status endpoint, not just the wrapper script. This is an organization network-policy block in this session's environment, not a credentials or account issue — API key prefix and endpoint (`paper-api.alpaca.markets`, consistent with AIS's paper account PA3GVPXBYBRB) both check out.
+
+**STEP 3 (Perplexity research):** FAILED. `api.perplexity.ai` also 403-blocked at the same egress proxy. No research queries ran.
+
+**STEP 5 (ClickUp notification):** FAILED. `api.clickup.com` also 403-blocked at the same egress proxy — the normal alert channel is itself unreachable this run.
+
+**No account snapshot, no market context, no trade ideas — none of STEP 2-5's required inputs were obtainable.** Per proxy guidance, 403 policy denials must be reported, not retried or routed around, and no fallback path exists for private account data (WebSearch fallback only covers STEP 3's research queries, not STEP 2's live positions/equity, which cannot be reconstructed from public sources).
+
+**Decision: HOLD — no trade action taken.** Did not attempt any order without live account/position confirmation, consistent with the Account Isolation rule ("if credentials/state look wrong, STOP and alert before placing any order") and Rule 15's reconciliation-before-action principle. The carried NVDA/XLI entry question from Jul 31 remains **unresolved** (not answered "no" — simply not evaluated) and should be the first thing the next successful run re-checks, alongside reconciling current positions/stops against the last-logged state per Rule 15 in case this gap extends.
+
+**Escalation:** ClickUp alert could not be sent (also blocked). User notified directly out-of-band. No memory files other than this entry were touched; no orders were placed or modified.
