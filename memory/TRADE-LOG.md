@@ -4006,3 +4006,28 @@ No losers cut (both positions well above -7%). No tighten trigger hit beyond thi
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-03 — Pre-Market: Autonomous Decisions (Monday, Week 15 Day 1)
+
+No "User decisions" block was found below the Jul 31 EOD entry. Three carried-over questions (one from the Jul 31 EOD action question, two from the Jul 31 weekly review's Next-week Decisions) are resolved autonomously per Rule 14, using today's live pre-market data.
+
+**Bot autonomous decision (2026-08-03):** AMD and NVDA both stopped out Jul 27/28 in Technology — does Rule 10 ("exit a sector after 2 consecutive failed trades") apply, blocking NVDA re-entry? → **APPLY Rule 10 — Tech cooldown stands, do NOT re-enter NVDA. Pivot the open slot to XLI (Industrials) instead.** — Today's live data does not show a clean stabilization: Benzinga still carries a same-day medium-confidence SELL on AMD (score -2) alongside SOXX's high-confidence SELL context, and independent Perplexity research on SOXX describes the current tape as "a high-volatility regime... both sharp reversals and renewed selloffs are plausible," not a confirmed bottom — inflows have resumed but the setup remains fragile pending hyperscaler capex guidance. Rule 10's plain language ("exit a sector after 2 consecutive failed trades") doesn't carve out an exception for mechanical stop-outs vs. thesis breaks, and two same-week Tech stop-outs is exactly the concentrated-risk pattern the rule exists to catch. NVDA itself still carries a Benzinga high-confidence BUY and Strong Buy analyst consensus with no company-specific negative catalyst — the thesis isn't broken, but the sector-level rotation risk that caused the stop-outs isn't confirmed resolved either. This also resolves the Jul 31 EOD action question ("Enter NVDA re-entry or XLI Monday, or stay patient?") in the same direction: enter XLI, not NVDA.
+
+**Bot autonomous decision (2026-08-03):** Deployment 36.87% (5th+ consecutive week under the 75% floor), Wednesday-urgency mandate due today with no Tier-1 blocker — enter both NVDA (if cleared) and XLI, or stagger? → **Enter XLI only today; do not force a second position.** With NVDA excluded via Rule 10 above, XLI is the only fully-vetted candidate today (CAT/FCX permanently abandoned, GLD non-computable for 5+ weeks). Forcing an unvetted second name into the slot just to accelerate deployment would violate the entry checklist's catalyst/R:R requirements. One clean entry satisfies today's Wednesday-urgency mandate (no Tier-1 blocker: ISM Manufacturing PMI at 10am ET is explicitly Tier-2, and Tier-2 blockers don't apply under the active urgency protocol anyway).
+
+**Bot autonomous decision (2026-08-03):** XOM is the portfolio's largest position (~19-20% of equity, +10.7% unrealized, HWM-gain 12.82%) and only Energy exposure — hold full size or take partial profits to reduce concentration? → **Hold full size, no trim.** Thesis remains intact (Q2 "beat but sell the news" was a big revenue beat/slight EPS miss, not a fundamental deterioration; net income and Permian production both record/near-record). The 7% trailing stop already tightened ahead of earnings is actively managing downside risk mechanically. TRADING-STRATEGY.md has no rule for discretionary partial profit-taking on a working position — cutting a still-intact thesis to manage concentration isn't a defined mechanism in the rulebook, and the sector cap (ETFs excluded, ≤2 single stocks per sector) is not violated by holding one Energy stock at size.
+
+**XLI entry plan (ready for market-open execution):**
+| Field | Value |
+|-------|-------|
+| Ticker | XLI (Industrial Select Sector SPDR ETF) |
+| Reference price (Jul 31 close) | $174.46 |
+| Target size | ~18% of equity ($103,329.45) ≈ $18,600 → **107 shares** at market open |
+| Stop | 10% trailing GTC, placed immediately on fill |
+| Target | ~$200 (1.5:1 R:R per active urgency protocol floor; requires clearing resistance at $185.9 then the $197 Fibonacci extension) |
+| Catalyst | Industrials in the "Leading" relative-momentum quadrant (with XLP/XLB/XLE) per two independent Perplexity reads; ISM Manufacturing PMI (Tier-2, today 10am ET) is the live near-term catalyst, prior read 54.0 (expansion); XLI confirmed above its 50-day MA in an uptrend (Tickeron), though short-term overbought |
+| Sector cap check | XLI is an ETF — does not count toward the 2-stock sector cap; portfolio spans Energy (XOM) + Industrials (XLI) + broad-market (IWM) ≥ 2 sectors, satisfied |
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---

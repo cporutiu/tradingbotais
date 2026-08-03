@@ -5320,3 +5320,79 @@ No new entries possible today — XOM earnings BMO Tier-1 blackout overrides dep
 
 ### Decision
 **HOLD — no new entries today (XOM earnings BMO Tier-1 blackout).** Both positions (IWM, XOM) intact. XOM's carried tighten-vs-wait question resolved autonomously as TIGHTEN (see STEP 1B) — 10% trail replaced with 7% trail ahead of today's earnings print to capture more upside-linked protection on a two-sided catalyst. IWM unchanged, thesis intact. Week 14 count holds at 0/3. Monday Aug 3's Wednesday-urgency mandate (open ≥1 position) remains active with NVDA re-entry and XLI as leading candidates, subject to re-validation and the 1.5:1 urgency R:R floor.
+
+---
+
+## 2026-08-03 — Pre-Market Research (Monday, Week 15 Day 1)
+
+**Urgency protocol active:** Deployed has closed below 75% for 5+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed.
+
+### STEP 1B — Pending decisions resolved
+No "User decisions" block was found below the Jul 31 EOD entry. Three carried-over questions (Jul 31 EOD action question + two from the Jul 31 weekly review's Next-week Decisions) resolved autonomously per Rule 14 — full rationale in TRADE-LOG.md under "Bot autonomous decision (2026-08-03)":
+1. **Rule 10 (Tech cooldown) applies** — do not re-enter NVDA; today's Benzinga/SOXX data shows a bounce but not a confirmed stabilization (AMD still carries a live medium-confidence SELL; SOXX described as "high-volatility... both sharp reversals and renewed selloffs are plausible").
+2. **Enter XLI only today** — NVDA excluded above, no second candidate is fully vetted (CAT/FCX abandoned, GLD non-computable 5+ weeks); one clean entry satisfies today's Wednesday-urgency mandate.
+3. **XOM: hold full size, no partial profit-taking** — thesis intact, 7% trailing stop already manages downside mechanically, no rulebook mechanism for discretionary trims.
+
+Full XLI entry/stop/target plan logged in TRADE-LOG.md, ready for market-open execution.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,329.45 | Cash: $65,225.69 (63.13%) | Deployed: $38,103.76 (36.87%, 2 positions) | Buying power: $367,593.29 | Week 15 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $293.31 | +$157.49 (+0.87%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $153.21 | +$1,922.62 (+10.68%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged) |
+
+No -7% cut hit on either position. XOM continuing its post-earnings drift down (-1.4% since Friday close) but still 5.2% above its stop; not a thesis break (see Perplexity validation below). IWM near 52-week highs, thesis intact. Both stop orders confirmed live and correctly attached.
+
+### Market Context
+- **Oil:** WTI ~$71-74, Brent ~$75-78 — stable vs. last week, no fresh escalation/de-escalation headline.
+- **S&P 500 futures:** Modestly higher premarket (+0.3-0.6%), positive bias driven by Amazon's blowout AWS growth (+37% y/y) reviving the AI-infrastructure trade; carried into Asia (Japan, South Korea gains).
+- **VIX:** ~19.3 (Investing.com live read; other feeds noisy/stale). **Market risk flag: medium.**
+- **No Tier-1 blocker today:** No CPI/PPI/FOMC/NFP scheduled. Today's only notable US release is **ISM Manufacturing PMI (July) at 10:00 AM ET** — explicitly a Tier-2 item per strategy rules (watchful, not blackout), and Tier-2 blockers don't apply under the active urgency protocol regardless. JOLTS is tomorrow (Tue), NFP is Friday Aug 7, next CPI is Aug 12.
+- **Earnings BMO today (not held):** Marriott (MAR), Tyson Foods (TSN) — neither on the sector watchlist. Palantir (PLTR) reports AMC — not held, but a broad sentiment driver given its AI-valuation profile.
+- **Sector momentum:** Energy, Materials, Consumer Staples, Industrials lead YTD (absolute returns +14% to +24%); Financials, Consumer Discretionary, Technology, Communication Services lag. Relative-momentum quadrant view (two independent sources) confirms: **Leading = XLP, XLI, XLB, XLE; Weakening = XLV; Lagging = XLK, XLC, XLY, XLF; Improving = XLRE, XLU.** Tech remains in the Lagging quadrant on relative strength despite a still-positive YTD return in some readings — consistent with the ongoing chip-sector rotation risk that stopped out AMD/NVDA in late July.
+- **Economic cycle stage:** Late-cycle — unemployment has risen for 33 months from trough (a historically recession-associated pattern) even as GDP stays positive; consensus 12-month recession odds ~20-30%.
+- **RS ranking note:** The direct Perplexity RS-ranking query returned a malformed/duplicated list (SOXX ranked #1 strongest, XLI listed at both #4 and #20) and was discarded as unreliable; market-intel.json's `rs_ranking` field instead uses the more consistent relative-momentum quadrant ordering from the sector-momentum research above.
+
+### Benzinga Signals
+72h lookback (Monday), 28 emails scanned: **BUY=4, SELL=3, HOLD=19.**
+- **BUY (high):** SPY (score 6, 11 mentions) — broad market ETF outlook piece, not a standalone actionable signal (not held, no sector-specific catalyst).
+- **BUY (medium):** QQQ (score 2) — Tech-heavy, remains in the Lagging momentum quadrant; not actioned.
+- **BUY (medium):** IWM (score 2) — held position, confirms thesis, no action needed beyond hold.
+- **BUY (high):** NVDA (score 4, 6 mentions) — re-entry candidate; addressed in STEP 1B (Rule 10 applied, not re-entered despite the bullish signal).
+- **SELL (high):** SOXX (score -18, 10 mentions) — not held; confirms chip-sector fragility, see STEP 1B rationale.
+- **SELL (medium):** AMD (score -2, 3 mentions) — not held (stopped out Jul 27); reinforces the Rule 10 cooldown decision.
+- **SELL (medium):** AVGO (score -2, 1 mention) — not held, not a candidate; consistent with the same semiconductor-fragility theme.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 20+ consecutive sessions). Already escalated previously; not re-escalating (no new information, no confluent-signal cross-check possible today).
+
+### Perplexity Validation — Held Positions
+**IWM ($293.31, +0.87%) — HOLD, thesis intact:** Near 52-week highs (+18.75-22% YTD), bullish case tactically supported by both macro (labor resilience, Fed rate-cut expectations, institutional inflows into IWM/VTWO) and technicals (above 50-day MA, momentum indicator positive since mid-June). Medium-term risk flagged by multiple analysts (small-cap profitability concerns — nearly half of small/midcaps unprofitable — and Fed-disappointment risk) but no new deterioration today. No thesis concern.
+
+**XOM ($153.21, -1.4% since Friday close) — HOLD, not a thesis break:** Continued post-earnings digestion of the Jul 31 "beat but sell the news" print (revenue beat ~21%, adjusted EPS $3.52 missed ~$3.60-3.68 consensus by ~4%). No new negative catalyst found today — this is normal earnings-week drift, not a fundamentals change. Company still posted its highest quarterly profit in 4 years with record Permian production. 7% trailing stop (tightened pre-earnings) continues to do its job; 5.2% buffer to stop remains. HWM-based gain 12.82%, short of the +20% next-tighten trigger.
+
+**NVDA (Benzinga high BUY, not held) — Rule 10 applied, not re-entered:** Analyst consensus remains emphatically Strong Buy (91-97% Buy/Strong Buy, PT avg ~$300-314), bull case is fundamentals-driven (AI capex, order book, networking growth) rather than macro/flow-driven. Sector rotation context: SOXX has bounced off its worst 2-day drop in over a year but the setup is still described as fragile/high-volatility, not a confirmed bottom; large semiconductor-ETF inflows have resumed ($8.5B into SOXX over the past month) but AMD (the other stopped-out name) still carries a live SELL signal today. Not clean enough to override Rule 10.
+
+**XLI (new entry candidate, not held) — cleared for market-open entry:** Industrials sit in the "Leading" relative-momentum quadrant alongside Staples/Materials/Energy. ISM Manufacturing PMI (today, 10am ET) is the live catalyst; prior read was 54.0 (expansion). Technical support clusters at $181-182 (near-term) / $174-175 (deeper); resistance at $182.5-185.9 then $197 (Fibonacci extension). XLI confirmed above its 50-day MA (uptrend) per Tickeron, though short-term overbought (pullback risk near-term, not a blocker for a swing entry with a mechanical trailing stop).
+
+### Trade Ideas
+1. **XLI — BUY at market open.** ~107 shares (~18% of equity) at ~$174.46 reference, 10% trailing stop GTC immediately on fill, target ~$200 (1.5:1 R:R under the active urgency floor). Satisfies today's Wednesday-urgency mandate. Full plan in TRADE-LOG.md.
+2. **XOM — hold, no action.** Thesis intact through post-earnings drift; watch for stabilization over the next 1-2 sessions.
+3. **IWM — hold, no action.** Thesis intact, no catalyst change.
+4. **NVDA — explicitly not entered today** (Rule 10 cooldown). Re-evaluate for a future Tech re-entry only if AMD's Benzinga signal clears to HOLD/BUY and SOXX shows two consecutive sessions of confirmed stabilization.
+
+### Risk Factors
+- **ISM Manufacturing PMI (10am ET)** — Tier-2, not a blackout, but could move Industrials/broad market sharply either direction right after XLI's entry this morning.
+- **Palantir earnings AMC today** — not held, but a high-profile AI-valuation bellwether; could drive broad Tech/AI sentiment swings after today's close.
+- **VIX ~19.3, medium risk** — elevated but not alarming.
+- **Chip-sector rotation still unresolved** — AMD carries a live medium SELL today; NVDA re-entry remains explicitly deferred pending two consecutive sessions of confirmed stabilization.
+- **XOM concentration** — largest single position (~19-20% of equity), sole Energy exposure; held at full size per today's autonomous decision, watch for any fresh negative catalyst.
+- **Congress/Quiver Quant API still down** (401, since Jul 9, 20+ sessions) — already escalated, no new action needed.
+- **NFP Friday Aug 7** — Tier-1 blackout day approaching later this week; flag for Thursday's pre-market as a new-entry blocker.
+
+### Decision
+**TRADE — enter XLI at market open** (Wednesday-urgency mandate, no Tier-1 blocker, urgency protocol R:R floor 1.5:1 satisfied). Rule 10 Tech cooldown applied — NVDA explicitly not re-entered despite today's Benzinga BUY signal; sector rotation not yet confirmed stable. XOM and IWM both hold unchanged, theses intact. XOM held at full size, no partial profit-taking. Week 15 count will be 1/3 upon XLI fill at open.
