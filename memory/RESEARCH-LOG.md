@@ -5396,3 +5396,34 @@ Congress: no actionable signals — Quiver Quant API still returning 401 Unautho
 
 ### Decision
 **TRADE — enter XLI at market open** (Wednesday-urgency mandate, no Tier-1 blocker, urgency protocol R:R floor 1.5:1 satisfied). Rule 10 Tech cooldown applied — NVDA explicitly not re-entered despite today's Benzinga BUY signal; sector rotation not yet confirmed stable. XOM and IWM both hold unchanged, theses intact. XOM held at full size, no partial profit-taking. Week 15 count will be 1/3 upon XLI fill at open.
+
+---
+
+## 2026-08-04 — Pre-Market Research (Tuesday, Week 15 Day 2) — BLOCKED: outbound API connectivity down
+
+**Run could not complete STEP 2 (live account/positions/orders pull) or STEP 5 (ClickUp notify). No trade decision is possible without live account state.**
+
+### Diagnosis
+All three wrapper-script API hosts are unreachable this session — the outbound egress proxy returns `403` / "policy denial" on `CONNECT` for each:
+- `paper-api.alpaca.markets` (scripts/alpaca.sh account/positions/orders) — confirmed via `$HTTPS_PROXY/__agentproxy/status`: `recentRelayFailures` shows repeated `connect_rejected — gateway answered 403 to CONNECT (policy denial or upstream failure)`.
+- `api.perplexity.ai` (scripts/perplexity.sh) — same 403/CONNECT failure.
+- `api.clickup.com` (scripts/clickup.sh) — same 403/CONNECT failure; the routine's own alert channel is down, so STEP 5 could not fire either.
+
+Per the environment's proxy README: this is an organization egress-policy denial, not a transient error — "do not retry or route around it, report the blocked host." Env vars themselves are all present and correctly shaped (ALPACA_ENDPOINT correctly points at `paper-api.alpaca.markets`, matching the AIS paper account, not a credential mix-up — this is a network-layer block, not an auth or account-identity problem).
+
+Native WebSearch (a separate tool path, not subject to this proxy) does still work and was used for general market color only (below) — but it cannot substitute for STEP 2's live account/position pull, so no account snapshot, no stop-status check, and no trade/tighten/cut decision can be made safely today.
+
+### Market context (WebSearch only, informational — NOT a substitute for live account verification)
+- S&P 500 futures modestly higher pre-market Tuesday (+~0.2%), continuing Monday's gains; Polymarket implied ~77% probability of a higher open, sentiment supported by lower oil easing inflation concerns and strong earnings reinforcing the AI trade (Benzinga).
+- AMD, Palantir, McDonald's in earnings/sentiment focus today per pre-market coverage.
+- This is directional color only — no position-specific or account-specific verification was possible.
+
+### Decision
+**HOLD — no new entries, no stop changes, no account actions today.** Cannot verify current equity, cash, deployment %, open positions, or live stop-order state — placing or modifying any order without that verification would violate the pre-trade checklist and Rule 15's reconnect-protocol intent (verify live state before acting). Week 15 trade count and Wednesday-urgency mandate status carry forward unverified from the last confirmed snapshot (Aug 3 EOD: 2 positions / IWM, XOM / ~37% deployed / 0/3 trades) until the next run confirms live state.
+
+### Flag for next run
+- Retry STEP 2 (Alpaca) and STEP 3/5 (Perplexity/ClickUp) connectivity first thing — do not skip straight to trade logic even if account data becomes reachable, per Rule 15 (reconnect protocol): reconcile live positions/orders against the last logged state and check every tighten/cut threshold before any new-entry action, since Tuesday's session was a full blackout with no state verification at all.
+- If connectivity is restored only for some hosts (e.g. Alpaca back but ClickUp still down), still write the full RESEARCH-LOG entry and commit — do not let a ClickUp outage block account verification or trade logic.
+- User/session-owner should check the outbound network policy for this environment — `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` are all currently denied at the egress gateway, blocking this scheduled routine entirely.
+
+**Account confirmed:** Not verifiable this run — connectivity blocked, no credential mismatch evidence (endpoint config is correct for AIS paper account PA3GVPXBYBRB).
