@@ -4149,3 +4149,25 @@ No "User decisions" block found below the Aug 3 EOD entry. One unanswered action
 **Commit:** memory/TRADE-LOG.md and memory/RESEARCH-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Aug 4 — EOD Snapshot (Day 71, Tuesday — Week 15 Day 2)
+**Portfolio:** $103,957.73 | **Cash:** $65,225.69 (62.75%) | **Day P&L:** +$216.04 (+0.21%) | **Phase P&L:** +$3,957.73 (+3.96%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $301.87 | +1.91% | +$688.21 (+3.82%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $153.97 | -0.70% | +$2,021.42 (+11.23%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged) |
+
+**Trades today:** None. Pre-market stayed patient (XLI failed 1.5:1 urgency R:R again on verified data, no other vetted candidate). No entry attempted at market-open or midday. Week 15 count: 0/3.
+
+**Notes:** Day 71, Tuesday, Week 15 Day 2. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Quiet day for both holdings — IWM +1.91% (small-cap rally continuing, no new HWM, thesis intact) and XOM -0.70% (flat post the midday-resolved oil selloff/de-escalation headline noise, thesis intact, 4.2%+ buffer above its 7% stop). No losers cut, no tighten triggers hit (XOM's HWM-gain 12.82% remains below the +20% trigger for its next tighten to 5% — it was already moved to 7% ahead of Jul 31 earnings, so the +15% trigger is moot), no thesis breaks. Deployment stayed flat at 37.25% cash-adjusted (62.75% cash) — the 6th+ consecutive week under the 75% floor. XLI remains structurally hard to clear the urgency R:R floor with a 10% stop absent a real breakout above its 52-week high $186.45; no alternate candidate is vetted yet. Tomorrow's pre-market re-evaluates NVDA's Rule 10 Tech-cooldown using tonight's AMD AMC earnings as the most likely path to a valid new entry.
+
+**Action questions:**
+
+**Q: Wait for tomorrow's NVDA Rule 10 re-evaluation (post-AMD earnings tonight) as the deployment path, or keep sourcing a fresh non-Tech sector candidate in parallel?**
+- Wait on NVDA: AMD's print may finally clear the Tech cooldown and unlock a vetted, higher-conviction candidate — deployment stays under 75% for at least one more day if AMD disappoints
+- Source in parallel: doesn't bet the whole plan on one earnings print — risks another day spent chasing candidates (XLI, CAT, FCX) that have already failed R:R or been abandoned
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
