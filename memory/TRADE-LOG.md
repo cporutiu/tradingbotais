@@ -4171,3 +4171,13 @@ No "User decisions" block found below the Aug 3 EOD entry. One unanswered action
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-05 — Pre-Market: Autonomous Decision (Wednesday, Week 15 Day 3)
+
+No "User decisions" block found below the Aug 4 EOD entry. One unanswered action question resolved autonomously per Rule 14:
+
+**Bot autonomous decision (2026-08-05):** Wait for NVDA Rule 10 re-evaluation (post-AMD earnings) as the deployment path, or source a fresh non-Tech candidate in parallel? → **Rule 10 Tech cooldown STAYS ACTIVE — do not re-enter NVDA; source non-Tech only.** → AMD beat both revenue (~$11.5B vs ~$11.25B consensus) and EPS (~$1.66 vs ~$1.60) on its Aug 4 BMO print, but the stock still sold off ~7-9% because Q3 gross-margin guidance was flat at ~56% with no expansion — a fresh disappointment, not the "two consecutive sessions of confirmed stabilization" the cooldown requires. Perplexity explicitly found no analyst consensus yet calling semi-sector rotation resolved. Benzinga flipped NVDA/AMD/SOXX to medium BUY today, but all three are generic single-mention +2 scores that don't square with AMD's actual post-earnings drop — treated as low-conviction, not overriding. Non-Tech search: **XLI re-checked and still fails.** Live technicals show XLI testing (not confirming) its 52-week high $186.45 resistance — support $185.0-185.2, resistance $186.0-186.45, RSI 57-58 (bullish but not a breakout). A 10% mandatory stop against that ceiling still produces the same sub-1:1 R:R problem as Aug 3/4. **CAT explicitly not re-attempted** — it is formally abandoned per the Jul-week rule (failed R:R twice, same broad-consensus-vs-outlier-target problem, abandoned like FCX; re-entry requires a real pullback or target revision). Today's research also surfaced a live pricing conflict for CAT (Alpaca bid $842.41 vs. Perplexity-reported ~$963-965, with Perplexity's own CAT query self-contradicting on whether Q2 earnings had even occurred yet) — too unreliable to act on regardless of the abandonment rule. No valid non-Tech candidate found. Week 15 count stays 0/3.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---

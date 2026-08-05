@@ -5455,3 +5455,75 @@ No new entries today — XLI fails R:R on verified data, no other vetted candida
 ## 2026-08-04 — Midday Addendum (Tuesday, Week 15 Day 2)
 
 **STEP 6 — XOM oil watch item, per pre-market flag.** Perplexity check (recency: day): confirms the US-Iran de-escalation oil selloff was real — Brent -7%, WTI -5.1% intraday on Iran-talks optimism (Trump reportedly postponed a strike, talks to resume) — but oil rebounded intraday as talks remained uncertain, a selloff-then-bounce pattern rather than sustained one-way move. No ExxonMobil-specific operational or earnings news found; only adjacent item is Trump publicly urging oil majors to cut fuel prices (political rhetoric, not a company-specific catalyst). XOM's live price action corroborates: -0.38% intraday, essentially flat, no outsized damage from the selloff. **Conclusion: thesis intact, no action.** Full position detail logged in TRADE-LOG.md under "2026-08-04 — Midday Scan".
+
+---
+
+## 2026-08-05 — Pre-Market Research (Wednesday, Week 15 Day 3)
+
+**Urgency protocol active:** Deployed has closed below 75% for 7+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed (today is that Wednesday check).
+
+### STEP 1B — Pending decision resolved
+No "User decisions" block found below the Aug 4 EOD entry. One unanswered action question resolved autonomously per Rule 14 — **Rule 10 Tech cooldown stays active, no NVDA re-entry; no valid non-Tech candidate found either.** Full rationale in TRADE-LOG.md under "Bot autonomous decision (2026-08-05)". Summary: AMD beat revenue/EPS Aug 4 BMO but sold off ~7-9% on flat Q3 gross-margin guidance — a fresh disappointment, not confirmed stabilization. XLI re-checked, still testing (not confirming) its 52-week-high resistance $186.45 — same sub-1:1 R:R problem as the prior two days. CAT not re-attempted (formally abandoned + today's CAT pricing data was internally contradictory, see below). Week 15 count stays 0/3.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,969.47 | Cash: $65,225.69 (62.74%) | Deployed: $38,743.78 (37.27%, 2 positions) | Buying power: $369,385.34 | Week 15 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $302.29 | +$714.25 (+3.96%) | 10% trail HWM $302.72 / stop $272.448 (4c0586cc, unchanged — no new high) |
+| XOM | 130 | $138.420615 | $153.86 | +$2,007.12 (+11.15%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged — no new high) |
+
+No -7% cut hit on either position. No new tighten triggers: IWM HWM-gain 4.11% (below +15%), XOM HWM-gain 12.82% (below +20%, already tightened to 7% ahead of Jul 31 earnings). Both stop orders confirmed live and correctly attached.
+
+### Market Context
+- **Oil:** Sharp two-session drop on US-Iran de-escalation / Hormuz-reopening hope — WTI mid-$70s to low-$70s (cluster ~$71-73), Brent ~$75-78, down from last week's levels. Same theme driving today's broad risk-on tape.
+- **S&P 500 futures:** Modestly positive premarket (+0.2-0.6%), but the underlying story is that Tuesday's cash session already closed at fresh records (S&P +1.8% to a record close >7,700, Dow first close above 54,000, Nasdaq +2.59%) — today's premarket is a continuation, not the catalyst itself.
+- **VIX:** ~15.85 (most consistent live read; several other feeds stale/conflicting). **Market risk flag: low** (first low-risk read since this log started tracking VIX in the medium 18-19 band).
+- **No Tier-1 blocker today:** No CPI/PPI/FOMC/NFP. Only release is **ISM Services PMI (10am ET)** — Tier-2, doesn't block entries and doesn't apply under the active urgency protocol anyway. **NFP Friday Aug 7 is now 2 sessions away — Tier-1 blackout, flag for Thursday's pre-market as a hard blocker check.**
+- **Top catalysts:** US-Iran Hormuz de-escalation hope (dominant macro driver, compressing oil/bond risk premia); broad AI/tech earnings beats — Palantir +29-30% on raised guidance, Caterpillar beat plus raised FY26 guidance (Industrials), Philadelphia Semiconductor Index +7% (ARM +17%, Intel/Sandisk +10%+); AMD -7-9% after its print on flat margin guidance despite beating on revenue/EPS; Nvidia +2%+ post-market on Vera Rubin chip commentary; SpaceX -7-7.5% on AI-capex/cash-burn concerns (first public-company earnings).
+- **Earnings BMO today (not held):** LLY, NVO, DIS, SHOP, UBER, CVS, KHC, CG, NYT — none on the sector watchlist, no held-position blackout triggered.
+- **Sector momentum:** Two independent reads again agree on the relative-momentum quadrant: **Leading = XLP, XLI, XLB, XLE; Weakening = XLV; Lagging = XLK, XLC, XLY, XLF; Improving = XLRE, XLU.** Absolute YTD leaders: Energy, Technology, Industrials, Materials. Industrials (XLI) remains in the Leading quadrant for the 3rd straight session.
+- **Economic cycle stage:** Late-cycle, unchanged — unemployment drifting up for 33 months without recession alongside positive GDP; consensus 12-month recession odds ~20-30%.
+- **RS ranking note:** Direct Perplexity RS-ranking query returned an inconsistent list again (ranked XLK #1 strongest despite XLK sitting in the Lagging quadrant on every other read today) — discarded as unreliable per established practice; market-intel.json uses the quadrant-consistent ordering instead.
+
+### Benzinga Signals
+24h lookback, 25 emails scanned: **BUY=11, SELL=0, HOLD=15** — first all-BUY/no-SELL day this log has seen; consistent with today's broad risk-on tape.
+- **BUY (high):** AVGO (score +4, 2 mentions) — not held, not a vetted candidate.
+- **BUY (medium, all single-mention +2 scores):** QQQ, XLF, XLU, XLI, XLB, IWM (held), SOXX, NVDA, CAT, AMD.
+- XLI's BUY signal is notable given it's the leading watchlist candidate, but Perplexity's live technical check (below) still shows it testing resistance, not breaking out — signal noted, not acted on alone.
+- NVDA/AMD/SOXX all flipping to BUY looks like generic bullish-tape sentiment scoring, not earnings-specific — contradicted by AMD's actual ~8% post-earnings drop (see Perplexity validation below). Not treated as confirmation for Rule 10.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 22+ consecutive sessions). Already escalated previously; not re-escalating.
+
+### Perplexity Validation — Held Positions
+**IWM ($302.29, +3.96%) — HOLD, thesis intact, strongly confirmed:** Near/at 52-week highs, rally driven by Fed rate-cut expectations (first cut expected September) and rotation out of mega-cap tech into small caps — one source cites IWM YTD outperformance of +22% NAV total return vs. S&P's ~7-8%. Multiple bank notes (Goldman, UBS, BofA) actively discussing "small-cap 2.0" rally continuation. No thesis concern.
+
+**XOM ($153.86, essentially flat vs pre-market) — HOLD, thesis intact:** Piper Sandler reiterated Buy; Citi Neutral $155 PT, Goldman Hold $157 — unchanged from Aug 4, no fresh negative catalyst. Oil's two-session slide (Iran de-escalation) is a mild headwind for upstream margin optics but no operational/earnings-specific news. 4%+ buffer above 7% stop maintained.
+
+**NVDA / AMD / semiconductor rotation (Rule 10 re-evaluation, not held):** AMD's Aug 4 BMO print beat consensus on both revenue (~$11.5B vs ~$11.25B) and EPS (~$1.66 vs ~$1.60) but the stock dropped ~7-9% because Q3 gross-margin guidance was flat at ~56% with no expansion — options had priced an ~8.3% move, so the reaction was in line with a "priced-for-perfection, got flat margins" disappointment, not a fundamentals miss. NVDA's own bull case remains analyst/capex-driven (Buy/Strong Buy consensus, Citi/Morgan Stanley reiterating, institutional accumulation per Chaikin Money Flow) but Perplexity found no explicit confirmation that chip-sector rotation has stabilized for two consecutive sessions — the opposite: AMD's drop is itself a fresh negative data point one session after the "watch AMD tonight" flag. Rule 10 cooldown stays active.
+
+**XLI (re-sourced candidate, not held) — fails R:R a third consecutive session:** Live technicals show XLI testing its 52-week high ($186.45) with intraday range $184.70-186.45, support $185.0-185.2, RSI 57-58 (bullish, not overbought, not confirmed breakout). No sustained close above $186.45 yet. A mandatory 10% stop against that ceiling reproduces the same structural problem flagged Aug 3/4 — the ETF's low daily volatility can't clear a 1.5:1 R:R with a 10% stop without a genuine breakout catalyst, which hasn't happened yet.
+
+**CAT (Post-Catalyst Gap-Up Protocol candidate, not held) — not entered, data too unreliable to act on regardless:** CAT reported Q2 BMO Aug 4 with a large beat (EPS ~$8.17 vs ~$6.22 consensus per one source) and a raised FY26 guide, matching the kind of catalyst the Gap-Up Protocol is built for. However CAT is also formally abandoned under the candidate-freshness rule (failed R:R twice on the same broad-consensus-vs-outlier-target problem, treated like FCX — re-entry requires a real pullback or target revision, neither confirmed today). More importantly, live pricing was internally inconsistent: Alpaca's authoritative bid showed $842.41, while Perplexity's CAT-specific query reported ~$963-965 and then self-contradicted by also saying Q2 earnings were "still upcoming" in some of its own sources. Given the abandonment rule plus this pricing conflict, CAT was not entered. Flagged for Thursday's pre-market to re-pull a clean Alpaca quote and resolve the price discrepancy before considering it again.
+
+### Trade Ideas
+No new entries today — Rule 10 stays active, XLI fails R:R a third day, CAT blocked by both the abandonment rule and unreliable pricing data.
+1. **IWM — hold, no action.** Thesis intact, strongly confirmed by rate-cut-driven small-cap rotation.
+2. **XOM — hold, no action.** Thesis intact, unchanged analyst views.
+3. **Thursday's pre-market:** Re-verify CAT's actual live price via Alpaca before any further consideration (today's data conflict blocks action); re-check XLI for a confirmed close above $186.45; NFP Friday Aug 7 is now the near-term Tier-1 blackout to plan around.
+
+### Risk Factors
+- **NFP Friday Aug 7** — Tier-1 blackout, now only 2 sessions away; Thursday's pre-market must explicitly check whether any new entry that day would need to close out risk ahead of the print.
+- **CAT pricing data conflict** (Alpaca $842.41 vs. Perplexity ~$963-965) — unresolved; do not use today's Perplexity CAT figures for any future entry math until Alpaca-verified.
+- **XLI structurally hard to clear urgency R:R with a 10% stop** — third consecutive session testing but not confirming a breakout above $186.45; needs a sustained close above that level plus a credible extension target, not just proximity.
+- **AMD's post-earnings drop despite a beat** — reinforces that today's blanket Benzinga BUY signals across Tech/semis (NVDA, AMD, SOXX) reflect broad risk-on tape sentiment, not company-specific confirmation; do not treat as a Rule 10 override.
+- **VIX ~15.85, low risk** — first low-risk reading this log has tracked; euphoric/record-highs tape can reverse sharply on the upcoming NFP print.
+- **XOM concentration** — largest single position (~19-20% of equity), sole Energy exposure, oil-headline-sensitive; oil's two-session slide is a mild headwind, not yet a thesis break.
+- **Congress/Quiver Quant API still down** (401, since Jul 9, 22+ sessions) — already escalated, no new action needed.
+- **7th+ consecutive week under the 75% deployment floor** — urgency protocol remains active; today is the Wednesday urgency-check day (deployed 37.27% < 70% trigger) but no candidate cleared the R:R hard-check, so the mandate carries forward again with no valid setup in hand.
+
+### Decision
+**HOLD — no new entries today.** Rule 10 Tech cooldown stays active (AMD's post-earnings drop, not stabilization). XLI fails R:R a third consecutive session (still testing, not confirming, its 52-week-high resistance). CAT blocked by both the formal abandonment rule and an unresolved live-pricing data conflict. IWM and XOM both hold unchanged, theses intact and strongly confirmed. Week 15 count stays 0/3. Deployment remains 37.27%, 7th+ consecutive week under the 75% floor — Wednesday urgency-check mandate (≥1 new position, deployed <70%) is active today but carries forward again with no valid candidate; Thursday's pre-market needs a clean CAT price re-pull and a fresh non-Tech, non-XLI sourcing pass given the approaching Friday NFP blackout.
