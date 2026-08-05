@@ -5455,3 +5455,14 @@ No new entries today — XLI fails R:R on verified data, no other vetted candida
 ## 2026-08-04 — Midday Addendum (Tuesday, Week 15 Day 2)
 
 **STEP 6 — XOM oil watch item, per pre-market flag.** Perplexity check (recency: day): confirms the US-Iran de-escalation oil selloff was real — Brent -7%, WTI -5.1% intraday on Iran-talks optimism (Trump reportedly postponed a strike, talks to resume) — but oil rebounded intraday as talks remained uncertain, a selloff-then-bounce pattern rather than sustained one-way move. No ExxonMobil-specific operational or earnings news found; only adjacent item is Trump publicly urging oil majors to cut fuel prices (political rhetoric, not a company-specific catalyst). XOM's live price action corroborates: -0.38% intraday, essentially flat, no outsized damage from the selloff. **Conclusion: thesis intact, no action.** Full position detail logged in TRADE-LOG.md under "2026-08-04 — Midday Scan".
+
+## 2026-08-05 — Pre-Market Research (Wednesday, Week 15 Day 3) — ROUTINE FAILED, NO DATA
+
+**Infrastructure outage, not a trading decision.** Every outbound API call this session was rejected by the sandbox's network egress policy before reaching the target host:
+- `bash scripts/alpaca.sh account` → proxy CONNECT to `paper-api.alpaca.markets:443` refused, HTTP 403 (policy denial, confirmed twice)
+- `bash scripts/perplexity.sh` → proxy CONNECT to Perplexity refused, HTTP 403 (policy denial)
+- `bash scripts/clickup.sh` → proxy CONNECT to `api.clickup.com:443` refused, HTTP 403 (policy denial)
+
+Per the agent-proxy runbook, a 403 on CONNECT is an organization policy denial, not a transient error — not retried further. No account snapshot, no positions/orders pull, no market research, and no ClickUp alert were possible. **No trade evaluation was performed today — this is not a HOLD decision, it is a missing session.** User was notified out-of-band via push notification since ClickUp was unreachable. No code, credentials, or memory files were touched beyond this log entry.
+
+**Action needed:** whoever owns this environment's egress allowlist should confirm `paper-api.alpaca.markets`, Perplexity's API host, and `api.clickup.com` are permitted for this session/routine before the next scheduled run.
