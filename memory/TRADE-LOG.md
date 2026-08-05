@@ -4181,3 +4181,45 @@ No "User decisions" block found below the Aug 4 EOD entry. One unanswered action
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-05 — Market-Open (Wednesday, Week 15 Day 3)
+
+**No trade — pre-market decision was HOLD (Rule 10 Tech cooldown stays active on AMD's post-earnings drop; XLI still fails 1.5:1 urgency R:R testing not confirming $186.45 breakout; CAT formally abandoned + unresolved pricing conflict). No candidate cleared R:R.**
+
+**Live re-validation (Alpaca, market open):**
+- Equity $104,135.24 | Cash $65,225.69 (62.64%) | Deployed $38,909.55 (37.36%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $302.49 | +$726.65 (+4.03%) | 10% trail HWM $302.785 / stop $272.5065 (4c0586cc, confirmed live, no new high today) |
+| XOM | 130 | $138.420615 | $155.035 | +$2,159.87 (+12.00%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, confirmed live, unchanged) |
+
+- **XOM data-quality flag:** Direct quote pull returned an abnormally wide bid/ask ($146.78 / $163.34, ~10.7% spread) on two consecutive calls — inconsistent with XOM's normal liquidity. Position endpoint's last-trade price ($155.035) is consistent with yesterday's close ($153.96) and not used for any decision today; flagging for pre-market to watch, no action taken since XOM isn't a new-entry candidate.
+- **XOM at +12.00% unrealized** — below the +15% tighten trigger (already at 7% trail ahead of Jul 31 earnings). No action.
+- **IWM at +4.03% unrealized**, no new HWM, thesis intact. No action.
+- No losers cut, no tighten triggers hit, no thesis breaks, no new entries — no candidate cleared R:R. Week 15 count stays 0/3.
+
+**Action taken:** None. No ClickUp notification (no trade placed, per STEP 7). No commit — no trades fired, per STEP 8.
+
+---
+
+## 2026-08-05 — Midday Scan (Wednesday, Week 15 Day 3)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $300.97 | +$632.41 (+3.51%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, unchanged — no new high today) |
+| XOM | 130 | $138.420615 | $152.105 | +$1,778.97 (+9.89%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged — no new high today) |
+
+- **Losers cut:** None. IWM +3.51%, XOM +9.89% — both well above the -7% cut.
+- **Stop tightening:** None. Neither position crosses +15%/+20% unrealized gain (IWM 3.51%, XOM 9.89%, already tightened to 7% ahead of Jul 31 earnings).
+- **Thesis check:** IWM -0.245% intraday, XOM -1.21% intraday — both mild pullbacks consistent with the broader tape (oil sliding on Iran de-escalation, small-cap rally consolidating slightly after Tuesday's record close), not thesis breaks. No new negative headlines on either name since pre-market/market-open.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $145.2288), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $272.754) — both correctly attached, no drift from log.
+- **Optional research:** Skipped — no unexplained sharp move on either position; today's oil/small-cap moves already tracked in pre-market and market-open entries.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $103,657.41 | Cash $65,225.69 (62.94%) | Deployed $38,431.72 (37.08%, 2 positions). Week 15 count stays 0/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks, no new entries. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
