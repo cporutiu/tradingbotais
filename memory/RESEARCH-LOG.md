@@ -5527,3 +5527,31 @@ No new entries today — Rule 10 stays active, XLI fails R:R a third day, CAT bl
 
 ### Decision
 **HOLD — no new entries today.** Rule 10 Tech cooldown stays active (AMD's post-earnings drop, not stabilization). XLI fails R:R a third consecutive session (still testing, not confirming, its 52-week-high resistance). CAT blocked by both the formal abandonment rule and an unresolved live-pricing data conflict. IWM and XOM both hold unchanged, theses intact and strongly confirmed. Week 15 count stays 0/3. Deployment remains 37.27%, 7th+ consecutive week under the 75% floor — Wednesday urgency-check mandate (≥1 new position, deployed <70%) is active today but carries forward again with no valid candidate; Thursday's pre-market needs a clean CAT price re-pull and a fresh non-Tech, non-XLI sourcing pass given the approaching Friday NFP blackout.
+
+---
+
+## 2026-08-06 — Pre-Market: BLOCKED — Network Outage (Thursday, Week 15 Day 4)
+
+**No research or account snapshot possible today. All three external API hosts are unreachable from this environment.**
+
+### What was checked
+- `bash scripts/alpaca.sh account` → exit 22, HTTP 403.
+- `bash scripts/alpaca.sh positions` / `orders` → same, HTTP 403.
+- `bash scripts/perplexity.sh "<test query>"` → HTTP 403.
+- `bash scripts/clickup.sh "<test message>"` → HTTP 403.
+- Verbose curl to `paper-api.alpaca.markets` confirms the block is at the network proxy layer, not the API itself: `CONNECT tunnel failed, response 403`. The proxy's own status endpoint (`$HTTPS_PROXY/__agentproxy/status`) logs it explicitly as `connect_rejected — gateway answered 403 to CONNECT (policy denial or upstream failure)` for `paper-api.alpaca.markets:443`, repeated across 4 attempts in the last minute.
+- Git/GitHub connectivity confirmed working (`git fetch origin main` succeeded) — the outage is scoped to the Alpaca/Perplexity/ClickUp hosts, not general network access.
+- Env vars all confirmed present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) — this is not a missing-credential issue.
+
+### Anomaly flagged, not acted on
+Today's scheduled prompt described the account as "a LIVE ~$10,000 Alpaca account." That contradicts CLAUDE.md and the configured `ALPACA_ENDPOINT` (`https://paper-api.alpaca.markets/v2`), both of which describe this bot (AIS) as a **paper** account (PA3GVPXBYBRB, $100,000 baseline). Per the account-isolation rule ("if credentials look wrong, STOP and alert the user before placing any order"), flagging this mismatch for the user rather than assuming either description — moot today since no order could be placed regardless of the outage, but must be resolved before any future run acts on it.
+
+### No decision made — not even HOLD
+HOLD implies an assessed choice not to trade; today there is no live positions/orders pull to assess against, so IWM's and XOM's stops, HWM-gain tighten triggers, and any -7% cut condition are **unverified**, not confirmed intact. Per Rule 15 (Reconnect protocol), the next run that regains connectivity must, before any new-entry action: (a) pull live positions/orders directly from Alpaca to reconcile against the last logged state (Aug 5 EOD: IWM 62sh stop $272.754, XOM 130sh stop $145.2288), and (b) check both positions against every threshold that should have applied during this gap (tighten at +15%/+20% HWM-gain, -7% manual cut, thesis-break levels) before doing anything else.
+
+### Risk factors carried forward (unverified today, from Aug 5 log)
+- NFP Friday Aug 7 — Tier-1 blackout, now 1 session away.
+- CAT pricing conflict (Alpaca $842.41 vs Perplexity ~$963-965) — still unresolved, not re-checked today.
+- XOM concentration (~19-20% of equity, sole Energy exposure) — not re-verified today.
+
+**No ClickUp notification sent — ClickUp itself is unreachable (part of the same outage).** User notified out-of-band instead. Week 15 count stays 0/3 (no trade attempted, none possible).
