@@ -5527,3 +5527,76 @@ No new entries today — Rule 10 stays active, XLI fails R:R a third day, CAT bl
 
 ### Decision
 **HOLD — no new entries today.** Rule 10 Tech cooldown stays active (AMD's post-earnings drop, not stabilization). XLI fails R:R a third consecutive session (still testing, not confirming, its 52-week-high resistance). CAT blocked by both the formal abandonment rule and an unresolved live-pricing data conflict. IWM and XOM both hold unchanged, theses intact and strongly confirmed. Week 15 count stays 0/3. Deployment remains 37.27%, 7th+ consecutive week under the 75% floor — Wednesday urgency-check mandate (≥1 new position, deployed <70%) is active today but carries forward again with no valid candidate; Thursday's pre-market needs a clean CAT price re-pull and a fresh non-Tech, non-XLI sourcing pass given the approaching Friday NFP blackout.
+
+## 2026-08-06 — Pre-Market Research (Thursday, Week 15 Day 4)
+
+**Urgency protocol active:** Deployed has closed below 75% for 7+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply, Wednesday urgency check triggers at <70% deployed (this Friday's close would mark the 8th consecutive week if unresolved).
+
+### STEP 1B — Pending decision resolved
+No "User decisions" block found below the Aug 5 EOD entry. One unanswered action question resolved autonomously per Rule 14 — **widened the search to Materials (XLB), still no valid candidate, stay patient.** Full rationale in TRADE-LOG.md under "Bot autonomous decision (2026-08-06)". Summary: XLB (Leading momentum quadrant + same-day Benzinga medium BUY) fails R:R the same way XLI has for 4 straight sessions — ~0.51:1 against the 1.5:1 urgency floor, a structural problem with low-vol sector ETFs sitting near 52-week highs under a mandatory 10% stop. XLE passed over on concentration-risk grounds (XOM already full Energy exposure). XLV/XLU/XLC deprioritized — Benzinga BUY but outside the Leading quadrant. Rule 10 Tech cooldown reconfirmed active (SOXX still volatile, no 2-session stabilization).
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,728.09 | Cash: $65,225.69 (62.88%) | Deployed: $38,502.40 (37.12%, 2 positions) | Buying power: $368,709.48 | Week 15 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $300.20 | +$584.67 (+3.24%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, unchanged — no new high) |
+| XOM | 130 | $138.420615 | $153.00 | +$1,895.32 (+10.53%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, unchanged — no new high) |
+
+No -7% cut hit on either position. No new tighten triggers: IWM HWM-gain unchanged below +15%, XOM HWM-gain 12.82% (below +20%, already tightened to 7% ahead of Jul 31 earnings). Both stop orders confirmed live and correctly attached.
+
+### Market Context
+- **Oil:** WTI ~$71.10 (-2.88%), Brent ~$74.76 (-3.01%) — continued softening. OPEC+ approved early completion of its supply revival with a September output boost, adding to the multi-session downtrend from Iran de-escalation optimism.
+- **S&P 500 futures:** Modestly positive premarket (+0.1-0.3%), a continuation of Tuesday's record close, not a fresh catalyst.
+- **VIX:** ~19.3, back in the medium risk band (18-25) after yesterday's low 15.85 read — some feeds conflicting/stale as usual, most-recent live quote used.
+- **No Tier-1 blocker today:** No CPI/PPI/FOMC/NFP. Today's releases (Initial Jobless Claims, Q2 Productivity/Unit Labor Costs prelim, Wholesale Inventories final, Challenger Job Cuts) are all Tier-2/non-blocking. **NFP (July Employment Situation) releases tomorrow, Fri Aug 7, 8:30am ET — Tier-1 blackout, no new entries tomorrow morning regardless of candidate status.**
+- **Earnings BMO today (not held):** ConocoPhillips, Parker-Hannifin, Howmet Aerospace, Canadian Natural Resources, Datadog, Constellation Energy, Warner Bros Discovery, Keurig Dr Pepper, Fox Corp, Kenvue, Hertz, Ralph Lauren, Oklo, Albemarle. AMC: Airbnb, Lyft, Sweetgreen, Monster Beverage, AIG. None on the sector watchlist or held — no blackout triggered.
+- **Sector momentum:** Quadrant view unchanged from recent sessions — **Leading: XLP, XLI, XLB, XLE** (XLI now 4th consecutive session in Leading without a confirmed breakout); **Improving: XLRE, XLU**; **Weakening: XLV**; **Lagging: XLK, XLC, XLY, XLF**. Absolute YTD leaders remain Energy (+24.3%), Technology (+23.5%), Industrials (+11.5%), Materials (+11.2%) — cyclical leadership intact.
+- **Economic cycle stage:** Late-cycle, unchanged. Unemployment drifting up for 33 months without recession alongside positive GDP; consensus 12-month recession odds ~20-30%.
+- **RS ranking note:** Direct Perplexity RS-ranking query again returned an inconsistent list (ranked XLK #1 strongest despite every quadrant read showing XLK lagging) — discarded per established practice; market-intel.json uses the quadrant-consistent ordering instead.
+
+### Benzinga Signals
+24h lookback, 24 emails scanned: **BUY=8, SELL=0, HOLD=16.**
+- **BUY (high):** AMD (score +10, 6 mentions) — not held, Rule 10 cooldown candidate, see below.
+- **BUY (medium, single-mention +2 scores):** QQQ, XLE, XLV, XLU, XLB, XLC, IWM (held).
+- Low-confidence/no-mention tickers (SPY, GLD, XLI, XLY, SOXX, NVDA, AVGO) excluded per medium/high-confidence-only rule.
+- XLB and XLE both carry Leading-quadrant + Benzinga-BUY confluence — see Trade Ideas / Perplexity Validation below for why neither converts to an entry today.
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 23+ consecutive sessions). Already escalated previously; not re-escalating.
+
+### Perplexity Validation — Held Positions
+**IWM ($300.20, +3.24%) — HOLD, thesis intact:** Trading near its highs, +22% YTD NAV total return. No issuer-specific news; thematic coverage centers on continued small-cap rotation, Fed-cut expectations, and institutional positioning (BofA ~15% ownership). No thesis concern.
+
+**XOM ($153.00, +10.53%) — HOLD, thesis intact:** Analyst PT actions since Aug 4 close roughly in line with or above current price (Citi $155, HSBC $158, Wells Fargo $182) — routine post-earnings revisions, not fresh negative catalysts. OPEC+'s early September supply-increase approval is a mild headwind for oil/upstream margin optics but not company-specific. 4%+ buffer above 7% stop maintained.
+
+### Perplexity Validation — Widen-Search Candidates
+**XLB (Materials, not held) — fails R:R, same structural problem as XLI:** Trading ~$51.4-52 (issuer/consensus reads), 52-week high $54.14, resistance zone $53-54, support $49-50. Bullish case is macro-supported (Bloomberg Intelligence ~20% 2026 materials earnings growth forecast, ISM Manufacturing PMI 54.0, Deutsche Bank flags materials positioning at the 1st percentile — a crowded-underweight setup), but fund flows are mixed/conflicting (one read shows a $259.6M outflow, another a $293.6M inflow same period). A mandatory 10% stop against the 52-week-high target produces R:R ≈0.51:1 — fails the 1.5:1 urgency floor by the same mechanism as XLI (low-vol ETF near highs, 10% stop eats too much of the available runway to the nearest resistance).
+
+**XLI (re-check, 4th consecutive session) — still fails R:R:** Confirmed trading ~$185.56, 52-week high $186.45 touched intraday but not closed above — still testing, not confirming, the breakout. Same ~0.37:1 R:R problem as Aug 3-5.
+
+**XLE (not tested for R:R, passed on concentration grounds):** Leading quadrant + Benzinga medium BUY, bullish case macro-driven (oil catalysts, Hormuz-related supply risk), but XOM already provides full Energy exposure at ~19% of equity — the account's largest single position. Adding XLE would concentrate further into the same commodity-price risk already flagged as XOM's chief watch item, not diversify it. Sector-cap ETF exception technically permits this, but risk concentration argues against it absent a materially different thesis than XOM's own.
+
+**SOXX / Rule 10 (Tech cooldown) — reconfirmed active, no stabilization:** Daily closes show continued volatility, not a clean base: Jul 29 -5.9% (465.00), Jul 30 +8.5% partial rebound (504.53), Jul 31 essentially flat (504.89) — still well below the Jul 22 pre-selloff close of 555.52. This is a bear-flag/volatile-recovery pattern, not the two consecutive sessions of confirmed stabilization Rule 10 requires. AMD analysts are "doubling down" post-earnings-drop (Wells Fargo PT to $700, Goldman to $640) but this is a company-fundamentals call, not sector-wide rotation confirmation — Bernstein remains a skeptical outlier ($200 PT, argues expectations have outrun fundamentals). Rule 10 stays active, NVDA not re-entered.
+
+**CAT (formally abandoned, pricing conflict persists, informational only):** Perplexity CAT price queries again returned mutually inconsistent figures spanning $941.90-$999.77, all from different stale dates, none matching Alpaca's own (also stale, yesterday-close-snapshot) bid of $832.01. The gap is now wide enough (~$110-165) that Perplexity's CAT pricing should be treated as unusable until a live intraday quote is confirmed directly via Alpaca during market hours. Moot for today regardless — CAT remains formally abandoned per the candidate-freshness rule.
+
+### Trade Ideas
+No new entries today — widened search (XLB) still fails R:R on legitimate technical/structural grounds; XLI fails a 4th consecutive session; Rule 10 Tech cooldown reconfirmed active.
+1. **IWM — hold, no action.** Thesis intact, strongly confirmed by continued small-cap rotation.
+2. **XOM — hold, no action.** Thesis intact; oil's continued softening (OPEC+ September supply boost) is a mild headwind, not a thesis break.
+3. **Tomorrow's pre-market (Fri Aug 7):** NFP Tier-1 blackout at 8:30am ET — no new entries regardless of candidate status. Also re-check XLI for a confirmed close above $186.45 and SOXX for two-session stabilization before considering any Tech re-entry.
+
+### Risk Factors
+- **NFP Friday Aug 7, 8:30am ET** — Tier-1 blackout, arrives tomorrow morning; no new entries permitted regardless of any candidate clearing R:R today or tomorrow pre-open.
+- **Structural R:R wall on sector ETFs** — XLI (4 sessions) and now XLB both fail the 1.5:1 urgency floor via the same mechanism: a mandatory 10% stop against nearby 52-week-high resistance leaves too little reward on low-volatility ETFs already trading near their highs. Future widening should prioritize single-stock candidates with more room to run.
+- **CAT pricing data unreliable** — Perplexity quotes now span a $110-165 range across stale dates; do not use for any future entry math without a live Alpaca intraday quote. Moot while CAT stays formally abandoned.
+- **XOM concentration** — largest single position (~19% of equity), sole Energy exposure; oil's continued multi-session softening (OPEC+ supply increase) is a mild but persistent headwind, watch for any acceleration.
+- **VIX ~19.3, medium risk** — back up from yesterday's 15.85 low-risk read; not alarming but a reminder not to over-relax risk assumptions.
+- **Congress/Quiver Quant API still down** (401, since Jul 9, 23+ consecutive sessions) — already escalated, no new action needed.
+- **8th consecutive week under the 75% deployment floor approaching (this Friday's close)** — urgency protocol remains active; today's widened search (XLB) still found no valid candidate, so the mandate carries forward again into a NFP-blackout Friday.
+
+### Decision
+**HOLD — no new entries today.** Widened search to Materials (XLB) per Rule 14 autonomous resolution — fails the same structural R:R problem as XLI (0.51:1 vs 1.5:1 floor) for a low-vol sector ETF near its 52-week high under a mandatory 10% stop. XLI itself fails a 4th consecutive session. XLE passed over on concentration-risk grounds (XOM already full Energy exposure). Rule 10 Tech cooldown reconfirmed active — SOXX has not shown two sessions of stabilization. CAT stays formally abandoned with an unresolved (and now wider) pricing conflict. IWM and XOM both hold unchanged, theses intact. Week 15 count stays 0/3. Deployment remains 37.12%, carrying the urgency mandate into a Friday NFP blackout with no valid setup in hand — Monday's pre-market (post-NFP) should prioritize single-stock candidates within Leading sectors over further sector-ETF widening, given the repeated structural R:R failure on ETFs.
