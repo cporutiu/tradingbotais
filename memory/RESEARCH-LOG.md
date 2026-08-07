@@ -5600,3 +5600,27 @@ No new entries today — widened search (XLB) still fails R:R on legitimate tech
 
 ### Decision
 **HOLD — no new entries today.** Widened search to Materials (XLB) per Rule 14 autonomous resolution — fails the same structural R:R problem as XLI (0.51:1 vs 1.5:1 floor) for a low-vol sector ETF near its 52-week high under a mandatory 10% stop. XLI itself fails a 4th consecutive session. XLE passed over on concentration-risk grounds (XOM already full Energy exposure). Rule 10 Tech cooldown reconfirmed active — SOXX has not shown two sessions of stabilization. CAT stays formally abandoned with an unresolved (and now wider) pricing conflict. IWM and XOM both hold unchanged, theses intact. Week 15 count stays 0/3. Deployment remains 37.12%, carrying the urgency mandate into a Friday NFP blackout with no valid setup in hand — Monday's pre-market (post-NFP) should prioritize single-stock candidates within Leading sectors over further sector-ETF widening, given the repeated structural R:R failure on ETFs.
+
+## 2026-08-07 — Pre-Market Research (Friday, Week 15 Day 5, NFP Tier-1 Blackout)
+
+### STEP 1B — Pending decision resolved
+No "User decisions" block found below the most recent EOD entry (Aug 5 — no Aug 6 EOD entry exists in TRADE-LOG.md; Thursday's routine appears to have stopped after pre-market, see Infra Note below). No unresolved action question is outstanding beyond Rule 14 autonomous resolutions already logged Aug 3-6.
+
+### INFRA FAILURE — full API egress block, session could not execute
+**All three external APIs required by this routine returned 403 (policy denial) on every attempt, confirmed via repeat calls and the agent-proxy status endpoint:**
+- `bash scripts/alpaca.sh account` — 403 (`paper-api.alpaca.markets:443` rejected at proxy CONNECT)
+- `bash scripts/perplexity.sh` — 403 (`api.perplexity.ai:443` rejected at proxy CONNECT)
+- `bash scripts/clickup.sh` — 403 (`api.clickup.com` rejected)
+
+This is a network egress policy denial for this session's environment, not a credential problem (all required env vars were confirmed set: ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID). No live account snapshot, no positions/orders pull, no market research, and no ClickUp notification were possible this run. **No trade, tighten, or cut was evaluated or executed today — there is no live data to act on.**
+
+**No fabricated data used.** Per standing practice (see Aug 5 CAT pricing-conflict entries), this log does not invent account figures, prices, or market context when live data is unavailable. The last confirmed-live account snapshot remains Thursday 2026-08-06 pre-market (Equity $103,728.09 | Cash $65,225.69 (62.88%) | Deployed $38,502.40 (37.12%, 2 positions: IWM 62 sh, XOM 130 sh) — see TRADE-LOG.md). **Stop-order status for IWM (4c0586cc) and XOM (ffe9d7c4) could not be re-verified today** — last confirmed live Aug 6 pre-market.
+
+### Standing context (from last confirmed data, not re-verified today)
+- Today (Fri Aug 7) is NFP release day — Tier-1 blackout, no new entries regardless of candidate status. This was already flagged in Thursday's log, so today's HOLD decision is unaffected by the API outage.
+- Also worth noting: no Market-Open/Midday/EOD entries were logged for Thursday Aug 6 (TRADE-LOG.md jumps from Aug 6 pre-market straight to this entry) — those routine runs either didn't fire or failed silently before reaching a commit. Flagging for user; cannot diagnose further without repo/scheduler access outside this session.
+
+### Decision
+**HOLD — forced by infra failure, not by market analysis.** No new entries (also Tier-1 NFP blackout today regardless). Cannot confirm existing IWM/XOM stops are intact — flagging as urgent since ClickUp is also unreachable to alert normally. Next run (market-open or Monday pre-market) must, per Rule 15 reconnect-protocol spirit, pull live positions/orders first and check both positions against every threshold (tighten triggers, -7% cut, thesis breaks) before anything else, since this gap leaves an unverified window.
+
+**Account confirmed:** NOT VERIFIED TODAY — API unreachable. Last confirmed PA3GVPXBYBRB (Aug 6), no known credential mix-up, but cannot re-confirm this session.
