@@ -4254,3 +4254,14 @@ No "User decisions" block found below the Aug 5 EOD entry. One unanswered action
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
+---
+
+## 2026-08-08 — Interactive Session: 2-Month Performance Review
+
+**User decisions (2026-08-08):**
+- **Rule 10 clarified (see TRADING-STRATEGY.md Rule 10):** applies only to thesis/R:R failures, NOT mechanical trailing-stop exits where the thesis stayed intact. AMD/NVDA's Jul 27/28 stop-outs were mechanical (sector-wide rotation, both theses confirmed intact at the time) — **Rule 10 Tech cooldown is LIFTED.** NVDA re-entry is unblocked; re-validate with fresh live data (price, R:R, Benzinga/analyst signal) at next pre-market before entering — this decision removes the rule-based block, it does not pre-approve the trade.
+- **New Rule 16 added (candidate pool widening protocol)** — see TRADING-STRATEGY.md. Two changes to research going forward: (a) actively rotate into Financials/XLF, Healthcare/XLV, Consumer Discretionary/XLY, Consumer Staples/XLP, Communication Services/XLC, Real Estate/XLRE, Utilities/XLU — all already in the Benzinga/Congress scanner UNIVERSE but never sourced as trade candidates in 3+ months; (b) default to 1-2 single-stock candidates per sector before falling back to the sector ETF, since ETFs near a 52-week high structurally fail the 10%-stop R:R math that single stocks (with real analyst PTs) can clear.
+- Full analysis: see WEEKLY-REVIEW.md "2-Month Performance Review — 2026-06-08 to 2026-08-08."
+
+**Next pre-market must:** (1) re-check NVDA fresh (Rule 10 no longer blocks it), (2) begin sourcing from the widened sector list per Rule 16 instead of re-testing XLI/XLB.
+

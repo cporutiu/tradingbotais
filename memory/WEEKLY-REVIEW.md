@@ -679,6 +679,78 @@ _Rationale: Mechanically sound — both stops executed correctly, Rule 14 autono
 
 ---
 
+## 2-Month Performance Review — 2026-06-08 to 2026-08-08
+
+*Ad-hoc retrospective requested by user (no periodic review had been run in 2 months). Covers Week 7 (Jun 5 close) through Week 15 Day 4 (Aug 6), reconciled against live Alpaca data pulled 2026-08-08 (balance as of Aug 7 close).*
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting equity (Jun 5 close) | $104,179.62 |
+| Ending equity (Aug 7 close, live) | $103,817.61 |
+| Window return | **-$361.86 (-0.35%)** |
+| Phase P&L since inception (Apr 25) | +$3,817.61 (+3.82%) |
+| Weekly grades in window | C+, C+, B+, C+ (outage), C+, B+, C |
+| Weekly alpha vs S&P | +1.20%, +0.20%, +0.51%, -1.41%, +1.02%, +2.00%, -3.06% |
+| Closed trades in window | 6 (W:1 / L:5) |
+| Win rate (closed trades) | 16.7% |
+| Realized P&L (closed trades) | **-$2,819.90** |
+| Profit factor (closed trades) | 0.34 (1,461.02 / 4,280.92) |
+| Best closed trade | CAT +8.19% (+$1,461.02, blackout auto-exit) |
+| Worst closed trade | NVDA -5.36% (-$1,059.24, mechanical stop, thesis intact) |
+| Open positions at review (live) | IWM +3.71% (+$668.99), XOM +10.56% (+$1,900.52) — unrealized +$2,569.51 |
+| Deployment at review | 37.2% cash-heavy (62.8% cash) — 7th+ consecutive week under the 75% floor |
+
+### Closed Trades in Window
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| CVX | $182.364 (May 29) | ~$178.47 (Jun 15) | -$401.04 (-2.13%) | Autonomous thesis-break exit, WTI ≤ $80 floor |
+| SOXX | $627.579 (Jun 18) | $590.33 (Jun 24) | -$1,229.22 (-5.93%) | Blackout-era mechanical trailing stop |
+| CAT | $892.689 (May 5) | $965.74 (Jul 2) | +$1,461.02 (+8.19%) | Blackout-era mechanical trailing stop; +15% tighten was missed during outage (~$640 cost vs. optimal — led to Rule 15) |
+| QQQ | $736.6834 (Jun 18) | $695.12 (Jul 17) | -$1,205.34 (-5.64%) | Rule 12 (2-week slow-bleed) proactive exit |
+| AMD | $516.6456 (Jul 20) | $505.290 (Jul 27) | -$386.08 (-2.20%) | Mechanical trailing stop, sector-wide semi rotation |
+| NVDA | $203.84 (Jul 9) | $192.92 (Jul 28) | -$1,059.24 (-5.36%) | Mechanical trailing stop, same rotation; triggered the (now-clarified) Rule 10 Tech cooldown |
+
+### What Worked
+- Risk mechanics were flawless across the window: every trailing stop, tighten trigger, and thesis-break exit fired correctly — including through the Jun 20–Jul 8 connectivity outage with zero bot supervision (stops are broker-side GTC orders, not dependent on the routine running).
+- Autonomous decision framework (Rule 14) resolved dozens of unanswered questions with defensible, well-reasoned logic; no fabricated data, no forced trades to avoid a "no action" outcome.
+- Discipline over activity, proven repeatedly: CAT abandoned twice on failed R:R, XLI/XLB rejected 5 straight sessions rather than forced through a weakened R:R floor.
+- Rule additions were genuine fixes to real incidents, not theoretical: Rule 15 (reconnect protocol) after the CAT tighten-miss; Rule 12 (slow-bleed) correctly cut CVX and QQQ ahead of the -7% floor.
+- XOM was the standout — entered $138.42, currently +10.6% (peaked +13.6%) — the portfolio's clearest alpha engine in the window.
+
+### What Didn't Work
+- Closed-trade P&L was net negative: -$2,819.90 across 6 trades, 16.7% win rate, 0.34 profit factor. The window's near-flat equity is being carried entirely by two still-open unrealized gainers (XOM, IWM), not by realized trading skill.
+- Chronic under-deployment is the single biggest structural drag: below the 75% floor for all but 1-2 weeks of the entire window; currently 37.2% deployed with only 2 of 5-6 target positions filled.
+- Candidate pipeline exhaustion: research kept re-testing the same ~4 sectors (Tech, Energy, Industrials, Materials) and the same handful of tickers (NVDA, AMD, CAT, XOM, CVX, FCX) while 7 other scanner-tracked sectors (Financials, Healthcare, Discretionary, Staples, Communications, Real Estate, Utilities) were never sourced for a candidate.
+- The deployment urgency protocol (R:R floor 2:1→1.5:1) treated the symptom, not the cause: a 10%-stop R:R test against a sector ETF near its 52-week high is structurally close to impossible to clear (XLI/XLB failed identically 5 sessions running) — loosening the floor didn't fix the underlying math problem.
+- Rule 10 ("exit a sector after 2 consecutive failed trades") was read literally against AMD/NVDA's mechanical stop-outs (thesis intact, sector-wide rotation) and blocked Tech re-entry for over a week — an overly strict application the bot flagged itself but didn't resolve.
+- A correlated sector-rotation event claimed 2 positions in the same 48 hours (AMD/NVDA, Jul 27-28) — the 2-per-sector cap didn't prevent concentrated single-catalyst risk.
+
+### Algorithm Assessment
+- **Execution layer (entries, stops, tightens, exits): A-grade.** Mechanically trustworthy, zero unforced errors in the window.
+- **Sourcing layer (candidate discovery): the bottleneck.** Repeatedly re-tests the same narrow set of names/sectors instead of adapting the search when it keeps failing — this, not risk management, is what's held deployment at ~37% and capped upside.
+
+### Self-Anneal Mechanism Assessment
+- Working at the incident layer: Rules 12-15 + the ETF sector-cap exception + deployment urgency protocol each closed a specific, real gap the bot hit and logged (missed tighten → Rule 15; slow bleed → Rule 12; stalled decisions → Rule 14).
+- Not yet working at the root-cause layer: it tunes thresholds (R:R floor, blocker tiers) but hadn't touched the search strategy itself until this review. The bot self-diagnosed the ETF-vs-single-stock R:R problem correctly on Aug 6 but no rule existed yet to act on it — a multi-day lag between diagnosis and correction.
+- Rule 10's scope ambiguity (mechanical stop vs. thesis failure) sat unresolved for over a week, actively suppressing deployment the whole time, despite the bot flagging the ambiguity the day it happened (Jul 31).
+
+### Key Lessons
+- The bot's diagnostic writing is reliable (it correctly identified both the ETF R:R structural problem and the Rule 10 ambiguity in its own logs) but there's no mechanism that turns a self-diagnosis into a rule change without a human review — worth considering a lighter-weight escalation path for exactly this pattern.
+- Two-thirds of the RS-ranked sector universe the scanners already track was never used as a trade source; the watchlist rotation logic defaulted to re-trying known sectors rather than expanding to unused ones.
+- Realized alpha (closed trades) and unrealized alpha (open positions) diverged sharply this window — the mechanical risk system is protecting capital well, but the entry funnel isn't generating enough winning trades to compound.
+
+### Adjustments (decisions made 2026-08-08)
+- **Rule 10 clarified:** applies only to thesis/R:R failures, not mechanical stop-outs on an intact thesis. Tech cooldown lifted; NVDA re-entry unblocked pending fresh re-validation.
+- **Rule 16 added:** candidate pool widening protocol — rotate into Financials/XLF, Healthcare/XLV, Consumer Discretionary/XLY, Consumer Staples/XLP, Communication Services/XLC, Real Estate/XLRE, Utilities/XLU; default to single-stock candidates over sector ETFs per sector before falling back to the ETF.
+- See TRADING-STRATEGY.md and TRADE-LOG.md (2026-08-08 entry) for full rule text and next-pre-market instructions.
+
+### Overall Grade: C
+
+_Rationale: Risk management and process discipline remain excellent — zero unforced execution errors across 9 weeks including a 3-week blackout. But the window is a net trading loss in isolation (-$2,819.90 realized, 16.7% win rate) masked by two still-open winners, and chronic under-deployment (sub-75% for all but ~2 weeks) capped whatever upside those winners could have compounded into. The structural fix (candidate pool too narrow) was self-diagnosed by the bot but not corrected until this review — that lag is the main actionable finding._
+
+---
+
 ## Week ending 2026-06-19
 
 ### Stats
