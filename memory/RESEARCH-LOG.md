@@ -5600,3 +5600,26 @@ No new entries today — widened search (XLB) still fails R:R on legitimate tech
 
 ### Decision
 **HOLD — no new entries today.** Widened search to Materials (XLB) per Rule 14 autonomous resolution — fails the same structural R:R problem as XLI (0.51:1 vs 1.5:1 floor) for a low-vol sector ETF near its 52-week high under a mandatory 10% stop. XLI itself fails a 4th consecutive session. XLE passed over on concentration-risk grounds (XOM already full Energy exposure). Rule 10 Tech cooldown reconfirmed active — SOXX has not shown two sessions of stabilization. CAT stays formally abandoned with an unresolved (and now wider) pricing conflict. IWM and XOM both hold unchanged, theses intact. Week 15 count stays 0/3. Deployment remains 37.12%, carrying the urgency mandate into a Friday NFP blackout with no valid setup in hand — Monday's pre-market (post-NFP) should prioritize single-stock candidates within Leading sectors over further sector-ETF widening, given the repeated structural R:R failure on ETFs.
+
+---
+
+## 2026-08-10 — Pre-Market Research — RUN BLOCKED (infra outage)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (verified `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `PERPLEXITY_API_KEY`, `CLICKUP_API_KEY`, `CLICKUP_WORKSPACE_ID`, `CLICKUP_CHANNEL_ID` all set; `ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2`, confirming this is the correct AIS paper account endpoint, not a credential/account mix-up).
+- Every outbound call from `scripts/alpaca.sh` (account, positions, orders), `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (22) The requested URL returned error: 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not a credentials or transient-network issue — `recentRelayFailures` shows the gateway rejecting the CONNECT tunnel before any app-layer auth was attempted:
+  - `paper-api.alpaca.markets:443` — denied (3x)
+  - `api.perplexity.ai:443` — denied
+  - (clickup.sh also failed 403; same class, host not separately confirmed in the status log but behavior matches)
+- Per this session's proxy runbook: "Do not retry or route around it — report the blocked host." No retries attempted beyond the initial confirmation. WebSearch/native fallback was not substituted for the missing account snapshot — position/equity data can only come from the Alpaca API, and fabricating it would be unsafe for a trading log.
+- This is the same failure signature previously logged 2026-07-06 ("RUN BLOCKED (infra outage)") — recurring, not a one-off.
+
+### Gap flag
+- No pre-market/market-open/midday/EOD entries found in this log or TRADE-LOG.md for **Friday 2026-08-07** — the only intervening activity was the Saturday 2026-08-08 interactive 2-month performance review (which did not pull a fresh live snapshot). Last confirmed live account state is therefore the Thursday 2026-08-06 pre-market pull: Equity $103,728.09, Cash $65,225.69 (62.88%), Deployed $38,502.40 (37.12%, 2 positions — IWM 62sh, XOM 130sh). Real state as of 2026-08-10 is unknown — NFP (Fri Aug 7, Tier-1) and any weekend/Friday price action are not reflected here.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Once connectivity is restored, run the Reconnect Protocol (TRADING-STRATEGY.md Rule 15) before any new-entry action: pull live positions/orders directly from Alpaca to reconcile against this stale Aug 6 state, and check both IWM and XOM against every tighten/cut threshold that should have applied since — do not assume no triggers were hit over the gap.
