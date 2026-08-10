@@ -5600,3 +5600,85 @@ No new entries today — widened search (XLB) still fails R:R on legitimate tech
 
 ### Decision
 **HOLD — no new entries today.** Widened search to Materials (XLB) per Rule 14 autonomous resolution — fails the same structural R:R problem as XLI (0.51:1 vs 1.5:1 floor) for a low-vol sector ETF near its 52-week high under a mandatory 10% stop. XLI itself fails a 4th consecutive session. XLE passed over on concentration-risk grounds (XOM already full Energy exposure). Rule 10 Tech cooldown reconfirmed active — SOXX has not shown two sessions of stabilization. CAT stays formally abandoned with an unresolved (and now wider) pricing conflict. IWM and XOM both hold unchanged, theses intact. Week 15 count stays 0/3. Deployment remains 37.12%, carrying the urgency mandate into a Friday NFP blackout with no valid setup in hand — Monday's pre-market (post-NFP) should prioritize single-stock candidates within Leading sectors over further sector-ETF widening, given the repeated structural R:R failure on ETFs.
+
+## 2026-08-10 — Pre-Market Research (Monday, Week 16 Day 1)
+
+**Urgency protocol active:** Deployed has closed below 75% for 8+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply.
+
+### STEP 1B — Pending decisions resolved
+No unanswered EOD action question is pending — the last entry (2026-08-08, Interactive Session) recorded confirmed **User decisions**, not open questions: (1) Rule 10 Tech cooldown formally lifted (AMD/NVDA's Jul 27/28 stop-outs reclassified as mechanical, thesis-intact exits, not R:R failures) — NVDA re-entry unblocked pending fresh validation; (2) Rule 16 (candidate pool widening) added — actively source Financials/Healthcare/Consumer Discretionary/Staples/Communication Services/Real Estate/Utilities, prioritizing single stocks over sector ETFs. Both applied below.
+
+**Reconnect-protocol check (Rule 15):** Scheduled local runs failed continuously since the 2026-08-06 pre-market — `.tmp/routine_*` logs for market-open/midday/daily-summary/weekly-review on Aug 6-7 all show "Failed to authenticate: OAuth session expired and could not be refreshed", and no pre-market log exists for Aug 10 (today's run is this interactive session). That is a 4-calendar-day gap in automated coverage. Per Rule 15, live Alpaca positions/orders were pulled first and reconciled against the last logged state before any research: IWM and XOM stops are both still live and unchanged (IWM 10% trail HWM $303.06/stop $272.754, order 4c0586cc; XOM 7% trail HWM $156.16/stop $145.2288, order ffe9d7c4) — no new high on either since Aug 5, so no missed tighten trigger. No -7% cut level was crossed on either. Gap reconciled clean, no missed action.
+
+**Operational note:** python/python3 on PATH are broken (Permission denied via WindowsApps shims) — used the "py -3" launcher instead. Also found and worked around a real bug in scripts/fetch_benzinga.py and fetch_congress.py: piping stdout to the same .tmp/..._$DATE.json path the script also writes internally causes the shell to truncate-create an empty file before the script runs, which the script then tries to load as same-day cache and crashes with a JSONDecodeError. Fix: invoke the scripts directly without redirecting to their own output path. **Also note:** a same-day benzinga_signals_2026-08-10.json/congress_signals_2026-08-10.json pair already existed at 07:01 (before this session touched anything) — likely a partial artifact of a scheduled run that fetched signals before failing later at OAuth. Both were deleted while diagnosing the redirection bug before their contents were captured; re-fetched fresh data instead (captured below). No memory/log data was lost, only an intermediate .tmp cache.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,818.51 | Cash: $65,225.69 (62.83%) | Deployed: $38,592.82 (37.17%, 2 positions) | Buying power: $368,962.66 | Week 16 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $300.61 | +$610.09 (+3.38%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, confirmed live, no new high since Aug 5) |
+| XOM | 130 | $138.420615 | $153.50 | +$1,960.32 (+10.89%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, confirmed live, no new high since Aug 5) |
+
+No -7% cut hit on either position. No new tighten triggers: IWM HWM-gain ~4.2% (below +15%), XOM HWM-gain 12.82% (below +20%, already tightened to 7% ahead of Jul 31 earnings). Both stop orders confirmed live and correctly attached.
+
+### Market Context
+- **Oil:** WTI ~$78.3-78.8, Brent ~$83.8-84.3, both ticking up (~+1%) this morning on renewed Strait of Hormuz reopening doubts — a partial reversal of the de-escalation-driven selloff from two weeks ago, not a resumption of the prior spike.
+- **S&P 500 futures:** Essentially flat (7,777.25, -0.03%), a pause after last week's rally, not a fresh negative catalyst. Light Monday calendar.
+- **VIX:** 14.90 (as of Fri Aug 7 close) — **market risk: low.**
+- **No Tier-1 blocker today:** No CPI/PPI/FOMC/NFP scheduled today. **July NFP already released Fri Aug 7: nonfarm payrolls -23,000 vs +83,000 consensus (a huge miss), May/June revised down a combined ~103,000, unemployment ticked down to 4.1%.** This drove last week's S&P 500 record close (7,757.64, best 5-day run since April) on rising September rate-cut odds. **This week's real Tier-1 items: CPI Wed Aug 12, PPI Thu Aug 13** — both ahead, flag for Tuesday's pre-market as approaching blackout.
+- **Earnings BMO today (not held):** MNDY, SE, ONON, CAH, LEGN, PERI, B (Barrick Mining), AXSM. AMC: SPG, RKLB, ACHR. None on the sector watchlist or held — no blackout triggered.
+- **Sector momentum (YTD, multiple confluent reads):** **Leading/strong YTD: Energy (+22%), Consumer Staples (+16%), Materials (+15-17%), Industrials (+12-21%).** **Lagging/weak YTD: Financials (-5.7%), Consumer Discretionary (-4.6%), Technology (-3.8%, though contradicted by other sources showing Tech as a YTD leader — treated as unreliable per established practice), Communication Services (-0.9%).** Healthcare flat/weakening (+1%). Utilities/Real Estate mixed and modest (+6-8%).
+- **Economic cycle stage:** Perplexity returned **mid-cycle** today (prior sessions this log tracked "late-cycle") — rationale: business surveys still signal expansion, hiring has picked up, recession odds ~20-30%, but unemployment has drifted up for 33 months without recession (atypical/uneven, not fresh recovery). Treating as the more current read; the stage label doesn't change any active blocker or sizing rule this week.
+- **RS ranking note:** Direct Perplexity RS-ranking query again just echoed the input list verbatim (unreliable, as established practice) — discarded; market-intel.json uses the quadrant-consistent ordering instead.
+
+### Benzinga Signals
+72h lookback (Monday adaptive window), 40 emails scanned: **BUY=6, SELL=0, HOLD=20.**
+- **BUY (high):** SPY (score +17, 17 mentions — broad "AI capex boom" macro theme), QQQ (score +4, 8 mentions), SLV (score +4, 3 mentions), XLP (score +4, 4 mentions — BofA defensive-rotation commentary).
+- **BUY (medium):** GLD (score +2, 4 mentions — tied to an ETF-inflow spark headline), XLU (score +2, 2 mentions).
+- No SELL signals. NVDA/AMD/SOXX all reverted to low-confidence HOLD today (yesterday's BUY flips look to have been generic bullish-tape noise, not sustained).
+
+### Congress Signals
+Congress: no actionable signals — Quiver Quant API still returning 401 Unauthorized (ongoing outage since Jul 9, now 26+ consecutive sessions). Already escalated previously; not re-escalating.
+
+### Perplexity Validation — Held Positions
+**IWM ($300.61, +3.38%) — HOLD, thesis intact:** +22.5% YTD (Jan 1 $246.16 to $301.56 Fri close), near 52-week high $301.76, continued small-cap/rate-cut rotation. One caution flag: a BofA (Hartnett) headline argues for rotating into defensives as a sell signal returns — a market-wide caution note, not IWM-specific, and not corroborated by any other source today. No thesis break; watch for confirmation next session.
+
+**XOM ($153.50, +10.89%) — HOLD, thesis intact:** TD Cowen raised its PT to $168 (from $155, Buy); DZ Bank downgraded to Hold ($156 PT) — routine post-Q2-earnings analyst churn, not a fresh negative catalyst. Q2 2026 results already reported and digested ($14.5B earnings, $17.2B FCF, $9.4B returned to shareholders). 6%+ buffer above 7% stop maintained.
+
+### Perplexity Validation — Rule 10 Re-Check (NVDA, per Aug 8 user decision)
+**NVDA ($223.96 last close) — re-validated, NOT entered today.** Fresh data: 52-week high $236.54 (only 5.3% above current — real but modest room), analyst consensus PT $302-330 (KeyBanc raised to $330). A 10% stop (~$201.56) against the $302 consensus PT gives R:R of roughly 3.5:1 — comfortably clears both the 2:1 standard and 1.5:1 urgency floor on paper. **However, sector confirmation is not clean:** SOXX is described today as showing a "fragile stabilization... not calm" after July's 21% drawdown and August's partial rebound, and two same-week headlines ("The Chip Fund That Owns Less Nvidia Is Beating It by 20 Points," "The AI Trade Rotation: Money Is Moving Out of Chips and Into This," both Aug 8-9) point to capital rotating specifically out of NVDA within the semis trade, not just broad Tech-sector weakness. Benzinga also downgraded NVDA from yesterday's spurious BUY back to low-confidence HOLD today. Given "follow sector momentum" and no urgency to force a trade (deployed 37%, no Wednesday trigger today, no Tier-1 blocker forcing haste), the R:R math alone is not enough — **holding off one more session** to see whether the NVDA-specific rotation-out signal fades or confirms. This is the strongest candidate currently on the table; next pre-market should re-check SOXX/NVDA relative performance specifically before entering.
+
+### Perplexity Validation — Rule 16 Widened-Sector Candidates
+**GLD (Materials/Macro, existing watchlist Priority 4, not held) — improved setup, still not entered.** Current $398.47, 52-week high $509.70 (still ~22% below high — genuinely has room, unlike XLI/XLB's near-high problem). Fresh catalyst: July NFP miss led to falling yields/weaker dollar, and gold broke a 2-month consolidation range; gold ETF flows turned to net inflows in July after two months of outflows; PBOC bought gold for a 21st consecutive month. **But the R:R math still does not clean up:** nearest real technical resistance is the 200-day SMA at $405.91-411.70, only +1.9-3.3% away (10% stop vs. that target gives roughly 0.2-0.3:1 R:R — fails badly). The only way to reach 1.5:1+ is to use the wide, speculative Q3 gold-price outlook range ($4,500-5,000/oz, implying GLD ~$436-459), which requires cherry-picking the top of a broad analyst range rather than a confirmed technical level — the same "no computable price target" problem this log has flagged for 6+ consecutive weeks. Not entered; would need a confirmed breakout close above the $405-412 zone with volume before the near-term technical target itself supports 1.5:1+.
+
+**XLU (Utilities, Rule 16 widen candidate, not held) — fails, contradictory data.** Benzinga medium BUY (+2, 2 mentions), and the momentum/demand narrative (AI data-center power demand, 11/17 utility earnings beats) is genuinely constructive. But technical reads are internally contradictory across sources today (one shows price below its 20/50/200-day SMAs and a bearish trend at an implausible $43.61 figure; another cites a breakout setup near $83) — a roughly 2x price discrepancy signals unreliable/conflated data, not a usable technical picture. Not actionable today.
+
+**XLP (Consumer Staples, Rule 16 widen candidate, not held) — fails, mixed signal.** Benzinga high BUY (+4, 4 mentions, BofA defensive-rotation catalyst), Leading momentum quadrant, +15.97% YTD. But RSI is neutral (51.34, no momentum edge), Zacks rates it Hold (not Buy), and the bullish commentary is explicitly framed as valuation-vulnerable/mixed rather than a clean setup. Not actionable today.
+
+**SLV (Silver, Benzinga high BUY today, not held, not previously on watchlist) — fails, genuinely mixed.** Same NFP-driven macro tailwind as gold (weak jobs leading to lower yields and a precious-metals bid), but silver-specific headwinds are also live today (dollar strength, "sell the news" post-Fed-chair-transition flows, falling COMEX open interest). No clear technical or fundamental edge either direction. Not actionable, not added to watchlist.
+
+**No single-stock candidate surfaced** from today's Benzinga/Congress scan in the still-untested Rule 16 sectors (Financials, Healthcare, Consumer Discretionary, Communication Services, Real Estate) — all Benzinga signals today were broad ETFs (SPY/QQQ/GLD/SLV/XLU/XLP). Next session should run a dedicated single-stock sourcing pass in those five sectors per Rule 16(b) rather than re-testing ETFs.
+
+### Trade Ideas
+No new entries today — best candidate (NVDA) has strong R:R on paper but unconfirmed sector momentum; GLD's setup improved (real room below its 52-week high, unlike prior ETF candidates) but still lacks a clean technical target; XLU/XLP/SLV all fail on data quality or mixed signal grounds.
+1. **IWM — hold, no action.** Thesis intact; one market-wide defensive-rotation caution headline noted, not IWM-specific, watch next session.
+2. **XOM — hold, no action.** Thesis intact, routine post-earnings analyst churn only.
+3. **NVDA — leading candidate for tomorrow.** Re-check SOXX/NVDA relative strength specifically (is capital still rotating out of NVDA within the semis trade, or has that faded) before entering.
+4. **GLD — secondary watch.** Needs a confirmed close above $405-412 (200-day SMA) with volume before its near-term technical target alone supports 1.5:1+ R:R; macro tailwind is real but the price-target problem persists.
+5. **Next session:** run a dedicated single-stock sourcing pass in Financials/Healthcare/Consumer Discretionary/Communication Services/Real Estate per Rule 16(b) — no ETF re-testing until that is done at least once.
+
+### Risk Factors
+- **CPI Wed Aug 12, PPI Thu Aug 13** — both Tier-1, arriving this week; flag for Tuesday's pre-market as the next hard blocker check.
+- **NVDA/semis rotation signal** — two fresh headlines (Aug 8-9) suggest capital specifically leaving NVDA within an otherwise-recovering chip trade; this is the key unresolved variable for the strongest candidate on the table.
+- **GLD price-target problem persists a 6th+ consecutive week** — real macro catalyst, but no clean technical or analyst target that clears 1.5:1 R:R without cherry-picking a wide range.
+- **XOM concentration** — largest single position (~19% of equity), sole Energy exposure; no fresh headwind today.
+- **IWM defensive-rotation caution headline (BofA/Hartnett)** — single-source, market-wide (not IWM-specific), unconfirmed; watch for corroboration.
+- **Congress/Quiver Quant API still down** (401, since Jul 9, 26+ consecutive sessions) — already escalated, no new action needed.
+- **9th consecutive week under the 75% deployment floor** — urgency protocol remains active (R:R floor 1.5:1, Tier-2 blockers waived); no candidate cleared the bar today.
+- **Automated routine reliability:** local scheduled runs have been failing on OAuth session expiry since Aug 6 — flagging for the user to re-authenticate claude outside of scheduled-task context so Tue-Fri routines this week actually fire.
+
+### Decision
+**HOLD — no new entries today.** NVDA re-validated per the Aug 8 Rule 10 lift: R:R math is strong (roughly 3.5:1 against consensus PT) but sector-momentum confirmation is unclean (fragile SOXX stabilization plus two fresh "capital rotating out of NVDA" headlines) — holding one more session rather than forcing it. GLD's setup is structurally better than the ETFs that failed all last week (real room below its 52-week high) but still has no clean technical target that clears 1.5:1 R:R. XLU/XLP/SLV all fail on data-quality or mixed-signal grounds. IWM and XOM both hold unchanged, theses intact. Week 16 count stays 0/3. Deployment remains 37.17%, 9th consecutive week under the 75% floor — urgency protocol carries forward. Reconnect-protocol reconciliation (Rule 15) completed clean: no missed thresholds during the Aug 6-9 automation gap. Next session: re-check NVDA/SOXX relative strength, and run a dedicated single-stock sourcing pass in the five still-untested Rule 16 sectors.
