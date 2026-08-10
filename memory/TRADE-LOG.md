@@ -4265,3 +4265,43 @@ No "User decisions" block found below the Aug 5 EOD entry. One unanswered action
 
 **Next pre-market must:** (1) re-check NVDA fresh (Rule 10 no longer blocks it), (2) begin sourcing from the widened sector list per Rule 16 instead of re-testing XLI/XLB.
 
+
+---
+
+## 2026-08-10 — Market-Open (Monday, Week 16 Day 1)
+
+**No trade — pre-market decision was HOLD.** Best candidate (NVDA) has strong R:R on paper (~3.5:1) but sector-momentum confirmation unclean (fragile SOXX stabilization, capital-rotation-out-of-NVDA headlines); GLD lacks a clean technical target; XLU/XLP/SLV all failed on data-quality/mixed-signal grounds. No planned tickers to re-validate at open.
+
+**Live re-validation (Alpaca, market open):**
+- Equity $103,996.59 | Cash $65,225.69 (62.72%) | Deployed $38,770.90 (37.28%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline. Week 16 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $300.44 | +$599.55 (+3.33%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $154.97 | +$2,151.42 (+11.96%) | 7% trail HWM $156.16 / stop $145.2288 (ffe9d7c4, confirmed live, no new high) |
+
+- No losers cut (both well above -7%). No tighten triggers hit (IWM +3.33% and XOM +11.96%, both below +15%/+20%; XOM already at 7% trail ahead of Jul 31 earnings). No thesis breaks. No new entries — no candidate cleared R:R at pre-market, none newly qualified at open.
+- Open orders confirmed live and matching log: XOM trailing_stop 7% GTC (ffe9d7c4), IWM trailing_stop 10% GTC (4c0586cc).
+
+**Action taken:** None. No ClickUp notification (no trade placed, per STEP 7). No commit — no trades fired, per STEP 8.
+
+---
+
+## 2026-08-10 — Midday Scan (Monday, Week 16 Day 1)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $299.92 | +$567.31 (+3.15%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, unchanged — no new high today) |
+| XOM | 130 | $138.420615 | $158.965 | +$2,670.77 (+14.84%) | 7% trail HWM $159.13 / stop $147.9909 (ffe9d7c4, new intraday high — trail auto-advanced, still below +15% tighten trigger) |
+
+- **Losers cut:** None. IWM +3.15%, XOM +14.84% — both well above the -7% cut.
+- **Stop tightening:** None. XOM unrealized gain 14.842% is just under the +15% trigger (rounds to 14.84%, not ≥15%) — holding at current 7% trail, do not jump the gun. IWM +3.15%, nowhere near +15%. Flagging XOM for market-open tomorrow: one more good session likely crosses +15% and requires tightening 7%→5% (mind the "never within 3% of price" and "never move stop down" constraints when placing).
+- **Thesis check — XOM's sharp intraday move (+3.87% today):** Perplexity confirms move is oil/geopolitical, not company-specific — crude benchmarks (Brent/WTI) rallied on renewed Strait of Hormuz supply-risk headlines, consistent with this morning's pre-market note (WTI/Brent both ticking up on reopening doubts). No fresh Exxon-specific press release or operational news found. Argus PT raised to $169 (Buy, Permian/Guyana growth) noted but not flagged as today's trigger. Thesis intact and reinforced — no action.
+- **IWM:** No news flags, thesis intact (small-cap rally continuing), -0.54% intraday (mild pullback, consistent with tape), no action.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $147.9909, HWM $159.13 — advanced from this morning's $156.16), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $272.754, HWM $303.06 unchanged) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up. Equity $104,497.14 | Cash $65,225.69 (62.42%) | Deployed $39,271.45 (37.58%, 2 positions). Week 16 count stays 0/3.
+
+**Action taken:** None. No cuts, no tightens (XOM just under +15% trigger), no thesis breaks, no new entries. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
