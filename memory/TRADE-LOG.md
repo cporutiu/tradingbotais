@@ -4305,3 +4305,25 @@ No "User decisions" block found below the Aug 5 EOD entry. One unanswered action
 **Action taken:** None. No cuts, no tightens (XOM just under +15% trigger), no thesis breaks, no new entries. No ClickUp notification (no action taken, per STEP 7).
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 10 — EOD Snapshot (Day 73, Monday — Week 16 Day 1)
+**Portfolio:** $104,595.23 | **Cash:** $65,225.69 (62.36%) | **Day P&L:** +$777.62 (+0.75%) | **Phase P&L:** +$4,595.23 (+4.60%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $299.97 | -0.53% | +$570.41 (+3.16%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $159.78 | +4.40% | +$2,776.72 (+15.43%) | 7% trail HWM $160.37 / stop $149.1441 (ffe9d7c4, new HWM — trail auto-advanced) |
+
+**Trades today:** None. Pre-market held (NVDA R:R strong ~3.5:1 but sector-momentum confirmation unclean — fragile SOXX stabilization plus fresh capital-rotation-out-of-NVDA headlines; GLD lacks a clean technical target; XLU/XLP/SLV failed data-quality/mixed-signal checks). No entry at market-open or midday. Week 16 count: 0/3.
+
+**Notes:** Day 73, Monday, Week 16 Day 1. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Automated local routines missed Aug 6-9 (Claude OAuth session expiry) — today's pre-market ran Rule 15 reconnect reconciliation and confirmed no missed thresholds during the gap; scheduler still needs re-auth so Tue-Fri routines this week actually fire (Day P&L below uses Alpaca's own last-close equity $103,817.61, asof Aug 7, since no EOD snapshot was logged Aug 6/7). XOM had a strong day (+4.40%, oil rallying on renewed Strait of Hormuz supply-risk headlines per Perplexity, thesis intact — TD Cowen PT $168, Argus PT $169) and its unrealized gain crossed +15% (15.43%) intraday — the tier that would normally trigger a 10%→7% tighten, but XOM was already preemptively tightened to 7% ahead of Jul 31 earnings, so no action needed; the next tier (7%→5%) triggers at +20%, still ~4.6 points away. IWM -0.53% on a mild broad-tape pullback, thesis intact (small-cap rally continuing), no triggers. No losers cut, no thesis breaks. Deployment held at 37.64% (62.36% cash) — 9th consecutive week under the 75% floor. NVDA remains the leading un-entered candidate, held back only by unclean sector-momentum confirmation.
+
+**Action questions:**
+
+**Q: Enter NVDA at next pre-market re-validation, or stay patient another session?**
+- Enter: R:R math is strong (~3.5:1 vs. consensus PT) and 9 straight weeks of idle cash is a real opportunity cost — a clean SOXX confirmation may never arrive before the move runs
+- Stay patient: two fresh headlines (Aug 8-9) point to capital rotating specifically out of NVDA within the semis trade — entering into that would fight the "follow sector momentum" rule
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
