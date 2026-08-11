@@ -4327,3 +4327,13 @@ No "User decisions" block found below the Aug 5 EOD entry. One unanswered action
 - Stay patient: two fresh headlines (Aug 8-9) point to capital rotating specifically out of NVDA within the semis trade — entering into that would fight the "follow sector momentum" rule
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-11 — Pre-Market: Autonomous Decision (Tuesday, Week 16 Day 2)
+
+No "User decisions" block found below the Aug 10 EOD entry. One unanswered action question resolved autonomously per Rule 14:
+
+**Bot autonomous decision (2026-08-11):** Enter NVDA at next pre-market re-validation, or stay patient another session? → **STAY PATIENT — no NVDA entry today.** → The capital-rotation-away-from-NVDA signal is reconfirmed with fresh same-day evidence, not fading: Yahoo Finance reports the chip rally is "not being driven by Nvidia" (NVDA down >$100B market cap over three sessions even as SOXX hits fresh records), and AMD has overtaken NVDA's weighting in the $45B SOXX fund — a structural shift, not noise. R:R math remains strong on paper (~3.5:1 vs. consensus PT) but "follow sector momentum" (Rule 9) argues against forcing entry into a name capital is actively leaving within an otherwise-recovering sector. Per the trade-slot default posture, this is "no valid setup" → CARRY, not USE. Full market context in today's RESEARCH-LOG.md entry.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.

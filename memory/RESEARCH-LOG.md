@@ -5682,3 +5682,57 @@ No new entries today — best candidate (NVDA) has strong R:R on paper but uncon
 
 ### Decision
 **HOLD — no new entries today.** NVDA re-validated per the Aug 8 Rule 10 lift: R:R math is strong (roughly 3.5:1 against consensus PT) but sector-momentum confirmation is unclean (fragile SOXX stabilization plus two fresh "capital rotating out of NVDA" headlines) — holding one more session rather than forcing it. GLD's setup is structurally better than the ETFs that failed all last week (real room below its 52-week high) but still has no clean technical target that clears 1.5:1 R:R. XLU/XLP/SLV all fail on data-quality or mixed-signal grounds. IWM and XOM both hold unchanged, theses intact. Week 16 count stays 0/3. Deployment remains 37.17%, 9th consecutive week under the 75% floor — urgency protocol carries forward. Reconnect-protocol reconciliation (Rule 15) completed clean: no missed thresholds during the Aug 6-9 automation gap. Next session: re-check NVDA/SOXX relative strength, and run a dedicated single-stock sourcing pass in the five still-untested Rule 16 sectors.
+
+## 2026-08-11 — Pre-Market Research (Tuesday, Week 16 Day 2)
+
+**Urgency protocol active:** Deployed has closed below 75% for 9+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply (Tier-1 still blocks).
+
+### STEP 1B — Pending decision resolved
+No "User decisions" block found below the Aug 10 EOD entry. One unanswered action question resolved autonomously per Rule 14 — **NVDA entry → STAY PATIENT, no entry today.** Full rationale in TRADE-LOG.md under "Bot autonomous decision (2026-08-11)." Summary: the capital-rotation-away-from-NVDA signal is reconfirmed with fresh same-day evidence (chip rally "not being driven by Nvidia," NVDA down >$100B market cap over three sessions even as SOXX hits records; AMD has overtaken NVDA's weighting in the $45B SOXX fund) — a structural shift, not noise. R:R remains strong on paper (~3.5:1) but Rule 9 (follow sector momentum) argues against forcing entry into a name capital is actively leaving.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $104,649.23 | Cash: $65,225.69 (62.33%) | Deployed: $39,423.54 (37.67%, 2 positions) | Buying power: $371,288.67 | Week 16 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $300.17 | +$582.81 (+3.23%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $160.10 | +$2,818.32 (+15.66%) | 7% trail HWM $160.37 / stop $149.1441 (ffe9d7c4, confirmed live, no new high) |
+
+No -7% cut hit on either position. **XOM unrealized gain (15.66%) is above the +15% tighten tier but was already preemptively tightened to 7% ahead of Jul 31 earnings — no action needed; next tier (7%→5%) triggers at +20%, still ~4.3 points away.** IWM +3.23%, nowhere near +15%. Both stop orders confirmed live and correctly attached, no drift from log.
+
+### Market Context
+- **Oil:** WTI ~$82-84 (Barchart $84.33 +2.68%, CNBC $84.32 +2.67%), Brent ~$87-89 (Oilprice.com $87.74) — sharp continued rally (one source flags a >5% single-day move) on fading optimism for a US-Iran deal to reopen the Strait of Hormuz. Reverses last week's de-escalation-driven softening and reintroduces inflation concerns just ahead of Wednesday's CPI.
+- **S&P 500 futures:** Roughly flat to modestly positive (~7,775-7,791, -0.05% to +0.15% depending on source/timestamp) — a pause after Monday's close, which itself was down on the oil/inflation headline (Nasdaq led declines on tech weakness).
+- **VIX:** ~15.5 (15.46-15.51 across sources) — **market risk: low**, essentially unchanged from Friday's 14.90.
+- **No Tier-1 blocker today:** No CPI/PPI/FOMC/NFP. Today's releases (NFIB Small Business Optimism, Existing Home Sales) are Tier-2/non-blocking. **CPI (July) releases tomorrow, Wed Aug 12, 8:30am ET — Tier-1 blackout. PPI follows Thu Aug 13, 8:30am ET — also Tier-1.** Both flagged for the next two pre-market runs.
+- **Earnings BMO today (not held):** Cardinal Health, Super Micro Computer (AMC per some sources), Aramark, Venture Global, CoreWeave (AMC), fuboTV, LCI Industries, H&R Block, Lumentum, Celsius Holdings, Rackspace, plus a long tail of small caps. None on the sector watchlist or held — no blackout triggered.
+- **Sector momentum (YTD):** Confluent across sources — **Leading: Energy (+22-24%), Materials (+11-17%), Consumer Staples (+11-16%), Industrials (+11-21%).** **Lagging: Financials (-2 to -7%), Consumer Discretionary (-4%), Technology (mixed reads, -3% to +23% across sources — treated as unreliable per established practice), Communication Services (-1%).** Consistent with the multi-week Leading quadrant (XLP/XLI/XLB/XLE) already on the watchlist.
+- **RS ranking:** Not separately queried today (quadrant-consistent ordering from sector momentum query used instead — Perplexity's direct RS-ranking query has repeatedly proven unreliable per established practice).
+
+### Held-Position Validation
+**IWM ($300.17, +3.23%) — HOLD, thesis intact:** No IWM-specific news. Coverage is general (small-cap valuation, distribution notes, Russell 2000 YTD performance ~21.6% NAV total return). No thesis concern, no BofA defensive-rotation follow-through noted today (last week's single-source caution flag not corroborated further).
+
+**XOM ($160.10, +15.66%) — HOLD, thesis intact and reinforced:** Up ~4.4% today, directly tracking the oil spike (Strait of Hormuz supply-risk headlines). Q2 2026 results ($14.5B earnings, $23.6B operating cash flow, $9.4B shareholder distributions) already digested; TD Cowen raised PT to $168 (Buy). No negative catalyst. 6%+ buffer above 7% stop maintained even after the gain.
+
+### NVDA/SOXX Re-Check (per Aug 10 pending question)
+**NVDA — not entered, rotation-away signal reconfirmed (see STEP 1B above).** Multiple fresh sources describe SOXX/chip-sector strength explicitly decoupled from NVDA: "chip stocks are hitting fresh records, but Nvidia isn't the driver" (Yahoo Finance), NVDA has lost >$100B in market value over three sessions since its last earnings despite beating estimates and giving upbeat guidance, and AMD has overtaken NVDA's weighting within the $45B SOXX fund — a real shift in intra-sector capital allocation, not a one-off headline. This is now a multi-session, multi-source pattern (first flagged Aug 8-9, still live Aug 11). Holding off; will re-check once NVDA stops underperforming its own sector ETF.
+
+### Trade Ideas
+No new entries today — NVDA re-check confirms the rotation-away pattern is persisting, not fading; no other candidate researched today per the shorter pre-market scope (Benzinga/Congress scan and Rule 16 widened-sector sourcing were not run this session).
+1. **IWM — hold, no action.** Thesis intact, no new headlines.
+2. **XOM — hold, no action.** Thesis intact and reinforced by today's oil-driven rally; +15.66% unrealized already covered by the 7% trail from the Jul 31 earnings tighten.
+3. **NVDA — still the leading watchlist candidate, not actionable.** Re-check NVDA-vs-SOXX relative performance next session; enter only once the stock stops lagging its own sector ETF.
+4. **Next session priority:** run the Rule 16 single-stock sourcing pass (Financials, Healthcare, Consumer Discretionary, Communication Services, Real Estate) — deferred two sessions running now.
+
+### Risk Factors
+- **CPI Wed Aug 12, PPI Thu Aug 13, both 8:30am ET** — Tier-1 blackout, arriving this week; no new entries permitted regardless of candidate status on either morning.
+- **Oil spike (Strait of Hormuz deal-hope fade)** — helps XOM's thesis directly but is a broader inflation risk heading into CPI; watch for a sharper reversal if headlines shift again.
+- **NVDA/semis rotation signal now 3+ sessions old and reinforced with fresh data** — no longer a one-off; the underperformance-vs-SOXX gap is the single most important variable for the account's best-researched candidate.
+- **XOM concentration** — largest single position (~19% of equity), sole Energy exposure; today's gain is oil-driven, watch for reversal risk symmetric to today's rally.
+- **10th consecutive week under the 75% deployment floor** — urgency protocol remains active; Rule 16 widened-sector sourcing has been deferred two sessions running and needs to happen before Wednesday's urgency check (deployed <70% trigger).
+- **Congress/Quiver Quant API status not re-checked this session** (shorter pre-market scope) — last known status 401/down since Jul 9.
+
+### Decision
+**HOLD — no new entries today.** NVDA pending question resolved autonomously (Rule 14): STAY PATIENT, rotation-away-from-NVDA signal reconfirmed with fresh multi-source evidence today, not fading. IWM and XOM both hold unchanged, theses intact — XOM's oil-driven rally today reinforces rather than threatens its thesis, unrealized gain (15.66%) already covered by the 7% trail set ahead of Jul 31 earnings. No -7% cuts, no new tighten triggers (XOM's next tier is +20%, still ~4.3 points away). Week 16 count stays 0/3. Deployment remains 37.67%, 10th consecutive week under the 75% floor — urgency protocol carries forward; Rule 16 single-stock sourcing pass is now overdue and should be the first task next session, ahead of Wednesday's CPI Tier-1 blackout.
