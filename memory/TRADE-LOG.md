@@ -4376,3 +4376,25 @@ No "User decisions" block found below the Aug 10 EOD entry. One unanswered actio
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Aug 11 — EOD Snapshot (Day 74, Tuesday — Week 16 Day 2)
+**Portfolio:** $104,659.21 | **Cash:** $65,225.69 (62.33%) | **Day P&L:** +$63.98 (+0.06%) | **Phase P&L:** +$4,659.21 (+4.66%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $300.96 | +0.33% | +$631.79 (+3.51%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $159.80 | +0.01% | +$2,779.32 (+15.45%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, unchanged) |
+
+**Trades today:** None. Pre-market autonomous decision (Rule 14) was STAY PATIENT on NVDA — capital-rotation-away-from-NVDA signal reconfirmed with fresh same-day evidence (AMD overtaking NVDA's SOXX weighting). No other candidate cleared R:R at pre-market, market-open, or midday. Week 16 count: 0/3.
+
+**Notes:** Day 74, Tuesday, Week 16 Day 2. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Both positions drifted flat with the tape — IWM +0.33% intraday, XOM +0.01% intraday, no thesis breaks on either. No losers cut (both well above -7%). No tighten triggers hit — XOM's unrealized gain sits at +15.45%, already satisfied by the preemptive 10%→7% tighten ahead of Jul 31 earnings; next tier (7%→5%) triggers at +20%, still ~4.55 points away. IWM +3.51%, nowhere near +15%. Deployment held flat at 37.68% (62.33% cash) — 9th consecutive week under the 75% floor. NVDA remains the leading un-entered candidate, held back by the sector-momentum rule (capital actively rotating out of NVDA within an otherwise-recovering semis trade).
+
+**Action questions:**
+
+**Q: Enter NVDA at next pre-market re-validation, or stay patient another session?**
+- Enter: R:R math is strong (~3.5:1 vs. consensus PT) and idle cash has sat below the 75% deployment floor for 9 straight weeks — a clean rotation-back-into-NVDA confirmation may never arrive before the move runs
+- Stay patient: the rotation-away-from-NVDA signal is fresh (same-day, multi-source) and entering into it would fight the "follow sector momentum" rule — forcing a trade against the grain risks a quick stop-out
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
