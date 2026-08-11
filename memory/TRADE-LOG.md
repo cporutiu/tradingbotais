@@ -4337,3 +4337,42 @@ No "User decisions" block found below the Aug 10 EOD entry. One unanswered actio
 **Bot autonomous decision (2026-08-11):** Enter NVDA at next pre-market re-validation, or stay patient another session? → **STAY PATIENT — no NVDA entry today.** → The capital-rotation-away-from-NVDA signal is reconfirmed with fresh same-day evidence, not fading: Yahoo Finance reports the chip rally is "not being driven by Nvidia" (NVDA down >$100B market cap over three sessions even as SOXX hits fresh records), and AMD has overtaken NVDA's weighting in the $45B SOXX fund — a structural shift, not noise. R:R math remains strong on paper (~3.5:1 vs. consensus PT) but "follow sector momentum" (Rule 9) argues against forcing entry into a name capital is actively leaving within an otherwise-recovering sector. Per the trade-slot default posture, this is "no valid setup" → CARRY, not USE. Full market context in today's RESEARCH-LOG.md entry.
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+## 2026-08-11 — Market-Open (Tuesday, Week 16 Day 2)
+
+**No trade — pre-market decision was HOLD.** NVDA autonomous decision (Rule 14) was STAY PATIENT — rotation-away-from-NVDA signal reconfirmed with fresh multi-source evidence, not fading. No other candidate cleared R:R. No planned tickers to re-validate at open.
+
+**Live re-validation (Alpaca, market open):**
+- Equity $104,674.77 | Cash $65,225.69 (62.32%) | Deployed $39,449.08 (37.68%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline. Week 16 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $301.20 | +$646.67 (+3.59%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $159.81 | +$2,780.62 (+15.45%) | 7% trail HWM $160.37 / stop $149.1441 (ffe9d7c4, confirmed live, no new high) |
+
+- No losers cut (both well above -7%). No tighten triggers hit — XOM at +15.45% already tightened to 7% ahead of Jul 31 earnings, next tier (7%→5%) at +20%, still ~4.5 points away. IWM +3.59%, nowhere near +15%. No thesis breaks. No new entries — no candidate cleared R:R at pre-market (CPI Tier-1 blackout tomorrow, Aug 12), none newly qualified at open.
+- Open orders confirmed live and matching log: XOM trailing_stop 7% GTC (ffe9d7c4), IWM trailing_stop 10% GTC (4c0586cc).
+
+**Action taken:** None. No ClickUp notification (no trade placed, per STEP 7). No commit — no trades fired, per STEP 8.
+
+---
+
+## 2026-08-11 — Midday Scan (Tuesday, Week 16 Day 2)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $301.29 | +$652.25 (+3.62%) | 10% trail HWM $303.06 / stop $272.754 (4c0586cc, unchanged — no new high today) |
+| XOM | 130 | $138.420615 | $160.08 | +$2,815.72 (+15.65%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, new intraday high — trail auto-advanced) |
+
+- **Losers cut:** None. IWM +3.62%, XOM +15.65% — both well above the -7% cut.
+- **Stop tightening:** None due. XOM crossed +15.65% but was already preemptively tightened to 7% ahead of Jul 31 earnings, so the +15% tier requirement is already satisfied — no action needed. Next tier (7%→5%) triggers at +20%, still ~4.35 points away. IWM +3.62%, nowhere near +15%.
+- **Thesis check:** IWM +0.44% intraday, XOM +0.18% intraday — both mild, consistent-with-tape moves, no thesis-break signals. No sharp unexplained move on either name — Perplexity research skipped per STEP 6.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $150.3531, HWM $161.67 — advanced from this morning's $160.37), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $272.754, HWM $303.06 unchanged) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up. Equity $104,715.42 | Cash $65,225.69 (62.29%) | Deployed $39,489.73 (37.71%, 2 positions). Week 16 count stays 0/3.
+
+**Action taken:** None. No cuts, no tightens (XOM already satisfies +15% tier from earlier preemptive tighten), no thesis breaks, no new entries. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
