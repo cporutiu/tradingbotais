@@ -5736,3 +5736,25 @@ No new entries today — NVDA re-check confirms the rotation-away pattern is per
 
 ### Decision
 **HOLD — no new entries today.** NVDA pending question resolved autonomously (Rule 14): STAY PATIENT, rotation-away-from-NVDA signal reconfirmed with fresh multi-source evidence today, not fading. IWM and XOM both hold unchanged, theses intact — XOM's oil-driven rally today reinforces rather than threatens its thesis, unrealized gain (15.66%) already covered by the 7% trail set ahead of Jul 31 earnings. No -7% cuts, no new tighten triggers (XOM's next tier is +20%, still ~4.3 points away). Week 16 count stays 0/3. Deployment remains 37.67%, 10th consecutive week under the 75% floor — urgency protocol carries forward; Rule 16 single-stock sourcing pass is now overdue and should be the first task next session, ahead of Wednesday's CPI Tier-1 blackout.
+
+## 2026-08-12 — Pre-Market Research (Wednesday, Week 16 Day 3) — INFRA OUTAGE, NO DATA
+
+### STEP 1B — Pending decision NOT resolved
+Aug 11 EOD action question (NVDA: enter at next pre-market re-validation, or stay patient?) is **carried forward unresolved** — cannot apply Rule 14 autonomous resolution without fresh live data, and none was obtainable this session (see below). Moot for today regardless: **CPI (July) releases today 8:30am ET — Tier-1 blackout, no new entries permitted** per the Aug 10/11 flag.
+
+### Infra status: total external API outage, egress-policy-blocked
+All three required APIs failed at the network layer before any application response:
+- `bash scripts/alpaca.sh account` → curl exit 22, HTTP 403
+- `bash scripts/perplexity.sh` → curl exit 22, HTTP 403
+- `bash scripts/clickup.sh` → curl exit 22, HTTP 403 (alert could not be sent — this entry is the record of record)
+
+Root cause confirmed via proxy diagnostics (`$HTTPS_PROXY/__agentproxy/status`): the session's egress proxy rejected the CONNECT tunnel to `paper-api.alpaca.markets:443` with "gateway answered 403 to CONNECT (policy denial or upstream failure)" — an organization-level egress policy denial, **not** an Alpaca credential problem (ALPACA_ENDPOINT correctly resolved to the paper API host, matching AIS baseline) and not a market/data issue. Perplexity and ClickUp hosts were equally unreachable. Per proxy runbook: do not retry, do not route around — report the blocked hosts.
+
+**No account snapshot, no positions/orders pull, no market research performed this session** — none of STEPS 2-3 could execute. Nothing below is inferred or estimated; it is simply unavailable. Last known state remains Aug 11 EOD (TRADE-LOG.md): Equity $104,659.21, IWM + XOM held, both theses intact, no cuts/tightens due.
+
+### Decision
+**HOLD — forced by infra outage, reinforced by CPI Tier-1 blackout today anyway.** No new entries possible or permitted. NVDA decision stays open, to be resolved with fresh data once connectivity and CPI blackout both clear (earliest: tomorrow's pre-market, contingent on outage resolution — Thu Aug 13 is also Tier-1 PPI, so realistically Friday Aug 14).
+
+### Action required (user)
+- Egress/proxy access to `paper-api.alpaca.markets`, Perplexity, and ClickUp hosts is blocked for this session — needs to be allow-listed or the session's network policy reviewed before the next scheduled run can do anything beyond this outage check.
+- **Rule 15 reconnect protocol** will apply on the first run back once connectivity is restored: reconcile live positions/orders against this log before any new-entry action, and check both held positions against every threshold (tighten triggers, -7% cut, thesis-break levels) that should have applied during the gap.
