@@ -4408,3 +4408,40 @@ No "User decisions" block found below the Aug 11 EOD entry. One unanswered actio
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-12 — Market-Open (Wednesday, Week 16 Day 3)
+
+**No trade — pre-market decision was HOLD.** Tier-1 CPI blackout (8:30am ET release) + NVDA autonomous decision (Rule 14) was STAY PATIENT — rotation-away-from-NVDA signal reconfirmed a third consecutive session. No other candidate cleared R:R. No planned tickers to re-validate at open.
+
+**Live re-validation (Alpaca, market open):**
+- Equity $104,627.27 | Cash $65,225.69 (62.34%) | Deployed $39,401.58 (37.66%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline. Week 16 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $302.94 | +$754.55 (+4.19%) | 10% trail HWM $303.39 / stop $273.051 (4c0586cc, confirmed live, new high — trail advanced) |
+| XOM | 130 | $138.420615 | $158.61 | +$2,624.62 (+14.59%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+- No losers cut (both well above -7%). No tighten triggers hit — IWM +4.19%, nowhere near +15%. XOM +14.59%, still below its own +15% mark but already tightened to 7% ahead of Jul 31 earnings (next tier 7%→5% at +20%, still ~5.4 points away). No thesis breaks. No new entries — Tier-1 CPI blackout live today, no candidate actionable regardless of R:R.
+- Open orders confirmed live and matching log: XOM trailing_stop 7% GTC (ffe9d7c4), IWM trailing_stop 10% GTC (4c0586cc, HWM advanced to $303.39 on today's new high).
+
+**Action taken:** None. No ClickUp notification (no trade placed, per STEP 7). No commit — no trades fired, per STEP 8.
+
+---
+
+## 2026-08-12 — Midday Scan (Wednesday, Week 16 Day 3)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $302.22 | +$709.91 (+3.94%) | 10% trail HWM $303.39 / stop $273.051 (4c0586cc, unchanged — no new high today) |
+| XOM | 130 | $138.420615 | $159.165 | +$2,696.77 (+14.99%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, unchanged — no new high today) |
+
+- **Losers cut:** None. IWM +3.94%, XOM +14.99% — both well above the -7% cut.
+- **Stop tightening:** None due. XOM at +14.99% is a hair under the +15% tier (rounds just below) — already at 7% trail preemptively from Jul 31 earnings anyway, so the tier is effectively satisfied either way. Next real tier (7%→5%) triggers at +20%, still ~5 points away. IWM +3.94%, nowhere near +15%.
+- **Thesis check:** IWM +0.41% intraday, XOM -0.40% intraday — both mild, consistent-with-tape moves, no thesis-break signals. No sharp unexplained move on either name — Perplexity research skipped per STEP 6. Today's Tier-1 CPI release (8:30am ET) has not disrupted either thesis so far.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $150.3531, HWM $161.67, unchanged), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $273.051, HWM $303.39, unchanged) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up. Equity $104,654.78 | Cash $65,225.69 (62.32%) | Deployed $39,429.09 (37.68%, 2 positions). Week 16 count stays 0/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks, no new entries (Tier-1 CPI blackout live today). No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
