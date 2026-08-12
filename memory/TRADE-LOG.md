@@ -4445,3 +4445,25 @@ No "User decisions" block found below the Aug 11 EOD entry. One unanswered actio
 **Action taken:** None. No cuts, no tightens, no thesis breaks, no new entries (Tier-1 CPI blackout live today). No ClickUp notification (no action taken, per STEP 7).
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 12 — EOD Snapshot (Day 75, Wednesday — Week 16 Day 3)
+**Portfolio:** $104,761.95 | **Cash:** $65,225.69 (62.26%) | **Day P&L:** +$102.74 (+0.10%) | **Phase P&L:** +$4,761.95 (+4.76%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $302.70 | +0.57% | +$739.67 (+4.10%) | 10% trail HWM $303.39 / stop $273.051 (4c0586cc, unchanged) |
+| XOM | 130 | $138.420615 | $159.77 | -0.02% | +$2,775.42 (+15.42%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, unchanged) |
+
+**Trades today:** None. Tier-1 CPI blackout day (July CPI, 8:30am ET) blocked all new entries regardless of candidate status. Pre-market autonomous decision (Rule 14) resolved the outstanding NVDA question — STAY PATIENT, third consecutive session, rotation-away-from-NVDA signal reconfirmed. Week 16 count: 0/3.
+
+**Notes:** Day 75, Wednesday, Week 16 Day 3. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Today's Tier-1 CPI release did not disrupt either thesis — IWM +0.57% intraday, XOM -0.02% intraday, both flat-to-mild moves consistent with the tape. No losers cut (both well above -7%). No tighten triggers hit — XOM's unrealized gain sits at +15.42%, already satisfied by the preemptive 10%→7% tighten ahead of Jul 31 earnings; next tier (7%→5%) triggers at +20%, still ~4.6 points away. IWM +4.10%, nowhere near +15%. No new entries — CPI blackout blocked all candidates; NVDA autonomous decision (Rule 14) was STAY PATIENT for a third straight session (NVDA/SOXX ratio down 1.57% over the past week, SOXX up 7-8% while NVDA lags). Deployment held flat at 37.74% (62.26% cash) — 10th consecutive week under the 75% floor. Week 16 count: 0/3, 2 trading days remaining (Thu, Fri).
+
+**Action questions:**
+
+**Q: Enter NVDA at next pre-market re-validation, or stay patient another session?**
+- Option A: Enter — R:R math is strong (~3.5:1 vs. consensus PT) and idle cash has sat below the 75% deployment floor for 10 straight weeks — a clean rotation-back-into-NVDA confirmation may never arrive before the move runs
+- Option B: Stay patient — the rotation-away-from-NVDA signal is fresh and reconfirmed three sessions running (multi-source) — forcing a trade against "follow sector momentum" risks a quick stop-out
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
