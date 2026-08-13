@@ -4516,3 +4516,25 @@ No "User decisions" block found below the Aug 12 EOD entry. One unanswered actio
 **Action taken:** None. No cuts, no tightens (XOM already satisfies +15% tier from earlier preemptive tighten), no thesis breaks, no new entries (PPI blackout). No ClickUp notification (no action taken, per STEP 7).
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 13 — EOD Snapshot (Day 76, Thursday — Week 16 Day 4)
+**Portfolio:** $104,668.61 | **Cash:** $65,225.69 (62.32%) | **Day P&L:** -$93.34 (-0.09%) | **Phase P&L:** +$4,668.61 (+4.67%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $303.46 | +0.25% | +$786.79 (+4.36%) | 10% trail HWM $305.05 / stop $274.545 (4c0586cc, confirmed live) |
+| XOM | 130 | $138.420615 | $158.68 | -0.67% | +$2,633.72 (+14.64%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live) |
+
+**Trades today:** None. Tier-1 PPI blackout day (July PPI, 8:30am ET) blocked all new entries regardless of candidate status. Pre-market autonomous decision (Rule 14) resolved the outstanding NVDA question — STAY PATIENT, fourth consecutive session, rotation signal now mixed rather than cleanly negative but still not clean enough to act on. Week 16 count: 0/3.
+
+**Notes:** Day 76, Thursday, Week 16 Day 4. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Portfolio dipped slightly (-0.09% day) as XOM gave back some of its oil-driven run (-0.67%) while IWM held a fresh high territory (+0.25%). No losers cut (both well above -7%). No tighten triggers hit — XOM's unrealized gain sits at +14.64%, already satisfied by the preemptive 10%→7% tighten ahead of Jul 31 earnings; next tier (7%→5%) triggers at +20%, still ~5.4 points away. IWM +4.36%, nowhere near +15%. No new entries — PPI blackout blocked all candidates; NVDA autonomous decision (Rule 14) was STAY PATIENT for a fourth straight session, though the rotation-vs-SOXX signal is now mixed (one source shows NVDA outperforming its industry average) rather than cleanly negative — worth a fresh clean read tomorrow. AVGO computed today as a live, R:R-cleared candidate (~1.7-2.6:1 vs. consensus PT range $493-528, entry ~$420, stop ~$378) — first actionable name for tomorrow's post-blackout pre-market. Deployment held flat at 37.68% (62.32% cash) — 11th consecutive week under the 75% floor. Week 16 count: 0/3, 1 trading day remaining (Fri).
+
+**Action questions:**
+
+**Q: Enter AVGO at tomorrow's pre-market re-validation, or stay patient another session?**
+- Option A: Enter — R:R clears both the 1.5:1 urgency floor and 2:1 standard floor at the higher end (~1.7-2.6:1), Technology sits in the Leading momentum quadrant, and idle cash has sat below the 75% deployment floor for 11 straight weeks — a fresh, not-yet-priced setup that may not stay this cheap
+- Option B: Stay patient — AVGO's R:R was only just computed today and hasn't had a session to prove itself against blackout-day noise; entering the first session after two consecutive Tier-1 blackouts risks chasing a move that already ran
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
