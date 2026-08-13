@@ -4477,3 +4477,42 @@ No "User decisions" block found below the Aug 12 EOD entry. One unanswered actio
 **Bot autonomous decision (2026-08-13):** Enter NVDA at next pre-market re-validation, or stay patient another session? → **STAY PATIENT — no NVDA entry today.** → Doubly blocked: (1) **today is a Tier-1 blackout day** — July PPI releases at 8:30am ET, confirmed live via BLS schedule, so no new entries are permitted regardless of candidate status; (2) NVDA/SOXX relative-strength check is a fourth consecutive session of no clean resolution — the direct NVDASOXX_RATIO feed still shows NVDA down 1.57% vs. SOXX over the past week (unchanged from Aug 12's read), and while one source shows NVDA +2.62% this week vs. a -1.30% semis-industry average, that conflicts with the ratio data and Perplexity's own synthesis calls the picture "mixed and not confirmed" — SOXX still leads NVDA on relative strength this week. Per the trade-slot default posture, this is "no valid setup" → CARRY, not USE.
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-13 — Market-Open (Thursday, Week 16 Day 4)
+
+**No trade — pre-market decision was HOLD.** Tier-1 PPI blackout (8:30am ET) + NVDA autonomous decision (Rule 14) was STAY PATIENT — NVDA/SOXX rotation signal now mixed for a 4th session, not clean enough to override. No other candidate cleared R:R (AVGO computed but not actionable until post-blackout). No planned tickers to re-validate at open.
+
+**Live re-validation (Alpaca, market open):**
+- Equity $104,607.73 | Cash $65,225.69 (62.35%) | Deployed $39,382.04 (37.65%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline. Week 16 count: 0/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $303.82 | +$809.11 (+4.49%) | 10% trail HWM $304.26 / stop $273.834 (4c0586cc, confirmed live, new high — trail advanced) |
+| XOM | 130 | $138.420615 | $158.04 | +$2,550.52 (+14.17%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+- No losers cut (both well above -7%). No tighten triggers hit — IWM +4.49%, nowhere near +15%. XOM +14.17%, still below +15% but already tightened to 7% ahead of Jul 31 earnings (next tier 7%→5% at +20%, still ~5.8 points away). No thesis breaks. No new entries — Tier-1 PPI blackout live today, no candidate actionable regardless of R:R.
+- Open orders confirmed live and matching log: XOM trailing_stop 7% GTC (ffe9d7c4), IWM trailing_stop 10% GTC (4c0586cc, HWM advanced to $304.26 on today's new high).
+
+**Action taken:** None. No ClickUp notification (no trade placed, per STEP 7). No commit — no trades fired, per STEP 8.
+
+---
+
+## 2026-08-13 — Midday Scan (Thursday, Week 16 Day 4)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $303.30 | +$776.87 (+4.31%) | 10% trail HWM $305.05 / stop $274.545 (4c0586cc, confirmed live, new intraday high — trail advanced) |
+| XOM | 130 | $138.420615 | $158.93 | +$2,666.22 (+14.82%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, unchanged — no new high today) |
+
+- **Losers cut:** None. IWM +4.31%, XOM +14.82% — both well above the -7% cut.
+- **Stop tightening:** None due. XOM at +14.82% is still just under the +15% tier but already at 7% trail from the preemptive Jul 31 earnings tighten, so the tier is effectively satisfied either way. Next real tier (7%→5%) triggers at +20%, still ~$7 (~4.5%) away. IWM +4.31%, nowhere near +15%.
+- **Thesis check:** IWM hit a fresh intraday high (HWM advanced $304.26→$305.05), thesis intact per this morning's research, no negative headlines. XOM -0.51% intraday (mild pullback, consistent with oil consolidating off its Strait-of-Hormuz spike) — no thesis-break signal. No sharp unexplained move on either name — Perplexity research skipped per STEP 6.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $150.3531, HWM $161.67, unchanged), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $274.545, HWM $305.05, advanced from $304.26) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up. Equity $104,687.41 | Cash $65,225.69 (62.30%) | Deployed $39,461.72 (37.70%, 2 positions). Week 16 count stays 0/3. Tier-1 PPI blackout live today — no new entries regardless of candidate status.
+
+**Action taken:** None. No cuts, no tightens (XOM already satisfies +15% tier from earlier preemptive tighten), no thesis breaks, no new entries (PPI blackout). No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
