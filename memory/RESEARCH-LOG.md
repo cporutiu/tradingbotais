@@ -5809,3 +5809,28 @@ No new entries possible today - Tier-1 CPI blackout. Research below is for tomor
 
 ### Decision
 **HOLD - no new entries today (Tier-1 CPI blackout).** NVDA pending question resolved autonomously (Rule 14): STAY PATIENT - doubly blocked by today's CPI blackout and a third consecutive session confirming Nvidia is still lagging SOXX, not catching up. IWM and XOM both hold unchanged, theses intact; XOM's continued oil-driven rally reinforces rather than threatens its thesis, unrealized gain (15.19%) already covered by the 7% trail set ahead of Jul 31 earnings. No -7% cuts, no new tighten triggers (XOM's next tier is +20%, still ~4.8 points away). Week 16 count stays 0/3. Deployment remains 37.66%, 11th consecutive week under the 75% floor - urgency protocol carries forward through tomorrow's PPI blackout as well. AVGO surfaced as a fresh Rule 16 candidate (strong AI-driven analyst conviction, Leading-quadrant Technology sector) worth a live R:R computation once the CPI/PPI blackout window clears Friday.
+
+## 2026-08-13 — Pre-Market Research (Thursday, Week 16 Day 4) — INFRASTRUCTURE OUTAGE, NO ACCOUNT ACCESS
+
+**Tier-1 blackout day regardless:** PPI (July) releases 8:30am ET today — no new entries would be permitted even if systems were reachable.
+
+### Environment network policy blocked all three API wrappers
+- `bash scripts/alpaca.sh account/positions/orders` → curl exit 22, HTTP 403.
+- `bash scripts/perplexity.sh` → HTTP 403 (does not reach the "PERPLEXITY_API_KEY not set" exit-3 fallback path — this is a network-level block, not a missing-key condition).
+- `bash scripts/clickup.sh` → HTTP 403, so the mandated ClickUp alert could not be sent through the normal channel.
+- Root cause confirmed via proxy status endpoint: the outbound agent proxy's gateway is rejecting the CONNECT tunnel to `paper-api.alpaca.markets:443`, `api.perplexity.ai:443`, and `api.clickup.com:443` with `403 Forbidden` ("policy denial or upstream failure") — this session's network policy does not allow any of the three trading-bot API domains. All API keys are present and correctly set in the environment (verified before any wrapper call, per STEP 0) — this is not a credentials problem.
+- Native `WebSearch` tool works (routes outside the blocked proxy path) — confirmed with a live query on today's CPI/PPI market context — but it cannot substitute for Alpaca account/position/order data, which is unreachable by any available means this session.
+
+### Account snapshot: NOT AVAILABLE
+No live equity, cash, positions, or order data could be pulled. Last confirmed state (2026-08-12 EOD, from TRADE-LOG.md): Equity $104,761.95, Cash $65,225.69 (62.26%), 2 open positions (IWM 62sh, XOM 130sh), both stops confirmed live as of yesterday. **This session could not reconcile against that — treat as stale until the next session with working Alpaca access.**
+
+### Separate flag — task prompt / repo instruction mismatch
+Today's scheduled prompt describes "a LIVE ~$10,000 Alpaca account." This does not match CLAUDE.md (paper account PA3GVPXBYBRB, $100,000 starting capital) or the configured `ALPACA_ENDPOINT` (`paper-api.alpaca.markets`, not the live-trading host). Per the Account Isolation rule ("if credentials look wrong... STOP and alert the user before placing any order"), this is flagged for the user — no order was placed or attempted, so no isolation risk materialized, but the prompt text itself should be checked against the intended routine config.
+
+### Action taken
+**None — could not be, by design.** No account pull, no research queries beyond one WebSearch connectivity check, no trade evaluation, no stop tightening/cutting (couldn't fetch positions to evaluate), no ClickUp notification (channel unreachable). NVDA carry-forward question from Aug 10-12 remains unresolved — cannot be evaluated without live price/position data; will re-attempt next session.
+
+### Decision
+**HOLD — forced, infrastructure outage.** No new entries regardless: (1) all three API domains network-blocked this session, (2) today is a Tier-1 PPI blackout day independent of the outage. Flagging to user directly since ClickUp is unreachable — this is a same-day, all-API-domains-down environment issue, distinct from the OAuth-session-expiry note logged 2026-08-06 to 2026-08-09 for local runs.
+
+**Account confirmed:** NOT POSSIBLE this session — Alpaca unreachable. No order placed.
