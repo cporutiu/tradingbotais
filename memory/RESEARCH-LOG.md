@@ -5809,3 +5809,58 @@ No new entries possible today - Tier-1 CPI blackout. Research below is for tomor
 
 ### Decision
 **HOLD - no new entries today (Tier-1 CPI blackout).** NVDA pending question resolved autonomously (Rule 14): STAY PATIENT - doubly blocked by today's CPI blackout and a third consecutive session confirming Nvidia is still lagging SOXX, not catching up. IWM and XOM both hold unchanged, theses intact; XOM's continued oil-driven rally reinforces rather than threatens its thesis, unrealized gain (15.19%) already covered by the 7% trail set ahead of Jul 31 earnings. No -7% cuts, no new tighten triggers (XOM's next tier is +20%, still ~4.8 points away). Week 16 count stays 0/3. Deployment remains 37.66%, 11th consecutive week under the 75% floor - urgency protocol carries forward through tomorrow's PPI blackout as well. AVGO surfaced as a fresh Rule 16 candidate (strong AI-driven analyst conviction, Leading-quadrant Technology sector) worth a live R:R computation once the CPI/PPI blackout window clears Friday.
+
+## 2026-08-13 — Pre-Market Research (Thursday, Week 16 Day 4)
+
+**Urgency protocol active:** Deployed has closed below 75% for 10+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply (Tier-1 still blocks). **Tier-1 blackout today — July PPI at 8:30am ET, confirmed live via BLS schedule. No new entries regardless of candidate status.**
+
+### STEP 1B — Pending decision resolved
+No "User decisions" block found below the Aug 12 EOD entry. One unanswered action question resolved autonomously per Rule 14 — **NVDA entry → STAY PATIENT, no entry today.** Full rationale in TRADE-LOG.md under "Bot autonomous decision (2026-08-13)." Summary: doubly blocked — (1) today's confirmed PPI Tier-1 blackout blocks all entries regardless of R:R; (2) NVDA/SOXX relative-strength check is a fourth consecutive session with no clean resolution — NVDASOXX_RATIO still shows NVDA down 1.57% vs. SOXX over the past week (unchanged read from Aug 12), and while one source shows NVDA +2.62% this week vs. a -1.30% semis-industry average, that conflicts with the ratio feed; Perplexity's own synthesis calls the picture "mixed and not confirmed."
+
+### Account Snapshot (live API, pre-market)
+- Equity: $104,730.89 | Cash: $65,225.69 (62.28%) | Deployed: $39,505.20 (37.72%, 2 positions) | Buying power: $371,517.32 | Week 16 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $303.50 | +$789.27 (+4.38%) | 10% trail HWM $303.39 / stop $273.051 (4c0586cc, confirmed live, new high — trail will advance) |
+| XOM | 130 | $138.420615 | $159.14 | +$2,693.52 (+14.97%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+No -7% cut hit on either position. XOM's unrealized gain (14.97%) is just under the +15% tighten tier but was already preemptively tightened to 7% ahead of Jul 31 earnings — no action needed regardless; next tier (7%→5%) triggers at +20%, still ~5 points away. IWM +4.38% at a fresh high, nowhere near +15%. Both stop orders confirmed live and correctly attached, no drift from log.
+
+### Market Context
+- **Oil:** WTI ~$82.0-84.3, Brent ~$87.6-89.8 — pulling back modestly from the Strait-of-Hormuz-driven spike of the past three sessions (Barchart shows WTI -1.48% intraday to $82.04), but still elevated vs. pre-rally levels. No fresh escalation headline today; consolidation, not reversal.
+- **S&P 500 futures:** Modestly positive, ~7,768-7,780 (+0.02% to +0.42% across sources) — continuing Wednesday's tech-earnings-driven strength (CoreWeave +18%, Super Micro Computer) into today's session, ahead of the PPI print.
+- **VIX:** ~14.7-15.4 (Yahoo 14.98, Cboe 14.69) — **market risk: low**, essentially unchanged to slightly lower vs. Wednesday.
+- **Tier-1 blocker TODAY: July PPI, 8:30am ET** — confirmed live via BLS (bls.gov/ppi: "scheduled to be released on August 13, 2026, at 8:30 A.M. Eastern Time"). No new entries permitted regardless of candidate status. This follows yesterday's tame July CPI (+0.1% MoM / +3.4% YoY, core +0.3%/+2.5%), which the tape read dovishly (S&P +0.2%, AI names rallying on top of the CPI relief).
+- **Earnings BMO today (not held):** Calendar sources conflicting/thin on explicit BMO tags for today; Kiplinger's "before-the-open" list (ALM, AXSM, B, BTDR, CRC, CAMT, CECO, CEVA, DOLE, FERG, MNDY, NESR, RDNT, SDRL, SGRY, plus ARMK/CAH/ONON/SE) shows no names on the sector watchlist or held — no blackout triggered from earnings, PPI is the operative blocker. AMC watch: Applied Materials, Tapestry, Nu Holdings reporting today per catalyst scan.
+- **Sector momentum (YTD):** Mixed/conflicting reads persist — one source: Energy/Materials/Consumer Staples/Industrials leading, Financials/Consumer Discretionary/Tech/Communication Services lagging (consistent with the multi-week pattern). A second source flags Energy +36%, **Technology +29%** YTD, driven by the AI-earnings rally (CoreWeave, SMCI, Nebius, Lumentum) — Tech's YTD read remains unreliable/contradictory across sources per established practice, but today's price action (AI names leading gains in US and Asia, Kospi +4% on Samsung/SK Hynix) is a real same-day signal of tech/semis strength broadening beyond just NVDA.
+- **Economic cycle / catalysts:** Tame CPI y'day + strong AI earnings (CoreWeave, SMCI) driving a broad AI/semis rally that spilled into Asia overnight (Kospi +4%). PPI today is the next data test of the "rates easing, growth still ok" narrative.
+
+### Held-Position Validation
+**IWM ($303.50, +4.38%) — HOLD, thesis intact, new high:** No IWM-specific news; general small-cap coverage (YTD NAV total return 22.29%, Russell 2000 on pace for its best year since 1991 per Seeking Alpha). Trail will advance on today's new high. No thesis concern.
+
+**XOM ($159.14, +14.97%) — HOLD, thesis intact:** Roughly flat, consolidating after three sessions of oil-driven gains; Q2 2026 results fully digested ($14.5B earnings, $17.2B FCF). Ex-dividend Aug 17 ($1.03/share). No negative catalyst. Comfortable buffer above 7% stop maintained even as oil pulls back slightly today.
+
+### NVDA/SOXX Re-Check (per Aug 12 pending question)
+**NVDA — not entered, rotation signal still unresolved, now mixed rather than cleanly negative.** The direct NVDASOXX_RATIO feed is unchanged from yesterday (-1.57% over 1 week, NVDA lagging). One comparison tool (Tickeron) shows NVDA +2.62% this week vs. a -1.30% semis-industry average — the opposite read — but this conflicts with the ratio data and uses a broader "industry average" rather than SOXX directly. Perplexity's own synthesis: "at best mixed and not confirmed... SOXX still leading NVDA on relative strength this week." Not a clean enough signal to override the standing rotation-away read, and moot today regardless given the PPI blackout. Today's broader AI/semis rally (CoreWeave, SMCI, Samsung/SK Hynix overseas) is worth watching — if NVDA starts participating and closes the SOXX gap over the next session or two, that would be the resolution to look for.
+
+### Trade Ideas
+No new entries possible today — Tier-1 PPI blackout. Candidates below are for the first post-blackout session (earliest Friday Aug 14).
+1. **IWM — hold, no action.** Thesis intact, fresh high today, no new headlines.
+2. **XOM — hold, no action.** Thesis intact, consolidating after three days of oil-driven gains; +14.97% unrealized already covered by the 7% trail from the Jul 31 earnings tighten.
+3. **NVDA — still the leading watchlist candidate, not actionable.** Rotation-vs-SOXX signal now mixed (4th session) rather than cleanly negative; needs one more clean read before entry.
+4. **AVGO — carried Rule 16 candidate, live R:R computed today:** Price ~$416-425 (using $420 as reference). Analyst consensus PT $493 (Yahoo avg) to $527.88 (Yahoo 1yr est.). Catalyst: AI semiconductor revenue >200% YoY, Q3 FY26 guidance $29.4B revenue, Technology sits in the Leading momentum quadrant per today's price action. **Entry ~$420, stop 10% trailing (~$378), target $493-528 → risk ~$42/share, reward ~$73-108/share → R:R ~1.7:1 to 2.6:1** — clears the 1.5:1 urgency-protocol floor and the standard 2:1 floor at the higher end of the PT range. First actionable candidate for tomorrow's post-blackout pre-market, pending a fresh price/PT re-check at that time.
+
+### Risk Factors
+- **PPI Thu Aug 13, 8:30am ET — Tier-1 blackout, live today.** Confirmed via BLS schedule. No new entries regardless of candidate status.
+- **NVDA/semis rotation signal now mixed for the first time in 4 sessions** — one data source (Tickeron) shows NVDA outperforming its industry average this week, conflicting with the standing NVDASOXX_RATIO read. Needs a clean, single-direction confirmation before acting either way.
+- **Oil pulling back modestly today** (WTI -1.4% intraday) after three days of Strait-of-Hormuz-driven gains — XOM thesis intact but watch for a sharper reversal if de-escalation headlines return.
+- **XOM concentration** — largest single position (~19-20% of equity), sole Energy exposure.
+- **AI/semis rally broadening** (CoreWeave, SMCI, Samsung, SK Hynix) — if this pulls NVDA along with it over the next session, the rotation-away thesis could flip quickly; re-check first thing tomorrow.
+- **10th-11th consecutive week under the 75% deployment floor** (source logs show a 1-week discrepancy in the count) — urgency protocol remains active; AVGO is now a priced, R:R-cleared candidate ready for tomorrow's first post-blackout session.
+- **Congress/Quiver Quant API status not re-checked this session** (scan not run) — last known status 401/down since Jul 9.
+
+### Decision
+**HOLD — no new entries today (Tier-1 PPI blackout).** NVDA pending question resolved autonomously (Rule 14): STAY PATIENT — doubly blocked by today's confirmed PPI blackout and a fourth consecutive session where the NVDA/SOXX rotation signal remains unresolved (now mixed rather than cleanly negative). IWM and XOM both hold unchanged, theses intact — IWM hit a fresh high (trail will advance), XOM consolidating after its oil-driven run, unrealized gain (14.97%) already covered by the 7% trail set ahead of Jul 31 earnings. No -7% cuts, no new tighten triggers (XOM's next tier is +20%, still ~5 points away). Week 16 count stays 0/3, 1 trading day remaining this week (Friday). Deployment remains 37.72%, 10th+ consecutive week under the 75% floor — urgency protocol carries forward. AVGO computed today as a live, R:R-cleared candidate (~1.7-2.6:1) — first actionable name for tomorrow's post-blackout pre-market alongside a fresh NVDA/SOXX re-check.
