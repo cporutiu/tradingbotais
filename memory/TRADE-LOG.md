@@ -4538,3 +4538,35 @@ No "User decisions" block found below the Aug 12 EOD entry. One unanswered actio
 - Option B: Stay patient — AVGO's R:R was only just computed today and hasn't had a session to prove itself against blackout-day noise; entering the first session after two consecutive Tier-1 blackouts risks chasing a move that already ran
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-14 — Pre-Market: Autonomous Decision (Friday, Week 16 Day 5)
+
+No "User decisions" block found below the Aug 13 EOD entry. One unanswered action question resolved autonomously per Rule 14:
+
+**Bot autonomous decision (2026-08-14):** Enter AVGO at pre-market re-validation, or stay patient another session? → **ENTER AVGO at market open.** → Deployment (37.73%) sits below the 40% default-TRADE threshold and no Tier-1 blocker is live today (July retail sales + Univ. Michigan sentiment at 8:30am/10am ET are Tier-2 watchful, not full blackout — first non-blackout morning after CPI/PPI); re-validated R:R still clears both the 1.5:1 urgency floor and 2:1 standard floor at the higher end (current ~$421, consensus PT $493–528 → risk ~$42/share vs. reward ~$72–107/share → ~1.7–2.5:1), Technology remains in the Leading momentum quadrant (Bloomberg intraday sector snapshot + AI-earnings-driven S&P record close), and deployment has sat below the 75% floor for 11+ consecutive weeks. Per the trade-slot default posture, this is "valid setup exists" → ENTER, not CARRY. Plan: buy ~17–20% of equity (~42–49 shares at ~$421, final share count set off live price at open) with a 10% trailing GTC stop placed immediately on fill, to be executed and logged in today's Market-Open entry.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-14 — Midday Scan (Friday, Week 16 Day 5)
+
+**Anomaly flagged:** No Market-Open entry found today, and no AVGO position/order live on the account. Pre-market's plan was to enter AVGO at market open (~42-49 shares, ~$421) — that execution appears not to have run or not to have been logged. Not actioned here (new entries are out of scope for Midday Scan); user should check why the Market-Open routine didn't fire or didn't fill.
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $304.26 | +$836.39 (+4.64%) | 10% trail HWM $305.05 / stop $274.545 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $161.00 | +$2,935.32 (+16.31%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+- **Losers cut:** None. IWM +4.64%, XOM +16.31% — both well above the -7% cut.
+- **Stop tightening:** None due. XOM has now cleared +15% (currently +16.31%) but is already at the 7% trail from the preemptive Jul 31 earnings tighten — tier already satisfied. Next real tier (7%→5%) triggers at +20%, still ~3.7 points away. IWM +4.64%, nowhere near +15%.
+- **Thesis check:** IWM no new headlines, small-cap/Russell 2000 strength intact per this morning's research. XOM +1.14% intraday (oil steadying), no thesis-break signal — Jones Act waiver headline remains a political risk to watch, not a break. No sharp unexplained move on either name — Perplexity research skipped per STEP 6.
+- **Open orders confirmed live:** Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $150.3531, HWM $161.67, unchanged), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $274.545, HWM $305.05, unchanged) — both correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up. Equity $105,021.23 | Cash $65,225.69 (62.11%) | Deployed $39,795.54 (37.89%, 2 positions). Week 16 count: 0/3 (AVGO not yet filled — see anomaly note above), 1 trading day remaining (today).
+
+**Action taken:** None. No cuts, no tightens (XOM's +15% tier already satisfied from earlier), no thesis breaks. No new entries executed here (out of scope for Midday Scan). No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
