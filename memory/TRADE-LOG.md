@@ -4570,3 +4570,29 @@ No "User decisions" block found below the Aug 13 EOD entry. One unanswered actio
 **Action taken:** None. No cuts, no tightens (XOM's +15% tier already satisfied from earlier), no thesis breaks. No new entries executed here (out of scope for Midday Scan). No ClickUp notification (no action taken, per STEP 7).
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 14 — EOD Snapshot (Day 77, Friday — Week 16 Day 5)
+**Portfolio:** $104,949.96 | **Cash:** $65,225.69 (62.15%) | **Day P&L:** +$281.35 (+0.27%) | **Phase P&L:** +$4,949.96 (+4.95%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $305.01 | +0.50% | +$882.89 (+4.90%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, new high — trail advanced) |
+| XOM | 130 | $138.420615 | $160.105 | +0.94% | +$2,818.97 (+15.67%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+**Trades today:** None. AVGO entry was planned per this morning's pre-market autonomous decision (Rule 14) but never executed — no Market-Open log entry exists for today, and no AVGO position/order is on the live account (flagged as anomaly at Midday Scan, confirmed still true at EOD). Week 16 closes at 0/3.
+
+**Notes:** Day 77, Friday, Week 16 Day 5. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Portfolio gained +0.27% on the day as both positions extended gains — IWM notched a fresh high (HWM $305.05→$305.18, trail advanced) on continued small-cap strength, XOM added another +0.94% as oil held its recent range, pushing unrealized gain to +15.67%. No losers cut (both well above -7%). No tighten triggers hit — XOM's +15% tier is already satisfied by the preemptive 7% trail set ahead of Jul 31 earnings; next tier (7%→5%) triggers at +20%, still ~4.3 points away. IWM +4.90%, nowhere near +15%. **Operational miss:** this morning's pre-market autonomous decision was ENTER AVGO at market open (~42-49 shares, ~$421, R:R ~1.7-2.5:1) — that trade never fired. No Market-Open routine entry exists in the log for today, and no AVGO position or order appears on the live account. Root cause unconfirmed (scheduler failure vs. script error vs. skipped run) — needs investigation before Monday so a validated setup doesn't silently get dropped again. Deployment held flat at 37.85% (62.15% cash) — 12th consecutive week under the 75% floor, now compounded by the missed AVGO entry.
+
+**Action questions:**
+
+**Q: Investigate/fix why today's Market-Open routine didn't fire before Monday, or treat it as a one-off and let Monday's pre-market run normally?**
+- Investigate first: prevents a repeat silent miss on a validated setup — costs a few minutes of review before trading resumes
+- Let it re-run: keeps the schedule moving without delay — risks the same failure recurring Monday if the root cause wasn't a one-off
+
+**Q: Enter AVGO at Monday's pre-market re-validation, or stay patient another session?**
+- Option A: Enter — R:R cleared today's autonomous check (~1.7–2.5:1 vs. consensus PT $493–528), Technology sits in the Leading momentum quadrant, cash has sat above the 25% floor for 12+ straight weeks — a validated setup that only missed today due to a routine failure, not a thesis problem
+- Option B: Wait — Monday's re-validation could show a different price/R:R after the weekend gap, and one blocked session doesn't mean the setup decays; better to re-confirm fresh than chase Friday's already-approved level
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
