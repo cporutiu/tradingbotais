@@ -1098,3 +1098,83 @@ _Rationale: +2.0% relative outperformance vs. S&P (bot +1.40% in a week the inde
 - Leave on watchlist: the underlying thesis (ISM expansion, record backlog) hasn't broken, only the price ran ahead of targets — a pullback could requalify it fast without sourcing a whole new candidate
 
 ---
+
+## Week ending 2026-08-14
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $103,817.61 (Aug 7 close / Week 15 end) |
+| Ending portfolio | $104,934.37 |
+| Week return | +$1,116.76 (+1.08%) |
+| S&P 500 week | ~+0.66% (7,757.64 Aug 7 close → ~7,808.87 Aug 14; sources conflicted on the exact Friday print, several agree "+0.5-0.65% heading into Friday" off Thursday's record close) |
+| Bot vs S&P | +0.42% |
+| Phase P&L | +$4,934.37 (+4.93% from $100,000 start) |
+| Trades | 0 (W:0 / L:0 / open:2) — AVGO entry approved at pre-market but never executed (operational miss, see below) |
+| Win rate | N/A (no closed trades) |
+| Best trade | XOM +15.66% unrealized (+$2,817.02) |
+| Worst trade | IWM +4.82% unrealized (+$869.25) — both positions finished positive |
+| Profit factor | N/A (no closed trades) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| IWM | $290.769839 | $304.79 | +$869.25 (+4.82%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc) |
+| XOM | $138.420615 | $160.09 | +$2,817.02 (+15.66%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, tightened pre-Jul 31 earnings) |
+
+### Sector Watchlist — Week 17 (Aug 17–21)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Technology | XLK | AVGO | Re-validate fresh Monday (price/R:R may shift over the weekend); Aug 14 read was ~1.7-2.5:1 vs. consensus PT $493-528; only blocker was the routine not firing — thesis, not rule, is intact |
+| 2 | Energy | XLE | XOM (held) | Hold to stop $150.3531; watch Jones Act waiver headline (political risk, not yet a thesis break); no add — already largest single position |
+| 3 | Small-cap | IWM | IWM (held) | Hold to stop $274.662; Russell 2000 fresh record highs, thesis intact, no add needed |
+| 4 | Materials/Macro | GLD | GLD | 7th+ consecutive week with no computable price target (10% stop vs. 200-day SMA resistance gives ~0.2-0.3:1 R:R); do not force — needs a confirmed close above $405-412 with volume first |
+| 5 | Rule 16 widen | Financials/Healthcare/Discretionary/Communication/Real Estate | — | Single-stock sourcing pass deferred 3+ sessions running (flagged Aug 10, 11, never run) — must actually execute next week, not just re-flag it |
+
+### What Worked
+- XOM kept compounding: entered $138.42, closed the week +15.66% unrealized (+$2,817); 7% pre-earnings trail auto-advanced all week (HWM $156.16 → $161.67) as oil held its post-spike range
+- IWM notched fresh highs multiple sessions (HWM $303.06 → $305.18), Russell 2000 hitting record highs, thesis intact, +4.82% unrealized
+- Rule 15 (reconnect protocol) worked exactly as designed: Monday's pre-market caught a 4-calendar-day automation gap (Aug 6-9 OAuth expiry) and reconciled live positions/orders against the log with zero missed thresholds
+- Blackout discipline held cleanly through back-to-back Tier-1 days (CPI Wed, PPI Thu) — no forced entries despite deployment sitting well under the urgency floor
+- AVGO cleared a full, honest R:R validation (~1.7-2.5:1) the first clean non-blackout morning (Friday), correctly following the urgency-protocol default-TRADE rule (deployed <40%, no Tier-1 blocker) — the decision-making was right even though the execution wasn't
+
+### What Didn't Work
+- **AVGO's approved entry never executed.** Pre-market logged "ENTER AVGO at market open" — no Market-Open log entry exists for Friday, and no AVGO position or order is on the live account. A fully-validated, rule-compliant trade was silently dropped, almost certainly by a scheduler/routine failure, not a thesis or discipline failure. Root cause still unconfirmed as of this review.
+- Week closed 0/3 trade slots used — deployment fell to 37.84%, a new low and the 12th consecutive week under the 75% floor
+- Materials/Macro slot (GLD) failed for a 7th+ consecutive week on the same non-computable-price-target problem
+- Rule 16 single-stock sourcing pass (Financials, Healthcare, Discretionary, Communication Services, Real Estate) — added exactly one week ago in the Aug 8 review — was flagged as "next session priority" on Aug 10 and Aug 11 but never actually run either day
+- The week's +0.42% alpha came entirely from two already-open positions extending gains, not from new capital deployment — the same structural pattern the Aug 8 2-month review already called out
+
+### Key Lessons
+- A correct "valid setup exists → ENTER" call at 6am pre-market is worthless if the execution layer doesn't fire — this is the first time a fully-approved, non-blocked trade simply failed to execute, and it's a more serious failure mode than any R:R or thesis miss this window, because the decision layer has no visibility into whether its own decision was carried out
+- Local uncommitted changes to `scripts/setup_tasks.ps1`, `routines/*`, and a new `scripts/watchdog.ps1` suggest remediation is already underway — good, but it needs to be confirmed working before Monday's open, not assumed fixed
+- Rule 16 (candidate widening) is a week old and still hasn't been run once — a rule that exists on paper but isn't executed is functionally equivalent to not having it; "next session priority" needs to actually convert to action, not just get re-flagged
+- XOM at +15.66% and ~19-20% of equity remains the portfolio's largest concentration; already explicitly addressed Aug 3 (hold full size, no defined partial-profit mechanism in the rulebook) — not re-litigating unless the thesis actually breaks
+
+### Adjustments for Next Week
+- **Confirm the Market-Open routine actually fires Monday** — verify the scheduler/watchdog fix before market open if possible; this is the top operational priority, ahead of any new research
+- **Re-validate AVGO fresh Monday morning** — do not assume Friday's approved ~$421 entry/R:R still holds after the weekend gap
+- **Run the Rule 16 single-stock sourcing pass** (Financials, Healthcare, Consumer Discretionary, Communication Services, Real Estate) at least once next week — it is now 3+ sessions overdue
+- **XOM/IWM:** continue holding both to their live stops; watch XOM's Jones Act waiver headline for political risk, not yet a thesis break
+- **Deployment:** 12th straight week under the 75% floor — a clean AVGO fill Monday plus real progress on Rule 16 sourcing should be the explicit target, not another week of "candidate researched, not entered"
+
+### Overall Grade: C
+
+_Rationale: P&L was fine (+1.08% week, +0.42% alpha) and process discipline held everywhere the bot was actually in control — blackout compliance, Rule 15 reconnect reconciliation, an honest AVGO R:R validation. But a fully-approved trade failed to execute for operational reasons outside the decision layer's visibility, deployment hit a new low (37.84%, 12th straight week under floor), and a rule added just one week ago (Rule 16) still hasn't been run once despite being flagged twice. Good decisions, incomplete execution._
+
+### Next-week Decisions
+
+**Q: Investigate/fix why Friday's Market-Open routine didn't fire before Monday, or treat it as a one-off and let Monday's pre-market run normally?**
+- Investigate first: confirms the scheduler/watchdog fix actually works before a second validated trade gets silently dropped — costs a few minutes of review before trading resumes, but this is now a demonstrated failure mode, not a hypothetical one
+- Let it re-run: keeps the schedule moving without delay — risks the exact same silent-drop failure recurring Monday if Friday's root cause wasn't a one-off
+
+**Q: Enter AVGO at Monday's pre-market re-validation, or stay patient another session?**
+- Option A: Enter — R:R cleared Friday's autonomous check (~1.7-2.5:1 vs. consensus PT $493-528), Technology sits in the Leading momentum quadrant, deployment has sat under the 75% floor for 12+ straight weeks — a validated setup that only missed Friday due to a routine failure, not a thesis problem
+- Option B: Wait — Monday's re-validation could show a different price/R:R after the weekend gap, and one blocked session doesn't mean the setup decays; better to re-confirm fresh than chase Friday's already-approved level
+
+---
