@@ -5864,3 +5864,30 @@ No new entries possible today — Tier-1 PPI blackout. Candidates below are for 
 
 ### Decision
 **HOLD — no new entries today (Tier-1 PPI blackout).** NVDA pending question resolved autonomously (Rule 14): STAY PATIENT — doubly blocked by today's confirmed PPI blackout and a fourth consecutive session where the NVDA/SOXX rotation signal remains unresolved (now mixed rather than cleanly negative). IWM and XOM both hold unchanged, theses intact — IWM hit a fresh high (trail will advance), XOM consolidating after its oil-driven run, unrealized gain (14.97%) already covered by the 7% trail set ahead of Jul 31 earnings. No -7% cuts, no new tighten triggers (XOM's next tier is +20%, still ~5 points away). Week 16 count stays 0/3, 1 trading day remaining this week (Friday). Deployment remains 37.72%, 10th+ consecutive week under the 75% floor — urgency protocol carries forward. AVGO computed today as a live, R:R-cleared candidate (~1.7-2.6:1) — first actionable name for tomorrow's post-blackout pre-market alongside a fresh NVDA/SOXX re-check.
+
+---
+
+## 2026-08-14 — Pre-Market Research — RUN BLOCKED (infra outage, Friday, Week 16 Day 5)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set, verified before any wrapper call).
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (56) CONNECT tunnel failed, response 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not a credentials or transient-network issue — the proxy rejected the CONNECT to all three hosts before any Alpaca/Perplexity/ClickUp auth was attempted:
+  - `paper-api.alpaca.markets:443` — denied ("gateway answered 403 to CONNECT — policy denial or upstream failure")
+  - `api.perplexity.ai:443` — denied (same)
+  - `api.clickup.com:443` — denied (same)
+- WebSearch/native fallback was not substituted for the missing account snapshot, since position and equity data can only come from the Alpaca API, and fabricating it would be unsafe for a trading log.
+- Per this session's proxy runbook: "Do not retry or route around it — report the blocked host." No retries were attempted beyond the initial confirmation. This is the same failure signature as the 2026-07-06 outage entry (recurrence of a cloud-session egress policy gap, not a new bug).
+
+### Impact
+- No account/position snapshot pulled — last known state remains the Aug 13 EOD snapshot (2 positions: IWM @ 62sh, XOM @ 130sh; 37.68% deployed, equity $104,668.61). Real state as of 2026-08-14 is unknown; GTC trailing stops (IWM 10% trail, XOM 7% trail) remain live at the broker regardless of this outage.
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- Outstanding action question from the Aug 13 EOD entry (AVGO entry vs. stay patient) was NOT resolved autonomously per Rule 14, since autonomous resolution requires live pre-market data (price/R:R re-check) that could not be pulled. Carrying the question forward, not defaulting it.
+- ClickUp alert could not be sent (channel unreachable) — user notified out-of-band via push notification instead.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; last confirmed positions/stops are from Aug 13 EOD.
+3. Separately: this scheduled task's own prompt described the account as "a LIVE ~$10,000 Alpaca account," but the configured `ALPACA_ENDPOINT` is `paper-api.alpaca.markets` (paper trading) and CLAUDE.md/memory establish this bot's account as the AIS paper account (PA3GVPXBYBRB, ~$104.7k current equity) — not flagged as a credential mismatch (endpoint/keys are unchanged from prior sessions), but the wording discrepancy is worth the user's attention.
