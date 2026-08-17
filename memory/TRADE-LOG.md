@@ -4664,3 +4664,22 @@ No -7% cut hit on any position. No new tighten triggers (XOM +15.05% already sat
 **Action taken:** None. No cuts, no tightens (XOM's +15% tier already satisfied by the preemptive earnings trail), no thesis breaks. No ClickUp notification (no action taken, per STEP 7).
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 17 — EOD Snapshot (Day 78, Monday — Week 17 Day 1)
+**Portfolio:** $104,934.67 | **Cash:** $47,431.64 (45.20%) | **Day P&L:** -$15.29 (-0.01%) | **Phase P&L:** +$4,934.67 (+4.93%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AVGO | 45 | $395.423333 | $392.43 | -0.14% | -$134.70 (-0.76%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, new high — trail advanced) |
+| IWM | 62 | $290.769839 | $303.99 | -0.36% | +$819.65 (+4.55%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $161.51 | +0.88% | +$3,001.62 (+16.68%) | 7% trail HWM $162.51 / stop $151.1343 (ffe9d7c4, confirmed live, new high — trail advanced) |
+
+**Trades today:** AVGO BUY 45 @ $395.423333, 10% trailing GTC stop attached on fill (order 2d34a96c). Week 17 count: 1/3.
+
+**Notes:** Day 78, Monday, Week 17 Day 1. Account confirmed PA3GVPXBYBRB, matches AIS baseline. AVGO entered at market open per this morning's autonomous pre-market decision — 45 shares @ $395.423333, better than the ~$412 premarket estimate, 10% trailing GTC stop attached immediately (stop $354.9825 at fill, advanced intraday to $359.424 as the price made a new high of $399.36). Portfolio essentially flat on the day (-0.01%, -$15.29) as AVGO gave back a touch on its debut session (-0.14% day, -0.76% unrealized) while IWM pulled back slightly (-0.36% day) off Friday's high and XOM extended its oil-driven run (+0.88% day, now +16.68% unrealized — past the +15% tier but already covered by the preemptive 7% trail set ahead of Jul 31 earnings; next tier at +20% is still ~3.3 points away, outside the 3% early-tighten band). No losers cut — AVGO -0.76% is nowhere near the -7% cut. No new tighten triggers hit. No thesis breaks: AVGO's VMware CVE-2026-59310 watch item hasn't escalated (no confirmed breach/customer impact/guidance cut), IWM's small-cap rally remains intact, XOM's Jones Act waiver headline is unchanged (political risk, not yet a thesis break). Deployment jumped to 54.80% (45.20% cash) on today's AVGO fill — still below the 75% floor but the first real step down after 12+ consecutive weeks under it. No fresh candidate beyond AVGO surfaced in today's research, so no deployment question this session despite cash sitting above the 25% floor. Week 17 count: 1/3, 4 trading days remaining.
+
+**Action questions:** None. No thesis breaks, no rule-trigger proximity, no unactioned deployment candidate, and trade-slot count (1/3) isn't near the 2/3 carry-decision threshold.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
