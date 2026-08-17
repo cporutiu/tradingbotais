@@ -4643,3 +4643,24 @@ No -7% cut hit on any position. No new tighten triggers (XOM +15.05% already sat
 **Action taken:** AVGO BUY 45 @ $395.423333, 10% trailing GTC stop placed. Deployment jumped 37.81%→54.72%, still under the 75% floor but a meaningful step down from the multi-week urgency-protocol backlog.
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8 (trade executed).
+
+---
+
+## 2026-08-17 — Midday Scan (Monday, Week 17 Day 1)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 45 | $395.423333 | $397.55 | +$95.70 (+0.54%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, new high — trail advanced) |
+| IWM | 62 | $290.769839 | $304.11 | +$827.09 (+4.59%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $161.105 | +$2,948.97 (+16.39%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+- **Losers cut:** None. All three positions positive, well above the -7% cut threshold.
+- **Stop tightening:** None due. XOM +16.39% has already cleared +15% but remains covered by the 7% trail set preemptively ahead of Jul 31 earnings — that tier is already satisfied; next real tier (7%→5%) triggers at +20%, still ~3.6 points away. AVGO +0.54% and IWM +4.59% both nowhere near +15%.
+- **Thesis check:** AVGO no fresh headlines since this morning's entry — VMware CVE-2026-59310 watch item unchanged, no escalation (no confirmed breach/customer impact/guidance cut reported). IWM small-cap strength intact, no negative headlines. XOM +0.63% intraday, oil holding range, ex-dividend today as expected — no thesis-break signal. No sharp unexplained move on any name — Perplexity research skipped per STEP 6.
+- **Open orders confirmed live:** Sell 45 AVGO trailing_stop 10% GTC (2d34a96c, stop $359.424, HWM $399.36, advanced from fill HWM $394.425), Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $150.3531, HWM $161.67, unchanged), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $274.662, HWM $305.18, unchanged) — all three correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $105,108.78 | Cash $47,431.64 (45.13%) | Deployed $57,677.14 (54.87%, 3 positions). Week 17 count: 1/3.
+
+**Action taken:** None. No cuts, no tightens (XOM's +15% tier already satisfied by the preemptive earnings trail), no thesis breaks. No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
