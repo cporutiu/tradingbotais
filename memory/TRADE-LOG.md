@@ -4608,3 +4608,38 @@ No "User decisions" block found below the Aug 14 EOD entry. Two unanswered actio
 **Bot autonomous decision (2026-08-17):** Enter AVGO at Monday's pre-market re-validation, or stay patient? → **ENTER AVGO at market open, sized/stopped off the live open price.** → Fresh re-validation (not a straight carry-forward of Friday's $421 read) found AVGO closed Friday at $392.99 (-6.6% intraday), driven by (1) an actively-exploited VMware vCenter vulnerability (CVE-2026-59310) — VMware is a Broadcom-owned product but a different segment from the AI/semiconductor thesis driving the price target — and (2) broad tech/AI risk-off profit-taking (BofA's ~$370B AI-infrastructure-debt warning hit high-valuation AI/semis names sector-wide, not AVGO specifically). Premarket today already shows a partial recovery to ~$412 (+4.8% off Friday's close). Core catalyst unchanged: AI semiconductor revenue >200% YoY, Q3 FY26 guidance $29.4B. R:R at the ~$412 premarket reference: 10% trailing stop ~$370.80 (risk ~$41/share) vs. consensus PT range $493-528 (reward ~$81-116/share) → **R:R ~2.0-2.8:1**, clearing both the 1.5:1 urgency floor and the 2:1 standard floor — actually improved vs. Friday's ~1.7-2.5:1 read since the entry price fell while price targets held. Deployment (37.75%) remains below the 40% default-TRADE threshold; no Tier-1 blocker today (Empire State Manufacturing Index at 8:30am ET is Tier-2 at most, not on the blackout list); Week 17 count 0/3, fresh week. **Watch item:** if the VMware vuln headline escalates (breach confirmed, customer impact, revenue guidance cut) rather than fading, that would be a genuine thesis-break signal distinct from today's read — monitor at Midday Scan. Final entry price, share count (~17-20% of equity), and stop to be logged in today's Market-Open entry using the live fill price, not this pre-market estimate.
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-17 — Market-Open Execution (Monday, Week 17 Day 1)
+
+**Pre-market plan:** ENTER AVGO at market open, sized/stopped off live open price (R:R ~2.0-2.8:1 at ~$412 premarket ref). IWM/XOM hold, no action.
+
+**Live re-validation (Alpaca, market open):**
+- Equity $104,878.63 | Cash $65,225.69 (62.19%) | Deployed $39,652.94 (37.81%, 2 positions) | Account PA3GVPXBYBRB confirmed, matches AIS baseline. Week 17 count: 0/3.
+- AVGO quote at open: ap $416.81 / bp $390 (IEX single-venue quote, wide spread typical of Alpaca free-tier open-print data, not a halt — confirmed no LULD/halt via Perplexity check).
+
+**Rule check before order:** Positions after trade = 3 (≤6) ✓ | Trades this week 0→1 (≤3) ✓ | Position cost ~17.9% of equity (≤20%) ✓ | Catalyst documented in today's RESEARCH-LOG (AI semis >200% YoY growth, Q3 FY26 $29.4B guidance) ✓ | No PDT/daytrade concern (new position, not a same-day round-trip) ✓.
+
+**AVGO BUY ORDER FILLED:**
+- Order submitted 13:31:24 UTC as market/day. **Execution anomaly:** order sat unfilled/status "new" for ~3m15s (until 13:34:39 UTC) — well outside normal near-instant paper-fill behavior for a liquid mega-cap. Checked for a trading halt (none found, Perplexity confirmed no LULD/halt on AVGO this morning) and confirmed IWM/XOM quotes were updating normally throughout, so broad market data was live — anomaly appears isolated to AVGO order routing/fill latency on Alpaca's paper engine, not a credentials or connectivity issue. Filled in full before escalating; flagging for the operational-priority list (watchdog work) rather than treating as a blocker today.
+- Filled 45 shares @ avg $395.423333 (partial fills starting at $395.30, better than the ~$412 premarket estimate — R:R improves versus pre-market read).
+- Stop placed immediately on fill: 10% trailing GTC, order 2d34a96c, HWM $394.425, stop $354.9825.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Target | R:R | Thesis |
+|------|--------|------|--------|-------|------|--------|-----|--------|
+| 2026-08-17 | AVGO | BUY | 45 | $395.423333 | 10% trail GTC (order 2d34a96c, HWM $394.425, stop $354.9825) | $493-528 (Yahoo avg $527.88 / MarketBeat consensus $493.24) | ~2.4-3.3:1 | AI semiconductor revenue >200% YoY, Q3 FY26 guidance $29.4B; Friday's -6.6% drop (VMware CVE-2026-59310 vuln + BofA ~$370B AI-debt warning, sector-wide) already recovering premarket, core catalyst unaffected; Technology in Leading momentum quadrant; sole Tech position (0/2 sector cap used); 12+ consecutive weeks under 75% deployment floor, urgency protocol active |
+
+**Post-trade snapshot:** Equity $104,764.98 | Cash $47,431.64 (45.28%) | Deployed ~$57,333.34 (54.72%, 3 positions) | Week 17 count: 1/3.
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 45 | $395.423333 | $395.315 | -$4.87 (-0.03%) | 10% trail HWM $394.425 / stop $354.9825 (2d34a96c, confirmed live) |
+| IWM | 62 | $290.769839 | $303.90 | +$814.07 (+4.52%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $159.25 | +$2,707.82 (+15.05%) | 7% trail HWM $161.67 / stop $150.3531 (ffe9d7c4, confirmed live, no new high) |
+
+No -7% cut hit on any position. No new tighten triggers (XOM +15.05% already satisfied by the preemptive Jul 31 7% trail; IWM +4.52% nowhere near +15%; AVGO brand new). No thesis breaks on IWM/XOM.
+
+**Action taken:** AVGO BUY 45 @ $395.423333, 10% trailing GTC stop placed. Deployment jumped 37.81%→54.72%, still under the 75% floor but a meaningful step down from the multi-week urgency-protocol backlog.
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8 (trade executed).
