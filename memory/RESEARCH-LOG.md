@@ -5974,3 +5974,30 @@ No -7% cut hit on either position. XOM's unrealized gain (14.58%) remains just u
 
 ### Decision
 **TRADE — enter AVGO at market open**, re-priced off today's live quote (premarket ~$412, subject to change at the open), not Friday's stale $421 level. No Tier-1 blocker today; deployment (37.73%) sits below the 40% default-TRADE threshold. AVGO's R:R re-validated fresh at ~2.0-2.8:1 despite Friday's VMware-vuln-driven selloff — the core AI/semis catalyst is unaffected, the stock is already recovering premarket, and R:R actually improved versus Friday's read. IWM and XOM both hold unchanged, theses intact — no cuts, no new tighten triggers. Week 17 count will move to 1/3 pending fill confirmation at market open. Full execution details (final price, shares, stop) to be logged in today's Market-Open entry.
+
+---
+
+## 2026-08-18 — Pre-Market Research — RUN BLOCKED (infra outage)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets, ALPACA_DATA_ENDPOINT, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set). API key prefix `PKDTPO...` confirms this is the AIS **paper** account credential set, consistent with CLAUDE.md — no s4s5/live-account credential mix-up.
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed: `curl: (22/56) ... 403`.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): this is a policy-level denial, not a credentials or transient-network issue — the proxy rejected the CONNECT to all three hosts before any Alpaca/Perplexity/ClickUp auth was attempted:
+  - `paper-api.alpaca.markets:443` — denied (`connect_rejected`, "gateway answered 403 to CONNECT (policy denial or upstream failure)")
+  - `api.perplexity.ai:443` — denied
+  - `api.clickup.com:443` — denied
+- This is a repeat of the 2026-07-06 "RUN BLOCKED (infra outage)" entry — same failure signature, same three hosts, same root cause (cloud-session network policy does not allowlist trading-API hosts).
+- WebSearch (native fallback) was confirmed working and used for generic premarket color only (S&P 500 futures ~-0.4% premarket, Middle East geopolitical risk cited) — but was NOT substituted for the account snapshot, since position/equity data can only come from the Alpaca API and fabricating it would be unsafe for a trading log.
+- Per this session's proxy runbook: "Do not retry or route around it — report the blocked host." No repeated retries were attempted beyond the initial confirmation.
+
+### Impact
+- No account/position snapshot pulled — last known state is the Aug 17 EOD snapshot: Equity $104,934.67 | Cash $47,431.64 (45.20%) | Deployed ~54.80% (3 positions: AVGO 45sh, IWM 62sh, XOM 130sh). Real state as of 2026-08-18 is unknown — stops may have advanced or triggered since last check.
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- ClickUp alert could not be sent (channel unreachable) — flagged here instead; user notified out-of-band via push notification.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Once connectivity is restored, re-run pre-market research before relying on this log for today's trading — do not assume HOLD; positions/stops are stale as of Aug 17 EOD.
+3. Per Strategy Rule 15 (Reconnect protocol): the next successful run after this gap must pull live positions/orders directly from Alpaca first and check every position against all applicable thresholds (tighten triggers, -7% cut, thesis-break levels) before taking any new-entry action.
