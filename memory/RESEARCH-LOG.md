@@ -5974,3 +5974,60 @@ No -7% cut hit on either position. XOM's unrealized gain (14.58%) remains just u
 
 ### Decision
 **TRADE — enter AVGO at market open**, re-priced off today's live quote (premarket ~$412, subject to change at the open), not Friday's stale $421 level. No Tier-1 blocker today; deployment (37.73%) sits below the 40% default-TRADE threshold. AVGO's R:R re-validated fresh at ~2.0-2.8:1 despite Friday's VMware-vuln-driven selloff — the core AI/semis catalyst is unaffected, the stock is already recovering premarket, and R:R actually improved versus Friday's read. IWM and XOM both hold unchanged, theses intact — no cuts, no new tighten triggers. Week 17 count will move to 1/3 pending fill confirmation at market open. Full execution details (final price, shares, stop) to be logged in today's Market-Open entry.
+
+## 2026-08-18 — Pre-Market Research (Tuesday, Week 17 Day 2)
+
+**Urgency protocol active:** Deployed has closed below 75% for 12+ consecutive weekly closes. R:R floor for new entries is 1.5:1, Tier-2 blockers do not apply (Tier-1 still blocks).
+
+### STEP 1B — Pending decisions
+No "User decisions" block found below the Aug 17 EOD entry, and Aug 17's EOD logged **no action questions** (no thesis breaks, no rule-trigger proximity, no unactioned deployment candidate, trade-slot count 1/3 not near the 2/3 carry threshold). Nothing to resolve autonomously today.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $104,725.44 | Cash: $47,431.63 (45.29%) | Deployed: $57,293.81 (54.71%, 3 positions) | Buying power: $350,149.19 | Week 17 count: 1/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment sits between the 40% default-TRADE trigger and the 60% patience-valid floor (Rule 11) — neither auto-TRADE nor auto-HOLD applies; today's call rests on candidate quality.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 45 | $395.423333 | $386.03 | -$422.70 (-2.38%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $303.08 | +$789.27 (+4.38%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $162.55 | +$3,136.82 (+17.43%) | 7% trail HWM $162.51 / stop $151.1343 (ffe9d7c4, confirmed live, price at/just above HWM, trail will advance) |
+
+No -7% cut hit on any position. XOM's unrealized gain (17.43%) remains covered by the 7% trail set ahead of Jul 31 earnings — no action needed; next tier (7%->5%) triggers at +20%, still ~2.6 points away. IWM +4.38%, nowhere near +15%. AVGO -2.38%, nowhere near -7%. All three stop orders confirmed live and correctly attached, no drift from log.
+
+### Market Context
+- **Oil:** WTI ~$84.9-85.2, Brent ~$91.0-91.4 — a clear move higher overnight (WTI +3.1-3.5%, Brent +2.5-3.1% per Yahoo/crudeoilprices.today), extending past last week's consolidation range. Bullish for XOM.
+- **S&P 500 futures:** Modestly negative, ~7,727-7,770 across feeds (-0.4% to -0.5%), pulling back from Monday's levels ahead of today's data and Home Depot earnings.
+- **VIX:** ~15.0-15.9 — **market risk: low**, ticked up slightly (~+5%) off Monday's close but still well under the 18 threshold.
+- **Today's data:** Trade (Import/Export) Price Indices, Housing Starts, Building Permits (8:30am ET), Industrial Production/Capacity Utilization (9:15am ET). **None are Tier-1** (CPI/PPI/FOMC/NFP/GDP) — CPI was Aug 12, PPI Aug 13, next FOMC item is Minutes tomorrow (Aug 19), next jobs report not until Sep 4. **No Tier-1 blocker today.**
+- **Earnings BMO today:** Home Depot (HD), Baidu (BIDU), Amer Sports, Klarna, Hesai, Dycom — none on the sector watchlist or held. Reddit (RDDT) also joins the S&P 500 before today's open (index-fund forced buying, ~$2.9B), not a held-name catalyst.
+- **Sector momentum (YTD):** Energy leading (+40.0% one source), Technology +33.3%, Industrials +20.6%; Communication Services weakest (-5.1%), Consumer Discretionary -1.6%. Tech's YTD figure continues to vary by source (other reads show Tech negative YTD) — treat with the usual caution; same-day/multi-week price action (AI/semis rally) remains the more reliable signal.
+
+### Held-Position Validation
+**AVGO ($386.03, -2.38%) — HOLD, thesis intact, watch item unchanged:** No confirmed escalation of the VMware CVE-2026-59310 vulnerability (no breach/customer-impact/guidance-cut headline). News flow is mixed: some coverage notes an analyst upgrade to Buy and strong AI revenue growth; other coverage flags continued softness tied to a ~$370B AI-infrastructure-financing-platform story (Broadcom potential backstop exposure up to $29B) and lingering VMware-vuln overhang. Price has drifted from Monday's $395.42 fill to $386.03 (-2.4%), still nowhere near the -7% manual cut or the 10% trailing stop ($359.424). Treat as continued watch item, not a thesis break — re-check at Midday Scan for any escalation headline.
+
+**IWM ($303.08, +4.38%) — HOLD, thesis intact:** Small-cap rally continues (Russell 2000 at/near record highs, MarketWatch "Russell 2000 Extends Records"). No negative headlines. Slight pullback from Monday's close consistent with broader futures softness this morning, not name-specific.
+
+**XOM ($162.55, +17.43%) — HOLD, thesis intact:** Oil's overnight jump (WTI +3%+) pushed XOM to a fresh high, nudging the 7% trail's HWM up. Positive company-specific news: ~$1.1B in pre-investment contracts awarded for Mozambique's Rovuma LNG Phase 1, plus new 20-year Permian midstream agreements with Targa Resources. Ex-dividend was yesterday (Aug 17, $1.03/share) as previously logged. No negative catalyst; comfortable buffer above the 7% stop. Jones Act waiver headline remains unresolved political risk, not a thesis break.
+
+### Rule 16 — Sector-widening candidate pass (overdue, attempted this session)
+Ran the overdue single-stock sourcing pass across Financials, Healthcare, Consumer Discretionary, Communication Services, and Real Estate per Rule 16. Result: **no actionable candidate today.** The only name clearing >15% analyst upside with sector fit (TMUS, Communication Services, ~24.5% upside per TipRanks trending screen) came from a stale data snapshot (dated Oct 2025) with no specific near-term catalyst identified — fails the Entry Checklist's "specific catalyst?" test outright, and the price-target read can't be trusted as current. HCA Healthcare and Deckers Outdoor (Consumer Discretionary) also surfaced but either missed the upside bar or lacked a discrete catalyst. **Not entering on this data.** Flagging for a proper redo next session with fresh, dated sources and an explicit catalyst filter (earnings within 30 days, guidance revision, M&A, FDA/regulatory event) rather than a generic upside screen.
+
+### Trade Ideas
+No new entries today — no candidate clears both the R:R and specific-catalyst bars.
+1. **AVGO — hold, no action.** -2.38%, VMware watch item unchanged (no escalation), thesis intact.
+2. **IWM — hold, no action.** +4.38%, small-cap rally continuing, fresh highs.
+3. **XOM — hold, no action.** +17.43%, oil spike overnight, positive company news (Rovuma LNG, Permian Targa deal), already covered by 7% trail.
+
+### Risk Factors
+- **AVGO's VMware CVE-2026-59310 watch item** — third session without escalation, but still the single biggest name-specific risk in the book; re-check at Midday Scan and EOD.
+- **Broader AI-financing/valuation overhang** (the ~$370B AI-infrastructure-debt story, Broadcom's potential $29B backstop exposure) — sector-wide, could keep pressuring AVGO even without a company-specific break.
+- **XOM concentration** — now the largest single position by a wider margin (~20%+ of equity, +17.43% unrealized), sole Energy exposure; Jones Act waiver headline still unresolved.
+- **Rule 16 sourcing pass still hasn't produced an actionable candidate** — now attempted but blocked on stale/insufficient data rather than skipped outright; needs a proper redo with fresher, dated sources next session.
+- **12th+ consecutive week under the 75% deployment floor** — urgency protocol remains active; deployment (54.71%) has improved materially since AVGO's fill but remains short of both the 60% patience-valid floor and the 75% target.
+- **Watchdog/scheduler remediation status unconfirmed** — flagged Aug 17 as still uncommitted/unregistered; not re-verified this session, carrying forward as an open operational item.
+- **Congress/Quiver Quant API status not re-checked this session** — last known status 401/down since Jul 9.
+
+### Decision
+**HOLD — no new entries today.** No Tier-1 blocker (today's releases are Trade Price Indices/Housing Starts/Industrial Production, none on the blackout list), but no candidate clears the entry checklist: AVGO/IWM/XOM all hold unchanged with theses intact, no cuts, no new tighten triggers (XOM's next tier is +20%, ~2.6 points away). The overdue Rule 16 sector-widening pass was run but returned no name with both a clean R:R and a specific, dated catalyst — logged as attempted-but-inconclusive rather than skipped, to be redone properly next session. Week 17 count stays 1/3, 4 trading days remaining. Deployment 54.71%, 12th+ consecutive week under the 75% floor — urgency protocol carries forward, but per Rule 11 patience is not automatically "valid" here (deployed <60%, no Tier-1 blocker) so this HOLD rests on the absence of a qualifying candidate, not on a default-patience pass.
