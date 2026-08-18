@@ -4721,3 +4721,26 @@ No -7% cut hit on any position. No new tighten triggers (XOM +15.05% already sat
 **Action taken:** None. No cuts, no tightens (XOM still ~1.1 pts short of +20%), no thesis breaks (AVGO watch item re-confirmed clean via Perplexity). No ClickUp notification (no action taken, per STEP 7).
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 18 — EOD Snapshot (Day 79, Tuesday — Week 17 Day 2)
+**Portfolio:** $104,690.44 | **Cash:** $47,431.63 (45.31%) | **Day P&L:** -$244.23 (-0.23%) | **Phase P&L:** +$4,690.44 (+4.69%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AVGO | 45 | $395.423333 | $380.31 | -3.09% | -$680.10 (-3.82%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $300.23 | -1.26% | +$586.53 (+3.25%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $165.62 | +2.58% | +$3,535.92 (+19.65%) | 7% trail HWM $165.67 / stop $154.0731 (ffe9d7c4, confirmed live, fresh high — trail advanced) |
+
+**Trades today:** None. Week 17 count: 1/3.
+
+**Notes:** Day 79, Tuesday, Week 17 Day 2. Account confirmed PA3GVPXBYBRB, matches AIS baseline. No trades fired — pre-market HOLD call carried through the day (Rule 16 sourcing pass found no candidate with both clean R:R and a specific, dated catalyst). Portfolio dipped slightly on the day (-0.23%, -$244.23) as AVGO extended its post-entry drift (-3.09% day, -3.82% unrealized, still nowhere near the -7% cut) and IWM pulled back off recent highs (-1.26% day, still +3.25% unrealized), while XOM kept climbing on oil strength (+2.58% day, +19.65% unrealized, fresh intraday high $165.67 — trail advanced to $154.0731). XOM is now closing in on the +20% tighten tier (7%→5% trail), just 0.35 points away — flagged as an action question below rather than pre-empted, since it hasn't crossed the line yet. No losers cut. No thesis breaks: AVGO's VMware CVE-2026-59310 watch item was re-confirmed clean via Perplexity at Midday Scan (no breach, no customer-impact escalation, no guidance cut — the $370B AI-financing figure remains a modeled ceiling, not disclosed liability), IWM's small-cap rally remains intact, XOM's oil-driven run continues with positive company-specific news (Rovuma LNG pre-investment contracts, Permian Targa midstream deal). Deployment held at 54.69% (45.31% cash) — still below the 75% floor, 12th+ consecutive week under it, but no candidate cleared today's research so no deployment question this session. Week 17 count: 1/3, 3 trading days remaining.
+
+**Action questions:**
+
+**Q: Tighten XOM stop to 5% now, or wait for the +20% trigger price?**
+- Tighten early: locks in more of the +19.65% gain, guards against a sharp reversal — normal daily volatility could stop you out before the real trigger
+- Wait for trigger: lets the trade breathe, avoids being shaken out early (only 0.35 points from the +20% line) — risks giving back some profit if XOM gaps down before crossing
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
