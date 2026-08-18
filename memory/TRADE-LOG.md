@@ -4683,3 +4683,41 @@ No -7% cut hit on any position. No new tighten triggers (XOM +15.05% already sat
 **Action questions:** None. No thesis breaks, no rule-trigger proximity, no unactioned deployment candidate, and trade-slot count (1/3) isn't near the 2/3 carry-decision threshold.
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-18 — Market-Open Execution (Tuesday, Week 17 Day 2)
+
+**Pre-market plan:** HOLD, no new trades today — no Tier-1 blocker, but no candidate cleared the entry checklist (Rule 16 sourcing pass returned no name with both clean R:R and a specific, dated catalyst). AVGO/IWM/XOM all hold, no action.
+
+**Live re-validation:**
+| Ticker | Entry | Live Price | Chg from entry | Stop | Threshold check |
+|--------|-------|------------|-----------------|------|-----------------|
+| AVGO | $395.423333 | $384.85 | -2.67% | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, no new high) | No cut (-7%) |
+| IWM | $290.769839 | $302.55 | +4.05% | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) | No tighten (+15%) |
+| XOM | $138.420615 | $164.99 | +19.20% | 7% trail HWM $164.99 / stop $153.4407 (ffe9d7c4, confirmed live, fresh high — trail advanced) | Approaching +20% tighten tier (~0.8 pts away), not yet crossed |
+
+**Account:** Equity $104,921.40 | Cash $47,431.63 (45.20%) | Deployed $57,489.77 (54.80%, 3 positions) | Week 17 count: 1/3
+
+**No trade executed** — no rule check needed, no candidate to size. All 3 stops confirmed live and correctly attached, no drift from log. No losers cut (AVGO -2.67%, nowhere near -7%). No tighten triggers hit yet, but XOM (+19.20%) is close to the +20% tier (7%→5%) — watch at Midday Scan. No thesis breaks. No ClickUp notification (no trade fired).
+
+---
+
+## 2026-08-18 — Midday Scan (Tuesday, Week 17 Day 2)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 45 | $395.423333 | $380.77 | -$659.40 (-3.71%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $300.98 | +$633.03 (+3.51%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $164.545 | +$3,396.17 (+18.87%) | 7% trail HWM $165.36 / stop $153.7848 (ffe9d7c4, confirmed live, fresh high earlier today — trail advanced from $153.4407 at market open) |
+
+- **Losers cut:** None. AVGO -3.71%, IWM +3.51%, XOM +18.87% — none near the -7% cut.
+- **Stop tightening:** None due. XOM +18.87% still short of the +20% tier (7%→5%), ~1.1 points away — watch continues at EOD. IWM +3.51% and AVGO -3.71% nowhere near +15%.
+- **Thesis check:** AVGO — third straight session of drift (-3.71% from entry, -2.97% intraday) on the VMware CVE-2026-59310 watch item + AI-infrastructure-financing overhang flagged in this morning's research. Ran a fresh Perplexity check: no Broadcom-confirmed breach, no customer-impact escalation, no guidance cut; the $370B AI-financing figure remains reporting's modeled ceiling, not a disclosed liability (current disclosed exposure still capped at $29B). Core AI semiconductor thesis intact — continued watch item, not a break. IWM small-cap strength unchanged, no negative headlines. XOM oil-driven run continues (fresh intraday high, HWM advanced $164.99→$165.36), no thesis-break signal. No other sharp unexplained move — no further Perplexity checks needed.
+- **Open orders confirmed live:** Sell 45 AVGO trailing_stop 10% GTC (2d34a96c, stop $359.424, HWM $399.36, unchanged), Sell 130 XOM trailing_stop 7% GTC (ffe9d7c4, stop $153.7848, HWM $165.36, advanced from $153.4407/$164.99 at market open), Sell 62 IWM trailing_stop 10% GTC (4c0586cc, stop $274.662, HWM $305.18, unchanged) — all three correctly attached, no drift from log.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $104,614.25 | Cash $47,431.63 (45.34%) | Deployed $57,182.62 (54.66%, 3 positions). Week 17 count: 1/3.
+
+**Action taken:** None. No cuts, no tightens (XOM still ~1.1 pts short of +20%), no thesis breaks (AVGO watch item re-confirmed clean via Perplexity). No ClickUp notification (no action taken, per STEP 7).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
