@@ -147,13 +147,21 @@ def main():
     out_path = os.path.join(".tmp", f"congress_signals_{today}.json")
     os.makedirs(".tmp", exist_ok=True)
 
-    if os.path.exists(out_path):
-        with open(out_path) as f:
-            cached = json.load(f)
-        active = sum(1 for v in cached.values() if v.get("action") != "HOLD")
-        print(f"[congress] CACHED — {active} active signals", file=sys.stderr)
-        print(json.dumps(cached, indent=2))
-        return
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+        try:
+            with open(out_path) as f:
+                cached = json.load(f)
+        except json.JSONDecodeError:
+            # File exists but isn't valid JSON — most likely truncated by a
+            # shell `> out_path` redirect racing this script's own write to
+            # the same path. Treat as no cache and fall through to a fresh
+            # fetch instead of crashing.
+            print(f"[congress] {out_path} exists but is not valid JSON — ignoring cache, refetching", file=sys.stderr)
+        else:
+            active = sum(1 for v in cached.values() if v.get("action") != "HOLD")
+            print(f"[congress] CACHED — {active} active signals", file=sys.stderr)
+            print(json.dumps(cached, indent=2))
+            return
 
     print(
         f"[congress] Fetching STOCK Act disclosures from Quiver Quant "

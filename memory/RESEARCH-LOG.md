@@ -6031,3 +6031,78 @@ No new entries today — no candidate clears both the R:R and specific-catalyst 
 
 ### Decision
 **HOLD — no new entries today.** No Tier-1 blocker (today's releases are Trade Price Indices/Housing Starts/Industrial Production, none on the blackout list), but no candidate clears the entry checklist: AVGO/IWM/XOM all hold unchanged with theses intact, no cuts, no new tighten triggers (XOM's next tier is +20%, ~2.6 points away). The overdue Rule 16 sector-widening pass was run but returned no name with both a clean R:R and a specific, dated catalyst — logged as attempted-but-inconclusive rather than skipped, to be redone properly next session. Week 17 count stays 1/3, 4 trading days remaining. Deployment 54.71%, 12th+ consecutive week under the 75% floor — urgency protocol carries forward, but per Rule 11 patience is not automatically "valid" here (deployed <60%, no Tier-1 blocker) so this HOLD rests on the absence of a qualifying candidate, not on a default-patience pass.
+
+## 2026-08-19 — Pre-Market Research (Wednesday, Week 17 Day 3)
+
+**Urgency protocol active:** Deployed has closed below 75% for 12+ consecutive weekly closes.
+
+### STEP 1B — Pending decisions resolved
+No "User decisions" block found below the Aug 18 EOD entry. One unanswered action question resolved autonomously per Rule 14 — full rationale in TRADE-LOG.md under "Bot autonomous decision (2026-08-19)": **XOM stop tightened 7%->5%** (trigger fired: unrealized gain crossed +20% overnight to 20.29%). Cancelled order ffe9d7c4 (7% trail, stop $154.0731), replaced with order 20cf5b9d (5% trail, HWM $166.51, stop $158.1845). Never moved down, >3% from live price.
+
+### Repo fix — Benzinga/Congress fetch scripts (self-anneal)
+`scripts/fetch_benzinga.py` and `scripts/fetch_congress.py` both crashed on `Expecting value: line 1 column 1 (char 0)` when run per the routine's literal STEP 2B/2C command (`python script.py > .tmp/..._$DATE.json`). Root cause: the shell `>` redirect truncates the target file to 0 bytes *before* Python starts, and the script's own cache-check (`if os.path.exists(out_path): json.load(...)`) then reads that empty file and crashes — before ever reaching the fetch/write logic. This also destroyed the valid signal files an earlier scheduled run had already produced this morning at 07:01. Recovered by deleting the corrupted files and re-running each script without the redirect (the scripts write `out_path` internally and also print to stdout, so the redirect was redundant as well as destructive). Fixed both scripts to catch `JSONDecodeError` on cache load and fall through to a fresh fetch instead of crashing, and updated `routines/pre-market.md` STEP 2B/2C to drop the `> out_path` redirect. `.claude/commands/pre-market.md` doesn't include these steps, so no change needed there.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $104,709.19 | Cash: $47,431.63 (45.30%) | Deployed: $57,277.56 (54.70%, 3 positions) | Buying power: $350,103.69 | Week 17 count: 1/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment sits between the 40% default-TRADE trigger and the 60% patience-valid floor (Rule 11) — today's call rests on candidate quality, not a default.
+
+### Positions (live, pre-market — post stop-tighten)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 45 | $395.423333 | $379.50 | -$716.55 (-4.03%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $300.03 | +$574.13 (+3.19%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $166.51 | +$3,651.62 (+20.29%) | **Tightened today:** 5% trail HWM $166.51 / stop $158.1845 (20cf5b9d, replaces ffe9d7c4) |
+
+No -7% cut on any position (AVGO -4.03% is the worst, nowhere close). XOM's tighten already executed above (STEP 1B). IWM +3.19%, nowhere near +15%. AVGO -4.03%, watch item (see below).
+
+### Market Context
+- **Oil:** WTI ~$85.0-85.9, Brent ~$91.4-91.9 — a clear overnight rally (+1-3%), extending past last week's range. Bullish for XOM, consistent with today's stop tighten trigger.
+- **S&P 500 futures:** Negative, ~7,726-7,728 (-0.5% to -0.6%), pulling back from last week's record close; Nasdaq futures underperforming further on a chip-sector selloff plus rising oil and bond yields.
+- **VIX:** ~15.7-15.9 — **market risk: low** (well under 18), but ticked up ~3-5% off Monday's 15.19 close.
+- **Today's data:** FOMC Minutes (July 28-29 meeting) at 2:00pm ET — Tier-2 at most, not a blackout trigger (CPI was Aug 12, PPI Aug 13, no CPI/PPI/NFP/GDP today; next jobs report Sep 4). Minutes reportedly show a rare 3-way same-direction dissent (Hammack, Kashkari, and a third) — a mild hawkish-optics risk but not itself Tier-1. **No Tier-1 blocker today.**
+- **Earnings BMO today:** Analog Devices (ADI), Target (TGT), TJX, Lowe's (LOW), Estee Lauder (EL) — none on the sector watchlist or held. No blackout triggered.
+- **Sector momentum (YTD):** Energy leads across every source (+35-43%), Technology's read is the usual wide spread (+29% in one source, -3% in another — treat with standing caution). Communication Services weakest (-5.1% to -5.8%) in every source that ranks it.
+- **20-day RS vs SPY (Perplexity ranking, strongest to weakest):** XLE > XLK > XLI > XLV > XLP > XLB > XLF > XLY > XLU > XLRE > XLC > SOXX > QQQ > IWM > GLD > SLV > HYG > EEM > SPY. Energy (XOM's sector) still #1; IWM reads weak today (#14) despite an intact fundamental thesis — consistent with the broad small-cap pullback described below, not a thesis break.
+- **Economic cycle:** **late-cycle.** Richmond Fed research flags unemployment rising for 33 straight months (longest on record without a recession following) even as GDP growth stays modestly positive — a "slow-motion downturn" pattern, not recession-level distress. Other forecasters (Goldman, Deloitte, Vanguard) still call for resilient 2-2.5% 2026 growth. First explicit cycle-stage call logged this cycle; carry forward for the macro pre-check gate on rate-sensitive entries.
+
+### Benzinga Signals (40 emails, 24h lookback)
+- **BENZINGA_BUYS:** SPY (high, score +8, 18 mentions — "Nasdaq short exposure hits $20B, squeeze imminent?" narrative, not a fundamental catalyst); CVX (medium, score +2)
+- **BENZINGA_SELLS (all medium):** GLD, XLE, XLK, XLV, XLI, XLB, XLP, IWM (held), XOM (held)
+- Held-position signals: **IWM and XOM both show Benzinga SELL medium.** Neither corroborated by fundamentals — see Held-Position Validation below. Reads as a mechanical sentiment artifact of the broad chip-selloff/rising-yields tape (nearly every sector ETF scored SELL today), not name-specific bearish news.
+
+### Congress Signals
+Congress: no actionable signals today — Quiver Quant API still returning 401 Unauthorized (down since Jul 9, now 6+ weeks unresolved, unchanged from prior sessions). Proceeding with no congress context per directive fallback.
+
+### Perplexity Validation
+- **XOM Benzinga SELL is directly contradicted by price action and fundamentals:** oil rallying (WTI/Brent both +1-3% overnight), stock itself up ~+2.5% Tuesday (+$4.10 to $165.56) and crossing +20.29% unrealized this morning. Treating the Benzinga signal as noise, not a thesis-break input.
+- **IWM Benzinga SELL is a same-day pullback (-1.1% to -1.3%) inside an intact multi-week uptrend**, not a reversal — small-cap Fed-cut-hope narrative and fund inflows (+$2.3B trailing month) are unchanged; Perplexity's dedicated IWM query surfaces no negative company/sector news.
+- **CVX Benzinga BUY does not clear R:R:** current price ~$205.80 vs. consensus PT range $207-217 (avg ~$210-217) → reward only ~$1-11/share against a 10% stop (~$20.58/share risk) — R:R roughly 0.05-0.5:1, far below even the 1.5:1 urgency floor. CVX is already priced near its analyst target; not an actionable candidate today regardless of the Benzinga signal. (Also ex-dividend today, $1.78/share — mechanical, not a catalyst.)
+- **SPY BUY (Nasdaq short-squeeze framing) is speculative positioning chatter, not a specific dated catalyst** — fails the Entry Checklist's catalyst test outright; SPY is also our own RS benchmark, not a normal watchlist name.
+- **Broad risk-off backdrop confirmed independently:** chip-sector selloff + rising oil + rising bond yields ahead of FOMC Minutes/20-year Treasury auction is the dominant theme pressuring tech/growth and most sector ETFs today, per the "top catalysts" query — this explains nearly all of today's Benzinga SELLs without any of them being company-specific breaks.
+
+### Held-Position Validation
+**AVGO ($379.50, -4.03%) — HOLD, thesis intact but watch item escalating (4th straight session of drift):** Tuesday was AVGO's sharpest single-day drop since entry (-3.2% to -3.3%, closing $379.48-$379.83), driven by continued VMware CVE-2026-59310 overhang plus a fresh valuation/AI-financing-scrutiny debate (no new confirmed breach, customer-impact, or guidance cut — still not a confirmed thesis break). Consensus rating remains "Moderate Buy," PT $493.24 unchanged. Extended pre-market to ~$380.30. -4.03% is nowhere near the -7% manual cut, but this is now 4 consecutive sessions without a positive close and the worst single-day move of the four — flagging for closer-than-usual attention at Midday Scan rather than a routine "watch item unchanged" note.
+
+**IWM ($300.03, +3.19%) — HOLD, thesis intact:** Small-cap Fed-cut/inflow story continues (+$2.3B trailing-month inflows, still up materially YTD); today's -1.1% to -1.3% move is a same-day pullback inside the broader risk-off tape, not sector- or name-specific negative news.
+
+**XOM ($166.51, +20.29%) — HOLD, thesis strongly intact, stop tightened today:** Oil's overnight rally (WTI +1-3%, Brent +1-3%) pushed XOM through the +20% tighten tier; 5% trailing stop now live (see STEP 1B). No negative catalyst identified.
+
+### Rule 16 — no fresh candidate today
+CVX (the only single-stock candidate surfaced via Benzinga BUY) fails R:R outright (already near consensus PT). No other name was sourced today; not repeating the full sector-widening pass since Aug 18's pass is only one session old and nothing material has changed sector-breadth-wise since then.
+
+### Trade Ideas
+No new entries today — no candidate clears both R:R and specific-catalyst bars.
+1. **XOM — hold, stop tightened to 5% trail today** (+20.29%, oil-driven, thesis intact).
+2. **IWM — hold, no action.** +3.19%, thesis intact despite today's broad pullback.
+3. **AVGO — hold, no action, but watch closely.** -4.03%, 4th straight negative session, VMware/AI-financing overhang unresolved but not confirmed as a break; re-check at Midday Scan.
+
+### Risk Factors
+- **AVGO's 4-session drift is deepening** (worst single-day drop yet Tuesday) — still a watch item, not a break, but the trend needs a closer look at Midday/EOD than the routine daily check.
+- **FOMC Minutes 2pm ET** — Tier-2, but the reported 3-way same-direction dissent could read hawkish and add to today's already-negative tape, especially for small-caps (IWM) and any Fed-cut-sensitive positioning.
+- **Broad chip/tech selloff** continuing to pressure Nasdaq — AVGO's segment, still the most exposed position to this theme.
+- **Congress/Quiver Quant API still down (401)** — 6+ weeks unresolved since Jul 9, not investigated this session (out of scope for pre-market routine).
+- **13th+ consecutive week under the 75% deployment floor** — urgency protocol remains active; no candidate cleared today, so deployment stays flat pending a valid setup.
+
+### Decision
+**HOLD — no new entries today.** No Tier-1 blocker (FOMC Minutes is Tier-2), but the only Benzinga-sourced candidate (CVX) fails R:R outright and no other name was sourced. XOM's stop was tightened 7%->5% per today's live +20% trigger (resolves yesterday's carried EOD question — a direct rule application, not a judgment call). AVGO's continuing multi-session drift is flagged as an elevated watch item for Midday Scan, though not yet a thesis break. IWM and XOM theses both intact. Week 17 count stays 1/3, 3 trading days remaining. Deployment 54.70%, 13th+ consecutive week under the 75% floor — urgency protocol carries forward.

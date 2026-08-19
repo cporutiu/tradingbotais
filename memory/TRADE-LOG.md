@@ -4744,3 +4744,13 @@ No -7% cut hit on any position. No new tighten triggers (XOM +15.05% already sat
 - Wait for trigger: lets the trade breathe, avoids being shaken out early (only 0.35 points from the +20% line) — risks giving back some profit if XOM gaps down before crossing
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-19 — Pre-Market: Autonomous Decision (Wednesday, Week 17 Day 3)
+
+No "User decisions" block found below the Aug 18 EOD entry. One unanswered action question resolved autonomously per Rule 14:
+
+**Bot autonomous decision (2026-08-19):** Tighten XOM stop to 5% now, or wait for the +20% trigger price? -> **TRIGGER FIRED - tightened to 5% now.** -> Live pre-market pull shows XOM at $166.51, unrealized gain 20.29% (crossed +20% overnight on oil's overnight rally, WTI ~$85/Brent ~$91.4, both +1-3%). This is a direct rule application (Strategy Rule 6: tighten to 5% at +20%), not a judgment call - the trigger cited in yesterday's question has now fired. Cancelled the existing 7% trail (order ffe9d7c4, stop $154.0731, HWM $165.67) and replaced with a fresh 5% trailing GTC stop (order 20cf5b9d, HWM $166.51, stop $158.1845) - matching the standard cancel-and-replace pattern used for prior tightens (AMD 5/25, NVDA 5/14, XOM's own 7/31 pre-earnings tighten). New stop ($158.1845) is above the old stop ($154.0731) - never moved down - and more than 3% below the current price - not within the no-tighten-too-close band.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
