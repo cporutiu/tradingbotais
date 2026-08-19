@@ -4800,3 +4800,23 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Action taken:** AVGO stop-out reconciled and logged (order had already filled before this session ran — no manual close needed). No new cuts, no new tightens, no thesis breaks on IWM/XOM. ClickUp notification sent given the material portfolio change.
 
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+## Aug 19 — EOD Snapshot (Day 80, Wednesday — Week 17 Day 3)
+**Portfolio:** $103,738.02 | **Cash:** $63,602.98 (61.31%) | **Day P&L:** -$952.42 (-0.91%) | **Phase P&L:** +$3,738.02 (+3.74%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| IWM | 62 | $290.769839 | $301.77 | +0.51% | +$682.01 (+3.78%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $164.81 | -0.45% | +$3,430.62 (+19.07%) | 5% trail HWM $168.21 / stop $159.7995 (20cf5b9d, confirmed live, no new high, pulled back off intraday high $168.21) |
+
+**Trades today:** AVGO stopped out (10% trailing stop, order 2d34a96c) — entry $395.423333 (45 sh) Aug 17 -> exit $359.363333 Aug 19 14:12 UTC. Realized P&L -$1,622.70 (-9.12%). Mechanical exit, thesis intact at time of exit (VMware CVE-2026-59310 never escalated) — per Rule 10 clarification, doesn't count toward the 2-failed-trade sector cooldown; Technology stays open, 0/2. Week 17 count: 1/3 (stop-outs don't count toward the new-trade cap).
+
+**Notes:** Day 80, Wednesday, Week 17 Day 3. Account confirmed PA3GVPXBYBRB, matches AIS baseline. AVGO's 10% trailing stop fired mid-session (order 2d34a96c, already reconciled at Midday Scan) — mechanical exit with an intact thesis, not a broken-story cut. Remaining book: IWM +3.78% unrealized (day +0.51%, thesis intact, small-cap Fed-cut/inflow story unchanged) and XOM +19.07% unrealized (day -0.45%, pulled back from an intraday high of +20.34%/$168.21 amid the broader chip-sector/rising-yields risk-off tape and FOMC Minutes' hawkish-leaning 3-way dissent — no name-specific negative news, thesis intact). No losers near the -7% cut. No new tighten triggers: XOM is already on its max 5% tier (tightened this morning at the +20% trigger); IWM well short of +15%. Deployment dropped sharply on AVGO's exit — cash 61.31%, deployed 38.69%, back under the 40% default-TRADE threshold — but no candidate cleared today's research (CVX failed R:R outright, no other name sourced); flagged again for next pre-market pass to source a replacement. Week 17 count stays 1/3, 2 trading days left this week (Thu/Fri).
+
+**Action questions:** None. No thesis breaks (IWM/XOM both intact), no rule-trigger proximity (no position within range of a tighten tier or the -7% cut), no viable deployment candidate sourced today despite cash above the 25% threshold, trade-slot count 1/3 (not at the 2/3 carry-decision point).
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
