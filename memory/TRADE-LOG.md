@@ -4754,3 +4754,49 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Bot autonomous decision (2026-08-19):** Tighten XOM stop to 5% now, or wait for the +20% trigger price? -> **TRIGGER FIRED - tightened to 5% now.** -> Live pre-market pull shows XOM at $166.51, unrealized gain 20.29% (crossed +20% overnight on oil's overnight rally, WTI ~$85/Brent ~$91.4, both +1-3%). This is a direct rule application (Strategy Rule 6: tighten to 5% at +20%), not a judgment call - the trigger cited in yesterday's question has now fired. Cancelled the existing 7% trail (order ffe9d7c4, stop $154.0731, HWM $165.67) and replaced with a fresh 5% trailing GTC stop (order 20cf5b9d, HWM $166.51, stop $158.1845) - matching the standard cancel-and-replace pattern used for prior tightens (AMD 5/25, NVDA 5/14, XOM's own 7/31 pre-earnings tighten). New stop ($158.1845) is above the old stop ($154.0731) - never moved down - and more than 3% below the current price - not within the no-tighten-too-close band.
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-19 — Market-Open Execution (Wednesday, Week 17 Day 3)
+
+**Pre-market plan:** HOLD, no new trades today — no Tier-1 blocker, but no candidate clears both R:R and specific-catalyst bars (CVX, the only Benzinga BUY, fails R:R outright). AVGO/IWM/XOM all hold. XOM stop already tightened to 5% trail during pre-market (order 20cf5b9d, trigger fired at +20%).
+
+**Live re-validation (Alpaca, market open):**
+| Ticker | Entry | Live Price | Unrealized | Stop | Threshold check |
+|--------|-------|------------|------------|------|-----------------|
+| AVGO | $395.423333 | $372.2821 | -$1,041.36 (-5.85%) | 10% trail HWM $399.36 / stop $359.424 (2d34a96c, confirmed live, no new high) | No cut yet (-7%), but deepening — 5th straight negative session, closest to the cut line to date |
+| IWM | $290.769839 | $302.665 | +$737.50 (+4.09%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) | No tighten (+15%) |
+| XOM | $138.420615 | $165.81 | +$3,560.62 (+19.79%) | 5% trail HWM $166.51 / stop $158.1845 (20cf5b9d, confirmed live, no new high — eased back under +20% intraday, tighten already locked in) | Already tightened this morning, no further action |
+
+**Account:** Equity $104,503.92 | Cash $47,431.63 (45.39%) | Deployed $57,072.29 (54.61%, 3 positions) | Week 17 count: 1/3.
+
+**No trade executed** — pre-market HOLD call confirmed, no candidate to size. All 3 stops confirmed live and correctly attached (XOM's 5% tighten from pre-market persists, HWM/stop unchanged), no drift from log. No losers cut — AVGO -5.85% is the closest any position has come to the -7% manual cut but has not crossed it; flagging for close attention at Midday Scan. No new tighten triggers. No thesis breaks identified beyond the standing AVGO watch item (VMware CVE-2026-59310 / AI-financing overhang, unresolved but not confirmed as a break). No ClickUp notification (no trade fired).
+
+---
+
+## 2026-08-19 — Midday Scan (Wednesday, Week 17 Day 3)
+
+**Discrepancy check:** Live Alpaca pull showed only IWM and XOM in positions — AVGO absent from both positions and open orders, contradicting this morning's Market-Open log (AVGO -5.85%, stop 2d34a96c live). Investigated via closed-orders pull before taking any other action.
+
+**AVGO stopped out — Aug 19, 2026 (10% trailing stop, order 2d34a96c filled)**
+- Entry Aug 17: $395.423333 (45 sh) → Exit Aug 19 14:12:20 UTC: $359.363333 (trailing stop filled)
+- HWM at exit: $399.36 / stop triggered at $359.424
+- Realized P&L: **-$1,622.70 (-9.12%)**
+- Mechanical trailing-stop exit — thesis was intact per this morning's pre-market check (VMware CVE-2026-59310 watch item never escalated to confirmed breach/customer-impact/guidance cut). Per Rule 10's Aug 8 clarification, a mechanical trailing-stop exit with intact thesis does NOT count toward the "2 consecutive failed trades" sector cooldown — Technology sector stays open, 0/2 used, no cooldown triggered.
+- No manual action required this session — stop fired autonomously via the GTC order placed at fill on Aug 17, well before this routine ran (14:12 UTC vs. this session starting ~17:01 UTC). Confirmed no other unlogged fills via closed-orders pull.
+
+**Live positions (Alpaca pull, post-reconciliation):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $302.21 | +$709.29 (+3.93%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $166.57 | +$3,659.42 (+20.34%) | 5% trail HWM $168.21 / stop $159.7995 (20cf5b9d, confirmed live, new high — trail advanced from $166.51/$158.1845 this morning) |
+
+- **Losers cut:** None. IWM +3.93%, nowhere near -7%.
+- **Stop tightening:** None due. XOM at +20.34% is already on the 5% trail (max tier, tightened this morning at the +20% trigger) — no further tier exists. IWM +3.93%, nowhere near +15%.
+- **Thesis check:** IWM small-cap Fed-cut/inflow thesis intact, no negative headlines. XOM oil-driven run continues (fresh intraday high, HWM advanced $166.51→$168.21), thesis intact, no break. No sharp unexplained move on either name — Perplexity research skipped per STEP 6.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $103,994.16 | Cash $63,602.98 (61.16%) | Deployed $40,391.18 (38.84%, 2 positions). Week 17 count: 1/3.
+- **Deployment note:** AVGO's stop-out drops deployment from ~54.6% to 38.84%, back under the 40% default-TRADE threshold with no Tier-1 blocker (FOMC Minutes today is Tier-2) — flagging for next pre-market/EOD research pass to source a replacement candidate; not actioned mid-scan per routine scope (no new-entry step in Midday Scan).
+
+**Action taken:** AVGO stop-out reconciled and logged (order had already filled before this session ran — no manual close needed). No new cuts, no new tightens, no thesis breaks on IWM/XOM. ClickUp notification sent given the material portfolio change.
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
