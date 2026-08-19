@@ -6031,3 +6031,18 @@ No new entries today — no candidate clears both the R:R and specific-catalyst 
 
 ### Decision
 **HOLD — no new entries today.** No Tier-1 blocker (today's releases are Trade Price Indices/Housing Starts/Industrial Production, none on the blackout list), but no candidate clears the entry checklist: AVGO/IWM/XOM all hold unchanged with theses intact, no cuts, no new tighten triggers (XOM's next tier is +20%, ~2.6 points away). The overdue Rule 16 sector-widening pass was run but returned no name with both a clean R:R and a specific, dated catalyst — logged as attempted-but-inconclusive rather than skipped, to be redone properly next session. Week 17 count stays 1/3, 4 trading days remaining. Deployment 54.71%, 12th+ consecutive week under the 75% floor — urgency protocol carries forward, but per Rule 11 patience is not automatically "valid" here (deployed <60%, no Tier-1 blocker) so this HOLD rests on the absence of a qualifying candidate, not on a default-patience pass.
+
+## 2026-08-19 — Pre-Market Research (Wednesday, Week 17 Day 3) — OUTAGE, NO DATA
+
+**STEP 1B:** No "User decisions" block found below the Aug 18 EOD entry. One unanswered action question resolved autonomously per Rule 14: **Q: Tighten XOM stop to 5% now, or wait for the +20% trigger price?** → Deferred, not actioned — cannot verify current XOM price or place any order this session (see outage below). Carrying forward as an active watch item for the next run that has live access: check XOM live price vs. entry $138.420615; if ≥+20% (≥$166.10), tighten trail to 5% immediately per Rule 6; the underlying trigger (+20%) still governs once data access returns, this deferral does not authorize skipping it.
+
+**Outage — full egress block, no live data obtained:**
+- `bash scripts/alpaca.sh account/positions/orders` → curl 22 / HTTP 403 from the environment's egress proxy gateway ("policy denial or upstream failure") for `paper-api.alpaca.markets`.
+- `bash scripts/perplexity.sh` → same 403 pattern for `api.perplexity.ai`.
+- `bash scripts/clickup.sh` → same 403 pattern for `api.clickup.com` (not attempted — confirmed via direct curl to `api.clickup.com` returning identical proxy 403).
+- Per `/root/.ccr/README.md`: 403 from the proxy is an organization egress policy denial, not a transient network error — not to be retried or routed around. All three required API hosts are blocked for this session's environment.
+- **No account snapshot, no market context, no trade ideas possible this session** — none of the data below is fabricated or estimated; it simply was not obtainable.
+
+**Decision: HOLD (forced) — no data access, no action taken, no ClickUp alert sent (also blocked).** User notified directly out-of-band. Per Rule 15 (Reconnect protocol), the next session with restored access must pull live positions/orders directly from Alpaca to reconcile against the last logged state (Aug 18 EOD: AVGO 45sh, IWM 62sh, XOM 130sh) before taking any new-entry action, and check every position against every threshold that should have applied during the gap (XOM +20% tighten tier in particular — was already ~0.35pts from trigger as of Aug 18 close).
+
+**Account confirmed:** Not verified this session — no API access.
