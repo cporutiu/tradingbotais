@@ -4820,3 +4820,35 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-20 — Market-Open Execution (Thursday, Week 17 Day 4) [reconciled at Midday Scan]
+
+**Pre-market plan:** TRADE — enter AVGO re-entry at market open. R:R ~3.6-4.6:1 off improved re-entry price, deployment 38.82% triggers default TRADE, no Tier-1 blocker.
+
+**AVGO BUY executed:** 52 shares @ $365.526538, filled 2026-08-20 13:34:29 UTC (order 7b476507). Week 17 count: 2/3.
+
+**Gap found at Midday Scan:** No trailing-stop GTC order was ever placed on this fill — position sat unprotected from 13:34 UTC through the start of this session (~17:00 UTC), a direct miss of Rule 4 (10% trailing stop required immediately on fill). No Market-Open log entry was written today either, which is why this wasn't caught until the Midday Scan STEP 2 orders pull came back with AVGO absent. Root cause not yet determined (routine likely did not complete its order-placement step); flagging for review, not re-litigated here.
+
+---
+
+## 2026-08-20 — Midday Scan (Thursday, Week 17 Day 4)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $363.82 | -$88.74 (-0.47%) | **MISSING at scan start — corrected mid-session, see below** |
+| IWM | 62 | $290.769839 | $298.17 | +$458.81 (+2.55%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $167.515 | +$3,782.27 (+21.02%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, new high — trail advanced from $168.21/$159.7995) |
+
+**Corrective action — AVGO stop placed:** Discovered AVGO's Aug 20 re-entry (52 sh, filled 13:34 UTC) had no trailing stop attached. Placed a standard 10% trailing GTC stop immediately: order fc5bfa43, HWM $363.63, stop $327.267. Position -0.47% unrealized, nowhere near the -7% cut, so a fresh 10% trail (not a tightened tier) is correct per Rule 4.
+
+- **Losers cut:** None. AVGO -0.47%, IWM +2.55%, XOM +21.02% — none near -7%.
+- **Stop tightening:** XOM +21.02% already on its max 5% tier from Aug 19's +20% trigger — trail auto-advanced with the new high (HWM $168.21→$168.64, stop $159.7995→$160.208), no manual action needed. IWM +2.55% and AVGO -0.47% nowhere near +15%.
+- **Thesis check:** No sharp unexplained moves today (AVGO +0.37% day, IWM -1.18% day, XOM +1.67% day — all within normal range). IWM small-cap thesis intact, XOM oil-driven run continues to a fresh high, AVGO's standing VMware CVE-2026-59310 watch item unchanged (unescalated) per this morning's pre-market research. No thesis breaks. Perplexity check skipped per STEP 6 (nothing moving sharply enough to warrant it).
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $103,766.55 | Cash $44,595.24 (42.98%) | Deployed $59,171.31 (57.02%, 3 positions). Week 17 count: 2/3.
+
+**Action taken:** Placed missing AVGO trailing stop (order fc5bfa43, 10% trail, stop $327.267) — the only action this session. No cuts, no tightens beyond XOM's already-live auto-advance, no thesis breaks. ClickUp notification sent given the missing-stop gap is a material process miss.
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
