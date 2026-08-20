@@ -4852,3 +4852,22 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Aug 20 — EOD Snapshot (Day 81, Thursday — Week 17 Day 4)
+**Portfolio:** $103,596.00 | **Cash:** $44,595.24 (43.05%) | **Day P&L:** -$142.02 (-0.14%) | **Phase P&L:** +$3,596.00 (+3.60%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AVGO | 52 | $365.526538 | $364.03 | +0.43% | -$77.82 (-0.41%) | 10% trail HWM $366.145 / stop $329.5305 (fc5bfa43, confirmed live, new high — trail advanced from $363.63/$327.267 at Midday Scan) |
+| IWM | 62 | $290.769839 | $297.70 | -1.33% | +$429.67 (+2.38%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $166.26 | +0.90% | +$3,619.12 (+20.11%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, pulled back off Midday Scan's high $168.64) |
+
+**Trades today:** AVGO re-entry BUY, 52 sh @ $365.526538, filled 13:34:29 UTC (order 7b476507). Week 17 count: 2/3.
+
+**Notes:** Day 81, Thursday, Week 17 Day 4. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Today's only trade was this morning's AVGO re-entry (52 sh @ $365.526538, R:R ~3.6-4.6:1 off the improved re-entry price per pre-market research) — the position closed the day essentially flat (+0.43% day, -0.41% unrealized), well clear of the -7% cut, on a 10% trailing GTC stop placed as a corrective action at Midday Scan after being found unprotected (order fc5bfa43); the trail already advanced once intraday (HWM $363.63→$366.145) with no manual action needed. IWM pulled back with the broader tape (-1.33% day) but stays comfortably positive (+2.38% unrealized), small-cap Fed-cut/inflow thesis unchanged, nowhere near +15%. XOM extended its oil-driven run (+0.90% day, +20.11% unrealized) and remains on its max 5% trail from Tuesday's +20% tighten trigger — no further tier exists, stop auto-advances with each new high, no manual action possible or needed. No losers cut, no thesis breaks identified on any of the three names, no rule-trigger proximity beyond XOM's already-maxed trail. Cash sits at 43.05% (deployed 56.97%), above the 25% floor but no fresh candidate was sourced today beyond this morning's AVGO entry — no second name cleared both R:R and catalyst bars, so no deployment question follows. Week 17 count is 2/3 with only Friday left this week (1 trading day, not the ≥2-day carry-decision window), so no trade-slot question either.
+
+**Action questions:** None. No thesis breaks (AVGO/IWM/XOM all intact), no rule-trigger proximity (AVGO -0.41% far from -7%, IWM +2.38% far from +15%, XOM already on its max 5% tier), no second deployment candidate sourced beyond today's AVGO entry, and Week 17's 2/3 count has only 1 trading day left (not the ≥2-day trade-slot carry window).
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
