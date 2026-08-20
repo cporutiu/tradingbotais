@@ -6106,3 +6106,26 @@ No new entries today — no candidate clears both R:R and specific-catalyst bars
 
 ### Decision
 **HOLD — no new entries today.** No Tier-1 blocker (FOMC Minutes is Tier-2), but the only Benzinga-sourced candidate (CVX) fails R:R outright and no other name was sourced. XOM's stop was tightened 7%->5% per today's live +20% trigger (resolves yesterday's carried EOD question — a direct rule application, not a judgment call). AVGO's continuing multi-session drift is flagged as an elevated watch item for Midday Scan, though not yet a thesis break. IWM and XOM theses both intact. Week 17 count stays 1/3, 3 trading days remaining. Deployment 54.70%, 13th+ consecutive week under the 75% floor — urgency protocol carries forward.
+
+## 2026-08-20 — Pre-Market Research (Thursday, Week 17 Day 4) — ROUTINE FAILED, INFRASTRUCTURE BLOCK
+
+**No account snapshot, no market research, no trade decision this session — outbound network access to all three required APIs was blocked at the egress-proxy layer.**
+
+### What happened
+- `bash scripts/alpaca.sh account` → `curl: (22) The requested URL returned error: 403`
+- `bash scripts/perplexity.sh "..."` → same 403
+- `bash scripts/clickup.sh "..."` → same 403
+- Confirmed via the session's proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`) — `recentRelayFailures` shows `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" for all three hosts: `paper-api.alpaca.markets:443`, `api.perplexity.ai:443`, `api.clickup.com:443`.
+- This is an organization egress-policy denial at the network layer, not an application error, not an expired/missing credential (all required env vars were present and set — verified before any wrapper call), and not a wrong-account issue. GitHub connectivity (`git fetch`/`git ls-remote`) worked normally throughout, so the block is scoped to the trading-API hosts specifically, not a total network outage.
+- Per environment policy: do not retry or route around a 403 policy denial — report it instead. Could not send the usual ClickUp alert since ClickUp itself was one of the blocked hosts.
+
+### Impact
+- No live account/position/order state pulled — last known state remains Aug 19 EOD (IWM 62sh @ $290.769839, XOM 130sh @ $138.420615; AVGO stopped out Aug 19).
+- No market research performed (oil, futures, VIX, catalysts, earnings, econ calendar, sector momentum) — none of today's data has been checked.
+- **No trade action taken.** This is not a HOLD decision reached on the merits — there was no data available to reach any decision on. Existing GTC trailing stops (IWM 10% @ stop $274.662 order 4c0586cc, XOM 5% @ stop $158.1845 order 20cf5b9d, both as of last confirmed pull Aug 19) remain in force on Alpaca's side regardless of this session's connectivity, so they will still fire mechanically if triggered — this session simply could not confirm or act on anything beyond that.
+
+### Reconnect-protocol flag for next session
+Per Strategy Rule 15 (Reconnect protocol): if the next scheduled run (Market-Open or later) resumes with connectivity restored, it must pull live positions/orders directly from Alpaca to reconcile against this stale Aug 19 state before taking any new-entry action, and check both held positions (IWM, XOM) against every threshold (tighten tiers, -7% cut, thesis-break levels) that should have applied during this gap, rather than assuming nothing changed.
+
+### Decision
+**HOLD by necessity — no data, no action.** Flagging this outage to the user directly since the routine's own alert channel (ClickUp) was unreachable.
