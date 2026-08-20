@@ -6106,3 +6106,71 @@ No new entries today — no candidate clears both R:R and specific-catalyst bars
 
 ### Decision
 **HOLD — no new entries today.** No Tier-1 blocker (FOMC Minutes is Tier-2), but the only Benzinga-sourced candidate (CVX) fails R:R outright and no other name was sourced. XOM's stop was tightened 7%->5% per today's live +20% trigger (resolves yesterday's carried EOD question — a direct rule application, not a judgment call). AVGO's continuing multi-session drift is flagged as an elevated watch item for Midday Scan, though not yet a thesis break. IWM and XOM theses both intact. Week 17 count stays 1/3, 3 trading days remaining. Deployment 54.70%, 13th+ consecutive week under the 75% floor — urgency protocol carries forward.
+
+## 2026-08-20 — Pre-Market Research (Thursday, Week 17 Day 4)
+
+**Urgency protocol active:** Deployed has closed below 75% for 13+ consecutive weekly closes.
+
+### STEP 1B — Pending decisions
+No "User decisions" block found below the Aug 19 EOD entry, and Aug 19's EOD logged no action questions (no thesis breaks, no rule-trigger proximity, no viable deployment candidate sourced, trade-slot count 1/3 not near the 2/3 carry threshold). Nothing to resolve autonomously today.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,964.74 | Cash: $63,602.62 (61.18%) | Deployed: $40,362.12 (38.82%, 2 positions) | Buying power: $367,424.40 | Week 17 count: 1/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment 38.82% is below the 40% default-TRADE trigger with no Tier-1 blocker today, so the default posture is TRADE, pending a candidate clearing the entry checklist.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| IWM | 62 | $290.769839 | $301.47 | +$663.39 (+3.68%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $166.70 | +$3,676.32 (+20.43%) | 5% trail HWM $168.21 / stop $159.7995 (20cf5b9d, confirmed live, no new high, pulled back off yesterday's high) |
+
+No -7% cut on either name. IWM +3.68%, nowhere near +15%. XOM already at its max 5% tier (tightened Aug 19 at the +20% trigger); no further tighten tier exists. Both stop orders confirmed live and correctly attached, no drift from log. AVGO's position is closed (stopped out Aug 19, reconciled at that day's Midday Scan) — not carried in today's book.
+
+### Market Context
+- Oil: WTI ~$84.49, Brent ~$91.83 — holding near the multi-session highs reached this week. Bullish backdrop for XOM.
+- S&P 500 futures: Positive, ~7,734-7,745 (+0.16% to +0.35%), a modest bounce after Wednesday's risk-off tape.
+- VIX: ~15.13-15.26 — market risk: low, down ~4% on the day, still well under the 18 threshold.
+- Today's data: No CPI/PPI/FOMC decision/NFP/GDP scheduled. Initial jobless claims (8:30am ET), Philly Fed manufacturing survey, Conference Board Leading Index (10am ET). FOMC Minutes coverage continues to circulate in today's catalyst summaries but is not itself a blackout trigger. No Tier-1 blocker today.
+- Earnings BMO today: Walmart (WMT), Alibaba (BABA), Deere (DE), Advance Auto Parts (AAP), NetEase (NTES) — none on the sector watchlist or held. No blackout triggered.
+- Sector momentum (YTD): Energy leads at +43.1% (or +41.5% in a second source), Technology +27.7%, Industrials +17.6%; Communication Services weakest at -5.1%, Consumer Discretionary -0.5%, Utilities +3.8%. 9 of 11 sectors positive YTD.
+- 20-day RS vs SPY (Perplexity ranking, strongest to weakest): XLE > XLK > XLV > XLF > XLI > XLY > XLB > XLP > XLU > XLRE > XLC > QQQ > IWM > SOXX > HYG > EEM > GLD > SLV > SPY. Energy (XOM's sector) still #1; Technology up to #2 (AVGO's sector, supports the re-entry case below).
+- Economic cycle: late-cycle, unchanged from yesterday's first explicit call — LEI down only 0.3% over H1 2026, unemployment risen to 4.4% over 33 straight months without a recession following (Richmond Fed: pattern consistent with a mature expansion, not a fresh recovery).
+
+### Benzinga Signals (32 emails, 24h lookback)
+- BENZINGA_BUYS: SPY (high), QQQ (high), XLU (high), IWM (high, held), XOM (medium, held), GLD (medium), XLE (medium), XLK (medium), XLV (medium), XLI (medium), XLB (medium), CVX (medium)
+- BENZINGA_SELLS: None today.
+- Held-position signals: IWM and XOM both BUY (medium/high) — consistent with Perplexity validation below, not a contradiction to resolve.
+
+### Congress Signals
+Congress: no actionable signals today — Quiver Quant API still returning 401 Unauthorized (down since Jul 9, now 7+ weeks unresolved).
+
+### Perplexity Validation
+- IWM Benzinga BUY confirmed: small-cap rally continuing, $3.2B one-day ETF inflow wave with IWM among the leaders, risk-on tape (bond yields easing), no negative headlines. Thesis intact.
+- XOM Benzinga BUY confirmed: oil holding >$84.5/$91.8, stock up 0.9-2.5% intraday on multiple feeds, Rovuma LNG $1.1B pre-investment contracts, Q2 beat ($14.5B net income, $17.2B FCF), Permian production at multi-decade highs. Thesis strongly intact.
+- CVX Benzinga BUY does NOT clear R:R — second consecutive session with the same problem: current price ~$205-207 (stockanalysis.com implied ~$205.68, MarketBeat implied ~$206.92, both Aug 19-20 dated), average analyst PT ~$207-218 across recent sources (Morgan Stanley raised to $218 Aug 19, Investing.com consensus $216.83, MarketBeat $207.48). 10% stop risk ~$20.6/share vs. reward ~$1-12/share, R:R roughly 0.05-0.6:1, far below even the 1.5:1 urgency floor. Not actionable — same underlying problem as yesterday.
+- AVGO (not held, stopped out Aug 19) re-checked as a re-entry candidate: now trading ~$360-364, well below both Friday's pre-vuln level and even the $359.36 level it was stopped out at Tuesday. VMware CVE-2026-59310 still not confirmed as a breach, customer-impact event, or guidance cut in any source checked — same unescalated watch-item status as every prior session. Analyst consensus unchanged/higher: Yahoo avg $527.88, MarketBeat $493.24, Investing.com recent targets from TD Cowen $500, Jefferies $550, CLSA $600. R:R off ~$362: 10% stop ~$325.80 (risk ~$36/share) vs. $493-528 target (reward ~$131-166/share), R:R ~3.6-4.6:1 — the best-looking single-stock setup sourced in over a week, and materially better than the original Aug 17 entry's ~2.0-2.8:1 read because price fell further while targets held firm.
+
+### Held-Position Validation
+IWM ($301.47, +3.68%) — HOLD, thesis intact: Small-cap Fed-cut/inflow story continues, $3.2B ETF inflow day, no negative headlines.
+
+XOM ($166.70, +20.43%) — HOLD, thesis intact, already on max 5% tier: Oil holding firm, Q2 fundamentals and Rovuma LNG contract flow remain positive. No action needed — 5% trail already covers the position from yesterday's +20% trigger.
+
+### Rule 16 — sector-widening pass (Energy screen + AVGO re-entry check)
+Ran a fresh Energy single-stock screen per Rule 16 (Energy is the #1 RS sector but XOM is the only Energy exposure held). Results (EQT +16%, VNOM +23%, LNG +25%, GLGL +27% upside per a Goldman Sachs-sourced screen) all lack a specific, dated near-term catalyst in the data returned — pure valuation/ranking screens, no earnings/guidance/contract-award date attached. Fails the Entry Checklist's catalyst test; not actionable today. Separately, re-checked AVGO (stopped out Aug 19, Technology sector 0/2 used — Rule 10's Aug 8 clarification confirms the mechanical stop-out with intact thesis did not trigger the sector cooldown) — this candidate does clear both the R:R and catalyst bars (see Perplexity Validation above): core AI/semiconductor revenue catalyst unaffected by the VMware-specific vuln, guidance ($29.4B Q3 FY26) unchanged, R:R improved to ~3.6-4.6:1 off the lower re-entry price.
+
+### Trade Ideas
+1. AVGO — ENTER at market open. R:R ~3.6-4.6:1 off the ~$360-364 pre-market reference (re-check live at open), deployment 38.82% triggers default TRADE, no Tier-1 blocker today. Size 17-20% of equity, 10% trailing GTC stop on fill. VMware vuln remains an unescalated watch item, not a blocker — same status as every session since it first surfaced, and the core AI/semis catalyst and guidance are unchanged while the entry price has improved.
+2. IWM — hold, no action. Thesis intact, small-cap rally continuing, $3.2B inflow day.
+3. XOM — hold, no action. Thesis intact, already on its max 5% trail from yesterday's +20% trigger.
+
+### Risk Factors
+- AVGO re-entry so soon after a stop-out — this is a deliberate re-entry off an improved R:R (thesis intact, price lower, targets unchanged), not a mechanical "buy the dip" reflex; VMware CVE-2026-59310 remains the single biggest name-specific risk to re-monitor at Midday Scan.
+- Broader AI-valuation/financing overhang (the ~$370B AI-infrastructure-debt story) — sector-wide, could still pressure AVGO even without a company-specific break.
+- AVGO entry price needs a fresh live re-check at market open — premarket feeds range $360-364, and Alpaca's own quote is stale/wide-spread outside RTH; final entry/stop/sizing must use the live quote at fill.
+- XOM concentration — largest single position (~20%+ of equity, +20.43% unrealized), sole Energy exposure.
+- 13th+ consecutive week under the 75% deployment floor — urgency protocol remains active; today's AVGO entry, if filled, moves deployment to roughly ~55-58%, still short of the floor.
+- Congress/Quiver Quant API still down (401) — 7+ weeks unresolved since Jul 9, not investigated this session (out of scope for pre-market routine).
+
+### Decision
+TRADE — enter AVGO at market open, re-priced off today's live quote (pre-market ~$360-364, subject to change at the open), not Tuesday's stopped-out $359.36 level. No Tier-1 blocker today; deployment (38.82%) sits below the 40% default-TRADE threshold. AVGO clears both the R:R (~3.6-4.6:1, well above even the standard 2:1 floor) and catalyst bars — core AI/semiconductor revenue growth and unchanged Q3 FY26 guidance ($29.4B), with the VMware CVE-2026-59310 vulnerability still unescalated after 5+ sessions of monitoring. Per Rule 10's Aug 8 clarification, Tuesday's mechanical trailing-stop exit (thesis intact at the time) did not trigger a Technology sector cooldown, so re-entry is not blocked. IWM and XOM both hold unchanged, theses intact — no cuts, no new tighten triggers (XOM already on its max 5% tier). Week 17 count will move to 2/3 pending fill confirmation at market open. Full execution details (final price, shares, stop) to be logged in today's Market-Open entry.
