@@ -6174,3 +6174,79 @@ Ran a fresh Energy single-stock screen per Rule 16 (Energy is the #1 RS sector b
 
 ### Decision
 TRADE — enter AVGO at market open, re-priced off today's live quote (pre-market ~$360-364, subject to change at the open), not Tuesday's stopped-out $359.36 level. No Tier-1 blocker today; deployment (38.82%) sits below the 40% default-TRADE threshold. AVGO clears both the R:R (~3.6-4.6:1, well above even the standard 2:1 floor) and catalyst bars — core AI/semiconductor revenue growth and unchanged Q3 FY26 guidance ($29.4B), with the VMware CVE-2026-59310 vulnerability still unescalated after 5+ sessions of monitoring. Per Rule 10's Aug 8 clarification, Tuesday's mechanical trailing-stop exit (thesis intact at the time) did not trigger a Technology sector cooldown, so re-entry is not blocked. IWM and XOM both hold unchanged, theses intact — no cuts, no new tighten triggers (XOM already on its max 5% tier). Week 17 count will move to 2/3 pending fill confirmation at market open. Full execution details (final price, shares, stop) to be logged in today's Market-Open entry.
+
+## 2026-08-21 — Pre-Market Research (Friday, Week 17 Day 5)
+
+**Urgency protocol active:** Deployed has closed below 75% for 14+ consecutive weekly closes.
+
+### STEP 1B — Pending decisions
+No "User decisions" block found below the Aug 20 EOD entry, and Aug 20's EOD logged no action questions (no thesis breaks, no rule-trigger proximity, no second deployment candidate sourced, Week 17 at 2/3 with only 1 trading day left). Nothing to resolve autonomously today.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,857.37 | Cash: $44,595.23 (42.94%) | Deployed: $59,262.14 (57.06%, 3 positions) | Buying power: $344,314.91 | Week 17 count: 2/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment 57.06% sits between the 40% default-TRADE trigger and the 60% patience-valid floor (Rule 11) — today's call rests on candidate quality, not a default.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $367.49 | +$102.10 (+0.54%) | 10% trail HWM $366.145 / stop $329.5305 (fc5bfa43, confirmed live; current price is a fresh high above the logged HWM — trail will auto-advance once market opens and the new high registers) |
+| IWM | 62 | $290.769839 | $299.58 | +$546.23 (+3.03%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $165.99 | +$3,584.02 (+19.92%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, already on max 5% tier from Aug 19's +20% trigger) |
+
+No -7% cut on any position. IWM +3.03%, nowhere near +15%. XOM already at max tier, no further tighten possible. AVGO +0.54%, nowhere near either threshold.
+
+### Market Context
+- **Oil:** WTI ~$86.3-88.6, Brent ~$91-93.9 — holding a sharp multi-day rally, +2.5-3.3% on the day per multiple feeds. Bullish for XOM.
+- **S&P 500 futures:** Mixed/slightly negative, roughly flat to -0.1-0.9% depending on source and timestamp; Nasdaq futures underperforming on continued chip-sector pressure.
+- **VIX:** ~15.7 spot (Cboe), some intraday reads to ~16.0 — **market risk: low** (under 18), but has ticked up ~5-8% off the week's lows as risk sentiment softens.
+- **Today's data:** No CPI/PPI/FOMC decision/NFP/GDP scheduled. BLS State Employment and Unemployment (10am ET), S&P Global Flash PMIs. **No Tier-1 blocker today.**
+- **Earnings BMO today:** BJ's Wholesale (BJ), Ubiquiti (UI), Buckle (BKE), ZKH Group, KE Holdings (BEKE) — none on the sector watchlist or held. No blackout triggered.
+- **Major catalyst — Iran geopolitical escalation:** Trump administration launched what's being reported as "Operation Economic Fury" / an "economic warfare" campaign against Iran, reviving Strait of Hormuz supply-risk concerns. This is the dominant driver behind today's oil rally and the broader risk-off tone (higher Treasury yields, softer equity futures, XOM's largest tailwind). Not a Tier-1 blocker (not FOMC/CPI/NFP/GDP/held-earnings), but flagged as an elevated, live macro risk factor given it's actively developing.
+- **Sector momentum (YTD):** Energy leads decisively (+37-45% across sources, third-best year since 1990), Technology +23-28%, Materials/Industrials solidly positive; Communication Services weakest (-5% to -6%) across every source.
+- **20-day RS vs SPY (Perplexity ranking, strongest to weakest):** XLE > XLV > XLK > XLP > XLF > XLI > XLB > XLY > XLU > XLC > XLRE > SOXX > QQQ > IWM > HYG > EEM > GLD > SLV > SPY. Energy (XOM's sector) still #1. IWM reads mid-pack (#14) despite an intact bullish thesis — consistent with a broad small-cap breather near highs, not a thesis break (see Held-Position Validation).
+- **Economic cycle:** Late-cycle, unchanged from the standing call — Conference Board LEI down only 0.3% over H1 2026 (much smaller than H2 2025's 1.1% drop), unemployment up for 33 straight months without a recession following (Richmond Fed: pattern consistent with a mature, gradual expansion, not a fresh recovery or contraction). Written to market-intel.json this session.
+
+### Benzinga Signals (27 emails, 24h lookback)
+- **BENZINGA_BUYS:** None today.
+- **BENZINGA_SELLS (all medium/high):** SPY (high, score -36, 15 mentions — "Operation Economic Fury"/Iran-driven futures selloff headline, not company-specific); QQQ (high, score -24); GLD (high, score -12 — "SPY gets $1.9B boost... QQQ, GLD, SOXL see outflows" framing, an ETF-rotation artifact not a gold-specific bear case); XLF (medium, score -4, only 1 mention — weak signal); SOXX (high, score -8, same outflow-rotation headline as GLD).
+- Held-position signals: none of AVGO, IWM, or XOM registered a medium/high-confidence signal today (AVGO low-confidence HOLD, IWM/XOM no mention) — no held-position contradiction to resolve.
+- No BUY signal sourced today means no fresh single-stock candidate from this feed.
+
+### Congress Signals
+Congress: no actionable signals today — Quiver Quant API still returning 401 Unauthorized (down since Jul 9, now 8+ weeks unresolved).
+
+### Perplexity Validation
+- **SPY/QQQ/SOXX Benzinga SELLs are macro/rotation noise, not stock-specific breaks:** the SPY bearish-case check found macro tape mildly negative (rebounding yields + oil) but analyst ratings and fund-flow evidence not decisively bearish (Barchart 100% Buy signal, TipRanks/MarketBeat Moderate Buy consensus). The SOXX bearish-case check found the sector story is rotation out of US-listed semis into Korean chip names plus AI-capex/valuation skepticism, not a macro deterioration — none of this touches AVGO's specific thesis.
+- **GLD Benzinga SELL is an ETF-flow artifact** ("SPY gets $1.9B boost as QQQ/GLD/SOXL see outflows"), not a gold-specific bearish catalyst — no action implied for the standing GLD watchlist item.
+- **XOM's oil-driven thesis is strongly reinforced:** Iran/Hormuz supply-risk escalation is the explicit driver of Brent's move above $93, with multiple sources tying XOM's cash-flow outlook directly to the elevated crude backdrop. Thesis intact, strongly so.
+- **AVGO's standing VMware CVE-2026-59310 watch item found no new confirmed escalation** (no breach, customer-impact event, or guidance cut) in today's check. The active news instead centers on a reported $60-100B AI-infrastructure debt financing arrangement (framed as competitive positioning vs. Nvidia for large customers like Anthropic) — this reopens the same leverage/AI-financing debate flagged since mid-August but is not a new negative catalyst; consensus targets remain materially above the current price (Yahoo avg ~$528, MarketBeat ~$493).
+- **IWM's small-cap thesis remains intact:** near-record levels, continued talk of cooling inflation expectations and rate-cut speculation, though one source flags overbought momentum readings (RSI 70-78) as a pullback-risk caveat — not a thesis break, just a "don't chase further strength blindly" note.
+
+### Held-Position Validation
+**AVGO ($367.49, +0.54%) — HOLD, thesis intact:** First positive session since Wednesday's re-entry; VMware CVE watch item unescalated, core AI/semiconductor revenue and Q3 FY26 guidance unchanged. The AI-financing-package headline is a two-sided story (bullish for competitive positioning, a re-run of the same leverage-concern debate) — not actionable in either direction today.
+
+**IWM ($299.58, +3.03%) — HOLD, thesis intact:** Small-cap rally continues near record highs; today's RS ranking places it mid-pack, consistent with a breather near resistance, not a reversal.
+
+**XOM ($165.99, +19.92%) — HOLD, thesis strongly intact, already on max 5% trail:** Iran/Hormuz-driven oil rally is a direct tailwind; no action needed, no further tighten tier exists.
+
+### Rule 16 — sourcing note
+No fresh single-stock or sector candidate to evaluate today: Benzinga returned zero BUY signals (a first in recent sessions), and Congress remains down. Not treating this as a 3-session R:R failure requiring a full sector-widening pass (yesterday's AVGO entry was itself the product of the most recent Rule 16 pass) — simply no signal to test against the checklist today.
+
+### Trade Ideas
+No new entries today — no candidate sourced to test against R:R/catalyst bars.
+1. **AVGO — hold, no action.** First green day since Wednesday's re-entry, thesis intact.
+2. **IWM — hold, no action.** +3.03%, thesis intact, small-cap rally continues.
+3. **XOM — hold, no action.** +19.92%, already on its max 5% trail, oil-driven thesis strongly reinforced by today's Iran-related supply-risk escalation.
+
+### Risk Factors
+- **Iran/Hormuz geopolitical escalation ("Operation Economic Fury")** is the dominant live catalyst — bullish for XOM's oil thesis but the source of today's broader risk-off tone (higher yields, softer equity futures, chip-sector pressure). Not a Tier-1 blocker, but an actively developing macro risk to re-check at Midday Scan.
+- **AVGO's AI-financing debate reopened** ($60-100B reported package) — same leverage/valuation overhang as the mid-August $370B story, not a new confirmed negative, but worth a closer look if it escalates.
+- **SOXX/semiconductor rotation** (US semis lagging Korean peers, AI-capex skepticism) is a sector-level headwind that could spill into AVGO even without a company-specific break.
+- **14th+ consecutive week under the 75% deployment floor** — urgency protocol remains active; no candidate sourced today (first zero-BUY Benzinga session in recent memory), so deployment stays flat pending a valid setup.
+- **Congress/Quiver Quant API still down (401)** — 8+ weeks unresolved since Jul 9, not investigated this session (out of scope for pre-market routine).
+
+### Decision
+**HOLD — no new entries today.** No Tier-1 blocker (today's calendar is limited to BLS state employment data and flash PMIs), but Benzinga returned zero BUY signals for the first time in recent sessions and Congress remains down, leaving no candidate to test against the entry checklist. Deployment sits at 57.06% — below the 60% patience-valid floor (Rule 11), so this HOLD rests on the absence of a qualifying candidate, not a default-patience pass. AVGO, IWM, and XOM all hold unchanged with theses intact; no cuts, no new tighten triggers (XOM already on its max 5% tier). Today's Iran/oil escalation is flagged as a live risk factor to re-check at Midday Scan given its actively developing nature, though it is currently a tailwind for the book's largest position (XOM) rather than a threat. Week 17 count stays 2/3, 1 trading day remaining this week.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
