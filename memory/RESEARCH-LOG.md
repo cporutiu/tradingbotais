@@ -6174,3 +6174,18 @@ Ran a fresh Energy single-stock screen per Rule 16 (Energy is the #1 RS sector b
 
 ### Decision
 TRADE — enter AVGO at market open, re-priced off today's live quote (pre-market ~$360-364, subject to change at the open), not Tuesday's stopped-out $359.36 level. No Tier-1 blocker today; deployment (38.82%) sits below the 40% default-TRADE threshold. AVGO clears both the R:R (~3.6-4.6:1, well above even the standard 2:1 floor) and catalyst bars — core AI/semiconductor revenue growth and unchanged Q3 FY26 guidance ($29.4B), with the VMware CVE-2026-59310 vulnerability still unescalated after 5+ sessions of monitoring. Per Rule 10's Aug 8 clarification, Tuesday's mechanical trailing-stop exit (thesis intact at the time) did not trigger a Technology sector cooldown, so re-entry is not blocked. IWM and XOM both hold unchanged, theses intact — no cuts, no new tighten triggers (XOM already on its max 5% tier). Week 17 count will move to 2/3 pending fill confirmation at market open. Full execution details (final price, shares, stop) to be logged in today's Market-Open entry.
+
+---
+
+## 2026-08-21 — Pre-Market Research (Friday, Week 17 Day 5) — RUN BLOCKED, NO DATA
+
+**Status: INFRASTRUCTURE BLOCKER — routine could not execute.**
+
+- Env vars confirmed set (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) and `ALPACA_ENDPOINT` correctly points at `paper-api.alpaca.markets` (key prefix `PKDTPO`, consistent with AIS paper account PA3GVPXBYBRB) — no credential mix-up.
+- All three outbound API calls failed at the network layer before reaching Alpaca/Perplexity/ClickUp: `curl: (56) CONNECT tunnel failed, response 403` to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` alike. This session's egress proxy is rejecting the CONNECT itself (gateway-level policy denial), not an API auth failure.
+- No account/positions/orders pull, no market research, no trade decision possible this run. Per Rule 15 (Reconnect protocol) precedent, logging this gap rather than fabricating data or silently skipping.
+- **ClickUp alert could not be sent** (same network block) — user notified out-of-band instead.
+- No memory files other than this log entry were touched. No orders placed.
+
+### Decision
+NO RUN — blocked before STEP 2. Next run (local Windows Task Scheduler or a cloud session with working egress) should treat this as a gap per Rule 15: reconcile live positions/orders directly against the last logged state (2026-08-20 EOD: AVGO 52sh, IWM 62sh, XOM 130sh) before taking any new-entry action, and check every open position against its tighten/-7%/thesis-break thresholds in case anything crossed a trigger during the gap.
