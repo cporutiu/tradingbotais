@@ -6250,3 +6250,23 @@ No new entries today — no candidate sourced to test against R:R/catalyst bars.
 **HOLD — no new entries today.** No Tier-1 blocker (today's calendar is limited to BLS state employment data and flash PMIs), but Benzinga returned zero BUY signals for the first time in recent sessions and Congress remains down, leaving no candidate to test against the entry checklist. Deployment sits at 57.06% — below the 60% patience-valid floor (Rule 11), so this HOLD rests on the absence of a qualifying candidate, not a default-patience pass. AVGO, IWM, and XOM all hold unchanged with theses intact; no cuts, no new tighten triggers (XOM already on its max 5% tier). Today's Iran/oil escalation is flagged as a live risk factor to re-check at Midday Scan given its actively developing nature, though it is currently a tailwind for the book's largest position (XOM) rather than a threat. Week 17 count stays 2/3, 1 trading day remaining this week.
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-21 — Midday Scan (Friday, Week 17 Day 5)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $366.40 | +$45.42 (+0.24%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, fresh intraday high since pre-market $367.49 — trail auto-advanced) |
+| IWM | 62 | $290.769839 | $299.615 | +$548.40 (+3.04%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $165.55 | +$3,526.82 (+19.60%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, pulled back off HWM — already on max 5% tier) |
+
+- **Losers cut:** None. All three positions positive (AVGO +0.24%, IWM +3.04%, XOM +19.60%) — nowhere near the -7% cut.
+- **Stop tightening:** None due. AVGO +0.24% and IWM +3.04% both well short of +15%. XOM already on its max 5% tier from Aug 19's +20% trigger — no further tier exists; trail auto-advances on new highs only (none today, price pulled back from HWM $168.64).
+- **Thesis check:** No sharp unexplained moves — AVGO +0.65% intraday (touched a fresh high $375.13 before easing to $366.40), IWM +0.65% intraday, XOM -0.36% intraday (minor pullback, still up ~19.6% overall). Pre-market's flagged Iran/Hormuz ("Operation Economic Fury") oil-escalation risk remains the known driver behind recent XOM strength and the broader risk-off tone in chips — today's price action is consistent with that already-documented picture, not a new development. No confirmed breaks on AVGO's VMware CVE watch item or AI-financing debate since this morning. Perplexity check skipped per STEP 6 — nothing moving sharply enough with an unexplained cause to warrant it.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $103,746.67 | Cash $44,595.23 (42.99%) | Deployed $59,151.44 (57.01%, 3 positions). Week 17 count: 2/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7 (no action taken).
+
+**Commit:** memory/RESEARCH-LOG.md updated — committing per STEP 8.
