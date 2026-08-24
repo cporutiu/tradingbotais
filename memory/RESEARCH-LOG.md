@@ -6270,3 +6270,30 @@ No new entries today — no candidate sourced to test against R:R/catalyst bars.
 **Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7 (no action taken).
 
 **Commit:** memory/RESEARCH-LOG.md updated — committing per STEP 8.
+
+---
+
+## 2026-08-24 — Pre-Market Research — RUN BLOCKED (infra outage)
+
+**No account snapshot, market research, or trade ideas below — none were obtainable this run. Do not treat this entry as a HOLD decision based on research; it is an environment failure report.**
+
+### What happened
+- Env vars all present and correct (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=paper-api.alpaca.markets, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set). No .env file present, none created.
+- Every outbound call from `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` failed with a 403 CONNECT rejection.
+- Confirmed via the session's egress-proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`): policy-level denial, not a credentials or transient-network issue — the proxy rejected the CONNECT to all three hosts before any Alpaca/Perplexity/ClickUp auth was attempted:
+  - `paper-api.alpaca.markets:443` — denied (403)
+  - `api.perplexity.ai:443` — denied (403)
+  - `api.clickup.com:443` — denied (403)
+- WebSearch/native fallback was not substituted for the missing account snapshot — position and equity data can only come from the Alpaca API, and fabricating it would be unsafe for a trading log. Same repeat failure mode as 2026-07-06 (see that entry above).
+- Per this session's proxy runbook: "Do not retry or route around it — report the blocked host." No retries were attempted beyond the initial confirmation.
+- Note: task framing for this run described a "LIVE ~$10,000 Alpaca account," which does not match this repo's AIS baseline (PA3GVPXBYBRB paper account, ~$100K) or the ALPACA_ENDPOINT value actually in the environment (paper-api.alpaca.markets). Flagging the mismatch per CLAUDE.md's credential-mismatch rule, though it was moot here since the API was unreachable regardless — no order was placed or attempted.
+
+### Impact
+- No account/position snapshot pulled — last known state remains the Aug 21 Midday Scan (3 positions: AVGO, IWM, XOM; ~57% deployed, equity $103,746.67). Real state as of 2026-08-24 is unknown for the Fri close, weekend, and this morning — live positions/stops may have changed (fills, stop triggers) and are not reflected here.
+- No trade ideas generated, no HOLD/TRADE decision made — this run took no stance on the market.
+- ClickUp alert could not be sent (channel unreachable) — flagging here instead; user notified out-of-band via push notification.
+
+### Action needed (not autonomous — requires the user)
+1. Confirm/allowlist egress to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this cloud session's network policy, or run this routine locally (Windows Task Scheduler path per routines/README.md) where these hosts are reachable.
+2. Clarify the "LIVE ~$10,000 account" framing in the scheduled prompt vs. this repo's actual PA3GVPXBYBRB paper account — likely a stale/mismatched template, but worth confirming no other bot's prompt got attached to this routine.
+3. Once connectivity is restored, re-run pre-market research before relying on this log — do not assume HOLD; last confirmed positions/stops are from Aug 21.
