@@ -4893,3 +4893,22 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Aug 24 — EOD Snapshot (Day 83, Monday — Week 18 Day 1)
+**Portfolio:** $103,070.75 | **Cash:** $44,595.23 (43.27%) | **Day P&L:** -$745.70 (-0.72%) | **Phase P&L:** +$3,070.75 (+3.07%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AVGO | 52 | $365.526538 | $359.18 | -2.52% | -$330.02 (-1.74%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $297.93 | -0.68% | +$443.93 (+2.46%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $164.05 | -0.64% | +$3,331.82 (+18.52%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, already on max 5% tier from Aug 19's +20% trigger) |
+
+**Trades today:** None. Week 18 count: 0/3.
+
+**Notes:** Day 83, Monday, Week 18 Day 1. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Day P&L computed from Alpaca's `last_equity` field ($103,816.45 = Friday Aug 21's actual close) since Friday's EOD/Market-Open never got logged to TRADE-LOG.md (a process gap already flagged at this morning's pre-market — Midday Scan was the last entry logged that day, no drift found on reconciliation). No trades today — pre-market found no Tier-1 blocker but sourced no fresh candidate to test against the entry checklist (research battery skipped a dedicated sourcing pass), so all three positions held per plan. Broad risk-off tape ran through the session on chip-sector pressure ahead of Wednesday's Nvidia earnings and a crude pullback ahead of an expected Iran-sanctions announcement: AVGO closed -2.52% (thesis intact — no name-specific negative news, the $60-100B AI-financing debt-package story remains a two-sided overhang, not a confirmed catalyst), IWM -0.68% (small-cap/Fed-cut thesis unchanged), XOM -0.64% (oil-driven thesis intact despite crude's pullback, already on its max 5% trail from Aug 19's +20% trigger — no further tighten possible). No losers near the -7% cut (AVGO closest at -1.74%). No new tighten triggers. Cash sits at 43.27% (deployed 56.73%) — above the 25% floor and inside the standing urgency protocol (15th+ consecutive week under the 75% deployment floor per pre-market), but no candidate cleared today's research; flagged again for a dedicated sourcing pass at tomorrow's pre-market. Week 18 opens at 0/3, first trading day of the week.
+
+**Action questions:** None. No thesis breaks (AVGO/IWM/XOM all intact despite AVGO's down day), no rule-trigger proximity (AVGO -1.74% far from -7%, IWM +2.46% far from +15%, XOM already on its max 5% tier), no candidate sourced for deployment despite cash above 25%, Week 18 count 0/3 (not at the trade-slot decision point).
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
