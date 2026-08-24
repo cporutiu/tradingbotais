@@ -4871,3 +4871,25 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-24 — Midday Scan (Monday, Week 18 Day 1)
+
+**Note:** No Market-Open or Aug 21 EOD entry found logged to TRADE-LOG.md (last entry here was Aug 20 EOD; Aug 21 Midday Scan was mistakenly logged to RESEARCH-LOG.md instead — process gap flagged in this morning's pre-market entry, not re-litigated here). Live reconciliation below found no position/order drift, so no corrective action needed beyond logging this scan to the correct file.
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $360.735 | -$249.16 (-1.31%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $297.97 | +$446.41 (+2.48%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $162.68 | +$3,153.72 (+17.53%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, already on max 5% tier from Aug 19's +20% trigger) |
+
+- **Losers cut:** None. AVGO -1.31% (closest to the cut, intraday -2.09%), IWM +2.48%, XOM +17.53% — none near the -7% cut.
+- **Stop tightening:** None due. IWM +2.48% and AVGO -1.31% both well short of +15%. XOM +17.53% has pulled back off its high and is already on its max 5% tier from Aug 19's +20% trigger — no further tier exists regardless.
+- **Thesis check:** Broad risk-off day (AVGO -2.09% intraday, IWM -0.66% intraday, XOM -1.47% intraday, oil pulling back) — consistent with already-flagged risk factors from this morning's pre-market research (chip-sector pressure ahead of Wednesday's Nvidia earnings, oil profit-taking ahead of a pending Iran-sanctions announcement). No sharp unexplained single-name move and no confirmed negative catalyst on any held name — Perplexity check skipped per STEP 6.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $102,973.13 | Cash $44,595.23 (43.31%) | Deployed $58,377.90 (56.69%, 3 positions). Week 18 count: 0/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7 (no action taken).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
