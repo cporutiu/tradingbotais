@@ -6330,3 +6330,60 @@ No new single-stock or sector candidate was sourced this session — todays rese
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-25 — Pre-Market Research (Tuesday, Week 18 Day 2)
+
+**Urgency protocol active:** Deployed has closed below 75% for 16+ consecutive weekly closes.
+
+### STEP 1B — Pending decisions
+No "User decisions" block below the Aug 24 EOD entry (most recent EOD in TRADE-LOG.md), and Aug 24's EOD logged no action questions (no thesis breaks, no rule-trigger proximity, no candidate sourced, Week 18 not at a trade-slot decision point). Nothing to resolve autonomously today.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,139.95 | Cash: $44,595.23 (43.24%) | Deployed: $58,544.72 (56.76%, 3 positions) | Buying power: $342,306.14 | Week 18 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment 56.76% sits between the 40% default-TRADE trigger and the 60% patience-valid floor (Rule 11) — today's call rests on candidate quality, not a default.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $362.18 | -$174.02 (-0.92%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $299.78 | +$558.63 (+3.10%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $162.50 | +$3,130.32 (+17.40%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, already on max 5% tier from Aug 19's +20% trigger) |
+
+All 3 stop orders confirmed live and correctly attached, no drift from log. No -7% cut on any position. AVGO -0.92% and IWM +3.10% both nowhere near +15%. XOM already at max tier, no further tighten possible.
+
+### Market Context
+- **Oil:** WTI ~$85.0-85.8, Brent ~$92.1-92.5 — pulling back sharply today (some feeds show WTI intraday lows near $82.5, -2.9%) despite Treasury Secretary Bessent announcing an *expanded* round of secondary Iran sanctions yesterday (Aug 24) aimed at cutting off Iran's revenue entirely. Reuters explicitly framed this as "oil drops more than $2 despite new US sanctions" — a sell-the-news move, possibly reflecting diplomatic signals toward an eventual Hormuz reopening rather than fresh supply disruption. Iran's own position (strait stays shut until US lifts blockade/sanctions/frozen assets) is unchanged. Net: bullish structural backdrop for XOM intact but today's price action is a headwind, not a tailwind — flagging for closer watch at Midday Scan given XOM is the book's largest position and already fully tightened (5% max trail).
+- **S&P 500 futures:** Mixed/slightly negative, ~7,660-7,690 depending on feed (-0.4% to +0.2%). Nasdaq futures underperforming on continued chip-sector pressure ahead of Wednesday's Nvidia earnings.
+- **VIX:** ~15.8 (Cboe), up modestly (+4-5%) off Friday's 15.13 close — **market risk: low** (well under 18).
+- **Today's data:** No CPI/PPI/FOMC decision/NFP/GDP scheduled. Case-Shiller Home Price Index, Richmond Fed Manufacturing, New Home Sales, Consumer Confidence, Fed Barkin speech. **No Tier-1 blocker today** (all Tier-2 at most).
+- **Earnings BMO today:** DICK'S Sporting Goods (DKS), Bank of Nova Scotia (BNS), Bank of Montreal (BMO), Vipshop (VIPS), Kanzhun (BZ), EHang (EH), Gold Fields (GFI), SelectQuote (SLQT) — none on the sector watchlist or held. No blackout triggered.
+- **This week's dominant catalyst:** Nvidia earnings Wednesday after close — the tape-wide driver for tech/semiconductor sentiment, including AVGO, even without AVGO-specific news.
+- **Sector momentum (YTD):** Energy still #1 decisively (+37-44% across sources), Technology #2 (+27-28%), Materials/Industrials next tier, Communication Services weakest (-4.8% to -6%). Unchanged from every prior session's read — no rotation signal.
+
+### Held-Position Validation
+**AVGO ($362.18, -0.92%) — HOLD, thesis intact:** No new negative catalyst today. The AI-financing debt package ($60-70B senior + $30B junior tranche) remains a live two-sided leverage/valuation overhang, unchanged from prior sessions. Last week's Marvell-Google custom-chip deal (a competitive threat to Broadcom's TPU/ASIC relationship with Google, drove a ~4-5% intraday drop Aug 19/21) is already priced in, not a fresh development. No VMware CVE-2026-59310 escalation. Today's softness is consistent with broad chip-sector de-risking ahead of Wednesday's Nvidia print, not a name-specific break.
+
+**IWM ($299.78, +3.10%) — HOLD, thesis intact:** Small-cap rally continues near record highs (~22% YTD per one source), rotation-into-small-caps and rate-cut-hope narrative unchanged. No negative headlines.
+
+**XOM ($162.50, +17.40%) — HOLD, thesis intact, already on max 5% trail:** Two bullish company-specific developments today: Morgan Stanley raised its price target to $177 from $168 (Overweight maintained), and Exxon is reportedly bidding on Shell's ~$8B U.S. chemicals assets (expansion optionality, not a distraction from core thesis). A minor operational headline — Exxon temporarily halted the Guyana Liza Unity platform after a small fire — is not thesis-threatening (no production-loss figures reported). The one headwind is today's crude pullback (see Market Context); no further tighten tier exists regardless, so this doesn't change the action calculus today.
+
+### Trade Ideas
+No new single-stock or sector candidate was sourced this session — today's research battery (oil/futures/VIX/catalysts/earnings/econ calendar/sector momentum/held-ticker checks) does not include a dedicated candidate-sourcing pass (Benzinga/Congress scanners, Rule 16 sector-widening screen). Not treating this as a Rule 16 trigger; simply nothing new to test against the entry checklist today.
+1. **AVGO — hold, no action.** -0.92%, thesis intact, no fresh negative catalyst, chip-sector pressure ahead of Nvidia earnings is the main drag.
+2. **IWM — hold, no action.** +3.10%, thesis intact, small-cap rally continues near record highs.
+3. **XOM — hold, no action.** +17.40%, already on its max 5% trail, thesis reinforced by a PT raise and Shell bid interest even as today's oil pullback is a near-term headwind.
+
+### Risk Factors
+- **Oil pullback despite expanded Iran sanctions** — a sell-the-news move (WTI -2% to -3% intraday on some feeds) that could reflect diplomatic signals toward a Hormuz resolution; worth a closer look at Midday Scan given XOM's size (17.40% unrealized, largest position) and maxed-out trail.
+- **Nvidia earnings Wednesday after close** — the dominant tape-wide catalyst this week; could move Technology-sector sentiment broadly, including AVGO, even without AVGO-specific news.
+- **AVGO's AI-financing debt package and Marvell/Google competitive-threat overhang** remain live two-sided stories, not new negatives, but worth monitoring if either escalates.
+- **16th+ consecutive week under the 75% deployment floor** — urgency protocol remains active; no candidate sourced this session (query set didn't include a dedicated screen).
+- **Congress/Quiver Quant API status not checked this session** (out of scope for this simplified query set; last known status was 401 Unauthorized, unresolved since Jul 9).
+
+### Decision
+**HOLD — no new entries today.** No Tier-1 blocker (today's calendar tops out at Consumer Confidence/New Home Sales/Case-Shiller, all Tier-2 at most), but no candidate was sourced this session to test against the entry checklist — today's research battery didn't include a dedicated sourcing pass. Deployment sits at 56.76% — below the 60% patience-valid floor (Rule 11), so this HOLD rests on the absence of a qualifying candidate, not a default-patience pass. AVGO, IWM, and XOM all hold unchanged with theses intact; no cuts, no new tighten triggers (XOM already on its max 5% tier). Today's oil pullback despite fresh Iran sanctions and Wednesday's Nvidia earnings are both flagged as live watch items for the week, neither currently actionable. Week 18 count stays 0/3.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
