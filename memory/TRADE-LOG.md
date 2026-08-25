@@ -4956,3 +4956,26 @@ No ClickUp notification — no trade fired.
 **Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
 
 ---
+
+## Aug 25 — EOD Snapshot (Day 84, Tuesday — Week 18 Day 2)
+**Portfolio:** $102,580.75 | **Cash:** $44,595.23 (43.48%) | **Day P&L:** -$490.00 (-0.48%) | **Phase P&L:** +$2,580.75 (+2.58%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AVGO | 52 | $365.526538 | $356.77 | -0.56% | -$455.34 (-2.40%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $299.24 | +0.43% | +$525.15 (+2.91%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $160.62 | -2.09% | +$2,885.92 (+16.04%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, already on max 5% tier from Aug 19's +20% trigger) |
+
+**Trades today:** None. Week 18 count: 0/3.
+
+**Notes:** Day 84, Tuesday, Week 18 Day 2. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Day P&L -$490.00 on a broad risk-off tape: chip-sector pressure ahead of Wednesday's Nvidia earnings weighed on AVGO (-0.56% to $356.77, -2.40% unrealized), and a fresh crude pullback (sell-the-news reaction to the expanded Iran sanctions, carried forward from this morning's pre-market flag) hit XOM (-2.09% to $160.62, still +16.04% unrealized and already on its max 5% trail from Aug 19's +20% trigger — no further tighten possible). IWM was the lone gainer, +0.43% to $299.24 (+2.91% unrealized), small-cap/rate-cut thesis unchanged. No stops triggered, no losers near the -7% cut (AVGO closest at -2.40% unrealized). No new tighten triggers (IWM +2.91% well short of +15%). All three theses confirmed intact per this morning's pre-market research and midday scan — no name-specific negative catalyst on any held position. No trades executed; no candidate was sourced by today's research battery to test against the entry checklist, despite deployment sitting at 56.52% (below the 75% floor — 17th+ consecutive week under it per the standing urgency protocol). **Risk flag carried forward:** IWM's trailing-stop order (4c0586cc) expires 2026-08-31 — 6 days out — and needs a fresh GTC re-placement (same 10% trail, new HWM) before then or the position sits unprotected; not urgent today but must not slip past Friday Aug 28's session.
+
+**Action questions:**
+
+**Q: Prioritize a dedicated candidate-sourcing pass at tomorrow's pre-market, or stay patient another day?**
+- Sourcing pass: puts the 17th+ week of sub-75% deployment to work if a qualifying setup turns up — closes the idle-cash gap
+- Stay patient: avoids forcing a trade into a chip-sector-jittery, pre-Nvidia-earnings tape — risks another week of cash sitting idle if nothing surfaces
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
