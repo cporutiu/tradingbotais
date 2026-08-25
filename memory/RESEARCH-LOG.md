@@ -6330,3 +6330,21 @@ No new single-stock or sector candidate was sourced this session — todays rese
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-25 — Pre-Market Research (Tuesday, Week 18 Day 2)
+
+### STEP 2/3 — BLOCKED: full network egress denial
+
+All three external API hosts unreachable — proxy returned 403 on every CONNECT attempt (org egress policy denial, not a credential or missing-var issue; confirmed via `/__agentproxy/status`, which logs `connect_rejected` / "policy denial or upstream failure" for `paper-api.alpaca.markets:443`):
+- `bash scripts/alpaca.sh account` → curl 22 (403)
+- `bash scripts/perplexity.sh` → curl 22 (403)
+- `bash scripts/clickup.sh` → curl 22 (403)
+
+Env vars all confirmed present (ALPACA_API_KEY/SECRET, PERPLEXITY_API_KEY, CLICKUP_API_KEY/WORKSPACE_ID/CHANNEL_ID) — this is not the "KEY not set" case. No account snapshot, no positions/orders pull, no market research, no ClickUp alert possible this session. Per the reconnect protocol (Rule 15), the next session that regains connectivity must reconcile live positions/orders against the last logged state (2026-08-24 EOD: AVGO/IWM/XOM, see TRADE-LOG.md) before taking any new-entry action, and check every threshold (tighten tiers, -7% cut) against whatever price moves happened during this gap.
+
+### Decision
+**HOLD — no data, no action possible.** No trades attempted (none were being considered even pre-outage). User notified directly (push notification) since ClickUp is also unreachable.
+
+**Account confirmed:** not verifiable this session (API blocked) — flag for reconciliation next connected session.
+
+---
