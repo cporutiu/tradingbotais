@@ -4912,3 +4912,47 @@ No "User decisions" block found below the Aug 18 EOD entry. One unanswered actio
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-25 — Market-Open Execution (Tuesday, Week 18 Day 2)
+
+**Pre-market plan:** HOLD — no candidate sourced, no Tier-1 blocker. Confirmed at open, no action needed.
+
+**Live positions (Alpaca pull, reconciliation):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $360.59 | -$256.70 (-1.35%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $299.32 | +$530.11 (+2.94%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $161.08 | +$2,945.72 (+16.37%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, already on max 5% tier) |
+
+**Account:** Equity $102,844.15 | Cash $44,595.23 (43.36%) | Deployed $58,248.92 (56.64%, 3 positions) | Week 18 count: 0/3.
+
+**Reconciliation:** All 3 open orders pulled and matched against log exactly (fc5bfa43, 20cf5b9d, 4c0586cc) — no drift, no missing stops.
+
+**No trade executed** — pre-market HOLD confirmed, no candidate to size against entry checklist. No losers cut (AVGO -1.35% is closest, nowhere near -7%). No new tighten triggers (IWM +2.94% short of +15%; XOM already on max 5% tier).
+
+**Risk flag (new):** IWM's trailing-stop order (4c0586cc, placed 2026-06-02) carries `expires_at: 2026-08-31` — 6 days out — while AVGO's (fc5bfa43) and XOM's (20cf5b9d) both expire in November. Alpaca GTC orders apparently cap out around ~90 days from placement despite the "GTC" label. Needs a fresh trailing-stop re-placement (same 10% trail, new HWM) before Aug 31 or IWM will sit unprotected. Flagging for pre-market/EOD action this week — not urgent today but must not slip past Aug 31.
+
+No ClickUp notification — no trade fired.
+
+---
+
+## 2026-08-25 — Midday Scan (Tuesday, Week 18 Day 2)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $359.07 | -$335.74 (-1.77%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $298.77 | +$496.01 (+2.75%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $162.195 | +$3,090.67 (+17.18%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, no new high, pulled back off Aug 20's high, already on max 5% tier from Aug 19's +20% trigger) |
+
+- **Losers cut:** None. AVGO -1.77% is the only position in the red, nowhere near the -7% cut.
+- **Stop tightening:** None due. AVGO -1.77% and IWM +2.75% both well short of +15%. XOM +17.18% already on its max 5% tier from Aug 19's +20% trigger — no further tighten possible regardless of gain.
+- **Thesis check:** No sharp unexplained single-name moves — AVGO +0.09% intraday, IWM +0.27% intraday, XOM -1.13% intraday (in line with this morning's flagged oil pullback, sell-the-news reaction to the expanded Iran sanctions). All three theses confirmed intact per this morning's pre-market research (AVGO: chip-sector de-risking ahead of Wednesday's Nvidia earnings, no name-specific negative; IWM: small-cap rally continues; XOM: PT raise to $177 and Shell chemicals-bid interest reinforce thesis, today's oil pullback a headwind not a break). Perplexity check skipped per STEP 6 — nothing moving sharply enough to warrant it.
+- **Risk flag carried forward:** IWM's trailing-stop order (4c0586cc) still expires 2026-08-31 — now 6 days out. Not re-placed this session (no proximity trigger, no urgency yet); must be refreshed (new 10% trail GTC) before Aug 31 or IWM sits unprotected. Flagging again for tomorrow's pre-market/EOD.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $102,875.83 | Cash $44,595.23 (43.35%) | Deployed $58,280.60 (56.65%, 3 positions). Week 18 count: 0/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7 (no action taken).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
