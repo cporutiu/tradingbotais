@@ -4979,3 +4979,41 @@ No ClickUp notification — no trade fired.
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-26 — Market-Open Execution (Wednesday, Week 18 Day 3)
+
+**Pre-market plan:** HOLD — no new entries. SOXX/AMD sourced and qualified but deliberately not entered given Nvidia earnings AMC today (tape-wide semiconductor risk). Confirmed at open, no override.
+
+**XOM trailing stop fired (mechanical, anticipated in pre-market):**
+- Order 20cf5b9d (5% trail, HWM $168.64, trigger $160.208) triggered at the open as flagged pre-market (price was already below trigger pre-bell).
+- Filled 127 of 130 sh @ avg $158.95. Realized gain on filled portion: ~$2,607.23 (entry $138.420615 → $158.95, +14.83%).
+- Remaining 3 sh still open on the same order (status `partially_filled`, unfilled qty 3) — odd-lot tail, not yet matched. No manual action taken; letting the GTC order finish. Will confirm full close at midday scan.
+- No rule violation: this is the trailing stop doing its job, not a manual cut. Oil's de-escalation narrative (flagged pre-market) was the proximate cause.
+
+**Live positions (Alpaca pull, post stop-out):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $357.59 | -$412.70 (-2.17%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $298.28 | +$465.63 (+2.58%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 3 (residual) | $138.420615 | $159.05 | +$61.89 (+14.90%) | Same order 20cf5b9d, still working on the residual 3 sh |
+
+**Account:** Equity $102,345.83 | Cash $64,781.88 (63.30%) | Deployed $37,563.95 (36.70%, 3 positions incl. XOM residual) | Week 18 count: 0/3.
+
+**No new buy trades.** Deployment dropped to 36.70% post stop-out — now below the 40% default-TRADE threshold (Deployment Floor), but today's HOLD stands: the specific reason for deferring SOXX/AMD (Nvidia earnings AMC risk to the whole semiconductor complex) is unchanged by the stop-out and still applies through today's close. Not re-opening the entry question intraday — carries to tomorrow's pre-market per plan, with deployment urgency now higher.
+
+**Risk flag — IWM stop-order expiration, needs a decision (not actioned today):**
+IWM's trailing stop (4c0586cc, trail 10%, HWM $305.18, stop $274.662) expires 2026-08-31 20:00 UTC (Mon close) — Alpaca appears to cap GTC trailing-stop orders around ~90 days regardless of the GTC label. Current price ($298.28) is below the order's HWM ($305.18), so a straight cancel-and-replace with a fresh `trailing_stop` today would re-seed the HWM near the current lower price and produce a new stop below $274.662 — that would violate Rule 7 ("never move a stop down"), even though the intent is administrative (expiration), not thesis-driven. Not executing a replacement without a confirmed approach. Options for a user decision:
+1. Replace with a **fixed stop** at the same $274.662 trigger (not trailing) — preserves the exact protection level, stops trailing further gains until manually reset, extends past 8/31.
+2. Wait and hope IWM closes above $305.18 before 8/31 so a fresh trailing-stop replacement computes a stop ≥ $274.662 naturally — carries the risk of running out of trading days (Thu/Fri/Mon left) with the position unprotected if price doesn't cooperate.
+3. Some other approach specified by the user.
+Must be resolved by Friday Aug 28 close at the latest — flagging as an action question below and escalating via ClickUp.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+**Action questions:**
+
+**Q: How should IWM's expiring trailing-stop order (4c0586cc, expires 8/31) be replaced without moving the stop down?**
+- Fixed stop at $274.662: keeps the exact protection level, simplest, but stops trailing until manually revisited
+- Wait for price to reclaim $305.18 first: preserves pure-trailing behavior, but risks the position going unprotected if it doesn't happen by Monday
+
+---
