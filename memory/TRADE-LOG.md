@@ -5040,4 +5040,28 @@ Must be resolved by Friday Aug 28 close at the latest — flagging as an action 
 
 ---
 
+## Aug 26 — EOD Snapshot (Day 85, Wednesday — Week 18 Day 3)
+**Portfolio:** $102,254.38 | **Cash:** $65,258.24 (63.83%) | **Day P&L:** -$326.37 (-0.32%) | **Phase P&L:** +$2,254.38 (+2.25%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AVGO | 52 | $365.526538 | $355.00 | -0.49% | -$547.38 (-2.88%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $298.97 | -0.09% | +$508.41 (+2.82%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high, expires 2026-08-31) |
+
+**Trades today:** XOM trailing-stop exit fully filled (130 sh @ avg $158.94623, realized +$2,668.33/+14.83% — mechanical, oil de-escalation, already flagged pre-market and confirmed at Market-Open/Midday). No new entries. Week 18 count: 0/3.
+
+**Notes:** Day 85, Wednesday, Week 18 Day 3. Account confirmed PA3GVPXBYBRB, matches AIS baseline. XOM's 5% trailing stop (20cf5b9d) fired at the open as anticipated, closing out the position for a +14.83% realized gain — oil's de-escalation narrative (Iran/Hormuz diplomatic-breakthrough framing) was the proximate cause, not a discretionary call. AVGO stabilized somewhat into the close (-0.49% today vs. -1.44% intraday at midday, still -2.88% unrealized) as broad chip-sector de-risking continues ahead of tonight's Nvidia earnings AMC — no AVGO-specific negative catalyst, thesis intact. IWM essentially flat (-0.09%, +2.82% unrealized), small-cap thesis unchanged. No losers near the -7% cut, no tighten triggers (AVGO negative, IWM well short of +15%). Deployment dropped to 36.18% (2 positions) following the XOM exit — below the 40% default-TRADE threshold and the 17th+ consecutive week under the 75% floor — but today's pre-market HOLD (deferring SOXX/AMD given Nvidia's earnings-AMC tape-wide risk) stands through the close; the decision carries to tomorrow's pre-market once the print is digested. **Risk flag carried forward — still unresolved:** IWM's trailing-stop order (4c0586cc) expires 2026-08-31 (Mon) — now inside 3 trading days (Thu/Fri/Mon) — and no "User decisions" block has been logged answering pre-market's replacement question. Must be resolved by Friday Aug 28 close per Rule 14 autonomous-default if still unanswered by tomorrow morning's pre-market.
+
+**Action questions:**
+
+**Q: Enter SOXX/AMD tomorrow morning once Nvidia's earnings reaction is clear, or stay patient another day?**
+- Enter: puts idle cash to work (36.18% deployed, 17th+ week under the 75% floor) if the print doesn't rattle the semis complex — captures the dip-buying momentum both candidates already screened for
+- Wait: avoids adding fresh exposure into an unresolved overnight-gap outcome — but extends the deployment gap another day if the reaction is calm or positive
+
+**Q: How should IWM's expiring trailing-stop order (4c0586cc, expires 8/31) be replaced without moving the stop down?**
+- Fixed stop at $274.662: keeps the exact protection level, simplest, but stops trailing further gains until manually reset
+- Wait for price to reclaim $305.18 first: preserves pure-trailing behavior, but risks the position going unprotected if it doesn't happen by Monday
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
 ---
