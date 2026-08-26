@@ -6387,3 +6387,43 @@ No new single-stock or sector candidate was sourced this session — today's res
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-26 — Pre-Market Research (Wednesday, Week 18 Day 3)
+
+**CRITICAL — Alpaca/Perplexity/ClickUp all unreachable this session (org egress policy denial).**
+
+### STEP 1B — Pending decisions
+No "User decisions" block below the Aug 25 EOD entry (most recent EOD in TRADE-LOG.md). Aug 25 EOD's action question — "Prioritize a dedicated candidate-sourcing pass at tomorrow's pre-market, or stay patient another day?" — is unanswered, so per Rule 14 it must be resolved autonomously today using best-available data and not carried a second day. **Autonomous decision (2026-08-26):** Cannot execute a sourcing pass or any other action — full API connectivity outage (see below) makes the question moot; account state can't even be confirmed. Logging as HOLD by necessity, not by evaluation, and this question is considered closed (do not carry to tomorrow — re-evaluate fresh if connectivity restores).
+
+### Connectivity outage (STEP 2 + STEP 3 blocked)
+- `bash scripts/alpaca.sh account/positions/orders` → **curl 403**, all three calls.
+- `bash scripts/perplexity.sh` → **curl 403**.
+- `bash scripts/clickup.sh` → **curl 403**.
+- Proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`) confirms this is an **organization egress policy denial** ("gateway answered 403 to CONNECT (policy denial or upstream failure)") for `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` — not a credentials issue, not a transient failure. Per proxy README: policy denials are not to be retried or routed around.
+- **No account snapshot possible.** Equity/cash/buying power/deployment/position list/order status could NOT be pulled or confirmed live this session. Last confirmed state (Aug 25 EOD, TRADE-LOG.md): Equity $102,580.75, Cash $44,595.23 (43.48%), 3 positions (AVGO 52sh, IWM 62sh, XOM 130sh), Week 18 count 0/3. **This is stale, unverified data — not to be treated as today's confirmed state.**
+- **Account isolation check could NOT be performed today** (no live pull to compare against AIS baseline PA3GVPXBYBRB). Flagging per CLAUDE.md's Account Isolation rule — no order was placed, so no risk materialized, but this must be re-verified the moment connectivity restores.
+- **ClickUp alert could NOT be sent** (same policy block) — escalating via direct user notification instead since this is a material operational failure.
+- Native WebSearch fallback used in place of Perplexity for limited market context below (STEP 3 fallback path, as instructed).
+
+### Market Context (WebSearch fallback — partial, no Perplexity)
+- **Oil:** WTI ~$80.78 (-1.9%), Brent ~$89.5 (-3% Tue). Falling on a less-aggressive-than-expected round of Iran sanctions (no secondary sanctions on Iran's trading partners) — a reversal of the sanctions-driven rally flagged in recent sessions. Headwind for XOM's thesis if it holds (per last-known position, XOM +17-20% unrealized, already on max 5% trail).
+- **S&P 500 futures:** ~flat/-0.1%, mixed as market awaits Nvidia earnings, PCE inflation data, and Strait of Hormuz developments. "Up or down" prediction markets show ~50/50.
+- **VIX:** ~14.6, down ~4% — low, well under 18.
+- **Nvidia earnings** report today after close (~4:20-4:30pm ET), Q2 FY27. Consensus revenue ~$92B (+97% YoY), EPS ~$2.08-2.09. Beat EPS in 20 of last 22 quarters; stock reaction historically driven more by guidance than by the print itself. Not a held name, so not a Tier-1 blackout trigger, but a dominant sentiment catalyst for chip-adjacent AVGO (per last-known holding).
+- Economic calendar / earnings-BMO / sector-momentum / held-ticker-specific news queries **not run** — Perplexity unavailable and WebSearch fallback was scoped to the highest-priority items only given the outage is the dominant story this session.
+
+### Trade Ideas
+None sourced. No account access, no full research battery — nothing to test against the entry checklist today regardless of setup quality.
+
+### Risk Factors
+- **Primary risk today is the outage itself:** the bot cannot confirm account isolation, current equity, position status, or live stop-order health. If any position (per last-known state: AVGO, IWM, XOM) crossed a tighten/-7%-cut threshold intraday yesterday or overnight, it would not be caught until connectivity restores.
+- Oil reversal (Iran sanctions came in softer than expected) is a headwind to XOM's thesis — needs live-price confirmation once Alpaca is reachable again.
+- Nvidia earnings after close today — high-volatility event for tech/chip sentiment (AVGO exposure) landing while the bot has no visibility into its own book.
+- Full API outage: if this persists >3 trading days, invoke TRADING-STRATEGY.md Rule 15 (Reconnect protocol) on the first run back — reconcile live positions/orders against the last logged state before any new-entry action, and check every position against every threshold that should have applied during the gap.
+
+### Decision
+**HOLD — forced, not evaluative.** Cannot pull account state, cannot verify account isolation, cannot run research (Alpaca/Perplexity/ClickUp all blocked by org egress policy this session), therefore cannot safely place or size any trade even if a candidate existed. No action taken. Escalating directly to the user (push notification) since ClickUp — the normal escalation path — is itself unreachable. Next session: re-run STEP 2 first; if still blocked, escalate again and do not attempt STEP 3 onward until account access is confirmed.
+
+**Account confirmed:** NOT CONFIRMED TODAY — live pull unavailable, this is a deviation from every prior session's "matches AIS baseline" confirmation. Re-verify at next opportunity before any action.
+
+---
