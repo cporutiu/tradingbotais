@@ -5017,3 +5017,27 @@ Must be resolved by Friday Aug 28 close at the latest — flagging as an action 
 - Wait for price to reclaim $305.18 first: preserves pure-trailing behavior, but risks the position going unprotected if it doesn't happen by Monday
 
 ---
+
+## 2026-08-26 — Midday Scan (Wednesday, Week 18 Day 3)
+
+**XOM stop-out confirmed fully filled:** Order 20cf5b9d closed status `filled`, 130/130 sh @ avg $158.94623 (the 3-sh odd-lot tail flagged at Market-Open has now filled). Realized gain: $158.94623 × 130 − $138.420615 × 130 = **+$2,668.33 (+14.83%)**. XOM no longer in positions or open orders — confirmed via `orders closed`. No manual action; mechanical trailing-stop exit per rule, oil de-escalation the proximate cause (flagged pre-market).
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $351.61 | -$723.66 (-3.81%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $298.67 | +$489.81 (+2.72%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+
+- **Losers cut:** None. AVGO -3.81% is the only position in the red, still well short of the -7% cut.
+- **Stop tightening:** None due. IWM +2.72% short of +15%. AVGO negative, no tighten applicable.
+- **Thesis check:** AVGO extended its slide (-1.44% today, -3.81% unrealized) as broad chip-sector de-risking continues ahead of tonight's Nvidia earnings AMC — consistent with, not a break from, this morning's pre-market read (no AVGO-specific negative catalyst; AI-financing debt-package and Marvell/Google overhangs unchanged). Not sharp/unexplained enough to warrant a Perplexity check per STEP 6. IWM +2.72% unrealized, small-cap thesis unchanged.
+- **Risk flag carried forward — IWM stop expiration:** Order 4c0586cc still expires 2026-08-31 (Mon) — now inside 3 trading days (Thu/Fri/Mon). Pre-market's action question (fixed-stop replacement at $274.662 vs. wait for price to reclaim $305.18) remains unanswered — no "User decisions" block logged. Not actioning unilaterally without a confirmed approach (Rule 7: never move a stop down). Must be resolved by Friday Aug 28 close per Rule 14 autonomous-default if still unanswered by tomorrow morning's pre-market.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $102,060.64 | Cash $65,258.24 (63.94%) | Deployed $36,802.40 (36.06%, 2 positions). Week 18 count: 0/3.
+
+**Action taken:** None beyond confirming XOM's already-anticipated full stop-out closure (no new manual step — GTC order completed on its own). No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7 (no new action taken this session; IWM risk already escalated via ClickUp at pre-market).
+
+**Commit:** memory/TRADE-LOG.md updated — committing per STEP 8.
+
+---
+
+---
