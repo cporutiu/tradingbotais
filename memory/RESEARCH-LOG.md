@@ -6387,3 +6387,80 @@ No new single-stock or sector candidate was sourced this session — today's res
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-26 — Pre-Market Research (Wednesday, Week 18 Day 3)
+
+**Urgency protocol active:** Deployed has closed below 75% for 17+ consecutive weekly closes.
+
+### STEP 1B — Pending decisions
+No "User decisions" block below the Aug 25 EOD entry. Aug 25's EOD carried one unanswered action question: **"Prioritize a dedicated candidate-sourcing pass at tomorrow's pre-market, or stay patient another day?"** Resolved autonomously per Rule 14 — see Decision section below (full sourcing pass run; result: HOLD, no entry, but two candidates identified and carried to tomorrow).
+
+**Bot autonomous decision (2026-08-26):** Prioritize a dedicated candidate-sourcing pass, or stay patient? → Ran full Benzinga/Perplexity sourcing battery today → 6 net-new BUY-flagged candidates surfaced (SPY, QQQ, GLD, XLE, SOXX, AMD), but no entry taken — Nvidia earnings AMC today creates outsized single-event risk across the entire semiconductor/tech complex hours before any new position could establish a cushion; sizing SOXX/AMD into that window is not prudent even though both clear today's screen. SOXX and AMD carried forward as lead candidates for tomorrow's pre-market, contingent on the market's reaction to Nvidia's print.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $102,545.49 | Cash: $44,595.23 (43.49%) | Deployed: $57,950.26 (56.51%, 3 positions) | Buying power: $340,641.65 | Week 18 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment 56.51% sits between the 40% default-TRADE trigger and the 60% patience-valid floor (Rule 11) — today's call rests on candidate quality, not a default.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | $358.71 | -$354.46 (-1.87%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, confirmed live, no new high) |
+| IWM | 62 | $290.769839 | $299.12 | +$517.71 (+2.87%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, confirmed live, no new high) |
+| XOM | 130 | $138.420615 | $159.63 | +$2,757.22 (+15.32%) | 5% trail HWM $168.64 / stop $160.208 (20cf5b9d, confirmed live, already on max 5% tier from Aug 19's +20% trigger) |
+
+**CRITICAL FLAG — XOM stop already breached pre-market:** Current price $159.63 is below the live trailing-stop trigger $160.208 (HWM $168.64, 5% trail). Order status still "new" — Alpaca trailing-stop orders only evaluate/trigger during regular trading hours, not pre-market. **Expect this GTC order (20cf5b9d) to fire at or near today's open** unless price recovers above $160.208 before the bell. No manual action taken — this is the trailing stop doing its job; per strategy, never move a stop down and never interfere with a live GTC trigger. Flagging for confirmation at Market-Open.
+
+**RISK FLAG carried forward — IWM stop expiring soon:** IWM's trailing-stop order (4c0586cc, placed 2026-06-02) still shows expires_at 2026-08-31 — 5 calendar days / 3 trading days out. Alpaca GTC orders appear to cap around ~90 days from placement despite the "GTC" label. scripts/alpaca.sh has no order-placement command (account/positions/position/quote/orders/order/cancel/cancel-all/close/close-all only) — re-placing this stop (same 10% trail, new HWM) needs to happen via the Market-Open execution routine, which does have order placement. **Must be actioned by Friday Aug 28's close at the latest**, ideally today. Escalating via ClickUp per STEP 5 given the shrinking window.
+
+AVGO -1.87% and IWM +2.87% both nowhere near +15%. XOM already at max tier — no further tighten possible regardless.
+
+### Market Context
+- **Oil:** WTI ~$80.2-82.4, Brent ~$86.3-89.5 — sharp acceleration of yesterday's pullback (-2% to -3% today on top of yesterday's move). Framing has shifted meaningfully: Investing.com explicitly ties today's drop to "diplomatic breakthroughs on the Strait of Hormuz" and says oil prices are exposing "the market's growing faith in a negotiated Iran off-ramp" — this is a step beyond yesterday's "sell-the-news, structural bullish case intact" read. A genuine de-escalation narrative is now competing with the Iran/Hormuz supply-risk premium that has underpinned XOM's thesis since June. Not treating this as a confirmed thesis break (XOM still has independent support from Q2 earnings, the $177 PT raise, and Shell chemicals-bid interest), but this is a materially weaker setup than yesterday's framing.
+- **S&P 500 futures:** Roughly flat to slightly positive, ~7,660-7,690 depending on feed/timestamp. Dow futures +0.05%, Nasdaq futures mixed (-0.15% to +0.6% across feeds).
+- **VIX:** ~15.5-15.8 — **market risk: low** (well under 18).
+- **Today's data:** No CPI, no PPI, no FOMC decision, no NFP. GDP Growth Rate QoQ 2nd Estimate (2.1%), Personal Income & Outlays / Core PCE, Durable Goods Orders, MBA Mortgage Applications — all 8:30-11:00am releases. GDP 2nd estimate (not Advance) and PCE are not on the Tier-1 list (CPI/PPI/FOMC/NFP/GDP-Advance only) — treating as Tier-2 at most. **No Tier-1 blocker today** on the calendar itself.
+- **Dominant catalyst — Nvidia earnings AMC today:** Universally flagged across sources as "the market's next big test" — $5.2T market cap, ~7.3% S&P 500 weighting, testing whether AI capex is translating into profitable returns. NVDA is not held, so this isn't a strict Rule Tier-1 blackout, but the tape-wide, sector-wide nature of this catalyst is why no new semiconductor-adjacent position (SOXX, AMD) was opened today despite both clearing the Benzinga screen — see Decision section.
+- **Other earnings today:** Salesforce, CrowdStrike, HP, Okta, Synopsys, Kohl's, Williams-Sonoma, Abercrombie & Fitch, Bath & Body Works, J.M. Smucker, Li Auto — none held, none on the sector watchlist.
+- **Sector momentum (YTD):** Energy still #1 decisively (+43.1%), Technology #2 (+25.4%), Materials #3 (+19.1%). Communication Services weakest (-4.0%). Consistent with every prior session's read — no rotation signal.
+- **Economic cycle:** Late-cycle (Conference Board LEI +0.2% in July, six-month growth rate turned slightly positive — argues against recession but only modest expansion ahead; CEI still positive, unemployment elevated vs. prior troughs).
+- **RS ranking (20-day vs SPY, strongest to weakest):** SOXX, XLE, XLK, XLI, XLB, XLF, XLY, XLV, XLC, HYG, IWM, EEM, GLD, SLV, XLP, XLRE, XLU, QQQ, SPY.
+
+### Benzinga Signals (24h lookback, 43 emails scanned)
+**BUY (medium/high confidence):** SPY (high), QQQ (high), GLD (high), XLE (high), IWM (high, held), SOXX (medium), XOM (medium, held), AMD (high).
+**SELL:** None.
+No held-position SELL signals. IWM and XOM's held-position BUY signals reinforce (not new information) their intact theses.
+
+### Congress Signals
+Congress/Quiver Quant API still returning 401 Unauthorized — 8+ weeks unresolved since Jul 9. All HOLD (fetch_error). No confluent-signal check possible today.
+
+### Perplexity Validation
+- **SPY:** Bullish case supported more by falling yields, ETF-flow strength ($193.42B July inflows, $1.23T YTD) and technicals (100% Buy signal, above 50/200-day MAs) than by a clean macro growth surprise. Confirms Benzinga's high-confidence BUY.
+- **QQQ:** Partially confirmed — cooling oil/inflation and lower yields are constructive, but fund flows are mixed ($4.3B July inflow vs. reported ~$1.6B one-day outflow). Nvidia earnings is the explicit swing factor. Not a clean confirmation.
+- **GLD:** Confirmed — macro-driven (weak dollar, fiscal-sustainability concerns, Treasury buyback narrative, real-yield expectations) more than fund flows. Flagged as increasingly crowded (speculative long positioning at 93rd percentile) — a real but not disqualifying risk.
+- **XLE:** Partially confirmed, with a caveat — bullish case is macro/geopolitical (Hormuz risk, strong Q2 earnings from XOM/CVX, refining margins), but multiple sources explicitly warn the rally "has a Hormuz problem" and could reverse quickly if the oil-risk premium fades — which is exactly what's happening in today's price action. This is a real contradiction between the still-positive YTD framing and the immediate catalyst.
+- **SOXX:** Confirmed as the strongest near-term setup — dip-buying (AMD, Micron) ahead of Nvidia earnings, Raymond James's AMD Strong Buy upgrade cited directly as today's rally driver. Some analysts flag stretched valuations ("party may be over," -11.7% scenario risk) as a longer-term caution, not a today-specific negative.
+- **AMD:** Confirmed bullish — Strong Buy consensus (45% Strong Buy / 39% Buy of 53 analysts), average PT $613 (+34% from spot), driven by AI/data-center demand (Meta/OpenAI GPU commitments) and today's Raymond James upgrade. Fund-flow evidence not present in results; macro not the primary driver — company-specific execution is.
+- **AVGO (held):** No new negative catalyst. AI-financing $60-70B/$30B debt package and Marvell/Google competitive-threat overhang both unchanged, not escalating. Today's softness is broad chip-sector de-risking ahead of Nvidia, not AVGO-specific.
+- **IWM (held):** Thesis intact — small-cap rally continues near record highs, no negative headlines, +2.87% pre-market.
+- **XOM (held):** See Market Context — oil-driven thesis facing its first real de-escalation-narrative headwind since the Iran/Hormuz rally began in June. Company-specific fundamentals (PT raise, Shell bid) remain supportive independent of the geopolitical premium.
+
+### Trade Ideas
+1. **SOXX — no entry today, lead candidate for tomorrow.** RS-ranked #1 of 19 tracked ETFs, Benzinga BUY (medium), Perplexity-confirmed dip-buying catalyst ahead of Nvidia earnings. Not sized today given the earnings-day risk to the entire complex; revisit tomorrow pending Nvidia's reaction.
+2. **AMD — no entry today, lead candidate for tomorrow.** Benzinga BUY (high), Perplexity-confirmed Strong Buy consensus and today's Raymond James upgrade as the specific catalyst. Same earnings-day risk caveat as SOXX — single-stock exposure to the same overnight gap risk, arguably higher than SOXX's diversified basket.
+3. **XLE — passed over.** Benzinga BUY (high) and #2 RS rank, but today's oil price action directly contradicts the entry catalyst (Hormuz-premium deflation) and the position would concentrate further into the same commodity risk already carried via XOM (17.53% of equity at last close). Not adding to an already-stressed sector today.
+
+### Risk Factors
+- **XOM's trailing stop is pre-breached** (see flag above) — expect a stop-out at or near today's open; oil's de-escalation narrative is the proximate cause.
+- **IWM's trailing-stop order expires 2026-08-31** — 3 trading days out, needs re-placement via Market-Open execution by Friday's close at the latest. Escalated via ClickUp.
+- **Nvidia earnings AMC today** — the dominant tape-wide catalyst; could move the entire tech/semiconductor complex sharply overnight regardless of what's held. AVGO carries indirect exposure even without a name-specific catalyst.
+- **Oil's de-escalation narrative** is a genuine (not just profit-taking) headwind to the XLE/XOM thesis for the first time since the rally began — worth re-assessing Materials/Energy watchlist priority at Friday's weekly review if it persists.
+- **17th+ consecutive week under the 75% deployment floor** — urgency protocol remains active. Two qualified candidates (SOXX, AMD) sourced today but deliberately not entered given the earnings-day risk window — not treating this as a missed-opportunity cost given the asymmetry (one day's delay vs. overnight gap risk into an unknown print).
+- **Congress/Quiver Quant API still down (401)** — 8+ weeks unresolved since Jul 9.
+
+### Decision
+**HOLD — no new entries today**, despite sourcing two candidates (SOXX, AMD) that clear the Benzinga screen and RS ranking, because Nvidia's earnings AMC today is a tape-wide, sector-wide catalyst that would put any new semiconductor-adjacent position at risk of an uncushioned overnight gap before its first full session. This resolves Aug 25's carried EOD question: the sourcing pass was prioritized and executed in full (Benzinga BUY=8/SELL=0, RS ranking, per-ticker Perplexity validation), and it did produce viable candidates — the HOLD is a timing decision, not an absence-of-candidate default. XOM's trailing stop is pre-breached and likely to fire at the open (mechanical, not a manual thesis-break call). IWM's stop-expiration risk needs action by Friday. AVGO and IWM theses both intact. Week 18 count stays 0/3.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
