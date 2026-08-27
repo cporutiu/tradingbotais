@@ -5116,3 +5116,23 @@ No "User decisions" block was logged under the Aug 26 EOD action questions. Both
 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
+---
+
+## 2026-08-27 — Midday Scan (Thursday, Week 18 Day 4)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 37 | $473.96 | $473.90 | -$2.22 (-0.01%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc, live, trailed up from $427.16) |
+| AVGO | 52 | $365.526538 | $370.22 | +$244.12 (+1.28%) | 10% trail HWM $375.13 / trigger $337.617 (fc5bfa43, live, no new high) |
+| IWM | 62 | $290.769839 | $300.21 | +$585.29 (+3.25%) | FIXED stop $274.67 GTC (ff755b58, live) |
+
+- **Losers cut:** None. AMD -0.01% is the only red position, nowhere near -7%.
+- **Stop tightening:** None due. AVGO +1.28%, IWM +3.25%, AMD flat — all well short of +15%. AMD's trail auto-advanced (HWM $482, trigger $433.80) — mechanical, no action.
+- **IWM trail conversion:** Not triggered. Price $300.21 still below $305.18 — fixed stop stays.
+- **Thesis check:** All intact. AVGO +4.1% today on Nvidia beat read-through (bullish AI/semis complex, as pre-market expected). AMD flat, own thesis (RJ upgrade, ~$613 PT) unchanged. IWM firm near highs, small-cap thesis intact. Nothing moving sharply without cause — no Perplexity check needed.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Equity $103,150 approx | Deployed ~$55.4K (3 positions) | Week 18 count: 1/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7.
+
+---
