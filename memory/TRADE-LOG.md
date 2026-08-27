@@ -5065,3 +5065,17 @@ Must be resolved by Friday Aug 28 close at the latest — flagging as an action 
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-27 — Pre-Market Autonomous Decisions (Thursday, Week 18 Day 4)
+
+No "User decisions" block was logged under the Aug 26 EOD action questions. Both resolved autonomously per Rule 14 on live pre-market data. **Execute at today's market-open routine:**
+
+**Bot autonomous decision (2026-08-27):** Enter SOXX/AMD once Nvidia's reaction is clear, or stay patient? → **ENTER AMD at market open**, ~18% of equity (≈40 sh at ~$460), 10% trailing stop GTC placed immediately on fill — Nvidia beat (Q2 $96.2B, Q3 guide $108B), +4% AH, Nasdaq futures +1%, bullish read-through for AI/semis = the calm/positive scenario the EOD set as the entry trigger; deployment 36.4% in the 18th week under the 75% floor. AMD over SOXX: single stock, avg PT ~$613 vs ~$460 spot clears R:R ~3:1 where an ETF near ATH can't (Rule 28); catalyst = Raymond James Strong Buy upgrade. Sector cap OK (AVGO + AMD = 2/2 tech single-stock slots).
+
+**Bot autonomous decision (2026-08-27):** How to replace IWM's expiring trailing stop (4c0586cc, expires 2026-08-31 20:00 UTC) without moving the stop down? → **Replace with a FIXED stop-market GTC at $274.662** (same trigger as the current order). Cancel 4c0586cc, place new stop. Preserves the exact protection level (Rule 7 — not moved down), removes 8/31 expiration risk. A fresh trailing_stop off ~$299 spot would seed a ~$269 stop (below $274.662) = Rule 7 violation, so trailing replacement is off the table now. Convert back to a 10% trail only if IWM later clears $305.18.
+
+**Market-open action checklist:**
+1. Buy AMD ≈18% of equity at market; on fill, place 10% trailing stop GTC.
+2. Cancel IWM order 4c0586cc; place fixed stop-market GTC at $274.662 for 62 sh.
+3. Confirm AVGO trail fc5bfa43 still live; no change.
+

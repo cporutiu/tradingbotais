@@ -6464,3 +6464,68 @@ Congress/Quiver Quant API still returning 401 Unauthorized — 8+ weeks unresolv
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-27 — Pre-Market Research (Thursday, Week 18 Day 4)
+
+**Urgency protocol active:** Deployed below 75% for 18+ consecutive weekly closes. Tier-2 blockers do NOT apply; R:R floor = 1.5:1.
+
+### STEP 1B — Pending decisions (autonomous, Rule 14)
+No "User decisions" block below the Aug 26 EOD entry. Two unanswered EOD action questions — both resolved autonomously on live pre-market data:
+
+**Bot autonomous decision (2026-08-27):** Enter SOXX/AMD once Nvidia's reaction is clear, or stay patient? → ENTER AMD at market open (~18% equity, 10% trailing stop GTC on fill) — Nvidia beat Q2 ($96.2B rev, Q3 guide $108B), stock +4% AH, Nasdaq futures +1%, explicitly "positive for AI/semis"; the calm/positive scenario the EOD flagged as the entry trigger. Deployment 36.4% (18th wk under floor). AMD chosen over SOXX: single stock with avg PT ~$613 vs ~$460 spot clears R:R ~3:1 where an ETF near ATH structurally can't (Rule 28); fresh catalyst = Raymond James Strong Buy upgrade, Perplexity-confirmed.
+
+**Bot autonomous decision (2026-08-27):** How to replace IWM's expiring trailing stop (4c0586cc, expires 8/31 20:00 UTC) without moving the stop down? → Replace with a FIXED stop-market GTC at $274.662 (same trigger as the current order's stop_price). Preserves the exact protection level (Rule 7 satisfied — not moved down), removes expiration risk. A fresh trailing_stop today would compute off ~$299 spot → ~$269 stop, below $274.662 = Rule 7 violation, so trailing replacement is not an option now. Revisit converting back to a trail if IWM clears $305.18. Execute at today's market-open routine (scripts/alpaca.sh has no order-placement command).
+
+### Account Snapshot (live API, pre-market)
+- Equity: $102,611.09 | Cash: $65,257.77 (63.6%) | Deployed: $37,353.32 (36.4%, 2 positions) | Buying power: $365,620.38 | Week 18 count: 0/3
+- Account number confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+- Deployment 36.4% is below the 40% default-TRADE trigger — default is TRADE with a valid setup and no Tier-1 blocker.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AVGO | 52 | $365.526538 | ~$362 (pre-mkt, +1.9%) | ~-$180 (-0.9%) | 10% trail HWM $375.13 / stop $337.617 (fc5bfa43, live, expires 2026-11-18) |
+| IWM | 62 | $290.769839 | ~$299 | +$500 (+2.8%) | 10% trail HWM $305.18 / stop $274.662 (4c0586cc, live, EXPIRES 2026-08-31 — fixed-stop replacement due at market-open) |
+
+No tighten triggers: AVGO ~flat, IWM +2.8% (well short of +15%). No losers near -7%.
+
+### Market Context
+- **Oil:** WTI ~$81, Brent ~$87 — down ~1% more; Iran/Oman navigational-corridor de-escalation narrative persists. No energy position held (XOM stopped out Aug 26), so this is watchlist context only — headwind to any XLE/energy re-entry.
+- **S&P 500 futures:** ~7,690–7,724, mixed to slightly positive. **Nasdaq futures +1%** on Nvidia.
+- **VIX:** 15.21 close — **market risk: low.**
+- **Nvidia (reported Aug 26 AMC):** Beat — Q2 rev $96.2B (est $92.2B), Q3 guide $108B, data-center record. Stock dipped then reversed +4% AH to ~$218. Read-through: bullish for the whole AI/semiconductor complex.
+- **July PCE (released Aug 26):** Headline 3.7% YoY, core 3.3% YoY, both +0.2% m/m — slightly hot vs 3.6% expected, "sticky." Market reaction: Fed likely HOLD in September; Sept hike odds ~38%, down from ~55% a month ago. Jackson Hole symposium underway (Chair Warsh) — Fed-speaker event = Tier-2 at most, and urgency protocol suspends Tier-2.
+- **Today's data:** Initial jobless claims, Advance Economic Indicators (trade balance), wholesale inventories, Kansas City Fed mfg — all minor. **No Tier-1 blocker today** (CPI/PPI/FOMC/NFP/GDP-Advance — none).
+- **Sector momentum (YTD):** Energy #1 (+43.1%), Technology #2 (+25.4%), Materials #3 (+19.1%), Industrials +16%. Comm Services weakest (-4.0%). No rotation signal.
+- **Economic cycle:** Late-cycle (sticky inflation, Fed on hold with hike risk, elevated unemployment vs prior troughs, modest LEI).
+
+### Benzinga / Congress
+Not run this session (slim pre-market battery). Prior session (Aug 26): Benzinga BUY SOXX/AMD/SPY/QQQ/GLD/XLE, SELL none. Congress/Quiver API still 401 (8+ wks).
+
+### Perplexity validation of held names + candidates
+- **AVGO (held):** No new negative. RBC Sector Perform $400 PT (above spot); consensus Strong Buy (32 of 41 Strong Buy), avg PT well above $362. Nvidia's AI-demand guidance reinforces thesis. **Q3 earnings Sept 2 AMC = Tier-1 blocker for AVGO that day.**
+- **IWM (held):** Thesis intact but softening. Small-cap support is now shifting from "rate cuts coming" to "no more hikes" — weaker tailwind. Offsetting: small-cap 2026/2027 EPS growth ~18-19%, projected to outpace S&P for the first time in years (independent fundamental support). Price holding near highs (~$299, YTD +19%). Not a break.
+- **AMD (candidate):** Strong Buy consensus (45% Strong Buy / 39% Buy of ~53 analysts), avg PT ~$613 (~+34% from ~$460 spot). Drivers: AI/data-center demand, Raymond James Strong Buy upgrade. Company-specific execution story, own earnings already reported early Aug. R:R vs PT ≈ 3:1 on a 10% stop.
+
+### Trade Ideas
+1. **AMD — ENTER at market open.** ~40 sh (~18% of equity, ~$18.4K at ~$460). Catalyst: Nvidia beat validates the semis dip-buying trade; RJ Strong Buy upgrade. Entry ~$460 / 10% trailing stop GTC (~$414) placed on fill / target = avg PT ~$613 (R:R ≈ 3:1). Sector cap: AVGO + AMD = 2/2 tech single-stock slots (allowed).
+2. **SOXX — passed over** in favor of AMD (ETF near ATH can't compute R:R per Rule 28; AMD is the cleaner mechanical fit).
+3. **Non-tech second candidate — defer to Friday weekly review.** Semis concentration would be ~36% (AVGO + AMD) after today's entry; a second entry this week should be outside tech.
+
+### Risk Factors
+- **Semiconductor concentration** after AMD entry: AVGO (~18%) + AMD (~18%) ≈ 36% of equity in one industry, with **AVGO Q3 earnings Sept 2 AMC** as a shared event risk. Within rules but monitor; no third semis name.
+- **IWM stop expires 8/31** — fixed-stop replacement at $274.662 is a hard action item for today's market-open routine. If it slips, IWM is unprotected Monday.
+- **Sticky PCE / Jackson Hole** — a hawkish Warsh signal today (symposium ongoing) could hit rate-sensitive IWM and high-multiple semis. Not a Tier-1 blocker but a real intraday tape risk.
+- **Oil de-escalation** — continuing; keep XLE/energy off the re-entry list until the Hormuz premium narrative resolves.
+
+### Watch items (forward triggers)
+- IWM: convert fixed stop back to a 10% trail only if price clears $305.18.
+- AMD (on fill): tighten trail to 7% at +15%, to 5% at +20%.
+- AVGO: Sept 2 AMC earnings — Tier-1 blackout that day; assess hold-through vs trim at the Sept 1 pre-market.
+
+### Decision
+**TRADE — enter AMD at market open** (~18% equity, 10% trailing stop GTC on fill). Resolves Aug 26 EOD Q1: Nvidia's beat is the green light the EOD conditioned entry on, and deployment at 36% in the 18th week under the floor makes patience invalid (Rule 11). **Plus:** replace IWM's expiring trailing stop with a fixed GTC stop at $274.662 at market-open (resolves Aug 26 EOD Q2). AVGO and IWM theses intact. Week 18 count → 1/3 after AMD fills.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
