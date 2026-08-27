@@ -5079,3 +5079,40 @@ No "User decisions" block was logged under the Aug 26 EOD action questions. Both
 2. Cancel IWM order 4c0586cc; place fixed stop-market GTC at $274.662 for 62 sh.
 3. Confirm AVGO trail fc5bfa43 still live; no change.
 
+---
+
+## 2026-08-27 — Market-Open Execution (Thursday, Week 18 Day 4)
+
+**Pre-market plan executed in full.** No override. No Tier-1 blocker.
+
+**Trade 1 — AMD BUY (new position):**
+- Order 1d1b77ca market/day, 38 sh requested → **37 sh filled @ avg $473.96**; 1-sh odd-lot tail did not fill, buy remainder canceled (clean position at 37 sh).
+- Cost basis $17,536.52 = 17.1% of equity ($102,784). Within 17-20% band.
+- Entry $473.96 vs pre-market ~$460 assumption — Nvidia-beat gap lifted the open.
+- **10% trailing stop GTC placed on fill:** order b708f2cc, 37 sh, HWM $474.23, trigger $427.16, expires 2026-11-25.
+- Thesis: Nvidia Q2 beat ($96.2B rev, Q3 guide $108B) validates semis dip-buying; Raymond James Strong Buy upgrade. Avg analyst PT ~$613. Target $613 / stop $427.16 → R:R ≈ 3:1.
+- Sector cap: AVGO + AMD = 2/2 tech single-stock slots (allowed).
+- Resolves Aug 26 EOD Q1 (autonomous per Rule 14).
+
+**Trade 2 — IWM stop replacement (administrative, not a new trade):**
+- Canceled trailing-stop 4c0586cc (was expiring 2026-08-31). Cancel returned 422 twice via wrapper then succeeded (HTTP 204) — Alpaca cancel eventual-consistency, no drift.
+- Placed **fixed stop-market GTC: order ff755b58, 62 sh, trigger $274.67**, expires 2026-11-25.
+- $274.662 rejected as sub-penny; rounded UP to $274.67 (tighter, not down — Rule 7 satisfied). Protection level preserved, 8/31 expiration risk removed.
+- Convert back to a 10% trail only if IWM clears $305.18.
+- Resolves Aug 26 EOD Q2 (autonomous per Rule 14).
+
+**AVGO:** trail fc5bfa43 confirmed live (HWM $375.13, stop $337.617, expires 2026-11-18) — no change.
+
+**Live positions (post-execution):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 37 | $473.96 | $473.38 | -$21.46 (-0.12%) | 10% trail HWM $474.23 / trigger $427.16 (b708f2cc) |
+| AVGO | 52 | $365.526538 | $366.46 | +$48.54 (+0.26%) | 10% trail HWM $375.13 / trigger $337.617 (fc5bfa43) |
+| IWM | 62 | $290.769839 | $298.34 | +$469.09 (+2.60%) | FIXED stop $274.67 GTC (ff755b58) |
+
+**Account:** Equity $102,783.89 | Cash $47,721.25 | Deployed $55,062.64 (53.6%, 3 positions) | Week 18 count: **1/3**.
+
+**Rules check:** positions after trade 3/6 ✓ | trades/week 1/3 ✓ | AMD cost 17.1% ≤ 20% ✓ | catalyst documented (Nvidia beat + RJ upgrade) ✓ | not a day trade (buy-and-hold) ✓ | sector cap 2/2 tech single stocks ✓.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
