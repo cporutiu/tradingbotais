@@ -5136,3 +5136,26 @@ No "User decisions" block was logged under the Aug 26 EOD action questions. Both
 **Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7.
 
 ---
+
+## Aug 27 — EOD Snapshot (Day 86, Thursday — Week 18 Day 4)
+**Portfolio:** $103,230.92 | **Cash:** $47,721.25 (46.2%) | **Day P&L:** +$976.54 (+0.95%) | **Phase P&L:** +$3,230.92 (+3.23%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 37 | $473.96 | $477.00 | -0.82% | +$112.48 (+0.64%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc, live) |
+| AVGO | 52 | $365.526538 | $370.60 | +4.22% | +$263.83 (+1.39%) | 10% trail HWM $375.13 / trigger $337.617 (fc5bfa43, live, no new high) |
+| IWM | 62 | $290.769839 | $299.81 | +0.29% | +$560.49 (+3.11%) | FIXED stop $274.67 GTC (ff755b58, live) |
+
+**Trades today:** AMD BUY — 37 sh @ avg $473.96 ($17,536.52 cost, 17.1% of equity), 10% trailing stop GTC placed on fill (b708f2cc). Resolves Aug 26 EOD Q1 autonomously (Nvidia beat = the entry green light). Also: IWM expiring trail 4c0586cc canceled, replaced with fixed stop-market GTC $274.67 (ff755b58) — administrative, resolves Aug 26 EOD Q2. Week 18 count: **1/3**.
+
+**Notes:** Day 86, Thursday. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Strong day — equity +$976.54 (+0.95%) on AVGO's +4.22% pop as the Nvidia-beat read-through lifted the whole AI/semis complex, exactly as pre-market expected. AMD gave back a little from the gapped-up open (-0.82% on the day, still +0.64% unrealized above the $473.96 entry); its trail auto-advanced to HWM $482 / trigger $433.80. IWM firm near highs (+0.29%, +3.11% unrealized), still below the $305.18 trail-conversion trigger so the fixed $274.67 stop stays. No losers anywhere near the -7% cut; no tighten triggers (all three positions well short of +15%). Deployment rose to 53.8% (3 positions) after the AMD entry — up from 36% but still an 18th consecutive week under the 75% floor. Semiconductor concentration now ~36% of equity (AVGO ~19% + AMD ~17%), within rules but monitored; AVGO Q3 earnings Sept 2 AMC is a shared event risk (Tier-1 blackout that day). Two trade slots remain this week; research log defers a second, non-tech candidate to tomorrow's Friday weekly review.
+
+**Action questions:**
+
+**Q: Put more of the idle 46% cash to work with a fourth position tomorrow, or stay patient?**
+- Enter: closes an 18-week deployment gap (53.8% vs 75% floor); tomorrow's weekly review will screen a non-tech name to avoid stacking more semis risk — adds exposure right as sticky-PCE / Jackson Hole rate signals could pressure the tape
+- Wait: keeps dry powder for a cleaner setup and avoids a fourth position into an unresolved Fed-signal week — extends the chronic under-deployment another cycle; opportunity cost if the AI/semis momentum broadens
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
