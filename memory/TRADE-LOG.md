@@ -5174,3 +5174,41 @@ No "User decisions" block was logged under the Aug 27 EOD action question. Resol
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-28 — Market-Open Execution (Friday, Week 18 Day 5)
+
+**No trades.** Executed the pre-market plan: HOLD AMD / AVGO / IWM. Resolves Aug 27 EOD question autonomously (Rule 14) — carry the 4th-position slot, no computed non-tech setup; healthcare name (UNH) to be screened in today's weekly review for early-Week-19 entry.
+
+**Stops confirmed live (no changes):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 37 | $473.96 | $470.48 | -$128.95 (-0.74%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc) |
+| AVGO | 52 | $365.526538 | $374.24 | +$453.10 (+2.38%) | 10% trail HWM $375.13 / trigger $337.617 (fc5bfa43) |
+| IWM | 62 | $290.769839 | $300.17 | +$582.81 (+3.23%) | FIXED stop $274.67 GTC (ff755b58) |
+
+**Rules check:** No losers near -7% (AMD -0.74% is the only red). No tighten triggers (all well short of +15%). IWM $300.17 < $305.18 trail-conversion trigger — fixed stop stays. All theses intact.
+
+**Account:** Equity $103,199.65 | Cash $47,721.24 (46.2%) | Deployed $55,478.41 (53.8%, 3 positions) | DT count: 0 | Week 18 count: 1/3.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
+
+## 2026-08-28 — Midday Scan (Friday, Week 18 Day 5)
+
+**Live positions (Alpaca pull):**
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 37 | $473.96 | $470.72 | -$120.07 (-0.68%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc, live) |
+| AVGO | 52 | $365.526538 | $366.04 | +$26.70 (+0.14%) | 10% trail HWM $376.59 / trigger $338.93 (fc5bfa43, live, auto-trailed up) |
+| IWM | 62 | $290.769839 | $296.21 | +$337.16 (+1.87%) | FIXED stop $274.67 GTC (ff755b58, live) |
+
+- **Losers cut:** None. AMD -0.68% is the worst; nowhere near -7%.
+- **Stop tightening:** None due. All three well short of +15%. AVGO trail auto-advanced (HWM $376.59, trigger $338.93) — mechanical, no action.
+- **IWM trail conversion:** Not triggered. Price $296.21 < $305.18 — fixed stop stays.
+- **Thesis check:** All intact. Broad risk-off tape today — AMD -1.25%, AVGO -1.48%, IWM -1.20% intraday, all roughly in line with a market-wide pullback (hawkish-leaning Warsh Jackson Hole read + BLS benchmark revision). No idiosyncratic breaks; no name moving sharply without cause — no Perplexity check needed.
+- **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline. Deployed ~$54.8K (3 positions) | Week 18 count: 1/3.
+
+**Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7.
+
+---
