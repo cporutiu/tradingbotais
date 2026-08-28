@@ -1178,3 +1178,96 @@ _Rationale: P&L was fine (+1.08% week, +0.42% alpha) and process discipline held
 - Option B: Wait — Monday's re-validation could show a different price/R:R after the weekend gap, and one blocked session doesn't mean the setup decays; better to re-confirm fresh than chase Friday's already-approved level
 
 ---
+
+## Week ending 2026-08-28
+
+_Note: the Aug 21 weekly review was never run (process gap — Aug 21 EOD/Market-Open also went unlogged). This entry covers the full window since the Aug 14 review; stats show both the trading week (Aug 24–28) and the 2-week reconciliation (Aug 15–28)._
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $103,816.45 (Aug 21 close) |
+| Ending portfolio | $102,458.92 |
+| Week return | -$1,357.53 (-1.31%) |
+| S&P 500 week (Aug 21→28) | +0.64% (7,674.37 → 7,723.62) |
+| Bot vs S&P (week) | **-1.95%** |
+| 2-week return (from Aug 14 close $104,934.37) | -$2,475.45 (-2.36%) |
+| S&P 500 2-week (Aug 14→28) | -0.80% (7,785.76 → 7,723.62) |
+| Bot vs S&P (2-week) | -1.56% |
+| Phase P&L | +$2,458.92 (+2.46% from $100,000 start), Day 87 |
+| Trades (window) | 5 (3 new buys / 2 closed / open:3) — AVGO, AVGO re-entry, AMD bought; AVGO + XOM stopped out |
+| Win rate | 50% (1W / 1L closed) |
+| Best trade | XOM +14.83% (+$2,668.33 realized) |
+| Worst trade | AVGO -9.12% (-$1,622.70 realized) |
+| Profit factor | 1.64 |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| AVGO | $395.4233 (Aug 17) | $359.3633 (Aug 19) | -$1,622.70 (-9.12%) | 10% trailing stop, 2-day hold; mechanical exit, thesis intact (VMware CVE watch never escalated) — per Rule 10 does NOT count toward sector-cooldown; whipsawed a normal chip-sector pullback |
+| XOM | $138.4206 (Jul 15) | $158.9462 (Aug 26) | +$2,668.33 (+14.83%) | 5% trailing stop (max tier, tightened at +20% Aug 19); 42-day hold; oil de-escalation narrative (Iran/Hormuz premium fading) was the proximate cause — gave back ~$950 of peak +20% unrealized on the way to the stop |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMD | $473.96 | $466.70 | -$268.62 (-1.53%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc) |
+| AVGO | $365.5265 | $367.90 | +$123.42 (+0.65%) | 10% trail HWM $376.59 / trigger $338.93 (fc5bfa43) |
+| IWM | $290.7698 | $295.79 | +$311.25 (+1.73%) | FIXED stop-market $274.67 GTC (ff755b58) — convert back to 10% trail only if IWM clears $305.18 |
+
+Deployment: $54,737.68 / $102,458.92 = **53.4%, 3 positions** — 19th consecutive weekly close under the 75% floor. Urgency protocol remains active (R:R floor 1.5:1, Tier-2 blockers waived).
+
+### Sector Watchlist — Week 19 (Sep 1–4; Sep 1 Labor Day = market closed)
+| Priority | Sector | ETF | Candidate | Condition to Enter |
+|----------|--------|-----|-----------|-------------------|
+| 1 | Healthcare | XLV | UNH | RS #1 sector on 3M momentum. Spot ~$396, conservative consensus PT ~$456 (mid ~$475). Entry ~$396 / 10% trail ~$356 / target $456 → R:R ~1.5:1 (clears urgency floor; ~2:1 to $475). Catalyst: analyst-day AI claims-processing margin story + Goldman EPS raise. Caveat: Erste cut to Hold Aug 27 (broad consensus still Moderate Buy). Enter early Week 19 if it holds ~$390+. Diversifies away from 36% semis concentration. |
+| 2 | Technology | XLK | AMD / AVGO (held) | Sector at 2/2 single-stock cap. No new tech buys. **AVGO Q3 earnings Sept 2 AMC = Tier-1 blackout that day** — hold-through vs trim decision at Sept 1 pre-market. |
+| 3 | Small-cap | IWM | IWM (held) | Hold to fixed stop $274.67; tailwind softened to "no more hikes" (not "cuts coming"). Convert to 10% trail if it clears $305.18. Hawkish Warsh a near-term headwind, not a break. |
+| 4 | Energy | XLE | — (no position) | XOM stopped out Aug 26. Oil de-escalation narrative (WTI ~$82) = keep energy OFF the re-entry list until the Hormuz-premium story resolves or a single-stock R:R clears independent of the geopolitical premium. |
+| 5 | Rule 16 widen | Financials / Materials / Discretionary | MCK / others | MCK fails R:R (~1.1:1, spot $890 vs PT $985). Run the single-stock sourcing pass across Financials/Materials/Discretionary if UNH doesn't fill and a 5th slot is wanted. |
+
+### What Worked
+- XOM locked in a **+14.83% realized gain** (+$2,668) via a mechanical 5% trailing stop — the tighten-to-5%-at-+20% rule (fired Aug 19) protected the bulk of a position that ran from $138 to a $168 HWM before oil rolled over
+- Every stop did its job: XOM (5% trail), AVGO (10% trail), IWM (fixed-stop replacement) — no missed triggers, no unprotected positions, no manual intervention required
+- AMD entry (Aug 27) was disciplined: deliberately deferred Aug 26 through Nvidia's earnings-AMC tape risk, entered only after the beat confirmed the semis dip-buy — R:R ~3:1 (later ~4:1 after RJ raised PT to $641), 17.1% sizing, stop on fill
+- IWM's ~90-day GTC expiration (Alpaca caps "GTC" trailing stops) was caught 6 days early and handled cleanly — canceled 4c0586cc, replaced with a fixed stop-market at $274.67 (rounded up, Rule 7 satisfied), no protection gap
+- Autonomous decision framework (Rule 14) resolved 4+ unanswered EOD questions with no user input — all executed correctly at the following open
+
+### What Didn't Work
+- **-1.95% vs S&P on the week** — the worst relative week in months. XOM's exit removed the portfolio's alpha engine, and the remaining semis-heavy book (AVGO+AMD ~36%) fell with the risk-off tape (hawkish Warsh Jackson Hole + BLS payroll benchmark revision)
+- **AVGO round-trip cost -$1,622 (-9.12%)**: bought Aug 17, stopped Aug 19 on a normal chip pullback, re-entered Aug 20 just ~$6 above the stop-out price. A 10% trail on a volatile semi immediately after entry is a whipsaw magnet — the re-entry one day later effectively conceded the trail was too tight for the entry timing
+- **19th consecutive weekly close under 75% deployment** — 53.4%, only 1 of 3 Week 18 slots used; UNH was identified as the non-tech candidate but never computed to an entry until this review
+- Aug 21 weekly review skipped entirely, plus Aug 21 EOD/Market-Open unlogged — a full process gap; midday scan was the only Aug 21 entry and it went to the wrong file (RESEARCH-LOG)
+- XOM gave back ~$950 of unrealized gain (peak +20.3% / $168 HWM → +14.83% exit) — inherent to a 5% trail, but a reminder that the trailing-stop mechanism monetizes well below the peak
+
+### Key Lessons
+- Post-catalyst gap-up entries work (AMD, waited for the NVDA print); rushed pre-catalyst entries into a jittery complex do not (AVGO Aug 17, stopped in 2 days). The difference was entry timing relative to a known binary event, not the thesis
+- A 10% trailing stop placed immediately on a high-volatility name (semis, ~3-4% daily range) sits inside one normal session's move from a HWM set at entry — AVGO's Aug 17→19 stop-out is the second AVGO 10%-trail whipsaw in a month (also Aug 19 on the first lot). Worth watching whether entry-day trail placement on >3%-ADR names needs a wider initial band or a brief delay
+- The XOM exit ends a ~6-week run where one oversized energy winner (peaked ~20% of equity) masked chronic under-deployment. With it gone, the 53% deployment problem is now the whole story — no single position is carrying the book
+- Alpaca "GTC" trailing stops expire at ~90 days regardless of label — every trailing stop needs an expiration check in the weekly review from now on (AMD b708f2cc expires 2026-11-25, AVGO fc5bfa43 2026-11-18, IWM ff755b58 2026-11-25)
+
+### Adjustments for Next Week
+- **Sep 1 = Labor Day, market closed.** Week 19 is a 4-day week (Tue–Fri). Trade-slot count resets to 3/3 Tuesday.
+- **UNH — screen to a firm entry Tuesday Sep 2 pre-market:** confirm spot, pull a live consensus PT, compute entry/stop/target. Enter if R:R ≥1.5:1 and price holds ~$390+. This is the deployment priority — do not let it slip to Week 20.
+- **AVGO Q3 earnings Sept 2 AMC = Tier-1 blackout Sept 2.** Decide hold-through vs trim at the Sept 1... (no market Sep 1) — resolve at Aug 29 or the first Week 19 pre-market. AVGO is +0.65% unrealized, ~19% of equity, on a 10% trail 8% below spot — a gap-down through the trail on a miss is the risk.
+- **IWM:** convert fixed $274.67 stop back to a 10% trailing stop only if price closes above $305.18 (now $295.79).
+- **AMD:** tighten trail to 7% at +15% (~$545), to 5% at +20% (~$569).
+- **Energy re-entry stays off the list** until the oil de-escalation narrative resolves.
+- **No TRADING-STRATEGY.md change this week** — the AVGO trail-whipsaw is one data point; flag for a rule discussion if it recurs.
+
+### Overall Grade: C
+
+_Rationale: P&L held positive on an absolute basis (+2.46% phase) and risk management was mechanically flawless — every stop fired correctly, the IWM expiration was caught early, AMD's entry was patient and disciplined. But this was a genuine underperformance week (-1.95% vs S&P): XOM's exit removed the only position generating alpha, the remaining book is 36% concentrated in semis that sold off, AVGO cost a fresh -9.12% on a rushed entry + immediate whipsaw, and deployment closed under 75% for the 19th straight week with only 1/3 slots used. The bot is not losing money, but it has been out-earned by a flat-to-down index while sitting on ~46% cash._
+
+### Next-week Decisions
+
+**Q: UNH as the 4th position — enter early Week 19 (Tue Sep 2, pending a firm PT/R:R screen), or wait for a cleaner setup?**
+- Enter: closes a 19-week deployment gap, diversifies away from 36% semis concentration into the RS #1 sector (healthcare), R:R ~1.5–2:1 clears the urgency floor, fresh margin/EPS catalyst — risk: Erste just cut to Hold, and a Fri-flagged consensus PT range that's wide ($456–$481) means the R:R math is soft at the low end
+- Wait: healthcare rotation is early and UNH near $396 could offer a better entry on a pullback; avoids buying the day before/after AVGO's Sept 2 earnings adds event risk to the book — risk: 20th straight sub-75% week, and the rotation into healthcare could run without us
+
+**Q: AVGO into its Sept 2 AMC earnings — hold the full 52-share position through, or trim ahead of the print?**
+- Hold through: position is only +0.65%, thesis intact (AI/semis complex still bid, NVDA read-through positive), and the 10% trail caps downside mechanically — trimming a barely-green position crystallizes nothing and forfeits upside on a beat
+- Trim (e.g. to ~30 sh): AVGO is ~19% of equity and the larger of two correlated semis positions; a gap-down through the $338.93 trail on a miss/soft-guide is an uncushioned loss — cutting size ahead of a binary event is textbook risk control
+
+**Q: Semis concentration (~36%, AVGO+AMD) with a shared Sept 2 event — cap it here, or is a 4th non-tech position enough of an offset?**
+- Cap here / add UNH: a non-tech 4th position mechanically dilutes the semis weight toward ~28–30% and adds an uncorrelated sector — the cleanest fix, assuming UNH clears its screen
+- Actively reduce semis: if UNH doesn't clear, consider trimming AMD or AVGO rather than carrying 36% single-industry exposure into an earnings print — more aggressive, locks in small gains/losses, but removes the concentration risk directly
