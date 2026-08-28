@@ -5159,3 +5159,18 @@ No "User decisions" block was logged under the Aug 26 EOD action questions. Both
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-28 — Pre-Market Autonomous Decision (Friday, Week 18 Day 5)
+
+No "User decisions" block was logged under the Aug 27 EOD action question. Resolved autonomously per Rule 14 on live pre-market data.
+
+**Bot autonomous decision (2026-08-28):** Put more of the idle ~46% cash to work with a 4th position today, or stay patient? → **CARRY the slot — no 4th position at today's open.** Rationale: no valid *computed* non-tech setup in hand (UNH is the lead healthcare candidate on momentum + analyst-day catalyst, but no consensus PT retrieved → R:R uncomputed); trade-slot default posture is USE only if a valid setup exists, else CARRY. Friday's weekly review (this afternoon) will screen the healthcare name with a real entry/stop/target for early-Week-19 entry. Entering a 4th position Friday into a hawkish-leaning Warsh Jackson Hole tape adds weekend gap risk for no offsetting edge.
+
+**Market-open action checklist:**
+1. No trades. Hold AMD / AVGO / IWM.
+2. Confirm all three stops still live: AMD trail b708f2cc (trigger $433.80), AVGO trail fc5bfa43 (trigger $337.617), IWM fixed ff755b58 ($274.67). No changes.
+3. Carry watch items: IWM→trail if clears $305.18; AMD tighten at +15%/+20%; AVGO Sept 2 earnings Tier-1.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---

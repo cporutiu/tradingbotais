@@ -6529,3 +6529,67 @@ Not run this session (slim pre-market battery). Prior session (Aug 26): Benzinga
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-28 — Pre-Market Research (Friday, Week 18 Day 5)
+
+**Urgency protocol active:** Deployed below 75% for 18+ consecutive weekly closes. Tier-2 blockers do NOT apply; R:R floor = 1.5:1.
+
+### STEP 1B — Pending decision (autonomous, Rule 14)
+No "User decisions" block below the Aug 27 EOD entry. One unanswered EOD action question — resolved autonomously on live pre-market data:
+
+**Bot autonomous decision (2026-08-28):** Put more of the idle ~46% cash to work with a 4th position today, or stay patient? → **CARRY — no 4th position at today's open.** No valid *computed* non-tech setup in hand this morning (UNH screens as the lead healthcare candidate — sector-leading 3M momentum, analyst-day AI/margin catalyst, EPS estimate upgrades — but no clean consensus PT retrieved, so R:R is uncomputed). Per the trade-slot default posture, USE a slot only if a valid setup exists; CARRY otherwise. Friday's weekly review (runs this afternoon) is the correct venue to screen the healthcare name with a real entry/stop/target; target entry early Week 19. Also: entering a 4th position Friday into a hawkish-leaning Warsh Jackson Hole tape adds weekend gap risk for no offsetting edge.
+
+### Account Snapshot (live API, pre-market)
+- Equity: $103,156.84 | Cash: $47,721.24 (46.3%) | Deployed: $55,435.60 (53.7%, 3 positions) | Buying power: $346,104.64 | DT count: 0 | Week 18 count: 1/3
+- Account confirmed PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+### Positions (live, pre-market)
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMD | 37 | $473.96 | $472.50 | -$54.02 (-0.31%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc, live) |
+| AVGO | 52 | $365.526538 | $372.64 | +$369.90 (+1.95%) | 10% trail HWM $375.13 / trigger $337.617 (fc5bfa43, live, no new high) |
+| IWM | 62 | $290.769839 | $299.61 | +$548.09 (+3.04%) | FIXED stop-market $274.67 GTC (ff755b58, live) |
+
+No tighten triggers: AVGO +1.95%, IWM +3.04%, AMD red — all well short of +15%. No losers near -7%.
+
+### Market Context
+- **Oil:** WTI ~$82.5, Brent ~$88.3 — up ~1-2% off last session's lows; no energy position held, watchlist context only.
+- **S&P 500 futures:** ~7,740, +0.65% premarket. Nasdaq firm on continued Nvidia/AI follow-through.
+- **VIX:** ~14.5 — **market risk: low.**
+- **Today's data:** BLS CES Preliminary Benchmark / NFP Annual Revision (prelim) 10:00 AM; Chicago PMI. **NOT the monthly payroll release** — treat as Tier-2 (notable, historically can move the tape) not Tier-1. No CPI/PPI/PCE/FOMC today.
+- **Jackson Hole:** Chair Warsh keynote — read as **hawkish-leaning but likely deliberately noncommittal**; tends to trim rate-cut odds. Fed-speaker event = Tier-2 (suspended by urgency protocol) but a real intraday tape risk for rate-sensitive IWM and high-multiple semis.
+- **Sector rotation:** Leadership rotating **away from Tech/Comm Services toward Health Care (XLV #1 on 3M momentum), Financials, Energy, Materials.** Defensive/value tilt. Relevant: my book is ~36% concentrated in tech semis (AVGO+AMD) — next entry should be non-tech, healthcare is the RS leader.
+- **Economic cycle:** Late-cycle (sticky inflation, Fed on hold with hike risk, defensive rotation underway).
+
+### Benzinga / Congress
+Not run this session (slim pre-market battery; Friday weekly review will run the full scanners). Prior: Benzinga BUY semis/broad-market, SELL none. Congress/Quiver API still 401 (8+ wks).
+
+### Perplexity validation of held names + candidate
+- **AMD (held):** Thesis strengthened. Raymond James reiterated **Strong Buy, PT raised to $641 from $565**. New Core Scientific AI data-center deal (up to 2.5 GW). $4.75B debt raise funding AI infra push. Premarket ~$473, -0.8%. R:R vs ~$641 PT on $433.80 trail ≈ 4:1. Intact.
+- **AVGO (held):** No fresh negative. Part of the same AI/semis complex still bid. **Q3 earnings Sept 2 AMC = Tier-1 blackout that day** — assess hold-through vs trim at Sept 1 pre-market.
+- **IWM (held):** Thesis intact but tailwind is "no more hikes" not "cuts coming" — softer. Hawkish Warsh is the near-term risk. Price ~$299.6, holding near highs, +3% unrealized. Not a break. Fixed $274.67 stop stays until price clears $305.18.
+- **UNH (candidate, healthcare):** Lead non-tech candidate. Sector-leading 3M momentum, analyst-day catalyst (AI-driven claims-processing margin expansion), Goldman raised 2026 EPS. "Flirting with $400." **Consensus PT not retrieved — R:R uncomputed. Needs full screen in weekly review before any entry.**
+
+### Trade Ideas
+1. **HOLD all three positions.** No stop actions due, all theses intact.
+2. **UNH (healthcare) — screen fully in today's weekly review.** Rotation leader, fresh catalyst, diversifies away from 36% semis concentration. Need consensus PT → entry/stop/target before Week 19 entry.
+3. **No tech add** — semis concentration cap self-imposed at current AVGO+AMD level; AVGO earnings Sept 2 is a shared event risk.
+
+### Risk Factors
+- **Warsh Jackson Hole hawkish-lean** — intraday hit risk to IWM (rate-sensitive) and high-multiple semis. Not Tier-1.
+- **BLS benchmark revision 10:00 AM** — large downward payroll revisions have historically jolted the tape; watch, no position action planned.
+- **Semis concentration ~36%** (AVGO+AMD), with **AVGO Q3 earnings Sept 2 AMC** as shared event risk.
+- **Chronic under-deployment** — 53.7%, 18th+ week under 75% floor. Weekly review must produce a screened non-tech setup for early Week 19; do not let it slip another cycle.
+
+### Watch items (forward triggers)
+- IWM: convert fixed $274.67 stop back to a 10% trail only if price clears $305.18 (now $299.61).
+- AMD: tighten trail to 7% at +15% (~$545), to 5% at +20% (~$569).
+- AVGO: Sept 2 AMC earnings — Tier-1 blackout that day; hold-through vs trim decision at Sept 1 pre-market.
+- UNH: weekly review to compute consensus PT / entry / stop / target.
+
+### Decision
+**HOLD — no new entries today.** Resolves Aug 27 EOD question autonomously (Rule 14): CARRY the 4th-position slot — no computed non-tech setup in hand, Friday-into-weekend timing offers no edge, and the weekly review hours away is the right place to screen the healthcare name properly. All three positions held, theses intact, no stop actions due. Week 18 count stays 1/3.
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
