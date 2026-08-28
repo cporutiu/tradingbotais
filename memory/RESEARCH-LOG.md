@@ -6529,3 +6529,29 @@ Not run this session (slim pre-market battery). Prior session (Aug 26): Benzinga
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-28 — Pre-Market Research (Friday, Week 18 Day 5) — CONNECTIVITY FAILURE
+
+**No research performed. All external API egress blocked by session network policy.**
+
+### What happened
+- `bash scripts/alpaca.sh account` → curl exit 22 (HTTP 403). Root cause confirmed via proxy status endpoint: `gateway answered 403 to CONNECT (policy denial or upstream failure)` on `paper-api.alpaca.markets:443`.
+- `bash scripts/perplexity.sh` → same 403 policy denial on `api.perplexity.ai:443`.
+- `bash scripts/clickup.sh` → same 403 policy denial (ClickUp host also blocked) — the usual alert/notification channel for this failure is itself unreachable.
+- Per this environment's proxy README: a 403/407 from the egress gateway is an organization policy denial, not a transient error — "do not retry or route around it." No credential problem: `ALPACA_ENDPOINT` correctly points at `paper-api.alpaca.markets` (paper key prefix `PK...`), so this is NOT an s4s5/live-account mix-up — it's a network-policy blackout for this session, full stop.
+
+### Data NOT collected today
+- No live account snapshot (equity/cash/deployed/buying power/DT count) — last confirmed state is Aug 27 EOD: **Equity $103,230.92 | Cash $47,721.25 (46.2%) | Deployed ~$55K (3 positions: AMD, AVGO, IWM) | Week 18 count 1/3.**
+- No live positions/orders pull — cannot confirm AMD/AVGO/IWM stops are still live and untouched, or that no thresholds (+15%/+20% tighten, -7% cut) were crossed intraday.
+- No market context research (oil, futures, VIX, catalysts, earnings, econ calendar, sector momentum) performed.
+- No action taken on Aug 27 EOD's open question ("4th position today, or stay patient?") — deferred, unresolved.
+
+### Decision
+**HOLD — mandatory, by omission.** No new entries possible or attempted; no data to evaluate a trade against the entry checklist. This is not a strategy HOLD, it's a full data blackout.
+
+### Reconnect protocol flag (Rule 15)
+**Next successful run (any routine) MUST, before any new-entry action:** pull live positions/orders directly from Alpaca to reconcile against the Aug 27 EOD state above, and check AMD/AVGO/IWM against every threshold (tighten +15%/+20%, -7% cut, thesis-break) that should have applied during today's gap, acting immediately on anything missed rather than waiting for the next natural check. Treat today (Aug 28) as a full-day connectivity gap for reconciliation purposes even though it's under Rule 15's normal >3-day trigger — flagging explicitly since account state is unverified for an entire trading day.
+
+**ClickUp notification not sent — ClickUp itself is unreachable this session** (see above). Flagging via the session's own out-of-band channel instead.
+
+---
