@@ -5212,3 +5212,26 @@ No "User decisions" block was logged under the Aug 27 EOD action question. Resol
 **Action taken:** None. No cuts, no tightens, no thesis breaks. No ClickUp notification per STEP 7.
 
 ---
+
+## Aug 28 — EOD Snapshot (Day 87, Friday — Week 18 Day 5)
+**Portfolio:** $102,492.68 | **Cash:** $47,721.24 (46.6%) | **Day P&L:** -$738.24 (-0.72%) | **Phase P&L:** +$2,492.68 (+2.49%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 37 | $473.96 | $466.10 | -2.22% | -$290.82 (-1.66%) | 10% trail HWM $482.00 / trigger $433.80 (b708f2cc, live) |
+| AVGO | 52 | $365.526538 | $369.00 | -0.68% | +$180.62 (+0.95%) | 10% trail HWM $376.59 / trigger $338.93 (fc5bfa43, live) |
+| IWM | 62 | $290.769839 | $295.77 | -1.35% | +$310.01 (+1.72%) | FIXED stop $274.67 GTC (ff755b58, live) |
+
+**Trades today:** None. Pre-market carried the 4th-position slot (Rule 14, autonomous) — UNH is the lead healthcare candidate but consensus PT/R:R still uncomputed; today's weekly review is the venue to screen it for a Week 19 entry. Week 18 count stays **1/3**.
+
+**Notes:** Day 87, Friday. Account confirmed PA3GVPXBYBRB, matches AIS baseline. Second straight risk-off day — AMD -2.22%, AVGO -0.68%, IWM -1.35%, all in line with a broad market pullback (hawkish-leaning Warsh Jackson Hole read + BLS payroll benchmark revision) rather than any idiosyncratic break; midday scan already confirmed no name moving sharply without cause. AMD's daily loss pulled its unrealized to -1.66% (still 5.3pts from the -7% manual cut); AVGO and IWM held green at +0.95% and +1.72%. No tighten triggers — all three well short of the +15%/+20% thresholds — and IWM's $295.77 close stays below the $305.18 trail-conversion level, so the fixed $274.67 stop holds. Equity fell -$738.24 (-0.72%) on the day but Phase P&L remains solidly positive at +$2,492.68 (+2.49%) over 87 days. Deployment held flat at 53.4% (3 positions) — the 18th+ consecutive week under the 75% floor; cash sits at 46.6%. No trades today; this afternoon's weekly review needs to produce a real entry/stop/target for UNH (or another non-tech name) so the deployment gap doesn't slip into a 19th week untouched. Two trade slots remain open for the week with today the last trading day.
+
+**Action questions:**
+
+**Q: Screen and enter UNH (or another non-tech candidate) at this afternoon's weekly review, or stay patient into next week?**
+- Enter (pending screen): closes an 18+ week deployment gap and diversifies away from ~36% semis concentration if UNH's R:R clears the 1.5:1 floor — a Friday-into-weekend entry adds gap risk with no offsetting edge if the screen turns up thin
+- Wait: keeps dry powder for a cleaner Week 19 entry and avoids weekend gap risk — extends the chronic under-deployment another cycle if patience wins again
+
+**Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
+
+---
