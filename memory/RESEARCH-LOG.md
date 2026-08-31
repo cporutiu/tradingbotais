@@ -6593,3 +6593,24 @@ Not run this session (slim pre-market battery; Friday weekly review will run the
 **Account confirmed:** PA3GVPXBYBRB, matches AIS baseline, no credential mix-up.
 
 ---
+
+## 2026-08-31 — Pre-Market Research (Monday, Week 19 Day 1) — ROUTINE FAILED (total API blackout)
+
+### STEP 2 — Live account pull: FAILED
+`bash scripts/alpaca.sh account` returned `curl: (22) ... 403`. Root cause confirmed via agent-proxy status: the egress proxy rejected the CONNECT to `paper-api.alpaca.markets:443` — **organization network policy**, not a missing/invalid credential (all required env vars — ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — were present and set). No account/positions/orders data could be pulled. **Do not trust this entry for position state** — last verified state is the Aug 28 EOD snapshot in TRADE-LOG.md (3 positions: AMD, AVGO, IWM; equity $102,492.68).
+
+### STEP 3 — Perplexity research: FAILED (same cause)
+`bash scripts/perplexity.sh` also returned exit 22 / 403 connect_rejected (proxy policy). ClickUp (`scripts/clickup.sh`) failed identically — all three integrations blocked, not just one. Did not fall back to native WebSearch: with no live account/position state confirmable, market research would be disconnected from the actual book and would risk feeding a stale/wrong basis into the pending UNH entry and AVGO Sept 2 earnings hold/trim decisions.
+
+### Discrepancy flagged — account mismatch
+This run's scheduled-task prompt described managing **"a LIVE ~$10,000 Alpaca account."** This does not match this repo's AIS account per CLAUDE.md and every prior log entry: **paper account PA3GVPXBYBRB, $100,000 starting capital**, confirmed equity ~$102-103K as of Aug 28. `ALPACA_ENDPOINT` is also configured to `paper-api.alpaca.markets` (paper, not live). Per CLAUDE.md's account-isolation rule ("If credentials look wrong... STOP and alert the user before placing any order"), this was flagged rather than acted on. No order was placed or attempted.
+
+### Action taken
+**No trades. No research performed. No ClickUp alert sent (also blocked by the same policy) — user notified directly out-of-band.**
+
+### Decision
+**HOLD — routine could not execute; infrastructure blocker, not a market call.** Rule 15 (reconnect protocol) applies to the next successful run: pull live positions/orders first and reconcile against the Aug 28 EOD state before taking any new-entry action, and check every threshold (tighten triggers, -7% cut, IWM $305.18 trail-conversion, AVGO Sept 2 earnings blackout) that should have applied during this gap. Outstanding weekly-review decisions (UNH 4th-position entry, AVGO hold-vs-trim into Sept 2 AMC earnings, semis-concentration cap) remain unresolved and carry forward.
+
+**Needed from user:** (1) restore egress access to `paper-api.alpaca.markets`, the Perplexity API, and the ClickUp API for this execution environment; (2) confirm whether this routine is meant to operate on the paper AIS account (PA3GVPXBYBRB, $100K) as documented, or a different live account as this run's prompt described — do not let that ambiguity carry into a run where API access is restored and a mismatch goes unnoticed.
+
+---
