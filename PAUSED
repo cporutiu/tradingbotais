@@ -1,0 +1,14 @@
+PAUSED — 2026-09-01
+
+Trading and research routines for the AIS bot are paused until further
+notice, per explicit user request in chat.
+
+- scripts/alpaca.sh and scripts/perplexity.sh refuse to run while this
+  file exists (exit 90) — enforced in the scripts themselves, not just
+  by routine instructions.
+- Any routine that fires while this file is present must skip all work,
+  log a one-line note, and exit. See CLAUDE.md "Pause / Kill Switch".
+
+To resume: the user removes this file, or explicitly asks Claude to
+remove it. Do not delete this file without a current, explicit
+instruction to do so — a past approval does not carry forward.

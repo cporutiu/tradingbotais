@@ -7,6 +7,11 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 ENV_FILE="$ROOT/.env"
 
+if [[ -f "$ROOT/PAUSED" ]]; then
+  echo "BOT PAUSED: $ROOT/PAUSED exists. Refusing to call the Alpaca API. See CLAUDE.md 'Pause / Kill Switch'. Remove that file to resume." >&2
+  exit 90
+fi
+
 if [[ -f "$ENV_FILE" ]]; then
   set -a
   # shellcheck disable=SC1090

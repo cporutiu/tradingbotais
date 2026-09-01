@@ -15,6 +15,31 @@ This bot (AIS) operates on a SEPARATE Alpaca paper account from the s4s5 bot.
 - If credentials look wrong (e.g. equity doesn't match expected AIS baseline),
   STOP and alert the user before placing any order.
 
+## Pause / Kill Switch — CRITICAL
+
+A `PAUSED` file at the repo root means: **do not trade, do not research, do
+not call any external API.** Check for it as the very first action of every
+routine — before STEP 1, before Read-Me-First.
+
+- If `PAUSED` exists: skip all routine work. Log one line to the relevant
+  memory file (`memory/TRADE-LOG.md` for trade/execution routines,
+  `memory/RESEARCH-LOG.md` for pre-market) noting the routine was skipped
+  because the bot is paused, then commit + push that one line and exit.
+  No ClickUp alert for a routine skip — the pause is intentional, not
+  urgent.
+- `scripts/alpaca.sh` and `scripts/perplexity.sh` also refuse to run
+  (exit 90) while `PAUSED` exists, regardless of what any routine prompt
+  says — defense-in-depth against a stale or misconfigured scheduled
+  trigger that fires anyway.
+- This file only stops what runs inside this repo/session. It does NOT
+  disable the external trigger (Windows Task Scheduler job or Claude
+  cloud routine config) that fires these runs — that must be disabled at
+  its own source; see routines/README.md and scripts/setup_tasks.ps1.
+- To resume: the user removes the `PAUSED` file, or explicitly asks
+  Claude to remove it in a live message. Never remove it on your own
+  judgment, and a past approval does not carry forward to a later
+  session — always confirm the instruction is current.
+
 ## Read-Me-First (every session)
 
 Open these in order before doing anything:
