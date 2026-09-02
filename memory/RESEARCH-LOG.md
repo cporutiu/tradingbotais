@@ -6614,3 +6614,26 @@ This run's scheduled-task prompt described managing **"a LIVE ~$10,000 Alpaca ac
 **Needed from user:** (1) restore egress access to `paper-api.alpaca.markets`, the Perplexity API, and the ClickUp API for this execution environment; (2) confirm whether this routine is meant to operate on the paper AIS account (PA3GVPXBYBRB, $100K) as documented, or a different live account as this run's prompt described — do not let that ambiguity carry into a run where API access is restored and a mismatch goes unnoticed.
 
 ---
+
+## 2026-09-02 — Pre-Market Research (Wednesday, Week 19 Day 3) — ROUTINE FAILED (blackout persists, AVGO earnings today)
+
+### STEP 2 — Live account pull: FAILED (same cause as Aug 31)
+`bash scripts/alpaca.sh account` → `curl: (22)` / 403. Agent-proxy status confirms `connect_rejected` on `paper-api.alpaca.markets:443` — organization network policy, all env vars present and set. No account/positions/orders data pulled. No Sept 1 log entry exists in RESEARCH-LOG.md or TRADE-LOG.md, so this blackout has now spanned at least Aug 31 → Sept 2 (Sept 1 routine did not record any output). **Last verified position state is still the Aug 28 EOD snapshot** (AMD, AVGO, IWM; equity $102,492.68) — do not trust anything more recent.
+
+### STEP 3 — Perplexity + ClickUp: FAILED (same cause)
+`scripts/perplexity.sh` and `scripts/clickup.sh` both returned exit 22 / 403 connect_rejected — identical to Alpaca. Proxy status log shows repeated `connect_rejected` entries for `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` at 2026-09-02T10:04 UTC. Fell back to native WebSearch for one targeted check only (AVGO earnings date/time) since account state can't be confirmed and a full research battery would be disconnected from the actual book — same reasoning as Aug 31.
+
+**WebSearch confirms:** Broadcom (AVGO) reports Q3 FY26 earnings **today, Sept 2, after market close** (call 5:00pm ET), consensus ~$29.4B revenue / ~$3.24 EPS. This is exactly the Tier-1 blackout event flagged in the Aug 28 and Aug 29 log entries, which called for a **hold-vs-trim decision at the Sept 1 pre-market**. That run never happened (blackout). **No hold-vs-trim decision has been made on AVGO ahead of tonight's print** — it carries into earnings on whatever stop was last confirmed live as of Aug 28 (10% trail, HWM $376.59 / trigger $338.93), unverified since.
+
+### Discrepancy still unresolved — account mismatch
+This run's scheduled-task prompt again described managing **"a LIVE ~$10,000 Alpaca account,"** still contradicting this repo's documented AIS account (paper PA3GVPXBYBRB, $100K, `ALPACA_ENDPOINT=paper-api.alpaca.markets`). Flagged identically on Aug 31; still no user resolution. Not acted on — no order attempted.
+
+### Action taken
+**No trades. No research beyond one WebSearch fact-check. No ClickUp alert sent (blocked) — user notified directly out-of-band given AVGO reports tonight and positions are unverified.**
+
+### Decision
+**HOLD — infrastructure blocker, not a market call.** Rule 15 (reconnect protocol) applies to the next successful run: pull live positions/orders first, reconcile against the Aug 28 EOD state, and check every threshold that should have applied during the gap — AVGO's post-earnings move most urgently, plus AMD/IWM tighten triggers and the IWM $305.18 trail-conversion level.
+
+**Needed from user (repeated + escalated):** (1) restore egress access to `paper-api.alpaca.markets`, Perplexity, and ClickUp; (2) resolve the paper-vs-live account ambiguity before the next window where API access is restored; (3) AVGO reports after close today with no hold-vs-trim call made — if access is restored intraday, that decision needs to happen before the print, not after.
+
+---
