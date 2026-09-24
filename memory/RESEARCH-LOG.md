@@ -6697,3 +6697,32 @@ This run's scheduled-task prompt again described managing **"a LIVE ~$10,000 Alp
 **Account confirmed:** `ALPACA_ENDPOINT` still resolves to `paper-api.alpaca.markets` (matches AIS baseline description); actual account identity/equity could not be verified this run due to the API blackout.
 
 ---
+
+## 2026-09-24 — Pre-Market Research (Thursday, ~Week 22 Day 4 — count unreliable, see below) — ROUTINE FAILED (API blackout still unresolved, 24+ calendar days since last successful run)
+
+### STEP 2 — Live account pull: FAILED
+`bash scripts/alpaca.sh account` → `curl: (22)` / 403, same `paper-api.alpaca.markets` egress denial as every prior failed run since 2026-08-31. All required env vars (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, PERPLEXITY_API_KEY, PERPLEXITY_MODEL, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) were confirmed present before the call. **No account/positions/orders data pulled.** Last verified position state is still the **2026-08-28 EOD snapshot** (3 positions: AMD, AVGO, IWM; equity $102,492.68) — now **27 calendar days stale**.
+
+### STEP 3 — Perplexity research: FAILED (same cause)
+`bash scripts/perplexity.sh "test"` → `curl: (22)` / 403. Did not fall back to native WebSearch, same reasoning as every prior failed run: with no live position state confirmable, market research would be disconnected from the actual book and could not inform an actionable decision.
+
+### STEP 5 — ClickUp notification: FAILED (same cause)
+`bash scripts/clickup.sh "test connectivity check"` → `curl: (22)` / 403. All three integrations blocked identically, consistent with every session since 2026-08-31. User notified directly out-of-band (push notification) since the normal ClickUp channel remains unavailable.
+
+### Blackout duration and gap
+This is the **fifth consecutive failed session** since the outage began 2026-08-31 (Aug 31 → Sep 3 → Sep 8 → Sep 22 → Sep 24), now **24+ calendar days with zero confirmed live account observations**. Unlike the prior two gaps (14 silent days between Sep 8 and Sep 22), this run followed only 2 calendar days after the last logged attempt — the routine is at least still firing on a normal cadence again, but the underlying egress block on `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` remains completely unresolved.
+
+### Discrepancy flagged a fifth time — account mismatch UNRESOLVED
+This run's scheduled-task prompt again described managing **"a LIVE ~$10,000 Alpaca account."** This still does not match this repo's AIS account per CLAUDE.md and every prior log entry: **paper account PA3GVPXBYBRB, $100,000 starting capital**. `ALPACA_ENDPOINT` remains configured to `paper-api.alpaca.markets` (paper, not live) — so no live-money order was at risk this run regardless. This exact mismatch was flagged on 2026-08-31, 2026-09-03, 2026-09-08, and 2026-09-22, each time asking the user to confirm — **no "User decisions" block or other resolution has been logged since any of those flags.** Per CLAUDE.md's account-isolation rule, this is flagged again rather than acted on. No order was placed or attempted.
+
+### Action taken
+**No trades. No research performed. No ClickUp alert sent (blocked by the same policy) — user notified directly via push notification given the escalating severity (27-day-stale live positions, 24+ day outage, 5th unresolved account-identity flag).**
+
+### Decision
+**HOLD — routine could not execute; infrastructure blocker, not a market call.** This is now the fifth consecutive failed session. Per Rule 15 (reconnect protocol), the next successful run must, before any new-entry action: (a) pull live positions/orders directly from Alpaca and reconcile against the Aug 28 EOD state — do not trust the stale log; (b) check every threshold (tighten triggers at +15%/+20%, -7% manual cut, IWM $305.18 trail-conversion) against the entire unmonitored gap, not just today. AVGO's Sep 2 AMC earnings print still has no confirmed outcome — whether its trail (fc5bfa43) held or triggered remains unknown. Outstanding weekly-review decisions (UNH 4th-position entry, AVGO hold-vs-trim, semis-concentration cap) remain unresolved and carry forward, now nearly four weeks stale.
+
+**Needed from user:** (1) restore egress access to `paper-api.alpaca.markets`, the Perplexity API, and the ClickUp API for this execution environment — unresolved for 24+ days now, spanning a full earnings event (AVGO) with zero monitoring; (2) confirm whether this routine is meant to operate on the paper AIS account (PA3GVPXBYBRB, $100K) as documented, or a different live account as this run's prompt has now described five separate times with no resolution — strongly recommend fixing the scheduled-task prompt template directly since flagging alone hasn't resolved it across a month; (3) if AVGO's real-world Sep 2 earnings outcome is known, confirm whether the 10% trail held so the log can be reconciled once access returns.
+
+**Account confirmed:** `ALPACA_ENDPOINT` still resolves to `paper-api.alpaca.markets` (matches AIS baseline description); actual account identity/equity could not be verified this run due to the API blackout.
+
+---
