@@ -6726,3 +6726,14 @@ This run's scheduled-task prompt again described managing **"a LIVE ~$10,000 Alp
 **Account confirmed:** `ALPACA_ENDPOINT` still resolves to `paper-api.alpaca.markets` (matches AIS baseline description); actual account identity/equity could not be verified this run due to the API blackout.
 
 ---
+
+## 2026-09-29 — Pre-Market Research (Tuesday) — ROUTINE FAILED (API blackout, 29 calendar days since last successful run)
+
+- Env vars all set. `alpaca.sh account/positions/orders`, `perplexity.sh`, `clickup.sh` → `curl: (22)` / 403. Proxy status confirms `connect_rejected` (403 to CONNECT) for `paper-api.alpaca.markets:443` — egress policy denial, not a credential issue.
+- No account/positions/orders data; no research; no WebSearch fallback (no live book to anchor it). Last verified state: 2026-08-28 EOD (AMD/AVGO/IWM, equity $102,492.68) — 32 days stale.
+- Prompt again says "LIVE ~$10,000 account"; repo/CLAUDE.md = paper PA3GVPXBYBRB, $100K. 6th unresolved flag. No orders placed.
+- Rule 15 reconnect protocol applies on first successful run (reconcile positions; check tighten/-7%/IWM $305.18 thresholds; AVGO Sep 2 earnings outcome unknown).
+- **Decision: HOLD — infrastructure blocker.**
+- **Needed from user:** allow egress to paper-api.alpaca.markets, api.perplexity.ai, api.clickup.com; fix scheduled prompt's account description.
+
+---
