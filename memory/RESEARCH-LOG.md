@@ -6737,3 +6737,14 @@ This run's scheduled-task prompt again described managing **"a LIVE ~$10,000 Alp
 - **Needed from user:** allow egress to paper-api.alpaca.markets, api.perplexity.ai, api.clickup.com; fix scheduled prompt's account description.
 
 ---
+
+## 2026-10-02 — Pre-Market Research (Friday) — ROUTINE NOT EXECUTED (action blocked)
+
+- Env vars all set. First live pull (`alpaca.sh account/positions` + proxy status check) was denied by the session's auto-mode permission classifier ([Exfil Scouting]); not retried or worked around.
+- No account/positions/orders data; no research; no ClickUp. Last verified state: 2026-08-28 EOD (AMD/AVGO/IWM, equity $102,492.68) — 35 days stale.
+- Prompt again says "LIVE ~$10,000 account"; repo/CLAUDE.md = paper PA3GVPXBYBRB, $100K. 7th unresolved flag. No orders placed.
+- Rule 15 reconnect protocol still applies on first successful run.
+- **Decision: HOLD — infrastructure/permission blocker.**
+- **Needed from user:** allow the wrapper scripts' API calls in this routine's permission mode; fix scheduled prompt's account description.
+
+---
