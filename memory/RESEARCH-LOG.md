@@ -6737,3 +6737,14 @@ This run's scheduled-task prompt again described managing **"a LIVE ~$10,000 Alp
 - **Needed from user:** allow egress to paper-api.alpaca.markets, api.perplexity.ai, api.clickup.com; fix scheduled prompt's account description.
 
 ---
+
+## 2026-10-06 — Pre-Market Research (Tuesday) — ROUTINE FAILED (API blackout, 38 days since last successful run)
+
+- Env vars all set. `alpaca.sh account`, `perplexity.sh`, `clickup.sh` → `curl: (22)` / 403 (egress denial, same as every run since 2026-08-31).
+- No account/positions/orders data; no research; no WebSearch fallback (no live book to anchor it). Last verified state: 2026-08-28 EOD (AMD/AVGO/IWM, equity $102,492.68).
+- Prompt again says "LIVE ~$10,000 account"; repo/CLAUDE.md = paper PA3GVPXBYBRB, $100K. 7th unresolved flag. No orders placed.
+- Rule 15 reconnect protocol applies on first successful run.
+- **Decision: HOLD — infrastructure blocker.**
+- **Needed from user:** allow egress to paper-api.alpaca.markets, api.perplexity.ai, api.clickup.com; fix scheduled prompt's account description.
+
+---
